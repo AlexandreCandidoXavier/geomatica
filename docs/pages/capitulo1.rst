@@ -23,14 +23,14 @@ e ângulos de um triângulo. Neste estudo utiliza-se ângulos, em diferentes
 unidades, e funções trigonométricas, sendo que ao longo desta seção
 estes pontos serão relembrados.
 
-.. image:: /images/capitulo1/pontoinacessivel.pdf
+.. image:: /images/capitulo1/figuras1.jpg
    :height: 100px
    :width: 200 px
    :scale: 100 %
    :alt: alternate text
    :align: center
 
-.. figure:: /images/capitulo1/pontoinacessivel.pdf
+.. figure:: /images/capitulo1/figuras1.jpg
    :scale: 50 %
    :alt: map to buried treasure
 
