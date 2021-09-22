@@ -12,6 +12,7 @@ Livro de Geomática
 
    pages/capitulo1
    pages/capitulo2
+   pages/capitulo7
 
 
 índices and tables

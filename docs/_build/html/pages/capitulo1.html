@@ -7,7 +7,6 @@
   <title>Capitulo 1 &mdash; Documentação Livro de Geomática 0.1</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -43,10 +42,19 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Capitulo 1</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#matematica-fundamental">Matemática fundamental</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#nocoes-basicas-de-trigonometria">Noções básicas de trigonometria</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#nocoes-basicas-de-trigonometria">Noções básicas de trigonometria</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#angulo-em-grau-grado-e-radiano">Ângulo em grau, grado e radiano</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#grau">Grau</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sphinx-overview">Overview</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="capitulo2.html">Capitulo 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="capitulo7.html">Capitulo 7</a></li>
 </ul>
 
         </div>
@@ -74,14 +82,14 @@
            <div itemprop="articleBody">
              
   <section id="capitulo-1">
-<h1>Capitulo 1<a class="headerlink" href="#capitulo-1" title="Link permanente para este título"></a></h1>
+<span id="rst-capitulo-1"></span><h1>Capitulo 1<a class="headerlink" href="#capitulo-1" title="Link permanente para este título"></a></h1>
 <section id="matematica-fundamental">
 <h2>Matemática fundamental<a class="headerlink" href="#matematica-fundamental" title="Link permanente para este título"></a></h2>
 <p>Na maioria dos problemas que serão vistos ao longo dos próximos capítulos
 haverá a necessidade de aplicação de cálculos simples. Por exemplo,
 em levantamentos topográficos convencionais são medidos em campo,
 entre os pontos de interesse, ângulos e distâncias, que posteriormente
-serão utilizadas para cálculo das suas coordenadas <img class="math" src="../_images/math/0a24941b9b8e3e2b70ae654c6243ada368959777.png" alt="$(x,\,y)$"/>, tendo
+serão utilizadas para cálculo das suas coordenadas <img class="math" src="../_images/math/b70575ef4b03825f56ce8d88d5e1de7af77abbde.svg" alt="$(x,\,y)$"/>, tendo
 como base um plano topográfico local. Para estes cálculos são empregadas
 funções trigonométricas e conhecimentos básicos de geometria analítica.
 Neste capítulo será realizada uma breve revisão de trigonometria e
@@ -93,14 +101,103 @@ de geometria analítica.</p>
 e ângulos de um triângulo. Neste estudo utiliza-se ângulos, em diferentes
 unidades, e funções trigonométricas, sendo que ao longo desta seção
 estes pontos serão relembrados.</p>
-<a class="reference internal image-reference" href="../_images/figuras1.jpg"><img alt="alternate text" class="align-center" src="../_images/figuras1.jpg" style="width: 200.0px; height: 100.0px;" /></a>
-<figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="../_images/figuras1.jpg"><img alt="map to buried treasure" src="../_images/figuras1.jpg" style="width: 563.5px; height: 392.0px;" /></a>
+<p>Duas semirretas, quando não coincidentes e com ponto de origem em comum, ponto este
+dito vértice, tem um plano que as contêm e demarcam duas regiões deste. Os equipamentos topográficos
+medem os ângulos no plano horizontal
+e vertical, onde veremos maiores detalhes no <a class="reference internal" href="capitulo7.html#rst-capitulo-7"><span class="std std-ref">Capitulo 7</span></a>. A noção de ângulo é estabelecida pela medida da abertura entre estas
+semirretas, neste caso, dois ângulos. Do mesmo modo, dois segmentos
+de reta, não sobrepostos, com origem comum, definem dois ângulos,
+se estendermos em duas semirretas a partir da origem dos segmentos.
+Seja a Figura ao lado representando: dois segmentos; o ângulo <img class="math" src="../_images/math/5d19f6790525487d53261aa796e9a420b56a4007.svg" alt="\theta"/>;
+um arco de comprimento <img class="math" src="../_images/math/59a08f79b7a2ff89afd6fec8e4ce3316e6083984.svg" alt="s"/> que está a uma distância <img class="math" src="../_images/math/ab565428e852733ecce45f79f2bce9f46e308d7d.svg" alt="r"/>
+do vértice. Matematicamente <img class="math" src="../_images/math/5d19f6790525487d53261aa796e9a420b56a4007.svg" alt="\theta"/> é:</p>
+<div class="math">
+<p><img src="../_images/math/34a05c394432535c881fccec6a81d91ebbf75a79.svg" alt="\theta=k\frac{s}{r},\label{eq:definicaoangulo}"/></p>
+</div><a class="reference internal image-reference" href="../_images/fig_angulo.png"><img alt="alternate text" class="align-center" src="../_images/fig_angulo.png" style="width: 279.59999999999997px; height: 211.79999999999998px;" /></a>
+<p>sendo <img class="math" src="../_images/math/28513f8930b5f061fdee8f9f5e17afc6edff7c49.svg" alt="k"/> uma constante, que vai depender da unidade angular
+que se está trabalhando: radiano, grau ou grado, conforme será visto
+adiante. A constante <img class="math" src="../_images/math/28513f8930b5f061fdee8f9f5e17afc6edff7c49.svg" alt="k"/> faz com que a medida do ângulo seja independentemente
+do comprimento do arco <img class="math" src="../_images/math/59a08f79b7a2ff89afd6fec8e4ce3316e6083984.svg" alt="s"/> ou da posição <img class="math" src="../_images/math/ab565428e852733ecce45f79f2bce9f46e308d7d.svg" alt="r"/> em que o arco esteja
+iniciando.</p>
+<section id="angulo-em-grau-grado-e-radiano">
+<h3>Ângulo em grau, grado e radiano<a class="headerlink" href="#angulo-em-grau-grado-e-radiano" title="Link permanente para este título"></a></h3>
+<p>Vimos que ângulo e uma medida da abertura entre dois segmentos de
+reta com origem comum ou de duas semirretas também com origem comum.
+Nota-se que deve-se definir qual é o segmento ou semi-reta que terá
+o início da contagem da medida e qual o sentido a ser percorrido,
+se horário ou anti-horário. As unidades angulares serão apresentadas
+sobre um círculo, tendo como início a contagem o segmento que coincide
+com o eixo-<img class="math" src="../_images/math/e0731fefacaa118be6d1ecdaa4092d32716e8790.svg" alt="x"/> e o sentido sendo anti-horário. Esta contagem é a
+mesma que é utilizada para cálculos das funções trigonométricas. Na
+Figura~ref{fig:anguloradgraugrado} são apresentados alguns ângulos,
+nas unidades de grau, radiano e grado.</p>
+<figure class="align-default" id="id10">
+<a class="reference internal image-reference" href="../_images/fig_ang_grau_rad_grado.png"><img alt="map to buried treasure" src="../_images/fig_ang_grau_rad_grado.png" style="width: 659.0px; height: 445.5px;" /></a>
 <figcaption>
-<p><span class="caption-text">This is the caption of the figure (a simple paragraph).</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Ângulo de grau, radiano e grado sobre o círculo.</span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<p>alexandre cancel If <img class="math" src="../_images/math/c9a1971b938ace545a14c391b2e434dd0d164597.png" alt="\sigma_{1}"/> equals <img class="math" src="../_images/math/d6c09a14eafbf52e73e96153b82e7c3cbcd8e749.png" alt="\sigma_{2}"/> é etc, etc.</p>
+</section>
+<section id="grau">
+<h3>Grau<a class="headerlink" href="#grau" title="Link permanente para este título"></a></h3>
+<p>A unidade de grauindex{Ângulo!grau} é aquela onde um círculo é dividido
+em <img class="math" src="../_images/math/04ac4a7d7f38a5af2d1cbff878cd984f55e677ab.svg" alt="360"/> partes iguais e cada parte corresponde a um grau, sendo utilizado
+como símbolo para o grau <img class="math" src="../_images/math/550f89717bbd0317044d3415def29a4038b6dc53.svg" alt="(^\circ)"/> devendo o mesmo ser aplicado
+após o número. Sobre o círculo no eixo-<img class="math" src="../_images/math/e0731fefacaa118be6d1ecdaa4092d32716e8790.svg" alt="x"/> positivo o ângulo é <img class="math" src="../_images/math/889379e64bb7f34f47c781835817f3fc6badf709.svg" alt="0^\circ"/>
+ou <img class="math" src="../_images/math/aed2656a0f0b77e1d0ef2d3e2bca336605bbfa11.svg" alt="360^\circ"/>, aumentando no sentido anti-horário até que sobre
+o eixo-<img class="math" src="../_images/math/cf201e3b2032836e993fcc5c900ccb0b23c211d7.svg" alt="y"/> positivo o ângulo é de <img class="math" src="../_images/math/e65582255218beb00e30330f33f86453a49881a3.svg" alt="90^\circ"/>, e assim sucessivamente.</p>
+<p>Podem-se considerar ângulos negativos. O significado é simples, por exemplo,
+o ângulo <img class="math" src="../_images/math/db99a8395723974d4dc7625b5b4c2128a4fc1c09.svg" alt="-56^\circ"/> corresponde ao ângulo <img class="math" src="../_images/math/f65a916b0685848181cc4518ce0e5d4439a2b97c.svg" alt="304^\circ"/> (Figura
+abaixo), no entanto não se escreve <img class="math" src="../_images/math/4683ba8865877cceaa5d9c236a4ed8650ac75576.svg" alt="-56^\circ=304^\circ"/>. Ou
+seja, <img class="math" src="../_images/math/db99a8395723974d4dc7625b5b4c2128a4fc1c09.svg" alt="-56^\circ"/> e <img class="math" src="../_images/math/f65a916b0685848181cc4518ce0e5d4439a2b97c.svg" alt="304^\circ"/> estão na mesma posição sobre
+o círculo, e se forem aplicadas funções trigonométricas a estes valores,
+os resultados serão os mesmo. De forma similar, pode-se ter valores
+angulares superiores a <img class="math" src="../_images/math/aed2656a0f0b77e1d0ef2d3e2bca336605bbfa11.svg" alt="360^\circ"/>. Por exemplo <img class="math" src="../_images/math/99592a0d97200ea5127c4920084ba45f109d186d.svg" alt="380^\circ"/>,
+significa que já foi dada uma volta completa no círculo, mais <img class="math" src="../_images/math/3a8aa46e4c563f40141b2274f0ec2cbc0e0d4648.svg" alt="20^\circ"/>,
+dessa forma <img class="math" src="../_images/math/99592a0d97200ea5127c4920084ba45f109d186d.svg" alt="380^\circ"/> corresponde a <img class="math" src="../_images/math/3a8aa46e4c563f40141b2274f0ec2cbc0e0d4648.svg" alt="20^\circ"/> graus e aqui
+também não se escreve <img class="math" src="../_images/math/bd3767a93de46639d975a834c5e1e79b951fa8b4.svg" alt="380^\circ=20^\circ"/>.</p>
+<figure class="align-default" id="id11">
+<a class="reference internal image-reference" href="../_images/fig_ang_neg_pos.png"><img alt="map to buried treasure" src="../_images/fig_ang_neg_pos.png" style="width: 235.0px; height: 235.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Ângulo negativo e positivo.</span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>semirretas</p>
+<figure class="align-default" id="id12">
+<a class="reference internal image-reference" href="../_images/figuras1.jpg"><img alt="map to buried treasure" src="../_images/figuras1.jpg" style="width: 563.5px; height: 392.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">This is the caption of the figure (a simple paragraph).</span><a class="headerlink" href="#id12" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>See <span id="id1">Nelson [<a class="reference internal" href="#id7" title="Edward Nelson. Radically Elementary Probability Theory. Princeton University Press, 1987.">Nel87</a>]</span> for an introduction to non-standard analysis.
+Non-standard analysis is fun <span id="id2">[<a class="reference internal" href="#id7" title="Edward Nelson. Radically Elementary Probability Theory. Princeton University Press, 1987.">Nel87</a>]</span>. asd <span id="id3">[<a class="reference internal" href="#id8" title="James Stewart. Calculus. Brooks/Cole, Pacific Grove, CA, 4 edition, 1999.">Ste99</a>]</span></p>
+<p>eu <span id="id4">[<a class="reference internal" href="#id9" title="J. A. Comastri and J. G. Junior. Topografia aplicada. Editora UFV, Viçosa, MG, 1 edition, 2004.">CJ04</a>]</span> aqui uma</p>
+<section id="overview">
+<span id="rst-overview"></span><h4>Overview<a class="headerlink" href="#overview" title="Link permanente para este título"></a></h4>
+<p>RST Overview content</p>
+</section>
+<section id="sphinx-overview">
+<span id="id5"></span><h4>Overview<a class="headerlink" href="#sphinx-overview" title="Link permanente para este título"></a></h4>
+<p>This is a link to the RST Overview: <a class="reference internal" href="#rst-overview"><span class="std std-ref">Overview</span></a></p>
+<p>This is a link to the Sphinx Overview: <a class="reference internal" href="#sphinx-overview"><span class="std std-ref">Overview</span></a></p>
+<p>This is a link to the Sphinx Overview: <a class="reference internal" href="#rst-capitulo-1"><span class="std std-ref">Capitulo 1</span></a></p>
+<p>This is a link to the Sphinx Overview: <a class="reference internal" href="capitulo7.html#rst-capitulo-7"><span class="std std-ref">Capitulo 7</span></a></p>
+<p>Sphinx Overview content</p>
+<p id="id6"><dl class="citation">
+<dt class="label" id="id9"><span class="brackets"><a class="fn-backref" href="#id4">CJ04</a></span></dt>
+<dd><p>J. A. Comastri and J. G. Junior. <em>Topografia aplicada</em>. Editora UFV, Viçosa, MG, 1 edition, 2004.</p>
+</dd>
+<dt class="label" id="id7"><span class="brackets">Nel87</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>)</span></dt>
+<dd><p>Edward Nelson. <em>Radically Elementary Probability Theory</em>. Princeton University Press, 1987.</p>
+</dd>
+<dt class="label" id="id8"><span class="brackets"><a class="fn-backref" href="#id3">Ste99</a></span></dt>
+<dd><p>James Stewart. <em>Calculus</em>. Brooks/Cole, Pacific Grove, CA, 4 edition, 1999.</p>
+</dd>
+</dl>
+</p>
+<p>alexandre cancel If <img class="math" src="../_images/math/4746482e15eda82cd66e4b231b365ac255a4bca1.svg" alt="\sigma_{1}"/> equals <img class="math" src="../_images/math/42748bdafd58706228d7794cc42d3207c04926e5.svg" alt="\sigma_{2}"/> é etc, etc.</p>
+</section>
+</section>
 </section>
 </section>
 
