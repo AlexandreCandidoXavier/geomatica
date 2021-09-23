@@ -28,7 +28,7 @@ estes pontos serão relembrados.
 Duas semirretas, quando não coincidentes e com ponto de origem em comum, ponto este
 dito vértice, tem um plano que as contêm e demarcam duas regiões deste. Os equipamentos topográficos
 medem os ângulos no plano horizontal
-e vertical, onde veremos maiores detalhes no :any:`RST Capitulo 7`. A noção de ângulo é estabelecida pela medida da abertura entre estas
+e vertical, onde veremos maiores detalhes no :any:`RST Capitulo7`. A noção de ângulo é estabelecida pela medida da abertura entre estas
 semirretas, neste caso, dois ângulos. Do mesmo modo, dois segmentos
 de reta, não sobrepostos, com origem comum, definem dois ângulos,
 se estendermos em duas semirretas a partir da origem dos segmentos.
@@ -61,8 +61,10 @@ se horário ou anti-horário. As unidades angulares serão apresentadas
 sobre um círculo, tendo como início a contagem o segmento que coincide
 com o eixo-:math:`x` e o sentido sendo anti-horário. Esta contagem é a
 mesma que é utilizada para cálculos das funções trigonométricas. Na
-Figura~\ref{fig:anguloradgraugrado} são apresentados alguns ângulos,
+Figura :numref:`anguloradgraugrado` são apresentados alguns ângulos,
 nas unidades de grau, radiano e grado.
+
+.. _anguloradgraugrado:
 
 .. figure:: /images/capitulo1/fig_ang_grau_rad_grado.png
    :scale: 30 %
@@ -124,86 +126,5 @@ se for o caso. A conversão de ângulos em graus sexagesimais para decimais
 transformados em graus, como apresentado no \ref{exemplosex}.
 
 
-
-
-.. stuffcounter:stuff::
-  :caption: A stuff *with* a caption.
-
-  The :ref:`next stuff <that>` does not have a caption.
-
-.. stuffcounter:stuff::
-
-  This stuff does not have a caption
-  (althouth :numref:`this` has one).
-
-hjkhkjh
-jlkjkl
-
-.. stuffcounter:stuff::
-
-  This stuff does not have a caption
-  (althouth :numref:`this` has one).
-
-
-#. This is the first item of the list
-    jshdjshj
-
-    .. figure:: /images/capitulo1/fig_ang_grau_sexag.png
-       :scale: 35 %
-       :alt: map to buried treasure
-       :align: center
-
-#. This is the second one
-    sjdhjshdjh
-
-   * The second item has a nested list with two items
-   * this is the last item of the nested list
-
-#. The parent list continues with its third item
-
-
-
-
-
-
-semirretas
-
-.. figure:: /images/capitulo1/figuras1.jpg
-   :scale: 50 %
-   :alt: map to buried treasure
-
-   This is the caption of the figure (a simple paragraph).
-
-See :cite:t:`1987:nelson` for an introduction to non-standard analysis.
-Non-standard analysis is fun :cite:p:`1987:nelson`. asd :cite:p:`Stewart`
-
-eu :cite:p:`comastri2` aqui uma
-
-
-.. _RST Overview:
-
-Overview
-**********
-
-RST Overview content
-
-
-.. _Sphinx Overview:
-
-Overview
-*********
-
-This is a link to the RST Overview: :ref:`RST Overview`
-
-This is a link to the Sphinx Overview: :ref:`Sphinx Overview`
-
-This is a link to the Sphinx Overview: :ref:`RST Capitulo 1`
-
-This is a link to the Sphinx Overview: :any:`RST Capitulo 7`
-
-Sphinx Overview content
-
 .. bibliography::
-
-alexandre cancel If :math:`\sigma_{1}` equals :math:`\sigma_{2}` é etc, etc.
 

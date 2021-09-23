@@ -35,7 +35,8 @@ release = '0.1'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx.ext.todo', 'sphinx.ext.imgmath', 'sphinx.ext.mathjax', 'sphinxcontrib.bibtex', 'sphinxcontrib.stuffcounter'
+# 'sphinxcontrib.stuffcounter'
+extensions = ['sphinx.ext.todo', 'sphinx.ext.imgmath', 'sphinx.ext.mathjax', 'sphinxcontrib.bibtex'
 ]
 # imgmath_image_format = 'png'
 # imgmath_dvipng_args = ['-gamma', '1.5', '-D', '400', '-bg', 'Transparent']

@@ -7,7 +7,6 @@
   <title>Capitulo 1 &mdash; Documentação Livro de Geomática 0.1</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/stuff.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -45,11 +44,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#matematica-fundamental">Matemática fundamental</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#nocoes-basicas-de-trigonometria">Noções básicas de trigonometria</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#angulo-em-grau-grado-e-radiano">Ângulo em grau, grado e radiano</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#grau">Grau</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#overview">Overview</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sphinx-overview">Overview</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="#grau">Grau</a></li>
 </ul>
 </li>
 </ul>
@@ -105,7 +100,7 @@ estes pontos serão relembrados.</p>
 <p>Duas semirretas, quando não coincidentes e com ponto de origem em comum, ponto este
 dito vértice, tem um plano que as contêm e demarcam duas regiões deste. Os equipamentos topográficos
 medem os ângulos no plano horizontal
-e vertical, onde veremos maiores detalhes no <a class="reference internal" href="capitulo7.html#rst-capitulo-7"><span class="std std-ref">Capitulo 7</span></a>. A noção de ângulo é estabelecida pela medida da abertura entre estas
+e vertical, onde veremos maiores detalhes no <a class="reference internal" href="capitulo7.html#rst-capitulo7"><span class="std std-ref">Capitulo 7</span></a>. A noção de ângulo é estabelecida pela medida da abertura entre estas
 semirretas, neste caso, dois ângulos. Do mesmo modo, dois segmentos
 de reta, não sobrepostos, com origem comum, definem dois ângulos,
 se estendermos em duas semirretas a partir da origem dos segmentos.
@@ -130,13 +125,13 @@ se horário ou anti-horário. As unidades angulares serão apresentadas
 sobre um círculo, tendo como início a contagem o segmento que coincide
 com o eixo-<img class="math" src="../_images/math/e0731fefacaa118be6d1ecdaa4092d32716e8790.svg" alt="x"/> e o sentido sendo anti-horário. Esta contagem é a
 mesma que é utilizada para cálculos das funções trigonométricas. Na
-Figura~ref{fig:anguloradgraugrado} são apresentados alguns ângulos,
+Figura <a class="reference internal" href="#anguloradgraugrado"><span class="std std-numref">Figura 1.</span></a> são apresentados alguns ângulos,
 nas unidades de grau, radiano e grado.</p>
-<figure class="align-center" id="id10">
-<a class="reference internal image-reference" href="../_images/fig_ang_grau_rad_grado.png"><img alt="map to buried treasure" src="../_images/fig_ang_grau_rad_grado.png" style="width: 395.4px; height: 267.3px;" /></a>
-<div class="stuff-caption">
-<span class="caption-number">Figura 1. </span> — <span class="caption-text">
-Ângulo de grau, radiano e grado sobre o círculo.</span></div></figcaption>
+<figure class="align-center" id="id5">
+<span id="anguloradgraugrado"></span><a class="reference internal image-reference" href="../_images/fig_ang_grau_rad_grado.png"><img alt="map to buried treasure" src="../_images/fig_ang_grau_rad_grado.png" style="width: 395.4px; height: 267.3px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 1. </span><span class="caption-text">Ângulo de grau, radiano e grado sobre o círculo.</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
 </figure>
 </section>
 <section id="grau">
@@ -157,11 +152,11 @@ angulares superiores a <img class="math" src="../_images/math/aed2656a0f0b77e1d0
 significa que já foi dada uma volta completa no círculo, mais <img class="math" src="../_images/math/3a8aa46e4c563f40141b2274f0ec2cbc0e0d4648.svg" alt="20^\circ"/>,
 dessa forma <img class="math" src="../_images/math/99592a0d97200ea5127c4920084ba45f109d186d.svg" alt="380^\circ"/> corresponde a <img class="math" src="../_images/math/3a8aa46e4c563f40141b2274f0ec2cbc0e0d4648.svg" alt="20^\circ"/> graus e aqui
 também não se escreve <img class="math" src="../_images/math/bd3767a93de46639d975a834c5e1e79b951fa8b4.svg" alt="380^\circ=20^\circ"/>.</p>
-<figure class="align-center" id="id11">
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../_images/fig_ang_neg_pos.png"><img alt="map to buried treasure" src="../_images/fig_ang_neg_pos.png" style="width: 164.5px; height: 164.5px;" /></a>
-<div class="stuff-caption">
-<span class="caption-number">Figura 2. </span> — <span class="caption-text">
-Ângulo negativo e positivo.</span></div></figcaption>
+<figcaption>
+<p><span class="caption-number">Figura 2. </span><span class="caption-text">Ângulo negativo e positivo.</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+</figcaption>
 </figure>
 <p><strong>Grau sistema sexagesimal e decimal</strong></p>
 <p>Os ângulos em graus podem estar nas formas sexagesimal ou decimal. A forma sexagesimal
@@ -173,89 +168,17 @@ e segundos: <img class="math" src="../_images/math/31b45de70ad366dad1a3a15915daf
 Na notação sexagesimal, os minutos variam de <img class="math" src="../_images/math/db0795796d4ee37b918d0a5e68449d84fe9e16c4.svg" alt="0'"/> a <img class="math" src="../_images/math/38842af6a265a8ae7fcd30b009dc49c4847187f7.svg" alt="60'"/>, e os
 segundos de <img class="math" src="../_images/math/3dae4bb1abed76b9d91609f9bd210aa7ccacf478.svg" alt="0''"/> a <img class="math" src="../_images/math/2ecb3d8d352f55221761add9986918d586335344.svg" alt="60''"/> . A única parte que admite decimal é
 a dos segundos.</p>
-<figure class="align-center" id="id12">
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../_images/fig_ang_grau_sexag.png"><img alt="map to buried treasure" src="../_images/fig_ang_grau_sexag.png" style="width: 226.1px; height: 162.04999999999998px;" /></a>
-<div class="stuff-caption">
-<span class="caption-number">Figura 3. </span> — <span class="caption-text">
-Ângulos na forma sexagesimal.</span></div></figcaption>
+<figcaption>
+<p><span class="caption-number">Figura 3. </span><span class="caption-text">Ângulos na forma sexagesimal.</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+</figcaption>
 </figure>
 <p>Os ângulos em graus decimal são apresentados em graus com sua decimal,
 se for o caso. A conversão de ângulos em graus sexagesimais para decimais
 é simples, basta somar ao valor dos graus, aos minutos e aos segundos
 transformados em graus, como apresentado no ref{exemplosex}.</p>
-<div class="stuff" id="id13">
-<div class="stuff-caption">
-<span class="caption-number">Stuff 1 </span> — <span class="caption-text">
-A stuff <em>with</em> a caption.</span></div><div class="stuff-content">
-<p>The <span class="xref std std-ref">next stuff</span> does not have a caption.</p>
-</div></div><div class="stuff" id="id14">
-<div class="stuff-caption">
-<span class="caption-number">Stuff 2 </span></div><div class="stuff-content">
-<p>This stuff does not have a caption
-(althouth <code class="xref std std-numref docutils literal notranslate"><span class="pre">this</span></code> has one).</p>
-</div></div><p>hjkhkjh
-jlkjkl</p>
-<div class="stuff" id="id15">
-<div class="stuff-caption">
-<span class="caption-number">Stuff 3 </span></div><div class="stuff-content">
-<p>This stuff does not have a caption
-(althouth <code class="xref std std-numref docutils literal notranslate"><span class="pre">this</span></code> has one).</p>
-</div></div><ol class="arabic">
-<li><dl>
-<dt>This is the first item of the list</dt><dd><p>jshdjshj</p>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../_images/fig_ang_grau_sexag.png"><img alt="map to buried treasure" src="../_images/fig_ang_grau_sexag.png" style="width: 226.1px; height: 162.04999999999998px;" /></a>
-</figure>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>This is the second one</dt><dd><p>sjdhjshdjh</p>
-</dd>
-</dl>
-<ul class="simple">
-<li><p>The second item has a nested list with two items</p></li>
-<li><p>this is the last item of the nested list</p></li>
-</ul>
-</li>
-<li><p>The parent list continues with its third item</p></li>
-</ol>
-<p>semirretas</p>
-<figure class="align-default" id="id16">
-<a class="reference internal image-reference" href="../_images/figuras1.jpg"><img alt="map to buried treasure" src="../_images/figuras1.jpg" style="width: 563.5px; height: 392.0px;" /></a>
-<div class="stuff-caption">
-<span class="caption-number">Figura 4. </span> — <span class="caption-text">
-This is the caption of the figure (a simple paragraph).</span></div></figcaption>
-</figure>
-<p>See <span id="id1">Nelson [<a class="reference internal" href="#id7" title="Edward Nelson. Radically Elementary Probability Theory. Princeton University Press, 1987.">Nel87</a>]</span> for an introduction to non-standard analysis.
-Non-standard analysis is fun <span id="id2">[<a class="reference internal" href="#id7" title="Edward Nelson. Radically Elementary Probability Theory. Princeton University Press, 1987.">Nel87</a>]</span>. asd <span id="id3">[<a class="reference internal" href="#id8" title="James Stewart. Calculus. Brooks/Cole, Pacific Grove, CA, 4 edition, 1999.">Ste99</a>]</span></p>
-<p>eu <span id="id4">[<a class="reference internal" href="#id9" title="J. A. Comastri and J. G. Junior. Topografia aplicada. Editora UFV, Viçosa, MG, 1 edition, 2004.">CJ04</a>]</span> aqui uma</p>
-<section id="overview">
-<span id="rst-overview"></span><h4>Overview<a class="headerlink" href="#overview" title="Link permanente para este título"></a></h4>
-<p>RST Overview content</p>
-</section>
-<section id="sphinx-overview">
-<span id="id5"></span><h4>Overview<a class="headerlink" href="#sphinx-overview" title="Link permanente para este título"></a></h4>
-<p>This is a link to the RST Overview: <a class="reference internal" href="#rst-overview"><span class="std std-ref">Overview</span></a></p>
-<p>This is a link to the Sphinx Overview: <a class="reference internal" href="#sphinx-overview"><span class="std std-ref">Overview</span></a></p>
-<p>This is a link to the Sphinx Overview: <a class="reference internal" href="#rst-capitulo-1"><span class="std std-ref">Capitulo 1</span></a></p>
-<p>This is a link to the Sphinx Overview: <a class="reference internal" href="capitulo7.html#rst-capitulo-7"><span class="std std-ref">Capitulo 7</span></a></p>
-<p>Sphinx Overview content</p>
-<p id="id6"><dl class="citation">
-<dt class="label" id="id9"><span class="brackets"><a class="fn-backref" href="#id4">CJ04</a></span></dt>
-<dd><p>J. A. Comastri and J. G. Junior. <em>Topografia aplicada</em>. Editora UFV, Viçosa, MG, 1 edition, 2004.</p>
-</dd>
-<dt class="label" id="id7"><span class="brackets">Nel87</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>)</span></dt>
-<dd><p>Edward Nelson. <em>Radically Elementary Probability Theory</em>. Princeton University Press, 1987.</p>
-</dd>
-<dt class="label" id="id8"><span class="brackets"><a class="fn-backref" href="#id3">Ste99</a></span></dt>
-<dd><p>James Stewart. <em>Calculus</em>. Brooks/Cole, Pacific Grove, CA, 4 edition, 1999.</p>
-</dd>
-</dl>
-</p>
-<p>alexandre cancel If <img class="math" src="../_images/math/4746482e15eda82cd66e4b231b365ac255a4bca1.svg" alt="\sigma_{1}"/> equals <img class="math" src="../_images/math/42748bdafd58706228d7794cc42d3207c04926e5.svg" alt="\sigma_{2}"/> é etc, etc.</p>
-</section>
-</section>
+<span class="target" id="id1"></span></section>
 </section>
 </section>
 

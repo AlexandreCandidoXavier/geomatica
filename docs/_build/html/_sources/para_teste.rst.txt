@@ -1,0 +1,80 @@
+
+... _my-section:
+
+My Section
+----------
+
+Lorem ipsum blablabla
+
+See :any:`my-section` for the details
+
+.. _this:
+
+.. stuffcounter:stuff::
+   :caption: A stuff *with* a caption
+
+   The :ref:`next stuff <that>` does not have a caption.
+
+.. _that:
+
+.. stuffcounter:stuff::
+
+   This stuff does not have a caption
+   (althouth :numref:`this` has one).
+
+
+#. This is the first item of the list
+    jshdjshj
+
+    .. figure:: /images/capitulo1/fig_ang_grau_sexag.png
+       :scale: 35 %
+       :alt: map to buried treasure
+       :align: center
+
+#. This is the second one
+    sjdhjshdjh
+
+   * The second item has a nested list with two items
+   * this is the last item of the nested list
+
+#. The parent list continues with its third item
+
+semirretas
+
+.. figure:: /images/capitulo1/figuras1.jpg
+   :scale: 50 %
+   :alt: map to buried treasure
+
+   This is the caption of the figure (a simple paragraph).
+
+See :cite:t:`1987:nelson` for an introduction to non-standard analysis.
+Non-standard analysis is fun :cite:p:`1987:nelson`. asd :cite:p:`Stewart`
+
+eu :cite:p:`comastri2` aqui uma
+
+
+.. _RST Overview:
+
+Overview
+**********
+
+RST Overview content
+
+
+.. _Sphinx Overview:
+
+lkjkljlll
+*********
+
+This is a link to the RST Overview: :ref:`RST Overview`
+
+This is a link to the Sphinx Overview: :ref:`Sphinx Overview`
+
+This is a link to the Sphinx Overview: :ref:`RST Capitulo 1`
+
+
+Sphinx Overview content
+
+
+alexandre cancel If :math:`\sigma_{1}` equals :math:`\sigma_{2}` é etc, etc.
+

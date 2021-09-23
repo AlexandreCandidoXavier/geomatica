@@ -14,7 +14,6 @@ Livro de Geomática
    pages/capitulo2
    pages/capitulo7
 
-
 índices and tables
 ==================
 
