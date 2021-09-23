@@ -40,7 +40,7 @@ do vértice. Matematicamente :math:`\theta` é:
 
 
 .. image:: /images/capitulo1/fig_angulo.png
-   :scale: 60 %
+   :scale: 40 %
    :alt: alternate text
    :align: center
 
@@ -65,8 +65,9 @@ Figura~\ref{fig:anguloradgraugrado} são apresentados alguns ângulos,
 nas unidades de grau, radiano e grado.
 
 .. figure:: /images/capitulo1/fig_ang_grau_rad_grado.png
-   :scale: 50 %
+   :scale: 30 %
    :alt: map to buried treasure
+   :align: center
 
    Ângulo de grau, radiano e grado sobre o círculo.
 
@@ -92,10 +93,75 @@ dessa forma :math:`380^\circ` corresponde a :math:`20^\circ` graus e aqui
 também não se escreve :math:`380^\circ=20^\circ`.
 
 .. figure:: /images/capitulo1/fig_ang_neg_pos.png
-   :scale: 50 %
+   :scale: 35 %
    :alt: map to buried treasure
+   :align: center
 
    Ângulo negativo e positivo.
+
+**Grau sistema sexagesimal e decimal**
+
+Os ângulos em graus podem estar nas formas sexagesimal ou decimal. A forma sexagesimal
+é aquela em que o ângulo é apresentado em: *i*) **graus**,
+sem sua fração; *ii*) subdivisão do graus, **minutos**
+:math:`(')`; *iii*) e subdivisão dos minutos, **segundos**
+:math:`($''$)`. Podem-se citar as seguintes relações entre graus, minutos
+e segundos: :math:`1^\circ=60'`; :math:`1'=60''`; e logo, :math:`1^\circ=3\,600''`.
+Na notação sexagesimal, os minutos variam de :math:`0'` a :math:`60'`, e os
+segundos de :math:`0''` a :math:`60''` . A única parte que admite decimal é
+a dos segundos.
+
+.. figure:: /images/capitulo1/fig_ang_grau_sexag.png
+   :scale: 35 %
+   :alt: map to buried treasure
+   :align: center
+
+   Ângulos na forma sexagesimal.
+
+Os ângulos em graus decimal são apresentados em graus com sua decimal,
+se for o caso. A conversão de ângulos em graus sexagesimais para decimais
+é simples, basta somar ao valor dos graus, aos minutos e aos segundos
+transformados em graus, como apresentado no \ref{exemplosex}.
+
+
+
+
+.. stuffcounter:stuff::
+  :caption: A stuff *with* a caption.
+
+  The :ref:`next stuff <that>` does not have a caption.
+
+.. stuffcounter:stuff::
+
+  This stuff does not have a caption
+  (althouth :numref:`this` has one).
+
+hjkhkjh
+jlkjkl
+
+.. stuffcounter:stuff::
+
+  This stuff does not have a caption
+  (althouth :numref:`this` has one).
+
+
+#. This is the first item of the list
+    jshdjshj
+
+    .. figure:: /images/capitulo1/fig_ang_grau_sexag.png
+       :scale: 35 %
+       :alt: map to buried treasure
+       :align: center
+
+#. This is the second one
+    sjdhjshdjh
+
+   * The second item has a nested list with two items
+   * this is the last item of the nested list
+
+#. The parent list continues with its third item
+
+
 
 
 

@@ -16,6 +16,11 @@
 
 
 # -- Project information -----------------------------------------------------
+import os
+import sys
+
+
+sys.path.insert(0, os.path.abspath(".."))
 
 project = 'Livro de Geomática'
 copyright = '2021, Alexandre C Xavier'
@@ -30,7 +35,7 @@ release = '0.1'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx.ext.todo', 'sphinx.ext.imgmath', 'sphinx.ext.mathjax', 'sphinxcontrib.bibtex'
+extensions = ['sphinx.ext.todo', 'sphinx.ext.imgmath', 'sphinx.ext.mathjax', 'sphinxcontrib.bibtex', 'sphinxcontrib.stuffcounter'
 ]
 # imgmath_image_format = 'png'
 # imgmath_dvipng_args = ['-gamma', '1.5', '-D', '400', '-bg', 'Transparent']
@@ -69,3 +74,10 @@ html_static_path = ['_static']
 
 # references
 bibtex_bibfiles = ['refs.bib']
+
+# numerando figuras
+numfig = True
+numfig_format = {
+    'figure': 'Figura %s.'
+    }
+numfig_secnum_depth = 1
