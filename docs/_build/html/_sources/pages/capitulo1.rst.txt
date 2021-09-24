@@ -1,8 +1,20 @@
 .. raw:: html
 
-    <style> .blue {color:blue; font-weight: bold} </style>
+    <style> .exem {color:blue; font-weight: bold} </style>
+
+.. role:: exem
+
+.. raw:: html
+
+    <style> .blue {color:blue} </style>
 
 .. role:: blue
+
+.. raw:: html
+
+    <style> .degree2sex {border:2px; border-style:solid;  border-radius: 5px; border-color:gray; padding: .1em;} </style>
+
+.. role:: degree2sex
 
 .. _RST Capitulo 1:
 
@@ -113,7 +125,7 @@ Os ângulos em graus podem estar nas formas sexagesimal ou decimal. A forma sexa
 é aquela em que o ângulo é apresentado em: *i*) **graus**,
 sem sua fração; *ii*) subdivisão do graus, **minutos**
 :math:`(')`; *iii*) e subdivisão dos minutos, **segundos**
-:math:`($''$)`. Podem-se citar as seguintes relações entre graus, minutos
+:math:`('')`. Podem-se citar as seguintes relações entre graus, minutos
 e segundos: :math:`1^\circ=60'`; :math:`1'=60''`; e logo, :math:`1^\circ=3\,600''`.
 Na notação sexagesimal, os minutos variam de :math:`0'` a :math:`60'`, e os
 segundos de :math:`0''` a :math:`60''` . A única parte que admite decimal é
@@ -133,18 +145,29 @@ transformados em graus, como apresentado no `Exemplo 1`_.
 
 .. _exemplo 1:
 
-:blue:`Exemplo 1` Converta o ângulo sexagesimal :math:`116^\circ33$'$54,18''` para grau decimal.
+:exem:`Exemplo 1` Converta o ângulo sexagesimal :math:`116^\circ33'54,18''` para grau decimal.
 
-Sabendo-se que :math:`1^\circ=60'$ e $1^\circ=3\,600''`, temos:
+Sabendo-se que :math:`1^\circ=60'` e :math:`1^\circ=3\,600''`, temos:
 
 .. math::
 
    116^\circ33'54,18'' &=116^\circ+\left(\frac{33'}{60'}\right)^\circ+\left(\frac{54,18''}{3\,600''}\right)^\circ\\
                        &=116,5650511^\circ.
 
+Por outro lado, para converter um ângulo na forma grau decimal para
+sexagesimal observamos, primeiramente, que a parte inteira corresponde
+aos graus. Em seguida multiplica-se por :math:`60` a parte decimal do ângulo
+e a nova parte inteira do resultado serão os minutos. Agora, multiplica-se
+por :math:`60` a última parte decimal encontrada para obter os segundos, inclusive
+com a parte decimal, se for o caso. Um exemplo desta conversão é apresentada
+no `Exemplo 2`_. A transformação de ângulos decimais
+para sexagesimais e vice-versa é realizada automaticamente, pela maioria
+das calculadoras científicas, por meio da tecla :degree2sex:`° \' ”` ,
+e o auxílio da tecla :degree2sex:`shift`.
 
+.. _exemplo 2:
 
-:blue:`test - this text should be red` kjdfk
+:exem:`Exemplo 2` Transforme o ângulo decimal do `Exemplo 1`_ para o sistema sexagesimal.\
 
 .. bibliography::
 

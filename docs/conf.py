@@ -36,13 +36,13 @@ release = '0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 # 'sphinxcontrib.stuffcounter'
-extensions = ['sphinx.ext.todo', 'sphinx.ext.imgmath', 'sphinx.ext.mathjax', 'sphinxcontrib.bibtex'
+extensions = ['sphinx.ext.todo', 'sphinx.ext.mathjax', 'sphinxcontrib.bibtex'
 ]
 # imgmath_image_format = 'png'
 # imgmath_dvipng_args = ['-gamma', '1.5', '-D', '400', '-bg', 'Transparent']
 
-imgmath_image_format = 'svg'
-imgmath_font_size = 14
+# imgmath_image_format = 'svg'
+# imgmath_font_size = 14
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
