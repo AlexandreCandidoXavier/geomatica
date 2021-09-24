@@ -2,8 +2,3 @@
 
 Capitulo 7
 **********
-
-.. _UnidadesMetricas:
-
-Ângulos
--------

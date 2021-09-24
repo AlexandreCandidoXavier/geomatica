@@ -1,3 +1,9 @@
+.. raw:: html
+
+    <style> .blue {color:blue; font-weight: bold} </style>
+
+.. role:: blue
+
 .. _RST Capitulo 1:
 
 Capitulo 1
@@ -61,7 +67,7 @@ se horário ou anti-horário. As unidades angulares serão apresentadas
 sobre um círculo, tendo como início a contagem o segmento que coincide
 com o eixo-:math:`x` e o sentido sendo anti-horário. Esta contagem é a
 mesma que é utilizada para cálculos das funções trigonométricas. Na
-Figura :numref:`anguloradgraugrado` são apresentados alguns ângulos,
+:numref:`anguloradgraugrado` são apresentados alguns ângulos,
 nas unidades de grau, radiano e grado.
 
 .. _anguloradgraugrado:
@@ -76,7 +82,7 @@ nas unidades de grau, radiano e grado.
 Grau
 ^^^^
 
-A unidade de grau\index{Ângulo!grau} é aquela onde um círculo é dividido
+A unidade de grau é aquela onde um círculo é dividido
 em :math:`360` partes iguais e cada parte corresponde a um grau, sendo utilizado
 como símbolo para o grau :math:`(^\circ)` devendo o mesmo ser aplicado
 após o número. Sobre o círculo no eixo-:math:`x` positivo o ângulo é :math:`0^\circ`
@@ -123,8 +129,22 @@ a dos segundos.
 Os ângulos em graus decimal são apresentados em graus com sua decimal,
 se for o caso. A conversão de ângulos em graus sexagesimais para decimais
 é simples, basta somar ao valor dos graus, aos minutos e aos segundos
-transformados em graus, como apresentado no \ref{exemplosex}.
+transformados em graus, como apresentado no `Exemplo 1`_.
 
+.. _exemplo 1:
+
+:blue:`Exemplo 1` Converta o ângulo sexagesimal :math:`116^\circ33$'$54,18''` para grau decimal.
+
+Sabendo-se que :math:`1^\circ=60'$ e $1^\circ=3\,600''`, temos:
+
+.. math::
+
+   116^\circ33'54,18'' &=116^\circ+\left(\frac{33'}{60'}\right)^\circ+\left(\frac{54,18''}{3\,600''}\right)^\circ\\
+                       &=116,5650511^\circ.
+
+
+
+:blue:`test - this text should be red` kjdfk
 
 .. bibliography::
 

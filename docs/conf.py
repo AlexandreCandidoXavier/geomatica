@@ -79,6 +79,6 @@ bibtex_bibfiles = ['refs.bib']
 # numerando figuras
 numfig = True
 numfig_format = {
-    'figure': 'Figura %s.'
+    'figure': 'Figura %s'
     }
 numfig_secnum_depth = 1
