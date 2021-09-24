@@ -42,7 +42,7 @@ extensions = ['sphinx.ext.todo', 'sphinx.ext.mathjax', 'sphinxcontrib.bibtex'
 # imgmath_dvipng_args = ['-gamma', '1.5', '-D', '400', '-bg', 'Transparent']
 
 # imgmath_image_format = 'svg'
-# imgmath_font_size = 14
+# imgmath_font_size = 10
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

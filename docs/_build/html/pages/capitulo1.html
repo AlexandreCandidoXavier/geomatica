@@ -44,8 +44,14 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Capitulo 1</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#matematica-fundamental">Matemática fundamental</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#nocoes-basicas-de-trigonometria">Noções básicas de trigonometria</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#angulo-em-grau-grado-e-radiano">Ângulo em grau, grado e radiano</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#grau">Grau</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#angulo-em-grau-grado-e-radiano">Ângulo em grau, grado e radiano</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#grau">Grau</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#radianos">Radianos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#grados">Grados</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#observacoes-sobre-angulos-goniometros-calculadora-e-a-constante-k-equacao-definicaoangulo">Observações sobre ângulos: goniômetros; calculadora e a constante <span class="math notranslate nohighlight">\(k\)</span> (Equação <code class="xref eq docutils literal notranslate"><span class="pre">definicaoangulo</span></code>)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#funcoes-trigonometricas">Funções trigonométricas</a></li>
 </ul>
 </li>
 </ul>
@@ -78,7 +84,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <style> .exem {color:blue; font-weight: bold} </style><style> .blue {color:blue} </style><style> .degree2sex {border:2px; border-style:solid;  border-radius: 5px; border-color:gray; padding: .1em;} </style><section id="capitulo-1">
+  <style> .exem {color:blue; font-weight: bold} </style><style> .solucao {font-weight: bold} </style><style> .blue {color:blue} </style><style> .degree2sex {border:2px; border-style:solid;  border-radius: 5px; border-color:gray; padding: .1em;} </style><section id="capitulo-1">
 <span id="rst-capitulo-1"></span><h1>Capitulo 1<a class="headerlink" href="#capitulo-1" title="Link permanente para este título"></a></h1>
 <section id="matematica-fundamental">
 <h2>Matemática fundamental<a class="headerlink" href="#matematica-fundamental" title="Link permanente para este título"></a></h2>
@@ -86,7 +92,7 @@
 haverá a necessidade de aplicação de cálculos simples. Por exemplo,
 em levantamentos topográficos convencionais são medidos em campo,
 entre os pontos de interesse, ângulos e distâncias, que posteriormente
-serão utilizadas para cálculo das suas coordenadas <span class="math notranslate nohighlight">\($(x,\,y)$\)</span>, tendo
+serão utilizadas para cálculo das suas coordenadas <span class="math notranslate nohighlight">\((x,\,y)\)</span>, tendo
 como base um plano topográfico local. Para estes cálculos são empregadas
 funções trigonométricas e conhecimentos básicos de geometria analítica.
 Neste capítulo será realizada uma breve revisão de trigonometria e
@@ -108,8 +114,8 @@ se estendermos em duas semirretas a partir da origem dos segmentos.
 Seja a Figura ao lado representando: dois segmentos; o ângulo <span class="math notranslate nohighlight">\(\theta\)</span>;
 um arco de comprimento <span class="math notranslate nohighlight">\(s\)</span> que está a uma distância <span class="math notranslate nohighlight">\(r\)</span>
 do vértice. Matematicamente <span class="math notranslate nohighlight">\(\theta\)</span> é:</p>
-<div class="math notranslate nohighlight">
-\[\theta=k\frac{s}{r},\label{eq:definicaoangulo}\]</div>
+<div class="math notranslate nohighlight" id="equation-definicaoangulo">
+<span class="eqno">(1)<a class="headerlink" href="#equation-definicaoangulo" title="Permalink to this equation"></a></span>\[\theta=k\frac{s}{r},\]</div>
 <a class="reference internal image-reference" href="../_images/fig_angulo.png"><img alt="alternate text" class="align-center" src="../_images/fig_angulo.png" style="width: 186.4px; height: 141.20000000000002px;" /></a>
 <p>sendo <span class="math notranslate nohighlight">\(k\)</span> uma constante, que vai depender da unidade angular
 que se está trabalhando: radiano, grau ou grado, conforme será visto
@@ -134,9 +140,8 @@ nas unidades de grau, radiano e grado.</p>
 <p><span class="caption-number">Figura 1 </span><span class="caption-text">Ângulo de grau, radiano e grado sobre o círculo.</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-</section>
 <section id="grau">
-<h3>Grau<a class="headerlink" href="#grau" title="Link permanente para este título"></a></h3>
+<h4>Grau<a class="headerlink" href="#grau" title="Link permanente para este título"></a></h4>
 <p>A unidade de grau é aquela onde um círculo é dividido
 em <span class="math notranslate nohighlight">\(360\)</span> partes iguais e cada parte corresponde a um grau, sendo utilizado
 como símbolo para o grau <span class="math notranslate nohighlight">\((^\circ)\)</span> devendo o mesmo ser aplicado
@@ -179,11 +184,16 @@ a dos segundos.</p>
 se for o caso. A conversão de ângulos em graus sexagesimais para decimais
 é simples, basta somar ao valor dos graus, aos minutos e aos segundos
 transformados em graus, como apresentado no <a class="reference internal" href="#exemplo-1">Exemplo 1</a>.</p>
-<p id="exemplo-1"><span class="exem">Exemplo 1</span> Converta o ângulo sexagesimal <span class="math notranslate nohighlight">\(116^\circ33'54,18''\)</span> para grau decimal.</p>
-<p>Sabendo-se que <span class="math notranslate nohighlight">\(1^\circ=60'\)</span> e <span class="math notranslate nohighlight">\(1^\circ=3\,600''\)</span>, temos:</p>
+<hr class="docutils" />
+<div class="line-block" id="exemplo-1">
+<div class="line"><span class="exem">Exemplo 1</span> Converta o ângulo sexagesimal <span class="math notranslate nohighlight">\(116^\circ33'54,18''\)</span> para grau decimal.</div>
+<div class="line"><span class="solucao">Solucao:</span></div>
+<div class="line">Sabendo-se que <span class="math notranslate nohighlight">\(1^\circ=60'\)</span> e <span class="math notranslate nohighlight">\(1^\circ=3\,600''\)</span>, temos:</div>
+</div>
 <div class="math notranslate nohighlight">
 \[\begin{split}116^\circ33'54,18'' &amp;=116^\circ+\left(\frac{33'}{60'}\right)^\circ+\left(\frac{54,18''}{3\,600''}\right)^\circ\\
                     &amp;=116,5650511^\circ.\end{split}\]</div>
+<hr class="docutils" />
 <p>Por outro lado, para converter um ângulo na forma grau decimal para
 sexagesimal observamos, primeiramente, que a parte inteira corresponde
 aos graus. Em seguida multiplica-se por <span class="math notranslate nohighlight">\(60\)</span> a parte decimal do ângulo
@@ -194,7 +204,128 @@ no <a class="reference internal" href="#exemplo-2">Exemplo 2</a>. A transformaç
 para sexagesimais e vice-versa é realizada automaticamente, pela maioria
 das calculadoras científicas, por meio da tecla <span class="degree2sex">° ' ”</span> ,
 e o auxílio da tecla <span class="degree2sex">shift</span>.</p>
-<p id="exemplo-2"><span class="exem">Exemplo 2</span> Transforme o ângulo decimal do <a class="reference internal" href="#exemplo-1">Exemplo 1</a> para o sistema sexagesimal.</p>
+<hr class="docutils" />
+<div class="line-block" id="exemplo-2">
+<div class="line"><span class="exem">Exemplo 2</span> Transforme o ângulo decimal do <a class="reference internal" href="#exemplo-1">Exemplo 1</a> para o sistema sexagesimal.</div>
+<div class="line"><span class="solucao">Solucao:</span></div>
+<div class="line">O ângulo é <span class="math notranslate nohighlight">\(116,5650511^\circ\)</span>, logo <span class="math notranslate nohighlight">\(116^\circ\)</span>. A decimal <span class="math notranslate nohighlight">\(0,5650511^\circ\)</span> em minutos:</div>
+</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\text{minutos} &amp; =0,5650511\cdot60'\\
+               &amp; =33,903\\  &amp; =33'.\end{split}\]</div>
+<p>Agora decimal dos minutos, <span class="math notranslate nohighlight">\(0,903'\)</span>, em graus:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\text{segundos} &amp; =0,903\cdot60''\\
+                &amp; =54,18''.\end{split}\]</div>
+<p>Desta forma, temos o ângulo na forma sexagesimal, <span class="math notranslate nohighlight">\(116^\circ33'54,18''\)</span>.</p>
+</section>
+<hr class="docutils" />
+<section id="radianos">
+<h4>Radianos<a class="headerlink" href="#radianos" title="Link permanente para este título"></a></h4>
+<p>Os ângulos em radianos são abreviados por <em>rad</em>,
+sendo que <span class="math notranslate nohighlight">\(1\,\mathrm{rad}\)</span> corresponde ao ângulo que subentende o comprimento
+do arco, <span class="math notranslate nohighlight">\(s\)</span>, de comprimento igual ao raio, <span class="math notranslate nohighlight">\(r\)</span>, como mostrado na
+Figura ao lado. Uma volta total em um circunferência corresponde a
+<span class="math notranslate nohighlight">\(2\pi\,\mathrm{rad}\)</span>. O valor de <span class="math notranslate nohighlight">\(\pi\)</span> é definido como a razão entre o perímetro
+de uma circunferência e o seu diâmetro, sendo <span class="math notranslate nohighlight">\(\approx3,1415927\)</span>.
+Para os nossos cálculos, deve-se utilizar o valor de <span class="math notranslate nohighlight">\(\pi\)</span> dado pela
+calculadora ou planilha eletrônica. A unidade angular de radianos
+é a utilizada para cálculos de funções trigonométricas na maior parte
+dos programas e linguagens computacionais, como por exemplo a
+<a class="reference external" href="http://office.microsoft.com/pt-br/">planilha Excel</a>,  <a class="reference external" href="https://www.google.com/intl/pt-BR/sheets/about/">planilha
+do Google</a>,
+<a class="reference external" href="http://www.open-std.org/">C++</a> , <a class="reference external" href="http://www.java.com/pt_BR/">Java</a>,
+<a class="reference external" href="http://www.python.org/">Python</a>, <a class="reference external" href="http://www.mathworks.com/">Matlab</a>
+etc.</p>
+</section>
+<section id="grados">
+<h4>Grados<a class="headerlink" href="#grados" title="Link permanente para este título"></a></h4>
+<p>O ângulo em grado tem como símbolo <em>g</em>, e é colocado após o valor
+da medida. Nesta unidade o círculo é dividido em 400 partes iguais
+e cada uma equivale a um grado, sendo aceito a decimal de grado. É
+uma unidade utilizada por alguns países europeus, como por exemplo
+Portugal.</p>
+<p>A conversão entre unidades angulares é bastante simples. Por exemplo,
+se considerar apenas meio círculo, têm-se: <span class="math notranslate nohighlight">\(\pi\text{ rad}=180^\circ=200^{\text{g}}\)</span>.</p>
+<div class="line-block">
+<div class="line"><span class="exem">Exemplo 3</span> Quanto vale <span class="math notranslate nohighlight">\(116^\circ33'54,18''\)</span> em radiano e grado?</div>
+<div class="line"><span class="solucao">Solucao:</span></div>
+<div class="line">Primeiramente, este ângulo deve ser transformado para grau decimal, o que foi realizado no</div>
+<div class="line"><a class="reference internal" href="#exemplo-1">exemplo 1</a>. Por meio da relação entre as unidades de graus e radianos, mostradas acima,</div>
+<div class="line">tem-se, para transformá-lo em radianos <span class="math notranslate nohighlight">\((x_{\text{rad}})\)</span>:</div>
+</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\frac{x_{\text{rad}}}{116,5650511^\circ} &amp; =\frac{\pi}{180^\circ}\\
+x_{\text{rad}} &amp; =\frac{116,5650511^\circ\cdot\pi}{180^\circ}\\
+x_{\text{rad}} &amp; =2,0344\text{~rad}\end{split}\]</div>
+<p>Aplica-se agora a relação entre grau e grado para encontrar o valor angular em
+grado <span class="math notranslate nohighlight">\((x_{\text{grado}})\)</span>, como:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\frac{x_{\text{grado}}}{116,5650511^\circ} &amp; =\frac{200^{\text{g}}}{180^\circ}\\
+x_{\text{grado}} &amp; =\frac{116,5650511^\circ\cdot200^\text{g}}{180^\circ}\\
+x_{\text{grado}} &amp; =129,5167^{\text{g}}.\end{split}\]</div>
+</section>
+<section id="observacoes-sobre-angulos-goniometros-calculadora-e-a-constante-k-equacao-definicaoangulo">
+<h4>Observações sobre ângulos: goniômetros; calculadora e a constante <span class="math notranslate nohighlight">\(k\)</span> (Equação <a class="reference internal" href="#equation-definicaoangulo">(1)</a>)<a class="headerlink" href="#observacoes-sobre-angulos-goniometros-calculadora-e-a-constante-k-equacao-definicaoangulo" title="Link permanente para este título"></a></h4>
+<p>Os instrumentos que medem ângulos são chamados goniômetros. Um transferidor
+é um goniômetro, assim como equipamentos topográficos que os possuem,
+como o teodolito e a estação total. É por meio destes equipamentos
+que são realizadas a medidas de ângulos entre pontos de interesse.
+Geralmente, estes equipamentos apresentam os ângulos na unidade de
+graus e no sistema sexagesimal. Para trabalhar com estes dados em
+planilhas eletrônicas, estes devem ser transformados para grau decimal,
+e posteriormente para a unidade de radianos, pois é nesta unidade
+que a maioria dos programas computacionais trabalham com as funções
+trigonométricas.</p>
+<p>Deve-se prestar atenção quanto ao uso de ângulos em calculadora científica.
+Geralmente ela pode trabalhar nas três unidades angulares apresentadas,
+bastando ajustá-la para a unidade que é requerida nos cálculos. A
+unidade de ângulo que a calculadora está configurada pode ser visualizada
+na tela da mesma, onde as letras: “D”, Abreviação de graus em inglês, <em>degree</em>,
+“R” e “G”, identificam que a calculadora está trabalhando,
+respectivamente, em grau, radiano e grado. Para modificar a unidade
+de grau da calculadora, deve-se consultar manual e seguir procedimento
+indicado.</p>
+<p>Encerrando este assunto, vamos observar mais uma vez a Equação <a class="reference internal" href="#equation-definicaoangulo">(1)</a>.
+Agora podemos facilmente calcular o valor da constante <span class="math notranslate nohighlight">\(k\)</span>. Para
+a unidade de radianos temos para <span class="math notranslate nohighlight">\(\theta=1\text{ rad}\)</span>, o comprimento
+do arco <span class="math notranslate nohighlight">\((s)\)</span> é igual ao raio <span class="math notranslate nohighlight">\((r)\)</span>, desta forma <span class="math notranslate nohighlight">\(k=1\text{ rad}\)</span>.
+Caso a unidade seja de graus, sabe-se que para <span class="math notranslate nohighlight">\(\theta=180^\circ\)</span>,
+em um arco de raio <span class="math notranslate nohighlight">\(r\)</span>, teremos um comprimento de arco, <span class="math notranslate nohighlight">\(s=\pi\cdot r\)</span>,
+desta forma, substituindo na Equação <a class="reference internal" href="#equation-definicaoangulo">(1)</a>, temos
+<span class="math notranslate nohighlight">\(k=\frac{180^\circ}{\pi}\)</span>. Utilizando o mesmo raciocínio acima
+você pode encontrar o valor de <span class="math notranslate nohighlight">\(k\)</span> para ângulo na unidade grado.</p>
+</section>
+</section>
+<section id="funcoes-trigonometricas">
+<h3>Funções trigonométricas<a class="headerlink" href="#funcoes-trigonometricas" title="Link permanente para este título"></a></h3>
+<p>Para definir as funções trigonométricas de ângulos agudos <span class="math notranslate nohighlight">\((\theta&lt;90^\circ)\)</span>,
+serão utilizadas razões entre os lados de um triângulo retângulo,
+conforme a Figura abaixo. Neste triângulo, o maior lado, oposto ao
+ângulo reto <span class="math notranslate nohighlight">\((90^\circ)\)</span>, é denominado de <strong>hipotenusa</strong>;
+o cateto que contem o ângulo medido é denominado de <strong>cateto adjacente</strong>;
+e o outro cateto é o <strong>cateto oposto</strong>. As funções
+trigonométricas são, o seno <span class="math notranslate nohighlight">\((\sin)\)</span>, o cosseno <span class="math notranslate nohighlight">\((\cos)\)</span>, a tangente
+<span class="math notranslate nohighlight">\((\tan)\)</span>, a cotangente <span class="math notranslate nohighlight">\((\cot)\)</span>, a secante <span class="math notranslate nohighlight">\((\sec)\)</span> e a cossecante
+<span class="math notranslate nohighlight">\((\csc)\)</span>, sendo apresentadas nas Equações  <a class="reference internal" href="#equation-eqseno">(2)</a> a <a class="reference internal" href="#equation-eqcsc">(7)</a></p>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="../_images/fig_trian_retangulo.png"><img alt="fig_trian_retangulo" src="../_images/fig_trian_retangulo.png" style="width: 262.15px; height: 183.04999999999998px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 4 </span><span class="caption-text">Triângulo retângulo e seus lados.</span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<div class="math notranslate nohighlight" id="equation-eqseno">
+<span class="eqno">(2)<a class="headerlink" href="#equation-eqseno" title="Permalink to this equation"></a></span>\[\sin\theta=\left(\frac{\text{cateto oposto}}{\text{hipotenusa}}\right)\]</div>
+<div class="math notranslate nohighlight" id="equation-eqcos">
+<span class="eqno">(3)<a class="headerlink" href="#equation-eqcos" title="Permalink to this equation"></a></span>\[\begin{split}\cos\theta=\left(\frac{\text{cateto adjacente}}{\text{hipotenusa}}\right)\\\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-eqtan">
+<span class="eqno">(4)<a class="headerlink" href="#equation-eqtan" title="Permalink to this equation"></a></span>\[\begin{split}\tan\theta=\left(\frac{\text{cateto oposto}}{\text{cateto adjacente}}\right)\\\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-eqcot">
+<span class="eqno">(5)<a class="headerlink" href="#equation-eqcot" title="Permalink to this equation"></a></span>\[\begin{split}\cot\theta=\left(\frac{\text{cateto adjacente}}{\text{cateto oposto}}\right)\\\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-eqsec">
+<span class="eqno">(6)<a class="headerlink" href="#equation-eqsec" title="Permalink to this equation"></a></span>\[\begin{split}\sec\theta=\left(\frac{\text{hipotenusa}}{\text{cateto adjacente}}\right)\\\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-eqcsc">
+<span class="eqno">(7)<a class="headerlink" href="#equation-eqcsc" title="Permalink to this equation"></a></span>\[\csc\theta=\left(\frac{\text{hipotenusa}}{\text{cateto oposto}}\right)\]</div>
 <span class="target" id="id1"></span></section>
 </section>
 </section>
