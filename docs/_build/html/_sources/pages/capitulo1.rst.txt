@@ -154,7 +154,7 @@ transformados em graus, como apresentado no `Exemplo 1`_.
 .. _exemplo 1:
 
 | :exem:`Exemplo 1` Converta o ângulo sexagesimal :math:`116^\circ33'54,18''` para grau decimal.
-| :solucao:`Solucao:`
+| :solucao:`Solução:`
 | Sabendo-se que :math:`1^\circ=60'` e :math:`1^\circ=3\,600''`, temos:
 
 .. math::
@@ -180,7 +180,7 @@ e o auxílio da tecla :degree2sex:`shift`.
 .. _exemplo 2:
 
 | :exem:`Exemplo 2` Transforme o ângulo decimal do `Exemplo 1`_ para o sistema sexagesimal.
-| :solucao:`Solucao:`
+| :solucao:`Solução:`
 | O ângulo é :math:`116,5650511^\circ`, logo :math:`116^\circ`. A decimal :math:`0,5650511^\circ` em minutos:
 
 .. math::
@@ -230,9 +230,10 @@ Portugal.
 A conversão entre unidades angulares é bastante simples. Por exemplo,
 se considerar apenas meio círculo, têm-se: :math:`\pi\text{ rad}=180^\circ=200^{\text{g}}`.
 
+----
 
 | :exem:`Exemplo 3` Quanto vale :math:`116^\circ33'54,18''` em radiano e grado?
-| :solucao:`Solucao:`
+| :solucao:`Solução:`
 | Primeiramente, este ângulo deve ser transformado para grau decimal, o que foi realizado no
 | `exemplo 1`_. Por meio da relação entre as unidades de graus e radianos, mostradas acima,
 | tem-se, para transformá-lo em radianos :math:`(x_{\text{rad}})`:
@@ -251,6 +252,8 @@ grado :math:`(x_{\text{grado}})`, como:
    \frac{x_{\text{grado}}}{116,5650511^\circ} & =\frac{200^{\text{g}}}{180^\circ}\\
    x_{\text{grado}} & =\frac{116,5650511^\circ\cdot200^\text{g}}{180^\circ}\\
    x_{\text{grado}} & =129,5167^{\text{g}}.
+
+----
 
 Observações sobre ângulos: goniômetros; calculadora e a constante :math:`k` (Equação :eq:`definicaoangulo`)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -323,6 +326,156 @@ trigonométricas são, o seno :math:`(\sin)`, o cosseno :math:`(\cos)`, a tangen
 
 .. math:: \csc\theta=\left(\frac{\text{hipotenusa}}{\text{cateto oposto}}\right)
    :label: eqcsc
+
+Uma vez conhecidos os lados de um triângulo retângulo, é possível
+por meio das funções trigonométricas inversas encontrar um determinado
+ângulo desejado. Cita-se abaixo as funções inversas: arco seno :math:`(\arcsin`
+ou :math:`\sin^{-1})`; arco cosseno :math:`(\arccos` ou :math:`\cos^{-1})` e arco
+tangente :math:`(\arctan` ou :math:`\tan^{-1})`. Em calculadoras eletrônicas
+e planilhas, os valores das funções inversas estão restritas à diferentes
+domínios, para maiores detalhes ver :cite:authors:`Stewart`.
+
+.. math:: \theta=\arcsin\left(\frac{\text{cateto oposto}}{\text{hipotenusa}}\right)\\
+
+.. math:: \theta=\arccos\left(\frac{\text{cateto adjacente}}{\text{hipotenusa}}\right)\\
+
+.. math:: \theta=\arctan\left(\frac{\text{cateto oposto}}{\text{cateto adjacente}}\right)
+
+----
+
+| :exem:`Exemplo 4` Para o triângulo retângulo da Figura abaixo, determinar :math:`\theta`, :math:`\alpha`, e o seno, o cosseno e a tangente destes ângulos?
+
+.. figure:: /images/capitulo1/fig_trian_retangulo_exemplo.png
+   :scale: 35 %
+   :alt: fig_trian_retangulo_exemplo
+   :align: center
+
+| :solucao:`Solução:`
+| A hipotenusa vale :math:`6,4` m. Para o ângulo :math:`\theta`, o lado de :math:`5:math:` m é o seu cateto oposto. Desta forma, pode-se utilizar a função arco seno para determinar :math:`\theta`:
+
+.. math::
+
+   \theta & =\arcsin\left(\frac{\text{cateto oposto}}{\text{hipotenusa}}\right)\\
+   & =\arcsin\left(\frac{5}{6,4}\right)\\  & =51,3752{}^\circ.
+
+| Para calcular :math:`\alpha`, sabe-se que a soma dos ângulos internos de um triângulo é :math:`180^\circ`, logo :math:`\alpha=180^\circ-(51,3752^\circ+90^\circ)=38,6248^\circ`. As funções trigonométricas para :math:`\theta` e :math:`\alpha`:
+
+.. math::
+
+   \sin\theta & =0,7813; & \cos\theta & =0,6242; & \tan\theta & =1,2515\\
+   \sin\alpha & =0,6242; &\, \cos\alpha & =0,7813; &\, \tan\alpha & =0,7990
+
+----
+
+:exem:`Exemplo 5` Com o objetivo de se estimar o raio da terra :math:`(R)`, um topógrafo subiu em uma montanha de
+:math:`5` km de altura, tendo vista para o oceano. Com o auxílio dos seus equipamentos, mediu-se o ângulo formado entre
+a linha horizontal que passa pelo equipamento e a reta tangente a superfície do oceano no ponto :math:`H`,
+obtendo :math:`2,26^\circ`. Por meio destas informações, determinar o raio aproximado da terra :math:`(R)`.
+
+
+.. figure:: /images/capitulo1/fig_raio_terra_exemplo.png
+   :scale: 35 %
+   :alt: fig_raio_terra_exemplo
+   :align: center
+
+:solucao:`Solução:`
+A visada :math:`AH` é tangente à terra em :math:`H`. :math:`AH` é perpendicular à :math:`OH`, logo em :math:`H`, o ângulo
+é reto :math:`(90^\circ)` para o triângulo :math:`AOH`. O lado deste triângulo oposto a :math:`H` :math:`(R\mathrm{+5\:km})`
+é a hipotenusa. Percebe-se também que, o ângulo entre a linha do horizonte que passa em :math:`A` e a linha :math:`AO` é
+de :math:`90^\circ`, então o ângulo :math:`\theta` é de :math:`87,74^\circ` :math:`(90^\circ-2,26^\circ)`. Considerando
+:math:`\sin\theta` temos:\\
+
+.. math::
+   \sin\theta & =\frac{R}{R+5}\\
+   R & =(R+5)\sin87,74\\
+   R-R\sin87,74 & =5\cdot\sin87,74\\
+   R & =\frac{5\cdot\sin87,74}{1-\sin87,74}\\
+   R & =6\,423,1\mathrm{\,km.}
+
+----
+
+Para as definições das funções trigonométricas em função apenas de um ânguloqualquer, utiliza-se a figura de um círculo
+unitário no plano cartesiano, ou seja, de raio 1 conforme :numref:`figcirculounitario`. Os valores de :math:`\cos\theta`
+e :math:`\sin\theta` correspondem a projeção do raio com o ângulo :math:`\theta` nos eixos :math:`x` e :math:`y`, respectivamente. Logo os seus
+valores variam entre :math:`-1` e :math:`1`, sendo que os seus sinais mudam conforme o quadrante. Maiores detalhes podem ser
+encontrados em livros de cálculo.
+
+.. _figcirculounitario:
+
+.. figure:: /images/capitulo1/fig_circulo_unitario.png
+   :scale: 55 %
+   :alt: fig_circulo_unitario
+   :align: center
+
+   Círculo unitário e os sinais por quadrante das funções :math:`\sin`, :math:`\cos` e :math:`\tan`.
+
+**Lei dos senos**
+
+Agora, considere um triângulo de lados :math:`a`, :math:`b` e :math:`c`, com os ângulos opostos a estes lados, respectivamente,
+:math:`\widehat{A}`, :math:`\widehat{B}` e :math:`\widehat{C}`. A lei dos senos apresenta as relações apresentadas
+na Equação :eq:`figleidossenoscosenos`. Um exemplo clássico de aplicação da lei dos senos aplicada à topografia é
+apresentado no Exemplo~\ref{ex:pontoinacessivel}.
+
+.. figure:: /images/capitulo1/fig_leidossenoscosenos.png
+   :scale: 35 %
+   :alt: fig_leidossenoscosenos
+   :align: center
+
+.. math:: \frac{a}{\sin\widehat{A}}=\frac{b}{\sin\widehat{B}}=\frac{c}{\sin\widehat{C}}.
+   :label: figleidossenoscosenos
+
+----
+
+:exem:`Exemplo 5` Considere o esquema apresentado na Figura a seguir. Um levantamento topográfico foi realizado do lado
+esquerdo do rio, e não se tem acesso ao lado direito, onde encontra-se o ponto P. Todavia deseja-se obter a distância AP.
+Para tanto, mediu-se: com uma trena, a distância de A ao ponto B, resultando em :math:`50` m; por meio de um teodolito
+estacionado em A, visando-se sucessivamente P e B, o ângulo :math:`\alpha=37^\circ51'`; e por fim, também com o teodolito,
+agora estacionado em B, visando-se A e P, o ângulo :math:`\beta=75^\circ47'`. Por meio destas medidas, calcule a distância AP.
+
+.. figure:: /images/capitulo1/fig_exemp_lei_senos.png
+   :scale: 35 %
+   :alt: fig_exemp_lei_senos
+   :align: center
+
+:solucao:`Solução:`
+A lei dos senos pode ser utilizada para determinar a distância do ponto inacessível P. Como dois ângulos do triângulo
+foram medidos, pode-se calcular o outro, ao qual denominaremos de :math:`\gamma`, sendo:
+
+.. math::
+
+   \gamma & =180-\left(\alpha+\beta\right)\\
+   & =180-\left(37^\circ51'+75^\circ47'\right)\\
+   & =66^\circ22'
+
+Uma vez que conhecemos o lado AB=50~m, o seu ângulo oposto, :math:`\gamma=66^\circ22'`, e o ângulo
+:math:`\alpha=75^\circ47'`, oposto ao lado que queremos determinar, AP, pode-se aplicar a lei dos senos, como segue abaixo:
+
+.. math::
+
+   \frac{\text{AB}}{\sin\gamma} & =\frac{\text{AP}}{\sin\beta}\\
+   \frac{50\,\text{m}}{\sin66^\circ22'} & =\frac{AP}{\sin75^\circ47'}\\
+   \text{AP} & =\frac{50\,\text{m}\cdot\sin75^\circ47'}{\sin66^\circ22'}\\
+   \text{AP} & =52,906~\text{m}.
+
+----
+
+**Lei dos cossenos**
+
+A outra lei trigonométrica que vamos apresentar é a dos cossenos. Ela relaciona os lados do triângulo com um ângulo interno
+interno segundo as Equações :eq:`eqleicos1`-:eq:`eqleicos2`. Pode-se utilizar estas Equações para marcação de ângulos em campo,
+como será apresentado no Exemplo~\ref{ex:marcacaodeangulo}.
+
+
+.. math:: a^{2}=b^{2}+c^{2}-2bc\cos\widehat{A} \,\,\,\text{então:}\,\, \widehat{A}=\arccos\left(\frac{a^{2}-\left(b^{2}+c^{2}\right)}{-2bc}\right)
+   :label: eqleicos1
+
+.. math:: b^{2}=a^{2}+c^{2}-2ac\cos\widehat{B} \,\,\,\text{então:}\,\, \widehat{B} =\arccos\left(\frac{b^{2}-\left(a^{2}+c^{2}\right)}{-2ac}\right)
+
+.. math:: c^{2}=a^{2}+b^{2}-2ab\cos\widehat{C} \,\,\,\text{então:}\,\, \widehat{C} =\arccos\left(\frac{c^{2}-\left(a^{2}+b^{2}\right)}{-2ab}\right)
+   :label: eqleicos2
+
+
+**Referências**
 
 .. bibliography::
 
