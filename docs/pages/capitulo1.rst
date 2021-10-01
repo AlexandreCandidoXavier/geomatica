@@ -153,9 +153,9 @@ transformados em graus, como apresentado no `Exemplo 1`_.
 
 .. _exemplo 1:
 
-| :exem:`Exemplo 1` Converta o ângulo sexagesimal :math:`116^\circ33'54,18''` para grau decimal.
-| :solucao:`Solução:`
-| Sabendo-se que :math:`1^\circ=60'` e :math:`1^\circ=3\,600''`, temos:
+:exem:`Exemplo 1` Converta o ângulo sexagesimal :math:`116^\circ33'54,18''` para grau decimal.
+:solucao:`Solução:`
+Sabendo-se que :math:`1^\circ=60'` e :math:`1^\circ=3\,600''`, temos:
 
 .. math::
 
@@ -179,9 +179,9 @@ e o auxílio da tecla :degree2sex:`shift`.
 
 .. _exemplo 2:
 
-| :exem:`Exemplo 2` Transforme o ângulo decimal do `Exemplo 1`_ para o sistema sexagesimal.
-| :solucao:`Solução:`
-| O ângulo é :math:`116,5650511^\circ`, logo :math:`116^\circ`. A decimal :math:`0,5650511^\circ` em minutos:
+:exem:`Exemplo 2` Transforme o ângulo decimal do `Exemplo 1`_ para o sistema sexagesimal.
+:solucao:`Solução:`
+O ângulo é :math:`116,5650511^\circ`, logo :math:`116^\circ`. A decimal :math:`0,5650511^\circ` em minutos:
 
 .. math::
 
@@ -232,11 +232,11 @@ se considerar apenas meio círculo, têm-se: :math:`\pi\text{ rad}=180^\circ=200
 
 ----
 
-| :exem:`Exemplo 3` Quanto vale :math:`116^\circ33'54,18''` em radiano e grado?
-| :solucao:`Solução:`
-| Primeiramente, este ângulo deve ser transformado para grau decimal, o que foi realizado no
-| `exemplo 1`_. Por meio da relação entre as unidades de graus e radianos, mostradas acima,
-| tem-se, para transformá-lo em radianos :math:`(x_{\text{rad}})`:
+:exem:`Exemplo 3` Quanto vale :math:`116^\circ33'54,18''` em radiano e grado?
+solucao:`Solução:`
+Primeiramente, este ângulo deve ser transformado para grau decimal, o que foi realizado no
+`exemplo 1`_. Por meio da relação entre as unidades de graus e radianos, mostradas acima,
+tem-se, para transformá-lo em radianos :math:`(x_{\text{rad}})`:
 
 .. math::
 
