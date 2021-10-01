@@ -426,7 +426,7 @@ apresentado no Exemplo~\ref{ex:pontoinacessivel}.
 
 ----
 
-:exem:`Exemplo 5` Considere o esquema apresentado na Figura a seguir. Um levantamento topográfico foi realizado do lado
+:exem:`Exemplo 6` Considere o esquema apresentado na Figura a seguir. Um levantamento topográfico foi realizado do lado
 esquerdo do rio, e não se tem acesso ao lado direito, onde encontra-se o ponto P. Todavia deseja-se obter a distância AP.
 Para tanto, mediu-se: com uma trena, a distância de A ao ponto B, resultando em :math:`50` m; por meio de um teodolito
 estacionado em A, visando-se sucessivamente P e B, o ângulo :math:`\alpha=37^\circ51'`; e por fim, também com o teodolito,
@@ -474,6 +474,153 @@ como será apresentado no Exemplo~\ref{ex:marcacaodeangulo}.
 .. math:: c^{2}=a^{2}+b^{2}-2ab\cos\widehat{C} \,\,\,\text{então:}\,\, \widehat{C} =\arccos\left(\frac{c^{2}-\left(a^{2}+b^{2}\right)}{-2ab}\right)
    :label: eqleicos2
 
+:exem:`Exemplo 7` Considerando que os comprimentos dos lados de um triângulo são: :math:`a=32` m, :math:`b=28` m e
+:math:`c=23` m. Determine os ângulos internos.
+
+:solucao:`Solução:`
+A partir da lei dos cossenos, temos para :math:`\widehat{A}`:
+
+.. math::
+   \cos\widehat{A} & =\left(\frac{a^{2}-\left(b^{2}+c^{2}\right)}{-2bc}\right)\\
+   \widehat{A} & =\arccos\left(\frac{a^{2}-\left(b^{2}+c^{2}\right)}{-2bc}\right)\\
+   \widehat{A} & =\arccos\left(\frac{32^{2}-\left(28^{2}+23^{2}\right)}{-2\cdot28\cdot23}\right)=77,0336^\circ
+
+Para :math:`\widehat{B}`:
+
+.. math::
+   \cos\widehat{B} & =\left(\frac{b^{2}-\left(a^{2}+c^{2}\right)}{-2ac}\right)\\
+   \widehat{B} & =\arccos\left(\frac{b^{2}-\left(a^{2}+c^{2}\right)}{-2ac}\right)\\
+   \widehat{B} & =\arccos\left(\frac{28^{2}-\left(32^{2}+23^{2}\right)}{-2\cdot32\cdot23}\right)=58,5054^\circ
+
+Uma vez que conhecemos dois ângulos internos do triângulo,
+então :math:`\widehat{C}=180-(\widehat{A}+\widehat{B})=44,4610^\circ`.
+
+----
+
+
+Coordenada retangular e polar no plano
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Para a apresentação gráfica de dados bidimensionais, é utilizado o
+plano cartesiano, formado por dois eixos ortogonais entre si, denominados
+de eixo-:math:`x` e eixo-:math:`y`. A posição de pontos neste sistema dar-se-á
+por meio de coordenadas retangulares ou polares.
+
+**Coordenada retangular**
+
+A coordenada retangular de um ponto é dada por sua posição horizontal
+e vertical, coordenada :math:`x` e coordenada :math:`y`, respectivamente. Exemplo
+do plano cartesiano e pontos com suas respectivas }coordenadas
+retangulares são apresentados na :numref:`figcoordretangular`.
+Estas coordenadas podem estar em qualquer unidade de comprimento,
+sendo que em geomática a mais comum é a de metro (m). Logicamente,
+caso a unidade fosse de metro, esta figura estaria reduzida a determinada
+escala (ver Secção \ref{sec:Escala}, página \pageref{sec:Escala}).
+
+.. _figcoordretangular:
+
+.. figure:: /images/capitulo1/fig_coord_retangular.png
+   :scale: 45 %
+   :alt: figcoordretangular
+   :align: center
+
+   Posição de alguns pontos e suas coordenada retangulares.
+
+**Distância Euclidiana**
+
+Caso as coordenadas retangulares de dois pontos quaisquer sejam conhecidas,
+por exemplo, os pontos :math:`1(x_{1},\,y_{1})` e :math:`2(x_{2},\,y_{2})` da
+Figura ao lado, pode-se calcular a distância da linha reta entre eles
+:math:`(d_{\mathrm{12}})`, denominada de distância Euclidiana.
+Pelo teorema de Pitágoras, :math:`d_{\mathrm{12}}`:
+
+
+.. figure:: /images/capitulo1/figDistEuclidiana.png
+   :scale: 35 %
+   :alt: figDistEuclidiana
+   :align: center
+
+.. math::
+   d_{\mathrm{12}}^{2} & =\Delta x^{2}+\Delta y^{2}\\
+   d_{\mathrm{12}} & =\sqrt{\left(x_{2}-x_{1}\right)^{2}+\left(y_{2}-y_{1}\right)^{2}}
+   :label: distanciaeuclidiana
+
+----
+
+:exem:`Exemplo 8` Qual a distância entre os pontos A e C apresentados na :numref:`figcoordretangular`?
+Considere que a unidade é o metro.
+
+:solucao:`Solução:`
+As coordenadas de A e C são :math:`(4,5\,\mathrm{m};\,2,1\,\mathrm{m})` e :math:`(-4,9\,\mathrm{m};\,-3,2\,\mathrm{m})`,
+respectivamente. Aplicando a Equação :eq:`distanciaeuclidiana`:
+
+.. math::
+   d & =\sqrt{\left(x_{\text{A}}-x_{\text{C}}\right)^{2}+\left(y_{\text{A}}-y_{\text{C}}\right)^{2}}\\
+   & =\sqrt{\left(4,5--4,9\right)^{2}+\left(2,1--3,2\right)^{2}}\\
+   & =\sqrt{\left(4,5+4,9\right)^{2}+\left(2,1+3,2\right)^{2}}\\
+   & =10,791\,\text{m}.
+
+
+**Coordenada polar**
+
+A coordenada polar de um ponto é dada pelo seu raio :math:`(r)`, distância entre a origem
+do sistema cartesiano ao ponto, e seu ângulo :math:`(\theta)`, medido a
+partir do eixo-:math:`x` positivo, sentido anti-horário, até raio. Exemplo
+de coordenadas polares para os pontos A e C vistos na :numref:`figcoordretangular`
+podem ser observados na :numref:`figCoordPolar`. Aprenderemos
+posteriormente que em levantamentos topográficos trabalhamos com um
+tipo de coordenada polar, em que o ângulo é denominado de Azimute,
+e o raio o comprimento do alinhamento. Porém o ângulo de Azimute é
+medido a partir do eixo-:math:`y` positivo, e o sentido de contagem angular
+é o horário. Mais detalhes serão vistos posteriormente, no
+:any:`RST Capitulo7`.
+
+.. _figCoordPolar:
+
+.. figure:: /images/capitulo1/figCoordPolar.png
+   :scale: 55 %
+   :alt: _figCoordPolar
+   :align: center
+
+   Coordenadas polares para os pontos A e C da :numref:`figcoordretangular`.
+
+
+**Coordenada polar para retangular**
+
+A transformação de coordenada polar para retangular pode ser deduzida
+a partir da :numref:`figPolar2Retangular`. Considere
+um ponto P, de coordenada polar :math:`(\theta_{\text{P}},\,r_{\text{P}})`.
+Queremos obter sua coordenada retangular :math:`(x_{\text{P}},\,y_{\text{P}})`.
+Pode-se verificar que o cateto oposto e o cateto adjacente ao ângulo
+:math:`\theta_{\text{P}}` correspondem, respectivamente, à coordenada :math:`y_{\text{P}}`
+e :math:`x_{\text{P}}`. Serão aplicadas as funções seno e cossenos ao ângulo
+:math:`\theta`, que tem como hipotenusa :math:`r_{\text{P}}`, o que resultará
+na obtenção da coordenada retangular, como apresentado nas Equações :eq:`eqcoordenadax` e
+:eq:`eqcoordenadax`. Estas equações são aplicadas para pontos localizados em quaisquer
+quadrante.
+
+.. _figPolar2Retangular:
+
+.. figure:: /images/capitulo1/figPolar2Retangular.png
+   :scale: 35 %
+   :alt: figPolar2Retangular
+   :align: center
+
+   Esquema gráfico para conversão entre coordenada polar e retangular.
+
+.. math::
+   \cos\theta_{\text{P}} =\frac{x_{\text{P}}}{r_{\text{P}}}
+
+.. math::
+   x_{\text{P}} =r_{\text{P}}\cos\theta_{\text{P}}
+   :label: eqcoordenadax
+
+.. math::
+   \sin\theta_{\text{P}} =\frac{y_{\text{P}}}{r_{\text{P}}}\\
+
+.. math::
+   y_{\text{P}} =r_{\text{P}}\sin\theta_{\text{P}}
+   :label: eqcoordenaday
 
 **Referências**
 
