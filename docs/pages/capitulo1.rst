@@ -622,6 +622,323 @@ quadrante.
    y_{\text{P}} =r_{\text{P}}\sin\theta_{\text{P}}
    :label: eqcoordenaday
 
+----
+
+:exem:`Exemplo 9` Considere a coordenada polar do ponto C da :numref:`figCoordPolar`.
+Qual a sua coordenada retangular? A unidade de comprimento é o metro.
+
+:solucao:`Solução:`
+A coordenada polar de C é :math:`(213,147^\circ, 5,85)`. Então:
+
+:math:`x_{\mathrm{C}} =r_{\mathrm{C}}\cos\theta_{\mathrm{C}}=5,85\cos 213,147^\circ=-4,9\mathrm{~m}`.
+
+:math:`y_{\mathrm{C}} =r_{\mathrm{C}}\sin\theta_{\mathrm{C}}=5,85\sin 213,147^\circ=-3,2\mathrm{~m}`.
+
+Como era esperado, a coordenada retangular de C é a mesma apresentada na :numref:`figcoordretangular`.
+
+----
+
+**Coordenada retangular para polar**
+
+Agora será apresentada a transformação de coordenada retangular para
+polar. Para tanto utilizaremos mais uma vez o esquema da :numref:`figPolar2Retangular`.
+Só que desta vez, a coordenada retangular de P, :math:`(x_{\text{P}},\,y_{\text{P}})`,
+é que é conhecida. Uma vez que se têm os dois catetos do triângulo
+retângulo, o raio de P, :math:`r_{\text{P}}`, é obtido por meio da Teorema
+de Pitágoras (Equação :eq:`coordenadar`). Já o ângulo :math:`\theta_{\text{P}}`,
+para este quadrante, pode ser obtido por meio da função arco tangente,
+como apresentada na Equação :eq:`coordenadateta`.
+
+A Equação :eq:`coordenadar`
+é valida para pontos em qualquer quadrante. Já a Equação :eq:`coordenadateta`,
+para cálculo de :math:`\theta_{p}`, é valida apenas para o primeiro quadrante,
+sendo que para os demais, pode-se obtê-lo facilmente, como será apresentado
+no Exemplo abaixo.
+
+.. math::
+   r_{\text{P}}=\sqrt{x_{\text{P}}^{2}+y_{\text{P}}^{2}}
+   :label: coordenadar
+
+Se :math:`x_{\mathrm{P}}` não for nulo:
+
+.. math::
+   \tan\theta_{\text{P}} & =\frac{y_{\text{P}}}{x_{\text{P}}}\\
+   \theta_{\text{P}} & =\arctan\left(\frac{y_{\text{P}}}{x_{\text{P}}}\right)
+   :label: coordenadateta
+
+----
+
+:exem:`Exemplo 10` Considere a coordenada retangular do ponto D da :numref:`figcoordretangular`.
+Qual a sua coordenada polar? Considere que a unidade seja de metro.
+
+:solucao:`Solução:`
+A coordenada retangular de D é :math:`(4,9\,\mathrm{m};\,-1,3\,\mathrm{m})`. Ela é novamente
+mostrada na Figura ao abaixo.
+
+.. figure:: /images/capitulo1/figExemReta2Poloar.png
+   :scale: 35 %
+   :alt: figExemReta2Poloar
+   :align: center
+
+Observe que a projeção da coordenada e
+o raio de D, :math:`r_{\text{D}}`, resultam em um triângulo retângulo,
+em que, :math:`4,9` m é o cateto adjacente a :math:`\alpha`, e :math:`1,3` m é o cateto
+oposto, podendo-se calcular :math:`\alpha`:
+
+.. math::
+   \tan\alpha & =\frac{y_{\text{D}}}{x_{\text{D}}}\\
+   \alpha & =\arctan\left(\frac{y_{\text{D}}}{x_{\text{D}}}\right)=\arctan\left(\frac{1,3}{4,9}\right)=14,8586^\circ.
+
+Agora pode-se calcular :math:`\theta_{\mathrm{D}}`, pois, :math:`\theta_{\mathrm{D}}=360^\circ-\alpha=345,1414^\circ`.
+Para se calcular :math:`r_{\text{D}}`, temos:
+
+:math:`r_\text{D}=\sqrt{x_{\text{D}}^{2}+y_{\text{D}}^2}=\sqrt{4,9^2+1,3^2}=5,07\,\text{m}.`
+
+Desta forma, a coordenada polar de D é :math:`(345,1414^\circ;\,5,07\,\mathrm{m})`.
+
+----
+
+Áreas de figuras elementares no plano
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Área de um retângulo**
+
+Sejam os lados de um retângulo, :math:`a` e :math:`b`. A sua área :math:`(A)` é calculada
+pelo produto dos seus lados:
+
+.. math::
+   A=ab.
+
+----
+
+:exem:`Exemplo 11`  Qual a área de um sala retangular, onde os lados medem :math:`5,3` m e :math:`7,9` m.
+
+:solucao:`Solução:`
+
+.. math::
+
+   A & =ab \\
+   & =5,3\cdot7,9 \\
+   & =41,87\,\text{m}^{2}.
+
+----
+
+**Área de triângulo**
+
+A área de um triângulo pode ser calculada de diversas formas, dependendo dos dados disponíveis, se os comprimentos dos
+lados e/ou ângulos internos. Considere o triângulo da Figura ao lado. Caso sejam conhecidas(os)
+
+.. figure:: /images/capitulo1/figAreaDeTriangulo.png
+   :scale: 35 %
+   :alt: figExemReta2Poloar
+   :align: center
+
+- a sua altura :math:`(h)` e a base (nesta Figura o lado :math:`b`), a área será:
+
+.. math::
+   A=\frac{bh}{2}.
+
+----
+
+:exem:`Exemplo 12` Qual aárea de triângulo onde a base mede :math:`15,9` m e a altura :math:`9` m.
+
+:solucao:`Solução:`
+
+.. math::
+   A & =\frac{bh}{2} \\
+   & =\frac{15,9\cdot9}{2} \\
+   & =71,55\,\text{m}^{2}
+
+----
+
+- dois lados, :math:`a` e :math:`b`, e o ângulo formado entre eles, :math:`\alpha`, a área será:
+
+.. math::
+   A=\frac{1}{2}ab\sin\alpha;
+
+----
+
+:exem:`Exemplo 13` Qual a área de triângulo em que dois lados medem :math:`3,1$ m e :math:`6,8` m, e
+o ângulo entre eles é de :math:`34^\circ`.
+
+:solucao:`Solução:`
+
+.. math::
+   A & =\frac{1}{2}ab\sin\alpha \\
+   &=\frac{1}{2}3,1\cdot6,8\sin34^\circ \\
+   &=5,89\,\text{m}^2.
+
+-----
+
+- os comprimentos dos três lados do triângulo, :math:`a,\,b,\,\mathrm{e}\:c`, usa-se a fórmula de Heron, também conhecida como a fórmula do semiperímetro, em que a área é:
+
+.. math::
+   A=\sqrt{p\left(p-a\right)\left(p-b\right)\left(p-c\right)}
+
+em que :math:`p` é semiperímetro:
+
+.. math::
+   p=\frac{a+b+c}{2}.
+
+----
+
+:exem:`Exemplo 14` Qual a área de um triângulo de lados medem :math:`10,3` m, :math:`5,4` m e :math:`6,0` m.
+
+:solucao:`Solução:`
+O semiperímetro:
+
+.. math::
+   p & =\frac{a+b+c}{2} \\
+   &=\frac{10,3+5,4+6,0}{2} \\
+   &=10,85\,\textrm{m}.
+
+A área será:
+
+.. math::
+   A & =\sqrt{p\left(p-a\right)\left(p-b\right)\left(p-c\right)} \\
+   &=\sqrt{10,85\left(10,85-10,3\right)\left(10,85-5,4\right)\left(10,85-6\right)}\\
+   &=12,56\,\text{m}^{2}.
+
+----
+
+**Área de trapézio**
+
+A área de um trapézio é calculada pela soma da bases, $b_{1}$ e
+$b_{2}$,  multiplicada pela altura\footnote{Chamam-se de bases de um trapézio os seus lados paralelos e, sua altura,
+a distância que separa estes dois lados.} ($h$) dividida por dois, isto é:\picskip{0}
+
+.. figure:: /images/capitulo1/figAreaTrabezio.png
+   :scale: 35 %
+   :alt: figAreaTrabezio
+   :align: center
+
+.. math::
+   A=\frac{1}{2}(b_{1}+b_{2})h.
+
+----
+
+:exem:`Exemplo 15` Uma praça pública tem a forma de um trapézio, sendo medidos os lados paralelos
+de :math:`50,7` m e :math:`80,4` m e a distância entre eles de :math:`12` m, calcular á área
+da praça.
+
+:solucao:`Solução:`
+
+.. math::
+   A & =\frac{1}{2}(b_{1}+b_{2})h \\
+   &=\frac{1}{2}(50,7+80,4)12 \\
+   &=786,6\,\text{m}^{2}.
+
+----
+
+**Área de um círculo**
+
+Para uma círculo, pode ser conhecido o seu raio :math:`R` ou o seu diâmetro,
+:math:`D\:(2R)`. Se o :math:`R` é conhecido, a sua área é:
+
+.. math::
+   A=\pi R^{2}.
+
+Caso seja conhecido o diâmetro :math:`(D)`:
+
+.. math::
+   A=\frac{\pi}{4}D^{2}.
+
+----
+
+:exem:`Exemplo 16`  Uma caixa de água tem diâmetro de :math:`1,2` m. Qual a área de superfície que ela ocupa.
+
+:solucao:`Solução:`
+Conhecendo-se o diâmetro temos:
+
+.. math::
+   A & =\frac{\pi}{4}D^{2} \\
+   &=\frac{\pi}{4}1,2^{2} \\
+   =1,13 \,\text{m}^{2}.
+
+----
+
+**Área de um setor de círculo**
+
+Seja :math:`\alpha`, em graus, o ângulo da área do setor de círculo a
+ser calculado. Temos, quando se conhece o raio :math:`(R)`:
+
+.. figure:: /images/capitulo1/figAreaSetorCirculo.png
+   :scale: 35 %
+   :alt: figAreaSetorCirculo.png
+   :align: center
+
+.. math::
+   A=\left(\frac{\alpha}{360^\circ}\right)\pi R^{2}.
+
+Caso o diâmetro :math:`(D)` seja conhecido:
+
+.. math::
+   A=\left(\frac{\alpha}{360^\circ}\right)\frac{\pi}{4}D^{2}.
+
+----
+
+:exem:`Exemplo 17` Calcule a área de um setor de :math:`5^\circ` de uma circunferência de :math:`R` igual
+a :math:`3` m.
+
+:solucao:`Solução:`
+
+.. math::
+   A & =\left(\frac{\alpha}{360^\circ}\right)\pi R^{2} \\
+   &=\left(\frac{5^\circ}{360^\circ}\right)\pi3^{2}  \\
+   &=0,393\,\text{m}^2.
+
+----
+
+
+Sugestão de aula prática
+------------------------
+
+**Uso de planilha eletrônica para solução de problemas em matemática**
+
+*Objetivo*:  apresentar o uso de planilhas eletrônicas para a resolução de problemas em topografia. É sugerida a utilização da planilha de cálculo *Calc*, presente no pacote *libreoffice*, que é diponível gratuitamente. Para obtê-lo e encontrar maiores informações, consultar a página: https://www.libreoffice.org.
+
+Serão apresentados os operadores e algumas funções matemáticas, onde, uma vez sabendo utilizá-las, é possível resolver grande parte dos problemas de topografia.
+
+
+Como roteiro:
+
+.. tabularcolumns:: |p{1cm}|p{4cm}|p{5cm}|
+
+.. table:: My Table
+    :widths: auto
+    :class: longtable
+
+    +------------------+-----------------------------+------------+-------------------------------------+
+    |  Parameter       |  Description                |  Type      |    Notes                            |
+    +==================+=============================+============+=====================================+
+    | patrolID         | ID of the submitted patrol. |  int       | Assigned automatically by the patrol|
+    |                  |                             |            | app.                                |
+    +------------------+-----------------------------+------------+-------------------------------------+
+    | date             | Date the patrol             |  string    | Format is YYYY-MM-DD.               |
+    |                  | occurred.                   |            |                                     |
+    +------------------+-----------------------------+------------+-------------------------------------+
+    | userID           | The alias of the individual |  string    | Matches the user’s Vanguard email   |
+    |                  | who submitted the patrol.   |            | alias (For example, MScott).        |
+    +------------------+-----------------------------+------------+-------------------------------------+
+    | patrolStart      | Time the patrol started.    |  int       | Format is 24-hour (Ex: 0700         |
+    |                  |                             |            | or 1400).                           |
+    +------------------+-----------------------------+------------+-------------------------------------+
+    | patrolEnd        | Time the patrol ended.      |  int       | Format is 24-hour (Ex: 0700         |
+    |                  |                             |            | or 1400).                           |
+    +------------------+-----------------------------+------------+-------------------------------------+
+    |perimeterFence    |  Patrol area.               |  object    |                                     |
+    +----+-------------+-----------------------------+------------+-------------------------------------+
+    |    |time         | Time the area was patrolled.|  int       | Format is 24-hour (Ex: 0700         |
+    |    |             |                             |            | or 1400).                           |
+    +----+-------------+-----------------------------+------------+-------------------------------------+
+    |    |incident     | Indicates whether anything  |  boolean   | Default value is false.             |
+    |    |             | unusual was encountered     |            |                                     |
+    |    |             | during the patrol.          |            |                                     |
+    +----+-------------+-----------------------------+------------+-------------------------------------+
+    |    |details      | Summary of area patrol.     |  string    | When incident is false, the default |
+    |    |             |                             |            | value will be "Nothing to report."  |
+    +----+-------------+-----------------------------+------------+-------------------------------------+
+
 **Referências**
 
 .. bibliography::

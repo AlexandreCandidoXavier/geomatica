@@ -53,8 +53,10 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#funcoes-trigonometricas">Funções trigonométricas</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#coordenada-retangular-e-polar-no-plano">Coordenada retangular e polar no plano</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#areas-de-figuras-elementares-no-plano">Áreas de figuras elementares no plano</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#sugestao-de-aula-pratica">Sugestão de aula prática</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="capitulo2.html">Capitulo 2</a></li>
@@ -465,7 +467,7 @@ sendo que em geomática a mais comum é a de metro (m). Logicamente,
 caso a unidade fosse de metro, esta figura estaria reduzida a determinada
 escala (ver Secção ref{sec:Escala}, página pageref{sec:Escala}).</p>
 <figure class="align-center" id="id11">
-<span id="figcoordretangular"></span><a class="reference internal image-reference" href="../_images/fig_coord_retangular.png"><img alt="figcoordretangular" src="../_images/fig_coord_retangular.png" style="width: 466.65000000000003px; height: 423.45px;" /></a>
+<span id="figcoordretangular"></span><a class="reference internal image-reference" href="../_images/fig_coord_retangular.png"><img alt="figcoordretangular" src="../_images/fig_coord_retangular.png" style="width: 466.65000000000003px; height: 425.25px;" /></a>
 <figcaption>
 <p><span class="caption-number">Figura 6 </span><span class="caption-text">Posição de alguns pontos e suas coordenada retangulares.</span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
 </figcaption>
@@ -537,6 +539,261 @@ quadrante.</p>
 \[\begin{split}\sin\theta_{\text{P}} =\frac{y_{\text{P}}}{r_{\text{P}}}\\\end{split}\]</div>
 <div class="math notranslate nohighlight" id="equation-eqcoordenaday">
 <span class="eqno">(13)<a class="headerlink" href="#equation-eqcoordenaday" title="Permalink to this equation"></a></span>\[y_{\text{P}} =r_{\text{P}}\sin\theta_{\text{P}}\]</div>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 9</span> Considere a coordenada polar do ponto C da <a class="reference internal" href="#figcoordpolar"><span class="std std-numref">Figura 7</span></a>.
+Qual a sua coordenada retangular? A unidade de comprimento é o metro.</p>
+<p><span class="solucao">Solução:</span>
+A coordenada polar de C é <span class="math notranslate nohighlight">\((213,147^\circ, 5,85)\)</span>. Então:</p>
+<p><span class="math notranslate nohighlight">\(x_{\mathrm{C}} =r_{\mathrm{C}}\cos\theta_{\mathrm{C}}=5,85\cos 213,147^\circ=-4,9\mathrm{~m}\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(y_{\mathrm{C}} =r_{\mathrm{C}}\sin\theta_{\mathrm{C}}=5,85\sin 213,147^\circ=-3,2\mathrm{~m}\)</span>.</p>
+<p>Como era esperado, a coordenada retangular de C é a mesma apresentada na <a class="reference internal" href="#figcoordretangular"><span class="std std-numref">Figura 6</span></a>.</p>
+<hr class="docutils" />
+<p><strong>Coordenada retangular para polar</strong></p>
+<p>Agora será apresentada a transformação de coordenada retangular para
+polar. Para tanto utilizaremos mais uma vez o esquema da <a class="reference internal" href="#figpolar2retangular"><span class="std std-numref">Figura 8</span></a>.
+Só que desta vez, a coordenada retangular de P, <span class="math notranslate nohighlight">\((x_{\text{P}},\,y_{\text{P}})\)</span>,
+é que é conhecida. Uma vez que se têm os dois catetos do triângulo
+retângulo, o raio de P, <span class="math notranslate nohighlight">\(r_{\text{P}}\)</span>, é obtido por meio da Teorema
+de Pitágoras (Equação <a class="reference internal" href="#equation-coordenadar">(14)</a>). Já o ângulo <span class="math notranslate nohighlight">\(\theta_{\text{P}}\)</span>,
+para este quadrante, pode ser obtido por meio da função arco tangente,
+como apresentada na Equação <a class="reference internal" href="#equation-coordenadateta">(15)</a>.</p>
+<p>A Equação <a class="reference internal" href="#equation-coordenadar">(14)</a>
+é valida para pontos em qualquer quadrante. Já a Equação <a class="reference internal" href="#equation-coordenadateta">(15)</a>,
+para cálculo de <span class="math notranslate nohighlight">\(\theta_{p}\)</span>, é valida apenas para o primeiro quadrante,
+sendo que para os demais, pode-se obtê-lo facilmente, como será apresentado
+no Exemplo abaixo.</p>
+<div class="math notranslate nohighlight" id="equation-coordenadar">
+<span class="eqno">(14)<a class="headerlink" href="#equation-coordenadar" title="Permalink to this equation"></a></span>\[r_{\text{P}}=\sqrt{x_{\text{P}}^{2}+y_{\text{P}}^{2}}\]</div>
+<p>Se <span class="math notranslate nohighlight">\(x_{\mathrm{P}}\)</span> não for nulo:</p>
+<div class="math notranslate nohighlight" id="equation-coordenadateta">
+<span class="eqno">(15)<a class="headerlink" href="#equation-coordenadateta" title="Permalink to this equation"></a></span>\[\begin{split}\tan\theta_{\text{P}} &amp; =\frac{y_{\text{P}}}{x_{\text{P}}}\\
+\theta_{\text{P}} &amp; =\arctan\left(\frac{y_{\text{P}}}{x_{\text{P}}}\right)\end{split}\]</div>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 10</span> Considere a coordenada retangular do ponto D da <a class="reference internal" href="#figcoordretangular"><span class="std std-numref">Figura 6</span></a>.
+Qual a sua coordenada polar? Considere que a unidade seja de metro.</p>
+<p><span class="solucao">Solução:</span>
+A coordenada retangular de D é <span class="math notranslate nohighlight">\((4,9\,\mathrm{m};\,-1,3\,\mathrm{m})\)</span>. Ela é novamente
+mostrada na Figura ao abaixo.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/figExemReta2Poloar.png"><img alt="figExemReta2Poloar" src="../_images/figExemReta2Poloar.png" style="width: 313.95px; height: 185.5px;" /></a>
+</figure>
+<p>Observe que a projeção da coordenada e
+o raio de D, <span class="math notranslate nohighlight">\(r_{\text{D}}\)</span>, resultam em um triângulo retângulo,
+em que, <span class="math notranslate nohighlight">\(4,9\)</span> m é o cateto adjacente a <span class="math notranslate nohighlight">\(\alpha\)</span>, e <span class="math notranslate nohighlight">\(1,3\)</span> m é o cateto
+oposto, podendo-se calcular <span class="math notranslate nohighlight">\(\alpha\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\tan\alpha &amp; =\frac{y_{\text{D}}}{x_{\text{D}}}\\
+\alpha &amp; =\arctan\left(\frac{y_{\text{D}}}{x_{\text{D}}}\right)=\arctan\left(\frac{1,3}{4,9}\right)=14,8586^\circ.\end{split}\]</div>
+<p>Agora pode-se calcular <span class="math notranslate nohighlight">\(\theta_{\mathrm{D}}\)</span>, pois, <span class="math notranslate nohighlight">\(\theta_{\mathrm{D}}=360^\circ-\alpha=345,1414^\circ\)</span>.
+Para se calcular <span class="math notranslate nohighlight">\(r_{\text{D}}\)</span>, temos:</p>
+<p><span class="math notranslate nohighlight">\(r_\text{D}=\sqrt{x_{\text{D}}^{2}+y_{\text{D}}^2}=\sqrt{4,9^2+1,3^2}=5,07\,\text{m}.\)</span></p>
+<p>Desta forma, a coordenada polar de D é <span class="math notranslate nohighlight">\((345,1414^\circ;\,5,07\,\mathrm{m})\)</span>.</p>
+</section>
+<hr class="docutils" />
+<section id="areas-de-figuras-elementares-no-plano">
+<h3>Áreas de figuras elementares no plano<a class="headerlink" href="#areas-de-figuras-elementares-no-plano" title="Link permanente para este título"></a></h3>
+<p><strong>Área de um retângulo</strong></p>
+<p>Sejam os lados de um retângulo, <span class="math notranslate nohighlight">\(a\)</span> e <span class="math notranslate nohighlight">\(b\)</span>. A sua área <span class="math notranslate nohighlight">\((A)\)</span> é calculada
+pelo produto dos seus lados:</p>
+<div class="math notranslate nohighlight">
+\[A=ab.\]</div>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 11</span>  Qual a área de um sala retangular, onde os lados medem <span class="math notranslate nohighlight">\(5,3\)</span> m e <span class="math notranslate nohighlight">\(7,9\)</span> m.</p>
+<p><span class="solucao">Solução:</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A &amp; =ab \\
+&amp; =5,3\cdot7,9 \\
+&amp; =41,87\,\text{m}^{2}.\end{split}\]</div>
+<hr class="docutils" />
+<p><strong>Área de triângulo</strong></p>
+<p>A área de um triângulo pode ser calculada de diversas formas, dependendo dos dados disponíveis, se os comprimentos dos
+lados e/ou ângulos internos. Considere o triângulo da Figura ao lado. Caso sejam conhecidas(os)</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/figAreaDeTriangulo.png"><img alt="figExemReta2Poloar" src="../_images/figAreaDeTriangulo.png" style="width: 219.79999999999998px; height: 109.19999999999999px;" /></a>
+</figure>
+<ul class="simple">
+<li><p>a sua altura <span class="math notranslate nohighlight">\((h)\)</span> e a base (nesta Figura o lado <span class="math notranslate nohighlight">\(b\)</span>), a área será:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[A=\frac{bh}{2}.\]</div>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 12</span> Qual aárea de triângulo onde a base mede <span class="math notranslate nohighlight">\(15,9\)</span> m e a altura <span class="math notranslate nohighlight">\(9\)</span> m.</p>
+<p><span class="solucao">Solução:</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A &amp; =\frac{bh}{2} \\
+&amp; =\frac{15,9\cdot9}{2} \\
+&amp; =71,55\,\text{m}^{2}\end{split}\]</div>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>dois lados, <span class="math notranslate nohighlight">\(a\)</span> e <span class="math notranslate nohighlight">\(b\)</span>, e o ângulo formado entre eles, <span class="math notranslate nohighlight">\(\alpha\)</span>, a área será:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[A=\frac{1}{2}ab\sin\alpha;\]</div>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 13</span> Qual a área de triângulo em que dois lados medem <span class="math notranslate nohighlight">\(3,1$ m e :math:\)</span> m, e
+o ângulo entre eles é de <span class="math notranslate nohighlight">\(34^\circ\)</span>.</p>
+<p><span class="solucao">Solução:</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A &amp; =\frac{1}{2}ab\sin\alpha \\
+&amp;=\frac{1}{2}3,1\cdot6,8\sin34^\circ \\
+&amp;=5,89\,\text{m}^2.\end{split}\]</div>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>os comprimentos dos três lados do triângulo, <span class="math notranslate nohighlight">\(a,\,b,\,\mathrm{e}\:c\)</span>, usa-se a fórmula de Heron, também conhecida como a fórmula do semiperímetro, em que a área é:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[A=\sqrt{p\left(p-a\right)\left(p-b\right)\left(p-c\right)}\]</div>
+<p>em que <span class="math notranslate nohighlight">\(p\)</span> é semiperímetro:</p>
+<div class="math notranslate nohighlight">
+\[p=\frac{a+b+c}{2}.\]</div>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 14</span> Qual a área de um triângulo de lados medem <span class="math notranslate nohighlight">\(10,3\)</span> m, <span class="math notranslate nohighlight">\(5,4\)</span> m e <span class="math notranslate nohighlight">\(6,0\)</span> m.</p>
+<p><span class="solucao">Solução:</span>
+O semiperímetro:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}p &amp; =\frac{a+b+c}{2} \\
+&amp;=\frac{10,3+5,4+6,0}{2} \\
+&amp;=10,85\,\textrm{m}.\end{split}\]</div>
+<p>A área será:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A &amp; =\sqrt{p\left(p-a\right)\left(p-b\right)\left(p-c\right)} \\
+&amp;=\sqrt{10,85\left(10,85-10,3\right)\left(10,85-5,4\right)\left(10,85-6\right)}\\
+&amp;=12,56\,\text{m}^{2}.\end{split}\]</div>
+<hr class="docutils" />
+<p><strong>Área de trapézio</strong></p>
+<p>A área de um trapézio é calculada pela soma da bases, $b_{1}$ e
+$b_{2}$,  multiplicada pela alturafootnote{Chamam-se de bases de um trapézio os seus lados paralelos e, sua altura,
+a distância que separa estes dois lados.} ($h$) dividida por dois, isto é:picskip{0}</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/figAreaTrabezio.png"><img alt="figAreaTrabezio" src="../_images/figAreaTrabezio.png" style="width: 211.75px; height: 96.25px;" /></a>
+</figure>
+<div class="math notranslate nohighlight">
+\[A=\frac{1}{2}(b_{1}+b_{2})h.\]</div>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 15</span> Uma praça pública tem a forma de um trapézio, sendo medidos os lados paralelos
+de <span class="math notranslate nohighlight">\(50,7\)</span> m e <span class="math notranslate nohighlight">\(80,4\)</span> m e a distância entre eles de <span class="math notranslate nohighlight">\(12\)</span> m, calcular á área
+da praça.</p>
+<p><span class="solucao">Solução:</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A &amp; =\frac{1}{2}(b_{1}+b_{2})h \\
+&amp;=\frac{1}{2}(50,7+80,4)12 \\
+&amp;=786,6\,\text{m}^{2}.\end{split}\]</div>
+<hr class="docutils" />
+<p><strong>Área de um círculo</strong></p>
+<p>Para uma círculo, pode ser conhecido o seu raio <span class="math notranslate nohighlight">\(R\)</span> ou o seu diâmetro,
+<span class="math notranslate nohighlight">\(D\:(2R)\)</span>. Se o <span class="math notranslate nohighlight">\(R\)</span> é conhecido, a sua área é:</p>
+<div class="math notranslate nohighlight">
+\[A=\pi R^{2}.\]</div>
+<p>Caso seja conhecido o diâmetro <span class="math notranslate nohighlight">\((D)\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[A=\frac{\pi}{4}D^{2}.\]</div>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 16</span>  Uma caixa de água tem diâmetro de <span class="math notranslate nohighlight">\(1,2\)</span> m. Qual a área de superfície que ela ocupa.</p>
+<p><span class="solucao">Solução:</span>
+Conhecendo-se o diâmetro temos:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A &amp; =\frac{\pi}{4}D^{2} \\
+&amp;=\frac{\pi}{4}1,2^{2} \\
+=1,13 \,\text{m}^{2}.\end{split}\]</div>
+<hr class="docutils" />
+<p><strong>Área de um setor de círculo</strong></p>
+<p>Seja <span class="math notranslate nohighlight">\(\alpha\)</span>, em graus, o ângulo da área do setor de círculo a
+ser calculado. Temos, quando se conhece o raio <span class="math notranslate nohighlight">\((R)\)</span>:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/figAreaSetorCirculo.png"><img alt="figAreaSetorCirculo.png" src="../_images/figAreaSetorCirculo.png" style="width: 161.35px; height: 165.2px;" /></a>
+</figure>
+<div class="math notranslate nohighlight">
+\[A=\left(\frac{\alpha}{360^\circ}\right)\pi R^{2}.\]</div>
+<p>Caso o diâmetro <span class="math notranslate nohighlight">\((D)\)</span> seja conhecido:</p>
+<div class="math notranslate nohighlight">
+\[A=\left(\frac{\alpha}{360^\circ}\right)\frac{\pi}{4}D^{2}.\]</div>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 17</span> Calcule a área de um setor de <span class="math notranslate nohighlight">\(5^\circ\)</span> de uma circunferência de <span class="math notranslate nohighlight">\(R\)</span> igual
+a <span class="math notranslate nohighlight">\(3\)</span> m.</p>
+<p><span class="solucao">Solução:</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A &amp; =\left(\frac{\alpha}{360^\circ}\right)\pi R^{2} \\
+&amp;=\left(\frac{5^\circ}{360^\circ}\right)\pi3^{2}  \\
+&amp;=0,393\,\text{m}^2.\end{split}\]</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="sugestao-de-aula-pratica">
+<h2>Sugestão de aula prática<a class="headerlink" href="#sugestao-de-aula-pratica" title="Link permanente para este título"></a></h2>
+<p><strong>Uso de planilha eletrônica para solução de problemas em matemática</strong></p>
+<p><em>Objetivo</em>:  apresentar o uso de planilhas eletrônicas para a resolução de problemas em topografia. É sugerida a utilização da planilha de cálculo <em>Calc</em>, presente no pacote <em>libreoffice</em>, que é diponível gratuitamente. Para obtê-lo e encontrar maiores informações, consultar a página: <a class="reference external" href="https://www.libreoffice.org">https://www.libreoffice.org</a>.</p>
+<p>Serão apresentados os operadores e algumas funções matemáticas, onde, uma vez sabendo utilizá-las, é possível resolver grande parte dos problemas de topografia.</p>
+<p>Como roteiro:</p>
+<table class="longtable colwidths-auto docutils align-default" id="id14">
+<caption><span class="caption-number">Table 1 </span><span class="caption-text">My Table</span><a class="headerlink" href="#id14" title="Permalink to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head" colspan="2"><p>Parameter</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Notes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td colspan="2"><p>patrolID</p></td>
+<td><p>ID of the submitted patrol.</p></td>
+<td><p>int</p></td>
+<td><p>Assigned automatically by the patrol
+app.</p></td>
+</tr>
+<tr class="row-odd"><td colspan="2"><p>date</p></td>
+<td><p>Date the patrol
+occurred.</p></td>
+<td><p>string</p></td>
+<td><p>Format is YYYY-MM-DD.</p></td>
+</tr>
+<tr class="row-even"><td colspan="2"><p>userID</p></td>
+<td><p>The alias of the individual
+who submitted the patrol.</p></td>
+<td><p>string</p></td>
+<td><p>Matches the user’s Vanguard email
+alias (For example, MScott).</p></td>
+</tr>
+<tr class="row-odd"><td colspan="2"><p>patrolStart</p></td>
+<td><p>Time the patrol started.</p></td>
+<td><p>int</p></td>
+<td><p>Format is 24-hour (Ex: 0700
+or 1400).</p></td>
+</tr>
+<tr class="row-even"><td colspan="2"><p>patrolEnd</p></td>
+<td><p>Time the patrol ended.</p></td>
+<td><p>int</p></td>
+<td><p>Format is 24-hour (Ex: 0700
+or 1400).</p></td>
+</tr>
+<tr class="row-odd"><td colspan="2"><p>perimeterFence</p></td>
+<td><p>Patrol area.</p></td>
+<td><p>object</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>time</p></td>
+<td><p>Time the area was patrolled.</p></td>
+<td><p>int</p></td>
+<td><p>Format is 24-hour (Ex: 0700
+or 1400).</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>incident</p></td>
+<td><p>Indicates whether anything
+unusual was encountered
+during the patrol.</p></td>
+<td><p>boolean</p></td>
+<td><p>Default value is false.</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>details</p></td>
+<td><p>Summary of area patrol.</p></td>
+<td><p>string</p></td>
+<td><p>When incident is false, the default
+value will be «Nothing to report.»</p></td>
+</tr>
+</tbody>
+</table>
 <p><strong>Referências</strong></p>
 <p id="id2"><dl class="citation">
 <dt class="label" id="id4"><span class="brackets"><a class="fn-backref" href="#id1">Ste99</a></span></dt>
@@ -544,7 +801,6 @@ quadrante.</p>
 </dd>
 </dl>
 </p>
-</section>
 </section>
 </section>
 
