@@ -20,8 +20,6 @@ import os
 import sys
 
 
-sys.path.insert(0, os.path.abspath(".."))
-
 project = 'Livro de Geomática'
 copyright = '2021, Alexandre C Xavier'
 author = 'Alexandre C Xavier'
@@ -36,7 +34,7 @@ release = '0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 # 'sphinxcontrib.stuffcounter'
-extensions = ['sphinx.ext.todo', 'sphinx.ext.mathjax', 'sphinxcontrib.bibtex'
+extensions = ['sphinx.ext.todo', 'sphinx.ext.mathjax', 'sphinxcontrib.bibtex',
 ]
 # imgmath_image_format = 'png'
 # imgmath_dvipng_args = ['-gamma', '1.5', '-D', '400', '-bg', 'Transparent']
@@ -82,3 +80,4 @@ numfig_format = {
     'figure': 'Figura %s'
     }
 numfig_secnum_depth = 1
+

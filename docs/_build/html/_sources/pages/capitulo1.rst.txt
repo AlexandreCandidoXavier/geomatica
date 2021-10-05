@@ -18,7 +18,7 @@
 
 .. raw:: html
 
-    <style> .degree2sex {border:2px; border-style:solid;  border-radius: 5px; border-color:gray; padding: .1em;} </style>
+    <style> .degree2sex { font-size: 40px; border:2px; border-style:solid;  border-radius: 5px; border-color:gray; padding: .1em;} </style>
 
 .. role:: degree2sex
 
@@ -890,54 +890,263 @@ a :math:`3` m.
 ----
 
 
-Sugestão de aula prática
-------------------------
+.. admonition:: Sugestão de aula prática
 
-**Uso de planilha eletrônica para solução de problemas em matemática**
+   **Uso de planilha eletrônica para solução de problemas em matemática**
 
-*Objetivo*:  apresentar o uso de planilhas eletrônicas para a resolução de problemas em topografia. É sugerida a utilização da planilha de cálculo *Calc*, presente no pacote *libreoffice*, que é diponível gratuitamente. Para obtê-lo e encontrar maiores informações, consultar a página: https://www.libreoffice.org.
+   *Objetivo*:  apresentar o uso de planilhas eletrônicas para a resolução de problemas em topografia. É sugerida a utilização da planilha de cálculo *Calc*, presente no pacote *libreoffice*, que é diponível gratuitamente. Para obtê-lo e encontrar maiores informações, consultar a página: https://www.libreoffice.org.
 
-Serão apresentados os operadores e algumas funções matemáticas, onde, uma vez sabendo utilizá-las, é possível resolver grande parte dos problemas de topografia.
+   Serão apresentados os operadores e algumas funções matemáticas, onde, uma vez sabendo utilizá-las, é possível resolver grande parte dos problemas de topografia.
+
+   Como roteiro:
+
+   - apresentação dos operadores matemáticos: soma :math:`(+)`, subtração :math:`(-)`, multiplicação :math:`(*)`, divisão :math:`(\backslash)` e potência :math:`(\wedge)`;
+   - apresentação das funções seno, cosseno, tangente, arccossenom, etc
+
+Exercícios
+----------
+
+:exem:`1)` Com o triângulo da Figura abaixo, de coordenada :math:`R(12,3\,text{m},\,6,1\,text{m})`,
+calcular os ângulos :math:`\alpha`, :math:`\beta,` e o seno, cosseno e tangente
+destes ângulos.
+
+.. figure:: /images/capitulo1/exer_1_1.png
+   :scale: 40 %
+   :alt: exer_1_1.png
+   :align: center
+
+:exem:`Resp.:` :math:`\alpha=26,3784^\circ`; :math:`\beta=63,6216^\circ`; :math:`\sin\alpha=0,4443`; :math:`\cos\alpha=0,89588`; :math:`\tan\alpha=0,49593`;
+:math:`\sin\beta=0,89588`; :math:`\cos\beta=0,4443`; :math:`\tan\beta=2,0163`.
+
+----
+
+:exem:`2)` Converter :math:`0,0006^\circ` para segundos.
+
+:exem:`Resp.:` :math:`2,16''`.
+
+----
+
+:exem:`3)` Expressar :math:`2,32` rad e :math:`1,25` rad em graus decimais.
+
+:exem:`Resp.:` :math:`132,926^\circ`; :math:`71,619^\circ`.
+
+----
+
+:exem:`4)` Converter :math:`10^\circ15'39''` para graus decimais.
+
+:exem:`Resp.:` :math:`10,26083333`.
+
+----
+
+:exem:`5)` Converter :math:`11^\circ50'3''` para radianos.
+
+:exem:`Resp.:` :math:`0,207` rad.
+
+----
+
+:exem:`6)` Um triângulo tem lados :math:`a=7,5` m, :math:`b=8,9` m e :math:`c=10,2` m. Calcule:
+i) a área (m:math:`^2` e ha); ii) os ângulos internos. 
+
+:exem:`Resp.:`  :math:`32,437\,\text{m}^2`; :math:`0,003243` ha; :math:`\hat{a}=45,614^\circ`;
+:math:`\hat{b}=57,999^\circ`; :math:`\hat{c}=76,387^\circ`.
+
+----
+
+:exem:`7)` Utilizando calculadora, calcule o seno, cosseno e tangente de :math:`22,3^\circ`, :math:`42,6^\circ`,
+:math:`51,3^\circ`, :math:`89,1^\circ` e :math:`76,5^\circ`.
+
+:exem:`Resp.:` Tabela abaixo.
+
+.. table:: Resposta exercício 7
+   :widths: auto
+
+   +--------------------------+-----------------+------------------+-------------------+
+   | Ângulo :math:`(^\circ)`  |        seno     |    cosseno       |   tan             |
+   +==========================+=================+==================+===================+
+   | :math:`22,3`             |:math:`0,37946`  | :math:`0,92521`  |  :math:`0,41013`  |
+   +--------------------------+-----------------+------------------+-------------------+
+   | :math:`42,6`             |:math:`0,67688`  | :math:`0,73610`  |  :math:`0,91955`  |
+   +--------------------------+-----------------+------------------+-------------------+
+   | :math:`51,3`             |:math:`0,78043`  | :math:`0,62524`  |  :math:`1,24820`  |
+   +--------------------------+-----------------+------------------+-------------------+
+   | :math:`89,1`             |:math:`0,99988`  |  :math:`0,01571` |  :math:`63,65674` |
+   +--------------------------+-----------------+------------------+-------------------+
+   | :math:`76,5`             |:math:`0,97237`  |  :math:`0,23345` |  :math:`4,16530`  |
+   +--------------------------+-----------------+------------------+-------------------+
+
+----
+
+:exem:`8)` Um topógrafo necessita determinar a distância entre :math:`A` e :math:`B`, mostrados
+na Figura ao lado. Infelizmente, seu equipamento de medição eletrônica
+de distância não está funcionando. Devido a isto: em :math:`A`, o topógrafo
+mediu o ângulo de :math:`88^\circ`; determinou a distância :math:`AC=159,49` m;
+e em :math:`C` mediu de :math:`51^\circ`. Calcule o comprimento :math:`AB`.
 
 
-Como roteiro:
+.. figure:: /images/capitulo1/exer_1_8.png
+   :scale: 40 %
+   :alt: exer_1_8.png
+   :align: center
 
-.. tabularcolumns:: |p{1cm}|p{4cm}|p{5cm}|
+:exem:`Resp.:`  :math:`AB=188,927` m.
 
-.. table:: My Table
-    :widths: auto
-    :class: longtable
+----
 
-    +------------------+-----------------------------+------------+-------------------------------------+
-    |  Parameter       |  Description                |  Type      |    Notes                            |
-    +==================+=============================+============+=====================================+
-    | patrolID         | ID of the submitted patrol. |  int       | Assigned automatically by the patrol|
-    |                  |                             |            | app.                                |
-    +------------------+-----------------------------+------------+-------------------------------------+
-    | date             | Date the patrol             |  string    | Format is YYYY-MM-DD.               |
-    |                  | occurred.                   |            |                                     |
-    +------------------+-----------------------------+------------+-------------------------------------+
-    | userID           | The alias of the individual |  string    | Matches the user’s Vanguard email   |
-    |                  | who submitted the patrol.   |            | alias (For example, MScott).        |
-    +------------------+-----------------------------+------------+-------------------------------------+
-    | patrolStart      | Time the patrol started.    |  int       | Format is 24-hour (Ex: 0700         |
-    |                  |                             |            | or 1400).                           |
-    +------------------+-----------------------------+------------+-------------------------------------+
-    | patrolEnd        | Time the patrol ended.      |  int       | Format is 24-hour (Ex: 0700         |
-    |                  |                             |            | or 1400).                           |
-    +------------------+-----------------------------+------------+-------------------------------------+
-    |perimeterFence    |  Patrol area.               |  object    |                                     |
-    +----+-------------+-----------------------------+------------+-------------------------------------+
-    |    |time         | Time the area was patrolled.|  int       | Format is 24-hour (Ex: 0700         |
-    |    |             |                             |            | or 1400).                           |
-    +----+-------------+-----------------------------+------------+-------------------------------------+
-    |    |incident     | Indicates whether anything  |  boolean   | Default value is false.             |
-    |    |             | unusual was encountered     |            |                                     |
-    |    |             | during the patrol.          |            |                                     |
-    +----+-------------+-----------------------------+------------+-------------------------------------+
-    |    |details      | Summary of area patrol.     |  string    | When incident is false, the default |
-    |    |             |                             |            | value will be "Nothing to report."  |
-    +----+-------------+-----------------------------+------------+-------------------------------------+
+:exem:`9)` Dadas as coordenadas retangulares dos pontos: **A**:math:`(5,\,-19)`,
+**B**:math:`(-23,\,-10)`, **C**:math:`(-29,\,4)`, **D**:math:`(13,\,11)`.
+Calcular as respectivas coordenadas polares.
+
+:exem:`Resp.:` **A**:math:`(284,7436^\circ,\, 19,6468)`; **B**:math:`(203,4986^\circ,\, 25,0798)`;
+**C**:math:`(172,1467^\circ,\, 29,2745)`; **D**:math:`(40,23636^\circ,\, 17,0293)`.
+
+----
+
+:exem:`10)` Dadas as coordenadas polares dos pontos: **A**:math:`(72,9\text{m}, 314^\circ27')`;
+**B**:math:`(58,1\text{m}, 260^\circ22')`; **C**:math:`(100,9\text{m}, 118^\circ41')`;
+**D**:math:`(29,3\text{m}, 25^\circ28')`, calcular as respectivas
+coordenadas retangulares.
+
+:exem:`Resp.:`  **A**:math:`(51,05089,\,-52,0405)`; **B**:math:`(-9,72259,\,-57,2807)`;
+**C**:math:`(-48,4288,\,88,51814)`; **D**:math:`26,45308,\,12,59859)`
+
+----
+
+:exem:`11)`  Com o objetivo de se estimar o raio da terra :math:`(R)`, um topógrafo subiu
+em uma montanha de :math:`3,0` km de altura, tendo vista para o oceano. Com
+o auxílio dos seus equipamentos, mediu-se o ângulo formado entre a
+linha horizontal que passa pelo equipamento e a reta tangente a superfície
+do oceano no ponto :math:`H`, obtendo :math:`1^\circ46'`. Determinar o raio
+da terra aproximado, por meio destas medidas.
+
+.. figure:: /images/capitulo1/exer_1_11.png
+   :scale: 40 %
+   :alt: exer_1_11.png
+   :align: center
+
+:exem:`Resp.:`  :math:`6\,308,3` km.
+
+----
+
+:exem:`12)` Com o objetivo de determinar a altura da árvore da Figura ao lado, o engenheiro
+mediu, com o auxílio de um clinômetro (equipamento que mede ângulo
+vertical), o ângulo vertical entre a sua posição e o topo da árvore.
+Com uma trena, também mediu a distância horizontal à árvore. Sabendo
+que o engenheiro mede :math:`1,80` m, qual é a altura da árvore?
+
+.. figure:: /images/capitulo1/exer_1_12.png
+   :scale: 40 %
+   :alt: exer_1_12.png
+   :align: center
+
+:exem:`Resp.:`  :math:`20,546` m.
+
+----
+
+:exem:`13)` Determinar a altura :math:`H` do levantamento realizado conforme Figura ao lado, sendo
+as medidas de distância em metros.
+
+.. figure:: /images/capitulo1/exer_1_13.png
+   :scale: 40 %
+   :alt: exer_1_13.png
+   :align: center
+
+:exem:`Resp.:`  Altura = :math:`18,466` m.
+
+----
+
+:exem:`14)` Deseja-se medir a altura da torre da igreja ao lado. A distância horizontal
+foi medida a partir do prédio, como mostrado, e dois ângulos verticais
+foram determinados, em relação a base e ao topo da igreja. Qual a
+altura da igreja?
+
+.. figure:: /images/capitulo1/exer_1_14.png
+   :scale: 40 %
+   :alt: exer_1_14.png
+   :align: center
+
+:exem:`Resp.:`  Altura = :math:`31,275` m.
+
+----
+
+:exem:`15)` Com a finalidade de determinar a altura de um morro, foram medidas a distância
+horizontal entre a base do morro ao primeiro ponto :math:`(200\,\text{m})`, onde nesta
+primeira posição determinou-se o ângulo vertical em relação topo do
+morro, conforme esquema ao lado. A partir deste ponto à outro, distante
+:math:`300\,\text{m}` (percorrendo a mesma direção), mediu-se novamente o ângulo vertical
+em relação ao topo do morro. Com estas medidas medidas calcular :math:`x`
+e :math:`h`.
+
+.. figure:: /images/capitulo1/exer_1_15.png
+   :scale: 40 %
+   :alt: exer_1_15.png
+   :align: center
+
+:exem:`Resp.:`  :math:`x=140,628\,\text{m}` e :math:`h=340,628\text{m}`.
+
+----
+
+:exem:`16)` Calcule a área de um triângulo retângulo de base :math:`20,0\,\text{m}` e altura de :math:`14,2` m.
+
+:exem:`Resp.:`  :math:`142\,\text{m}^2`.
+
+----
+
+:exem:`17)` Dado o triângulo da Figura ao lado, calcule qual o comprimento dos lados
+:math:`x` e :math:`y`.
+
+.. figure:: /images/capitulo1/exer_1_17.png
+   :scale: 40 %
+   :alt: exer_1_17.png
+   :align: center
+
+:exem:`Resp.:`  :math:`x=571,93` m; :math:`y=660,069` m.
+
+----
+
+:exem:`18)` Dado o triângulo abaixo, contendo: as coordenadas dos vértices :math:`A(20
+\text{ m};\,30 \text{ m})` e :math:`B(40 \text{ m};\,70 \text{ m})`. Calcular os comprimentos dos
+lados :math:`AB` e :math:`AC` e a sua área.
+
+.. figure:: /images/capitulo1/exer_1_18.png
+   :scale: 40 %
+   :alt: exer_1_18.png
+   :align: center
+
+:exem:`Resp.:`  :math:`AB=44,721\,\text{m}`; :math:`AC=49,594\,\text{m}`; área de :math:`774,5\,\mathrm{m}^2`.
+
+----
+
+:exem:`19)` Calcular a área do polígono formado pelos vértices :math:`1,\,2,\,3` e :math:`4`, sabendo-se
+que: :math:`\alpha=77^\circ40'`; :math:`\beta=23^\circ10'`; :math:`\gamma=39^\circ5'`; :math:`1(60,0\,\text{m;}\,45,0\,\text{m})`;
+:math:`3(10,0\,\text{m;}\,11,0\,\text{m})`; :math:`\text{DH}_{12}=44\,\text{m}`.
+
+.. figure:: /images/capitulo1/exer_1_19.png
+   :scale: 40 %
+   :alt: exer_1_19.png
+   :align: center
+
+:exem:`Resp.:`  área = :math:`1\,553,941\,\text{m}^{2}`.
+
+----
+
+:exem:`20)` Do triângulo abaixo, contendo a distância do alinhamento :math:`CB=69,43\,\text{m}`,
+Calcular os comprimentos dos lados :math:`AB` e :math:`AC` e a sua área.
+
+.. figure:: /images/capitulo1/exer_1_20.png
+   :scale: 40 %
+   :alt: exer_1_20.png
+   :align: center
+
+:exem:`Resp.:`  :math:`AB = 57,095\,\text{m}`; :math:`AC = 49,594\,\text{m}`; área
+de :math:`1397,850\,\text{m}^2`.
+
+----
+
+:exem:`21)` Dado um triângulo retângulo de catetos :math:`a=3,6\,\text{m}` e :math:`b=4,7\,\text{m}`. Encontrar a hipotenusa. Calcule os ângulos
+internos.
+
+:exem:`Resp.:`  Hipotenusa = :math:`5,920\,\text{m}`; :math:`\hat{a}=37,450^\circ`;
+:math:`\hat{b}=52,549^\circ`; :math:`\hat{c}=90^\circ`.
 
 **Referências**
 
