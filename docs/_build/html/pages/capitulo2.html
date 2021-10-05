@@ -44,6 +44,11 @@
 <li class="toctree-l1"><a class="reference internal" href="capitulo1.html">Capitulo 1</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Capitulo 2</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#unidades-metricas-escala-e-determinacao-de-areas">Unidades métricas, escala e determinação de áreas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#unidades-de-comprimento-e-area">Unidades de comprimento e área</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#escala">Escala</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#escala-numerica">Escala numérica</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="capitulo7.html">Capitulo 7</a></li>
@@ -73,11 +78,128 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="capitulo-2">
+  <style> .exem {color:blue; font-weight: bold} </style><style> .solucao {font-weight: bold} </style><style> .blue {color:blue} </style><section id="capitulo-2">
 <span id="rst-capitulo-2"></span><h1>Capitulo 2<a class="headerlink" href="#capitulo-2" title="Link permanente para este título"></a></h1>
 <section id="unidades-metricas-escala-e-determinacao-de-areas">
 <span id="unidadesmetricas"></span><h2>Unidades métricas, escala e determinação de áreas<a class="headerlink" href="#unidades-metricas-escala-e-determinacao-de-areas" title="Link permanente para este título"></a></h2>
-<p>alexandre cancel If <span class="math notranslate nohighlight">\(\sigma_{1}\)</span> equals <span class="math notranslate nohighlight">\(\sigma_{2}\)</span> é etc, etc.</p>
+<p>Este capítulo tem como objetivo central a determinação de áreas. Começaremos
+com a apresentação das unidades de comprimento e de área mais utilizadas
+em geomática. Como geralmente os desenhos topográficos estão reduzidos
+à determinada escala, ela será definida e aplicada em problemas de
+determinação de distância e área. Por fim, alguns métodos de cálculo
+de área serão apresentados.</p>
+</section>
+<section id="unidades-de-comprimento-e-area">
+<h2>Unidades de comprimento e área<a class="headerlink" href="#unidades-de-comprimento-e-area" title="Link permanente para este título"></a></h2>
+<p>O Sistema Internacional de Unidades (SI) tem como unidade de comprimento
+o metro (m). Ele é definido como o comprimento do caminho viajado
+pela luz durante o intervalo de <span class="math notranslate nohighlight">\(1/299\,792\,458\)</span> segundo.
+Seguem alguns exemplos de subdivisões do metro:</p>
+<ul class="simple">
+<li><p>o milímetro <span class="math notranslate nohighlight">\((\text{mm},\,1\,\text{mm}=10^{-3}\text{m}=0,001\,\text{m})\)</span>;</p></li>
+<li><p>o centímetro <span class="math notranslate nohighlight">\((\text{cm},\,1\,\text{cm}=10^{-2}\,\text{m}=0,01\,\text{m})\)</span> e;</p></li>
+<li><p>o decímetro <span class="math notranslate nohighlight">\((\text{dm},\,1\,\text{dm}=10^{-1}\,\text{m}=0,1\,\text{m})\)</span>.</p></li>
+</ul>
+<p>Como múltiplo de metro pode-se citar o quilômetro <span class="math notranslate nohighlight">\((\text{km,}\,1\,\text{km}=1\,000\,\text{m})\)</span>, geralmente utilizado em medidas sobre mapas
+ou cartas de pequenas escala.</p>
+<p>A unidade de área empregada é o <span class="math notranslate nohighlight">\(\text{m}^2\)</span>. Para medidas de superfície
+terrestre também podem-se empregar outras unidades, como o “are”
+<span class="math notranslate nohighlight">\((1\,\text{are}=100\,\text{m}^{2})\)</span> e seus múltiplos, sendo que o mais utilizado
+é o hectare (“ha”), em que <span class="math notranslate nohighlight">\(1\,\text{ha}=10\,000\,\text{m}^2\)</span>.</p>
+<p>Unidades de área mais antigas ainda hoje são utilizadas, como o alqueire
+(“alq”). Um alqueiro pode apresentar
+diferentes valores de área, de acordo com a localidade. Por exemplo,
+um alqueiro geométrico, também conhecido por mineiro, mede <span class="math notranslate nohighlight">\(48\,400\,\text{m}^2\)</span>,
+enquanto o paulista mede <span class="math notranslate nohighlight">\(24\,200\,\text{m}^2\)</span>.
+Na apresentação de grandes extensões de área, como as presentes em
+mapas ou cartas topográficas, utiliza-se a unidade de <span class="math notranslate nohighlight">\(\text{km}^2\)</span>. Outras
+unidades de comprimento e área podem ser encontradas em <span id="id1">[<a class="reference internal" href="#id5" title="J. A. Comastri and J. G. Junior. Topografia aplicada. Editora UFV, Viçosa, MG, 1 edition, 2004.">CJ04</a>]</span>.</p>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 1</span> Converta <span class="math notranslate nohighlight">\(1\,\text{km}^2\)</span> para: <span class="math notranslate nohighlight">\(\text{m}^2\)</span>, ha, alqueire
+geométrico e paulista?</p>
+<p><span class="solucao">Solução:</span></p>
+<p>Para <span class="math notranslate nohighlight">\(\text{m}^2\)</span>: como <span class="math notranslate nohighlight">\(1\,\text{km}=1\,000\,\text{m}\)</span>, então, elevando ao
+quadrado ambos os lados, <span class="math notranslate nohighlight">\((1\,\text{km})^2=(1\,000\,\text{m})^2\)</span>, vai resultar
+em <span class="math notranslate nohighlight">\(1\,\text{km}^2=10^6\,\text{m}^2=1\,000\,000\,\text{m}^2\)</span>;</p>
+<p>Para ha: sabe-se agora que a área é de <span class="math notranslate nohighlight">\(10^6\,\text{m}^2\)</span>,
+como <span class="math notranslate nohighlight">\(1\,\text{ha}=10\,000\,\text{m}^2\)</span>, então a área em ha <span class="math notranslate nohighlight">\((x_{\text{ha}})\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\frac{x_{\text{ha}}}{10^{6}~\text{m}^{2}} &amp; =\frac{1~\text{ha}}{10\,000~\text{m}^{2}}\\
+x_{\text{ha}} &amp; =\frac{1~\text{ha}\cdot10^{6}~\text{m}^{2}}{10\,000~\text{m}^{2}}\\
+x_{\text{ha}} &amp; =100~\text{ha};\end{split}\]</div>
+<p>Para alqueire geométrico: como <span class="math notranslate nohighlight">\(1\,\text{alqueire}=48\,400\,\text{m}^2\)</span>,
+então a área em alqueire geométrico <span class="math notranslate nohighlight">\((x_{\text{alqGeo}})\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\frac{x_{\text{alqGeo}}}{10^{6}~\text{m}^{2}} &amp; =\frac{1~\text{ha}}{48\,400~\text{m}^{2}}\\
+x_{\text{alqGeo}} &amp; =\frac{1~\text{alqueiro}\cdot10^{6}~\text{m}^{2}}{48\,400~\text{m}^{2}}\\
+x_{\text{alqGeo}} &amp; =20,6612~\text{alqueiro geométrico};\end{split}\]</div>
+<p>Para alqueire paulista: como <span class="math notranslate nohighlight">\(1\,\text{alqueire}=24\,200\,\text{m}^2\)</span>,
+então a área em alqueire paulista <span class="math notranslate nohighlight">\((x_{\text{alqPau}})\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\frac{x_{\text{alqPau}}}{10^{6}~\text{m}^{2}} &amp; =\frac{1~\text{ha}}{24\,200~\text{m}^{2}}\\
+x_{\text{alqPau}} &amp; =\frac{1~\text{alqueiro}\cdot10^{6}~\text{m}^{2}}{24\,200~\text{m}^{2}}\\
+x_{\text{alqPau}} &amp; =41,3223~\text{alqueiro paulista}.\end{split}\]</div>
+</section>
+<hr class="docutils" />
+<section id="escala">
+<h2>Escala<a class="headerlink" href="#escala" title="Link permanente para este título"></a></h2>
+<section id="escala-numerica">
+<h3>Escala numérica<a class="headerlink" href="#escala-numerica" title="Link permanente para este título"></a></h3>
+<p>Quando se realiza levantamento na superfície terrestre, obtêm-se as
+coordenadas dos pontos desejáveis, e posteriormente são apresentados
+em papel ou na tela do computador. Logicamente que as medidas de distância
+e áreas da superfície terrestre são, em geral, demasiadamente extensas
+para caberem, nas mesmas proporções, em papel ou tela de computador.
+Para ajustar ao papel/tela, é realizada uma redução das dimensões
+a uma escala apropriada, de acordo com o tamanho do papel/tela. E
+o que vem a ser uma escala? A escala <span class="math notranslate nohighlight">\((E)\)</span> é a relação entre a distância
+de um objeto apresentado no papel/tela <span class="math notranslate nohighlight">\((l)\)</span> e a sua verdadeira distância
+na natureza <span class="math notranslate nohighlight">\((L)\)</span>, isto é:</p>
+<div class="math notranslate nohighlight" id="equation-eq-escala">
+<span class="eqno">(16)<a class="headerlink" href="#equation-eq-escala" title="Permalink to this equation"></a></span>\[E=\frac{l}{L}\]</div>
+<p>Para o uso desta Equação, as unidades de <span class="math notranslate nohighlight">\(l\)</span> e <span class="math notranslate nohighlight">\(L\)</span> devem
+ser as mesmas. Observe que para levantamentos sobre a superfície terrestre
+<span class="math notranslate nohighlight">\(L\gg l\)</span>. Desta forma, a <span class="math notranslate nohighlight">\(E\)</span> resulta em um número muito pequeno,
+o que demandaria o uso de várias casas decimais para representá-la,
+dificultando a sua interpretação. Para apresentar a <span class="math notranslate nohighlight">\(E\)</span> de uma forma
+mais intuitiva, usa-se a forma:</p>
+<div class="math notranslate nohighlight" id="equation-eq-escala2">
+<span class="eqno">(17)<a class="headerlink" href="#equation-eq-escala2" title="Permalink to this equation"></a></span>\[E=\frac{1}{M},\]</div>
+<p>em que <span class="math notranslate nohighlight">\(M\)</span> é denominado o módulo da escala, sendo <span class="math notranslate nohighlight">\(M=^L/l\)</span>.
+A escala numérica na forma da Equação <a class="reference internal" href="#equation-eq-escala2">(17)</a> tem uma interpretação
+bastante simples. Por exemplo, se na forma de decimal <span class="math notranslate nohighlight">\(E=0,00028571\)</span>,
+na forma da Equação <a class="reference internal" href="#equation-eq-escala2">(17)</a> seria <span class="math notranslate nohighlight">\(E=1/3\,500\)</span>. Obviamente
+<span class="math notranslate nohighlight">\(E=0,00028571=1/3\,500\)</span>, mas na segunda forma, já conclui-se
+de imediato que, por exemplo, <span class="math notranslate nohighlight">\(1\,\text{m}\)</span> de um comprimento no papel, corresponderia
+ao comprimento de <span class="math notranslate nohighlight">\(3\,500\,\text{m}\)</span> em campo. Ou, de outra forma, <span class="math notranslate nohighlight">\(1\,\text{cm}\)</span> de comprimento
+no papel, corresponde a <span class="math notranslate nohighlight">\(35\,\text{m}\)</span> em campo (Como <span class="math notranslate nohighlight">\(1\,\text{m}=100\,\text{cm}\)</span>, então de acordo com a escala <span class="math notranslate nohighlight">\(100\,\text{cm}=3\,500\,\text{m}\)</span>,
+dividindo-se ambas as partes por <span class="math notranslate nohighlight">\(100\)</span>, temos <span class="math notranslate nohighlight">\(1\,\text{cm}=35\,\text{m}\)</span>. A escala numérica pode estar na forma de fração (p. ex., <span class="math notranslate nohighlight">\(E=1/3\,500\)</span>);
+proporção (p.,ex., <span class="math notranslate nohighlight">\(E=1:3\,500\)</span>); ou equação (p.,ex., <span class="math notranslate nohighlight">\(1\,\text{cm}=35\,\text{m}\)</span>).</p>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 1</span> A distância entre dois postes
+em uma rua equivale a <span class="math notranslate nohighlight">\(33,4\,\text{m}\)</span>. Quando representados em papel, estes
+postes estavam distantes <span class="math notranslate nohighlight">\(3\,\text{cm}\)</span> entre si. Qual a escala do desenho?</p>
+<p><span class="solucao">Solução:</span></p>
+<p>Utilizando a Equação <a class="reference internal" href="#equation-eq-escala2">(17)</a>, e sabendo que <span class="math notranslate nohighlight">\(l=3\,\text{cm}=0,03\,\text{m}\)</span>,
+e <span class="math notranslate nohighlight">\(L\)</span> igual a <span class="math notranslate nohighlight">\(33,4\,\text{m}\)</span>, o módulo da escala será:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}M &amp; =\frac{L}{l}\\
+&amp; =\frac{33,4}{0,03}\\
+&amp; =1\,113\end{split}\]</div>
+<p>O resultado exato de <span class="math notranslate nohighlight">\(M\)</span> é <span class="math notranslate nohighlight">\(1\,113,3333333\ldots\)</span>, todavia,
+na apresentação da <span class="math notranslate nohighlight">\(E\)</span>, utiliza-se, geralmente, apenas o número inteiro.
+Desta forma, <span class="math notranslate nohighlight">\(E=1/1\,113\)</span>.</p>
+<p><strong>Referências</strong></p>
+<p id="id2"><dl class="citation">
+<dt class="label" id="id5"><span class="brackets"><a class="fn-backref" href="#id1">CJ04</a></span></dt>
+<dd><p>J. A. Comastri and J. G. Junior. <em>Topografia aplicada</em>. Editora UFV, Viçosa, MG, 1 edition, 2004.</p>
+</dd>
+<dt class="label" id="id4"><span class="brackets">Ste99</span></dt>
+<dd><p>James Stewart. <em>Calculus</em>. Brooks/Cole, Pacific Grove, CA, 4 edition, 1999.</p>
+</dd>
+</dl>
+</p>
+</section>
 </section>
 </section>
 

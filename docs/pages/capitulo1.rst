@@ -499,14 +499,15 @@ então :math:`\widehat{C}=180-(\widehat{A}+\widehat{B})=44,4610^\circ`.
 
 
 Coordenada retangular e polar no plano
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------------------
 
 Para a apresentação gráfica de dados bidimensionais, é utilizado o
 plano cartesiano, formado por dois eixos ortogonais entre si, denominados
 de eixo-:math:`x` e eixo-:math:`y`. A posição de pontos neste sistema dar-se-á
 por meio de coordenadas retangulares ou polares.
 
-**Coordenada retangular**
+Coordenada retangular
+^^^^^^^^^^^^^^^^^^^^^
 
 A coordenada retangular de um ponto é dada por sua posição horizontal
 e vertical, coordenada :math:`x` e coordenada :math:`y`, respectivamente. Exemplo
@@ -561,7 +562,8 @@ respectivamente. Aplicando a Equação :eq:`distanciaeuclidiana`:
    & =10,791\,\text{m}.
 
 
-**Coordenada polar**
+Coordenada polar
+^^^^^^^^^^^^^^^^
 
 A coordenada polar de um ponto é dada pelo seu raio :math:`(r)`, distância entre a origem
 do sistema cartesiano ao ponto, e seu ângulo :math:`(\theta)`, medido a
@@ -699,7 +701,7 @@ Desta forma, a coordenada polar de D é :math:`(345,1414^\circ;\,5,07\,\mathrm{m
 ----
 
 Áreas de figuras elementares no plano
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------
 
 **Área de um retângulo**
 
