@@ -144,12 +144,11 @@ proporção (p.\,ex., :math:`E=1:3\,500`); ou equação (p.\,ex., :math:`1\,\tex
 
 ----
 
-:exem:`Exemplo 1` A distância entre dois postes
+:exem:`Exemplo 2` A distância entre dois postes
 em uma rua equivale a :math:`33,4\,\text{m}`. Quando representados em papel, estes
 postes estavam distantes :math:`3\,\text{cm}` entre si. Qual a escala do desenho?
 
 :solucao:`Solução:`
-
 Utilizando a Equação :eq:`eq:escala2`, e sabendo que :math:`l=3\,\text{cm}=0,03\,\text{m}`,
 e :math:`L` igual a :math:`33,4\,\text{m}`, o módulo da escala será:
 
@@ -161,6 +160,242 @@ e :math:`L` igual a :math:`33,4\,\text{m}`, o módulo da escala será:
 O resultado exato de :math:`M` é :math:`1\,113,3333333\ldots`, todavia,
 na apresentação da :math:`E`, utiliza-se, geralmente, apenas o número inteiro.
 Desta forma, :math:`E=1/1\,113`.
+
+----
+
+:exem:`Exemplo 3` Em uma planta topográfica mediu-se um talhão na forma de um retângulo,
+obtendo-se como comprimentos dos lados os valores de :math:`2,3\,\text{cm}` e de
+:math:`0,9\,\text{cm}`. Sabendo-se que a escala do desenho era de :math:`1:6\,000`, calcule
+a área do talhão em :math:`\,\text{m}^2`?
+
+:solucao:`Solução:`
+Este problema será resolvido de duas formas. A primeira
+é calculando os comprimentos dos lados em metros e depois calculando
+a área. Da escala temos, :math:`1\,\text{m}=6\,000\,\text{m}`, que é o mesmo que :math:`1\,\text{cm}=60\,\text{m}`.
+Utilizando esta última relação, aplica-se uma regra de três, obtendo-se
+para os lados de :math:`2,3\,\text{cm}` e de :math:`0,9\,\text{cm}`, respectivamente, os comprimentos
+dos lados de :math:`138\,\text{m}` e :math:`54\,\text{m}`. Desta forma, a área seria de :math:`7\,452\,\text{m}^2`
+:math:`(138\,\text{m}\times54\,\text{m})`.
+
+\noindent Uma outra maneira de calcular a área do talhão é, calculá-la
+em :math:`\text{cm}^2` e, posteriormente, convertê-la para :math:`\,\text{m}^2`. Assim,
+a área no papel é de :math:`2,07\,\text{cm}^2` :math:`(2,3\,\text{cm}\times0,9\,\text{cm})`.
+A escala, como já foi dito, é utilizada para medidas de comprimento.
+Todavia, elevando ambos os lados da escala ao quadrados, teremos uma
+relação entre área de desenho e área na natureza. Para a nossa escala
+:math:`(1\,\text{cm}=60\,\text{m})`, elevando ambos os lados ao quadrado tem-se:
+
+.. math::
+   \left(1~\text{cm}\right)^2 & =\left(60~\text{m}\right)^2\\
+   1\text{cm}^2 & =3\,600~\text{m}^2.
+
+Logo, a área do talhão será :math:`2,07\times3\,600=7\,452$\,\text{m}^2`.
+
+----
+
+
+Escala gráfica
+^^^^^^^^^^^^^^
+
+Uma outra forma de representação da escala é a gráfica, que tem como
+vantagem, que, mesmo se o mapa/carta for reduzida ou ampliada, a escala
+gráfica se mostrará apropriada para análises, uma vez que ela é reduzida
+ou ampliada na mesma proporção. Dois exemplos de escalas gráficas
+são apresentados na :numref:`escalagrafica`.
+
+.. _escalagrafica:
+
+.. figure:: /images/capitulo2/fig_escala_grafica.png
+   :scale: 35 %
+   :alt: fig_escala_grafica.png
+   :align: center
+
+   Exemplos de escalas gráficas.
+
+Para desenhar uma escala gráfica aplicam-se as seguinte etapas:
+
+- a escala gráfica a ser desenhada é colocada na parte inferior ou inferior e a direita do mapa/carta;
+
+- quanto ao tamanho, não deve ser muito pequeno, impossibilitando uma
+  leitura adequada, nem muito grande, ocupando um espaço desproporcional
+  ao desenho a ser apresentado;
+
+- definido o tamanho e posição, faz-se a sua subdivisão; pintando intercaladamente as subdivisões;
+
+- conhecendo a escala numérica, coloca-se sobre as subdivisões suas
+  distância em relação ao ponto inicial da escala;
+
+
+No Exemplo abaixo é apresentado passo a passo a construção
+de uma escala gráfica.
+
+----
+
+:exem:`Exemplo 4` Um levantamento de uma propriedade
+será apresentado em papel A4, onde foi estabelecida a :math:`E=1:1\,500`,
+desenhe uma escala gráfica com :math:`6\,\text{cm}` de comprimento.
+
+:solucao:`Solução:`
+
+.. figure:: /images/capitulo2/fig_exemp_escala_grafica.png
+   :scale: 55 %
+   :alt: fig_exemp_escala_grafica.png
+   :align: center
+
+----
+
+Determinação de áreas
+---------------------
+
+Normalmente, em problemas topográficos, há a necessidade de se calcular
+áreas. As áreas podem ser: *i*) da superfície projetada do
+plano topográfico ou cartográfico (plano horizontal), quando se deseja,
+por exemplo, conhecer a área que se pode cultivar, ou em caso de construções,
+as áreas disponíveis para locação de obras de engenharia; ou *ii*)
+no plano vertical, quando se deseja realizar cálculos de volumes de
+corte e de aterro. O cálculo de áreas de figuras elementares foi apresentado
+na secção :any:`secAreasdefiguras`.
+Neste capítulo veremos algumas metodologias para medição de áreas
+em topografia.
+
+Decomposição de figuras elementares
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Uma maneira grosseira de realizar medidas de uma área :math:`(A)`, seja
+diretamente em uma planta topográfica ou mesmo em levantamento de
+campo, é na decomposição de sua área em figuras geométricas simples,
+como triângulos, trapézios e retângulos (ver secção :any:`secAreasdefiguras`).
+Na :numref:`fig_figuraselementares` é apresentada um limite de
+uma propriedade onde se pretende medir a área. Ela é delimitada a
+sua esquerda por um rio e a sua direita pela poligonal :math:`ABCDEFG`.
+Decidiu-se então por decompô-la nas figuras geométricas: de três triângulos
+:math:`(BCF,\,CDF,\,\,\text{e}\,DEF)`; e três trapézios :math:`(GFJK,\,HIJK\,\text{e}\,ABIH)`.
+Observe que as áreas dos trapézios são apenas aproximações ao limite
+do rio, pois assume-se que ele se aproxima a seguimentos retos. Se
+o rio fosse mais sinuoso, poderia utilizar mais retângulos e trapézios
+para melhorar o ajuste.
+
+Em campo, as medidas de comprimento dos lados das figuras geométricas
+podem ser realizadas utilizando-se, por exemplo, uma trena ou uma
+estação total. Se a área estivesse representada em papel, bastaria
+medir os lados dos segmentos que formam as figuras geométricas com
+uma régua e aplicar a estes valores a escala. Se o levantamento já
+se encontra na forma digital, em ambiente de Sistema de Informação Geográfica (SIG) ou de CAD (*Computer-aided design*,
+desenho acompanhado por computador), que são programas de computador para desenvolvimento
+de desenhos técnicos, as distâncias são obtidas de maneira automática. Uma vez conhecida
+as distâncias entre os alinhamentos das figuras geométricas propostas,
+calcula-se de cada uma, e posteriormente, são somadas, obtendo-se
+a área total.
+
+.. _fig_figuraselementares:
+
+.. figure:: /images/capitulo2/fig_figuraselementares.png
+   :scale: 55 %
+   :alt: fig_figuraselementares.png
+   :align: center
+
+   Decomposição de uma área em figuras elementares.
+
+
+Área ao longo de um transecto
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Quando a superfície a ser determinada apresenta-se com uma forma estreita,
+pode-se estabelecer um alinhamento na direção do maior comprimento
+com o auxílio de um teodolito ou estação total, e a partir deste alinhamento,
+a espaçamentos constantes ou não, lançar perpendiculares até os pontos
+limitantes. A definição se o espaçamento será constante ou não dependerá
+do limite da divisa ser ou não uniforme.
+
+Um exemplo de um transecto em que o espaçamento pode ser constante
+é apresentado na :numref:`transectrapezio`, onde se tem o
+alinhamento principal dado por :math:`A`, e as medidas dos comprimentos
+das perpendiculares, espaçada, neste caso, de 20~m em 20~m. Desta
+forma, haverá como resultado, que cada par de perpendiculares, quando
+ligadas, formarão as bases :math:`(b)` de um trapézio e o espaçamento entre
+as perpendiculares, a sua altura :math:`(h)`. Se somarmos as áreas de todos
+os trapézios, teremos a da área total. Nota-se que o ajuste ao limite
+original não é perfeito, todavia, como a área é aproximadamente uniforme
+e que, haverão trapézios que irão subestimar área e outros que irão
+superestimá-la, há uma tendência de que o valor calculado se aproximar
+do valor real. A área poderá ser calculada como:
+
+
+.. math::
+   A & =\frac{\left(b_{0}+b_{1}\right)h}{2}+\frac{\left(b_{1}+b_{2}\right)h}{2}+\ldots+\frac{\left(b_{n-1}+b_{n}\right)h}{2}\\
+   :label: eq:areatrapezio
+
+.. math::
+  A =h\left(\frac{b_{0}}{2}+b_{1}+b_{2}+\ldots+\frac{b_{n}}{2}\right).
+
+
+.. _transectrapezio:
+
+.. figure:: /images/capitulo2/fig_transectrapezio.png
+   :scale: 45 %
+   :alt: fig_transectrapezio.png
+   :align: center
+
+   Exemplo de um transecto uniforme e a aproximação a figuras de trapézios.
+
+-----
+
+:exem:`Exemplo 5` Calcular a área do transecto mostrada na :numref:`transectrapezio`.
+
+:solucao:`Solução:`
+Considerando a Equação :eq:`eq:areatrapezio`, com as perpendiculares
+sendo as bases e :math:`h=20\,\text{m}`, temos:
+
+.. math::
+   A & =20\left(\frac{0}{2}+25,8+27,4+26,1+25,6+\frac{12,5}{2}\right).\\
+   & =2\,223~\mathrm{m}^2.
+
+----
+
+Considera-se agora a parte limitante do transecto não uniforme, conforme
+:numref:`transectrapezio2`. Para calcular a área com espaçamento
+constante e obter uma boa estimativa da área, o espaçamento entre
+as perpendiculares teriam que ser menor. Todavia, tal procedimento
+aumentaria demasiadamente o trabalho em campo. Ao invés disto, podemos
+considerar perpendiculares lançadas de acordo com a mudança de direção
+do limite. Esta mudança de estratégia vai fazer com que o espaçamento
+entre as perpendiculares sejam variáveis, mas vai adaptar melhor ao
+limite. Com os espaçamentos distintos, aplica-se a Equação :eq:`eqareatrapezio2`,
+considerando as alturas distintas dos trapézios.
+
+.. _transectrapezio2:
+
+.. figure:: /images/capitulo2/fig_transectrapezio2.png
+   :scale: 45 %
+   :alt: fig_transectrapezio2.png
+   :align: center
+
+   Exemplo de um transecto uniforme e a aproximação a figuras de trapézios.
+
+
+.. math::
+   A  =\frac{\left(b_{0}+b_{1}\right)h_{1}}{2}+\frac{\left(b_{1}+b_{2}\right)h_{2}}{2}+\ldots+\frac{\left(b_{n-1}+b_{n}\right)h_{n}}{2}\\
+   :label: eqareatrapezio2
+
+.. math::
+   A  =\frac{1}{2}\left((b_{0}+b_{1})h_{1}+(b_{1}+b_{2})h_{2}+\ldots+(b_{n-1}+b_{n})h_{n}\right).
+
+----
+
+:exem:`Exemplo 6` Calcular a área do transecto mostrada na :numref:`transectrapezio2`.
+
+
+:solucao:`Solução:` Considerando a Equação :eq:`eqareatrapezio2`, para perpendiculares
+que não tem espaçamento constante e utilizando os dados da :numref:`transectrapezio2`,
+temos:
+
+.. math::
+   A=\frac{1}{2}((14,7+12,2)(15,8-0)+(12,2+49,4)(30,1-15,8)+\\
+   (49,4+14,9)(65,0-30,1)+(14,9+59,1)(85,4-65)+\\
+   (59,1+21,5)(114,1-85,4))\\
+
+.. math::
+   A=3\,686,4\,\text{m}^2.
 
 
 **Referências**

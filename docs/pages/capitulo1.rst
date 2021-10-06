@@ -700,6 +700,8 @@ Desta forma, a coordenada polar de D é :math:`(345,1414^\circ;\,5,07\,\mathrm{m
 
 ----
 
+.. _secAreasdefiguras:
+
 Áreas de figuras elementares no plano
 -------------------------------------
 
