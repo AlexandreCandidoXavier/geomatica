@@ -12,11 +12,5 @@ Livro de Geomática
 
    pages/capitulo1
    pages/capitulo2
+   pages/capitulo3
    pages/capitulo7
-
-índices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

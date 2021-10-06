@@ -55,6 +55,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#area-ao-longo-de-um-transecto">Área ao longo de um transecto</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#exercicios">Exercícios</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="capitulo7.html">Capitulo 7</a></li>
@@ -123,8 +124,8 @@ unidades de comprimento e área podem ser encontradas em <span id="id1">[<a clas
 <hr class="docutils" />
 <p><span class="exem">Exemplo 1</span> Converta <span class="math notranslate nohighlight">\(1\,\text{km}^2\)</span> para: <span class="math notranslate nohighlight">\(\text{m}^2\)</span>, ha, alqueire
 geométrico e paulista?</p>
-<p><span class="solucao">Solução:</span></p>
-<p>Para <span class="math notranslate nohighlight">\(\text{m}^2\)</span>: como <span class="math notranslate nohighlight">\(1\,\text{km}=1\,000\,\text{m}\)</span>, então, elevando ao
+<p><span class="solucao">Solução:</span>
+Para <span class="math notranslate nohighlight">\(\text{m}^2\)</span>: como <span class="math notranslate nohighlight">\(1\,\text{km}=1\,000\,\text{m}\)</span>, então, elevando ao
 quadrado ambos os lados, <span class="math notranslate nohighlight">\((1\,\text{km})^2=(1\,000\,\text{m})^2\)</span>, vai resultar
 em <span class="math notranslate nohighlight">\(1\,\text{km}^2=10^6\,\text{m}^2=1\,000\,000\,\text{m}^2\)</span>;</p>
 <p>Para ha: sabe-se agora que a área é de <span class="math notranslate nohighlight">\(10^6\,\text{m}^2\)</span>,
@@ -423,9 +424,120 @@ descendo (o contrário também pode ser realizado). Considere o valor
 absoluto desta operação, ou seja, se o resultado der negativo, considere-o
 positivo. E por fim, para obter a área, divida este número por dois.
 A unidade de área dependerá da unidade das coordenadas. Assim, se
-forem coordenadas na unidade de metros, tem-se área em <span class="math notranslate nohighlight">\(\tetx{m}^2\)</span>, se
-for em quilômetros, em <span class="math notranslate nohighlight">\(\textkm}^2\)</span>. Não confundir no esquema da Figura~ref{fig:areagauss2}
+forem coordenadas na unidade de metros, tem-se área em <span class="math notranslate nohighlight">\(\text{m}^2\)</span>, se
+for em quilômetros, em <span class="math notranslate nohighlight">\(\text{km}^2\)</span>. Não confundir no esquema da <a class="reference internal" href="#fig-areagauss2"><span class="std std-numref">Figura 14</span></a>
 com uma divisão e produto das coordenadas.</p>
+<figure class="align-center" id="id11">
+<span id="fig-areagauss2"></span><a class="reference internal image-reference" href="../_images/fig_areagauss2.png"><img alt="fig_areagauss2.png" src="../_images/fig_areagauss2.png" style="width: 499.5px; height: 257.40000000000003px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 14 </span><span class="caption-text">Organização dos dados para cálculo da área por Gauss.</span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 7</span> A partir das coordenadas retangulares, em metros, do levantamento da
+poligonal apresentada abaixo, calcular a sua área.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/exemplo_area_gauss.png"><img alt="exemplo_area_gauss.png" src="../_images/exemplo_area_gauss.png" style="width: 324.79999999999995px; height: 282.09999999999997px;" /></a>
+</figure>
+<p>Organizando os dados e realizando os cálculos conforme metodologia
+apresentada na <a class="reference internal" href="#fig-areagauss2"><span class="std std-numref">Figura 14</span></a>, temos:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}2\cdot A  =\frac{26,2}{7,5}\,\frac{9,8}{22,9}\,\frac{24,5}{67,1}\,\frac{58,9}{46,3}\,\frac{40,7}{14,2}\,\frac{26,2}{7,5} \\\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}2\cdot A  =&amp; (7,5\cdot 9,8+22,9\cdot 24,5+ \cdots+14,2\cdot 26,2)-\\
+&amp;(26,2\cdot22,9+9,8\cdot67,1+\cdots +40,7\cdot7,5)\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}A &amp; =\frac{1}{2}\left|6\,843,2 - 3\,533,5 \right|\\
+A &amp; = 1\,654,8\,\text{m}^2\end{split}\]</div>
+<hr class="docutils" />
+<div class="admonition-sugestao-de-aula-pratica admonition">
+<p class="admonition-title">Sugestão de aula prática</p>
+<p><em>Objetivo</em>: utilizar a ferramenta emph{Cad} para fins de desenho de planta topográfica.</p>
+<p>Serão apresentadas algumas funções básicas, necessárias para o desenho da planta.</p>
+<p>Como roteiro:</p>
+<ul class="simple">
+<li><p>apresentação geral do <em>Cad</em> utilizado: janelas de funções; principais ícones de funções; área de desenho; coordenadas retangulares; a
+área de comando, etc;</p></li>
+<li><p>apresentação de funções, como: <em>zoom</em>, <em>line</em>, <em>pline</em>, <em>area</em>, <em>dimaligned</em> e <em>text</em>;</p></li>
+<li><p>como alterar as propriedades dos objetos do desenho.</p></li>
+</ul>
+<p>Como exemplo de aplicação: considere a poligonal do exercício 5, fazer o desenho,
+cotar, determinar a área e o perímetro.</p>
+</div>
+</section>
+</section>
+<section id="exercicios">
+<h2>Exercícios<a class="headerlink" href="#exercicios" title="Link permanente para este título"></a></h2>
+<p><span class="exem">1)</span>  A distância entre duas paredes de um apartamento
+é de <span class="math notranslate nohighlight">\(12,32\,\text{m}\)</span>. No desenho da planta do apartamento, estas duas paredes
+estão separadas por <span class="math notranslate nohighlight">\(4,2\,\text{cm}\)</span>. Qual a escala da planta?</p>
+<p><span class="exem">Resp.:</span>  <span class="math notranslate nohighlight">\(E=1:293\)</span>.</p>
+<hr class="docutils" />
+<p><span class="exem">2)</span>  Um galpão, visto em uma planta topográfica, tem a forma de um trapézio, com dimensões:
+bases de <span class="math notranslate nohighlight">\(30\)</span> cm e <span class="math notranslate nohighlight">\(25\,\text{cm}\)</span> e, altura de <span class="math notranslate nohighlight">\(27\,\text{cm}. Sabendo que a escala é
+de :math:\)</span>, qual a área do galpão em <span class="math notranslate nohighlight">\(\,\text{m}^2\)</span>?</p>
+<p><span class="exem">Resp.:</span>  Área de <span class="math notranslate nohighlight">\(2\,970\,{m}^2\)</span>.</p>
+<hr class="docutils" />
+<p><span class="exem">3)</span> Com a finalidade de determinar uma área de forma circular em uma planta topográfica, mediu-se, com uma régua, o seu  diâmetro, obtendo-se a medida de 25 cm. A escala desta planta é de <span class="math notranslate nohighlight">\(1:4\,000\)</span>. Pergunda-se: qual é esta respectiva área, em ha, no terreno?</p>
+<p><span class="exem">Resp.:</span>  Área de <span class="math notranslate nohighlight">\(78,54\,\text{ha}\)</span>.</p>
+<hr class="docutils" />
+<p><span class="exem">4)</span> Calcular a área total da poligonal <em>ABCDEFGKH</em>
+da <a class="reference internal" href="#fig-figuraselementares"><span class="std std-numref">Figura 10</span></a>?</p>
+<p><span class="exem">Resp.:</span> Área de <span class="math notranslate nohighlight">\(6\,026,0\)</span> <span class="math notranslate nohighlight">\(\,\text{m}^{2}\)</span>.</p>
+<hr class="docutils" />
+<p><span class="exem">5)</span> Seguem as coordenadas
+em metros dos vértices de uma área levantada: <strong>1</strong>:math:(0,,19)`,
+<strong>2</strong><span class="math notranslate nohighlight">\((4,\,29)\)</span>,  <strong>3</strong><span class="math notranslate nohighlight">\((34,\,44)\)</span>,  <strong>4</strong><span class="math notranslate nohighlight">\((64,\,29)\)</span>,  <strong>5</strong><span class="math notranslate nohighlight">\((71,\,11)\)</span>,
+<strong>6</strong><span class="math notranslate nohighlight">\((49,\,2)\)</span>,  <strong>7</strong><span class="math notranslate nohighlight">\((34,\,10)\)</span>,  <strong>8</strong><span class="math notranslate nohighlight">\((29,\,11)\)</span>,  <strong>9</strong><span class="math notranslate nohighlight">\((14,\,0)\)</span>.
+Calcule a área pela fórmula de Gauss nas unidade de m:math:<cite>^2</cite> e ha.
+Represente graficamente.</p>
+<p><span class="exem">Resp.:</span> área = <span class="math notranslate nohighlight">\(1\,925\,\text{m}^2\)</span>; área = <span class="math notranslate nohighlight">\(0,1925\)</span> ha.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/exe_calculodearea26.png"><img alt="exe_calculodearea26.png" src="../_images/exe_calculodearea26.png" style="width: 375.2px; height: 331.09999999999997px;" /></a>
+</figure>
+<hr class="docutils" />
+<p><span class="exem">6)</span> Seguem as coordenadas em metros dos vértices de uma área levantada: <strong>A</strong><span class="math notranslate nohighlight">\((0,\,0)\)</span>,
+<strong>B</strong><span class="math notranslate nohighlight">\((5,\,-19)\)</span>, <strong>C</strong><span class="math notranslate nohighlight">\((23,\,-10)\)</span>, <strong>D</strong><span class="math notranslate nohighlight">\((29,\,4)\)</span>,
+<strong>E</strong><span class="math notranslate nohighlight">\((13,\,11)\)</span>, com a representação gráfica na Figura ao lado.</p>
+<ol class="loweralpha simple">
+<li><p>Calcule a área pela fórmula de Gauss nas unidade de <span class="math notranslate nohighlight">\(\text{m}^2\)</span> e ha. Represente graficamente.</p></li>
+<li><p>Qual a distância entre os pontos <strong>B</strong> e <strong>C</strong>?</p></li>
+<li><p>Qual a distância entre os pontos <strong>C</strong> e <strong>D</strong>?</p></li>
+</ol>
+<p><span class="exem">Resp.:</span>  a) <span class="math notranslate nohighlight">\(518\)</span> <span class="math notranslate nohighlight">\(\text{m}^2\)</span> e <span class="math notranslate nohighlight">\(0,0518\)</span> ha; b) <span class="math notranslate nohighlight">\(20,125\)</span> m;
+c) <span class="math notranslate nohighlight">\(15,232\)</span> m.</p>
+<hr class="docutils" />
+<p><span class="exem">7)</span> Sendo as coordenadas de uma poligonal: <strong>a</strong><span class="math notranslate nohighlight">\((0,\,0)\)</span>,
+<strong>b</strong><span class="math notranslate nohighlight">\((32,\,34)\)</span>, <strong>c</strong><span class="math notranslate nohighlight">\((23,\,9)\)</span>, <strong>d</strong><span class="math notranslate nohighlight">\((54,\,35)\)</span>, <strong>e</strong><span class="math notranslate nohighlight">\((19,\,-27)\)</span>,
+<strong>f</strong><span class="math notranslate nohighlight">\((16,\,-8)\)</span>. Estando elas em metros, pede-se:</p>
+<ol class="loweralpha simple">
+<li><p>Calcule a área pela fórmula de gauss nas unidade de <span class="math notranslate nohighlight">\(\text{m}^2\)</span> e ha.</p></li>
+<li><p>Represente graficamente.</p></li>
+<li><p>Qual a distância entre os pontos <strong>a</strong> e <strong>b</strong>?</p></li>
+<li><p>Qual a distância entre os pontos <strong>e</strong> e <strong>f</strong>?</p></li>
+</ol>
+<p><span class="exem">Resp.:</span>  a) <span class="math notranslate nohighlight">\(1\,009\,\text{m}^2\)</span>; <span class="math notranslate nohighlight">\(0,1009\)</span> ha; c) <span class="math notranslate nohighlight">\(46,690\)</span> m;
+d) <span class="math notranslate nohighlight">\(19,235\)</span> m.</p>
+<hr class="docutils" />
+<p><span class="exem">8)</span> Na Figura abaixo é apresentado um transecto uniforme e os dados de
+distância. Calcule a área em alqueire geométrico.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/exe_calculodearea28.png"><img alt="exe_calculodearea28.png" src="../_images/exe_calculodearea28.png" style="width: 451.84999999999997px; height: 125.64999999999999px;" /></a>
+</figure>
+<p><span class="exem">Resp.:</span>  <span class="math notranslate nohighlight">\(0,06818\)</span> alqueire.</p>
+<hr class="docutils" />
+<p><span class="exem">9)</span> Na Figura abaixo são apresentados os dados um levantamento de um transecto
+não uniforme, sendo as medidas na unidade de metros. Calcule a área
+em hectare.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/exe_calculodearea29.png"><img alt="exe_calculodearea28.png" src="../_images/exe_calculodearea29.png" style="width: 434.0px; height: 204.75px;" /></a>
+</figure>
+<p><span class="exem">Resp.:</span>  <span class="math notranslate nohighlight">\(0,6723\)</span> ha.</p>
+<hr class="docutils" />
+<p><span class="exem">10)</span> Desenhar uma escala gráfica de $1:2,000$,
+com $10$ cm de tamanho.</p>
+<p><span class="exem">11)</span> Desenhar uma escala gráfica de <span class="math notranslate nohighlight">\(1:500\)</span>, com <span class="math notranslate nohighlight">\(8\)</span> cm de
+tamanho.</p>
 <p><strong>Referências</strong></p>
 <p id="id2"><dl class="citation">
 <dt class="label" id="id5"><span class="brackets"><a class="fn-backref" href="#id1">CJ04</a></span></dt>
@@ -436,7 +548,6 @@ com uma divisão e produto das coordenadas.</p>
 </dd>
 </dl>
 </p>
-</section>
 </section>
 </section>
 

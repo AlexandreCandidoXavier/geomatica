@@ -68,7 +68,6 @@ unidades de comprimento e área podem ser encontradas em :cite:p:`comastri2`.
 geométrico e paulista?
 
 :solucao:`Solução:`
-
 Para :math:`\text{m}^2`: como :math:`1\,\text{km}=1\,000\,\text{m}`, então, elevando ao
 quadrado ambos os lados, :math:`(1\,\text{km})^2=(1\,000\,\text{m})^2`, vai resultar
 em :math:`1\,\text{km}^2=10^6\,\text{m}^2=1\,000\,000\,\text{m}^2`;
@@ -459,10 +458,172 @@ descendo (o contrário também pode ser realizado). Considere o valor
 absoluto desta operação, ou seja, se o resultado der negativo, considere-o
 positivo. E por fim, para obter a área, divida este número por dois.
 A unidade de área dependerá da unidade das coordenadas. Assim, se
-forem coordenadas na unidade de metros, tem-se área em :math:`\tetx{m}^2`, se
-for em quilômetros, em :math:`\textkm}^2`. Não confundir no esquema da Figura~\ref{fig:areagauss2}
+forem coordenadas na unidade de metros, tem-se área em :math:`\text{m}^2`, se
+for em quilômetros, em :math:`\text{km}^2`. Não confundir no esquema da :numref:`fig_areagauss2`
 com uma divisão e produto das coordenadas.
 
+.. _fig_areagauss2:
+
+.. figure:: /images/capitulo2/fig_areagauss2.png
+   :scale: 45 %
+   :alt: fig_areagauss2.png
+   :align: center
+
+   Organização dos dados para cálculo da área por Gauss.
+
+----
+
+:exem:`Exemplo 7` A partir das coordenadas retangulares, em metros, do levantamento da
+poligonal apresentada abaixo, calcular a sua área.
+
+.. figure:: /images/capitulo2/exemplo_area_gauss.png
+   :scale: 35 %
+   :alt: exemplo_area_gauss.png
+   :align: center
+
+Organizando os dados e realizando os cálculos conforme metodologia
+apresentada na :numref:`fig_areagauss2`, temos:
+
+.. math::
+   2\cdot A  =\frac{26,2}{7,5}\,\frac{9,8}{22,9}\,\frac{24,5}{67,1}\,\frac{58,9}{46,3}\,\frac{40,7}{14,2}\,\frac{26,2}{7,5} \\
+
+.. math::
+   2\cdot A  =& (7,5\cdot 9,8+22,9\cdot 24,5+ \cdots+14,2\cdot 26,2)-\\
+   &(26,2\cdot22,9+9,8\cdot67,1+\cdots +40,7\cdot7,5)
+
+.. math::
+   A & =\frac{1}{2}\left|6\,843,2 - 3\,533,5 \right|\\
+   A & = 1\,654,8\,\text{m}^2
+
+----
+
+.. admonition:: Sugestão de aula prática
+
+   *Objetivo*: utilizar a ferramenta \emph{Cad} para fins de desenho de planta topográfica.
+
+   Serão apresentadas algumas funções básicas, necessárias para o desenho da planta.
+
+   Como roteiro:
+
+   - apresentação geral do *Cad* utilizado: janelas de funções; principais ícones de funções; área de desenho; coordenadas retangulares; a
+     área de comando, etc;
+   - apresentação de funções, como: *zoom*, *line*, *pline*, *area*, *dimaligned* e *text*;
+   - como alterar as propriedades dos objetos do desenho.
+
+   Como exemplo de aplicação: considere a poligonal do exercício 5, fazer o desenho,
+   cotar, determinar a área e o perímetro.
+
+Exercícios
+----------
+
+:exem:`1)`  A distância entre duas paredes de um apartamento
+é de :math:`12,32\,\text{m}`. No desenho da planta do apartamento, estas duas paredes
+estão separadas por :math:`4,2\,\text{cm}`. Qual a escala da planta?
+
+:exem:`Resp.:`  :math:`E=1:293`.
+
+----
+
+:exem:`2)`  Um galpão, visto em uma planta topográfica, tem a forma de um trapézio, com dimensões:
+bases de :math:`30` cm e :math:`25\,\text{cm}` e, altura de :math:`27\,\text{cm}. Sabendo que a escala é
+de :math:`1:200`, qual a área do galpão em :math:`\,\text{m}^2`?
+
+:exem:`Resp.:`  Área de :math:`2\,970\,{m}^2`.
+
+----
+
+:exem:`3)` Com a finalidade de determinar uma área de forma circular em uma planta topográfica, mediu-se, com uma régua, o seu  diâmetro, obtendo-se a medida de 25 cm. A escala desta planta é de :math:`1:4\,000`. Pergunda-se: qual é esta respectiva área, em ha, no terreno?
+
+:exem:`Resp.:`  Área de :math:`78,54\,\text{ha}`.
+
+----
+
+:exem:`4)` Calcular a área total da poligonal *ABCDEFGKH*
+da :numref:`fig_figuraselementares`?
+
+:exem:`Resp.:` Área de :math:`6\,026,0` :math:`\,\text{m}^{2}`.
+
+----
+
+:exem:`5)` Seguem as coordenadas
+em metros dos vértices de uma área levantada: **1**:math:(0,\,19)`,
+**2**:math:`(4,\,29)`,  **3**:math:`(34,\,44)`,  **4**:math:`(64,\,29)`,  **5**:math:`(71,\,11)`,
+**6**:math:`(49,\,2)`,  **7**:math:`(34,\,10)`,  **8**:math:`(29,\,11)`,  **9**:math:`(14,\,0)`.
+Calcule a área pela fórmula de Gauss nas unidade de m:math:`^2` e ha.
+Represente graficamente.
+
+:exem:`Resp.:` área = :math:`1\,925\,\text{m}^2`; área = :math:`0,1925` ha.
+
+.. figure:: /images/capitulo2/exe_calculodearea26.png
+   :scale: 35 %
+   :alt: exe_calculodearea26.png
+   :align: center
+
+----
+
+:exem:`6)` Seguem as coordenadas em metros dos vértices de uma área levantada: **A**:math:`(0,\,0)`,
+**B**:math:`(5,\,-19)`, **C**:math:`(23,\,-10)`, **D**:math:`(29,\,4)`,
+**E**:math:`(13,\,11)`, com a representação gráfica na Figura ao lado.
+
+a) Calcule a área pela fórmula de Gauss nas unidade de :math:`\text{m}^2` e ha. Represente graficamente.
+
+b) Qual a distância entre os pontos **B** e **C**?
+
+c) Qual a distância entre os pontos **C** e **D**?
+
+:exem:`Resp.:`  a) :math:`518` :math:`\text{m}^2` e :math:`0,0518` ha; b) :math:`20,125` m;
+c) :math:`15,232` m.
+
+----
+
+:exem:`7)` Sendo as coordenadas de uma poligonal: **a**:math:`(0,\,0)`,
+**b**:math:`(32,\,34)`, **c**:math:`(23,\,9)`, **d**:math:`(54,\,35)`, **e**:math:`(19,\,-27)`,
+**f**:math:`(16,\,-8)`. Estando elas em metros, pede-se:
+
+a) Calcule a área pela fórmula de gauss nas unidade de :math:`\text{m}^2` e ha.
+
+b) Represente graficamente.
+
+c) Qual a distância entre os pontos **a** e **b**?
+
+d) Qual a distância entre os pontos **e** e **f**?
+
+:exem:`Resp.:`  a) :math:`1\,009\,\text{m}^2`; :math:`0,1009` ha; c) :math:`46,690` m;
+d) :math:`19,235` m.
+
+----
+
+:exem:`8)` Na Figura abaixo é apresentado um transecto uniforme e os dados de
+distância. Calcule a área em alqueire geométrico.
+
+.. figure:: /images/capitulo2/exe_calculodearea28.png
+   :scale: 35 %
+   :alt: exe_calculodearea28.png
+   :align: center
+
+
+:exem:`Resp.:`  :math:`0,06818` alqueire.
+
+----
+
+:exem:`9)` Na Figura abaixo são apresentados os dados um levantamento de um transecto
+não uniforme, sendo as medidas na unidade de metros. Calcule a área
+em hectare.
+
+.. figure:: /images/capitulo2/exe_calculodearea29.png
+   :scale: 35 %
+   :alt: exe_calculodearea28.png
+   :align: center
+
+:exem:`Resp.:`  :math:`0,6723` ha.
+
+----
+
+:exem:`10)` Desenhar uma escala gráfica de $1:2\,000$,
+com $10$ cm de tamanho.
+
+:exem:`11)` Desenhar uma escala gráfica de :math:`1:500`, com :math:`8` cm de
+tamanho.
 
 **Referências**
 
