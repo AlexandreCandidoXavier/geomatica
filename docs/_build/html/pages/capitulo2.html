@@ -372,6 +372,60 @@ temos:</p>
 (59,1+21,5)(114,1-85,4))\\\end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[A=3\,686,4\,\text{m}^2.\]</div>
+<p>Cálculo de área por Gauss</p>
+<p>Em levantamentos topográficos, as coordenadas retangulares dos pontos
+limitantes, são determinados por diversos métodos. A obtenção das
+coordenadas retangulares é de suma importância, uma vez, que a partir
+delas, pode-se plotar em papel, calcular distâncias entre pontos e
+áreas de poligonais.</p>
+<p>A maneira mais utilizada para se calcular a área, quando se conhecem
+as coordenadas retangulares dos vértices da poligonal, é pelo método
+de Gauss, também conhecido como método das coordenadas. A seu cálculo
+é bastante facilitado com o uso de calculadoras ou programas computacionais.
+O eixo-<span class="math notranslate nohighlight">\(y\)</span> das coordenadas topográficas, coincide com a direção dita
+como Norte, e o eixo-<span class="math notranslate nohighlight">\(x\)</span> com a direção Leste. As coordenadas retangulares
+podem também ser obtidas em papel, realizando medidas com régua na
+própria planta, considerando a escala do desenho, por exemplo, por
+digitalização, que é o ato de transformar a informação do papel (analítica) para um formato
+em que o computador consiga trabalhar. Para digitalizar os dados de
+plantas ou cartas, podem-se empregar os <em>scanners</em> e as mesas
+digitalizadora.</p>
+<p>Para demonstrar como o método funciona, considere a <a class="reference internal" href="#fig-areagaussdesenho"><span class="std std-numref">Figura 13</span></a>,
+onde pretende-se calcular a área limitada pelos vértices <span class="math notranslate nohighlight">\(ABCD\)</span>,
+onde suas coordenadas retangulares são conhecidas. Para obter a área
+total, soma-se as áreas limitadas pelos pontos <span class="math notranslate nohighlight">\(C\text{'}CDD\text{'}\)</span>
+e <span class="math notranslate nohighlight">\(D\text{'}DAA\text{'}\)</span> e subtrai-se das áreas <span class="math notranslate nohighlight">\(C\text{'}CBB\text{'}$
+e :math:\)</span>. Observe que todas estas áreas formam figuras
+de trapézios, desta forma, a área compreendida entre os vértices <span class="math notranslate nohighlight">\(ABCD\)</span>
+é dada pela Equação <a class="reference internal" href="#equation-eqareagauss">(20)</a>.</p>
+<figure class="align-center" id="id10">
+<span id="fig-areagaussdesenho"></span><a class="reference internal image-reference" href="../_images/fig_areagaussdesenho.png"><img alt="fig_areagaussdesenho.png" src="../_images/fig_areagaussdesenho.png" style="width: 364.95px; height: 357.3px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 13 </span><span class="caption-text">Esquema para dedução do cálculo de área por Gauss.</span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<div class="math notranslate nohighlight" id="equation-eqareagauss">
+<span class="eqno">(20)<a class="headerlink" href="#equation-eqareagauss" title="Permalink to this equation"></a></span>\[\begin{split}A &amp; =C\text{'}CDD\text{'}+D\text{'}DAA\text{'}-C\text{'}CBB\text{'}-B\text{'}BAA\text{'}\\
+A &amp; =\frac{1}{2}(x_{C}+x_{D})(y_{C}-y_{D})+\frac{1}{2}(x_{D}+x_{A})(y_{D}-y_{A})-\frac{1}{2}(x_{C}+x_{B})(y_{C}-y_{B})-\frac{1}{2}(x_{B}+x_{A})(y_{B}-y_{A})\\
+2A &amp; =(x_{C}+x_{D})(y_{C}-y_{D})+(x_{D}+x_{A})(y_{D}-y_{A})-(x_{C}+x_{B})(y_{C}-y_{B})-(x_{B}+x_{A})(y_{B}-y_{A})\\
+2A &amp; =y_{A}(x_{B}-x_{D})+y_{B}(x_{C}-x_{A})+y_{C}(x_{D}-x_{B})+y_{D}(x_{A}-x_{C})\\
+2A &amp; =y_{A}x_{B}+y_{B}x_{C}+y_{C}x_{D}+y_{D}x_{A}-x_{A}y_{B}-x_{B}y_{C}-x_{C}y_{D}-x_{D}y_{A}\end{split}\]</div>
+<p>Considere agora um número qualquer de vértices <span class="math notranslate nohighlight">\((n)\)</span>, convenientemente
+organizados, que delimitam a área. Poderemos, para fins de facilidade
+do cálculo, organizar os dados como mostrados na Figura~ref{fig:areagauss2},
+com as coordenadas <span class="math notranslate nohighlight">\(x\)</span> acima das coordenadas <span class="math notranslate nohighlight">\(y\)</span> para cada ponto.
+As coordenadas devem estar em sequência para formar um polígono, seguindo
+o sentido horário ou anti-horário. Também não se deve pular coordenada
+de quaisquer vértices. A primeira coordenada deve aparecer, mais uma
+vez, na última posição. Faz-se então o somatório do produto da diagonal
+subindo e a este resultado subtrai-se do somatório do produto da diagonal
+descendo (o contrário também pode ser realizado). Considere o valor
+absoluto desta operação, ou seja, se o resultado der negativo, considere-o
+positivo. E por fim, para obter a área, divida este número por dois.
+A unidade de área dependerá da unidade das coordenadas. Assim, se
+forem coordenadas na unidade de metros, tem-se área em <span class="math notranslate nohighlight">\(\tetx{m}^2\)</span>, se
+for em quilômetros, em <span class="math notranslate nohighlight">\(\textkm}^2\)</span>. Não confundir no esquema da Figura~ref{fig:areagauss2}
+com uma divisão e produto das coordenadas.</p>
 <p><strong>Referências</strong></p>
 <p id="id2"><dl class="citation">
 <dt class="label" id="id5"><span class="brackets"><a class="fn-backref" href="#id1">CJ04</a></span></dt>
