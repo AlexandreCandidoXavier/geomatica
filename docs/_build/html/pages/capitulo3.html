@@ -16,6 +16,7 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/translations.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Pesquisar" href="../search.html" />
@@ -47,6 +48,9 @@
 <li class="toctree-l3"><a class="reference internal" href="#geoide">Geóide</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#elipsoide">Elipsóide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#coordenada-geodesica">Coordenada geodésica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#coordenada-geodesica-cartesiana">Coordenada geodésica cartesiana</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="capitulo7.html">Capitulo 7</a></li>
@@ -95,7 +99,7 @@ diferentes formas de relevo, das mais planos aos mais acidentados.
 Observa-se também que a superfície da terra não é estática, mas sim
 dinâmica. Há um movimento da crosta terrestre, devido às forças tectônicas.
 Por exemplo, no terremoto no Chile no ano de 2010, foi estimada que
-a cidade de Conception moveu $3,02$ metros para a direção oeste cite{movimentochile}.
+a cidade de Conception moveu <span class="math notranslate nohighlight">\(3,02\)</span> metros para a direção oeste <span id="id1">[<a class="reference internal" href="#id13" title="Wired. Chile earthquake moved entire city 10 feet to the west. mar 2012. URL: http://www.wired.com/wiredscience/2010/03/chile-earthquake-moved-entire-city-10-feet-to-the-west/.">Wir12</a>]</span>.
 Já os mares apresentam-se em constante movimento, pois são sujeitos
 a diversas forças, como: a centrífuga, devido a rotação da terra;
 a gravitacional da terra, lua, sol; dos ventos, etc.</p>
@@ -111,14 +115,251 @@ e centrífugo da terra. A soma dos potenciais gravitacional e centrífugo
 da terra resultam na atração que sentimos sobre a terra, sendo que
 a direção desta força é denominada de vertical do lugar, sendo ele
 único em cada posição do Geóide. A vertical do lugar pode ser obtida
-por um fio de prumofootnote{Pedaço de linha ou náilon com um peso em uma extremidade.}.
+por um fio de prumo (edaço de linha ou náilon com um peso em uma extremidade).
 Nos equipamentos topográficos como o teodolito, a estação total, e
 o dos receptores GNSS, um dos seus eixos conterá a vertical do lugar,
 ou seja, estarão perpendiculares à superfície de nível local.</p>
+<p>Do que foi dito acima, como a densidade da massa da terra é variável espacialmente,
+o geóide resulta em uma forma ondulada. Uma forma de apresentar o
+geóide é por meio da ondulação geoidal <span class="math notranslate nohighlight">\((N)\)</span>. Na Figura ao lado é
+apresentado a ondulação geoidal da terra dado pelo EGM96 (<em>Earth
+Gravitational Model</em> 1996footnote <a class="footnote-reference brackets" href="#f1" id="id2">1</a> <span id="id3">[<a class="reference internal" href="#id10" title="F.G. Lemoine, S. C. Kenyon, J. K. Factor, R.G. Trimmer, N. K. Pavlis, D. S. Chinn, C. M. Cox, S. M. Klosko, S. B. Luthcke, M. H. Torrence, Y. M. Wang, R. G. Williamson, E. C. Pavlis, R. H. Rapp, and T. R. Olson. The development of the joint NASA GSFC and the National Imagery and Mapping Agency (NIMA) Geopotential Model EGM96. NASA technical paper. National Aeronautics and Space Administration, Goddard Space Flight Center, 1998. URL: https://books.google.com.br/books?id=eAMVAQAAIAAJ.">LKF+98</a>]</span>. A ondulação geoidal apresenta
+a distância vertical entre o geóide e o elipsóide (ver Secção ref{subsec:Nivelamento-GNSS}),
+figura matemática que se aproxima a forma da terra, neste caso o WGS84.
+Valores positivos indicam que o geóide está acima do elipóide WGS84,
+e negativos, abaixo. Percebe-se que a variação da altura geoidal é
+de <span class="math notranslate nohighlight">\(-107\,\text{m}\)</span> a <span class="math notranslate nohighlight">\(85\,\text{m}\)</span>, ou seja, algumas áreas estão mais próximas do
+centro do elipsóide e outras mais distantes, o que resulta numa forma
+ondulada. Vale salientar ainda que, além do geóide ser ondulado, ele
+é achatado na direção dos polos. A medida do raio da terra no equador
+é aproximadamente <span class="math notranslate nohighlight">\(21\,\text{km}\)</span> maior que o raio na linha que contém o eixo
+de rotação da terra.</p>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../_images/geoide.png"><img alt="geoide.png" src="../_images/geoide.png" style="width: 352.2px; height: 454.8px;" /></a>
 </figure>
 </section>
+</section>
+<section id="elipsoide">
+<h2>Elipsóide<a class="headerlink" href="#elipsoide" title="Link permanente para este título"></a></h2>
+<p>O que os cientistas fazem então para realizar mapeamentos, definir
+fronteiras etc, uma vez que a forma da terra tem a forma irregular?
+Fazem uma aproximação do geóide à figura matemática denominada de
+elipsóide de revolução, ou simplesmente elipsóide. O elipsóide nada
+mais é que uma elipse rotacionando em torno de um eixo (<a class="reference internal" href="#figelipsoide"><span class="std std-numref">Figura 15</span></a>).
+O maior semieixo do elipsóide é denominado por <span class="math notranslate nohighlight">\(a\)</span>, e o menor por
+<span class="math notranslate nohighlight">\(b\)</span>. Geralmente, na definição dos parâmetros do elipsóide, ao invés
+de apresentar os dois raios, são apresentados, o raio do semieixo
+<span class="math notranslate nohighlight">\(a\)</span> e o achatamento,
+<span class="math notranslate nohighlight">\(f\)</span>, definido pela Equação <a class="reference internal" href="#equation-eq-achatamento">(21)</a>. O parâmetro <span class="math notranslate nohighlight">\(f\)</span>
+é preferível pois é utilizado nas equações para cálculo das, coordenadas
+sobre o elipsóide e das projeções cartográficas. Nota-se que, se tivermos
+quaisquer dois parâmetros do elipsóide, o terceiro poderá ser calculado
+por meio da Equação <a class="reference internal" href="#equation-eq-achatamento">(21)</a>. Observando esta Equação,
+se a terra tivesse a forma de uma esferoide, isto é <span class="math notranslate nohighlight">\(a=b\)</span>,
+<span class="math notranslate nohighlight">\(f\)</span> seria zero, não teria achatamento. Como a terra é achatada nos
+polos, <span class="math notranslate nohighlight">\(a&gt;b\)</span>, <span class="math notranslate nohighlight">\(f\)</span> será sempre maior que zero e menor que um. Caso
+trabalhando em pequenas escalas, pode-se considerar a terra um esferoide
+<span class="math notranslate nohighlight">\(a=b\)</span> ou <span class="math notranslate nohighlight">\(f=0\)</span>.</p>
+<div class="math notranslate nohighlight" id="equation-eq-achatamento">
+<span class="eqno">(21)<a class="headerlink" href="#equation-eq-achatamento" title="Permalink to this equation"></a></span>\[f=\frac{a-b}{a}=1-\frac{b}{a}\]</div>
+<figure class="align-center" id="id14">
+<span id="figelipsoide"></span><a class="reference internal image-reference" href="../_images/fig_elipsoide.png"><img alt="fig_elipsoide.png" src="../_images/fig_elipsoide.png" style="width: 605.6px; height: 254.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 15 </span><span class="caption-text">Apresentação de uma elipse e um elipsóide de revolução.</span><a class="headerlink" href="#id14" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 1</span> O elipsóide de referência utilizado pelo sistema norte-americano de posicionamento por satélite,
+o GPS, é denominado de WGS84, tendo como raios dos semieixos: <span class="math notranslate nohighlight">\(a=6.378.137,0\,{m}\)</span>
+e <span class="math notranslate nohighlight">\(b=6.356.752,31424\,\text{m}\)</span>. Calcule
+o achatamento deste elipsóide.</p>
+<p><span class="solucao">Solução:</span>
+Por meio da Equação <a class="reference internal" href="#equation-eq-achatamento">(21)</a>, tem-se:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}f &amp; =1-\frac{b}{a}\\
+&amp; =1-\frac{6.356.752,31424}{6.378.137,0}\\
+&amp; =0,003\,3528\,106\,647\\
+&amp; =\frac{1}{298,257\,223\,563}.\end{split}\]</div>
+<p>Então, <span class="math notranslate nohighlight">\(f=0,003\,3528\,106\,647=\frac{1}{298,257\,223\,563}\)</span>,
+sendo a segunda forma, <span class="math notranslate nohighlight">\(f=\frac{1}{298,257}\)</span>, com
+arredondamento, a mais utilizada.</p>
+<hr class="docutils" />
+<p>Para a definição precisa do elipsóide, deve-se também considerar a
+constante gravitacional (GM,
+<em>Earth’s Gravitational Constant</em>) e a velocidade
+angular de rotação da terra :math:(<cite>omega)</cite>. Por exemplo, para o WGS84,
+<span class="math notranslate nohighlight">\(GM=3.986.004,418\pm0,008\cdot 10^8\,\text{m}^3\,\text{s}^{-2}\)</span> e <span class="math notranslate nohighlight">\(\omega=7292115\cdot10^{-11}\,
+\text{rad}\,\text{s}^{-1}\)</span> <span id="id4">[<a class="reference internal" href="#id11" title="National Imagery and Mapping Agency. Department of defense world geodetic system 1984: its definition and relationships with local geodetic systems. Technical Report TR8350.2, National Imagery and Mapping Agency, St. Louis, MO, USA, January 2000. URL: http://earth-info.nga.mil/GandG/publications/tr8350.2/wgs84fin.pdf.">NationalIaMAgency00</a>]</span>.</p>
+<p>Ao longo do tempo, vários elipsoides foram definidos, pois as medidas
+da dimensão terra eram aperfeiçoadas. Os elipsoides podem ser utilizados
+em nível local ou mundial, onde se estabelecem medidas de <span class="math notranslate nohighlight">\(a\)</span> e <span class="math notranslate nohighlight">\(f\)</span>,
+de forma a melhor se ajustar ao geóide local ou mundial, respectivamente.
+Na Tabelaref{tab:elipsoides} são apresentados alguns parâmetros
+de elipsoides e o local em que ele é ou foi utilizado
+<span id="id5">[<a class="reference internal" href="#id12" title="J.R. Smith. Introduction to Geodesy. Wiley Series in Surveying and Boundary Control. Wiley, 1997. ISBN 9780471166603.">Smi97</a>]</span>.</p>
+<p><span class="exem">Resp.:</span> Tabela abaixo.</p>
+<table class="colwidths-auto docutils align-default" id="id15">
+<caption><span class="caption-number">Table 2 </span><span class="caption-text">Exemplo dos parâmetros de elipsoides.</span><a class="headerlink" href="#id15" title="Permalink to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Elipsóide</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(a\)</span> (m)</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(f^{-1}\)</span></p></th>
+<th class="head"><p>Local de utilização</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Everest 1830</p></td>
+<td><p><span class="math notranslate nohighlight">\(6.377.276,345\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(300,8017\)</span></p></td>
+<td><p>Índia, Pakistão</p></td>
+</tr>
+<tr class="row-odd"><td><p>Hayford 1924</p></td>
+<td><p><span class="math notranslate nohighlight">\(6.378.388\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(297\)</span></p></td>
+<td><p>Europa e Brasil</p></td>
+</tr>
+<tr class="row-even"><td><p>Krassovskiy 1942</p></td>
+<td><p><span class="math notranslate nohighlight">\(6.378.245\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(298,3\)</span></p></td>
+<td><p>USSR</p></td>
+</tr>
+<tr class="row-odd"><td><p>Elip. Inter. de 1967</p></td>
+<td><p><span class="math notranslate nohighlight">\(6.378.160\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(298,25\)</span></p></td>
+<td><p>América do Sul</p></td>
+</tr>
+<tr class="row-even"><td><p><em>Geodetic Reference System</em> (GRS 1980)</p></td>
+<td><p><span class="math notranslate nohighlight">\(6.378.137\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(298,257\,222\,101\)</span></p></td>
+<td><p>Mundial</p></td>
+</tr>
+<tr class="row-odd"><td><p><em>World Geodetic System</em>       (WGS84)</p></td>
+<td><p><span class="math notranslate nohighlight">\(6.378.137\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(298,257\,223\,563\)</span></p></td>
+<td><p>Mundial</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="coordenada-geodesica">
+<h2>Coordenada geodésica<a class="headerlink" href="#coordenada-geodesica" title="Link permanente para este título"></a></h2>
+<p>Para a determinação da latitude  (<span class="math notranslate nohighlight">\(\phi\)</span>, leia-se <em>fi</em>) e da longitude (<span class="math notranslate nohighlight">\(\lambda\)</span>, leia-se <em>lambda</em>) geodésica
+de um ponto <span class="math notranslate nohighlight">\(P\)</span> qualquer, é considerada a normal <span class="math notranslate nohighlight">\(P\)</span> ao elipsóide
+(<span class="math notranslate nohighlight">\(P'\)</span>, <a class="reference internal" href="#fig-coordenadasretangulares"><span class="std std-numref">Figura 16</span></a>) e:</p>
+<ul class="simple">
+<li><p>sua projeção com o plano do Equador, para a latitude geodésica <span class="math notranslate nohighlight">\((\phi_{p})\)</span>;</p></li>
+<li><p>o meridiano de Greenwich (Grw) e o meridiano que passa por <span class="math notranslate nohighlight">\(P'\)</span>, para a longitude geodésica <span class="math notranslate nohighlight">\((\phi_{P})\)</span> e;</p></li>
+<li><p>a distância entre <span class="math notranslate nohighlight">\(P\)</span> e <span class="math notranslate nohighlight">\(P'\)</span>, altura geodésica <span class="math notranslate nohighlight">\((h_{P}\)</span>, também
+denominada de geométrica).</p></li>
+</ul>
+<p>O plano do Equador é o plano perpendicular ao semieixo menor, encontram-se
+no centro do elipsóide. Um meridiano é uma secção elíptica gerada
+no elipsóide pelo plano definido pelo semieixo menor e o ponto em
+questão no elipsóide. A latitude geodésica de <span class="math notranslate nohighlight">\(P\)</span> é o ângulo
+entre a normal e o plano do equador <span class="math notranslate nohighlight">\((\phi_{p})\)</span>. A longitude geodésica
+de <span class="math notranslate nohighlight">\(P\)</span> <span class="math notranslate nohighlight">\((\lambda_{p})\)</span> é o ângulo diedro dos planos que contem
+o meridiano de <span class="math notranslate nohighlight">\(P'\)</span> e o Grw.</p>
+<p>A latitude no equador é de <span class="math notranslate nohighlight">\(0^{\circ}\)</span> e varia até <span class="math notranslate nohighlight">\(-90^{\circ}\)</span>
+ou <span class="math notranslate nohighlight">\(+90^{\circ}\)</span>. Pode-se ao invés do sinal, <span class="math notranslate nohighlight">\(+\)</span> ou <span class="math notranslate nohighlight">\(-\)</span> , considerar o hemisfério
+Sul (S) e Norte (N), por exemplo, <span class="math notranslate nohighlight">\(22^{\circ}\)</span> S ou <span class="math notranslate nohighlight">\(45^{\circ}\)</span> a <span class="math notranslate nohighlight">\(-180^{\circ}\)</span>, quando o meridiano
+do ponto se encontra à esquerda de Grw, e de <span class="math notranslate nohighlight">\(0^{\circ}\)</span> a <span class="math notranslate nohighlight">\(+180^{\circ}\)</span>
+quando o ponto se encontrar a sua direita. Pode-se ao invés do sinal, <span class="math notranslate nohighlight">\(+\)</span> ou <span class="math notranslate nohighlight">\(-\)</span>, considerar se o meridiano
+encontra-se a direita (Este, E) ou a oeste (West, W) de Grw, por exemplo,
+<span class="math notranslate nohighlight">\(120^{\circ}\)</span> E ou <span class="math notranslate nohighlight">\(45^{\circ}\)</span>.</p>
+<p>As coordenadas calculadas pelos receptores GNSS são geodésicas, logo
+relacionada a um determinado elipsóide. Fato que deve-se estar atento,
+para não cometer erros grosseiros de interpretação das informações
+GNSS. Por exemplo, a elevação apresentada pelos receptores, é em relação
+ao elipsóide e não em relação ao Geóide. Normalmente, em engenharia,
+o interesse é com a elevação em relação ao geóide.</p>
+<figure class="align-center" id="id16">
+<span id="fig-coordenadasretangulares"></span><a class="reference internal image-reference" href="../_images/fig_coordenadasretangulares.png"><img alt="fig_coordenadasretangulares.png" src="../_images/fig_coordenadasretangulares.png" style="width: 521.2px; height: 310.8px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 16 </span><span class="caption-text">Variáveis necessárias para cálculo das coordenadas retangulares <span class="math notranslate nohighlight">\((x,y,z)\)</span>
+de um ponto <span class="math notranslate nohighlight">\(P\)</span> a partir das coordenadas geodésicas <span class="math notranslate nohighlight">\((\phi,\lambda)\)</span>
+e vice-versa.</span><a class="headerlink" href="#id16" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="coordenada-geodesica-cartesiana">
+<h2>Coordenada geodésica cartesiana<a class="headerlink" href="#coordenada-geodesica-cartesiana" title="Link permanente para este título"></a></h2>
+<p>Um outro meio de estabelecer a localização espacial de um ponto, por
+exemplo o <span class="math notranslate nohighlight">\(P\)</span>, a um determinado elipsóide, é por meio de sua coordenada
+geodésica cartesiana (<span class="math notranslate nohighlight">\(x_{P},\,y_{P},\,z_{P}\)</span>), também denominado
+de sistema de coordenada geocêntricoindex{Coordenada!Geocêntrico}.
+Este é o sistema onde primeiramente a coordenada de um ponto é determinada
+pelos receptores GNSS. As coordenadas geodésicas retangulares também
+são utilizadas para efetuar transformação de coordenadas entre elipsoides.</p>
+<p>Definiremos primeiro a origem do sistema e os eixos-<span class="math notranslate nohighlight">\(x\)</span>, -<span class="math notranslate nohighlight">\(y\)</span> e
+-<span class="math notranslate nohighlight">\(z\)</span>, sendo: a origem, o centro do elipsóide; o eixo-<span class="math notranslate nohighlight">\(z\)</span> é aquele
+que coincide com o semieixo menor do elipsóide, eixo de rotação; o
+eixo-<span class="math notranslate nohighlight">\(x\)</span> é aquele dado pela intersecção do plano do Equador com o
+meridiano de Grw; e o eixo-<span class="math notranslate nohighlight">\(y\)</span> formando um diedro com os outros eixos
+(Figuraref{fig:coordenadasretangulares}). Quando as coordenadas
+Geodésicas são conhecidas, utilizam-se Equações <a class="reference internal" href="#equation-eq-cart-x">(22)</a> a <a class="reference internal" href="#equation-eq-grande-normal">(25)</a>
+para convertê-las retangulares.</p>
+<div class="math notranslate nohighlight" id="equation-eq-cart-x">
+<span class="eqno">(22)<a class="headerlink" href="#equation-eq-cart-x" title="Permalink to this equation"></a></span>\[\begin{split}x =\left(N+h\right)\cos\phi\cos\lambda\\\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-eq-cart-y">
+<span class="eqno">(23)<a class="headerlink" href="#equation-eq-cart-y" title="Permalink to this equation"></a></span>\[\begin{split}y =\left(N+h\right)\cos\phi\sin\lambda\\\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-eq-cart-z">
+<span class="eqno">(24)<a class="headerlink" href="#equation-eq-cart-z" title="Permalink to this equation"></a></span>\[z = \left({\displaystyle \frac{b^{2}}{a^{2}}N+h}\right)\sin\phi\]</div>
+<p>em que: <span class="math notranslate nohighlight">\(N\)</span> é denominado de grande normal, correspondendo
+ao comprimento da vertical que passa por <span class="math notranslate nohighlight">\(P'\)</span> ao eixo-z (Figuraref{fig:coordenadasretangulares})
+dado por:</p>
+<div class="math notranslate nohighlight" id="equation-eq-grande-normal">
+<span class="eqno">(25)<a class="headerlink" href="#equation-eq-grande-normal" title="Permalink to this equation"></a></span>\[N =\frac{a^{2}}{\sqrt{a^{2}\cos^{2}\phi+b^{2}\sin^{2}\phi}}\]</div>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 2</span> A latitude, longitude
+e altitude geodésica de um ponto <span class="math notranslate nohighlight">\(P\)</span> valem: <span class="math notranslate nohighlight">\(\phi=-22^\circ13'21,1337''\)</span>,
+<span class="math notranslate nohighlight">\(\lambda=-41^\circ47'29,8921''\)</span> e
+<span class="math notranslate nohighlight">\(h=272,32\,\mathrm{m}\)</span>. Considerando elipsóide WGS84, tendo como
+raios dos semieixos: <span class="math notranslate nohighlight">\(a=6.378.137,0\)</span> m e <span class="math notranslate nohighlight">\(b=6.356.752,3\)</span> m,
+calcule as coordenadas retangulares.</p>
+<p><span class="solucao">Solução:</span></p>
+<p>noindent Substituindo os valores nas Equações <a class="reference internal" href="#equation-eq-cart-x">(22)</a>
+a <a class="reference internal" href="#equation-eq-grande-normal">(25)</a>, tem-se:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}N &amp; =\frac{6.378.137^2}{\sqrt{6.378.137^2\cos^2\left(-22^\circ13'21,1337''\right)+6.356.752,3^2\sin^2\left(-22^\circ13'21,1337''\right)}}\\
+N &amp; =6.381.192,9127\,\text{m}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}x &amp; =(6.381.192,9127+272,32\cos\left(-22^\circ13'21,1337''\right)\cos\left(-41^\circ47'29,8921''\right)\\
+x &amp; =4.404.445,8857\,\text{m}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}y &amp; =(6.381.192,9127+272,32)\cos\left(-22^\circ13'21,1337''\right)\sin\left(-41^\circ47'29,8921''\right)\\
+y &amp; =-3.936.872,4167\,\text{m}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}z &amp; =\left(\frac{6.356.752,3^2}{6.378.137^2}6.381.192,9127+272,32\right)\sin(-22^\circ13'21,1337'')\\
+z &amp; =2.397.345,4965\,\text{m}.\end{split}\]</div>
+<hr class="docutils" />
+<p class="rubric">Footnotes</p>
+<dl class="footnote brackets">
+<dt class="label" id="f1"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
+<dd><p>baixar em: <a class="reference external" href="https://www.usna.edu/Users/oceano/pguth/md_help/html/egm96.htm">https://www.usna.edu/Users/oceano/pguth/md_help/html/egm96.htm</a>}},</p>
+</dd>
+</dl>
+<p><strong>Referências</strong></p>
+<p id="id6"><dl class="citation">
+<dt class="label" id="id9"><span class="brackets">CJ04</span></dt>
+<dd><p>J. A. Comastri and J. G. Junior. <em>Topografia aplicada</em>. Editora UFV, Viçosa, MG, 1 edition, 2004.</p>
+</dd>
+<dt class="label" id="id10"><span class="brackets"><a class="fn-backref" href="#id3">LKF+98</a></span></dt>
+<dd><p>F.G. Lemoine, S. C. Kenyon, J. K. Factor, R.G. Trimmer, N. K. Pavlis, D. S. Chinn, C. M. Cox, S. M. Klosko, S. B. Luthcke, M. H. Torrence, Y. M. Wang, R. G. Williamson, E. C. Pavlis, R. H. Rapp, and T. R. Olson. <em>The development of the joint NASA GSFC and the National Imagery and Mapping Agency (NIMA) Geopotential Model EGM96</em>. NASA technical paper. National Aeronautics and Space Administration, Goddard Space Flight Center, 1998. URL: <a class="reference external" href="https://books.google.com.br/books?id=eAMVAQAAIAAJ">https://books.google.com.br/books?id=eAMVAQAAIAAJ</a>.</p>
+</dd>
+<dt class="label" id="id12"><span class="brackets"><a class="fn-backref" href="#id5">Smi97</a></span></dt>
+<dd><p>J.R. Smith. <em>Introduction to Geodesy</em>. Wiley Series in Surveying and Boundary Control. Wiley, 1997. ISBN 9780471166603.</p>
+</dd>
+<dt class="label" id="id8"><span class="brackets">Ste99</span></dt>
+<dd><p>James Stewart. <em>Calculus</em>. Brooks/Cole, Pacific Grove, CA, 4 edition, 1999.</p>
+</dd>
+<dt class="label" id="id13"><span class="brackets"><a class="fn-backref" href="#id1">Wir12</a></span></dt>
+<dd><p>Wired. Chile earthquake moved entire city 10 feet to the west. mar 2012. URL: <a class="reference external" href="http://www.wired.com/wiredscience/2010/03/chile-earthquake-moved-entire-city-10-feet-to-the-west/">http://www.wired.com/wiredscience/2010/03/chile-earthquake-moved-entire-city-10-feet-to-the-west/</a>.</p>
+</dd>
+<dt class="label" id="id11"><span class="brackets"><a class="fn-backref" href="#id4">NationalIaMAgency00</a></span></dt>
+<dd><p>National Imagery and Mapping Agency. Department of defense world geodetic system 1984: its definition and relationships with local geodetic systems. Technical Report TR8350.2, National Imagery and Mapping Agency, St. Louis, MO, USA, January 2000. URL: <a class="reference external" href="http://earth-info.nga.mil/GandG/publications/tr8350.2/wgs84fin.pdf">http://earth-info.nga.mil/GandG/publications/tr8350.2/wgs84fin.pdf</a>.</p>
+</dd>
+</dl>
+</p>
 </section>
 </section>
 
