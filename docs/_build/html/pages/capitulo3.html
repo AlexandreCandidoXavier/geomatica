@@ -50,7 +50,15 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#elipsoide">Elipsóide</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#coordenada-geodesica">Coordenada geodésica</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#coordenada-geodesica-cartesiana">Coordenada geodésica cartesiana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#coordenada-geodesica-cartesiana">Coordenada geodésica cartesiana</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#coordenada-astronomica">Coordenada astronômica</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sistema-de-geodesico-brasileiro">Sistema de geodésico brasileiro</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#projecao-cartografica">Projeção cartográfica</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#projecoes-plana-cilindrica-e-conica-secantes">Projeções plana, cilíndrica e cônica secantes</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="capitulo7.html">Capitulo 7</a></li>
@@ -99,7 +107,7 @@ diferentes formas de relevo, das mais planos aos mais acidentados.
 Observa-se também que a superfície da terra não é estática, mas sim
 dinâmica. Há um movimento da crosta terrestre, devido às forças tectônicas.
 Por exemplo, no terremoto no Chile no ano de 2010, foi estimada que
-a cidade de Conception moveu <span class="math notranslate nohighlight">\(3,02\)</span> metros para a direção oeste <span id="id1">[<a class="reference internal" href="#id13" title="Wired. Chile earthquake moved entire city 10 feet to the west. mar 2012. URL: http://www.wired.com/wiredscience/2010/03/chile-earthquake-moved-entire-city-10-feet-to-the-west/.">Wir12</a>]</span>.
+a cidade de Conception moveu <span class="math notranslate nohighlight">\(3,02\)</span> metros para a direção oeste <span id="id1">[<a class="reference internal" href="#id21" title="Wired. Chile earthquake moved entire city 10 feet to the west. mar 2012. URL: http://www.wired.com/wiredscience/2010/03/chile-earthquake-moved-entire-city-10-feet-to-the-west/.">Wir12</a>]</span>.
 Já os mares apresentam-se em constante movimento, pois são sujeitos
 a diversas forças, como: a centrífuga, devido a rotação da terra;
 a gravitacional da terra, lua, sol; dos ventos, etc.</p>
@@ -123,7 +131,7 @@ ou seja, estarão perpendiculares à superfície de nível local.</p>
 o geóide resulta em uma forma ondulada. Uma forma de apresentar o
 geóide é por meio da ondulação geoidal <span class="math notranslate nohighlight">\((N)\)</span>. Na Figura ao lado é
 apresentado a ondulação geoidal da terra dado pelo EGM96 (<em>Earth
-Gravitational Model</em> 1996footnote <a class="footnote-reference brackets" href="#f1" id="id2">1</a> <span id="id3">[<a class="reference internal" href="#id10" title="F.G. Lemoine, S. C. Kenyon, J. K. Factor, R.G. Trimmer, N. K. Pavlis, D. S. Chinn, C. M. Cox, S. M. Klosko, S. B. Luthcke, M. H. Torrence, Y. M. Wang, R. G. Williamson, E. C. Pavlis, R. H. Rapp, and T. R. Olson. The development of the joint NASA GSFC and the National Imagery and Mapping Agency (NIMA) Geopotential Model EGM96. NASA technical paper. National Aeronautics and Space Administration, Goddard Space Flight Center, 1998. URL: https://books.google.com.br/books?id=eAMVAQAAIAAJ.">LKF+98</a>]</span>. A ondulação geoidal apresenta
+Gravitational Model</em> 1996footnote <a class="footnote-reference brackets" href="#f1" id="id2">1</a> <span id="id3">[<a class="reference internal" href="#id18" title="F.G. Lemoine, S. C. Kenyon, J. K. Factor, R.G. Trimmer, N. K. Pavlis, D. S. Chinn, C. M. Cox, S. M. Klosko, S. B. Luthcke, M. H. Torrence, Y. M. Wang, R. G. Williamson, E. C. Pavlis, R. H. Rapp, and T. R. Olson. The development of the joint NASA GSFC and the National Imagery and Mapping Agency (NIMA) Geopotential Model EGM96. NASA technical paper. National Aeronautics and Space Administration, Goddard Space Flight Center, 1998. URL: https://books.google.com.br/books?id=eAMVAQAAIAAJ.">LKF+98</a>]</span>. A ondulação geoidal apresenta
 a distância vertical entre o geóide e o elipsóide (ver Secção ref{subsec:Nivelamento-GNSS}),
 figura matemática que se aproxima a forma da terra, neste caso o WGS84.
 Valores positivos indicam que o geóide está acima do elipóide WGS84,
@@ -162,10 +170,10 @@ trabalhando em pequenas escalas, pode-se considerar a terra um esferoide
 <span class="math notranslate nohighlight">\(a=b\)</span> ou <span class="math notranslate nohighlight">\(f=0\)</span>.</p>
 <div class="math notranslate nohighlight" id="equation-eq-achatamento">
 <span class="eqno">(21)<a class="headerlink" href="#equation-eq-achatamento" title="Permalink to this equation"></a></span>\[f=\frac{a-b}{a}=1-\frac{b}{a}\]</div>
-<figure class="align-center" id="id14">
+<figure class="align-center" id="id28">
 <span id="figelipsoide"></span><a class="reference internal image-reference" href="../_images/fig_elipsoide.png"><img alt="fig_elipsoide.png" src="../_images/fig_elipsoide.png" style="width: 605.6px; height: 254.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 15 </span><span class="caption-text">Apresentação de uma elipse e um elipsóide de revolução.</span><a class="headerlink" href="#id14" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 15 </span><span class="caption-text">Apresentação de uma elipse e um elipsóide de revolução.</span><a class="headerlink" href="#id28" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <hr class="docutils" />
@@ -187,19 +195,18 @@ arredondamento, a mais utilizada.</p>
 <p>Para a definição precisa do elipsóide, deve-se também considerar a
 constante gravitacional (GM,
 <em>Earth’s Gravitational Constant</em>) e a velocidade
-angular de rotação da terra :math:(<cite>omega)</cite>. Por exemplo, para o WGS84,
+angular de rotação da terra <span class="math notranslate nohighlight">\((\omega)\)</span>. Por exemplo, para o WGS84,
 <span class="math notranslate nohighlight">\(GM=3.986.004,418\pm0,008\cdot 10^8\,\text{m}^3\,\text{s}^{-2}\)</span> e <span class="math notranslate nohighlight">\(\omega=7292115\cdot10^{-11}\,
-\text{rad}\,\text{s}^{-1}\)</span> <span id="id4">[<a class="reference internal" href="#id11" title="National Imagery and Mapping Agency. Department of defense world geodetic system 1984: its definition and relationships with local geodetic systems. Technical Report TR8350.2, National Imagery and Mapping Agency, St. Louis, MO, USA, January 2000. URL: http://earth-info.nga.mil/GandG/publications/tr8350.2/wgs84fin.pdf.">NationalIaMAgency00</a>]</span>.</p>
+\text{rad}\,\text{s}^{-1}\)</span> <span id="id4">[<a class="reference internal" href="#id19" title="National Imagery and Mapping Agency. Department of defense world geodetic system 1984: its definition and relationships with local geodetic systems. Technical Report TR8350.2, National Imagery and Mapping Agency, St. Louis, MO, USA, January 2000. URL: http://earth-info.nga.mil/GandG/publications/tr8350.2/wgs84fin.pdf.">NationalIaMAgency00</a>]</span>.</p>
 <p>Ao longo do tempo, vários elipsoides foram definidos, pois as medidas
 da dimensão terra eram aperfeiçoadas. Os elipsoides podem ser utilizados
 em nível local ou mundial, onde se estabelecem medidas de <span class="math notranslate nohighlight">\(a\)</span> e <span class="math notranslate nohighlight">\(f\)</span>,
 de forma a melhor se ajustar ao geóide local ou mundial, respectivamente.
 Na Tabelaref{tab:elipsoides} são apresentados alguns parâmetros
 de elipsoides e o local em que ele é ou foi utilizado
-<span id="id5">[<a class="reference internal" href="#id12" title="J.R. Smith. Introduction to Geodesy. Wiley Series in Surveying and Boundary Control. Wiley, 1997. ISBN 9780471166603.">Smi97</a>]</span>.</p>
-<p><span class="exem">Resp.:</span> Tabela abaixo.</p>
-<table class="colwidths-auto docutils align-default" id="id15">
-<caption><span class="caption-number">Table 2 </span><span class="caption-text">Exemplo dos parâmetros de elipsoides.</span><a class="headerlink" href="#id15" title="Permalink to this table"></a></caption>
+<span id="id5">[<a class="reference internal" href="#id20" title="J.R. Smith. Introduction to Geodesy. Wiley Series in Surveying and Boundary Control. Wiley, 1997. ISBN 9780471166603.">Smi97</a>]</span>.</p>
+<table class="colwidths-auto docutils align-default" id="id29">
+<caption><span class="caption-number">Table 2 </span><span class="caption-text">Exemplo dos parâmetros de elipsoides.</span><a class="headerlink" href="#id29" title="Permalink to this table"></a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>Elipsóide</p></th>
 <th class="head"><p><span class="math notranslate nohighlight">\(a\)</span> (m)</p></th>
@@ -272,12 +279,12 @@ para não cometer erros grosseiros de interpretação das informações
 GNSS. Por exemplo, a elevação apresentada pelos receptores, é em relação
 ao elipsóide e não em relação ao Geóide. Normalmente, em engenharia,
 o interesse é com a elevação em relação ao geóide.</p>
-<figure class="align-center" id="id16">
+<figure class="align-center" id="id30">
 <span id="fig-coordenadasretangulares"></span><a class="reference internal image-reference" href="../_images/fig_coordenadasretangulares.png"><img alt="fig_coordenadasretangulares.png" src="../_images/fig_coordenadasretangulares.png" style="width: 521.2px; height: 310.8px;" /></a>
 <figcaption>
 <p><span class="caption-number">Figura 16 </span><span class="caption-text">Variáveis necessárias para cálculo das coordenadas retangulares <span class="math notranslate nohighlight">\((x,y,z)\)</span>
 de um ponto <span class="math notranslate nohighlight">\(P\)</span> a partir das coordenadas geodésicas <span class="math notranslate nohighlight">\((\phi,\lambda)\)</span>
-e vice-versa.</span><a class="headerlink" href="#id16" title="Permalink to this image"></a></p>
+e vice-versa.</span><a class="headerlink" href="#id30" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -316,8 +323,8 @@ e altitude geodésica de um ponto <span class="math notranslate nohighlight">\(P
 <span class="math notranslate nohighlight">\(h=272,32\,\mathrm{m}\)</span>. Considerando elipsóide WGS84, tendo como
 raios dos semieixos: <span class="math notranslate nohighlight">\(a=6.378.137,0\)</span> m e <span class="math notranslate nohighlight">\(b=6.356.752,3\)</span> m,
 calcule as coordenadas retangulares.</p>
-<p><span class="solucao">Solução:</span></p>
-<p>noindent Substituindo os valores nas Equações <a class="reference internal" href="#equation-eq-cart-x">(22)</a>
+<p><span class="solucao">Solução:</span>
+Substituindo os valores nas Equações <a class="reference internal" href="#equation-eq-cart-x">(22)</a>
 a <a class="reference internal" href="#equation-eq-grande-normal">(25)</a>, tem-se:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}N &amp; =\frac{6.378.137^2}{\sqrt{6.378.137^2\cos^2\left(-22^\circ13'21,1337''\right)+6.356.752,3^2\sin^2\left(-22^\circ13'21,1337''\right)}}\\
@@ -332,6 +339,387 @@ y &amp; =-3.936.872,4167\,\text{m}\end{split}\]</div>
 \[\begin{split}z &amp; =\left(\frac{6.356.752,3^2}{6.378.137^2}6.381.192,9127+272,32\right)\sin(-22^\circ13'21,1337'')\\
 z &amp; =2.397.345,4965\,\text{m}.\end{split}\]</div>
 <hr class="docutils" />
+<p>Para a solução inversa, a partir das coordenadas geodésicas retangulares,
+calcular as coordenadas geodésicas <span class="math notranslate nohighlight">\(\left(\phi,\,\lambda,\,h\right)\)</span>,
+diferentes metodologias podem ser utilizadas, sendo alguns métodos
+apresentados em <span id="id6">[<a class="reference internal" href="#id22" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span> e <span id="id7">[<a class="reference internal" href="#id23" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span>. Aqui
+será apresentada uma metodologia em que não há necessidade de iterações
+(Equações eq:<cite>cart_to_geo_lat</cite> a :eq:<a href="#id8"><span class="problematic" id="id9">`</span></a>cart_to_geo_h),
+ou seja, é simples, uma vez que, com a aplicação das equações, o resultado
+é obtido diretamente.</p>
+<div class="math notranslate nohighlight" id="equation-eq-cart-to-geo-lat">
+<span class="eqno">(26)<a class="headerlink" href="#equation-eq-cart-to-geo-lat" title="Permalink to this equation"></a></span>\[\phi ={\displaystyle \arctan\frac{z+e'^{2}b\sin^3\theta}{p-e^2a\cos^3\theta}}\]</div>
+<div class="math notranslate nohighlight" id="equation-eq-cart-to-geo-lon">
+<span class="eqno">(27)<a class="headerlink" href="#equation-eq-cart-to-geo-lon" title="Permalink to this equation"></a></span>\[\lambda  ={\displaystyle \arctan\frac{y}{x}}\label{eq:cart_to_geo_lon}\]</div>
+<div class="math notranslate nohighlight" id="equation-eq-cart-to-geo-h">
+<span class="eqno">(28)<a class="headerlink" href="#equation-eq-cart-to-geo-h" title="Permalink to this equation"></a></span>\[h  ={\displaystyle \frac{p}{\cos\phi}-N}\]</div>
+<p>em que:</p>
+<div class="math notranslate nohighlight" id="equation-eq-ecentricidade-primeira">
+<span class="eqno">(29)<a class="headerlink" href="#equation-eq-ecentricidade-primeira" title="Permalink to this equation"></a></span>\[e^{2}  ={\displaystyle \frac{a^2-b^2}{a^2}}\]</div>
+<div class="math notranslate nohighlight" id="equation-eq-ecentricidade-segunda">
+<span class="eqno">(30)<a class="headerlink" href="#equation-eq-ecentricidade-segunda" title="Permalink to this equation"></a></span>\[e'^{2} ={\displaystyle \frac{a^2-b^2}{b^2}}\]</div>
+<div class="math notranslate nohighlight" id="equation-eq-cart-to-geo-aux-p">
+<span class="eqno">(31)<a class="headerlink" href="#equation-eq-cart-to-geo-aux-p" title="Permalink to this equation"></a></span>\[p ={\displaystyle \sqrt{x^2+y^2}}\]</div>
+<div class="math notranslate nohighlight" id="equation-eq-cart-to-geo-aux">
+<span class="eqno">(32)<a class="headerlink" href="#equation-eq-cart-to-geo-aux" title="Permalink to this equation"></a></span>\[\theta ={\displaystyle \arctan\frac{z\cdot a}{p\cdot b}}\]</div>
+<p>Os termos <span class="math notranslate nohighlight">\(e^{2}\text{ e }e'^{2}\)</span> são denominados, respectivamente
+de primeira e segunda excentricidade. O valor de <span class="math notranslate nohighlight">\(p\)</span> corresponde
+ao raio no paralelo analisado.</p>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 3</span> A partir das coordenadas
+retangulares do Exemplo ref{exem:coorde_geode_retang}, referentes
+ao sistema WGS84, encontrar as coordenadas geodésicas <span class="math notranslate nohighlight">\(\phi,\text{ }\lambda\text{ e }h\)</span>.</p>
+<p><span class="solucao">Solução:</span> Sabendo-se que <span class="math notranslate nohighlight">\(a=6.378.137,0\,\text{m}\)</span> e <span class="math notranslate nohighlight">\(b=6.356.752,3\,\text{m}\)</span>
+e substituindo <span class="math notranslate nohighlight">\({x=4.404.445,8857\text{ m}}\)</span>, <span class="math notranslate nohighlight">\({y=-3.936.872,4167\,\text{m}}\)</span>
+e <span class="math notranslate nohighlight">\({z=-2.397.345,4965\,\text{m}}\)</span> nas Equações <a class="reference internal" href="#equation-eq-ecentricidade-primeira">(29)</a>
+a <a class="reference internal" href="#equation-eq-cart-to-geo-aux">(32)</a> para o cálculo das variáveis auxiliares:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}e^{2} &amp; ={\displaystyle \frac{6.378.137^2-6.356.752,3^2}{6.378.137^2}=0,006\,694\,384\,442}\\
+e'^{2} &amp; ={\displaystyle \frac{6.378.137,0^2-6.356.752,3^2}{6.356.752,3^2}=0,006\,739\,501\,254}\\
+p &amp; =\sqrt{4.404.445,8857^2+-3.936.872,4167^2}=5.907.462,05962\\
+\theta &amp; ={\displaystyle \arctan\frac{-2.397.345,4965\cdot6.378.137,0}{5.907.462,059620\cdot6.356.752,3}=-22^{\circ}9'18,9119''}\end{split}\]</div>
+<p>Agora, aplicando as Equações <a class="reference internal" href="#equation-eq-cart-to-geo-lat">(26)</a>
+a <a class="reference internal" href="#equation-eq-cart-to-geo-h">(28)</a> e utilizando o valor de <span class="math notranslate nohighlight">\(N\)</span> já calculado
+no Exemplo 2 tem-se:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\phi &amp; ={\displaystyle \arctan\frac{-2.397.345,4965+0,006\,739\,501\,254\cdot6.356.752,3\sin^3\left(-22^\circ9'18,9119''\right)}{5.907.462,059620-0,006\,694\,384\,442\cdot6.378.137\cos^3\left(-22^\circ9'18,9119''\right)}}\\
+\phi &amp; =-22^\circ13'21,1337''\\
+\lambda &amp; ={\displaystyle \arctan\frac{-3.936.872,4167}{4.404.445,8857}}=-41^\circ47'29,8921''\\
+h &amp; ={\displaystyle \frac{5.907.462,05962}{\cos\left(-22^\circ13'21,1337''\right)}-6.381.192,9127=272,32\text{ m }}\end{split}\]</div>
+<p>Como era esperado, o resultado é o mesmo de <span class="math notranslate nohighlight">\(\phi\)</span>, <span class="math notranslate nohighlight">\(\lambda\)</span>
+e <span class="math notranslate nohighlight">\(h\)</span> do Exemplo 2.</p>
+<hr class="docutils" />
+<section id="coordenada-astronomica">
+<h3>Coordenada astronômica<a class="headerlink" href="#coordenada-astronomica" title="Link permanente para este título"></a></h3>
+<p>Quando consideramos a vertical do ponto <span class="math notranslate nohighlight">\(P\)</span>, que pode ser dada pela
+direção do fio de prumo, que tem a direção do centro de massa da terra,
+tem-se como a latitude astronômica de <span class="math notranslate nohighlight">\(P\)</span>, o ângulo medido entre
+a vertical em <span class="math notranslate nohighlight">\(P\)</span> o plano do equador. Já a longitude astronômica
+é o ângulo entre o plano meridiano local e o meridiano de Grw.</p>
+</section>
+<section id="sistema-de-geodesico-brasileiro">
+<h3>Sistema de geodésico brasileiro<a class="headerlink" href="#sistema-de-geodesico-brasileiro" title="Link permanente para este título"></a></h3>
+<p>O objetivo de um sistema de referência geodésico é o de disponibilizar,
+implantar e manter uma infraestrutura básica para levantamento de
+posição de pontos na superfície da terra. Os sistemas de referências
+são aprimorados continuamente, de acordo com o estado da arte na época
+de sua definição. Por exemplo, atualmente para a definição da rede
+planimétrica, utiliza-se a tecnologia de posicionamento por satélite
+e, em épocas passadas, utilizava-se equipamentos topográficos convencionais,
+como pouca precisão. O Sistema Geodésico Brasileiro (SGB) é composto
+pelas redes planimétricas, altimétrica e gravitacional.</p>
+<p>A rede gravitacional é aquela que trata na determinação da força da
+gravidade da terra, sendo o resultado pela atração da massa e da força
+centrífuga em um determinado ponto. Tais resultados são empregados
+por exemplo, na determinação da ondulação geoidal, no estudo das correntes
+oceânicas e na determinação das altitudes ortométricas. Podem-se citar
+como métodos empregados na sua determinação, o método pendular, a
+avaliação da queda livre de um corpo e, o mais usualmente utilizado,
+o Gravímetro. Outra forma de obter a gravidade da terra é utilizando-se
+satélites artificiais, podendo-se citar o par de satélites GRACE (<em>Gravity
+Recovery And Climate Experiment</em>), lançados em 2002. A determinação
+desta quantidade foge ao escopo introdutório deste livro e, para os
+que tiverem mais interesse neste tema, pode-se consultar <span id="id10">[<a class="reference internal" href="#id24" title="Camil Gemael. Introdução à geodésia física. Editora da UFPR, Curitiba, PR, 1 edition, 1999.">Gem99</a>]</span> e
+<span id="id11">[<a class="reference internal" href="#id25" title="B. D. Tapley. Large scale ocean circulation from the GRACE GGM01 geoid. Geophysical Research Letters, 2003. URL: http://dx.doi.org/10.1029/2003GL018622, doi:10.1029/2003GL018622.">Tap03</a>]</span>.</p>
+<p>Para a definição das redes planimétricas e altimétricas são necessárias
+as definições do Datum horizontal e o do Datum vertical,
+respectivamente, e a materialização das posições. O Datum horizontal
+é utilizado para as posições em latitude (<span class="math notranslate nohighlight">\(\phi\)</span>), longitude (<span class="math notranslate nohighlight">\(\lambda\)</span>)
+e altitude geodésica (<span class="math notranslate nohighlight">\(h\)</span>, altitude em relação ao elipsóide) e, coordenadas
+cartográficas. Enquanto o Datum altimétrico é utilizado para definição
+de altitude ortométrica (<span class="math notranslate nohighlight">\(H\)</span>, altitude em relação ao geóide). A materialização
+de posições, é realizada por meio marcos, ao longo do estado Brasileiro
+e em sua fronteira. A responsabilidade pelo SGB no Brasil fica a cargo
+do Instituto Brasileiro de Geografia e Estatística (IBGE).</p>
+<p><strong>Datum horizontal</strong></p>
+<p>Um Datum horizontal é constituído de um elipsóide mais uma série de
+parâmetros que o posiciona à terra, como, por exemplo, a latitude
+e a longitude do ponto inicial e o azimute de um alinhamento. A posição
+do elipsóide em relação à terra pode ser topocêntrico, fixado a um
+ponto na superfície (Datum topocêntrico) ou geocêntrico, o centro
+do elipsóide coincide com centro de massa da terra (Datum geocêntrico).
+Um exemplo gráfico do ajuste de um Datum horizontal topocêntrico (Datum
+1) e geocêntrico (Datum 2), ao geóide, é apresentado na <a class="reference internal" href="#fig-elipsoide-geoides-png"><span class="std std-numref">Figura 17</span></a>.
+O Datum topocêntrico só se ajusta bem ao Geóide em
+uma pequena porção do Geóide,
+parte inferior esquerda, enquanto no restante do Geóide não há um
+bom ajuste. Nota-se esta falta de ajuste, principalmente, na porção
+superior direita do Geóide, em que o Datum 1 passa bem acima. Já,
+o Datum 2, geocêntrico, tem seu centro C1 que coincide com centro
+de massa da terra, tendo os seus parâmetros <span class="math notranslate nohighlight">\(a\)</span> e <span class="math notranslate nohighlight">\(f\)</span> definidos
+de forma a minimizar os desvios dele com o Geóide como um todo, não
+em apenas uma porção.</p>
+<figure class="align-center" id="id31">
+<span id="fig-elipsoide-geoides-png"></span><a class="reference internal image-reference" href="../_images/fig_elipsoide_geoides.png"><img alt="fig_elipsoide_geoides.png" src="../_images/fig_elipsoide_geoides.png" style="width: 369.20000000000005px; height: 379.6px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 17 </span><span class="caption-text">Datum horizontal do tipo topocêntrico e geocêntrico.</span><a class="headerlink" href="#id31" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Como dito anteriormente, o SGB é dinâmico, o Brasil já teve o index{Datum horizontal!Córrego Alegre}Datum
+horizontal denominado de Córrego Alegre, que tinha como figura geométrica
+da terra o elipsóide Hayford 1924 (Tabela 2).
+Atualmente o Brasil adota dois Datafootnote{Data é o plural de Datum.},
+o SAD69 (SAD é a abreviação de <em>South American Datum</em>, Datum Sul Americano)
+e o SIRGA2000 (SIRGAS é a abreviação de <strong>Sistema de Referência Geocêntrico para
+as Américas</strong>) . As características do SAD69 e do SISGAS2000 <span id="id12">[<a class="reference internal" href="#id26" title="IBGE. Altera a caracterização do sistema geodésico brasileiro. 2005.">IBG05</a>]</span> são
+apresentadas abaixo:</p>
+<p>Para o Datum SAD69index{Datum horizontal!SAD69}:</p>
+<ul class="simple">
+<li><p>Figura geométrica para a Terra: Elipsóide Internacional de 1967; Semi
+eixo maior <span class="math notranslate nohighlight">\(a=6.378.160\)</span> m; <span class="math notranslate nohighlight">\(f=1/298,2\)</span>.</p></li>
+<li><p>Parâmetros referentes ao posicionamento espacial do elipsóide: Orientação
+geocêntrica com eixo de rotação paralelo ao eixo de rotação da Terra;
+plano meridiano origem paralelo ao plano meridiano de Greenwich;</p></li>
+<li><p>Orientação topocêntrica, com: Ponto Datum = Vértice de triangulação
+Chuá; <span class="math notranslate nohighlight">\(\phi_{\mathrm{G}}=19^\circ45'41,6527''\)</span> S; <span class="math notranslate nohighlight">\(\lambda_{\text{G}}=48^\circ06'04,0639''\)</span> W;
+<span class="math notranslate nohighlight">\(\phi_{\text{A}}=19^\circ45'41,34''\)</span> S; <span class="math notranslate nohighlight">\(\lambda_{\text{A}}=48^\circ06'07,80''\)</span> W;
+<span class="math notranslate nohighlight">\(A_{\text{G}}=271^\circ30'04,05''\)</span> SWNE para VT-Uberaba;
+<span class="math notranslate nohighlight">\(N=0,0\,\text{m.}\)</span></p></li>
+</ul>
+<p>em que: “G” e “A” referem-se, respectivamente, às medidas geodésicas
+e astronômicas; <span class="math notranslate nohighlight">\(N\)</span> é denominado de ondulação geoidal, diferença
+entre altura do elipsóide e do geóide na posição analisada.</p>
+<p>Para o SIRGAS2000:</p>
+<ul class="simple">
+<li><p>Figura geométrica para a Terra: Elipsóide do Sistema Geodésico de
+Referência de 1980 (<em>Geodetic Reference System} 1980 -
+GRS80</em>) Semieixo maior <span class="math notranslate nohighlight">\({a=\text{6.378.137 m}}\)</span>, <span class="math notranslate nohighlight">\(f=1/298,257\,222\,101\)</span>;</p></li>
+<li><p>Origem: Centro de massa da Terra;</p></li>
+<li><p>Orientação: Polos e meridiano de referência consistentes em <span class="math notranslate nohighlight">\(\pm0,005''\)</span>
+com as direções definidas pelo BIH (<em>Bureau International de
+l’Heure</em>), em <span class="math notranslate nohighlight">\(1984,0\)</span>.</p></li>
+</ul>
+<p>Na Figura <a class="reference internal" href="#fig-refer-horizontal"><span class="std std-numref">Figura 18</span></a> são apresentadas as posições dos marcos geodésicos que fazem parte
+do SGB. As técnicas nas quais os pontos foram levantados também são
+apresentadas. Faz parte da rede horizontal um total de <span class="math notranslate nohighlight">\(8.226\)</span>, sendo
+<span class="math notranslate nohighlight">\(1.008\)</span>, <span class="math notranslate nohighlight">\(2.443\)</span>, <span class="math notranslate nohighlight">\(3.642\)</span> e <span class="math notranslate nohighlight">\(1.133\)</span> pontos referentes às técnicas, respectivamente,
+doppler, GPS, vértice de triangulação e estações de poligonal. Como
+é observado na <a class="reference internal" href="#fig-refer-horizontal"><span class="std std-numref">Figura 18</span></a>, algumas observações
+são realizadas fora do continente, em ilhas, por exemplo em Fernando
+de Noronha.</p>
+<figure class="align-center" id="id32">
+<span id="fig-refer-horizontal"></span><a class="reference internal image-reference" href="../_images/fig_refer_horizontal.png"><img alt="fig_elipsoide_geoides.png" src="../_images/fig_refer_horizontal.png" style="width: 464.45px; height: 273.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 18 </span><span class="caption-text">Posição das referencias horizontais e os métodos em que as posições
+foram estimadas. Dados obtidos no IBGE em 7 de maio de 2012.</span><a class="headerlink" href="#id32" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p><strong>Datum vertical</strong></p>
+<p>São duas as referencias de altitude adotado pelo Brasil, que coincide
+com nível médio dos mares (NMM), sendo: <em>i</em>)
+o <strong>Datum de Imbituba</strong>, definido de observações
+da maré em Imbituba, Santa Catarina entre os anos de 1949 e 1957, na Figura ao lado as referências de nível em vermelho e;
+e <em>ii</em>) o <strong>Datum de Santana</strong>, definido de observações da maré no estado do Amapá
+entre os anos de 1957 a 1958, as referências de nível cor verde.
+O <strong>Datum de Santana</strong> deu-se devido a
+impossibilidade de estender a rede de Imbituba à região do Amapá.
+Na Figura ao lado são apresentadas as posições da referência
+altimétrica do SGB, sendo um total de <span class="math notranslate nohighlight">\(9.397\)</span> referências de nível,
+<span class="math notranslate nohighlight">\(475\)</span> e <span class="math notranslate nohighlight">\(8.922\)</span>, respectivamente, referentes ao Datum de Santana e ao
+Datum de Imbituba (<a class="reference internal" href="#fig-refer-vertical"><span class="std std-numref">Figura 19</span></a>).</p>
+<figure class="align-center" id="id33">
+<span id="fig-refer-vertical"></span><a class="reference internal image-reference" href="../_images/fig_refer_vertical.png"><img alt="fig_refer_vertical.png" src="../_images/fig_refer_vertical.png" style="width: 285.25px; height: 288.4px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 19 </span><span class="caption-text">Posições das referencias horizontais das referências de nível dos Datum de Imbituba e Santana.</span><a class="headerlink" href="#id33" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="projecao-cartografica">
+<h2>Projeção cartográfica<a class="headerlink" href="#projecao-cartografica" title="Link permanente para este título"></a></h2>
+<p>Projeções cartográficas são funções matemáticas que transformam as
+coordenadas geodésicas <span class="math notranslate nohighlight">\((\phi,\,\lambda)\)</span>) para coordenadas planas
+<span class="math notranslate nohighlight">\((x,\,y)\)</span>), isto é, <span class="math notranslate nohighlight">\(x=f(\phi,\,\lambda)\)</span> e <span class="math notranslate nohighlight">\(y=f(\phi,\,\lambda)\)</span>.
+Podem-se classificar as projeções cartográficas de acordo com:</p>
+<ul class="simple">
+<li><p>a superfície utilizada na projeção: <strong>plana</strong> (<a class="reference internal" href="#proj-tipos"><span class="std std-numref">Figura 20</span></a> a, d, g), <strong>cilíndrica</strong> (Figuras b, e, h)
+ou <strong>cônica</strong> (<a class="reference internal" href="#proj-tipos"><span class="std std-numref">Figura 20</span></a> c, f, i). Na prática, a projeção é realizada analiticamente, ou seja, por meio
+de equações matemáticas, que são variantes destas formas geométricas;</p></li>
+<li><p>se é <strong>tangente</strong> ou <strong>secante</strong>
+(Figura~ref{fig:proj_tipos_sec});</p></li>
+<li><p>a posição da figura geométrica, por exemplo, caso a projeção seja
+cilíndrica tangente, ela é dita como sendo normal se o cilindro é
+tangente no equador (e.g. <a class="reference internal" href="#proj-tipos"><span class="std std-numref">Figura 20</span></a> b); transversa,
+caso o cilindro seja tangente a um meridiano (e.g. Figura e);
+e é oblíqua caso o cilindro seja tangente à qualquer seção normal
+que passa pelo ponto central (e.g. <a class="reference internal" href="#proj-tipos"><span class="std std-numref">Figura 20</span></a> h).</p></li>
+</ul>
+<figure class="align-center" id="id34">
+<span id="proj-tipos"></span><a class="reference internal image-reference" href="../_images/proj_tipos.png"><img alt="proj_tipos.png" src="../_images/proj_tipos.png" style="width: 378.5px; height: 457.5px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 20 </span><span class="caption-text">Tipos de projeções.</span><a class="headerlink" href="#id34" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id35">
+<span id="proj-tipos-sec"></span><a class="reference internal image-reference" href="../_images/proj_tipos_sec.png"><img alt="proj_tipos_sec.png" src="../_images/proj_tipos_sec.png" style="width: 533.05px; height: 200.54999999999998px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 21 </span><span class="caption-text">Projeções tipo secantes.</span><a class="headerlink" href="#id35" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<section id="projecoes-plana-cilindrica-e-conica-secantes">
+<h3>Projeções plana, cilíndrica e cônica secantes<a class="headerlink" href="#projecoes-plana-cilindrica-e-conica-secantes" title="Link permanente para este título"></a></h3>
+<p>Nenhum mapa pode ser ao mesmo tempo <strong>igual área</strong> e <strong>conforme</strong>.
+Projeções que não são <strong>igual área</strong> nem <em>conforme</em> são
+denominadas de <strong>afiláticas</strong>. Pode-se citar outros termos que
+descrevem características especiais de projeções:</p>
+<ol class="arabic simple">
+<li><p>Escala: projeções que mantém a escala em uma ou mais linhas do mapa são denominadas de textit{equidistante}. Vale salientar que nenhuma projeção é capaz de manter a escala correta em todo mapa;</p></li>
+<li><p>Direção: são mapas em que uma determinadas direção ou azimute são apresentadas corretamente. Por exemplo, se a direção do azimute é apresentada corretamente entre dois pontos, diz-se que a projeção é textit{azimutal};</p></li>
+</ol>
+<p>As deformações da projeção só serão visíveis para grandes áreas, como
+para o mapa do Brasil. Para pequenas áreas, as distorções são de difícil
+percepção visual. A seguir serão apresentadas algumas projeções abrangendo
+toda, ou quase toda, a terra. Juntamente com o limite dos continentes,
+serão apresentadas elipses, denominadas de <strong>indicatrizes de
+Tissot</strong>, cujo objetivo é avaliar as distorções
+da projeção. A indicatriz de Tissot é o resultado da projeção
+da figura geométrica de um círculo no elipsóide de referência. Como
+exemplos de interpretação para indicatriz de Tissot na projeção
+pode-se citar: se a projeção é conforme, a elipse é um círculo e o
+seu tamanho vai variar ao longo do mapa; se as elipses aparentam ter
+a mesma área, variando a sua forma, temos uma projeção igual área;
+se os semieixos da indicatriz de Tissot são distintos, demonstra a
+distorção em escala e a deformação angular.</p>
+<p><strong>Projeção cônica de Albers (igual área)</strong></p>
+<p>Um exemplo de projeção <strong>igual área</strong> é a projeção cônica de
+Albers (<a class="reference internal" href="#fig-albersequalarea-png"><span class="std std-numref">Figura 22</span></a>). Como diz o nome da projeção,
+ela é do tipo cônica, tendo os paralelos como arcos concêntricos e
+espaçamento distinto. Já os meridianos tem espaçamento igual, cortando
+os paralelos em ângulos retos. Nesta projeção a escala sofre deformação
+ao longo da latitude e da longitude, de forma a manter <strong>igual
+área</strong> ao longo do mapa. Ela é utilizada para regiões que tem extensões
+na direção leste-oeste, como os Estados Unidos.</p>
+<figure class="align-center" id="id36">
+<span id="fig-albersequalarea-png"></span><a class="reference internal image-reference" href="../_images/fig_AlbersEqualArea.png"><img alt="fig_AlbersEqualArea.png" src="../_images/fig_AlbersEqualArea.png" style="width: 366.09999999999997px; height: 238.35px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 22 </span><span class="caption-text">Projeção cônica de Albers (igual área).</span><a class="headerlink" href="#id36" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>As fórmulas para a index{Projeção cartográfica!projeção cônica de Albers}projeção
+cônica de Albers para um esferoide (<cite>a=b</cite>) são apresentadas nas Equações <a class="reference internal" href="#equation-eq-proj-albers-igualarea-x">(33)</a>
+e <a class="reference internal" href="#equation-eq-proj-albers-igualarea-y">(34)</a>, para o modelo da terra sendo
+um esferoide. Para o modelo da terra sendo um elipsóide, consultar
+<span id="id13">[<a class="reference internal" href="#id27" title="J.P. Snyder. Map projections–a working manual. Geological Survey Bulletin Series. U.S. G.P.O., 1987. URL: http://pubs.er.usgs.gov/publication/pp1395.">Sny87</a>]</span>.</p>
+<div class="math notranslate nohighlight" id="equation-eq-proj-albers-igualarea-x">
+<span class="eqno">(33)<a class="headerlink" href="#equation-eq-proj-albers-igualarea-x" title="Permalink to this equation"></a></span>\[x  =\rho\sin\theta\]</div>
+<div class="math notranslate nohighlight" id="equation-eq-proj-albers-igualarea-y">
+<span class="eqno">(34)<a class="headerlink" href="#equation-eq-proj-albers-igualarea-y" title="Permalink to this equation"></a></span>\[y  =\rho_{0}-\rho\cos\theta\]</div>
+<p>em que:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\rho                 &amp; =\frac{1}{n}R\left(C-2n\sin\phi\right)^{1/2}\\
+\theta               &amp; =n(\lambda-\lambda_{0})\\
+\rho_{0}             &amp; =\frac{1}{n}\left(C-2n\sin\phi_{0}\right)^{1/2}\\
+C                    &amp; =\cos^2\phi_{1}+2n\sin\phi_{1}\\
+n                    &amp; =\frac{1}{2}\left(\sin\phi_{1}+\sin\phi_{2}\right)\\
+\phi_{0},\lambda_{0} &amp; =\text{latitude e longitude para origem do sistema de coordenadas}\\
+\phi_{1},\phi_{2}    &amp; =\text{paralelos padrão}\end{split}\]</div>
+<p>O eixo-<span class="math notranslate nohighlight">\(y\)</span> coincide com o meridiano central <span class="math notranslate nohighlight">\((\lambda_{0})\)</span>. O eixo-<span class="math notranslate nohighlight">\(x\)</span>
+intercepta perpendicularmente em <span class="math notranslate nohighlight">\(\phi_{0}\)</span>, aumentando para este.
+Observe que <span class="math notranslate nohighlight">\(n\)</span>, <span class="math notranslate nohighlight">\(C\)</span> e <span class="math notranslate nohighlight">\(\rho_{0}\)</span> são constantes e são calculados
+uma única vez. As fórmulas inversas são:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\phi &amp; =\arcsin\left(\frac{C-(\rho n)^2}{2n}\right)\\
+\lambda &amp; =\lambda_{0}+\theta/n\label{eq:proj_albers_igualarea_inv_long}\end{split}\]</div>
+<p>em que:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\rho &amp; =\left(x^2+\left(\rho_{0}-y\right)^2\right)^{1/2}\\
+\lambda &amp; =\arctan\left(\frac{x}{\rho_{0}-y}\right)\end{split}\]</div>
+<p><strong>Projeção sinusoidal (igual área)</strong></p>
+<p>Outro exemplo de projeção <strong>igual área</strong> é a Sinusoidal
+(<a class="reference internal" href="#sinusoidalqualarea-png"><span class="std std-numref">Figura 23</span></a>). O único meridiano que se apresenta
+como uma linha reta é o meridiano central (<span class="math notranslate nohighlight">\(\lambda_{0}\)</span>), os demais
+tem forma sinusoidal com espaçamento constante. No meridiano central
+a escala é verdadeira. Os paralelos tem espaçamento igual. O eixo-<span class="math notranslate nohighlight">\(x\)</span>
+coincide com a linha do Equador, enquanto o eixo-<span class="math notranslate nohighlight">\(y\)</span> coincide com
+o meridiano central. As equações para a projeção sinusoidal são simples.
+Considerando a forma da terra como um esferoide, as coordenadas retangulares
+da projeção Sinusoidal são:</p>
+<div class="math notranslate nohighlight" id="equation-eq-proj-sinu-equi">
+<span class="eqno">(35)<a class="headerlink" href="#equation-eq-proj-sinu-equi" title="Permalink to this equation"></a></span>\[x=(\lambda-\lambda_{0})\cos\phi\]</div>
+<div class="math notranslate nohighlight" id="equation-eq-proj-sinu-equi-2">
+<span class="eqno">(36)<a class="headerlink" href="#equation-eq-proj-sinu-equi-2" title="Permalink to this equation"></a></span>\[y=\phi\]</div>
+<p>As coordenadas devem estar em radianos. As funções inversas
+da projeção sinusoidal são:</p>
+<div class="math notranslate nohighlight" id="equation-eq-proj-sinu-equi-inv">
+<span class="eqno">(37)<a class="headerlink" href="#equation-eq-proj-sinu-equi-inv" title="Permalink to this equation"></a></span>\[\lambda=\frac{x}{\cos\phi}+\lambda_{0}\]</div>
+<div class="math notranslate nohighlight" id="equation-eq-proj-sinu-equi-inv2">
+<span class="eqno">(38)<a class="headerlink" href="#equation-eq-proj-sinu-equi-inv2" title="Permalink to this equation"></a></span>\[\phi=y\]</div>
+<figure class="align-center" id="id37">
+<span id="sinusoidalqualarea-png"></span><a class="reference internal image-reference" href="../_images/SinusoidalqualArea.png"><img alt="SinusoidalqualArea.png" src="../_images/SinusoidalqualArea.png" style="width: 362.59999999999997px; height: 190.39999999999998px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 23 </span><span class="caption-text">Projeção sinusoidal (igual área).</span><a class="headerlink" href="#id37" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 3</span> AQual é a coordenada retângular
+de um ponto de latitude <span class="math notranslate nohighlight">\(-21,4324^\circ\)</span> e longitude
+de <span class="math notranslate nohighlight">\(-42,7912^\circ\)</span> considerando a projeção sendo sinusoidal
+com <span class="math notranslate nohighlight">\(\lambda_{0}=0^\circ\)</span>.</p>
+<p><span class="solucao">Solução:</span>  Considerando as Equações <a class="reference internal" href="#equation-eq-proj-sinu-equi">(35)</a> e <a class="reference internal" href="#equation-eq-proj-sinu-equi-2">(36)</a>,
+e observando que os ângulos devem estar em radianos tem-se:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}x &amp; =(\lambda-\lambda_{0})\cos\phi\\
+x &amp; =(-42,7912\cdot\pi/180)\cos(-21,4324\cdot\pi/180)\\
+x &amp; =-\text{0,6952}.\\
+y &amp; =\phi\\
+y &amp; =-21,4324\cdot\pi/180\\
+y &amp; =-0,3741.\end{split}\]</div>
+<hr class="docutils" />
+<p><strong>Projeção cônica de Lambert (conforme)</strong></p>
+<p>A projeção cônica de Lambert <strong>conforme</strong> é apresentada na <a class="reference internal" href="#lambertconformal"><span class="std std-numref">Figura 24</span></a>.
+Ela é utilizado em nações que têm área predominantemente na direção
+de leste-oeste, como os Estados Unidos. Pode-se citar ainda que: os
+paralelos concêntricos e com espaçamento distinto, sendo mais próximo
+do centro do mapa; os meridianos tem espaçamento igual, cortando os
+paralelos em ângulos retos; a escala só é verdadeira ao longo dos
+paralelos padrão; e no hemisfério sobre os paralelos padrão o polo
+é um ponto, e no outro polo, infinito.</p>
+<figure class="align-center" id="id38">
+<span id="lambertconformal"></span><a class="reference internal image-reference" href="../_images/LambertConformal.png"><img alt="LambertConformal.png" src="../_images/LambertConformal.png" style="width: 351.04999999999995px; height: 259.34999999999997px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 24 </span><span class="caption-text">Projeção cônica de Lambert (conforme).</span><a class="headerlink" href="#id38" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p><strong>Projeção Azimutal (equidistante)</strong></p>
+<p>Na <a class="reference internal" href="#azimuthalequidistant"><span class="std std-numref">Figura 25</span></a> é apresentada uma
+projeção <strong>equidistante</strong>, do tipo <strong>Azimutal</strong>
+(azimutal equidistante). Pode-se citar como alguns aspectos desta
+projeção: as distâncias a partir do centro e ao longo do raio são
+verdadeiras; o único ponto que não têm distorção é o central e nenhum
+ponto tem área igual ou conforme; paralelos são círculos espaçados
+em intervalos verdadeiros.</p>
+<figure class="align-center" id="id39">
+<span id="azimuthalequidistant"></span><a class="reference internal image-reference" href="../_images/AzimuthalEquidistant.png"><img alt="AzimuthalEquidistant.png" src="../_images/AzimuthalEquidistant.png" style="width: 285.59999999999997px; height: 281.04999999999995px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 25 </span><span class="caption-text">Projeção Azimutal (equidistante).</span><a class="headerlink" href="#id39" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>A Equações para as coordenadas planas da projeção azimutal equidistante
+são:</p>
+<div class="math notranslate nohighlight" id="equation-eq-proj-azi-equidis">
+<span class="eqno">(39)<a class="headerlink" href="#equation-eq-proj-azi-equidis" title="Permalink to this equation"></a></span>\[\begin{split}x =k'\cos\phi\sin(\lambda-\lambda_{0})\\\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[y =k'\left(\cos\phi_{1}\sin(\phi)-\sin\phi_{1}\cos\phi\cos(\lambda-\lambda_{0})\right)\]</div>
+<p>em que:</p>
+<div class="math notranslate nohighlight" id="equation-eq-proj-azi-equidis-k">
+<span class="eqno">(40)<a class="headerlink" href="#equation-eq-proj-azi-equidis-k" title="Permalink to this equation"></a></span>\[k' =c/\sin\]</div>
+<div class="math notranslate nohighlight" id="equation-eq-proj-azi-equidis-cosc">
+<span class="eqno">(41)<a class="headerlink" href="#equation-eq-proj-azi-equidis-cosc" title="Permalink to this equation"></a></span>\[\cos c =\sin\phi_{1}\sin(\phi)-\cos\phi_{1}\cos\phi\cos(\lambda-\lambda_{0})\]</div>
+<p>Sendo <span class="math notranslate nohighlight">\((\phi_{1},\lambda_{0})\)</span> são a latitude e a longitude do centro
+da projeção e a origem. O eixo-<span class="math notranslate nohighlight">\(y\)</span> coincide com o meridiano central,
+crescendo ao norte e diminuindo ao sul. Se <span class="math notranslate nohighlight">\(\cos c=1\)</span> na Equaçãoref{eq:proj_azi_equidis_cosc},
+ela é indeterminada, mas <span class="math notranslate nohighlight">\(k'=1\)</span>, e <span class="math notranslate nohighlight">\(x=y=0.\)</span> Se <span class="math notranslate nohighlight">\(\cos c=-1\)</span> , o
+ponto é oposto ao centro <span class="math notranslate nohighlight">\((-\phi_{1},\lambda_{0}\pm180^{\circ})\)</span>.
+As funções inversas são:</p>
+<div class="math notranslate nohighlight" id="equation-eq-proj-azi-equidis-inv-lat">
+<span class="eqno">(42)<a class="headerlink" href="#equation-eq-proj-azi-equidis-inv-lat" title="Permalink to this equation"></a></span>\[\displaystyle \phi=\arcsin\left(\cos c\sin\phi_{1}+\left(\frac{y\sin c\cos\phi_{1}}{c}\right)\right),\]</div>
+<div class="math notranslate nohighlight" id="equation-eq-proj-azi-equidis-inv-long">
+<span class="eqno">(43)<a class="headerlink" href="#equation-eq-proj-azi-equidis-inv-long" title="Permalink to this equation"></a></span>\[\begin{split}{\displaystyle \lambda=\lambda_{0}+\begin{cases}
+{\displaystyle \arctan\left(\frac{x\sin c}{\rho\cos\phi_{1}\cos c-y\sin\phi_{1}\sin c}\right)} &amp; \text{se }\phi_{1}\neq\pm90^{\circ},\\
+{\displaystyle \arctan\left(\frac{x}{-y}\right)} &amp; \text{se }\phi_{1}=90^\circ,\\
+{\displaystyle \arctan\left(\frac{x}{y}\right)} &amp; \text{se }\phi_{1}=-90^\circ,
+\end{cases}}\end{split}\]</div>
+<p>em que: <span class="math notranslate nohighlight">\(\rho=\left(x^2+y^2\right)^{1/2}\)</span> e <span class="math notranslate nohighlight">\(c=\rho/R\)</span>.</p>
 <p class="rubric">Footnotes</p>
 <dl class="footnote brackets">
 <dt class="label" id="f1"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
@@ -339,27 +727,46 @@ z &amp; =2.397.345,4965\,\text{m}.\end{split}\]</div>
 </dd>
 </dl>
 <p><strong>Referências</strong></p>
-<p id="id6"><dl class="citation">
-<dt class="label" id="id9"><span class="brackets">CJ04</span></dt>
+<p id="id14"><dl class="citation">
+<dt class="label" id="id17"><span class="brackets">CJ04</span></dt>
 <dd><p>J. A. Comastri and J. G. Junior. <em>Topografia aplicada</em>. Editora UFV, Viçosa, MG, 1 edition, 2004.</p>
 </dd>
-<dt class="label" id="id10"><span class="brackets"><a class="fn-backref" href="#id3">LKF+98</a></span></dt>
+<dt class="label" id="id24"><span class="brackets"><a class="fn-backref" href="#id10">Gem99</a></span></dt>
+<dd><p>Camil Gemael. <em>Introdução à geodésia física</em>. Editora da UFPR, Curitiba, PR, 1 edition, 1999.</p>
+</dd>
+<dt class="label" id="id23"><span class="brackets"><a class="fn-backref" href="#id7">HWLW08</a></span></dt>
+<dd><p>Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. <em>GNSS</em>. SpringerWienNew York, Lexington, KY, 1 edition, 2008.</p>
+</dd>
+<dt class="label" id="id26"><span class="brackets"><a class="fn-backref" href="#id12">IBG05</a></span></dt>
+<dd><p>IBGE. Altera a caracterização do sistema geodésico brasileiro. 2005.</p>
+</dd>
+<dt class="label" id="id18"><span class="brackets"><a class="fn-backref" href="#id3">LKF+98</a></span></dt>
 <dd><p>F.G. Lemoine, S. C. Kenyon, J. K. Factor, R.G. Trimmer, N. K. Pavlis, D. S. Chinn, C. M. Cox, S. M. Klosko, S. B. Luthcke, M. H. Torrence, Y. M. Wang, R. G. Williamson, E. C. Pavlis, R. H. Rapp, and T. R. Olson. <em>The development of the joint NASA GSFC and the National Imagery and Mapping Agency (NIMA) Geopotential Model EGM96</em>. NASA technical paper. National Aeronautics and Space Administration, Goddard Space Flight Center, 1998. URL: <a class="reference external" href="https://books.google.com.br/books?id=eAMVAQAAIAAJ">https://books.google.com.br/books?id=eAMVAQAAIAAJ</a>.</p>
 </dd>
-<dt class="label" id="id12"><span class="brackets"><a class="fn-backref" href="#id5">Smi97</a></span></dt>
+<dt class="label" id="id20"><span class="brackets"><a class="fn-backref" href="#id5">Smi97</a></span></dt>
 <dd><p>J.R. Smith. <em>Introduction to Geodesy</em>. Wiley Series in Surveying and Boundary Control. Wiley, 1997. ISBN 9780471166603.</p>
 </dd>
-<dt class="label" id="id8"><span class="brackets">Ste99</span></dt>
+<dt class="label" id="id27"><span class="brackets"><a class="fn-backref" href="#id13">Sny87</a></span></dt>
+<dd><p>J.P. Snyder. <em>Map projections–a working manual</em>. Geological Survey Bulletin Series. U.S. G.P.O., 1987. URL: <a class="reference external" href="http://pubs.er.usgs.gov/publication/pp1395">http://pubs.er.usgs.gov/publication/pp1395</a>.</p>
+</dd>
+<dt class="label" id="id16"><span class="brackets">Ste99</span></dt>
 <dd><p>James Stewart. <em>Calculus</em>. Brooks/Cole, Pacific Grove, CA, 4 edition, 1999.</p>
 </dd>
-<dt class="label" id="id13"><span class="brackets"><a class="fn-backref" href="#id1">Wir12</a></span></dt>
+<dt class="label" id="id25"><span class="brackets"><a class="fn-backref" href="#id11">Tap03</a></span></dt>
+<dd><p>B. D. Tapley. Large scale ocean circulation from the GRACE GGM01 geoid. <em>Geophysical Research Letters</em>, 2003. URL: <a class="reference external" href="http://dx.doi.org/10.1029/2003GL018622">http://dx.doi.org/10.1029/2003GL018622</a>, <a class="reference external" href="https://doi.org/10.1029/2003GL018622">doi:10.1029/2003GL018622</a>.</p>
+</dd>
+<dt class="label" id="id21"><span class="brackets"><a class="fn-backref" href="#id1">Wir12</a></span></dt>
 <dd><p>Wired. Chile earthquake moved entire city 10 feet to the west. mar 2012. URL: <a class="reference external" href="http://www.wired.com/wiredscience/2010/03/chile-earthquake-moved-entire-city-10-feet-to-the-west/">http://www.wired.com/wiredscience/2010/03/chile-earthquake-moved-entire-city-10-feet-to-the-west/</a>.</p>
 </dd>
-<dt class="label" id="id11"><span class="brackets"><a class="fn-backref" href="#id4">NationalIaMAgency00</a></span></dt>
+<dt class="label" id="id22"><span class="brackets"><a class="fn-backref" href="#id6">WG04</a></span></dt>
+<dd><p>P.R. Wolf and C.D. Ghilani. <em>Elementary surveying</em>. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.</p>
+</dd>
+<dt class="label" id="id19"><span class="brackets"><a class="fn-backref" href="#id4">NationalIaMAgency00</a></span></dt>
 <dd><p>National Imagery and Mapping Agency. Department of defense world geodetic system 1984: its definition and relationships with local geodetic systems. Technical Report TR8350.2, National Imagery and Mapping Agency, St. Louis, MO, USA, January 2000. URL: <a class="reference external" href="http://earth-info.nga.mil/GandG/publications/tr8350.2/wgs84fin.pdf">http://earth-info.nga.mil/GandG/publications/tr8350.2/wgs84fin.pdf</a>.</p>
 </dd>
 </dl>
 </p>
+</section>
 </section>
 </section>
 
