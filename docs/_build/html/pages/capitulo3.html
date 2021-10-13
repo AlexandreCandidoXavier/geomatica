@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Capitulo 3 &mdash; Documentação Livro de Geomática 0.1</title>
+  <title>Capitulo 3: Introdução a geodésia e cartografia &mdash; Documentação Livro de Geomática 0.1</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -21,7 +21,7 @@
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Pesquisar" href="../search.html" />
     <link rel="next" title="Capitulo 7" href="capitulo7.html" />
-    <link rel="prev" title="Capitulo 2" href="capitulo2.html" /> 
+    <link rel="prev" title="Capitulo 2: Unidades métricas, escala e determinação de áreas" href="capitulo2.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -41,24 +41,25 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
               <p class="caption" role="heading"><span class="caption-text">Conteúdo:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="capitulo1.html">Capitulo 1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo2.html">Capitulo 2</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Capitulo 3</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#introducao-a-geodesia-e-cartografia">Introdução a geodésia e cartografia</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#geoide">Geóide</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="capitulo1.html">Capitulo 1: Matemática fundamental</a></li>
+<li class="toctree-l1"><a class="reference internal" href="capitulo2.html">Capitulo 2: Unidades métricas, escala e determinação de áreas</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Capitulo 3: Introdução a geodésia e cartografia</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#geoide">Geóide</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#elipsoide">Elipsóide</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#coordenada-geodesica">Coordenada geodésica</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#coordenada-geodesica-cartesiana">Coordenada geodésica cartesiana</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#coordenada-astronomica">Coordenada astronômica</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#sistema-de-geodesico-brasileiro">Sistema de geodésico brasileiro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#coordenada-geodesica-cartesiana">Coordenada geodésica cartesiana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#coordenada-astronomica">Coordenada astronômica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sistema-de-geodesico-brasileiro">Sistema de geodésico brasileiro</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#datum-horizontal">Datum horizontal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#datum-vertical">Datum vertical</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#projecao-cartografica">Projeção cartográfica</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#projecoes-plana-cilindrica-e-conica-secantes">Projeções plana, cilíndrica e cônica secantes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#projecao-universal-transversa-de-mercador-utm">Projeção Universal Transversa de Mercador (UTM)</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#exercicios">Exercícios</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="capitulo7.html">Capitulo 7</a></li>
@@ -78,7 +79,7 @@
           <div role="navigation" aria-label="Navegação da página">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Capitulo 3</li>
+      <li>Capitulo 3: Introdução a geodésia e cartografia</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/pages/capitulo3.rst.txt" rel="nofollow"> Ver código-fonte da página</a>
       </li>
@@ -88,10 +89,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <style> .exem {color:blue; font-weight: bold} </style><style> .solucao {font-weight: bold} </style><style> .blue {color:blue} </style><section id="capitulo-3">
-<span id="rst-capitulo-3"></span><h1>Capitulo 3<a class="headerlink" href="#capitulo-3" title="Link permanente para este título"></a></h1>
-<section id="introducao-a-geodesia-e-cartografia">
-<h2>Introdução a geodésia e cartografia<a class="headerlink" href="#introducao-a-geodesia-e-cartografia" title="Link permanente para este título"></a></h2>
+  <style> .exem {color:blue; font-weight: bold} </style><style> .solucao {font-weight: bold} </style><style> .blue {color:blue} </style><section id="capitulo-3-introducao-a-geodesia-e-cartografia">
+<span id="rst-capitulo-3"></span><h1>Capitulo 3: Introdução a geodésia e cartografia<a class="headerlink" href="#capitulo-3-introducao-a-geodesia-e-cartografia" title="Link permanente para este título"></a></h1>
 <p>Serão abordados neste capítulo os conceitos básicos da geodésia como:
 forma e dimensão da terra; modelos matemáticos que se aproximam da
 forma da terra (elipsóide); o sistema de referência geodésico adotado
@@ -99,7 +98,7 @@ pelo Brasil. Quanto a cartografia, será definida o que é uma projeção
 cartográfica mostrando alguns exemplos, como o sistema projeção e
 coordenadas UTM, que é uma das projeções mais utilizada no Brasil.</p>
 <section id="geoide">
-<h3>Geóide<a class="headerlink" href="#geoide" title="Link permanente para este título"></a></h3>
+<h2>Geóide<a class="headerlink" href="#geoide" title="Link permanente para este título"></a></h2>
 <p>A terra vista do espaço se aproxima de uma esfera. Todavia, quanto
 mais nos aproximamos dela, mais ela se torna desuniforme, sendo formada
 na sua superfície, pelos continentes e mares. Nos continentes tem-se
@@ -107,7 +106,7 @@ diferentes formas de relevo, das mais planos aos mais acidentados.
 Observa-se também que a superfície da terra não é estática, mas sim
 dinâmica. Há um movimento da crosta terrestre, devido às forças tectônicas.
 Por exemplo, no terremoto no Chile no ano de 2010, foi estimada que
-a cidade de Conception moveu <span class="math notranslate nohighlight">\(3,02\)</span> metros para a direção oeste <span id="id1">[<a class="reference internal" href="#id21" title="Wired. Chile earthquake moved entire city 10 feet to the west. mar 2012. URL: http://www.wired.com/wiredscience/2010/03/chile-earthquake-moved-entire-city-10-feet-to-the-west/.">Wir12</a>]</span>.
+a cidade de Conception moveu <span class="math notranslate nohighlight">\(3,02\)</span> metros para a direção oeste <span id="id1">[<a class="reference internal" href="#id23" title="Wired. Chile earthquake moved entire city 10 feet to the west. mar 2012. URL: http://www.wired.com/wiredscience/2010/03/chile-earthquake-moved-entire-city-10-feet-to-the-west/.">Wir12</a>]</span>.
 Já os mares apresentam-se em constante movimento, pois são sujeitos
 a diversas forças, como: a centrífuga, devido a rotação da terra;
 a gravitacional da terra, lua, sol; dos ventos, etc.</p>
@@ -131,7 +130,7 @@ ou seja, estarão perpendiculares à superfície de nível local.</p>
 o geóide resulta em uma forma ondulada. Uma forma de apresentar o
 geóide é por meio da ondulação geoidal <span class="math notranslate nohighlight">\((N)\)</span>. Na Figura ao lado é
 apresentado a ondulação geoidal da terra dado pelo EGM96 (<em>Earth
-Gravitational Model</em> 1996footnote <a class="footnote-reference brackets" href="#f1" id="id2">1</a> <span id="id3">[<a class="reference internal" href="#id18" title="F.G. Lemoine, S. C. Kenyon, J. K. Factor, R.G. Trimmer, N. K. Pavlis, D. S. Chinn, C. M. Cox, S. M. Klosko, S. B. Luthcke, M. H. Torrence, Y. M. Wang, R. G. Williamson, E. C. Pavlis, R. H. Rapp, and T. R. Olson. The development of the joint NASA GSFC and the National Imagery and Mapping Agency (NIMA) Geopotential Model EGM96. NASA technical paper. National Aeronautics and Space Administration, Goddard Space Flight Center, 1998. URL: https://books.google.com.br/books?id=eAMVAQAAIAAJ.">LKF+98</a>]</span>. A ondulação geoidal apresenta
+Gravitational Model</em> 1996 <a class="footnote-reference brackets" href="#f1" id="id2">1</a> <span id="id3">[<a class="reference internal" href="#id20" title="F.G. Lemoine, S. C. Kenyon, J. K. Factor, R.G. Trimmer, N. K. Pavlis, D. S. Chinn, C. M. Cox, S. M. Klosko, S. B. Luthcke, M. H. Torrence, Y. M. Wang, R. G. Williamson, E. C. Pavlis, R. H. Rapp, and T. R. Olson. The development of the joint NASA GSFC and the National Imagery and Mapping Agency (NIMA) Geopotential Model EGM96. NASA technical paper. National Aeronautics and Space Administration, Goddard Space Flight Center, 1998. URL: https://books.google.com.br/books?id=eAMVAQAAIAAJ.">LKF+98</a>]</span>. A ondulação geoidal apresenta
 a distância vertical entre o geóide e o elipsóide (ver Secção ref{subsec:Nivelamento-GNSS}),
 figura matemática que se aproxima a forma da terra, neste caso o WGS84.
 Valores positivos indicam que o geóide está acima do elipóide WGS84,
@@ -145,7 +144,10 @@ de rotação da terra.</p>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../_images/geoide.png"><img alt="geoide.png" src="../_images/geoide.png" style="width: 352.2px; height: 454.8px;" /></a>
 </figure>
-</section>
+<div class="admonition-verificando-diferentes-modelos-de-geoide admonition">
+<p class="admonition-title">Verificando diferentes modelos de Geóide.</p>
+<p>Consultar: <a class="reference external" href="http://icgem.gfz-potsdam.de/vis3d/longtime">http://icgem.gfz-potsdam.de/vis3d/longtime</a></p>
+</div>
 </section>
 <section id="elipsoide">
 <h2>Elipsóide<a class="headerlink" href="#elipsoide" title="Link permanente para este título"></a></h2>
@@ -170,10 +172,10 @@ trabalhando em pequenas escalas, pode-se considerar a terra um esferoide
 <span class="math notranslate nohighlight">\(a=b\)</span> ou <span class="math notranslate nohighlight">\(f=0\)</span>.</p>
 <div class="math notranslate nohighlight" id="equation-eq-achatamento">
 <span class="eqno">(21)<a class="headerlink" href="#equation-eq-achatamento" title="Permalink to this equation"></a></span>\[f=\frac{a-b}{a}=1-\frac{b}{a}\]</div>
-<figure class="align-center" id="id28">
+<figure class="align-center" id="id32">
 <span id="figelipsoide"></span><a class="reference internal image-reference" href="../_images/fig_elipsoide.png"><img alt="fig_elipsoide.png" src="../_images/fig_elipsoide.png" style="width: 605.6px; height: 254.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 15 </span><span class="caption-text">Apresentação de uma elipse e um elipsóide de revolução.</span><a class="headerlink" href="#id28" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 15 </span><span class="caption-text">Apresentação de uma elipse e um elipsóide de revolução.</span><a class="headerlink" href="#id32" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <hr class="docutils" />
@@ -197,16 +199,16 @@ constante gravitacional (GM,
 <em>Earth’s Gravitational Constant</em>) e a velocidade
 angular de rotação da terra <span class="math notranslate nohighlight">\((\omega)\)</span>. Por exemplo, para o WGS84,
 <span class="math notranslate nohighlight">\(GM=3.986.004,418\pm0,008\cdot 10^8\,\text{m}^3\,\text{s}^{-2}\)</span> e <span class="math notranslate nohighlight">\(\omega=7292115\cdot10^{-11}\,
-\text{rad}\,\text{s}^{-1}\)</span> <span id="id4">[<a class="reference internal" href="#id19" title="National Imagery and Mapping Agency. Department of defense world geodetic system 1984: its definition and relationships with local geodetic systems. Technical Report TR8350.2, National Imagery and Mapping Agency, St. Louis, MO, USA, January 2000. URL: http://earth-info.nga.mil/GandG/publications/tr8350.2/wgs84fin.pdf.">NationalIaMAgency00</a>]</span>.</p>
+\text{rad}\,\text{s}^{-1}\)</span> <span id="id4">[<a class="reference internal" href="#id21" title="National Imagery and Mapping Agency. Department of defense world geodetic system 1984: its definition and relationships with local geodetic systems. Technical Report TR8350.2, National Imagery and Mapping Agency, St. Louis, MO, USA, January 2000. URL: http://earth-info.nga.mil/GandG/publications/tr8350.2/wgs84fin.pdf.">NationalIaMAgency00</a>]</span>.</p>
 <p>Ao longo do tempo, vários elipsoides foram definidos, pois as medidas
 da dimensão terra eram aperfeiçoadas. Os elipsoides podem ser utilizados
 em nível local ou mundial, onde se estabelecem medidas de <span class="math notranslate nohighlight">\(a\)</span> e <span class="math notranslate nohighlight">\(f\)</span>,
 de forma a melhor se ajustar ao geóide local ou mundial, respectivamente.
 Na Tabelaref{tab:elipsoides} são apresentados alguns parâmetros
 de elipsoides e o local em que ele é ou foi utilizado
-<span id="id5">[<a class="reference internal" href="#id20" title="J.R. Smith. Introduction to Geodesy. Wiley Series in Surveying and Boundary Control. Wiley, 1997. ISBN 9780471166603.">Smi97</a>]</span>.</p>
-<table class="colwidths-auto docutils align-default" id="id29">
-<caption><span class="caption-number">Table 2 </span><span class="caption-text">Exemplo dos parâmetros de elipsoides.</span><a class="headerlink" href="#id29" title="Permalink to this table"></a></caption>
+<span id="id5">[<a class="reference internal" href="#id22" title="J.R. Smith. Introduction to Geodesy. Wiley Series in Surveying and Boundary Control. Wiley, 1997. ISBN 9780471166603.">Smi97</a>]</span>.</p>
+<table class="colwidths-auto docutils align-default" id="id33">
+<caption><span class="caption-number">Table 2 </span><span class="caption-text">Exemplo dos parâmetros de elipsoides.</span><a class="headerlink" href="#id33" title="Permalink to this table"></a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>Elipsóide</p></th>
 <th class="head"><p><span class="math notranslate nohighlight">\(a\)</span> (m)</p></th>
@@ -279,12 +281,12 @@ para não cometer erros grosseiros de interpretação das informações
 GNSS. Por exemplo, a elevação apresentada pelos receptores, é em relação
 ao elipsóide e não em relação ao Geóide. Normalmente, em engenharia,
 o interesse é com a elevação em relação ao geóide.</p>
-<figure class="align-center" id="id30">
+<figure class="align-center" id="id34">
 <span id="fig-coordenadasretangulares"></span><a class="reference internal image-reference" href="../_images/fig_coordenadasretangulares.png"><img alt="fig_coordenadasretangulares.png" src="../_images/fig_coordenadasretangulares.png" style="width: 521.2px; height: 310.8px;" /></a>
 <figcaption>
 <p><span class="caption-number">Figura 16 </span><span class="caption-text">Variáveis necessárias para cálculo das coordenadas retangulares <span class="math notranslate nohighlight">\((x,y,z)\)</span>
 de um ponto <span class="math notranslate nohighlight">\(P\)</span> a partir das coordenadas geodésicas <span class="math notranslate nohighlight">\((\phi,\lambda)\)</span>
-e vice-versa.</span><a class="headerlink" href="#id30" title="Permalink to this image"></a></p>
+e vice-versa.</span><a class="headerlink" href="#id34" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -342,9 +344,9 @@ z &amp; =2.397.345,4965\,\text{m}.\end{split}\]</div>
 <p>Para a solução inversa, a partir das coordenadas geodésicas retangulares,
 calcular as coordenadas geodésicas <span class="math notranslate nohighlight">\(\left(\phi,\,\lambda,\,h\right)\)</span>,
 diferentes metodologias podem ser utilizadas, sendo alguns métodos
-apresentados em <span id="id6">[<a class="reference internal" href="#id22" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span> e <span id="id7">[<a class="reference internal" href="#id23" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span>. Aqui
+apresentados em <span id="id6">[<a class="reference internal" href="#id24" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span> e <span id="id7">[<a class="reference internal" href="#id25" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span>. Aqui
 será apresentada uma metodologia em que não há necessidade de iterações
-(Equações eq:<cite>cart_to_geo_lat</cite> a :eq:<a href="#id8"><span class="problematic" id="id9">`</span></a>cart_to_geo_h),
+(Equações eq:<cite>cart_to_geo_lat</cite> a <a class="reference internal" href="#equation-eq-cart-to-geo-h">(28)</a>),
 ou seja, é simples, uma vez que, com a aplicação das equações, o resultado
 é obtido diretamente.</p>
 <div class="math notranslate nohighlight" id="equation-eq-cart-to-geo-lat">
@@ -388,9 +390,10 @@ no Exemplo 2 tem-se:</p>
 h &amp; ={\displaystyle \frac{5.907.462,05962}{\cos\left(-22^\circ13'21,1337''\right)}-6.381.192,9127=272,32\text{ m }}\end{split}\]</div>
 <p>Como era esperado, o resultado é o mesmo de <span class="math notranslate nohighlight">\(\phi\)</span>, <span class="math notranslate nohighlight">\(\lambda\)</span>
 e <span class="math notranslate nohighlight">\(h\)</span> do Exemplo 2.</p>
+</section>
 <hr class="docutils" />
 <section id="coordenada-astronomica">
-<h3>Coordenada astronômica<a class="headerlink" href="#coordenada-astronomica" title="Link permanente para este título"></a></h3>
+<h2>Coordenada astronômica<a class="headerlink" href="#coordenada-astronomica" title="Link permanente para este título"></a></h2>
 <p>Quando consideramos a vertical do ponto <span class="math notranslate nohighlight">\(P\)</span>, que pode ser dada pela
 direção do fio de prumo, que tem a direção do centro de massa da terra,
 tem-se como a latitude astronômica de <span class="math notranslate nohighlight">\(P\)</span>, o ângulo medido entre
@@ -398,7 +401,7 @@ a vertical em <span class="math notranslate nohighlight">\(P\)</span> o plano do
 é o ângulo entre o plano meridiano local e o meridiano de Grw.</p>
 </section>
 <section id="sistema-de-geodesico-brasileiro">
-<h3>Sistema de geodésico brasileiro<a class="headerlink" href="#sistema-de-geodesico-brasileiro" title="Link permanente para este título"></a></h3>
+<h2>Sistema de geodésico brasileiro<a class="headerlink" href="#sistema-de-geodesico-brasileiro" title="Link permanente para este título"></a></h2>
 <p>O objetivo de um sistema de referência geodésico é o de disponibilizar,
 implantar e manter uma infraestrutura básica para levantamento de
 posição de pontos na superfície da terra. Os sistemas de referências
@@ -419,8 +422,8 @@ o Gravímetro. Outra forma de obter a gravidade da terra é utilizando-se
 satélites artificiais, podendo-se citar o par de satélites GRACE (<em>Gravity
 Recovery And Climate Experiment</em>), lançados em 2002. A determinação
 desta quantidade foge ao escopo introdutório deste livro e, para os
-que tiverem mais interesse neste tema, pode-se consultar <span id="id10">[<a class="reference internal" href="#id24" title="Camil Gemael. Introdução à geodésia física. Editora da UFPR, Curitiba, PR, 1 edition, 1999.">Gem99</a>]</span> e
-<span id="id11">[<a class="reference internal" href="#id25" title="B. D. Tapley. Large scale ocean circulation from the GRACE GGM01 geoid. Geophysical Research Letters, 2003. URL: http://dx.doi.org/10.1029/2003GL018622, doi:10.1029/2003GL018622.">Tap03</a>]</span>.</p>
+que tiverem mais interesse neste tema, pode-se consultar <span id="id8">[<a class="reference internal" href="#id26" title="Camil Gemael. Introdução à geodésia física. Editora da UFPR, Curitiba, PR, 1 edition, 1999.">Gem99</a>]</span> e
+<span id="id9">[<a class="reference internal" href="#id27" title="B. D. Tapley. Large scale ocean circulation from the GRACE GGM01 geoid. Geophysical Research Letters, 2003. URL: http://dx.doi.org/10.1029/2003GL018622, doi:10.1029/2003GL018622.">Tap03</a>]</span>.</p>
 <p>Para a definição das redes planimétricas e altimétricas são necessárias
 as definições do Datum horizontal e o do Datum vertical,
 respectivamente, e a materialização das posições. O Datum horizontal
@@ -431,7 +434,8 @@ de altitude ortométrica (<span class="math notranslate nohighlight">\(H\)</span
 de posições, é realizada por meio marcos, ao longo do estado Brasileiro
 e em sua fronteira. A responsabilidade pelo SGB no Brasil fica a cargo
 do Instituto Brasileiro de Geografia e Estatística (IBGE).</p>
-<p><strong>Datum horizontal</strong></p>
+<section id="datum-horizontal">
+<h3>Datum horizontal<a class="headerlink" href="#datum-horizontal" title="Link permanente para este título"></a></h3>
 <p>Um Datum horizontal é constituído de um elipsóide mais uma série de
 parâmetros que o posiciona à terra, como, por exemplo, a latitude
 e a longitude do ponto inicial e o azimute de um alinhamento. A posição
@@ -449,10 +453,10 @@ o Datum 2, geocêntrico, tem seu centro C1 que coincide com centro
 de massa da terra, tendo os seus parâmetros <span class="math notranslate nohighlight">\(a\)</span> e <span class="math notranslate nohighlight">\(f\)</span> definidos
 de forma a minimizar os desvios dele com o Geóide como um todo, não
 em apenas uma porção.</p>
-<figure class="align-center" id="id31">
+<figure class="align-center" id="id35">
 <span id="fig-elipsoide-geoides-png"></span><a class="reference internal image-reference" href="../_images/fig_elipsoide_geoides.png"><img alt="fig_elipsoide_geoides.png" src="../_images/fig_elipsoide_geoides.png" style="width: 369.20000000000005px; height: 379.6px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 17 </span><span class="caption-text">Datum horizontal do tipo topocêntrico e geocêntrico.</span><a class="headerlink" href="#id31" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 17 </span><span class="caption-text">Datum horizontal do tipo topocêntrico e geocêntrico.</span><a class="headerlink" href="#id35" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>Como dito anteriormente, o SGB é dinâmico, o Brasil já teve o index{Datum horizontal!Córrego Alegre}Datum
@@ -461,7 +465,7 @@ da terra o elipsóide Hayford 1924 (Tabela 2).
 Atualmente o Brasil adota dois Datafootnote{Data é o plural de Datum.},
 o SAD69 (SAD é a abreviação de <em>South American Datum</em>, Datum Sul Americano)
 e o SIRGA2000 (SIRGAS é a abreviação de <strong>Sistema de Referência Geocêntrico para
-as Américas</strong>) . As características do SAD69 e do SISGAS2000 <span id="id12">[<a class="reference internal" href="#id26" title="IBGE. Altera a caracterização do sistema geodésico brasileiro. 2005.">IBG05</a>]</span> são
+as Américas</strong>) . As características do SAD69 e do SISGAS2000 <span id="id10">[<a class="reference internal" href="#id28" title="IBGE. Altera a caracterização do sistema geodésico brasileiro. 2005.">IBG05</a>]</span> são
 apresentadas abaixo:</p>
 <p>Para o Datum SAD69index{Datum horizontal!SAD69}:</p>
 <ul class="simple">
@@ -497,14 +501,16 @@ doppler, GPS, vértice de triangulação e estações de poligonal. Como
 é observado na <a class="reference internal" href="#fig-refer-horizontal"><span class="std std-numref">Figura 18</span></a>, algumas observações
 são realizadas fora do continente, em ilhas, por exemplo em Fernando
 de Noronha.</p>
-<figure class="align-center" id="id32">
+<figure class="align-center" id="id36">
 <span id="fig-refer-horizontal"></span><a class="reference internal image-reference" href="../_images/fig_refer_horizontal.png"><img alt="fig_elipsoide_geoides.png" src="../_images/fig_refer_horizontal.png" style="width: 464.45px; height: 273.0px;" /></a>
 <figcaption>
 <p><span class="caption-number">Figura 18 </span><span class="caption-text">Posição das referencias horizontais e os métodos em que as posições
-foram estimadas. Dados obtidos no IBGE em 7 de maio de 2012.</span><a class="headerlink" href="#id32" title="Permalink to this image"></a></p>
+foram estimadas. Dados obtidos no IBGE em 7 de maio de 2012.</span><a class="headerlink" href="#id36" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<p><strong>Datum vertical</strong></p>
+</section>
+<section id="datum-vertical">
+<h3>Datum vertical<a class="headerlink" href="#datum-vertical" title="Link permanente para este título"></a></h3>
 <p>São duas as referencias de altitude adotado pelo Brasil, que coincide
 com nível médio dos mares (NMM), sendo: <em>i</em>)
 o <strong>Datum de Imbituba</strong>, definido de observações
@@ -517,12 +523,16 @@ Na Figura ao lado são apresentadas as posições da referência
 altimétrica do SGB, sendo um total de <span class="math notranslate nohighlight">\(9.397\)</span> referências de nível,
 <span class="math notranslate nohighlight">\(475\)</span> e <span class="math notranslate nohighlight">\(8.922\)</span>, respectivamente, referentes ao Datum de Santana e ao
 Datum de Imbituba (<a class="reference internal" href="#fig-refer-vertical"><span class="std std-numref">Figura 19</span></a>).</p>
-<figure class="align-center" id="id33">
+<figure class="align-center" id="id37">
 <span id="fig-refer-vertical"></span><a class="reference internal image-reference" href="../_images/fig_refer_vertical.png"><img alt="fig_refer_vertical.png" src="../_images/fig_refer_vertical.png" style="width: 285.25px; height: 288.4px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 19 </span><span class="caption-text">Posições das referencias horizontais das referências de nível dos Datum de Imbituba e Santana.</span><a class="headerlink" href="#id33" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 19 </span><span class="caption-text">Posições das referencias horizontais das referências de nível dos Datum de Imbituba e Santana.</span><a class="headerlink" href="#id37" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
+<div class="admonition-sistema-geodesico-brasileiro-na-internet admonition">
+<p class="admonition-title">Sistema Geodésico Brasileiro na internet</p>
+<p>Consultar: <a class="reference external" href="http://www.bdg.ibge.gov.br/appbdg/">http://www.bdg.ibge.gov.br/appbdg/</a></p>
+</div>
 </section>
 </section>
 <section id="projecao-cartografica">
@@ -544,16 +554,16 @@ caso o cilindro seja tangente a um meridiano (e.g. Figura e);
 e é oblíqua caso o cilindro seja tangente à qualquer seção normal
 que passa pelo ponto central (e.g. <a class="reference internal" href="#proj-tipos"><span class="std std-numref">Figura 20</span></a> h).</p></li>
 </ul>
-<figure class="align-center" id="id34">
+<figure class="align-center" id="id38">
 <span id="proj-tipos"></span><a class="reference internal image-reference" href="../_images/proj_tipos.png"><img alt="proj_tipos.png" src="../_images/proj_tipos.png" style="width: 378.5px; height: 457.5px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 20 </span><span class="caption-text">Tipos de projeções.</span><a class="headerlink" href="#id34" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 20 </span><span class="caption-text">Tipos de projeções.</span><a class="headerlink" href="#id38" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id35">
+<figure class="align-center" id="id39">
 <span id="proj-tipos-sec"></span><a class="reference internal image-reference" href="../_images/proj_tipos_sec.png"><img alt="proj_tipos_sec.png" src="../_images/proj_tipos_sec.png" style="width: 533.05px; height: 200.54999999999998px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 21 </span><span class="caption-text">Projeções tipo secantes.</span><a class="headerlink" href="#id35" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 21 </span><span class="caption-text">Projeções tipo secantes.</span><a class="headerlink" href="#id39" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <section id="projecoes-plana-cilindrica-e-conica-secantes">
@@ -589,17 +599,17 @@ os paralelos em ângulos retos. Nesta projeção a escala sofre deformação
 ao longo da latitude e da longitude, de forma a manter <strong>igual
 área</strong> ao longo do mapa. Ela é utilizada para regiões que tem extensões
 na direção leste-oeste, como os Estados Unidos.</p>
-<figure class="align-center" id="id36">
+<figure class="align-center" id="id40">
 <span id="fig-albersequalarea-png"></span><a class="reference internal image-reference" href="../_images/fig_AlbersEqualArea.png"><img alt="fig_AlbersEqualArea.png" src="../_images/fig_AlbersEqualArea.png" style="width: 366.09999999999997px; height: 238.35px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 22 </span><span class="caption-text">Projeção cônica de Albers (igual área).</span><a class="headerlink" href="#id36" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 22 </span><span class="caption-text">Projeção cônica de Albers (igual área).</span><a class="headerlink" href="#id40" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>As fórmulas para a index{Projeção cartográfica!projeção cônica de Albers}projeção
 cônica de Albers para um esferoide (<cite>a=b</cite>) são apresentadas nas Equações <a class="reference internal" href="#equation-eq-proj-albers-igualarea-x">(33)</a>
 e <a class="reference internal" href="#equation-eq-proj-albers-igualarea-y">(34)</a>, para o modelo da terra sendo
 um esferoide. Para o modelo da terra sendo um elipsóide, consultar
-<span id="id13">[<a class="reference internal" href="#id27" title="J.P. Snyder. Map projections–a working manual. Geological Survey Bulletin Series. U.S. G.P.O., 1987. URL: http://pubs.er.usgs.gov/publication/pp1395.">Sny87</a>]</span>.</p>
+<span id="id11">[<a class="reference internal" href="#id29" title="J.P. Snyder. Map projections–a working manual. Geological Survey Bulletin Series. U.S. G.P.O., 1987. URL: http://pubs.er.usgs.gov/publication/pp1395.">Sny87</a>]</span>.</p>
 <div class="math notranslate nohighlight" id="equation-eq-proj-albers-igualarea-x">
 <span class="eqno">(33)<a class="headerlink" href="#equation-eq-proj-albers-igualarea-x" title="Permalink to this equation"></a></span>\[x  =\rho\sin\theta\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-proj-albers-igualarea-y">
@@ -644,14 +654,14 @@ da projeção sinusoidal são:</p>
 <span class="eqno">(37)<a class="headerlink" href="#equation-eq-proj-sinu-equi-inv" title="Permalink to this equation"></a></span>\[\lambda=\frac{x}{\cos\phi}+\lambda_{0}\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-proj-sinu-equi-inv2">
 <span class="eqno">(38)<a class="headerlink" href="#equation-eq-proj-sinu-equi-inv2" title="Permalink to this equation"></a></span>\[\phi=y\]</div>
-<figure class="align-center" id="id37">
+<figure class="align-center" id="id41">
 <span id="sinusoidalqualarea-png"></span><a class="reference internal image-reference" href="../_images/SinusoidalqualArea.png"><img alt="SinusoidalqualArea.png" src="../_images/SinusoidalqualArea.png" style="width: 362.59999999999997px; height: 190.39999999999998px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 23 </span><span class="caption-text">Projeção sinusoidal (igual área).</span><a class="headerlink" href="#id37" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 23 </span><span class="caption-text">Projeção sinusoidal (igual área).</span><a class="headerlink" href="#id41" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <hr class="docutils" />
-<p><span class="exem">Exemplo 3</span> AQual é a coordenada retângular
+<p><span class="exem">Exemplo 4</span> Qual é a coordenada retângular
 de um ponto de latitude <span class="math notranslate nohighlight">\(-21,4324^\circ\)</span> e longitude
 de <span class="math notranslate nohighlight">\(-42,7912^\circ\)</span> considerando a projeção sendo sinusoidal
 com <span class="math notranslate nohighlight">\(\lambda_{0}=0^\circ\)</span>.</p>
@@ -674,10 +684,10 @@ do centro do mapa; os meridianos tem espaçamento igual, cortando os
 paralelos em ângulos retos; a escala só é verdadeira ao longo dos
 paralelos padrão; e no hemisfério sobre os paralelos padrão o polo
 é um ponto, e no outro polo, infinito.</p>
-<figure class="align-center" id="id38">
+<figure class="align-center" id="id42">
 <span id="lambertconformal"></span><a class="reference internal image-reference" href="../_images/LambertConformal.png"><img alt="LambertConformal.png" src="../_images/LambertConformal.png" style="width: 351.04999999999995px; height: 259.34999999999997px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 24 </span><span class="caption-text">Projeção cônica de Lambert (conforme).</span><a class="headerlink" href="#id38" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 24 </span><span class="caption-text">Projeção cônica de Lambert (conforme).</span><a class="headerlink" href="#id42" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p><strong>Projeção Azimutal (equidistante)</strong></p>
@@ -688,10 +698,10 @@ projeção: as distâncias a partir do centro e ao longo do raio são
 verdadeiras; o único ponto que não têm distorção é o central e nenhum
 ponto tem área igual ou conforme; paralelos são círculos espaçados
 em intervalos verdadeiros.</p>
-<figure class="align-center" id="id39">
+<figure class="align-center" id="id43">
 <span id="azimuthalequidistant"></span><a class="reference internal image-reference" href="../_images/AzimuthalEquidistant.png"><img alt="AzimuthalEquidistant.png" src="../_images/AzimuthalEquidistant.png" style="width: 285.59999999999997px; height: 281.04999999999995px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 25 </span><span class="caption-text">Projeção Azimutal (equidistante).</span><a class="headerlink" href="#id39" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 25 </span><span class="caption-text">Projeção Azimutal (equidistante).</span><a class="headerlink" href="#id43" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>A Equações para as coordenadas planas da projeção azimutal equidistante
@@ -720,6 +730,224 @@ As funções inversas são:</p>
 {\displaystyle \arctan\left(\frac{x}{y}\right)} &amp; \text{se }\phi_{1}=-90^\circ,
 \end{cases}}\end{split}\]</div>
 <p>em que: <span class="math notranslate nohighlight">\(\rho=\left(x^2+y^2\right)^{1/2}\)</span> e <span class="math notranslate nohighlight">\(c=\rho/R\)</span>.</p>
+</section>
+<section id="projecao-universal-transversa-de-mercador-utm">
+<h3>Projeção Universal Transversa de Mercador (UTM)<a class="headerlink" href="#projecao-universal-transversa-de-mercador-utm" title="Link permanente para este título"></a></h3>
+<p>Na projeção Universal Transversa de Mercador, <em>Transverse Mercator
+Projection</em> (UTM), a terra,
+entre as latitudes de <span class="math notranslate nohighlight">\(84^\circ\)</span> de longitude, numeradas de 1 a 60, começando
+a numeração em <span class="math notranslate nohighlight">\(-180^\circ\)</span> e caminhando a contagem no sentido
+leste. Denomina-se de meridiano central (MC) ao meridiano que divide
+determinado fuso ao meio. Desta forma, por exemplo, o primeiro fuso
+abrange a área entre os meridianos <span class="math notranslate nohighlight">\(-180^\circ\)</span> a <span class="math notranslate nohighlight">\(-144^\circ\)</span>
+(ou, <span class="math notranslate nohighlight">\(180^\circ\)</span> W a <span class="math notranslate nohighlight">\(174^\circ\)</span> W), logo, o MC deste primeiro
+fuso é igual a <span class="math notranslate nohighlight">\(-177^\circ\)</span>. Já as letras do alfabeto identificam
+a posição em latitude, em que cada letra
+corresponde a uma variação de latitude de <span class="math notranslate nohighlight">\(8^\circ\)</span>, com exceção
+da banda de latitude X, que abrange <span class="math notranslate nohighlight">\(12^\circ\)</span>. A combinação do
+número do fuso com a letra da banda latitude define a zona do grid.
+Como exemplo, é apresentada a zona
+22J, correspondendo, aproximadamente, a região dos estados do Paraná,
+Santa Catarina e Rio Grande do Sul. Esta combinação, de fuso com a
+letra da banda de latitude, é sempre apresentado, quando utilizando,
+por exemplo, receptores GNSS e o programa Google Earth, se o sistema
+de coordenadas estiver configurado em UTM.</p>
+<p>Para o mapeamento de áreas fora de <span class="math notranslate nohighlight">\(84^\circ\text{N}\)</span>  e <span class="math notranslate nohighlight">\(80^\circ\text{S}\)</span>,
+região dos polos, é adotado uma outra projeção, <em>Universal
+Polar Stereographic</em> (UPS).
+Ela não será tratada aqui, todavia, maiores informações podem ser
+encontradas em <span id="id12">[<a class="reference internal" href="#id29" title="J.P. Snyder. Map projections–a working manual. Geological Survey Bulletin Series. U.S. G.P.O., 1987. URL: http://pubs.er.usgs.gov/publication/pp1395.">Sny87</a>]</span>.</p>
+<figure class="align-center" id="id44">
+<span id="utmzone"></span><a class="reference internal image-reference" href="../_images/utmzone.png"><img alt="utmzone.png" src="../_images/utmzone.png" style="width: 512.05px; height: 239.04999999999998px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 26 </span><span class="caption-text">Fusos das coordenadas UTM.</span><a class="headerlink" href="#id44" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>O território Brasileiro está inserido ao longo de 8 fusos UTM, do
+número <span class="math notranslate nohighlight">\(18\)</span> ao <span class="math notranslate nohighlight">\(25\)</span>, e das bandas de latitudes designadas pelas letras
+de H à N (<a class="reference internal" href="#utmzonebr"><span class="std std-numref">Figura 27</span></a>). Para a grande maioria dos
+estados, são necessários mais de um fuso para se trabalhar com as
+coordenadas UTM. Por exemplo, para o estado do Amazonas será necessário
+trabalhar com quatro fusos. Já o estado do Espírito Santo, encontra-se
+inserido em um único fuso, o <span class="math notranslate nohighlight">\(24\)</span>, cujos meridianos limites são <span class="math notranslate nohighlight">\(42^{\circ}\)</span> W
+e <span class="math notranslate nohighlight">\(36^\circ\text{W}\)</span>  <span class="math notranslate nohighlight">\((\text{MC}=39^\circ\text{W})\)</span>. Este estado encontra-se
+entre os paralelos <span class="math notranslate nohighlight">\(24^\circ\text{S}\)</span> e <span class="math notranslate nohighlight">\(16^\circ\text{S}\)</span>, letra de linha
+da latitude “K”. É por isto, que quando nos encontramos com um receptor
+GNSS em qualquer posição no estado, ele mostrará, juntamente com as
+coordenadas UTM do ponto, a informação “24K”, referente ao fuso
+e a linha de latitude onde o ponto se encontra.</p>
+<figure class="align-center" id="id45">
+<span id="utmzonebr"></span><a class="reference internal image-reference" href="../_images/utmzoneBR.png"><img alt="utmzoneBR.png" src="../_images/utmzoneBR.png" style="width: 472.0px; height: 461.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 27 </span><span class="caption-text">Fusos das coordenadas UTM Brasil.</span><a class="headerlink" href="#id45" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Agora vamos abordar as coordenadas UTM, onde, uma apresentação gráfica
+delas, para um fuso, é apresentada na Figura ao lado.
+A unidade das coordenadas UTM é o metro. Para as coordenadas UTM,
+considere: o eixo-<span class="math notranslate nohighlight">\(x\)</span> coincide com a linha do equador, e o <span class="math notranslate nohighlight">\(\text{eixo-}y\)</span>
+está a distância <span class="math notranslate nohighlight">\(500.000\)</span> m do MC do fuso. Nas coordenadas sobre MC
+é aplicado uma redução de escala de <span class="math notranslate nohighlight">\(0,9996\,(k_{0})\)</span>, sendo que este
+fator vai aumentando, na medida em que se afasta do MC, sendo <span class="math notranslate nohighlight">\(k=1\)</span>
+a aproximadamente <span class="math notranslate nohighlight">\(180\)</span> km do MC. A partir dos <span class="math notranslate nohighlight">\(180\)</span> km, a escala aumentada
+<span class="math notranslate nohighlight">\((k&gt;1)\)</span>.
+Para o hemisfério Norte, a intersecção do do eixo-<span class="math notranslate nohighlight">\(x\)</span> com MC, tem
+coordenada <span class="math notranslate nohighlight">\(y=0\,\text{m}\)</span> e <span class="math notranslate nohighlight">\(x=500.000\,\text{m}\)</span>. Já, para o hemisfério
+Sul, a intersecção do do eixo-<span class="math notranslate nohighlight">\(x\)</span> com MC tem coordenada <span class="math notranslate nohighlight">\(x=500.000\,\text{m}\)</span>,
+todavia, a fim de evitar coordenada negativas, <span class="math notranslate nohighlight">\(y=10.000.000\,\text{m}\)</span>.
+Em ambos os hemisférios, as coordenadas <span class="math notranslate nohighlight">\(x\)</span> e <span class="math notranslate nohighlight">\(y\)</span> crescem na direção,
+respectivamente, oeste-leste e sul-norte. Quando se trata de descrever
+as coordenadas UTM, normatizou-se em designar as coordenadas <span class="math notranslate nohighlight">\(x\)</span>,
+por “E”, de Este, e <span class="math notranslate nohighlight">\(y\)</span>, de “N”, de Norte.</p>
+<figure class="align-center" id="id46">
+<span id="utmonezone-png"></span><a class="reference internal image-reference" href="../_images/utmonezone.png"><img alt="utmonezone.png" src="../_images/utmonezone.png" style="width: 350.0px; height: 440.5px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 28 </span><span class="caption-text">Esquema das coordenadas UTM para um fuso qualquer.</span><a class="headerlink" href="#id46" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Na <a class="reference internal" href="#utmzonealegrees"><span class="std std-numref">Figura 29</span></a>  é apresentado o limite do Espírito
+Santo em coordenadas UTM. Todo o limite se encontra no fuso 24, com
+MC de <span class="math notranslate nohighlight">\(-39^{\circ}\)</span>, como já dito anteriormente. O estado encontra-se
+à esquerda do MC do fuso, logo suas coordenadas E serão sempre menores
+que 500.000m. No MC deste fuso é aplicada uma redução na escala
+de <span class="math notranslate nohighlight">\(0,9996\,(k_{0})\)</span>. É apresentada nesta Figura a linha em que não
+há redução de escala <span class="math notranslate nohighlight">\((k=1)\)</span>, encontrando-se a aproximadamente
+180 km de MC. Todos os pontos que encontram-se a direita desta linha
+e a esquerda do MC terão a escala reduzida, <span class="math notranslate nohighlight">\(k&lt;1\)</span>. Já pontos que
+se encontrarem à esquerda da linha <span class="math notranslate nohighlight">\(k=1\)</span>, será aplicada uma ampliação
+<span class="math notranslate nohighlight">\((k&gt;1)\)</span>. A coordenada do município de Alegre, <span class="math notranslate nohighlight">\(\text{E}=236.175\,\text{m}\)</span>
+e <span class="math notranslate nohighlight">\(\text{N}=7.701.983\,\text{m}\)</span>, de onde
+pode-se concluir, por exemplo, que ele está <span class="math notranslate nohighlight">\(263.825\,\text{m}\)</span> do MC <span class="math notranslate nohighlight">\((500.000-236.175)\)</span>
+e a uma distância de <span class="math notranslate nohighlight">\(2.298.017\,\text{m}\)</span> m da linha do Equador <span class="math notranslate nohighlight">\((10.000.000-7.701.983)\)</span>.</p>
+<figure class="align-center" id="id47">
+<span id="utmzonealegrees"></span><a class="reference internal image-reference" href="../_images/utmzoneAlegreES.png"><img alt="utmzoneAlegreES.png" src="../_images/utmzoneAlegreES.png" style="width: 321.5px; height: 430.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 29 </span><span class="caption-text">Esquema das coordenadas UTM para a cidade de Alegre-ES.</span><a class="headerlink" href="#id47" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p><strong>Coordenadas geográficas para UTM</strong></p>
+<p>Sendo conhecidas as coordenadas geodésicas, latitude (<span class="math notranslate nohighlight">\(\phi\)</span>) e longitude
+(<span class="math notranslate nohighlight">\(\lambda\)</span>), de um ponto, seguem as fórmulas que são utilizadas para
+cálculo das coordenadas UTM. Para se obter as coordenadas, a Este
+soma-se <span class="math notranslate nohighlight">\(500.000\)</span> m ao valor de <span class="math notranslate nohighlight">\(x\)</span> (Equação <a class="reference internal" href="#equation-eq-utmx">(44)</a>) e, para
+coordenada Norte no hemisfério sul, soma-se <span class="math notranslate nohighlight">\(10.000.000\)</span> m a <span class="math notranslate nohighlight">\(y\)</span>
+(Equação <a class="reference internal" href="#equation-eq-utmy">(45)</a>).</p>
+<div class="math notranslate nohighlight" id="equation-eq-utmx">
+<span class="eqno">(44)<a class="headerlink" href="#equation-eq-utmx" title="Permalink to this equation"></a></span>\[x=k_{0}N\text{(}A+(1-T+C)A^{3}/6+(5-18T+T^{2}+72C-58e'^{2}\text{)}A^{5}/120\]</div>
+<div class="math notranslate nohighlight" id="equation-eq-utmy">
+<span class="eqno">(45)<a class="headerlink" href="#equation-eq-utmy" title="Permalink to this equation"></a></span>\[\begin{split}y=k_{0}\text{(}M+N\tan\phi(A^{2}/2+(5-T+9C+4C^{2})A^{4}/24+\\
+(61-58T+T^{2}+600C-330e'^{2})A^{6}/720))\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}k=k_{0}\text{(}1+(1+C)A^{2}/2+(5-4T+42C+13C^{2}-28e'^{2})A^{4}/24+\\
+(61-148T+16T^{2})A^{6}/270\text{)}\end{split}\]</div>
+<p>em que: <span class="math notranslate nohighlight">\(k_{0}\)</span> é a escala no meridiano central, para projeção
+UTM, <span class="math notranslate nohighlight">\(k_{0}=0,9996\)</span>. A grande normal, <span class="math notranslate nohighlight">\(N\)</span>, foi definida na
+Equação <a class="reference internal" href="#equation-eq-grande-normal">(25)</a>, a segunda excentricidade, <span class="math notranslate nohighlight">\(e'^2\)</span>,
+na Equação <a class="reference internal" href="#equation-eq-ecentricidade-segunda">(30)</a>, para as demais variáveis
+auxiliares:</p>
+<div class="math notranslate nohighlight" id="equation-eq-utm-t">
+<span class="eqno">(46)<a class="headerlink" href="#equation-eq-utm-t" title="Permalink to this equation"></a></span>\[T =\tan^{2}\phi\]</div>
+<div class="math notranslate nohighlight" id="equation-eq-utm-c">
+<span class="eqno">(47)<a class="headerlink" href="#equation-eq-utm-c" title="Permalink to this equation"></a></span>\[C =e'^{2}\cos^{2}\phi\]</div>
+<div class="math notranslate nohighlight" id="equation-eq-utm-a">
+<span class="eqno">(48)<a class="headerlink" href="#equation-eq-utm-a" title="Permalink to this equation"></a></span>\[A =(\lambda-\lambda_{0})\cos\phi\]</div>
+<div class="math notranslate nohighlight" id="equation-eq-utm-m">
+<span class="eqno">(49)<a class="headerlink" href="#equation-eq-utm-m" title="Permalink to this equation"></a></span>\[\begin{split}M=a((1-e^{2}/4-3e^{4}/64-5e^{6}/256-...)\phi-\\
+(3e^{2}/8+3e^{4}/32+45e^{6}/1024+...)\sin2\phi+\\
+(15e^{4}/256+45e^{6}/1024)\sin4\phi-\\
+(35e^{6}/3072+...)\sin6\phi+...)\end{split}\]</div>
+<p>com <span class="math notranslate nohighlight">\(\phi\)</span> em radianos. <span class="math notranslate nohighlight">\(M\)</span> é a distância ao longo do
+meridiano central de <span class="math notranslate nohighlight">\(\phi\)</span>, ao equador. A primeira excentricidade
+<span class="math notranslate nohighlight">\(e^{2}\)</span> foi definida na Equação <a class="reference internal" href="#equation-eq-ecentricidade-primeira">(29)</a>.
+Caso as coordenadas geodésicas estejam em graus, o parâmetro <span class="math notranslate nohighlight">\(A\)</span>
+deve ser transformado para ângulos em radianos, ou seja, <span class="math notranslate nohighlight">\(A=\frac{\pi}{180}(\lambda-\lambda_{0})\cos\phi\)</span>.</p>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 4</span> Calcule a coordenada UTM
+de um ponto de latitude <span class="math notranslate nohighlight">\(-21^{\circ}\)</span> e longitude de <span class="math notranslate nohighlight">\(-41^{\circ}\)</span>.
+Considere como modelo da terra o sistema WGS84.</p>
+<p><span class="solucao">Solução:</span>  Verifica-se que para o valor da longitude do ponto, <span class="math notranslate nohighlight">\(-41^\circ\)</span>, o fuso é o 24, que tem MC de
+<span class="math notranslate nohighlight">\(-39^\circ\)</span> <span class="math notranslate nohighlight">\((\lambda_{0})\)</span>). Do Exemplo 3 temos:
+<span class="math notranslate nohighlight">\(e^2=0,006\,694\,384\,442\)</span>, logo <span class="math notranslate nohighlight">\(e=0,081\,819\)</span>; e a segunda excentricidade,
+<span class="math notranslate nohighlight">\(e'^2=0,006\,739\,501\)</span>. Para as outras variáveis auxiliares, considerando
+as Equações <a class="reference internal" href="#equation-eq-grande-normal">(25)</a>, <a class="reference internal" href="#equation-eq-utm-t">(46)</a> a <a class="reference internal" href="#equation-eq-utm-a">(48)</a>,
+temos:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}N &amp; =\frac{6\,378\,137^2}{\sqrt{6.378.137^2\cos^2\left(-21^\circ\right)+6.356.752,3^2\sin^2\left(-21^\circ\right)}}=6.380.880,55\text{ m}\\
+T &amp; =\tan^2(-21^\circ)=0,147\,351\,597\,390\\
+C &amp; =0,006\,739\,501\cos^2(-21^\circ)=0,005\,873\,963\,368\\
+A &amp; =\frac{\pi}{180^\circ}(-41^\circ--29^\circ)\cos(-21^\circ)=-0,0325\,881\,045\,490\end{split}\]</div>
+<p>Substituindo os valores na Equação <a class="reference internal" href="#equation-eq-utm-m">(49)</a>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}M= &amp; 6\,378\,137((1-0,081\,819^{2}/4-3\cdot0,081\,819^4/64-5\cdot0,081\,819^6/256)\cdot-21^\circ\cdot\pi/180\\
+&amp; -(3\cdot0,081\,819^2/8+3\cdot0,081\,819^4/32+45\cdot0,081\,819^6/1024)\cdot\sin(2\cdot-21^\circ)\\
+&amp; +(15\cdot0,081\,819/256+45\cdot0,081\,819/1024)\cdot\sin(4\cdot-21^\circ)\\
+&amp; -(35\cdot0,081\,819^6/3072)\cdot\sin(6\cdot-21^\circ))\\
+M= &amp; -2.323.076,859\,370\,594\,\text{m}\end{split}\]</div>
+<p>Aplicando os resultados nas Equações <a class="reference internal" href="#equation-eq-utmx">(44)</a>
+e <a class="reference internal" href="#equation-eq-utmy">(45)</a>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}x= &amp; 0,999\,6\cdot6.380.880,55(-0,032\,588\,104\,549+(1-0,147\,351\,597\,390+0,005\,873\,963\,368)\\
+ &amp; -0,032\,588\,104\,549^3/6+(5-18\cdot 0,147\,351\,597\,390+0,147\,351\,597\,390^2+72\cdot0,005873963368\\
+ &amp; -58\cdot0,006\,739\,501)-0,032\,588\,104\,549^5/120\\
+ &amp; -(35\cdot0,081819^6/3072)\cdot\sin(6\cdot-21^\circ))\\
+ x= &amp; -\text{207.889,216 m }\\
+ y= &amp; 0,999\,6(-2.323.076,859\,370\,594+6.380.880,55\tan\phi\text(-0,0325\,881\,045\,490^2/2+\\
+ &amp; (5-0,14735159739+9\cdot0,005\,873\,963\,368+4\cdot0,005\,873\,963\,368^2)-0,0325\,881\,045\,490^4/24\\
+ &amp; +(61-58\cdot0,147\,351\,597\,390+0,147\,351\,597\,390^2+600\cdot0,005\,873\,963\,368-330\cdot0,006\,694\,384\,442)\\
+ &amp; -0,032\,588\,104\,549^6/720))\\
+y= &amp; -2.323.448,280\text{ m}\end{split}\]</div>
+<p>Para obtermos a coordenada Este, tem que se somar <span class="math notranslate nohighlight">\(500.000\,\text{m}\)</span>
+m à <span class="math notranslate nohighlight">\(x\)</span> e, para a coordenada Norte, somar <span class="math notranslate nohighlight">\(10.000.000\,\text{m}\)</span> à <span class="math notranslate nohighlight">\(y\)</span>.
+Desta forma, a coordenada do ponto é: <span class="math notranslate nohighlight">\(\text{E}=292.110,784\,\text{m}\)</span> e
+<span class="math notranslate nohighlight">\(\text{N}=7.676.551,720\,\text{m}\)</span>.</p>
+<hr class="docutils" />
+<p>Para a solução do problema inverso, transformação de coordenada UTM
+(E, N) em geodésica $(phi,,lambda)$, consultar <span id="id13">[<a class="reference internal" href="#id29" title="J.P. Snyder. Map projections–a working manual. Geological Survey Bulletin Series. U.S. G.P.O., 1987. URL: http://pubs.er.usgs.gov/publication/pp1395.">Sny87</a>]</span>, <span id="id14">[<a class="reference internal" href="#id30" title="The universal grids. Defense Mapping Agency, Fairfax, VA, USA, 1989. URL: http://earth-info.nga.mil/GandG/publications/.">Defense Mapping Agency89</a>]</span> e <span id="id15">[<a class="reference internal" href="#id31" title="Wikipedia. Universal transverse mercator coordinate system. 2021. [Online; acessado 10-out-2021]. URL: https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system.">Wik21</a>]</span>.</p>
+<div class="admonition-sugestao-de-aula-pratica admonition">
+<p class="admonition-title">Sugestão de aula prática</p>
+<p><em>Google Earth Pro</em> <strong>como ferramente para uso em alguns problemas de geomática</strong></p>
+<p><em>Objetivo</em>: Apresentar algumas funcionalidades do <em>Google Earth Pro</em> (<a class="reference external" href="https://www.google.com/earth/">https://www.google.com/earth/</a>) em geomática.</p>
+<p>Como roteiro:</p>
+<ul class="simple">
+<li><p>apresentação geral do <em>Google Earth Pro</em>: janelas de funções; principais ícones de funções; emph{zoom}, adicionar ponto, caminho, etc;</p></li>
+<li><p>como modificar o sistema de coordenadas de geográficas <span class="math notranslate nohighlight">\((\phi,\,\lambda)\)</span> para UTM
+<span class="math notranslate nohighlight">\((\text{E, N})\)</span>;</p></li>
+<li><p>apresentar os fusos das sistema de projeção UTM;</p></li>
+<li><p>realização de medidas de distância e área;</p></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="exercicios">
+<h2>Exercícios<a class="headerlink" href="#exercicios" title="Link permanente para este título"></a></h2>
+<p><span class="exem">1)</span>  Como é definida a forma da terra?</p>
+<hr class="docutils" />
+<p><span class="exem">2)</span>  O que é altitude?</p>
+<hr class="docutils" />
+<p><span class="exem">3)</span>  Defina Geóide, Elipsóide e Datum.</p>
+<hr class="docutils" />
+<p><span class="exem">4)</span>  Quais são os Datum horizontal e vertical adotados
+pelo Brasil?</p>
+<hr class="docutils" />
+<p><span class="exem">5)</span>  Defina latitude, longitude de um lugar?</p>
+<hr class="docutils" />
+<p><span class="exem">6)</span>  Qual a nossa referência para altitude?</p>
+<hr class="docutils" />
+<p><span class="exem">7)</span>  O que é projeção cartográfica, cite exemplos?</p>
+<hr class="docutils" />
+<p><span class="exem">8)</span>  O que é uma projeção conforme, igual área e equidistante?</p>
+<hr class="docutils" />
+<p><span class="exem">9)</span>  Descreva detalhadamente como é o sistema de coordenadas
+UTM (fusos, meridiano central, abrangência de cada fuso, etc)? O que
+significa uma coordenada UTM, <span class="math notranslate nohighlight">\(\text{E}=610.000\,\text{m}\)</span> e <span class="math notranslate nohighlight">\(\text{N}=8.500.000\,\text{m}\)</span>
+no hemisfério sul?</p>
+<hr class="docutils" />
+<p><span class="exem">10)</span>  Dadas as coordenadas UTM de dois pontos no hemisfério
+sul: (a) <span class="math notranslate nohighlight">\(\text{E}=216.589\)</span> m e <span class="math notranslate nohighlight">\(\text{N}=7.709.930\,\text{m}\)</span>;
+(b) <span class="math notranslate nohighlight">\(\text{E}=251.361\,\text{m}\)</span> e <span class="math notranslate nohighlight">\(\text{N}=7.694.522\,\text{m}\)</span>.
+Calcular a distância entre eles?</p>
+<p><span class="exem">Resp.:</span> <span class="math notranslate nohighlight">\(38.032,860\,\text{m}\)</span>.</p>
+<hr class="docutils" />
 <p class="rubric">Footnotes</p>
 <dl class="footnote brackets">
 <dt class="label" id="f1"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
@@ -727,46 +955,51 @@ As funções inversas são:</p>
 </dd>
 </dl>
 <p><strong>Referências</strong></p>
-<p id="id14"><dl class="citation">
-<dt class="label" id="id17"><span class="brackets">CJ04</span></dt>
+<p id="id16"><dl class="citation">
+<dt class="label" id="id30"><span class="brackets"><a class="fn-backref" href="#id14">Defense Mapping Agency89</a></span></dt>
+<dd><p><em>The universal grids</em>. Defense Mapping Agency, Fairfax, VA, USA, 1989. URL: <a class="reference external" href="http://earth-info.nga.mil/GandG/publications/">http://earth-info.nga.mil/GandG/publications/</a>.</p>
+</dd>
+<dt class="label" id="id19"><span class="brackets">CJ04</span></dt>
 <dd><p>J. A. Comastri and J. G. Junior. <em>Topografia aplicada</em>. Editora UFV, Viçosa, MG, 1 edition, 2004.</p>
 </dd>
-<dt class="label" id="id24"><span class="brackets"><a class="fn-backref" href="#id10">Gem99</a></span></dt>
+<dt class="label" id="id26"><span class="brackets"><a class="fn-backref" href="#id8">Gem99</a></span></dt>
 <dd><p>Camil Gemael. <em>Introdução à geodésia física</em>. Editora da UFPR, Curitiba, PR, 1 edition, 1999.</p>
 </dd>
-<dt class="label" id="id23"><span class="brackets"><a class="fn-backref" href="#id7">HWLW08</a></span></dt>
+<dt class="label" id="id25"><span class="brackets"><a class="fn-backref" href="#id7">HWLW08</a></span></dt>
 <dd><p>Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. <em>GNSS</em>. SpringerWienNew York, Lexington, KY, 1 edition, 2008.</p>
 </dd>
-<dt class="label" id="id26"><span class="brackets"><a class="fn-backref" href="#id12">IBG05</a></span></dt>
+<dt class="label" id="id28"><span class="brackets"><a class="fn-backref" href="#id10">IBG05</a></span></dt>
 <dd><p>IBGE. Altera a caracterização do sistema geodésico brasileiro. 2005.</p>
 </dd>
-<dt class="label" id="id18"><span class="brackets"><a class="fn-backref" href="#id3">LKF+98</a></span></dt>
+<dt class="label" id="id20"><span class="brackets"><a class="fn-backref" href="#id3">LKF+98</a></span></dt>
 <dd><p>F.G. Lemoine, S. C. Kenyon, J. K. Factor, R.G. Trimmer, N. K. Pavlis, D. S. Chinn, C. M. Cox, S. M. Klosko, S. B. Luthcke, M. H. Torrence, Y. M. Wang, R. G. Williamson, E. C. Pavlis, R. H. Rapp, and T. R. Olson. <em>The development of the joint NASA GSFC and the National Imagery and Mapping Agency (NIMA) Geopotential Model EGM96</em>. NASA technical paper. National Aeronautics and Space Administration, Goddard Space Flight Center, 1998. URL: <a class="reference external" href="https://books.google.com.br/books?id=eAMVAQAAIAAJ">https://books.google.com.br/books?id=eAMVAQAAIAAJ</a>.</p>
 </dd>
-<dt class="label" id="id20"><span class="brackets"><a class="fn-backref" href="#id5">Smi97</a></span></dt>
+<dt class="label" id="id22"><span class="brackets"><a class="fn-backref" href="#id5">Smi97</a></span></dt>
 <dd><p>J.R. Smith. <em>Introduction to Geodesy</em>. Wiley Series in Surveying and Boundary Control. Wiley, 1997. ISBN 9780471166603.</p>
 </dd>
-<dt class="label" id="id27"><span class="brackets"><a class="fn-backref" href="#id13">Sny87</a></span></dt>
+<dt class="label" id="id29"><span class="brackets">Sny87</span><span class="fn-backref">(<a href="#id11">1</a>,<a href="#id12">2</a>,<a href="#id13">3</a>)</span></dt>
 <dd><p>J.P. Snyder. <em>Map projections–a working manual</em>. Geological Survey Bulletin Series. U.S. G.P.O., 1987. URL: <a class="reference external" href="http://pubs.er.usgs.gov/publication/pp1395">http://pubs.er.usgs.gov/publication/pp1395</a>.</p>
 </dd>
-<dt class="label" id="id16"><span class="brackets">Ste99</span></dt>
+<dt class="label" id="id18"><span class="brackets">Ste99</span></dt>
 <dd><p>James Stewart. <em>Calculus</em>. Brooks/Cole, Pacific Grove, CA, 4 edition, 1999.</p>
 </dd>
-<dt class="label" id="id25"><span class="brackets"><a class="fn-backref" href="#id11">Tap03</a></span></dt>
+<dt class="label" id="id27"><span class="brackets"><a class="fn-backref" href="#id9">Tap03</a></span></dt>
 <dd><p>B. D. Tapley. Large scale ocean circulation from the GRACE GGM01 geoid. <em>Geophysical Research Letters</em>, 2003. URL: <a class="reference external" href="http://dx.doi.org/10.1029/2003GL018622">http://dx.doi.org/10.1029/2003GL018622</a>, <a class="reference external" href="https://doi.org/10.1029/2003GL018622">doi:10.1029/2003GL018622</a>.</p>
 </dd>
-<dt class="label" id="id21"><span class="brackets"><a class="fn-backref" href="#id1">Wir12</a></span></dt>
+<dt class="label" id="id31"><span class="brackets"><a class="fn-backref" href="#id15">Wik21</a></span></dt>
+<dd><p>Wikipedia. Universal transverse mercator coordinate system. 2021. [Online; acessado 10-out-2021]. URL: <a class="reference external" href="https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system">https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system</a>.</p>
+</dd>
+<dt class="label" id="id23"><span class="brackets"><a class="fn-backref" href="#id1">Wir12</a></span></dt>
 <dd><p>Wired. Chile earthquake moved entire city 10 feet to the west. mar 2012. URL: <a class="reference external" href="http://www.wired.com/wiredscience/2010/03/chile-earthquake-moved-entire-city-10-feet-to-the-west/">http://www.wired.com/wiredscience/2010/03/chile-earthquake-moved-entire-city-10-feet-to-the-west/</a>.</p>
 </dd>
-<dt class="label" id="id22"><span class="brackets"><a class="fn-backref" href="#id6">WG04</a></span></dt>
+<dt class="label" id="id24"><span class="brackets"><a class="fn-backref" href="#id6">WG04</a></span></dt>
 <dd><p>P.R. Wolf and C.D. Ghilani. <em>Elementary surveying</em>. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.</p>
 </dd>
-<dt class="label" id="id19"><span class="brackets"><a class="fn-backref" href="#id4">NationalIaMAgency00</a></span></dt>
+<dt class="label" id="id21"><span class="brackets"><a class="fn-backref" href="#id4">NationalIaMAgency00</a></span></dt>
 <dd><p>National Imagery and Mapping Agency. Department of defense world geodetic system 1984: its definition and relationships with local geodetic systems. Technical Report TR8350.2, National Imagery and Mapping Agency, St. Louis, MO, USA, January 2000. URL: <a class="reference external" href="http://earth-info.nga.mil/GandG/publications/tr8350.2/wgs84fin.pdf">http://earth-info.nga.mil/GandG/publications/tr8350.2/wgs84fin.pdf</a>.</p>
 </dd>
 </dl>
 </p>
-</section>
 </section>
 </section>
 
@@ -774,7 +1007,7 @@ As funções inversas são:</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
-        <a href="capitulo2.html" class="btn btn-neutral float-left" title="Capitulo 2" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="capitulo2.html" class="btn btn-neutral float-left" title="Capitulo 2: Unidades métricas, escala e determinação de áreas" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
         <a href="capitulo7.html" class="btn btn-neutral float-right" title="Capitulo 7" accesskey="n" rel="next">Seguinte <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

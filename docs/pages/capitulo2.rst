@@ -18,13 +18,8 @@
 
 .. _RST Capitulo 2:
 
-Capitulo 2
-**********
-
-.. _UnidadesMetricas:
-
-Unidades métricas, escala e determinação de áreas
--------------------------------------------------
+Capitulo 2: Unidades métricas, escala e determinação de áreas
+*************************************************************
 
 Este capítulo tem como objetivo central a determinação de áreas. Começaremos
 com a apresentação das unidades de comprimento e de área mais utilizadas
@@ -33,8 +28,10 @@ em geomática. Como geralmente os desenhos topográficos estão reduzidos
 determinação de distância e área. Por fim, alguns métodos de cálculo
 de área serão apresentados.
 
+.. _UnidadesMetricas:
+
 Unidades de comprimento e área
-------------------------------
+==============================
 
 O Sistema Internacional de Unidades (SI) tem como unidade de comprimento
 o metro (m). Ele é definido como o comprimento do caminho viajado
@@ -99,10 +96,10 @@ então a área em alqueire paulista :math:`(x_{\text{alqPau}})`:
 ----
 
 Escala
-------
+======
 
 Escala numérica
-^^^^^^^^^^^^^^^
+---------------
 
 Quando se realiza levantamento na superfície terrestre, obtêm-se as
 coordenadas dos pontos desejáveis, e posteriormente são apresentados
@@ -194,7 +191,7 @@ Logo, a área do talhão será :math:`2,07\times3\,600=7\,452$\,\text{m}^2`.
 
 
 Escala gráfica
-^^^^^^^^^^^^^^
+--------------
 
 Uma outra forma de representação da escala é a gráfica, que tem como
 vantagem, que, mesmo se o mapa/carta for reduzida ou ampliada, a escala
@@ -244,7 +241,7 @@ desenhe uma escala gráfica com :math:`6\,\text{cm}` de comprimento.
 ----
 
 Determinação de áreas
----------------------
+=====================
 
 Normalmente, em problemas topográficos, há a necessidade de se calcular
 áreas. As áreas podem ser: *i*) da superfície projetada do
@@ -258,7 +255,7 @@ Neste capítulo veremos algumas metodologias para medição de áreas
 em topografia.
 
 Decomposição de figuras elementares
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------------------
 
 Uma maneira grosseira de realizar medidas de uma área :math:`(A)`, seja
 diretamente em uma planta topográfica ou mesmo em levantamento de
@@ -297,7 +294,7 @@ a área total.
 
 
 Área ao longo de um transecto
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------------
 
 Quando a superfície a ser determinada apresenta-se com uma forma estreita,
 pode-se estabelecer um alinhamento na direção do maior comprimento
@@ -398,6 +395,7 @@ temos:
 
 
 Cálculo de área por Gauss
+-------------------------
 
 Em levantamentos topográficos, as coordenadas retangulares dos pontos
 limitantes, são determinados por diversos métodos. A obtenção das
@@ -514,7 +512,7 @@ apresentada na :numref:`fig_areagauss2`, temos:
    cotar, determinar a área e o perímetro.
 
 Exercícios
-----------
+==========
 
 :exem:`1)`  A distância entre duas paredes de um apartamento
 é de :math:`12,32\,\text{m}`. No desenho da planta do apartamento, estas duas paredes

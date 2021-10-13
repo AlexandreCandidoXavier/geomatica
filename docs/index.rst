@@ -7,7 +7,7 @@ Livro de Geomática
 ==================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Conteúdo:
 
    pages/capitulo1

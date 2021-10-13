@@ -18,17 +18,14 @@
 
 .. raw:: html
 
-    <style> .degree2sex { font-size: 40px; border:2px; border-style:solid;  border-radius: 5px; border-color:gray; padding: .1em;} </style>
+    <style> .degree2sex {border:2px; border-style:solid;  border-radius: 5px; border-color:gray; padding: .1em;} </style>
 
 .. role:: degree2sex
 
 .. _RST Capitulo 1:
 
-Capitulo 1
-==========
-
-Matemática fundamental
-----------------------
+Capitulo 1: Matemática fundamental
+**********************************
 
 Na maioria dos problemas que serão vistos ao longo dos próximos capítulos
 haverá a necessidade de aplicação de cálculos simples. Por exemplo,
@@ -42,7 +39,7 @@ de geometria analítica.
 
 
 Noções básicas de trigonometria
--------------------------------
+===============================
 
 Trigonometria é a área da matemática que estuda relações entre lados
 e ângulos de um triângulo. Neste estudo utiliza-se ângulos, em diferentes
@@ -75,7 +72,7 @@ do comprimento do arco :math:`s` ou da posição :math:`r` em que o arco esteja
 iniciando.
 
 Ângulo em grau, grado e radiano
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------
 
 Vimos que ângulo e uma medida da abertura entre dois segmentos de
 reta com origem comum ou de duas semirretas também com origem comum.
@@ -98,7 +95,7 @@ nas unidades de grau, radiano e grado.
    Ângulo de grau, radiano e grado sobre o círculo.
 
 Grau
-""""
+^^^^
 
 A unidade de grau é aquela onde um círculo é dividido
 em :math:`360` partes iguais e cada parte corresponde a um grau, sendo utilizado
@@ -200,7 +197,7 @@ Desta forma, temos o ângulo na forma sexagesimal, :math:`116^\circ33'54,18''`.
 ----
 
 Radianos
-""""""""
+^^^^^^^^
 
 Os ângulos em radianos são abreviados por *rad*,
 sendo que :math:`1\,\mathrm{rad}` corresponde ao ângulo que subentende o comprimento
@@ -219,7 +216,7 @@ do Google <https://www.google.com/intl/pt-BR/sheets/about/>`_,
 etc.
 
 Grados
-""""""
+^^^^^^
 
 O ângulo em grado tem como símbolo *g*, e é colocado após o valor
 da medida. Nesta unidade o círculo é dividido em 400 partes iguais
@@ -256,7 +253,7 @@ grado :math:`(x_{\text{grado}})`, como:
 ----
 
 Observações sobre ângulos: goniômetros; calculadora e a constante :math:`k` (Equação :eq:`definicaoangulo`)
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Os instrumentos que medem ângulos são chamados goniômetros. Um transferidor
 é um goniômetro, assim como equipamentos topográficos que os possuem,
@@ -290,7 +287,7 @@ desta forma, substituindo na Equação :eq:`definicaoangulo`, temos
 você pode encontrar o valor de :math:`k` para ângulo na unidade grado.
 
 Funções trigonométricas
-^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------
 
 Para definir as funções trigonométricas de ângulos agudos :math:`(\theta<90^\circ)`,
 serão utilizadas razões entre os lados de um triângulo retângulo,
@@ -394,7 +391,7 @@ de :math:`90^\circ`, então o ângulo :math:`\theta` é de :math:`87,74^\circ` :
 
 ----
 
-Para as definições das funções trigonométricas em função apenas de um ânguloqualquer, utiliza-se a figura de um círculo
+Para as definições das funções trigonométricas em função apenas de um ângulo qualquer, utiliza-se a figura de um círculo
 unitário no plano cartesiano, ou seja, de raio 1 conforme :numref:`figcirculounitario`. Os valores de :math:`\cos\theta`
 e :math:`\sin\theta` correspondem a projeção do raio com o ângulo :math:`\theta` nos eixos :math:`x` e :math:`y`, respectivamente. Logo os seus
 valores variam entre :math:`-1` e :math:`1`, sendo que os seus sinais mudam conforme o quadrante. Maiores detalhes podem ser
@@ -408,6 +405,10 @@ encontrados em livros de cálculo.
    :align: center
 
    Círculo unitário e os sinais por quadrante das funções :math:`\sin`, :math:`\cos` e :math:`\tan`.
+
+.. admonition:: Entendendo o círculo unitário
+
+   Consultar: https://phet.colorado.edu/sims/html/trig-tour/latest/trig-tour_en.html
 
 **Lei dos senos**
 
@@ -908,7 +909,7 @@ a :math:`3` m.
    - apresentação das funções seno, cosseno, tangente, arccossenom, etc
 
 Exercícios
-----------
+==========
 
 :exem:`1)` Com o triângulo da Figura abaixo, de coordenada :math:`R(12,3\,text{m},\,6,1\,text{m})`,
 calcular os ângulos :math:`\alpha`, :math:`\beta,` e o seno, cosseno e tangente

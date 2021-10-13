@@ -18,11 +18,8 @@
 
 .. _RST Capitulo 3:
 
-Capitulo 3
-**********
-
-Introdução a geodésia e cartografia
-___________________________________
+Capitulo 3: Introdução a geodésia e cartografia
+***********************************************
 
 Serão abordados neste capítulo os conceitos básicos da geodésia como:
 forma e dimensão da terra; modelos matemáticos que se aproximam da
@@ -32,7 +29,7 @@ cartográfica mostrando alguns exemplos, como o sistema projeção e
 coordenadas UTM, que é uma das projeções mais utilizada no Brasil.
 
 Geóide
-^^^^^^
+======
 
 A terra vista do espaço se aproxima de uma esfera. Todavia, quanto
 mais nos aproximamos dela, mais ela se torna desuniforme, sendo formada
@@ -67,7 +64,7 @@ Do que foi dito acima, como a densidade da massa da terra é variável espacialm
 o geóide resulta em uma forma ondulada. Uma forma de apresentar o
 geóide é por meio da ondulação geoidal :math:`(N)`. Na Figura ao lado é
 apresentado a ondulação geoidal da terra dado pelo EGM96 (*Earth
-Gravitational Model* 1996\footnote [#f1]_ :cite:p:`lemoine1998development`. A ondulação geoidal apresenta
+Gravitational Model* 1996 [#f1]_ :cite:p:`lemoine1998development`. A ondulação geoidal apresenta
 a distância vertical entre o geóide e o elipsóide (ver Secção \ref{subsec:Nivelamento-GNSS}),
 figura matemática que se aproxima a forma da terra, neste caso o WGS84.
 Valores positivos indicam que o geóide está acima do elipóide WGS84,
@@ -79,14 +76,17 @@ ondulada. Vale salientar ainda que, além do geóide ser ondulado, ele
 é aproximadamente :math:`21\,\text{km}` maior que o raio na linha que contém o eixo
 de rotação da terra.
 
-
 .. figure:: /images/capitulo3/geoide.png
    :scale: 60 %
    :alt: geoide.png
    :align: center
 
+.. admonition:: Verificando diferentes modelos de Geóide.
+
+   Consultar: http://icgem.gfz-potsdam.de/vis3d/longtime
+
 Elipsóide
-_________
+=========
 
 O que os cientistas fazem então para realizar mapeamentos, definir
 fronteiras etc, uma vez que a forma da terra tem a forma irregular?
@@ -179,7 +179,7 @@ de elipsoides e o local em que ele é ou foi utilizado
 
 
 Coordenada geodésica
-____________________
+====================
 
 Para a determinação da latitude  (:math:`\phi`, leia-se *fi*) e da longitude (:math:`\lambda`, leia-se *lambda*) geodésica
 de um ponto :math:`P` qualquer, é considerada a normal :math:`P` ao elipsóide
@@ -214,7 +214,6 @@ GNSS. Por exemplo, a elevação apresentada pelos receptores, é em relação
 ao elipsóide e não em relação ao Geóide. Normalmente, em engenharia,
 o interesse é com a elevação em relação ao geóide.
 
-
 .. _fig_coordenadasretangulares:
 
 .. figure:: /images/capitulo3/fig_coordenadasretangulares.png
@@ -227,7 +226,7 @@ o interesse é com a elevação em relação ao geóide.
    e vice-versa.
 
 Coordenada geodésica cartesiana
-_______________________________
+===============================
 
 Um outro meio de estabelecer a localização espacial de um ponto, por
 exemplo o :math:`P`, a um determinado elipsóide, é por meio de sua coordenada
@@ -303,7 +302,7 @@ calcular as coordenadas geodésicas :math:`\left(\phi,\,\lambda,\,h\right)`,
 diferentes metodologias podem ser utilizadas, sendo alguns métodos
 apresentados em :cite:p:`WOLF` e :cite:p:`Hofmann2008`. Aqui
 será apresentada uma metodologia em que não há necessidade de iterações
-(Equações eq:`cart_to_geo_lat` a :eq:`cart_to_geo_h),
+(Equações eq:`cart_to_geo_lat` a :eq:`eq:cart_to_geo_h`),
 ou seja, é simples, uma vez que, com a aplicação das equações, o resultado
 é obtido diretamente.
 
@@ -374,11 +373,10 @@ no Exemplo 2 tem-se:
 Como era esperado, o resultado é o mesmo de :math:`\phi`, :math:`\lambda`
 e :math:`h` do Exemplo 2.
 
-----
-
+-----
 
 Coordenada astronômica
-^^^^^^^^^^^^^^^^^^^^^^
+======================
 
 Quando consideramos a vertical do ponto :math:`P`, que pode ser dada pela
 direção do fio de prumo, que tem a direção do centro de massa da terra,
@@ -387,7 +385,7 @@ a vertical em :math:`P` o plano do equador. Já a longitude astronômica
 é o ângulo entre o plano meridiano local e o meridiano de Grw. 
 
 Sistema de geodésico brasileiro
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+===============================
 
 O objetivo de um sistema de referência geodésico é o de disponibilizar,
 implantar e manter uma infraestrutura básica para levantamento de
@@ -424,7 +422,8 @@ de posições, é realizada por meio marcos, ao longo do estado Brasileiro
 e em sua fronteira. A responsabilidade pelo SGB no Brasil fica a cargo
 do Instituto Brasileiro de Geografia e Estatística (IBGE).
 
-**Datum horizontal**
+Datum horizontal
+----------------
 
 Um Datum horizontal é constituído de um elipsóide mais uma série de
 parâmetros que o posiciona à terra, como, por exemplo, a latitude
@@ -508,7 +507,8 @@ de Noronha.
    Posição das referencias horizontais e os métodos em que as posições
    foram estimadas. Dados obtidos no IBGE em 7 de maio de 2012.
 
-**Datum vertical**
+Datum vertical
+--------------
 
 São duas as referencias de altitude adotado pelo Brasil, que coincide
 com nível médio dos mares (NMM), sendo: *i*)
@@ -533,8 +533,13 @@ Datum de Imbituba (:numref:`fig_refer_vertical`).
 
    Posições das referencias horizontais das referências de nível dos Datum de Imbituba e Santana.
 
+
+.. admonition:: Sistema Geodésico Brasileiro na internet
+
+   Consultar: http://www.bdg.ibge.gov.br/appbdg/
+
 Projeção cartográfica
-_____________________ 
+=====================
 
 Projeções cartográficas são funções matemáticas que transformam as
 coordenadas geodésicas :math:`(\phi,\,\lambda)`) para coordenadas planas
@@ -553,7 +558,6 @@ Podem-se classificar as projeções cartográficas de acordo com:
   caso o cilindro seja tangente a um meridiano (e.g. Figura e);
   e é oblíqua caso o cilindro seja tangente à qualquer seção normal
   que passa pelo ponto central (e.g. :numref:`proj_tipos` h).
-
 
 .. _proj_tipos:
 
@@ -574,8 +578,9 @@ Podem-se classificar as projeções cartográficas de acordo com:
 
    Projeções tipo secantes.
 
+
 Projeções plana, cilíndrica e cônica secantes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------------------
 
 Nenhum mapa pode ser ao mesmo tempo **igual área** e **conforme**.
 Projeções que não são **igual área** nem *conforme* são
@@ -709,7 +714,7 @@ da projeção sinusoidal são:
 
 ----
 
-:exem:`Exemplo 3` AQual é a coordenada retângular
+:exem:`Exemplo 4` Qual é a coordenada retângular
 de um ponto de latitude :math:`-21,4324^\circ` e longitude
 de :math:`-42,7912^\circ` considerando a projeção sendo sinusoidal
 com :math:`\lambda_{0}=0^\circ`.
@@ -813,6 +818,298 @@ As funções inversas são:
 em que: :math:`\rho=\left(x^2+y^2\right)^{1/2}` e :math:`c=\rho/R`.
 
 
+Projeção Universal Transversa de Mercador (UTM)
+-----------------------------------------------
+
+Na projeção Universal Transversa de Mercador, *Transverse Mercator
+Projection* (UTM), a terra,
+entre as latitudes de :math:`84^\circ`N e :math:`80^\circ`S, é dividida
+em 60 fusos\footnote{Pode-se denominar também de zonas.}, cada um
+abrangendo :math:`6^\circ` de longitude, numeradas de 1 a 60, começando
+a numeração em :math:`-180^\circ` e caminhando a contagem no sentido
+leste. Denomina-se de meridiano central (MC) ao meridiano que divide
+determinado fuso ao meio. Desta forma, por exemplo, o primeiro fuso
+abrange a área entre os meridianos :math:`-180^\circ` a :math:`-144^\circ`
+(ou, :math:`180^\circ` W a :math:`174^\circ` W), logo, o MC deste primeiro
+fuso é igual a :math:`-177^\circ`. Já as letras do alfabeto identificam
+a posição em latitude, em que cada letra
+corresponde a uma variação de latitude de :math:`8^\circ`, com exceção
+da banda de latitude X, que abrange :math:`12^\circ`. A combinação do
+número do fuso com a letra da banda latitude define a zona do grid.
+Como exemplo, é apresentada a zona
+22J, correspondendo, aproximadamente, a região dos estados do Paraná,
+Santa Catarina e Rio Grande do Sul. Esta combinação, de fuso com a
+letra da banda de latitude, é sempre apresentado, quando utilizando,
+por exemplo, receptores GNSS e o programa Google Earth, se o sistema
+de coordenadas estiver configurado em UTM.
+
+Para o mapeamento de áreas fora de :math:`84^\circ\text{N}`  e :math:`80^\circ\text{S}`,
+região dos polos, é adotado uma outra projeção, *Universal
+Polar Stereographic* (UPS).
+Ela não será tratada aqui, todavia, maiores informações podem ser
+encontradas em :cite:p:`snyder1987map`.
+
+.. _utmzone:
+
+.. figure:: /images/capitulo3/utmzone.png
+   :scale: 35 %
+   :alt: utmzone.png
+   :align: center
+
+   Fusos das coordenadas UTM.
+
+O território Brasileiro está inserido ao longo de 8 fusos UTM, do
+número :math:`18` ao :math:`25`, e das bandas de latitudes designadas pelas letras
+de H à N (:numref:`utmzoneBR`). Para a grande maioria dos
+estados, são necessários mais de um fuso para se trabalhar com as
+coordenadas UTM. Por exemplo, para o estado do Amazonas será necessário
+trabalhar com quatro fusos. Já o estado do Espírito Santo, encontra-se
+inserido em um único fuso, o :math:`24`, cujos meridianos limites são :math:`42^{\circ}` W
+e :math:`36^\circ\text{W}`  :math:`(\text{MC}=39^\circ\text{W})`. Este estado encontra-se
+entre os paralelos :math:`24^\circ\text{S}` e :math:`16^\circ\text{S}`, letra de linha
+da latitude 'K'. É por isto, que quando nos encontramos com um receptor
+GNSS em qualquer posição no estado, ele mostrará, juntamente com as
+coordenadas UTM do ponto, a informação '24K', referente ao fuso
+e a linha de latitude onde o ponto se encontra. 
+
+.. _utmzoneBR:
+
+.. figure:: /images/capitulo3/utmzoneBR.png
+   :scale: 50 %
+   :alt: utmzoneBR.png
+   :align: center
+
+   Fusos das coordenadas UTM Brasil.
+
+Agora vamos abordar as coordenadas UTM, onde, uma apresentação gráfica
+delas, para um fuso, é apresentada na Figura ao lado.
+A unidade das coordenadas UTM é o metro. Para as coordenadas UTM,
+considere: o eixo-:math:`x` coincide com a linha do equador, e o :math:`\text{eixo-}y`
+está a distância :math:`500.000` m do MC do fuso. Nas coordenadas sobre MC
+é aplicado uma redução de escala de :math:`0,9996\,(k_{0})`, sendo que este
+fator vai aumentando, na medida em que se afasta do MC, sendo :math:`k=1`
+a aproximadamente :math:`180` km do MC. A partir dos :math:`180` km, a escala aumentada
+:math:`(k>1)`.
+Para o hemisfério Norte, a intersecção do do eixo-:math:`x` com MC, tem
+coordenada :math:`y=0\,\text{m}` e :math:`x=500.000\,\text{m}`. Já, para o hemisfério
+Sul, a intersecção do do eixo-:math:`x` com MC tem coordenada :math:`x=500.000\,\text{m}`,
+todavia, a fim de evitar coordenada negativas, :math:`y=10.000.000\,\text{m}`.
+Em ambos os hemisférios, as coordenadas :math:`x` e :math:`y` crescem na direção,
+respectivamente, oeste-leste e sul-norte. Quando se trata de descrever
+as coordenadas UTM, normatizou-se em designar as coordenadas :math:`x`,
+por 'E', de Este, e :math:`y`, de 'N', de Norte.
+
+
+.. _utmonezone.png:
+
+.. figure:: /images/capitulo3/utmonezone.png
+   :scale: 50 %
+   :alt: utmonezone.png
+   :align: center
+
+   Esquema das coordenadas UTM para um fuso qualquer.
+
+Na :numref:`utmzoneAlegreES`  é apresentado o limite do Espírito
+Santo em coordenadas UTM. Todo o limite se encontra no fuso 24, com
+MC de :math:`-39^{\circ}`, como já dito anteriormente. O estado encontra-se
+à esquerda do MC do fuso, logo suas coordenadas E serão sempre menores
+que 500.000\ m. No MC deste fuso é aplicada uma redução na escala
+de :math:`0,9996\,(k_{0})`. É apresentada nesta Figura a linha em que não
+há redução de escala :math:`(k=1)`, encontrando-se a aproximadamente
+180 km de MC. Todos os pontos que encontram-se a direita desta linha
+e a esquerda do MC terão a escala reduzida, :math:`k<1`. Já pontos que
+se encontrarem à esquerda da linha :math:`k=1`, será aplicada uma ampliação
+:math:`(k>1)`. A coordenada do município de Alegre, :math:`\text{E}=236.175\,\text{m}`
+e :math:`\text{N}=7.701.983\,\text{m}`, de onde
+pode-se concluir, por exemplo, que ele está :math:`263.825\,\text{m}` do MC :math:`(500.000-236.175)`
+e a uma distância de :math:`2.298.017\,\text{m}` m da linha do Equador :math:`(10.000.000-7.701.983)`.
+
+
+.. _utmzoneAlegreES:
+
+.. figure:: /images/capitulo3/utmzoneAlegreES.png
+   :scale: 50 %
+   :alt: utmzoneAlegreES.png
+   :align: center
+
+   Esquema das coordenadas UTM para a cidade de Alegre-ES.
+
+**Coordenadas geográficas para UTM**
+
+Sendo conhecidas as coordenadas geodésicas, latitude (:math:`\phi`) e longitude
+(:math:`\lambda`), de um ponto, seguem as fórmulas que são utilizadas para
+cálculo das coordenadas UTM. Para se obter as coordenadas, a Este
+soma-se :math:`500.000` m ao valor de :math:`x` (Equação :eq:`eq:utmx`) e, para
+coordenada Norte no hemisfério sul, soma-se :math:`10.000.000` m a :math:`y`
+(Equação :eq:`eq:utmy`).
+
+.. math::
+   x=k_{0}N\text{(}A+(1-T+C)A^{3}/6+(5-18T+T^{2}+72C-58e'^{2}\text{)}A^{5}/120
+   :label: eq:utmx
+
+.. math::
+   y=k_{0}\text{(}M+N\tan\phi(A^{2}/2+(5-T+9C+4C^{2})A^{4}/24+\\
+   (61-58T+T^{2}+600C-330e'^{2})A^{6}/720))
+   :label: eq:utmy
+
+
+.. math::
+   k=k_{0}\text{(}1+(1+C)A^{2}/2+(5-4T+42C+13C^{2}-28e'^{2})A^{4}/24+\\
+   (61-148T+16T^{2})A^{6}/270\text{)}
+
+
+em que: :math:`k_{0}` é a escala no meridiano central, para projeção
+UTM, :math:`k_{0}=0,9996`. A grande normal, :math:`N`, foi definida na
+Equação :eq:`eq_grande_normal`, a segunda excentricidade, :math:`e'^2`,
+na Equação :eq:`eq:ecentricidade_segunda`, para as demais variáveis
+auxiliares:
+
+.. math::
+   T =\tan^{2}\phi
+   :label: eq:utm_T
+
+.. math::
+   C =e'^{2}\cos^{2}\phi
+   :label: eq:utm_C
+
+.. math::
+   A =(\lambda-\lambda_{0})\cos\phi
+   :label: eq:utm_A
+
+
+.. math::
+   M=a((1-e^{2}/4-3e^{4}/64-5e^{6}/256-...)\phi-\\
+   (3e^{2}/8+3e^{4}/32+45e^{6}/1024+...)\sin2\phi+\\
+   (15e^{4}/256+45e^{6}/1024)\sin4\phi-\\
+   (35e^{6}/3072+...)\sin6\phi+...)
+   :label: eq:utm_M
+
+com :math:`\phi` em radianos. :math:`M` é a distância ao longo do
+meridiano central de :math:`\phi`, ao equador. A primeira excentricidade
+:math:`e^{2}` foi definida na Equação :eq:`eq:ecentricidade_primeira`.
+Caso as coordenadas geodésicas estejam em graus, o parâmetro :math:`A`
+deve ser transformado para ângulos em radianos, ou seja, :math:`A=\frac{\pi}{180}(\lambda-\lambda_{0})\cos\phi`.
+
+----
+
+:exem:`Exemplo 4` Calcule a coordenada UTM
+de um ponto de latitude :math:`-21^{\circ}` e longitude de :math:`-41^{\circ}`.
+Considere como modelo da terra o sistema WGS84.
+
+:solucao:`Solução:`  Verifica-se que para o valor da longitude do ponto, :math:`-41^\circ`, o fuso é o 24, que tem MC de
+:math:`-39^\circ` :math:`(\lambda_{0})`). Do Exemplo 3 temos:
+:math:`e^2=0,006\,694\,384\,442`, logo :math:`e=0,081\,819`; e a segunda excentricidade,
+:math:`e'^2=0,006\,739\,501`. Para as outras variáveis auxiliares, considerando
+as Equações :eq:`eq_grande_normal`, :eq:`eq:utm_T` a :eq:`eq:utm_A`,
+temos:
+
+.. math::
+   N & =\frac{6\,378\,137^2}{\sqrt{6.378.137^2\cos^2\left(-21^\circ\right)+6.356.752,3^2\sin^2\left(-21^\circ\right)}}=6.380.880,55\text{ m}\\
+   T & =\tan^2(-21^\circ)=0,147\,351\,597\,390\\
+   C & =0,006\,739\,501\cos^2(-21^\circ)=0,005\,873\,963\,368\\
+   A & =\frac{\pi}{180^\circ}(-41^\circ--29^\circ)\cos(-21^\circ)=-0,0325\,881\,045\,490
+
+Substituindo os valores na Equação :eq:`eq:utm_M`:
+
+.. math::
+   M= & 6\,378\,137((1-0,081\,819^{2}/4-3\cdot0,081\,819^4/64-5\cdot0,081\,819^6/256)\cdot-21^\circ\cdot\pi/180\\
+   & -(3\cdot0,081\,819^2/8+3\cdot0,081\,819^4/32+45\cdot0,081\,819^6/1024)\cdot\sin(2\cdot-21^\circ)\\
+   & +(15\cdot0,081\,819/256+45\cdot0,081\,819/1024)\cdot\sin(4\cdot-21^\circ)\\
+   & -(35\cdot0,081\,819^6/3072)\cdot\sin(6\cdot-21^\circ))\\
+   M= & -2.323.076,859\,370\,594\,\text{m}
+
+
+Aplicando os resultados nas Equações :eq:`eq:utmx`
+e :eq:`eq:utmy`:
+
+.. math::
+   x= & 0,999\,6\cdot6.380.880,55(-0,032\,588\,104\,549+(1-0,147\,351\,597\,390+0,005\,873\,963\,368)\\
+   & -0,032\,588\,104\,549^3/6+(5-18\cdot 0,147\,351\,597\,390+0,147\,351\,597\,390^2+72\cdot0,005873963368\\
+   & -58\cdot0,006\,739\,501)-0,032\,588\,104\,549^5/120\\
+   & -(35\cdot0,081819^6/3072)\cdot\sin(6\cdot-21^\circ))\\
+   x= & -\text{207.889,216 m }\\
+   y= & 0,999\,6(-2.323.076,859\,370\,594+6.380.880,55\tan\phi\text(-0,0325\,881\,045\,490^2/2+\\
+   & (5-0,14735159739+9\cdot0,005\,873\,963\,368+4\cdot0,005\,873\,963\,368^2)-0,0325\,881\,045\,490^4/24\\
+   & +(61-58\cdot0,147\,351\,597\,390+0,147\,351\,597\,390^2+600\cdot0,005\,873\,963\,368-330\cdot0,006\,694\,384\,442)\\
+   & -0,032\,588\,104\,549^6/720))\\
+  y= & -2.323.448,280\text{ m}
+
+Para obtermos a coordenada Este, tem que se somar :math:`500.000\,\text{m}`
+m à :math:`x` e, para a coordenada Norte, somar :math:`10.000.000\,\text{m}` à :math:`y`.
+Desta forma, a coordenada do ponto é: :math:`\text{E}=292.110,784\,\text{m}` e
+:math:`\text{N}=7.676.551,720\,\text{m}`.
+
+----
+
+
+Para a solução do problema inverso, transformação de coordenada UTM
+(E, N) em geodésica $(\phi,\,\lambda)$, consultar :cite:p:`snyder1987map`, :cite:p:`TM8358:1989` e :cite:p:`wiki:UTM_coordinate_system`.
+
+.. admonition:: Sugestão de aula prática
+
+   *Google Earth Pro* **como ferramente para uso em alguns problemas de geomática**
+
+   *Objetivo*: Apresentar algumas funcionalidades do *Google Earth Pro* (https://www.google.com/earth/) em geomática.
+
+   Como roteiro:
+
+   - apresentação geral do *Google Earth Pro*: janelas de funções; principais ícones de funções; \emph{zoom}, adicionar ponto, caminho, etc;
+   - como modificar o sistema de coordenadas de geográficas :math:`(\phi,\,\lambda)` para UTM
+     :math:`(\text{E, N})`;
+   - apresentar os fusos das sistema de projeção UTM;
+   - realização de medidas de distância e área;
+
+Exercícios
+==========
+
+:exem:`1)`  Como é definida a forma da terra?
+
+----
+
+:exem:`2)`  O que é altitude?
+
+----
+
+:exem:`3)`  Defina Geóide, Elipsóide e Datum.
+
+----
+
+:exem:`4)`  Quais são os Datum horizontal e vertical adotados
+pelo Brasil?
+
+----
+
+:exem:`5)`  Defina latitude, longitude de um lugar?
+
+----
+
+:exem:`6)`  Qual a nossa referência para altitude?
+
+----
+
+:exem:`7)`  O que é projeção cartográfica, cite exemplos?
+
+----
+
+:exem:`8)`  O que é uma projeção conforme, igual área e equidistante?
+
+----
+
+:exem:`9)`  Descreva detalhadamente como é o sistema de coordenadas
+UTM (fusos, meridiano central, abrangência de cada fuso, etc)? O que
+significa uma coordenada UTM, :math:`\text{E}=610.000\,\text{m}` e :math:`\text{N}=8.500.000\,\text{m}`
+no hemisfério sul?
+
+----
+
+:exem:`10)`  Dadas as coordenadas UTM de dois pontos no hemisfério
+sul: (a) :math:`\text{E}=216.589` m e :math:`\text{N}=7.709.930\,\text{m}`;
+(b) :math:`\text{E}=251.361\,\text{m}` e :math:`\text{N}=7.694.522\,\text{m}`.
+Calcular a distância entre eles?
+
+:exem:`Resp.:` :math:`38.032,860\,\text{m}`.
+
+----
 
 .. rubric:: Footnotes
 
