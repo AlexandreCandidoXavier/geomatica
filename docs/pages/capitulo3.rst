@@ -81,6 +81,8 @@ de rotação da terra.
    :alt: geoide.png
    :align: center
 
+   Modelo do geoide EGM96 :cite:p:`lemoine1998development`
+
 .. admonition:: Verificando diferentes modelos de Geóide.
 
    Consultar: http://icgem.gfz-potsdam.de/vis3d/longtime

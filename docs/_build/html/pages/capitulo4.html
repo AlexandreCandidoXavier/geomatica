@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-PT" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS) &mdash; Documentação Livro de Geomática 0.1</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Pesquisar" href="../search.html" />
+    <link rel="next" title="Capitulo 7" href="capitulo7.html" />
+    <link rel="prev" title="Capitulo 3: Introdução a geodésia e cartografia" href="capitulo3.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Livro de Geomática
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <p class="caption" role="heading"><span class="caption-text">Conteúdo:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="capitulo1.html">Capitulo 1: Matemática fundamental</a></li>
+<li class="toctree-l1"><a class="reference internal" href="capitulo2.html">Capitulo 2: Unidades métricas, escala e determinação de áreas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="capitulo3.html">Capitulo 3: Introdução a geodésia e cartografia</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introducao">Introdução</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#posicionamento-por-satelite">Posicionamento por satélite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#segmentos-gnss">Segmentos GNSS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#segmento-espacial">Segmento espacial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#segmento-controle">Segmento controle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#segmento-usuario">Segmento usuário</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#exemplos-de-gnss">Exemplos de GNSS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#gps">GPS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#glonass">GLONASS</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#galileu">Galileu</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#outros-gnss">Outros GNSS</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#observaveis-e-fontes-de-erro">Observáveis e fontes de erro</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pseudodistancia-por-codigo">Pseudodistância por código</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pseudodistancia-por-fase-da-onda-portadora">Pseudodistância por fase da onda portadora</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#erros-nas-observacoes">Erros nas observações</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#erro-devido-a-propagacao-do-sinal">Erro devido à propagação do sinal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#erro-devido-ao-receptor">Erro devido ao receptor</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tipos-de-posicionamento">Tipos de posicionamento</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#terminologia">Terminologia</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#posicionamento-por-ponto">Posicionamento por ponto</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#posicionamento-diferencial-dgnss">Posicionamento diferencial (DGNSS)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#posicionamento-relativo">Posicionamento relativo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#posicionamento-relativo-estatico">Posicionamento relativo estático</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#posicionamento-relativo-pseudo-cinematico">Posicionamento relativo pseudo-cinemático</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#posicionamento-relativo-cinematico">Posicionamento relativo cinemático</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="capitulo7.html">Capitulo 7</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Livro de Geomática</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/pages/capitulo4.rst.txt" rel="nofollow"> Ver código-fonte da página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <style> .exem {color:blue; font-weight: bold} </style><style> .solucao {font-weight: bold} </style><style> .blue {color:blue} </style><section id="capitulo-4-sistemas-globais-de-navegacao-por-satelite-gnss">
+<span id="rst-capitulo-4"></span><h1>Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)<a class="headerlink" href="#capitulo-4-sistemas-globais-de-navegacao-por-satelite-gnss" title="Link permanente para este título"></a></h1>
+<p>Os Sistemas Globais de Navegação por Satélite
+(<em>Global Navigation Satellite Systems</em>, GNSS) tratam-se de
+diferentes sistemas, para fins de posicionamento, que utilizam ondas
+eletromagnéticas emitidas por satélites artificiais à terra. Estes
+sistemas são utilizados em diferentes áreas, sendo primeiramente construídos
+com finalidades militares. Atualmente, por exemplo, são empregados
+nos transportes terrestres, marinhos e aéreos, em levantamentos geodésicos
+e, na agricultura, na denominada agricultura de precisão e no georreferenciamento
+de imóveis rurais. Neste capítulo será realizada uma apresentação
+do princípio de seu funcionamento, dos sistemas existentes, das fontes
+de erros, e dos tipos de posicionamento GNSS.</p>
+<section id="introducao">
+<h2>Introdução<a class="headerlink" href="#introducao" title="Link permanente para este título"></a></h2>
+<p>O posicionamento baseado por satélite, se refere à obtenção da posição
+de um ponto (p.ex.: latitude e longitude), por meio de receptor que
+capta e processa sinais emitidos por satélites artificiais, na superfície
+terrestre, no mar, no ar ou no espaço. Antes dos satélites a posição
+de um ponto era realizado por meio da técnica denominada de triangulação,
+em que vários lados dos triângulos são ligados por pontos (vértices)
+na área de interesse. Então os lados e ângulos dos triângulos eram
+medidos. Os vértices dos triângulos eram, geralmente, materializados
+por marcos. Os lados dos triângulos eram medidos por réguas, trenas
+e mais recentemente por meio de medidores eletrônicos de distância
+e os ângulos, medidos por teodolitos. Sendo que cada lado dos triângulos
+poderia chegar a 100 km. Para o ajustamento era necessário que em
+pelo menos um ponto as suas coordenadas (p.ex. latitude, longitude
+e altitude) fossem conhecidas, assim como também fosse determinado
+o azimute de uma linha. As coordenadas do ponto era estabelecida com
+base em observações astronômicas, o que poderia resultar em erros
+de metros.</p>
+<p>O primeiro satélite a ser lançado foi o Sputnik, Russo, em 4 de outubro
+de 1957. Desde então vários outros foram lançados, fazendo com que
+uma outra metodologia pudesse ser utilizada para o posicionamento,
+sendo denominada de programa mundial de triangulação por satélite
+(<em>worldwide satellate triangulation program</em>). Constituia em
+fotografar, de dois pontos da terra, satélites com características
+refletivas no espaço, com estrelas ao fundo, ao longo de um tempo.
+Por técnicas fotogramétricas era possível encontrar a direção entre
+estes dois pontos. Observações de outros pontos na terra eram realizadas,
+formando uma rede global para ajustamento. Podem-se citar como problemas
+para esta metodologia: necessidade de céu limpo durante a fotografia
+nas duas estações que, eram separadas em aproximadamente <span class="math notranslate nohighlight">\(4.000\,\text{km}\)</span>;
+e o equipamento para fotografia, pesado e caro.</p>
+<p>O primeiro sistema a utilizar satélites artificias, com capacidade
+de emitir sinais à terra, que poderiam ser captados por receptores
+para fins de posicionamento, foi o <em>Transit</em>,
+formalmente conhecido por <em>Navy Navigation Satellite System</em>,
+utilizado pela Marinha Norte Americana para o posicionamento de submarinos
+e de navios de guerra por um período de 32 anos, tendo finalizado
+suas operações em 1996. O primeiro satélite Transit lançado com sucesso
+ocorreu em 1960, transmitindo sinais em duas frequências tendo como
+finalidade a realização de testes. O lançamento de um satélite operacional
+ocorreu em 5 de dezembro de 1963.</p>
+<p>Quando em operação o sistema Transit era constituído de 6 satélites
+orbitando a terra na altitude de <span class="math notranslate nohighlight">\(1.100\,\text{km}\)</span>, período orbital de 106
+min e enviando sinais em duas frequências (<span class="math notranslate nohighlight">\(150\,\text{MHz}\)</span> e <span class="math notranslate nohighlight">\(400\,\text{MHz}\)</span>). Em
+1967 o presidente dos Estados Unidos autorizou o uso comercial e privado,
+sendo fabricado mais de 80.000 receptores. Segundo <span id="id1">Hofmann-Wellenhof <em>et al.</em> [<a class="reference internal" href="capitulo3.html#id25" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span>,
+a precisão de posicionamento do sistema Transit, quando utilizando
+receptor com capacidade de rastreio de uma e de duas frequências,
+era de <span class="math notranslate nohighlight">\(100\,\text{m}\)</span> e <span class="math notranslate nohighlight">\(20\,\text{m}\)</span>, respectivamente. Este sistema tinha como limitação
+a precisão e, principalmente, a baixa frequência para obter a posição,
+ou seja, não era apenas ligar o receptor em terra e já obter a coordenada,
+poderia demorar de 6 horas a 12 horas para ter satélites disponíveis
+e então obter a coordenada. Isto ocorria pelo número reduzido de satélites
+em órbita <span id="id2">[<a class="reference internal" href="capitulo3.html#id32" title="J.R. Smith. Introduction to Geodesy. Wiley Series in Surveying and Boundary Control. Wiley, 1997. ISBN 9780471166603.">Smi97</a>]</span>. Na mesma época, um sistema
+similar ao Transit, o <em>Cicata</em>, foi desenvolvido
+pela Rússia.</p>
+<p>O termo <span class="math notranslate nohighlight">\(\bf{GNSS}\)</span> (<span class="math notranslate nohighlight">\(\bf{G}\it{lobal}\)</span> <span class="math notranslate nohighlight">\(\bf{N}\it{avigation}\)</span> <span class="math notranslate nohighlight">\(\bf{S}\it{atellite}\)</span> <span class="math notranslate nohighlight">\(\bf{S}\it{ystems}\)</span>)
+descreve os diferentes sistemas de posicionamento por satélites, assim
+como as suas combinações para se obter o tempo, posição e velocidade
+em qualquer tempo e condição atmosférica <span id="id3">[<a class="reference internal" href="capitulo3.html#id33" title="B. Bhatta. Global Navigation Satellite Systems. BS Publications, 2010. ISBN 9788178002200.">Bha10</a>]</span>.
+Com o breve histórico apresentado anteriormente, percebe-se que toda
+uma base tecnológica de conhecimento estava formada para construção
+de novos GNSS. Desta forma, vários países ou nações, partiram para
+o desenvolvimento e construção de seu próprio GNSS, sem as limitações
+dos anteriores, como a baixa precisão e frequência. Seguem alguns
+exemplos de GNSS: nos Estados Unidos, por meio do seu Departamento
+de Defesa (DoD, abreviação de <em>Department of Defense</em>),
+houve o desenvolvimento do Sistema de Posicionamento Global (<span class="math notranslate nohighlight">\(\bf{GPS}\)</span>,
+<span class="math notranslate nohighlight">\(\bf{G}\it{lobal}\)</span> <span class="math notranslate nohighlight">\(\bf{P}\it{ositioning}\)</span> <span class="math notranslate nohighlight">\(\bf{S}\it{ystem}\)</span>), na Rússia, sob a operação das
+forças armadas, o Sistema de Navegação Global por Satélite (<span class="math notranslate nohighlight">\(\bf{GLONASS}\text{,}\,\)</span>
+<span class="math notranslate nohighlight">\(\bf{GL}\it{Obal'naya}\)</span> <span class="math notranslate nohighlight">\(\bf{NA}\it{vigatsionnaya}\)</span> <span class="math notranslate nohighlight">\(\bf{S}\it{putnikovaya}\)</span> <span class="math notranslate nohighlight">\(\bf{S}\it{istema}\)</span>);
+e, na Europa, sendo construído pela União Europeia, o sistema <span class="math notranslate nohighlight">\(\bf{Galileu}\)</span>.
+Maiores detalhes destes sistemas serão apresentados na Secção???????????????/~ref{sec:Sistemas}.</p>
+</section>
+<section id="posicionamento-por-satelite">
+<span id="posicionamento-satelite"></span><h2>Posicionamento por satélite<a class="headerlink" href="#posicionamento-por-satelite" title="Link permanente para este título"></a></h2>
+<p>Nesta secção será apresentado o princípio básico do posicionamento
+por satélite conforme explicação de <span id="id4">Hofmann-Wellenhof <em>et al.</em> [<a class="reference internal" href="capitulo3.html#id25" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span>. Como
+já foi dito, o GNSS fornece informação da posição de um lugar, por
+exemplo, a latitude, longitude e altitude geométrica. Para tanto,
+é necessário: uma constelação de satélites sobrevoando o espaço e
+enviando sinais à terra e; receptores. capazes de captar e processar
+as informações contidas nestes sinais. Basicamente, para o posicionamento
+ser realizado, é necessário a determinação da distância entre satélites
+e receptor. Considere a <a class="reference internal" href="#fig-gnss-posicion"><span class="std std-numref">Figura 31</span></a>, com a representação
+da terra, de um receptor e de um satélite, em uma determinada época.
+Imagine esta época congelada. A posição do receptor <span class="math notranslate nohighlight">\((\boldsymbol{\varrho_{r}})\)</span>
+e de cada satélite <span class="math notranslate nohighlight">\((\boldsymbol{\varrho^{s}})\)</span> tem como sistema
+de referência o centro de massa da terra (sistema geocêntrico). A
+posição de cada satélite pode ser determinada com o auxílio das efemérides
+(tabelas de valores que torna possível determinar a posição do satélite
+no espaço) transmitidas pelos satélites e processadas no receptor. Se o receptor,
+definido na terra por sua posição geocêntrica <span class="math notranslate nohighlight">\((\boldsymbol{\varrho_{r}})\)</span>,
+tem um relógio preciso, a distância <span class="math notranslate nohighlight">\((\delta)\)</span> entre cada satélite
+e o receptor pode ser calculada pela medida de tempo que o sinal (código)
+demorou entre a emissão do satélite até a chegada no receptor. Cada
+satélite definirá uma superfície de esfera, em que o seu centro é
+a posição do satélite. Desta forma, determinada as distâncias entre
+três satélites e o receptor, torna-se suficiente para que a intersecção
+das três esferas resulte na determinação das três incógnitas da posição
+do receptor, por exemplo, a latitude, a longitude a altitude geométrica.
+A equação da distância entre cada satélite e receptor é determinada
+por:</p>
+<div class="math notranslate nohighlight" id="equation-eq-gnssdistanciasatelitereceptor">
+<span class="eqno">(50)<a class="headerlink" href="#equation-eq-gnssdistanciasatelitereceptor" title="Permalink to this equation"></a></span>\[\delta=\left\Vert \boldsymbol{\varrho^{s}-\varrho_{r}}\right\Vert\]</div>
+<figure class="align-center" id="id35">
+<span id="fig-gnss-posicion"></span><a class="reference internal image-reference" href="../_images/fig_GNSS_posicion.png"><img alt="fig_GNSS_posicion.png" src="../_images/fig_GNSS_posicion.png" style="width: 253.04999999999998px; height: 308.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 31 </span><span class="caption-text">Princípio do posicionamento por GNSS.</span><a class="headerlink" href="#id35" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Dado um vetor <span class="math notranslate nohighlight">\(\mathbf{a}\)</span>, no espaço tridimensional de coordenadas
+<span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span> e <span class="math notranslate nohighlight">\(z\)</span>, tem-se que, <span class="math notranslate nohighlight">\(\left\Vert \mathbf{a} \right\Vert\)</span>
+representa a norma de um vetor (também denominado de módulo de um vetor),
+onde:</p>
+<div class="math notranslate nohighlight">
+\[\left\Vert \mathbf{a}\right\Vert =\sqrt{x^2+y^2+z^2}\]</div>
+<p>No Exemplo 1 é apresentado a obtenção
+da posição de um ponto, em um sistema de coordenadas bidimensional,
+conhecendo-se as posições dos satélites e dos intervalos de tempo
+entre o envio do sinal pelos satélites e a sua chegada ao receptor.</p>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 1</span> Os dados das posições e distâncias que serão apresentados neste exemplo têm magnitude
+muito inferiores das usuais nos GNSS, uma vez que, geralmente, são
+dadas em milhares de metros, vistas as altitudes dos satélites (a altitude da órbita dos satélites GPS é de 20.200 km)
+e o sistema de referência utilizado. Desta forma, busca-se apenas
+ilustrar a estratégia utilizada no GNSS para cálculo da posição do
+receptor. Vamos supor que desejamos encontrar as coordenadas bidimensionais
+de um ponto onde uma pessoa possua um receptor (<span class="math notranslate nohighlight">\(r\)</span>). Este receptor
+recebe e processa os sinais, de uma determinada época, emitidos de
+dois satélites, denominados aqui por satélites 1 e 2. Nestes sinais
+são enviadas as efemérides dos satélites, sendo então calculadas suas
+posições: para o satélite 1 e 2, respectivamente, <span class="math notranslate nohighlight">\(\boldsymbol{\varrho}^1=(3,\,5)\)</span>
+e <span class="math notranslate nohighlight">\(\boldsymbol{\varrho}^2=(6,\,4)\)</span>. Os receptores GNSS, também
+por meio dos sinais (código), conseguem realizar uma estimativa do
+intervalo de tempo entre o envio do sinal e a chegada ao receptor
+<span class="math notranslate nohighlight">\((\Delta t)\)</span>. Como se conhece a velocidade de propagação do sinal,
+velocidade da luz <span class="math notranslate nohighlight">\((c=299.792,458\,\text{km s}^{-1})\)</span>,
+pode-se calcular a distância entre eles <span class="math notranslate nohighlight">\((\varrho=c\cdot\Delta t)\)</span>,
+sendo de <span class="math notranslate nohighlight">\(\varrho_{1r}=\text{4,123}\)</span> e de <span class="math notranslate nohighlight">\(\varrho_{2r}=\text{3,606}\)</span>.
+Calcule as coordenadas do receptor (<span class="math notranslate nohighlight">\(\boldsymbol{\delta}_{r}\)</span>).</p>
+<p><span class="solucao">Solução:</span> Com os dados apresentados na figura a seguir, pode-se desenhar
+a configuração geométrica dos satélites e, por circunferências, as
+distâncias entre eles e o receptor. As circunferências se interceptam
+em dois pontos, sendo estas as possíveis posições para o receptor.
+Considerando que o receptor não pode estar localizado acima dos satélites,
+temos apenas uma posição possível, a do receptor.</p>
+<figure class="align-center" id="gnssposicexemplo">
+<a class="reference internal image-reference" href="../_images/GNSSPosicExemplo.png"><img alt="GNSSPosicExemplo.png" src="../_images/GNSSPosicExemplo.png" style="width: 502.24999999999994px; height: 238.35px;" /></a>
+</figure>
+<p>Para encontrar a posição do receptor, utiliza-se a Equação <a class="reference internal" href="#equation-eq-gnssdistanciasatelitereceptor">(50)</a>,
+sendo, para o receptor e o satélite 1:</p>
+<div class="math notranslate nohighlight">
+\[4,123^2=\sqrt{(x_r-3)^2+(y_r-5)^2}\]</div>
+<div class="math notranslate nohighlight" id="equation-exem-a">
+<span class="eqno">(51)<a class="headerlink" href="#equation-exem-a" title="Permalink to this equation"></a></span>\[-17,001=x_r^2-6x_r+y_r^2-10y_r\]</div>
+<p>Para o satélite 2 e o receptor:</p>
+<div class="math notranslate nohighlight">
+\[3,606^2=\sqrt{(x_r-6)^2+(y_r-4)^2}\]</div>
+<div class="math notranslate nohighlight" id="equation-exem-b">
+<span class="eqno">(52)<a class="headerlink" href="#equation-exem-b" title="Permalink to this equation"></a></span>\[-38,997 = x_r^2-12x_r+y_r^2-8y_r\]</div>
+<p>Subtraindo a Equação <a class="reference internal" href="#equation-exem-a">(51)</a> da <a class="reference internal" href="#equation-exem-b">(52)</a> e isolando <span class="math notranslate nohighlight">\(y\)</span>:</p>
+<div class="math notranslate nohighlight" id="equation-exem-c">
+<span class="eqno">(53)<a class="headerlink" href="#equation-exem-c" title="Permalink to this equation"></a></span>\[y_r = -10,998+3x_r\]</div>
+<p>Substituindo <a class="reference internal" href="#equation-exem-c">(53)</a>  em <a class="reference internal" href="#equation-exem-a">(51)</a> :</p>
+<div class="math notranslate nohighlight">
+\[x_r^2-6x_r+(-10,998+3x_r)^2-10(-10,998+3x_r) = -17,001\]</div>
+<div class="math notranslate nohighlight" id="equation-exem-d">
+<span class="eqno">(54)<a class="headerlink" href="#equation-exem-d" title="Permalink to this equation"></a></span>\[10x_r^2-101,988x_r+247,935=0\]</div>
+<p>A Equação <a class="reference internal" href="#equation-exem-d">(54)</a> é do tipo polinomial do segundo grau, sendo
+suas raízes. A equação do segundo grau, <span class="math notranslate nohighlight">\(ax^{2}+bx+x=0\)</span>, tem raízes: <span class="math notranslate nohighlight">\(\displaystyle {x=\frac{-b\pm\sqrt{b^{2}-4ac}}{2a}}\)</span>
+. Logo, <span class="math notranslate nohighlight">\(x_{r1}=4\)</span> e <span class="math notranslate nohighlight">\(x_{r2}=6,2\)</span>. Por fim, substituindo as raízes na Equação
+(a) ou (b) encontram-se, <span class="math notranslate nohighlight">\(y_{r1}=1\)</span> e <span class="math notranslate nohighlight">\(y_{r2}=7,6\)</span>. Ou seja, temos
+duas posições possíveis para o receptor, <span class="math notranslate nohighlight">\(\boldsymbol{\varrho_{r}}=(4,\,1)\)</span>
+ou <span class="math notranslate nohighlight">\(\boldsymbol{\varrho_{r}}=(6,2,\,7,6)\)</span>. Como o receptor não estará
+acima dos satélites, a posição do receptor seria <span class="math notranslate nohighlight">\(\boldsymbol{\varrho_{r}}=(4,\,1)\)</span>.</p>
+<hr class="docutils" />
+<p>Como foi apresentado no Exemplo :ref`GNSSPosicExemplo`,
+há a necessidade de se conhecer a distância geométrica entre o receptor
+e os satélites. Isto é realizado medindo-se o lapso de tempo entre
+o envio e a chegada ao receptor multiplicado pela velocidade da luz.
+Desta forma, o lapso de tempo poderia ser calculado se os relógios
+do receptor e dos satélites estivessem sincronizados. Contudo os relógios
+dos receptores são de baixa precisão e apresentam apenas uma aproximação
+do sistema de tempo do GNSS, resultando em um erro do relógio <span class="math notranslate nohighlight">\((\delta)\)</span>
+e posteriormente em um erro na distância <span class="math notranslate nohighlight">\(\Delta\varrho\)</span>. Desta forma,
+a distância calculada pelos receptores não será a distância geométrica,
+mais sim ao que se denomina pseudodistância
+<span class="math notranslate nohighlight">\((R)\)</span>:</p>
+<div class="math notranslate nohighlight" id="equation-eq-gnsspseudodistancia">
+<span class="eqno">(55)<a class="headerlink" href="#equation-eq-gnsspseudodistancia" title="Permalink to this equation"></a></span>\[R=\varrho+\Delta\varrho=\varrho+c\delta\]</div>
+<p>O sistema passa agora a ter quatro variáveis desconhecidas, a posição,
+três variáveis <span class="math notranslate nohighlight">\((x_{r},\,y_{r},\,z_{r})\)</span>, mais a variável erro do
+relógio <span class="math notranslate nohighlight">\((\delta)\)</span>, fazendo com que sejam necessários pelo menos
+4 pseudodistâncias para solucionar estas quatro variáveis desconhecidas.
+Considerando um receptor com coordenadas <span class="math notranslate nohighlight">\(x_{r},\,y_{r}\)</span> e <span class="math notranslate nohighlight">\(z_{r}\)</span>,
+observando 4 satélites, ele poderá calcular as 4 pseudodistâncias,
+resultado em:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}R_{1} &amp; =\sqrt{(x_{1}-x_{r})^{2}+(y_{1}-y_{r})^{2}+(z_{1}-z_{r})^{2}}+c\delta\\
+R_{2} &amp; =\sqrt{(x_{2}-x_{r})^{2}+(y_{2}-y_{r})^{2}+(z_{2}-z_{r})^{2}}+c\delta\\
+R_{3} &amp; =\sqrt{(x_{3}-x_{r})^{2}+(y_{3}-y_{r})^{2}+(z_{3}-z_{r})^{2}}+c\delta\\
+R_{4} &amp; =\sqrt{(x_{4}-x_{r})^{2}+(y_{4}-y_{r})^{2}+(z_{4}-z_{r})^{2}}+c\delta\end{split}\]</div>
+<p>As Equações acima são do tipo não lineares,
+onde as variáveis <span class="math notranslate nohighlight">\(x_{r}\)</span>, <span class="math notranslate nohighlight">\(y_{r}\)</span>, <span class="math notranslate nohighlight">\(z_{r}\)</span>
+e <span class="math notranslate nohighlight">\(\delta\)</span> podem ser estimadas de diferentes métodos, por exemplo,
+pelo método iterativo, baseando-se na sua linearização <span id="id5">[<a class="reference internal" href="capitulo3.html#id34" title="E.D. Kaplan and J.L. Leva. Fundamentals of satellite navigation. In E.D. Kaplan and C.J. Hegarty, editors, Understanding GPS, pages 21–65. Artech House, 2006. URL: http://pt.scribd.com/doc/57135596/208/Other-Satellite-Navigation-Systems$\#$outer\_page\_618.">KL06</a>]</span>.</p>
+</section>
+<section id="segmentos-gnss">
+<h2>Segmentos GNSS<a class="headerlink" href="#segmentos-gnss" title="Link permanente para este título"></a></h2>
+<p>Para que o GNSS seja capaz de calcular a posição, o tempo e a velocidade, em qualquer
+posição e hora na terra, são necessários três segmentos, denominados
+de segmentos espacial, de controle e usuário. Segue uma descrição
+dos mesmos.</p>
+<figure class="align-center" id="id36">
+<span id="seg-gnss-png"></span><a class="reference internal image-reference" href="../_images/seg_gnss.png"><img alt="seg_gnss.png" src="../_images/seg_gnss.png" style="width: 297.5px; height: 325.84999999999997px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 32 </span><span class="caption-text">Segmentos GNSS.</span><a class="headerlink" href="#id36" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<section id="segmento-espacial">
+<h3>Segmento espacial<a class="headerlink" href="#segmento-espacial" title="Link permanente para este título"></a></h3>
+<p>É constituído da constelação de satélites, com um número adequado,
+orbitando a terra em diferentes posições no espaço, com a finalidade
+de garantir que em qualquer posição na superfície da terra ou acima
+dela, pelo menos quatro satélites disponíveis enviando sinais. Os
+satélites são equipados com diversos instrumentos, podendo-se citar:
+relógio(s) atômicos de alta precisãofootnote{Os relógios atômicos utilizam a frequência em diversas regiões de
+espectro eletromagnético de átomos para a medição do tempo.}; painéis para captar energia solar, transformando em energia elétrica
+para ser utilizada nos diversos equipamentos do satélite; computadores;
+e transmissores de rádios, para enviar os sinais à terra. É por meio
+dos sinais enviados, por cada satélite visível, que os receptores
+conseguem calcular, para época do seu envio, a pseudodistância <span class="math notranslate nohighlight">\((R)\)</span>
+e a posição orbital do satélite <span class="math notranslate nohighlight">\((\boldsymbol{\varrho}^{s})\)</span>.</p>
+</section>
+<section id="segmento-controle">
+<h3>Segmento controle<a class="headerlink" href="#segmento-controle" title="Link permanente para este título"></a></h3>
+<p>É o responsável, em terra, pelos satélites GNSS funcionarem de forma
+adequada. Geralmente há uma estação de controle principal e outras
+que auxiliam no rastreamento dos satélites. No rastreamento dos satélites,
+por estas estações, faz-se a avaliação da qualidade de seus equipamentos,
+relógio(s), e órbita. Por exemplo, observado algum problema de erro
+do relógio do satélite, as estações de controle em terra fazem a correção.</p>
+<p>O segmento controle também é responsável ligar ou deligar a função
+de encriptar as informações enviadas quando isto se fizer necessário.
+Por exemplo, em época de guerra, para que os únicos usuários a terem
+informação de posição precisa, sejam os usuários de sua arma.</p>
+</section>
+<section id="segmento-usuario">
+<h3>Segmento usuário<a class="headerlink" href="#segmento-usuario" title="Link permanente para este título"></a></h3>
+<p>São todos aqueles que têm a sua disposição um receptor GNSS. Podem
+ser classificados nas categorias de usuário e tipo de receptor. A
+categoria usuário pode ser, militar ou civil. Geralmente, o usuário
+civil, não vai ter acesso a todos serviços GNSS. Lembre-se que inicialmente
+o GNSS foi construído com finalidades militares.</p>
+<p>Os receptores, que são os equipamentos que vão captar e processar
+a informação emitidas pelos satélites, são constituídos basicamente
+de uma antena, processador para recebimento do sinal, relógio (geralmente
+de cristal) e dispositivo para visualização de informação. Eles podem
+apresentar diversas classificações de acordo com: o número de frequências
+que consegue rastrear; ao tipo de sinal que rastreia; a capacidade
+de rastrear diferentes GNSS.</p>
+</section>
+</section>
+<section id="exemplos-de-gnss">
+<h2>Exemplos de GNSS<a class="headerlink" href="#exemplos-de-gnss" title="Link permanente para este título"></a></h2>
+<section id="gps">
+<h3>GPS<a class="headerlink" href="#gps" title="Link permanente para este título"></a></h3>
+<p>O Sistema de Posicionamento Global (<span class="math notranslate nohighlight">\(\bf{GPS}\)</span>,
+<span class="math notranslate nohighlight">\(\bf{G}\it{lobal}\)</span> <span class="math notranslate nohighlight">\(\bf{P}\it{ositioning}\)</span> <span class="math notranslate nohighlight">\(\bf{S}\it{ystem}\)</span>) é o mais conhecido GNSS. O seu
+desenvolvimento começou em 1973, tendo como responsável o Departamento
+de Defesa dos Estados Unidos. Entre os anos de 1978 a 1985 foram lançados
+em órbita 11 protótipos, denominados de Bloco I, para avaliação e
+testes. O primeiro satélite operacional foi lançado 1989, tornando
+o segmento espacial do GPS completo 1994, com 24 satélites em órbita,
+com satélites do Bloco II e IIA. No espaço eles estão distribuídos
+em 6 planos orbitais distintos, com um ângulo de <span class="math notranslate nohighlight">\(55^{\circ}\)</span> na
+linha do Equador, a uma altitude de <span class="math notranslate nohighlight">\(20.200\,\text{km}\)</span>, resultando em uma
+volta ao redor da terra a cada 12 horas. Atualmente o segmento espacial
+conta com 32 satélites, dos Blocos II/IIA/IIR/IIR-Mfootnote{26/06/2012. Informações atualizadas podem
+ser encontradas em <a class="reference external" href="https://www.navcen.uscg.gov/?Do=constellationStatus">Navegation Center</a>.
+Esta configuração de satélites permite que em qualquer hora do dia,
+de quatro a oito satélites estejam simultaneamente disponíveis na
+região. O segmento espacial segue em constante modernização. Atualmente
+em teste nos satélites do Bloco IIR-M, um segundo sinal para uso civil
+(L2C) e um sinal para uso militar (M). Os satélites GPS que foram
+recentemente lançados, fazem parte do Bloco IIF, que inclui uma nova
+frequência (L5).</p>
+<figure class="align-center" id="id37">
+<span id="seg-gps-png"></span><a class="reference internal image-reference" href="../_images/seg_gps.png"><img alt="seg_gps.png" src="../_images/seg_gps.png" style="width: 334.25px; height: 302.04999999999995px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 33 </span><span class="caption-text">Características principais do GPS.</span><a class="headerlink" href="#id37" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Há dois tipos de serviços no GPS, o Serviço de Posicionamento Padrão
+(SPS, <em>Standard Positioning Service</em>)
+para uso civil e o Serviço de Posicionamento Preciso (PPS, <em>Precise
+Positioning Service</em>)
+para uso militar. Para compreender melhor estes serviços, voltaremos
+para os satélites, especificamente para os sinais enviados. Dentro
+dos satélites é gerada uma frequência fundamental de 10,23 MHz, e
+de forma coerente é derivada desta frequência duas ondas portadoras,
+L1 e L2, gerados pela multiplicação da frequência fundamental por
+154 e 120, respectivamente. Desta forma, a frequência de L1 e L2 corresponde,
+a 1575,42 MHz e 1227,60 MHz, respectivamente. Modulado em L1 há o
+Código Aberto (C/A, <em>Coarse/Acquisition</em>) disponível para uso civil, apresentando
+aproximadamente 300 m de comprimento de onda. Um segundo código,
+denominado de código de Precisão (P, <em>Precision Code</em>),
+é modulado tanto em L1 como em L2 e é reservado para uso da arma Norte-Americana.
+O código C/A é o utilizado no Serviço de SPS, enquanto o P para o
+PPS. Adicionalmente a estes dados, são também enviados dados do erro
+do relógio do satélite e suas efemérides, nas duas ondas portadoras.</p>
+<p>O governo Americano pode fazer com que o posicionamento com GPS seja
+prejudicado sempre que se mostrar necessário, como em caso de guerra,
+danificando os sinais. As maneiras de danificar os sinais são, por
+meio da Disponibilidade Seletiva
+(SA, <em>Selective Availability</em>) e da Antifraude (A-S), <em>anti-spoofing</em>).
+Se a SA estiver ativada os dados do relógio do satélite e das efemérides
+enviadas são danificados, fazendo com que ocorra erro na pseudodistância
+calculada por C/A. Ela foi ativada em 1990, causando erro na posição
+horizontal e vertical de 100 m e de 156 m, respectivamente. Foi
+suspensa em maio de 2000, resultando no erro horizontal e vertical
+menores que 13 m e 22 m (95% de probabilidade), respectivamente.
+O A-S é responsável por desligar ou encriptar o código P, tornando-o
+acessível somente às pessoas habilitadas. Quando o código P, presente
+em L1 e L2, é encriptado, passa a ser denominado de código Y.</p>
+<p>O segmento controle é constituído de uma estação <em>master</em> (principal),
+localizada em Colorado Springs, Estado do Colorado, USA. As outras
+estações de controle ficam em diferentes localidades na terra, Hawai,
+Kwajalein no Pacífico, Ilha de Ascenção no Atlântico Sul, Diego Garcia
+no Oceano Pacífico e Cabo Canaveral. Elas são equipadas de tempo padrão
+atômico de precisão e receptores que realizam medidas contínuas de
+pseudodistância. Em algumas estações há antenas para transmitir e
+receber dados dos satélites. Na estação <em>master</em> as informações
+das estações são coletadas, e então calculadas as órbitas e parâmetros
+dos relógios dos satélites.  As informações das efemérides e do relógio
+dos satélites, calculadas pela estação <em>master</em>, são retransmitidas
+aos satélites, pelo menos três vezes ao dia, para atualização. Segundo
+<span id="id6">Hofmann-Wellenhof <em>et al.</em> [<a class="reference internal" href="capitulo3.html#id25" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span> até 2006 mais 11 estações monitoras se somaram
+ao segmento de controle GPS.</p>
+</section>
+<section id="glonass">
+<h3>GLONASS<a class="headerlink" href="#glonass" title="Link permanente para este título"></a></h3>
+<p>O Sistema de Navegação Global por Satélite
+(<span class="math notranslate nohighlight">\(\bf{GLONASS}\text{,}\,\)</span>
+<span class="math notranslate nohighlight">\(\bf{GL}\it{Obal'naya}\)</span> <span class="math notranslate nohighlight">\(\bf{NA}\it{vigatsionnaya}\)</span> <span class="math notranslate nohighlight">\(\bf{S}\it{putnikovaya}\)</span> <span class="math notranslate nohighlight">\(\bf{S}\it{istema}\)</span>)
+é o GNSS da Federação Russa. Teve os seus primeiros satélites lançados
+em meados dos anos 80. Em 1996 a constelação estava completa, com
+24 satélites. Todavia, nos anos seguintes houve uma diminuição no
+número de satélites, caindo ao número mínimo em 2001, com no máximo
+6 satélites em órbita e funcionando. Atualmente o GLONASS conta com
+24 satélites <a class="reference external" href="https://www.glonass-iac.ru/en/cus/">(aqui para dados atualizados)</a>,
+sendo 21 em operação, e os demais estão de reserva, em manutenção
+ou em avaliação <span id="id7">[<a class="reference internal" href="capitulo3.html#id35" title="Federal Space Agency. Federal space agency - glonass. 2021. [Online; acessado 10-out-2021]. URL: http://www.glonass-center.ru/en/GLONASS/.">FederalSAgency21</a>]</span>. Eles têm uma inclinação em relação
+ao equador de <span class="math notranslate nohighlight">\(64,8^{\circ}\)</span>, orbitando a terra na altitude de 19.100 m,
+resultando em uma órbita ao redor da terra a cada 11 horas e 15 min
+e 44 s. Os planos orbitais estão separados em <span class="math notranslate nohighlight">\(120^{\circ}\)</span> (três
+planos orbitais), estando os satélites separados dentro de cada plano
+em <span class="math notranslate nohighlight">\(45^{\circ}\)</span>.</p>
+<figure class="align-center" id="id38">
+<span id="seg-glonass-png"></span><a class="reference internal image-reference" href="../_images/seg_glonass.png"><img alt="seg_glonass.png" src="../_images/seg_glonass.png" style="width: 322.34999999999997px; height: 294.34999999999997px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 34 </span><span class="caption-text">Características principais do GLONASS.</span><a class="headerlink" href="#id38" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>O sistema GLONASS transmite os sinais em duas ondas portadoras de frequências
+L1, L2 e L3 <cite>(ver aqui) &lt;http://www.navipedia.net/index.php/GLONASS_Signal_Plan&gt;</cite>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathrm{L1} &amp; =f_{0\mathrm{L1}}+k\Delta f_{\mathrm{L1}}\\
+\mathrm{L2} &amp; =f_{0\mathrm{L2}}+k\Delta f_{\mathrm{L2}}\\
+\mathrm{L3} &amp; =f_{0\mathrm{L3}}+k\Delta f_{\mathrm{L3}}\end{split}\]</div>
+<p>em que: <span class="math notranslate nohighlight">\(f_{0\mathrm{L1}}\)</span>, <span class="math notranslate nohighlight">\(f_{0\mathrm{L2}}\)</span> e <span class="math notranslate nohighlight">\(f_{0\mathrm{L3}}\)</span>,
+repectivamente <span class="math notranslate nohighlight">\(1.602\,\text{MHz}\)</span>, <span class="math notranslate nohighlight">\(1.246\,\text{MHz}\)</span> e <span class="math notranslate nohighlight">\(1.201\,\text{MHz}\)</span>; <span class="math notranslate nohighlight">\(\Delta f_{\mathrm{L1}}\)</span>,
+<span class="math notranslate nohighlight">\(\Delta f_{\mathrm{L2}}\)</span> e <span class="math notranslate nohighlight">\(\Delta f_{\mathrm{L3}}\)</span>, <span class="math notranslate nohighlight">\(0,4375\,\text{MHz}\)</span> e <span class="math notranslate nohighlight">\(0,4375\,\text{MHz}\)</span>; <span class="math notranslate nohighlight">\(k-7,...,+6\)</span>
+são os canais de frequência. Nestas duas frequências são enviados
+códigos um para uso civil (C/A) e outra para uso militar (P), disponibilizando
+dois tipos de serviços, semelhante ao SPS e PPS do GPS.</p>
+<p>Segundo <span id="id8">Feairheller and Clark [<a class="reference internal" href="capitulo3.html#id36" title="Scott Feairheller and Richard Clark. Other satellite navigation systems. In E.D. Kaplan and C.J. Hegarty, editors, Understanding GPS, pages 595–634. Artech House, 2006. URL: http://pt.scribd.com/doc/57135596/208/Other-Satellite-Navigation-Systems$\#$outer\_page\_618.">FC06</a>]</span>, o segmento controle
+do GLONASS é subdividido em: <em>i</em>) Sistema de controle central
+(SCC, <em>System control center</em>) localizado em Golitsyno-2 a
+70 km de Moscou, um complexo militar, responsável pela coordenação
+de todo funcionamento do GLONASS; <em>ii</em>) Central de sincronização
+(<em>Central Synchronizer</em>) responsável pelo sistema de tempo
+do GLONASS, monitorando o relógio dos satélites; <em>iii</em>) estações
+de rastreio e comando (<em>Command and Tracking Stations</em>) onde
+fazem o rastreamento individual da trajetória dos satélites e enviam
+as atualizações; <em>iv</em>) estações de rastreamento por laser (<em>Laser
+Tracking Stations</em>), utilizadas para calibrar as medidas realizadas
+no rastreamento por radio frequência (item <em>iv</em>), sendo que
+cada satélite tem um refletor de laser para esta finalidade; e <em>v</em>)
+Controle de navegação em campo (<em>Navigation Field Control Equipment</em>),
+responsável por monitorar os sinais de navegação do GLONAS e, em caso
+de alguma anomalia ser detectada, é enviado um comunicado para o SCC.</p>
+<section id="galileu">
+<h4>Galileu<a class="headerlink" href="#galileu" title="Link permanente para este título"></a></h4>
+<p><span class="math notranslate nohighlight">\(\bf{Galileu}\)</span> é o nome do GNSS da União
+Europeia (EU, <em>European Union</em>). O nome, Galileu, é uma homenagem
+ao cientista italiano Galileu Galilei, que viveu entre os anos de
+1564 e 1642, tendo realizado grandes contribuições às ciências, como,
+por exemplo, a melhoria do telescópio (Maiores informações <a class="reference external" href="http://en.wikipedia.org/wiki/Galileo_Galilei">aqui</a>).
+O sistema Galileu envolve uma parceria da Comissão Europeia (EC, <em>European
+Commission</em>) com a Agência Espacial Europeia (ESA, <em>European
+Space Agency</em>). A EC é responsável pelo dimensionamento político e
+os requisitos necessários para o sistema. Já a ESA, tem como responsabilidade
+a definição, o desenvolvimento e a validação do segmento espacial
+e de terra <span id="id9">[<a class="reference internal" href="capitulo3.html#id37" title="European Space Agency. Galileu navegation. 2021. [Online; acessado 10-out-2021]. URL: http://www.esa.int/esaNA/galileo.html.">EuropeanSAgency21</a>]</span>. O sistema Galileu teve sua concepção
+inicial nos anos 90, quando o GPS e o GLONASS já estavam quase em
+funcionamento completo.</p>
+<figure class="align-center" id="id39">
+<span id="seg-galileu-png"></span><a class="reference internal image-reference" href="../_images/seg_galileu.png"><img alt="seg_galileu.png" src="../_images/seg_galileu.png" style="width: 286.2px; height: 378.90000000000003px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 35 </span><span class="caption-text">Características principais do Galileu.</span><a class="headerlink" href="#id39" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Em outubro de 2021 haviam 22 satélites em funcionamento(<a class="reference external" href="http://www.esa.int/Our_Activities/Navigation/The_future_-_Galileo/What_is_Galileo">Informações atualizadas aqui</a>.
+De acordo com <span id="id10">Falcone <em>et al.</em> [<a class="reference internal" href="capitulo3.html#id38" title="Marco Falcone, Philippe Erhard, and Hein Guenter W. Galileo. In E.D. Kaplan and C.J. Hegarty, editors, Understanding GPS, pages 559–594. Artech House, 2006. URL: http://pt.scribd.com/doc/57135596/208/Other-Satellite-Navigation-Systems$\#$outer\_page\_618 acessado em 12/08/2012.">FEW06</a>]</span>, quando o sistema
+espacial estiver em plena operação terá de 30 satélites em três planos
+orbitais igualmente espaçados, cada plano com 9 satélites ativos e
+um de reserva, espaçados em <span class="math notranslate nohighlight">\(40^\circ\)</span>. A órbita tem inclinação
+de <span class="math notranslate nohighlight">\(56^\circ\)</span> no plano do equador <span id="id11">[<a class="reference internal" href="capitulo3.html#id37" title="European Space Agency. Galileu navegation. 2021. [Online; acessado 10-out-2021]. URL: http://www.esa.int/esaNA/galileo.html.">EuropeanSAgency21</a>]</span>. A altitude
+de <span class="math notranslate nohighlight">\(23.222\)</span> km resultará em uma órbita a cada 14 horas. É esperado
+que existirá uma alta probabilidade (maior que 90%) que em qualquer
+posição e altitude, o usuário vá receber sinal de pelo menos 4 satélites.
+Segundo <span id="id12">Hofmann-Wellenhof <em>et al.</em> [<a class="reference internal" href="capitulo3.html#id25" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span>, as frequencias enviadas pelo sistema
+Galileu são: E1 (<span class="math notranslate nohighlight">\(1.575,420\)</span> MHz); E6 (<span class="math notranslate nohighlight">\(1.278,750\)</span> MHz); E5 (<span class="math notranslate nohighlight">\(1.191,795\)</span>
+MHz); E5a (<span class="math notranslate nohighlight">\(1.176,450\)</span> MHz) e; E5b (<span class="math notranslate nohighlight">\(1.207,140\)</span> MHz)</p>
+<p>São cinco os serviços que serão disponibilizados pelo sistema Galileu
+para os usuários <span id="id13">[<a class="reference internal" href="capitulo3.html#id39" title="European Union. Galileo. Publications Office of the European Union, 2002. URL: http://ec.europa.eu/dgs/energy\_transport/galileo/doc/galileo\_hld\_v3\_23\_09\_02.pdf.">Uni02</a>]</span>: <em>i</em>) serviço
+aberto (<em>open service</em>), que tem como objetivo prover informação
+de posição, velocidade e tempo sem custo algum para o usuário; <em>ii</em>)
+serviço comercial (<em>commercial service</em>), que possibilitará
+o desenvolvimento de aplicações comerciais, terá precisão centimétrica;
+<em>iii</em>) navegação para segurança da vida (<em>Safety Of
+life navigation</em>), serviço para ser utilizado no transporte marítimo,
+na aviação e em trens; <em>iv</em>) serviço público regulado (<em>Public
+regulated navigation</em>), um serviço em que o sinal é encriptado e apenas
+os usuários autorizados terão acesso a este sinal; e <em>v</em>) serviço
+de busca e resgate (<em>Search and Rescue Service</em>), utilizado
+para localização e resgate de usuários que utilizam rádio sinalizadores.</p>
+<p>Segundo <span id="id14">Falcone <em>et al.</em> [<a class="reference internal" href="capitulo3.html#id38" title="Marco Falcone, Philippe Erhard, and Hein Guenter W. Galileo. In E.D. Kaplan and C.J. Hegarty, editors, Understanding GPS, pages 559–594. Artech House, 2006. URL: http://pt.scribd.com/doc/57135596/208/Other-Satellite-Navigation-Systems$\#$outer\_page\_618 acessado em 12/08/2012.">FEW06</a>]</span>, o sistema Galileu tem
+dois segmentos de controle principal em terra, o segmento de controle
+em terra (GCS, <em>Ground Control Segment</em>) que irá controlar
+e comandar a constelação de satélites e, o segmento de missão em terra
+(GMS, <em>Ground Mission Segment</em>), responsável por operar o sistema
+de navegação e a determinação da integridade, assim como disseminar
+os serviços do Galileu. Estes dois segmentos se localizam em Fucino
+(Itália) e em Oberpfaffenhofen (Alemanha). Haverá também uma rede
+de estações (GSS, GALILEO <em>Sensor Stations</em>), para realização
+de medidas de distância e monitoramento dos sinais dos satélites;
+uma rede de telemetria, rastreamento e controle (TT&amp;C, <em>Telemetry,
+tracking and control</em>); e uma rede de estações para envio de informação
+(ULS, <em>uplink stations</em>); uma rede de intercomunicação de alta
+performance.</p>
+</section>
+</section>
+<section id="outros-gnss">
+<h3>Outros GNSS<a class="headerlink" href="#outros-gnss" title="Link permanente para este título"></a></h3>
+<p>Além do GNSS americano, russo e europeu, outros países também desenvolvem
+o seu próprio sistema. O principal motivo para o desenvolvimento de
+novos GNSS é o de ter independência dos outros sistemas que, como
+visto, a permissão de uso depende das nações que os construíram. Abaixo
+descreve-se um resumo do sistema chinês (Beidou-2/Compass,
+e dos regionais, o japonês (QZSS) e o indiano (IRNSS).</p>
+<p>O sistema Beidou-2/Compass, desenvolvido pela República da China,
+tem como predecessor o sistema Beidou-1,
+que teve seus primeiros estudos nos anos 80, e o primeiro satélite
+em órbita no ano 2000 e o terceiro e último, em 2003. O Beidou-1 funciona
+regionalmente. Diferentemente do GPS, Galileu e GLONASS, ele é geoestacionário,
+fazendo com que apenas uma parte da terra tenha disponibilidade dos
+sinais destes satélites, entre as latitudes de <span class="math notranslate nohighlight">\(5^\circ\)</span> N a <span class="math notranslate nohighlight">\(55^\circ\)</span>
+N e as longitudes entre <span class="math notranslate nohighlight">\(70^\circ\)</span> E e <span class="math notranslate nohighlight">\(140^\circ\)</span> E. O Beidou-2
+será global, com o segmento espacial híbrido, tendo 5 satélites geoestacionário
+e 30 orbitando a terra. Terá, assim como o GPS, um serviço aberto
+para uso civil e um outro restrito. Atualmente estão em operação 42
+satélites em outubro de 2021 (dados atualizados <a class="reference external" href="http://en.wikipedia.org/wiki/Beidou_navigation_system">aqui</a>).</p>
+<p>O sistema de posicionamento japonês é denominado de sistema de satélite
+quase zenital (QZSS, <span class="math notranslate nohighlight">\(\bf{Q}\it{uasi-}\bf{Z}enith\)</span> <span class="math notranslate nohighlight">\(\bf{S}\it{atellite}\)</span> System}), desenvolvido
+pela agência de exploração aeroespacial do Japão (JAXA, <em>Japan Aerospace Exploration Agency</em>). O QZSS oferece seus serviços na região
+compreendendo o Japão, sul da Ásia e Oceania. Os satélites QZSS enviam
+os sinais à terra na direção quase zenital, o que aumenta sua disponibilidade
+em áreas com prédios ou morros. Funcionará complementando o GPS, fazendo
+com que mais sinais estejam disponíveis, uma vez que o número de satélites
+na região será maior, pois soma-se ao GPS o QZSS. Desta forma, a precisão
+do posicionamento será melhorada. Os satélites QZSS transmitem sinais
+semelhantes ao GPS (L1C/A, L1C, L2C e L5) (Informações atualizadas <a class="reference external" href="https://global.jaxa.jp/projects/sat/qzss/">aqui</a>).
+O primeiro satélite foi lançado em setembro de 2011, está a uma altitude
+entre <span class="math notranslate nohighlight">\(32.000\)</span> km a <span class="math notranslate nohighlight">\(40.000\)</span> km, e tem sua longitude central de <span class="math notranslate nohighlight">\(135^{\circ}\)</span>
+E. O QZSS além do segmento espacial, consta do: segmento de controle,
+que compreende estações de monitoramento; uma estação de controle
+principal; estação de controle e rastreamento; e estação de administração
+do tempo <span id="id17">[<a class="reference internal" href="capitulo3.html#id40" title="Japan Aerospace Exploration Agency. Interface specification for QZSS. 2021. [Online; acessado 10-jul-2021]. URL: https://global.jaxa.jp/projects/sat/qzss/.">JapanAEAgency21</a>]</span>.</p>
+<p>O sistema de navegação por satélite indiano (IRNSS,
+<em>Indian Regional Navigational Satellite System</em>) constituído
+de 7 satélites, sendo que o primeiro tem a estimativa de ser lançado
+em 2012-13 <span id="id18">[<a class="reference internal" href="capitulo3.html#id42" title="Indian Space Research Organization. Future programme. 2012. [Online; acessado 20-jun-2012]. URL: irnss.">IndianSROrganization12</a>]</span>. Como o sistema GPS, serão disponibilizados
+os serviço SPS e PS.</p>
+</section>
+</section>
+<section id="observaveis-e-fontes-de-erro">
+<h2>Observáveis e fontes de erro<a class="headerlink" href="#observaveis-e-fontes-de-erro" title="Link permanente para este título"></a></h2>
+<p>Os satélites no espaço enviam os sinais para terra que são captados
+pelos receptores, sendo a distância, na verdade pseudodistânciaindex{Pseudodistância},
+entre o sinal emitido pelo satélite e recebido pelo sensor calculada,
+ou por código (medida de tempo) ou pela medida de fase da onda portadora.
+A distância calculada tem várias fontes de erro, por exemplo, a falta
+de sincronismo de tempo entre o relógio do receptor e do satélite,
+resultando distâncias que não correspondem à distância geométrica
+do satélite ao receptor. Desta maneira as distâncias calculadas pelos
+receptores são denominadas de pseudodistâncias como já visto na secção <a class="reference internal" href="#posicionamento-satelite"><span class="std std-ref">Posicionamento por satélite</span></a>.</p>
+<section id="pseudodistancia-por-codigo">
+<h3>Pseudodistância por código<a class="headerlink" href="#pseudodistancia-por-codigo" title="Link permanente para este título"></a></h3>
+<p>Lembre-se que, por exemplo, no GPS há o envio do código C/A, onde
+são transmitidas várias informações, dentre elas a hora em que o sinal
+foi emitido pelo satélite, <span class="math notranslate nohighlight">\(t^{s}(sat)\)</span>. Esta informação chega ao
+receptor, depois de viajar pelo espaço e passar pela atmosfera. A
+hora de chegada do sinal no receptor denominado de <span class="math notranslate nohighlight">\(t_{r}(rec)\)</span>.
+O erro dos relógios dos satélites e do receptor ao sistema de hora
+GPS são denominados de <span class="math notranslate nohighlight">\(\delta^{s}\)</span> e <span class="math notranslate nohighlight">\(\delta_{r}\)</span>, respectivamente.
+Considere que no sistema de tempo sem erros, <span class="math notranslate nohighlight">\(t^{s}\)</span> e <span class="math notranslate nohighlight">\(t_{r}\)</span>,
+seria a hora de envio do sinal pelo satélite e a hora de recebimento
+pelo receptor. Então, <span class="math notranslate nohighlight">\(t_{r}(rec)=t_{r}-\delta_{r}\)</span> e <span class="math notranslate nohighlight">\(t^{s}(sat)=t^{s}-\delta^{s}\)</span>.
+O lapso de tempo entre o envio do sinal e a chegada ao receptor será:</p>
+<div class="math notranslate nohighlight">
+\[t_{r}(rec)-t^{s}(sat)=(t_{r}-\delta_{r})-(t^{s}-\delta^{s})=\Delta t+\Delta\delta,\]</div>
+<p>em que: <span class="math notranslate nohighlight">\(\Delta t=t_{r}-t^{s}\)</span> e <span class="math notranslate nohighlight">\(\Delta\delta=\delta_{r}-\delta^{s}\)</span>.
+Se multiplicar a diferença de tempo, <span class="math notranslate nohighlight">\({t_r(rec)-t^s(sat)}\)</span>, pela
+velocidade da luz, <span class="math notranslate nohighlight">\(c\)</span>, temos a pseudodistância (<span class="math notranslate nohighlight">\(R\)</span>) determinada
+pelo código:</p>
+<div class="math notranslate nohighlight">
+\[R=c(t_{r}(rec)-t^{s}(sat))=c\Delta t+c\Delta\delta=\varrho+c\Delta\delta\]</div>
+<p>em que <span class="math notranslate nohighlight">\(\varrho\)</span> é a distância geométrica (ver Figura <a class="reference internal" href="#fig-gnss-posicion"><span class="std std-numref">Figura 31</span></a>),
+na época de envio do sinal (<span class="math notranslate nohighlight">\(t^{s}\)</span>), entre o satélite e o receptor.
+O erro no cálculo da pseudodisdância por código é de cerca de 1%
+da comprimento de onda em que o código é enviado. No sistema GPS,
+o C/A tem comprimento de onda de <span class="math notranslate nohighlight">\(\approx300\,\text{m}\)</span>, o que
+resultaria em um erro de <span class="math notranslate nohighlight">\(3\)</span> m. Já o código P,
+tem comprimento de onda de <span class="math notranslate nohighlight">\(\approx30\text{ m}\)</span>, o que resultaria
+em um erro da pseudodistância de <span class="math notranslate nohighlight">\(0,3\)</span>.</p>
+</section>
+<section id="pseudodistancia-por-fase-da-onda-portadora">
+<h3>Pseudodistância por fase da onda portadora<a class="headerlink" href="#pseudodistancia-por-fase-da-onda-portadora" title="Link permanente para este título"></a></h3>
+<p>Uma outra maneira de medir a distância é por meio da fase de onda
+portadora. Esta medida apresentará maior precisão no posicionamento.
+Nesta técnica, em cada época em que o sinal é transmitido, mede-se
+a diferença de fase que ocorreu entre a fase do sinal enviada pelo
+satélite e a fase observada no receptor. Matematicamente é dada por:</p>
+<div class="math notranslate nohighlight">
+\[\Phi_{s}^{r}(t)=\frac{1}{\lambda^{s}}\varrho_{s}^{r}(t)+N_{r}^{s}+\frac{c}{\lambda^{s}}\Delta\delta_{r}^{s}(t)\]</div>
+<p>em que: <span class="math notranslate nohighlight">\(\Phi_{s}^{r}(t)\)</span> é a medida de fase, sendo expressa
+em ciclos; <span class="math notranslate nohighlight">\(\lambda^{s}\)</span> é o comprimento de onda da portadora; <span class="math notranslate nohighlight">\(\varrho_{s}^{r}(t)\)</span>
+é a mesma pseudodistância estimado pelo código; <span class="math notranslate nohighlight">\(N_{r}^{s}\)</span> é a denominado
+de ambiguidade, corresponde ao número inteiro
+de comprimentos de onda ou número de ciclos inicial, entre o satélite
+e o receptor; <span class="math notranslate nohighlight">\(c\)</span> é a velocidade da luz; e <span class="math notranslate nohighlight">\(\Delta\delta_{r}^{s}=\delta_{r}-\delta^{s}\)</span>.
+O valor <span class="math notranslate nohighlight">\(N_{r}^{s}\)</span> inicialmente é desconhecido, contudo com o rastreamento
+de outras observações no tempo, sem que ocorra a perda de sinal, pode-se
+determiná-la.</p>
+</section>
+<section id="erros-nas-observacoes">
+<h3>Erros nas observações<a class="headerlink" href="#erros-nas-observacoes" title="Link permanente para este título"></a></h3>
+<p>Do que foi visto anteriormente, para o GNSS realizar as medidas de
+posição, tem-se: os satélites enviando sinais com várias informações,
+como o tempo e as efemérides; estes sinais viajam pelo espaço, passando
+pela atmosfera; e enfim chegam ao receptor, que também tem um relógio.
+Desta forma, as fontes de erros do GNSS são devidos aos satélites
+(relógio e órbita), à propagação do sinal (refração devido a passagem
+do sinal pela ionosfera e troposfera) e ao receptor (erro do relógio,
+erro do centro de fase da antena e o multicaminhamento). Alguns erros
+podem ser modelados e outros eliminados, por exemplo, por meio de
+medidas simultâneas com dois receptores. Segue uma breve discussão
+dos erros.</p>
+<p><strong>Erro devido ao satélite</strong></p>
+<ol class="arabic simple">
+<li><p><strong>Relógio do satélite</strong>: o erro devido
+ao relógio do satélite é modelado, por: <span class="math notranslate nohighlight">\({\delta^{s}(t)=a_{0}+a_{1}(t-t_{0})+a_{2}(t-t_{0})^{2}}\)</span>,
+em que: {<span class="math notranslate nohighlight">\(\delta^{s}(t)\)</span>} é o erro do satélite
+na época <span class="math notranslate nohighlight">\(t;\)</span> <span class="math notranslate nohighlight">\(t_{0}\)</span> é a época de referência do relógio do satélite;
+<span class="math notranslate nohighlight">\(a_{0},\,a_{1}\)</span> e <span class="math notranslate nohighlight">\(a_{2}\)</span> são parâmetros do modelo, sendo enviados
+na mensagem do satélite, juntamente com <span class="math notranslate nohighlight">\(t_{0}\)</span>. Se for utilizado
+o posicionamento relativo este erro pode ser anulado (secção~ref{sec:Tipos-de-posicionamento}).</p></li>
+<li><p><strong>Órbita do satélite</strong>: devido a variação
+da força gravitacional da terra e da variação das marés, por exemplo,
+as efemérides enviadas pelos satélites, que são utilizadas para determinação
+de suas posições, podem não resultar nas suas corretas posições no
+espaço. O erro da posição da órbita é avaliado pelas estações de controle
+em solo, e são disponibilizadas para pós-processamento, minimizando
+este erro. Dependendo do nível de precisão das órbitas que se deseja,
+pode-se levar até duas semanas para estarem disponíveis <span id="id19">[<a class="reference internal" href="capitulo3.html#id24" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>.
+Outra forma de anular este erro é por meio do posicionamento relativo
+(ver ref{subsec:Pocicionamento-relativo}).</p></li>
+</ol>
+</section>
+<section id="erro-devido-a-propagacao-do-sinal">
+<h3>Erro devido à propagação do sinal<a class="headerlink" href="#erro-devido-a-propagacao-do-sinal" title="Link permanente para este título"></a></h3>
+<p>A velocidade de propagação da radiação eletromagnética depende do
+índice de refração do meio em que ela viaja, sendo no vácuo <span class="math notranslate nohighlight">\(c=299.792,458\,\text{km s}^{-1}\)</span>.
+Inicialmente, ao ser transmitida pelo satélite, ela viaja no vácuo
+até chegar na atmosfera. As camadas atmosféricas que tem impacto nos
+sinais que são enviados pelos GNSS são, a troposfera e a ionosfera.
+A troposfera é a camada mais próxima a superfície terrestre chegando
+até à altitudes entre 14 km-18 km, já a ionosfera está situada na
+camada entre 70 km-1.000 km de altitude. Este problema pode ser
+minimizado com receptores que trabalham em duas frequências (e.g.
+GPS, L1 e L2), em que a refração atmosférica poderá ser modelada.</p>
+<p>Como o erro da refração aumenta com o comprimento da camada atmosférica
+que o sinal vai atravesar, pode-se configurar o receptor para evitar
+satélites que estajam próximos à linha do horizonte, geralmente aqueles
+abaixo de <span class="math notranslate nohighlight">\(20^{\circ}\)</span> da linha do horizonte, minimizando a influência
+da atmosfera. Este ângulo é denominação de ângulo de máscara de elevação
+do satélite (<em>satellite
+angle mask</em>). Na <a class="reference internal" href="#gnssmaskangle-png"><span class="std std-numref">Figura 36</span></a> é apresentado um
+receptor que está configurado para receber sinais daqueles satélites
+que estiverem acima de <span class="math notranslate nohighlight">\(20^{\circ}\)</span> da linha do horizonte.</p>
+<figure class="align-center" id="id40">
+<span id="gnssmaskangle-png"></span><a class="reference internal image-reference" href="../_images/GNSSmaskangle.png"><img alt="GNSSmaskangle.png" src="../_images/GNSSmaskangle.png" style="width: 396.9px; height: 240.79999999999998px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 36 </span><span class="caption-text">Princípio da utilização de máscara de elevação pera prevenir satélites
+próximos a linha do horizonte.</span><a class="headerlink" href="#id40" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="erro-devido-ao-receptor">
+<h3>Erro devido ao receptor<a class="headerlink" href="#erro-devido-ao-receptor" title="Link permanente para este título"></a></h3>
+<ol class="arabic">
+<li><p><strong>Antena</strong>
+- <strong>Centralização do centro da antena</strong>: em levantamento de precisão, a antena do receptor</p>
+<blockquote>
+<div><p>GNSS terá que estar centralizada sobre um ponto, geralmente materializado
+por um marco. A vertical do centro da antena é materializada por um
+bastão, apoiado por um tripé. Deve-se fazer a centralização de forma
+cuidadosa, uma vez todo erro cometido devido a falta de centralização
+será transferido para o ponto medido.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Para medidas de altitude geométrica (ver página~pageref{sec:Posi=0000E7=0000E3o-Geod=0000E9sica})
+é necessário realizar a textbf{medida da altura da antenaindex{Erro!GNSS!medida a altura da antena do receptor}},
+distância vertical entre o centro da antena e o centro do marco. Esta
+medida geralmente é realizada de forma inclinada, sendo que posteriormente
+é corrigida para distância vertical, ou por meio de software do equipamento,
+ou por simples cálculo.</p></li>
+<li><p>O centro de fase da antenaindex{Erro!GNSS!centro de fase da antena do receptor},
+definido como o centro eletrônico da antena, varia com a orientação
+e a frequência do sinal. É necessário que ele corresponda ao centro
+físico da antena, sendo que nem sempre isto ocorre. Para levantamentos
+de alta precisão é necessário conhecer este desvio para correção.
+Procedimento para esta avaliação é encontrado em <span id="id20">Hofmann-Wellenhof <em>et al.</em> [<a class="reference internal" href="capitulo3.html#id25" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span>.</p></li>
+</ul>
+</li>
+<li><p><strong>Erro do relógio</strong>: os relógios presentes nos receptores GNSS não são de alta precisão como
+os presentes nos satélites, não apresentando sincronismo com o sistema
+de tempo do GNSS. Este problema é resolvido com a utilização da observação
+de quatro satélites simultaneamente.</p></li>
+<li><p><strong>Multicaminhamento</strong>: o multicaminhamento é definido como sendo as réplicas de sinal que o
+receptor recebe devido ao sinal ter percorrido diferentes caminhos.
+Na <a class="reference internal" href="#fig-gnss-multipath"><span class="std std-numref">Figura 37</span></a> é apresentada a concepção básica
+do que é o efeito multicaminhamentoem uma
+determinada época. Nesta figura há o sinal que percorre o caminho
+direto do satélite ao receptor e dois sinais que são recebidos pelo
+receptor por caminho indireto, sinais refletidos de superfícies refletoras,
+a obra de construção civil e a superfície terrestre.</p>
+<p>A consequência do multicaminhamento é a imprecisão da medida de distância
+satélite-receptor (<span class="math notranslate nohighlight">\(\varrho\)</span>). O multicaminhamento pode ser de tal
+grandeza que o receptor não possa mais contar com a informação de
+determinado satélite, para o posicionamento do ponto. Maneiras para
+mitigar o multicaminhamento podem ser encontrados em <span id="id21">Ward <em>et al.</em> [<a class="reference internal" href="capitulo3.html#id41" title="Phillip W. Ward, John W. Betz, and Hegarty Christopher J. Interference, multipath, and scintillation. In E.D. Kaplan and C.J. Hegarty, editors, Understanding GPS, pages 243–299. Artech House, 2006. URL: http://pt.scribd.com/doc/57135596/208/Other-Satellite-Navigation-Systems$\#$outer\_page\_618.">WBJ06</a>]</span>.
+Pode-se citar, por exemplo, como uma maneira simples para minimizar
+o efeito do multicaminhamento devido à superfície refletora, a instalação
+da antena próxima a superfície.</p>
+</li>
+</ol>
+<figure class="align-center" id="id41">
+<span id="fig-gnss-multipath"></span><a class="reference internal image-reference" href="../_images/GNSSmultipath.png"><img alt="GNSSmultipath.png" src="../_images/GNSSmultipath.png" style="width: 320.59999999999997px; height: 228.2px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 37 </span><span class="caption-text">Multicaminhamento no GNSS.</span><a class="headerlink" href="#id41" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="tipos-de-posicionamento">
+<span id="sec-tipos-de-posicionamento"></span><h2>Tipos de posicionamento<a class="headerlink" href="#tipos-de-posicionamento" title="Link permanente para este título"></a></h2>
+<section id="terminologia">
+<h3>Terminologia<a class="headerlink" href="#terminologia" title="Link permanente para este título"></a></h3>
+<p>Não há um concenso quanto terminologia utilizada às diferentes técnicas
+de posicionamento GNSS. Aqui será utilizada a terminologia adotada
+por <span id="id22">Hofmann-Wellenhof <em>et al.</em> [<a class="reference internal" href="capitulo3.html#id25" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span>. No posicionamento, as medidas de pseudodistância
+podem ser obtidas de duas formas, por meio dos <strong>códigos</strong> (ver
+secção <a class="reference internal" href="#posicionamento-por-ponto"><span class="std std-ref">Posicionamento por ponto</span></a>) ou da medida
+de <a href="#id23"><span class="problematic" id="id24">**</span></a>fase da onda portadora* (ver secção ref{subsec:Pseudodist=0000E2ncia-por-fase}).
+As medidas por código tem precisão em nível de metros, enquanto pela
+medida da onda portadora tem precisão de milímetros. A desvantagem
+das medidas de fase da onda portadora é a solução da ambiguidade <span class="math notranslate nohighlight">\((N)\)</span>,
+ver secção~ref{subsec:Pseudodist=0000E2ncia-por-fase}).</p>
+<p>Quando na medida de posição é utilizado um único receptor, recebendo
+sinais de pelo menos quatro satélites, ela é dita de <strong>posicionamento por ponto</strong>, sendo este o
+termo que será utilizado neste texto.
+O posicionamento por ponto também pode ser denominado de <strong>posicionamento absoluto</strong>,
+<strong>posicionamento por ponto simples</strong> ou <strong>posicionamento por ponto absoluto</strong>.</p>
+<p>No <strong>posicionamento relativo</strong>,
+empregam-se dois receptores, recebendo sinais dos mesmos satélites
+simultaneamente. Estas medidas então são combinadas, melhorando a
+precisão do levantamento. A posição de um ponto tem que ser conhecida,
+sendo então calculada a posição do outro ponto relativa a esta.</p>
+<p>O <strong>posicionamento diferencial</strong>
+é realizado também a partir de dois receptores, que fazem observações
+simultâneas aos mesmos satélites, todavia é feita tendo como base
+as pseudodistâncias corrigidas. Como um receptor é fixo em um ponto
+de coordenada conhecida, calcula-se as correções das pseudodistância
+a este ponto e estas correções, em determinada época, são enviadas
+em tempo real para o(s) outro(s) receptores.</p>
+<p>O posicionamento é dito <strong>estático</strong>, se não há movimentação do receptor durante posicionamento.
+Por outro lado, se o receptor está em movimento, o posicionamento
+é dito <strong>cinemático</strong>.</p>
+<p>O posicionamento pode ser realizado em <strong>tempo real</strong>,
+quando os resultados são processados e apresentados imediatamente.
+Já o posicionamento <strong>pós-processado</strong>,
+como o próprio nome diz, só serão conhecidas as posições depois de
+processados. Ou seja, neste caso, os dados são coletados em campo
+e, no escritório, são submetidos ao processamento. O método de pós-processamento
+é o método mais utilizado nos posicionamentos relativos, onde as medidas
+dos dois receptores são combinadas e processadas depois da coleta
+em campo.</p>
+<section id="posicionamento-por-ponto">
+<span id="id25"></span><h4>Posicionamento por ponto<a class="headerlink" href="#posicionamento-por-ponto" title="Link permanente para este título"></a></h4>
+<p>No posicionamento por ponto, utiliza-se apenas um receptor, sendo
+que este deve estar recebendo sinais de pelo menos 4 satélites para
+calcular as coordenadas tridimensionais (<a class="reference internal" href="#gnssposiabsoluto"><span class="std std-numref">Figura 38</span></a>).
+O posicionamento por ponto pode se dar por meio dos códigos (secção~ref{subsec:Pseudodist=0000E2ncia-por-codigo})
+ou pela medida de fase da onda portadora (secção~ref{subsec:Pseudodist=0000E2ncia-por-fase}).
+A precisão deste tipo de posicionamento depende da qualidade do sinal.
+No posicionamento por ponto no GPS, utilizando o código C/A, antes
+de maio de 2000, com disponibilidade seletiva (SA)
+em funcionamento, a precisão era em torno de 100~m na horizontal
+e 156 m na vertical, ao nível de 95% de probabilidade <span id="id26">[<a class="reference internal" href="capitulo3.html#id24" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span> [p. 346].
+Quando ela foi desabilitada, a precisão aumentou, para velares menores
+que 13 m na horizontal, e menores que 22 m na vertical, a 95% de
+probabilidade  <span id="id27">Hofmann-Wellenhof <em>et al.</em> [<a class="reference internal" href="capitulo3.html#id25" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span> [p. 317], sendo esta a precisão obtida
+atualmente.</p>
+<figure class="align-center" id="id42">
+<span id="gnssposiabsoluto"></span><a class="reference internal image-reference" href="../_images/GNSSposiabsoluto.png"><img alt="GNSSposiabsoluto.png" src="../_images/GNSSposiabsoluto.png" style="width: 313.95px; height: 242.2px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 38 </span><span class="caption-text">Concepção do posicionamento por ponto.</span><a class="headerlink" href="#id42" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Pode-se obter coordenadas com maior precisão com um único receptor
+pelo método denominado de <strong>posicionamento por ponto preciso</strong>. Para tanto, deve-se trabalhar
+com: <em>i</em>) as efemérides precisas dos satélites, para determinação
+de suas posições precisas dos satélites; <em>ii</em>) receptor com
+frequência dupla que permitirá eliminar a influência da ionosfera.</p>
+</section>
+</section>
+<section id="posicionamento-diferencial-dgnss">
+<span id="posicionamento-diferencial"></span><h3>Posicionamento diferencial (DGNSS)<a class="headerlink" href="#posicionamento-diferencial-dgnss" title="Link permanente para este título"></a></h3>
+<p>O posicionamento diferencial GNSS (DGNSS)
+é aquele em que se utilizam pelo menos 2 receptores, sendo um fixo
+na estação base (<em>base station</em>), também denominada de estação
+de referência, e o(s) outro(s) fixo(s) ou móvel(is) (<em>rover</em>)
+(<a class="reference internal" href="#gnssposidgnss"><span class="std std-numref">Figura 39</span></a>). Os receptores observam, em determinada
+época, os mesmos satélites. A estação base tem suas coordenadas conhecidas.
+Logo, com o receptor fixo a este ponto, é possível calcular os erros
+nas medidas de pseudodistância de cada um dos satélites a esta estação.
+Como os outros receptores se encontram próximos à estação base (distância
+de apenas alguns quilômetros), assume-se que os erros nas pseudodistâncias
+sejam os mesmos. Estas informações são enviadas por meio de transmissor
+aos outros receptores para realizar, em tempo real, a correção de
+suas respectivas pseudoditâncias aos satélites, e assim calcular as
+suas coordenadas com maior precisão. O DGNSS pode ser realizado por
+meio de receptores que trabalham com códigos ou com medidas de fase
+da onda portadora. Valores de precisão do levantamento DGNSS são apresentados
+na Tabela abaixo <span id="id28">[<a class="reference internal" href="capitulo3.html#id25" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span> [p. 437].
+Quando se utiliza as medidas de fase da onda portadora, este posicionamento
+é denominado de levantamento cinemático em tempo real
+(<em>real-time kinematic</em>, RTK)
+<span id="id29">[<a class="reference internal" href="capitulo3.html#id24" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>.</p>
+<figure class="align-center" id="id43">
+<span id="gnssposidgnss"></span><a class="reference internal image-reference" href="../_images/GNSSposiDGNSS.png"><img alt="GNSSposiDGNSS.png" src="../_images/GNSSposiDGNSS.png" style="width: 421.75px; height: 252.35px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 39 </span><span class="caption-text">Concepção do posicionamento relativo.</span><a class="headerlink" href="#id43" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<table class="colwidths-auto docutils align-default" id="id44">
+<caption><span class="caption-number">Table 3 </span><span class="caption-text">Precisão DGNSS.</span><a class="headerlink" href="#id44" title="Permalink to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Observável</p></th>
+<th class="head"><p>Separação das estações</p></th>
+<th class="head"><p>Precisão horizontal</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Código</p></td>
+<td><p><span class="math notranslate nohighlight">\(1.000\)</span> km</p></td>
+<td><p><span class="math notranslate nohighlight">\(&lt;10\)</span> m</p></td>
+</tr>
+<tr class="row-odd"><td><p>Onda portadora</p></td>
+<td><p><span class="math notranslate nohighlight">\(\sim 10\)</span> km</p></td>
+<td><p><span class="math notranslate nohighlight">\(&lt;0,1\)</span> m</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="posicionamento-relativo">
+<h3>Posicionamento relativo<a class="headerlink" href="#posicionamento-relativo" title="Link permanente para este título"></a></h3>
+<p>No posicionamento relativo (<a class="reference internal" href="#gnssposiarelativo"><span class="std std-numref">Figura 40</span></a>)
+o que se calcula é a distância relativa entre o receptor que se encontra
+fixo na estação de coordenada conhecida (<span class="math notranslate nohighlight">\(A\)</span>) e o que se encontra
+na posição desconhecida, <span class="math notranslate nohighlight">\(B\)</span>, ou seja, <span class="math notranslate nohighlight">\(\Delta X_{AB},\,\Delta Y_{AB}\,\text{e}\,\Delta Z_{AB}\)</span>,
+denominado de vetor base. Como a posição de <span class="math notranslate nohighlight">\(A\)</span> é conhecida (<span class="math notranslate nohighlight">\(X_{A},\,Y_{A},\,Z_{A}\)</span>),
+a posição de <span class="math notranslate nohighlight">\(B\)</span> será:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}X_{B} &amp; =X_{A}+\Delta X_{AB}\\
+Y_{B} &amp; =Y_{A}+\Delta Y_{AB}\\
+Z_{B} &amp; =Z_{A}+\Delta Z_{AB}\end{split}\]</div>
+<p>Neste método geralmente são utilizadas as medidas de diferença de
+fase juntamente com o código. Requer que os mesmos satélites sejam
+observados pelos receptores da estação base e no móvel durante o período
+de aquisição dos dados.</p>
+</section>
+<section id="posicionamento-relativo-estatico">
+<span id="id30"></span><h3>Posicionamento relativo estático<a class="headerlink" href="#posicionamento-relativo-estatico" title="Link permanente para este título"></a></h3>
+<p>O posicionamento dito como <em>posicionamento relativo estático</em>
+ocorre quando os dois receptores ficam estacionados por um tempo suficientemente
+longo para resolver o problema das medidas relativas entre eles. Este
+tipo de posicionamento é o utilizado nos levantamentos geodésicos.
+O tempo para coleta dos dados depende do número de fases medidas e
+da distância que separa os receptores. Sugestões de tempo para obtenção
+da posição é apresentada na Tabela abaixo,
+sendo considerado pelo menos quatro satélites visíveis, condição atmosférica
+normal e boa geometria dos satélites <span id="id31">[<a class="reference internal" href="capitulo3.html#id25" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span> [p. 438].
+Segundo <span id="id32">[<a class="reference internal" href="capitulo3.html#id24" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span> [p. 361], a precisão deste tipo de posicionamento
+é de aproximadamente <span class="math notranslate nohighlight">\(\pm(3\,\text{mm}+1\,\text{ppm})\)</span>.</p>
+<table class="colwidths-auto docutils align-default" id="id45">
+<caption><span class="caption-number">Table 4 </span><span class="caption-text">Tempo para aquisição da posição pelo método relativo estático.</span><a class="headerlink" href="#id45" title="Permalink to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Receptor (# fases)</p></th>
+<th class="head"><p>Estático (m)</p></th>
+<th class="head"><p>Estático rápido</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Simples frequência</p></td>
+<td><p>30 min + 3 min <span class="math notranslate nohighlight">\(\,\text{km}^{-1}\)</span></p></td>
+<td><p>20 min + 2 min <span class="math notranslate nohighlight">\(\,\text{km}^{-1}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Dupla frequência</p></td>
+<td><p>20 min + 2 min <span class="math notranslate nohighlight">\(\,\text{km}^{-1}\)</span></p></td>
+<td><p>10 min + 1 min <span class="math notranslate nohighlight">\(\,\text{km}^{-1}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="posicionamento-relativo-pseudo-cinematico">
+<span id="id33"></span><h3>Posicionamento relativo pseudo-cinemático<a class="headerlink" href="#posicionamento-relativo-pseudo-cinematico" title="Link permanente para este título"></a></h3>
+<p>O <strong>posicionamento relativo pseudo-cinemático</strong> (<em>Pseudokinematic
+relative positioning</em>)
+é aquele em que as posições relativas dos pontos a serem determinadas
+são ocupadas mais de uma vez com o receptor <span class="math notranslate nohighlight">\(B\)</span>. Mais uma vez, um
+outro receptor estacionado em ponto de coordenadas conhecidas <span class="math notranslate nohighlight">\((A)\)</span>.
+O receptor <span class="math notranslate nohighlight">\(B\)</span> fica estacionado por uns 5 min em cada ponto. Depois
+de aproximadamente uma hora, a posição é novamente reocupada por <span class="math notranslate nohighlight">\(B\)</span>.
+Caso o levantamento não seja bem planejado a reocupação dos pontos
+pelo receptor pode passar a ser um problema.</p>
+<figure class="align-center" id="id46">
+<span id="gnssposiarelativo"></span><a class="reference internal image-reference" href="../_images/GNSSposiarelativo.png"><img alt="GNSSposiarelativo.png" src="../_images/GNSSposiarelativo.png" style="width: 431.54999999999995px; height: 277.2px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 40 </span><span class="caption-text">Concepção do posicionamento relativo.</span><a class="headerlink" href="#id46" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="posicionamento-relativo-cinematico">
+<span id="id34"></span><h3>Posicionamento relativo cinemático<a class="headerlink" href="#posicionamento-relativo-cinematico" title="Link permanente para este título"></a></h3>
+<p>O <strong>posicionamento relativo cinemático</strong> (<em>kinematic relative positioning</em>)
+é aquele em que é possível determinar as posições de um maior número
+pontos, no menor tempo, com grande precisão. É necessário que a ambiguidade
+inicial (versecção~ref{subsec:Pseudodist=0000E2ncia-por-fase})
+seja determinada, o que pode ser realizado por diferentes técnicas.
+Por exemplo, se as coordenadas iniciais dos receptores forem conhecidas,
+então <span class="math notranslate nohighlight">\(\Delta X_{AB},\,\Delta Y_{AB},\,\Delta Z_{AB}\)</span> (Equação~ref{eq:GNSS_relativo})
+também serão. Então, estaciona-se os receptores nestes ponto e a ambiguidade
+é determinada depois de um intervalo curto de tempo (2 a 15 min).
+Um outro método é o de determinar a ambiguidade com o receptor <span class="math notranslate nohighlight">\(B\)</span>
+em movimento, método denominado index{GNSS!on-the-fly}de textit{on-the-fly}index{On-the-fly|see{GNSS}}.
+Neste método é necessário trabalhar com receptor de dupla frequência,
+sendo a ambiguidade resolvida em cerca de 2 min para receptores separados
+em 20km. Uma limitação deste método é que durante a coleta de dados
+não se pode perder os sinais GNSS. Caso ocorra perda de sinal iniciar
+novamente o sistema para determinação da ambiguidade.</p>
+<p>Um método baseado no posicionamento relativo cinemático, mas que apresenta
+maior precisão, pois nos pontos de posições desconhecidas, o receptor
+<span class="math notranslate nohighlight">\(B\)</span> permanecerá parado por poucos segundos, é denominado de pare-e-continue
+(textit{stop-and-goindex{GNSS!posicionamento!stop-and-go}}) ou
+semi-cinemático (<a class="reference external" href="mailto:textit{semikinematicindex{GNSS!posicionamento!semikinematic&#37;&#52;&#48;textit{semikinematic">textit{semikinematicindex{GNSS!posicionamento!semikinematic<span>&#64;</span>textit{semikinematic</a>}}}).
+A precisão é aumentada conforme o tempo de parada se torna mais longo.
+Para vetor base de 20~km a precisão é centimétrica.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="capitulo3.html" class="btn btn-neutral float-left" title="Capitulo 3: Introdução a geodésia e cartografia" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="capitulo7.html" class="btn btn-neutral float-right" title="Capitulo 7" accesskey="n" rel="next">Seguinte <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Alexandre C Xavier.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

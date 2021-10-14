@@ -81,6 +81,8 @@ de rotação da terra.
    :alt: geoide.png
    :align: center
 
+   Modelo do geoide EGM96 :cite:p:`lemoine1998development`
+
 .. admonition:: Verificando diferentes modelos de Geóide.
 
    Consultar: http://icgem.gfz-potsdam.de/vis3d/longtime
@@ -587,10 +589,8 @@ Projeções que não são **igual área** nem *conforme* são
 denominadas de **afiláticas**. Pode-se citar outros termos que
 descrevem características especiais de projeções:
 
-#. Escala: projeções que mantém a escala em uma ou mais linhas do mapa são denominadas de \textit{equidistante}. Vale
-   salientar que nenhuma projeção é capaz de manter a escala correta em todo mapa;
-#. Direção: são mapas em que uma determinadas direção ou azimute são apresentadas
-   corretamente. Por exemplo, se a direção do azimute é apresentada corretamente entre dois pontos, diz-se que a projeção é \textit{azimutal};
+#. Escala: projeções que mantém a escala em uma ou mais linhas do mapa são denominadas de \textit{equidistante}. Vale salientar que nenhuma projeção é capaz de manter a escala correta em todo mapa;
+#. Direção: são mapas em que uma determinadas direção ou azimute são apresentadas corretamente. Por exemplo, se a direção do azimute é apresentada corretamente entre dois pontos, diz-se que a projeção é \textit{azimutal};
 
 
 As deformações da projeção só serão visíveis para grandes áreas, como
