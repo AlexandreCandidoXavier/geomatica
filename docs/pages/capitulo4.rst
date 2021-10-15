@@ -445,6 +445,7 @@ aos satélites, pelo menos três vezes ao dia, para atualização. Segundo
 :cite:t:`Hofmann2008` até 2006 mais 11 estações monitoras se somaram
 ao segmento de controle GPS.
 
+
 GLONASS
 -------
 
