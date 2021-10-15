@@ -179,6 +179,7 @@ de elipsoides e o local em que ele é ou foi utilizado
    |*World Geodetic System*       (WGS84) | :math:`6.378.137`      |  :math:`298,257\,223\,563` | Mundial             |
    +--------------------------------------+------------------------+----------------------------+---------------------+
 
+.. _Coordenada geodésica:
 
 Coordenada geodésica
 ====================
@@ -423,6 +424,8 @@ de altitude ortométrica (:math:`H`, altitude em relação ao geóide). A materi
 de posições, é realizada por meio marcos, ao longo do estado Brasileiro
 e em sua fronteira. A responsabilidade pelo SGB no Brasil fica a cargo
 do Instituto Brasileiro de Geografia e Estatística (IBGE).
+
+.. _Datum horizontal:
 
 Datum horizontal
 ----------------
@@ -1043,7 +1046,6 @@ Desta forma, a coordenada do ponto é: :math:`\text{E}=292.110,784\,\text{m}` e
 
 ----
 
-
 Para a solução do problema inverso, transformação de coordenada UTM
 (E, N) em geodésica $(\phi,\,\lambda)$, consultar :cite:p:`snyder1987map`, :cite:p:`TM8358:1989` e :cite:p:`wiki:UTM_coordinate_system`.
 
@@ -1055,11 +1057,11 @@ Para a solução do problema inverso, transformação de coordenada UTM
 
    Como roteiro:
 
-   - apresentação geral do *Google Earth Pro*: janelas de funções; principais ícones de funções; \emph{zoom}, adicionar ponto, caminho, etc;
+   - apresentação geral do *Google Earth Pro*: janelas de funções; principais ícones de funções; *zoom*, adicionar ponto, caminho, etc;
    - como modificar o sistema de coordenadas de geográficas :math:`(\phi,\,\lambda)` para UTM
      :math:`(\text{E, N})`;
    - apresentar os fusos das sistema de projeção UTM;
-   - realização de medidas de distância e área;
+   - realização de medidas de distância e área.
 
 Exercícios
 ==========

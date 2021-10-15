@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-PT" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capitulo 5: Georreferenciamento de imóveis rurais &mdash; Documentação Livro de Geomática 0.1</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Pesquisar" href="../search.html" />
+    <link rel="next" title="Capitulo 7" href="capitulo7.html" />
+    <link rel="prev" title="Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)" href="capitulo4.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Livro de Geomática
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <p class="caption" role="heading"><span class="caption-text">Conteúdo:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="capitulo1.html">Capitulo 1: Matemática fundamental</a></li>
+<li class="toctree-l1"><a class="reference internal" href="capitulo2.html">Capitulo 2: Unidades métricas, escala e determinação de áreas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="capitulo3.html">Capitulo 3: Introdução a geodésia e cartografia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="capitulo4.html">Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Capitulo 5: Georreferenciamento de imóveis rurais</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#objetivo-e-prazos">Objetivo e prazos</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="capitulo7.html">Capitulo 7</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Livro de Geomática</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Capitulo 5: Georreferenciamento de imóveis rurais</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/pages/capitulo5.rst.txt" rel="nofollow"> Ver código-fonte da página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <style> .exem {color:blue; font-weight: bold} </style><style> .solucao {font-weight: bold} </style><style> .blue {color:blue} </style><section id="capitulo-5-georreferenciamento-de-imoveis-rurais">
+<span id="rst-capitulo-5"></span><h1>Capitulo 5: Georreferenciamento de imóveis rurais<a class="headerlink" href="#capitulo-5-georreferenciamento-de-imoveis-rurais" title="Link permanente para este título"></a></h1>
+<p>O georreferenciamento de imóveis rurais trata da identificação do
+imóvel, realizado por profissional habilitado onde, no memorial descritivo,
+deve conter as coordenadas dos vértices definidores dos limites. As
+coordenadas devem estar georreferenciadas ao Sistema Geodésico Brasileiro,
+o Sistema de Referência Geocêntrico para as Américas, SIRGAS2000 (ver
+secção <a class="reference internal" href="capitulo3.html#datum-horizontal"><span class="std std-ref">Datum horizontal</span></a>). Há uma norma para execução
+deste serviço, denominada Norma Técnica para Georreferenciamento de
+Imóveis Rurais (<a class="reference external" href="https://sigef.incra.gov.br/static/documentos/norma_tecnica_georreferenciamento_imoveis_rurais_3ed.pdf">Disponível aqui</a>)
+<span id="id1">[<a class="reference internal" href="capitulo3.html#id45" title="INCRA. Norma Técnica para Georreferenciamento de Imóveis Rurais. INCRA, 3 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/norma_tecnica_georreferenciamento_imoveis_rurais_3ed.pdf.">INCRA13c</a>]</span>, com o Manual Técnico de Posicionamento: georreferenciamento de imóveis rurais
+(<a class="reference external" href="https://sigef.incra.gov.br/static/documentos/manual_tecnico_posicionamento_1ed.pdf">disponível aqui</a>) <span id="id3">[<a class="reference internal" href="capitulo3.html#id46" title="INCRA. Manual Técnico de Posicionamento: georreferenciamento de imóveis rurais. INCRA, 1 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/manual_tecnico_posicionamento_1ed.pdf.">INCRA13b</a>]</span>
+e do  Manual Técnico de Limites e Confrontações, publicado pelo INCRA
+(<a class="reference external" href="https://sigef.incra.gov.br/static/documentos/manual_tecnico_limites_confrontacoes_1ed.pdf">disponível aqui</a>) <span id="id5">[<a class="reference internal" href="capitulo3.html#id47" title="INCRA. MANUAL TÉCNICO DE LIMITES E CONFRONTAÇÕES: georreferenciamento de imóveis rurais. INCRA, 1 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/manual_tecnico_limites_confrontacoes_1ed.pdf.">INCRA13a</a>]</span>.
+Nesta secção será realizada uma breve apresentação.</p>
+<section id="objetivo-e-prazos">
+<h2>Objetivo e prazos<a class="headerlink" href="#objetivo-e-prazos" title="Link permanente para este título"></a></h2>
+<p>O objetivo do georreferenciamento de imóveis rurais é o de disponibilizar
+um Cadastro Nacional de Imóveis Rurais (CNIR), sistema único de registro
+de imóveis rurais para o país, tornando os limites das propriedades
+rurais precisas. Desta forma, evita-se que uma área tenha mais de
+uma matrículafootnote{Segundo <span id="id6">[<a class="reference internal" href="capitulo3.html#id45" title="INCRA. Norma Técnica para Georreferenciamento de Imóveis Rurais. INCRA, 3 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/norma_tecnica_georreferenciamento_imoveis_rurais_3ed.pdf.">INCRA13c</a>]</span> matrícula é <a href="#id7"><span class="problematic" id="id8">``</span></a>textit{ato cadastral
+realizado pelo registro de imóveis que visa à perfeita identificação
+do imóvel, caracterizando-o e confrontando-o, conferindo-lhe um número
+de ordem pelo qual será identificado, sem criar, conferir ou modificar
+direitos}””.} no serviço de registro de imóveis. Nos casos de desmembramento, parcelamento,
+remembramento e em qualquer situação de transferência de imóvel rural,
+os prazosfootnote{Ver url{<a class="reference external" href="http://www.planalto.gov.br/ccivil_03/_Ato2011-2014/2011/Decreto/D7620.htm">http://www.planalto.gov.br/ccivil_03/_Ato2011-2014/2011/Decreto/D7620.htm</a>}}
+para o georreferenciamento variam de acordo com o tamanho da propriedade
+(Tabela~ref{tab:norma_georreferenciamento_prazos}), sendo que as
+maiores que 500ha já são obrigadas a realizá-lo. Imóveis rurais
+com área entre 100~ha a 250~ha, por exemplo, só serão obrigadas
+a realizar o georreferenciamento a partir de 20 de novembro de 2016.</p>
+<p>begin{SCtable}[][htb]centering caption{Prazos para o georreferenciamento de imóveis rurais.}</p>
+<p>begin{tabular}{cc}
+hline
+Área (ha) &amp; Prazotabularnewline
+100$vdash$250 &amp; 20 de novembro de 2016tabularnewline
+25$vdash$100  &amp; 20 de novembro de 2019tabularnewline
+$&lt;$25 &amp; 20 de novembro de 2023tabularnewline
+hline
+end{tabular}label{tab:norma_georreferenciamento_prazos}end{SCtable}</p>
+<p>section{Profissional habilitadoindex{Profissional habilitado}}</p>
+<p>O georreferenciamento só pode ser realizado por profissional habilitado,
+com registro no Conselho Regional de Engenharia e Arquitetura (CREAfootnote{É a entidade autárquica de fiscalização do exercício e das atividades
+profissionais dotada de personalidade jurídica de direito público,
+constituindo serviço público federal, vinculada ao Conselho Federal
+de Engenharia e Agronomia textendash{} Confea. Cada estado tem o
+seu CREA.})index{CREA}, pois será necessário a emissão de uma index{Anotação de Responsabilidade Técnica}Anotação
+de Responsabilidade Técnica (ART). Há também a necessidade deste profissional
+ser credenciado junto ao Instituto Nacional de Colonização e Reforma
+Agráriaindex{Instituto Nacional de Colonização e Reforma Agrária}
+(index{INCRA}INCRA) para este tipo de levantamento. O Procedimento
+para cadastramento se encontra na Norma, só podendo requirir o credenciamento
+aqueles profissionais habilitados.</p>
+<p>Segundo o Conselho Federal de Engenharia e Agronomia (CONFEA), os
+profissionais habilitadosfootnote{Profissionais habilitados definidos pelas PL-2087/2004 e PL-0633/2003
+disponíveis, respectivamente, em: url{<a class="reference external" href="http://200.252.80.40/Credencia/download/Decisao_Plenaria_CONFEA_PL2087.pdf">http://200.252.80.40/Credencia/download/Decisao_Plenaria_CONFEA_PL2087.pdf</a>};
+e url{<a class="reference external" href="http://200.252.80.40/Credencia/download/Decisao_Plenaria_CONFEA_PL633.pdf">http://200.252.80.40/Credencia/download/Decisao_Plenaria_CONFEA_PL633.pdf</a>}} para assumir a responsabilidade técnica para o serviço de georreferenciamento
+são aqueles que, por meio de cursos regulares de graduação ou técnico
+de nível médio, ou por meio de cursos de pós-graduação ou de qualificação/aperfeiçoamento
+profissional, comprovem que tenham cursado os seguintes conteúdos
+formativos: topografia aplicada ao georreferenciamento; cartografia;
+sistemas de referência; projeções cartográficas; ajustamentos; métodos
+e medidas de posicionamento geodésico. São vários os profissionais
+que podem fazer o georreferenciamento, caso tenha na sua grade, os
+tópicos mostrados acima, podendo-se citar, por exemplo: Engenheiro
+Agrônomo; Engenheiro Cartógrafo; Engenheiro de Geodésica e Topografia;
+Engenheiro Civil; Engenheiro Florestal; Engenheiro Agrícola; Engenheiro
+de Minas e Geólogo.</p>
+<p>section{Tipos de vértices e sua identificação}</p>
+<p>Para a definição dos limites do imóvel rural são utilizados vérticesfootnote{Segundo cite{norma_georre2010}, vértice é <a href="#id9"><span class="problematic" id="id10">``</span></a>textit{todo local onde
+a linha limítrofe do imóvel muda de direção ou existe interseção desta
+linha com qualquer outra linha limítrofe contíguos ou servidões de
+passagem}””.}, sendo que estes podem ser de diferentes tipos, conforme Tabela~ref{tab:GNSS_tipos_vertices}.
+A seguir é apresentada uma descrição dos tipos de vértices com uma
+descrição.
+begin{itemize}
+item Os vértices tipotextbf{ M} (materializados), têm como finalidade
+a de preservar a localização do limite do imóvel. Devem ser materializados
+por marcos, de concreto, ferro, granito ou sintético, cujos padrões
+são apresentados pela Norma. No topo do marco materializando o vértice
+textbf{M}, deve conter uma plaqueta de metal contendo a identificação
+do responsável técnico e o número do vértice. Exemplo de plaqueta
+é apresentado na Figura~ref{fig:gnss_norma_plaqueta};
+item Os vértices do tipo textbf{P} (ponto) são aqueles que foram ocupados,
+mas não materializados. São as divisas da propriedade cuja a sua localização
+são, por exemplo, cursos de água e estradas. Na localização final
+e inicial destes vértices, devem-se ter vértices tipo textbf{M};
+item Os vértices do tipo textbf{V} (virtual), são aqueles que não são
+nem ocupados nem materializados. Suas coordenadas são obtidas analiticamente,
+ou extraídas de base cartográfica ou projetadofootnote{Segundo cite{norma_georre2010}, o vértice projetado é <a href="#id11"><span class="problematic" id="id12">``</span></a>textit{determinado
+no interior do perímetro do imóvel, a partir das informações constantes
+das matrículas que o compõe}””.};
+item Os vértices do tipo textbf{O} (virtual) são aqueles determinados
+de forma analítica, em locais de difícil ocupação. A obtenção das
+coordenadas se dá por linhas paralelas ao delineamento, podendo ser
+o trecho de uma estrada ou rio, por exemplo.
+end{itemize}
+begin{SCtable}[][htb]centering caption{Tipos de vértices no georreferenciamento de imóveis rurais cite[p. 13 e 28]{norma_georre2010}.}</p>
+<p>begin{tabular}{cl}
+hline
+Tipo &amp; Característicastabularnewline
+hline
+textbf{M} &amp; medido, materializado e codificado em campotabularnewline
+textbf{P} &amp; medido, mais não materializadotabularnewline
+textbf{V} &amp; determinado indiretamente e não materializadotabularnewline
+textbf{O} &amp; paralelo a eixo levantado e não materializadotabularnewline
+hline
+end{tabular}label{tab:GNSS_tipos_vertices}end{SCtable}</p>
+<p>noindent begin{SCfigure}[][htb] includegraphics{gnss_norma_vertice_defin}
+caption{Exemplos de tipos de vértices no georreferenciamento de imóveis rurais.}</p>
+<p>label{fig:gnss_norma_vertice_defin} end{SCfigure}</p>
+<p>Cada um dos vértices terá uma identificação única, código, sendo gerado
+pelo responsável técnico do georreferenciamento. O código terá 8 campos,
+sendo os três primeiros campos o código do responsável técnico, constante
+na Carteira Nacional de Credenciamento, emitida pelo INCRA; o quarto
+campo é preenchido pela letra correspondente ao tipo de vértice, textbf{M},textbf{~P},~textbf{V}
+ou textbf{O}; e os quatro últimos campos serão preenchidos por meio
+de uma numeração sequencial, começando em 0001 para o primeiro, 0002
+para o segundo e assim sucessivamente.</p>
+<p>Então, tomemos como exemplo o vértice textbf{MHJ$,$V$,$0143},
+tem-se: textbf{MHJ} é o código do técnico responsável,textbf{ V}
+é o tipo de vértice (virtual), e textbf{0143} se refere ao 143$^{circ}$
+vértice medido pelo técnico MHJ credenciado para o georreferenciamento
+de imóveis rurais. Quando, no georreferenciamento do imóvel, um ou
+mais vértices já foram credenciados no INCRA, deve-se respeitar o
+código do vértice já existente e não gerar um novo.</p>
+<p>noindent begin{SCfigure}[][htb] includegraphics{gnss_norma_plaqueta}
+caption{Modelo da plaqueta com furos para fixação cite[p. 69]{norma_georre2010}.}</p>
+<p>label{fig:gnss_norma_plaqueta} end{SCfigure}</p>
+<p>Para a Norma, medidas de distância, área e azimute, são aqueles calculados
+considerando o plano de projeção UTM (ver secção~ref{subsec:Proje=0000E7=0000E3o-Universal-Transversa}),
+no Sistema Geodésico Brasileiro, SIRGAR2000 (ver secção~ref{subsec:Datum-horizontal}).
+A Norma estabelece que a infraestrutura para os trabalhos de georreferenciamento
+deve ser oriundos de: estações ativas receptoras de sinais do GNSS,
+da Rede Brasileira de Monitoramento Contínuoindex{Rede Brasileira de Monitoramento Contínuo}
+(RBMCindex{RBMC}footnote{Redes que tem por objetivo propiciar aos usuários de levantamento
+relativo informações GNSS de estações de referência, isto é, não há
+a necessidade de ocupar a estação de referência, uma vez que nesta
+rede há receptor GNSS realizando observações contínuas, 24 horas por
+dia, todos os dias do ano. Estas Observações podem ser obtidas pela
+internet: url{http://www.ibge.gov.br/home/geociencias/download/tela_inicial.php?tipo=14}.}, citeonline{RBMC2011}); da Rede Incra de Bases Comunitárias do
+GPSindex{Rede Incra de Bases Comunitárias do GPS} (Ribacindex{Ribac}footnote{Ver: url{http://ribac.incra.gov.br/}.});
+de redes geodésicas estaduais; ou de estações de sinais GNSS. Vale
+ressaltar que estas estações devem ser homologadas pelo IBGE.</p>
+<p>A Norma para georreferenciamento de imóveis rurais prevê padrões de
+precisão para as coordenadas, dependente do tipo de finalidade do
+vértice (Tabelaref{tab:georreferenciamento_padroes_precisao}),
+assim como os métodos que podem ser empregados.</p>
+<p>begin{SCtable}[][htb]centering caption{Padrões de precisão segundo a classe do levantamento cite[p. 21]{norma_georre2010}.}</p>
+<p>begin{tabular}{clcc}
+hline
+Classefootnote{testes teste} &amp; Finalidade &amp; Precisão (m) &amp; Tipotabularnewline
+hline
+C1 &amp; Apoio básico/apoio imediato/limite &amp; $leq$0,10 &amp; textbf{M}tabularnewline
+C2 &amp; Apoio básico/limite &amp; $leq$0,20 &amp; textbf{M}tabularnewline
+C3 &amp; Desenvolvimento de poligonal &amp; $leq$0,40 &amp; textbf{M}, textbf{P},tabularnewline
+C4 &amp; Limite &amp; $leq$0,50 &amp; textbf{M}, textbf{P}, textbf{V}, textbf{O}tabularnewline
+C5 &amp; Limites naturais &amp; $leq$2,00 &amp; textbf{P}, textbf{V}, textbf{O}tabularnewline
+C7 &amp; Limite - uso restrito &amp; {*} &amp; tabularnewline
+hline
+end{tabular}label{tab:georreferenciamento_padroes_precisao}end{SCtable}</p>
+<p>A determinação das coordenadas do imóvel rural pode ser realizado
+pelos métodos convencionais ou por GNSS. Nos métodos convencionais
+são realizadas medições de ângulos e distâncias por meio de estações
+totaisindex{Estação total}. Os métodos a serem empregados e equipamentos
+que poderão ser utilizados, variam conforme o objetivo o tipo de poligonal,
+levantamento por irradiação ou triangulação.</p>
+<p>Para o levantamento realizado com GNSS, os posicionamentos permitidos
+são vários, podendo-se citar: o posicionamento relativo estático para
+a definição dos vértices das classes C1, C2, C4, C5 e C7; o relativo
+estático rápido, para vetrices das classes C2, C4, C5 e C7. Maiores
+detalhes consultar citeonline{NBR13133,norma_georre2010} e o Capítulo~ref{chap:GNSS}.</p>
+<p>section*{Exercício}</p>
+<p>begin{exercicio}O que é o georreferenciamento de imóveis rurais?
+end{exercicio}</p>
+<p>noindent begin{exercicio}Quais são os prazos para o georreferenciamento
+de imóveis rurais? end{exercicio}</p>
+<p>noindent begin{exercicio}Quais são os tipos de vértices que podemos
+ter no georreferenciamento de imóveis rurais? Como é realizada a sua
+codificação? end{exercicio}</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="capitulo4.html" class="btn btn-neutral float-left" title="Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="capitulo7.html" class="btn btn-neutral float-right" title="Capitulo 7" accesskey="n" rel="next">Seguinte <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Alexandre C Xavier.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

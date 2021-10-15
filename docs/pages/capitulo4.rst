@@ -96,7 +96,8 @@ em órbita :cite:p:`smith1997introduction`. Na mesma época, um sistema
 similar ao Transit, o *Cicata*, foi desenvolvido
 pela Rússia.
 
-O termo :math:`\bf{GNSS}` (:math:`\bf{G}\it{lobal}` :math:`\bf{N}\it{avigation}` :math:`\bf{S}\it{atellite}` :math:`\bf{S}\it{ystems}`)
+O termo :math:`\bf{GNSS}` (:math:`\bf{G}\it{lobal}` :math:`\bf{N}\it{avigation}`
+:math:`\bf{S}\it{atellite}` :math:`\bf{S}\it{ystems}`)
 descreve os diferentes sistemas de posicionamento por satélites, assim
 como as suas combinações para se obter o tempo, posição e velocidade
 em qualquer tempo e condição atmosférica :cite:p:`GNSS:bhatta2010global`.
@@ -112,7 +113,7 @@ houve o desenvolvimento do Sistema de Posicionamento Global (:math:`\bf{GPS}`,
 forças armadas, o Sistema de Navegação Global por Satélite (:math:`\bf{GLONASS}\text{,}\,`
 :math:`\bf{GL}\it{Obal'naya}` :math:`\bf{NA}\it{vigatsionnaya}` :math:`\bf{S}\it{putnikovaya}` :math:`\bf{S}\it{istema}`);
 e, na Europa, sendo construído pela União Europeia, o sistema :math:`\bf{Galileu}`.
-Maiores detalhes destes sistemas serão apresentados na Secção???????????????/~\ref{sec:Sistemas}.
+Maiores detalhes destes sistemas serão apresentados em :ref:`Exemplos de GNSS.
 
 .. _posicionamento_satelite:
 
@@ -360,6 +361,8 @@ apresentar diversas classificações de acordo com: o número de frequências
 que consegue rastrear; ao tipo de sinal que rastreia; a capacidade
 de rastrear diferentes GNSS.
 
+.. _Exemplos de GNSS:
+
 Exemplos de GNSS
 ================
 
@@ -477,7 +480,7 @@ em :math:`45^{\circ}`.
 
 
 O sistema GLONASS transmite os sinais em duas ondas portadoras de frequências
-L1, L2 e L3 `(ver aqui) <http://www.navipedia.net/index.php/GLONASS_Signal_Plan>`:
+L1, L2 e L3 `(ver aqui) <http://www.navipedia.net/index.php/GLONASS_Signal_Plan>`_:
 
 .. math::
    \mathrm{L1} & =f_{0\mathrm{L1}}+k\Delta f_{\mathrm{L1}}\\
@@ -516,7 +519,8 @@ _______
 Europeia (EU, *European Union*). O nome, Galileu, é uma homenagem
 ao cientista italiano Galileu Galilei, que viveu entre os anos de
 1564 e 1642, tendo realizado grandes contribuições às ciências, como,
-por exemplo, a melhoria do telescópio (Maiores informações `aqui <http://en.wikipedia.org/wiki/Galileo_Galilei>`_).
+por exemplo, a melhoria do telescópio (Maiores informações
+`aqui <http://en.wikipedia.org/wiki/Galileo_Galilei>`_).
 O sistema Galileu envolve uma parceria da Comissão Europeia (EC, *European
 Commission*) com a Agência Espacial Europeia (ESA, *European
 Space Agency*). A EC é responsável pelo dimensionamento político e
@@ -535,7 +539,7 @@ funcionamento completo.
 
    Características principais do Galileu.
 
-Em outubro de 2021 haviam 22 satélites em funcionamento(`Informações atualizadas aqui
+Em outubro de 2021 haviam 22 satélites em funcionamento(Informações atualizadas `aqui
 <http://www.esa.int/Our_Activities/Navigation/The_future_-_Galileo/What_is_Galileo>`_.
 De acordo com :cite:t:`GNSS:kaplan2006galileu`, quando o sistema
 espacial estiver em plena operação terá de 30 satélites em três planos
@@ -599,7 +603,8 @@ N e as longitudes entre :math:`70^\circ` E e :math:`140^\circ` E. O Beidou-2
 será global, com o segmento espacial híbrido, tendo 5 satélites geoestacionário
 e 30 orbitando a terra. Terá, assim como o GPS, um serviço aberto
 para uso civil e um outro restrito. Atualmente estão em operação 42
-satélites em outubro de 2021 (dados atualizados `aqui <http://en.wikipedia.org/wiki/Beidou_navigation_system>`_).
+satélites em outubro de 2021 (dados atualizados
+`aqui <http://en.wikipedia.org/wiki/Beidou_navigation_system>`_).
 
 O sistema de posicionamento japonês é denominado de sistema de satélite
 quase zenital (QZSS, :math:`\bf{Q}\it{uasi-}\bf{Z}enith` :math:`\bf{S}\it{atellite}` System}), desenvolvido
@@ -610,7 +615,8 @@ em áreas com prédios ou morros. Funcionará complementando o GPS, fazendo
 com que mais sinais estejam disponíveis, uma vez que o número de satélites
 na região será maior, pois soma-se ao GPS o QZSS. Desta forma, a precisão
 do posicionamento será melhorada. Os satélites QZSS transmitem sinais
-semelhantes ao GPS (L1C/A, L1C, L2C e L5) (Informações atualizadas `aqui <https://global.jaxa.jp/projects/sat/qzss/>`_).
+semelhantes ao GPS (L1C/A, L1C, L2C e L5) (Informações atualizadas
+`aqui <https://global.jaxa.jp/projects/sat/qzss/>`_).
 O primeiro satélite foi lançado em setembro de 2011, está a uma altitude
 entre :math:`32.000` km a :math:`40.000` km, e tem sua longitude central de :math:`135^{\circ}`
 E. O QZSS além do segmento espacial, consta do: segmento de controle,
@@ -636,6 +642,8 @@ de sincronismo de tempo entre o relógio do receptor e do satélite,
 resultando distâncias que não correspondem à distância geométrica
 do satélite ao receptor. Desta maneira as distâncias calculadas pelos
 receptores são denominadas de pseudodistâncias como já visto na secção :ref:`posicionamento_satelite`.
+
+.. _Pseudodistância por código:
 
 Pseudodistância por código
 --------------------------
@@ -671,7 +679,9 @@ da comprimento de onda em que o código é enviado. No sistema GPS,
 o C/A tem comprimento de onda de :math:`\approx300\,\text{m}`, o que
 resultaria em um erro de :math:`3` m. Já o código P,
 tem comprimento de onda de :math:`\approx30\text{ m}`, o que resultaria
-em um erro da pseudodistância de :math:`0,3`~m na medida de :math:`R`.
+em um erro da pseudodistância de :math:`0,3` m na medida de :math:`R`.
+
+.. _Pseudodistância por fase da onda portadora:
 
 Pseudodistância por fase da onda portadora
 ------------------------------------------
@@ -710,8 +720,10 @@ podem ser modelados e outros eliminados, por exemplo, por meio de
 medidas simultâneas com dois receptores. Segue uma breve discussão
 dos erros.
 
-**Erro devido ao satélite**
+.. _Erro devido ao satélite:
 
+Erro devido ao satélite
+-----------------------
 
 #. **Relógio do satélite**: o erro devido
    ao relógio do satélite é modelado, por: :math:`{\delta^{s}(t)=a_{0}+a_{1}(t-t_{0})+a_{2}(t-t_{0})^{2}}`,
@@ -719,7 +731,7 @@ dos erros.
    na época :math:`t;` :math:`t_{0}` é a época de referência do relógio do satélite;
    :math:`a_{0},\,a_{1}` e :math:`a_{2}` são parâmetros do modelo, sendo enviados
    na mensagem do satélite, juntamente com :math:`t_{0}`. Se for utilizado
-   o posicionamento relativo este erro pode ser anulado (secção~\ref{sec:Tipos-de-posicionamento}).
+   o posicionamento relativo este erro pode ser anulado (ver :ref:`sec_Tipos-de-posicionamento`).
 #. **Órbita do satélite**: devido a variação
    da força gravitacional da terra e da variação das marés, por exemplo,
    as efemérides enviadas pelos satélites, que são utilizadas para determinação
@@ -729,7 +741,7 @@ dos erros.
    este erro. Dependendo do nível de precisão das órbitas que se deseja,
    pode-se levar até duas semanas para estarem disponíveis :cite:`WOLF`.
    Outra forma de anular este erro é por meio do posicionamento relativo
-   (ver \ref{subsec:Pocicionamento-relativo}).
+   (ver :ref:`Posicionamento relativo:`).
 
 
 Erro devido à propagação do sinal
@@ -766,6 +778,7 @@ que estiverem acima de :math:`20^{\circ}` da linha do horizonte.
    Princípio da utilização de máscara de elevação pera prevenir satélites
    próximos a linha do horizonte.
 
+.. _Erro devido ao receptor:
 
 Erro devido ao receptor
 -----------------------
@@ -777,13 +790,13 @@ Erro devido ao receptor
      bastão, apoiado por um tripé. Deve-se fazer a centralização de forma
      cuidadosa, uma vez todo erro cometido devido a falta de centralização
      será transferido para o ponto medido.
-   - Para medidas de altitude geométrica (ver página~\pageref{sec:Posi=0000E7=0000E3o-Geod=0000E9sica})
-     é necessário realizar a \textbf{medida da altura da antena\index{Erro!GNSS!medida a altura da antena do receptor}},
+   - Para medidas de altitude geométrica (ver :ref:`Coordenada geodésica`)
+     é necessário realizar a **medida da altura da antena**,
      distância vertical entre o centro da antena e o centro do marco. Esta
      medida geralmente é realizada de forma inclinada, sendo que posteriormente
      é corrigida para distância vertical, ou por meio de software do equipamento,
      ou por simples cálculo.
-   - O centro de fase da antena\index{Erro!GNSS!centro de fase da antena do receptor},
+   - O centro de fase da antena,
      definido como o centro eletrônico da antena, varia com a orientação
      e a frequência do sinal. É necessário que ele corresponda ao centro
      físico da antena, sendo que nem sempre isto ocorre. Para levantamentos
@@ -834,11 +847,10 @@ de posicionamento GNSS. Aqui será utilizada a terminologia adotada
 por :cite:t:`Hofmann2008`. No posicionamento, as medidas de pseudodistância
 podem ser obtidas de duas formas, por meio dos **códigos** (ver
 secção :ref:`Posicionamento por ponto`) ou da medida
-de **fase da onda portadora* (ver secção \ref{subsec:Pseudodist=0000E2ncia-por-fase}).
+de **fase da onda portadora** (ver ver :ref:`Pseudodistância por fase da onda portadora`).
 As medidas por código tem precisão em nível de metros, enquanto pela
 medida da onda portadora tem precisão de milímetros. A desvantagem
-das medidas de fase da onda portadora é a solução da ambiguidade :math:`(N)`,
-ver secção~\ref{subsec:Pseudodist=0000E2ncia-por-fase}).
+das medidas de fase da onda portadora é a solução da ambiguidade :math:`(N)`.
 
 Quando na medida de posição é utilizado um único receptor, recebendo
 sinais de pelo menos quatro satélites, ela é dita de **posicionamento por ponto**, sendo este o
@@ -882,12 +894,12 @@ ________________________
 No posicionamento por ponto, utiliza-se apenas um receptor, sendo
 que este deve estar recebendo sinais de pelo menos 4 satélites para
 calcular as coordenadas tridimensionais (:numref:`GNSSposiabsoluto`).
-O posicionamento por ponto pode se dar por meio dos códigos (secção~\ref{subsec:Pseudodist=0000E2ncia-por-codigo})
-ou pela medida de fase da onda portadora (secção~\ref{subsec:Pseudodist=0000E2ncia-por-fase}).
+O posicionamento por ponto pode se dar por meio dos códigos (ver :ref:`Pseudodistância por código`)
+ou pela medida de fase da onda portadora (ver :ref:`Pseudodistância por fase da onda portadora`).
 A precisão deste tipo de posicionamento depende da qualidade do sinal.
 No posicionamento por ponto no GPS, utilizando o código C/A, antes
 de maio de 2000, com disponibilidade seletiva (SA)
-em funcionamento, a precisão era em torno de 100~m na horizontal
+em funcionamento, a precisão era em torno de 100 m na horizontal
 e 156 m na vertical, ao nível de 95% de probabilidade :cite:`WOLF` [p. 346].
 Quando ela foi desabilitada, a precisão aumentou, para velares menores
 que 13 m na horizontal, e menores que 22 m na vertical, a 95% de
@@ -904,7 +916,8 @@ atualmente.
    Concepção do posicionamento por ponto.
 
 Pode-se obter coordenadas com maior precisão com um único receptor
-pelo método denominado de **posicionamento por ponto preciso**. Para tanto, deve-se trabalhar
+pelo método denominado de **posicionamento por ponto preciso**.
+Para tanto, deve-se trabalhar
 com: *i*) as efemérides precisas dos satélites, para determinação
 de suas posições precisas dos satélites; *ii*) receptor com
 frequência dupla que permitirá eliminar a influência da ionosfera.
@@ -958,7 +971,7 @@ Quando se utiliza as medidas de fase da onda portadora, este posicionamento
    |Onda portadora | :math:`\sim 10` km     | :math:`<0,1` m      |
    +---------------+------------------------+---------------------+
 
-.. _ Posicionamento relativo:
+.. _Posicionamento relativo:
 
 Posicionamento relativo
 -----------------------
@@ -985,7 +998,7 @@ de aquisição dos dados.
 Posicionamento relativo estático
 --------------------------------
 
-O posicionamento dito como *posicionamento relativo estático*
+O posicionamento dito como **posicionamento relativo estático**
 ocorre quando os dois receptores ficam estacionados por um tempo suficientemente
 longo para resolver o problema das medidas relativas entre eles. Este
 tipo de posicionamento é o utilizado nos levantamentos geodésicos.
@@ -1040,24 +1053,84 @@ Posicionamento relativo cinemático
 O **posicionamento relativo cinemático** (*kinematic relative positioning*)
 é aquele em que é possível determinar as posições de um maior número
 pontos, no menor tempo, com grande precisão. É necessário que a ambiguidade
-inicial (ver\ secção~\ref{subsec:Pseudodist=0000E2ncia-por-fase})
+inicial (ver :ref:`Pseudodistância por fase da onda portadora`)
 seja determinada, o que pode ser realizado por diferentes técnicas.
 Por exemplo, se as coordenadas iniciais dos receptores forem conhecidas,
-então :math:`\Delta X_{AB},\,\Delta Y_{AB},\,\Delta Z_{AB}` (Equação~\ref{eq:GNSS_relativo})
+então :math:`\Delta X_{AB},\,\Delta Y_{AB},\,\Delta Z_{AB}` (ver :ref:`Posicionamento relativo`)
 também serão. Então, estaciona-se os receptores nestes ponto e a ambiguidade
 é determinada depois de um intervalo curto de tempo (2 a 15 min).
 Um outro método é o de determinar a ambiguidade com o receptor :math:`B`
-em movimento, método denominado \index{GNSS!on-the-fly}de \textit{on-the-fly}\index{On-the-fly|see{GNSS}}.
+em movimento, método denominado  de *on-the-fly*.
 Neste método é necessário trabalhar com receptor de dupla frequência,
 sendo a ambiguidade resolvida em cerca de 2 min para receptores separados
-em 20\ km. Uma limitação deste método é que durante a coleta de dados
+em 20 km. Uma limitação deste método é que durante a coleta de dados
 não se pode perder os sinais GNSS. Caso ocorra perda de sinal iniciar
 novamente o sistema para determinação da ambiguidade.
 
 Um método baseado no posicionamento relativo cinemático, mas que apresenta
 maior precisão, pois nos pontos de posições desconhecidas, o receptor
 :math:`B` permanecerá parado por poucos segundos, é denominado de pare-e-continue
-(\textit{stop-and-go\index{GNSS!posicionamento!stop-and-go}}) ou
-semi-cinemático (\textit{semikinematic\index{GNSS!posicionamento!semikinematic@\textit{semikinematic}}}).
+(*stop-and-go*) ou semi-cinemático (*semikinematic*).
 A precisão é aumentada conforme o tempo de parada se torna mais longo.
-Para vetor base de 20~km a precisão é centimétrica.
+Para vetor base de 20 km a precisão é centimétrica.
+
+.. admonition:: Sugestão de aula prática
+
+   **Levantamento de área com equipamento GNSS de navegação**
+
+   *Objetivo*:  Levantar uma poligonal em campo com o auxílio de GNSS de navegação, para posteriormente desenhar no
+   *AutoCad*  ou no *Google Earth Pro*
+
+   Como roteiro:
+
+   - apresentar uma visão geral do receptor que será utilizado: ântena, bateria, visor, teclado de comandos, janelas de configuração e coleta de dados, etc;
+   - configurar para o Datum WGS84;
+   - configurar para o sistema de projeção UTM;
+   - apresentar os modos de salvar as coordendas dos pontos;
+   - mostrar as medidas de qualidade da coordenada (e.g. precisão, HDOP, PDOP)
+   - em campo, coletar as coordenadas dos vértices da poligonal;
+   - desenhar no *AutoCad*  ou no *Google Earth Pro*.
+
+   Ao final o aluno deve apresentar um relatório sobre o levantamento e, suas considerações sobre
+   a qualidade do levantamento de uma área, quando um receptor GNSS de navegação é utilizado.
+
+Exercícios
+==========
+
+
+:exem:`1)` Quais são os segmentos do GNSS? Explique-os? 
+
+----
+
+:exem:`2)` Explique como os GNSS calculam as coordenadas de
+um ponto.
+
+----
+
+:exem:`3)` Como são denominados os GNSS americano, o da comunidade
+europeia e o russo? Comente cada um deles.
+
+----
+
+:exem:`4)` O posicionamento GNSS pode ser por ponto, diferencial
+ou relativo. Comente.
+
+:exem:`5)`  Quais são as fontes de erros nas medidas de pseudodistância
+do GNSS? 
+
+----
+
+:exem:`6)` O GNSS calcula a altitude geométrica ou ortométrica?
+Explique.
+
+----
+
+:exem:`7)` A altitude medida pelo GPS é em relação a qual elipsóide?
+
+:exem:`8)` Sobre um marco geodésico do IBGE de coordenada
+:math:`E=595.690,0\,\text{m}` e :math:`N=9.433.750,0\,\text{m}` (fuso 24M) foi colocado
+um receptor GNSS, e este mostrou a coordenada :math:`E= 595.650,0\,\text{m}` e
+:math:`N= 9.433.720,0\,\text{m}` (fuso 24M). A coordenada do receptor está a NE, SE,
+SW ou NW com relação à coordenada do marco? Explique. 
+
+:exem:`Resp.`: SW.

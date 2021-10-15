@@ -14,4 +14,5 @@ Livro de Geomática
    pages/capitulo2
    pages/capitulo3
    pages/capitulo4
+   pages/capitulo5
    pages/capitulo7
