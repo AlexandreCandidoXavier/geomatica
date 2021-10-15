@@ -43,37 +43,42 @@ O objetivo do georreferenciamento de imóveis rurais é o de disponibilizar
 um Cadastro Nacional de Imóveis Rurais (CNIR), sistema único de registro
 de imóveis rurais para o país, tornando os limites das propriedades
 rurais precisas. Desta forma, evita-se que uma área tenha mais de
-uma matrícula\footnote{Segundo :cite:`norma_georre2013` matrícula é ``\textit{ato cadastral
+uma matrícula\footnote{Segundo :cite:`norma_georre2013` matrícula é 'ato cadastral
 realizado pelo registro de imóveis que visa à perfeita identificação
 do imóvel, caracterizando-o e confrontando-o, conferindo-lhe um número
 de ordem pelo qual será identificado, sem criar, conferir ou modificar
-direitos}''.} no serviço de registro de imóveis. Nos casos de desmembramento, parcelamento,
+direitos'. no serviço de registro de imóveis. Nos casos de desmembramento, parcelamento,
 remembramento e em qualquer situação de transferência de imóvel rural,
-os prazos\footnote{Ver \url{http://www.planalto.gov.br/ccivil_03/_Ato2011-2014/2011/Decreto/D7620.htm}}
+os `prazos <http://www.planalto.gov.br/ccivil_03/_Ato2011-2014/2011/Decreto/D7620.htm>`_
 para o georreferenciamento variam de acordo com o tamanho da propriedade
-(Tabela~\ref{tab:norma_georreferenciamento_prazos}), sendo que as
-maiores que 500\ ha já são obrigadas a realizá-lo. Imóveis rurais
-com área entre 100~ha a 250~ha, por exemplo, só serão obrigadas
+(Tabela abaixo), sendo que as
+maiores que 500 ha já são obrigadas a realizá-lo. Imóveis rurais
+com área entre 100 ha a 250 ha, por exemplo, só serão obrigadas
 a realizar o georreferenciamento a partir de 20 de novembro de 2016.
 
-\begin{SCtable}[][htb]\centering \caption{Prazos para o georreferenciamento de imóveis rurais.}
 
-\begin{tabular}{cc}
-\hline
-Área (ha) & Prazo\tabularnewline
-100$\vdash$250 & 20 de novembro de 2016\tabularnewline
-25$\vdash$100  & 20 de novembro de 2019\tabularnewline
-$<$25 & 20 de novembro de 2023\tabularnewline
-\hline
-\end{tabular}\label{tab:norma_georreferenciamento_prazos}\end{SCtable}
 
-\section{Profissional habilitado\index{Profissional habilitado}}
+.. table:: Prazos para o georreferenciamento de imóveis rurais
+   :widths: auto
+
+   +---------------------+------------------------+
+   |Área                 | Prazo                  |
+   +=====================+========================+
+   |:math:`100\vdash250` | 20 de novembro de 2016 |
+   +---------------------+------------------------+
+   |:math:`25\vdash100`  | 20 de novembro de 2019 |
+   +---------------------+------------------------+
+   |:math:`<25`          | 20 de novembro de 2023 |
+   +---------------------+------------------------+
+
+Profissional habilitado
+-----------------------
 
 O georreferenciamento só pode ser realizado por profissional habilitado,
 com registro no Conselho Regional de Engenharia e Arquitetura (CREA\footnote{É a entidade autárquica de fiscalização do exercício e das atividades
 profissionais dotada de personalidade jurídica de direito público,
 constituindo serviço público federal, vinculada ao Conselho Federal
-de Engenharia e Agronomia \textendash{} Confea. Cada estado tem o
+de Engenharia e Agronomia (Confea). Cada estado tem o
 seu CREA.})\index{CREA}, pois será necessário a emissão de uma \index{Anotação de Responsabilidade Técnica}Anotação
 de Responsabilidade Técnica (ART). Há também a necessidade deste profissional
 ser credenciado junto ao Instituto Nacional de Colonização e Reforma
@@ -103,27 +108,27 @@ de Minas e Geólogo.
 Para a definição dos limites do imóvel rural são utilizados vértices\footnote{Segundo \cite{norma_georre2010}, vértice é ``\textit{todo local onde
 a linha limítrofe do imóvel muda de direção ou existe interseção desta
 linha com qualquer outra linha limítrofe contíguos ou servidões de
-passagem}''.}, sendo que estes podem ser de diferentes tipos, conforme Tabela~\ref{tab:GNSS_tipos_vertices}.
+passagem}''.}, sendo que estes podem ser de diferentes tipos, conforme Tabela \ref{tab:GNSS_tipos_vertices}.
 A seguir é apresentada uma descrição dos tipos de vértices com uma
 descrição.
 \begin{itemize}
-\item Os vértices tipo\textbf{ M} (materializados), têm como finalidade
+\item Os vértices tipo **M** (materializados), têm como finalidade
 a de preservar a localização do limite do imóvel. Devem ser materializados
 por marcos, de concreto, ferro, granito ou sintético, cujos padrões
 são apresentados pela Norma. No topo do marco materializando o vértice
-\textbf{M}, deve conter uma plaqueta de metal contendo a identificação
+**M**, deve conter uma plaqueta de metal contendo a identificação
 do responsável técnico e o número do vértice. Exemplo de plaqueta
-é apresentado na Figura~\ref{fig:gnss_norma_plaqueta};
-\item Os vértices do tipo \textbf{P} (ponto) são aqueles que foram ocupados,
+é apresentado na Figura \ref{fig:gnss_norma_plaqueta**;
+\item Os vértices do tipo **P** (ponto) são aqueles que foram ocupados,
 mas não materializados. São as divisas da propriedade cuja a sua localização
 são, por exemplo, cursos de água e estradas. Na localização final
-e inicial destes vértices, devem-se ter vértices tipo \textbf{M};
-\item Os vértices do tipo \textbf{V} (virtual), são aqueles que não são
+e inicial destes vértices, devem-se ter vértices tipo **M**;
+\item Os vértices do tipo **V** (virtual), são aqueles que não são
 nem ocupados nem materializados. Suas coordenadas são obtidas analiticamente,
 ou extraídas de base cartográfica ou projetado\footnote{Segundo \cite{norma_georre2010}, o vértice projetado é ``\textit{determinado
 no interior do perímetro do imóvel, a partir das informações constantes
 das matrículas que o compõe}''.};
-\item Os vértices do tipo \textbf{O} (virtual) são aqueles determinados
+\item Os vértices do tipo **O** (virtual) são aqueles determinados
 de forma analítica, em locais de difícil ocupação. A obtenção das
 coordenadas se dá por linhas paralelas ao delineamento, podendo ser
 o trecho de uma estrada ou rio, por exemplo.
@@ -132,12 +137,17 @@ o trecho de uma estrada ou rio, por exemplo.
 
 \begin{tabular}{cl}
 \hline
-Tipo & Características\tabularnewline
+Tipo | Características\tabularnewline
 \hline
-\textbf{M} & medido, materializado e codificado em campo\tabularnewline
-\textbf{P} & medido, mais não materializado\tabularnewline
-\textbf{V} & determinado indiretamente e não materializado\tabularnewline
-\textbf{O} & paralelo a eixo levantado e não materializado\tabularnewline
+
+.. table:: Tipos de vértices no georreferenciamento de imóveis rurais \cite[p. 13 e 28]{norma_georre2010}.
+   :widths: auto
+
+   +---------------------+------------------------+
+**M** | medido, materializado e codificado em campo\tabularnewline
+**P** | medido, mais não materializado\tabularnewline
+**V** | determinado indiretamente e não materializado\tabularnewline
+**O** | paralelo a eixo levantado e não materializado\tabularnewline
 \hline
 \end{tabular}\label{tab:GNSS_tipos_vertices}\end{SCtable}
 
@@ -150,14 +160,14 @@ Cada um dos vértices terá uma identificação única, código, sendo gerado
 pelo responsável técnico do georreferenciamento. O código terá 8 campos,
 sendo os três primeiros campos o código do responsável técnico, constante
 na Carteira Nacional de Credenciamento, emitida pelo INCRA; o quarto
-campo é preenchido pela letra correspondente ao tipo de vértice, \textbf{M},\textbf{~P},~\textbf{V}
-ou \textbf{O}; e os quatro últimos campos serão preenchidos por meio
+campo é preenchido pela letra correspondente ao tipo de vértice, **M**, **P**, **V**
+ou **O**; e os quatro últimos campos serão preenchidos por meio
 de uma numeração sequencial, começando em 0001 para o primeiro, 0002
 para o segundo e assim sucessivamente.
 
-Então, tomemos como exemplo o vértice \textbf{MHJ$\,$V$\,$0143},
-tem-se: \textbf{MHJ} é o código do técnico responsável,\textbf{ V}
-é o tipo de vértice (virtual), e \textbf{0143} se refere ao 143$^{\circ}$
+Então, tomemos como exemplo o vértice :math:`\bf{MHJ}\,\bf{V}\,\bf{0143}`,
+tem-se: :math:`\bf{MHJ}` é o código do técnico responsável, :math:`\bf{V}`
+é o tipo de vértice (virtual), e :math:`\bf{0143}` se refere ao :math:`\bf{143}^{\circ}`
 vértice medido pelo técnico MHJ credenciado para o georreferenciamento
 de imóveis rurais. Quando, no georreferenciamento do imóvel, um ou
 mais vértices já foram credenciados no INCRA, deve-se respeitar o
@@ -169,8 +179,8 @@ código do vértice já existente e não gerar um novo.
 \label{fig:gnss_norma_plaqueta} \end{SCfigure}
 
 Para a Norma, medidas de distância, área e azimute, são aqueles calculados
-considerando o plano de projeção UTM (ver secção~\ref{subsec:Proje=0000E7=0000E3o-Universal-Transversa}),
-no Sistema Geodésico Brasileiro, SIRGAR2000 (ver secção~\ref{subsec:Datum-horizontal}).
+considerando o plano de projeção UTM (ver secção \ref{subsec:Proje=0000E7=0000E3o-Universal-Transversa}),
+no Sistema Geodésico Brasileiro, SIRGAR2000 (ver secção \ref{subsec:Datum-horizontal}).
 A Norma estabelece que a infraestrutura para os trabalhos de georreferenciamento
 deve ser oriundos de: estações ativas receptoras de sinais do GNSS,
 da Rede Brasileira de Monitoramento Contínuo\index{Rede Brasileira de Monitoramento Contínuo}
@@ -193,14 +203,14 @@ assim como os métodos que podem ser empregados.
 
 \begin{tabular}{clcc}
 \hline
-Classe\footnote{testes teste} & Finalidade & Precisão (m) & Tipo\tabularnewline
+Classe\footnote{testes teste} | Finalidade | Precisão (m) | Tipo\tabularnewline
 \hline
-C1 & Apoio básico/apoio imediato/limite & $\leq$0,10 & \textbf{M}\tabularnewline
-C2 & Apoio básico/limite & $\leq$0,20 & \textbf{M}\tabularnewline
-C3 & Desenvolvimento de poligonal & $\leq$0,40 & \textbf{M}, \textbf{P},\tabularnewline
-C4 & Limite & $\leq$0,50 & \textbf{M}, \textbf{P}, \textbf{V}, \textbf{O}\tabularnewline
-C5 & Limites naturais & $\leq$2,00 & \textbf{P}, \textbf{V}, \textbf{O}\tabularnewline
-C7 & Limite - uso restrito & {*} & \tabularnewline
+C1 | Apoio básico/apoio imediato/limite |  :math:`\leq$0,10 | **M**\tabularnewline
+C2 | Apoio básico/limite |  :math:`\leq$0,20 | **M**\tabularnewline
+C3 | Desenvolvimento de poligonal |  :math:`\leq$0,40 | **M**, **P**,\tabularnewline
+C4 | Limite |  :math:`\leq$0,50 | **M**, **P**, **V**, **O**\tabularnewline
+C5 | Limites naturais |  :math:`\leq$2,00 | **P**, **V**, **O**\tabularnewline
+C7 | Limite - uso restrito | {*} | \tabularnewline
 \hline
 \end{tabular}\label{tab:georreferenciamento_padroes_precisao}\end{SCtable}
 
@@ -215,7 +225,7 @@ Para o levantamento realizado com GNSS, os posicionamentos permitidos
 são vários, podendo-se citar: o posicionamento relativo estático para
 a definição dos vértices das classes C1, C2, C4, C5 e C7; o relativo
 estático rápido, para vetrices das classes C2, C4, C5 e C7. Maiores
-detalhes consultar \citeonline{NBR13133,norma_georre2010} e o Capítulo~\ref{chap:GNSS}.
+detalhes consultar \citeonline{NBR13133,norma_georre2010} e o Capítulo \ref{chap:GNSS}.
 
 \section*{Exercício}
 
