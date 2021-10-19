@@ -87,6 +87,8 @@ de rotação da terra.
 
    Consultar: http://icgem.gfz-potsdam.de/vis3d/longtime
 
+.. _Elipsóide:
+
 Elipsóide
 =========
 

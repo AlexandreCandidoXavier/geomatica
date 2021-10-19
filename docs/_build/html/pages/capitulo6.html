@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-PT" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capitulo 6: Medidas de distância &mdash; Documentação Livro de Geomática 0.1</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Pesquisar" href="../search.html" />
+    <link rel="next" title="Capitulo 7" href="capitulo7.html" />
+    <link rel="prev" title="Capitulo 5: Georreferenciamento de imóveis rurais" href="capitulo5.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Livro de Geomática
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <p class="caption" role="heading"><span class="caption-text">Conteúdo:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="capitulo1.html">Capitulo 1: Matemática fundamental</a></li>
+<li class="toctree-l1"><a class="reference internal" href="capitulo2.html">Capitulo 2: Unidades métricas, escala e determinação de áreas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="capitulo3.html">Capitulo 3: Introdução a geodésia e cartografia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="capitulo4.html">Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="capitulo5.html">Capitulo 5: Georreferenciamento de imóveis rurais</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Capitulo 6: Medidas de distância</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introducao">Introdução</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tipos-de-distancias">Tipos de distâncias</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#influencia-da-curvatura-da-terra-nas-medidas-de-distancia-horizontal">Influência da curvatura da terra nas medidas de distância horizontal</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="capitulo7.html">Capitulo 7</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Livro de Geomática</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Capitulo 6: Medidas de distância</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/pages/capitulo6.rst.txt" rel="nofollow"> Ver código-fonte da página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <style> .exem {color:blue; font-weight: bold} </style><style> .solucao {font-weight: bold} </style><style> .blue {color:blue} </style><section id="capitulo-6-medidas-de-distancia">
+<span id="rst-capitulo-5"></span><h1>Capitulo 6: Medidas de distância<a class="headerlink" href="#capitulo-6-medidas-de-distancia" title="Link permanente para este título"></a></h1>
+<section id="introducao">
+<h2>Introdução<a class="headerlink" href="#introducao" title="Link permanente para este título"></a></h2>
+<p>As distâncias horizontais entre pontos, juntamente com os ângulos,
+são os elementos básicos necessários para o cálculo das coordenadas
+dos pontos. Neste capítulo serão abordados os métodos mais utilizados
+para a determinação de distâncias entre pontos. Serão
+apresentados os tipos de distâncias em que se trabalha na topografia sendo neste capítulo
+dada ênfase para as medidas de distância horizontal.</p>
+<p>Alguns métodos de medidas de distância serão apresentados, como o
+método direto, com o uso de trenas, e o indireto, por exemplo, com
+o uso de medidores eletrônicos de distância. Medidas de distâncias por taqueometria,
+obtidas por meio dos teodolitos, serão apenas apresentadas superficialmente,
+uma vez que, atualmente este método vem se tornando
+um obsoleto, principalmente devido a baixa precisão e baixa produtividade
+em campo.</p>
+</section>
+<section id="tipos-de-distancias">
+<h2>Tipos de distâncias<a class="headerlink" href="#tipos-de-distancias" title="Link permanente para este título"></a></h2>
+<p>Em geomática, temos vários tipos de distância, podendo-se citar, por
+exemplo, a distância no plano de projeção cartográfico e a distância
+no elipsóide. Quando realizando levantamentos topográficos, em pequenas
+áreas <a class="footnote-reference brackets" href="#id2" id="id1">1</a>  na superfície terrestre, onde o erro devido a curvatura da terra
+é desconsiderado, as distâncias entre os pontos podem ser:</p>
+<ul class="simple">
+<li><p>a <strong>distância horizontal</strong> (DH);</p></li>
+<li><p>a <strong>distância inclinada</strong>  (DI);</p></li>
+<li><p>e a <strong>distância vertical</strong> (DV) ou <strong>diferença de nível</strong> (DN).</p></li>
+</ul>
+<p>Na <a class="reference internal" href="#fig-tiposdedistancia-png"><span class="std std-numref">Figura 42</span></a>
+são apresentas graficamente estas distâncias entre os pontos A e B.
+Para pequenas áreas é considerada que a direção da vertical é a mesma
+para todos os pontos, desta forma, o plano horizontal que passa por
+A é paralelo ao plano horizontal que passa por B. A DH é dada pela
+distância entre A e B no plano horizontal. A DV ou a DN entre dois
+pontos, é dada pela distância vertical que separa os planos horizontais
+que passam pelos dois ponto. A DI é a medida de distância na direção
+do terreno, ou da visada.</p>
+<figure class="align-center" id="id4">
+<span id="fig-tiposdedistancia-png"></span><a class="reference internal image-reference" href="../_images/fig_tiposdedistancia.png"><img alt="fig_tiposdedistancia.png" src="../_images/fig_tiposdedistancia.png" style="width: 640.35px; height: 233.55px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 42 </span><span class="caption-text">Distâncias em topografia.</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>As DH’s são utilizadas nos cálculos planimétricos, como: na determinação das medidas
+de distâncias entre pontos no plano, nas medidas de áreas e nos cálculos de azimutes.
+Medidas de DN’s são utilizadas, por exemplo para: elaboração de perfil topográfico
+do terreno; determinação de elevação
+de pontos topográficos; e, cálculos de volume e aterro no terreno. As DI’s são as medidas de
+distâncias que os medidores de distância eletrônicos, presentem
+nas estações total medem primeiramente, posteriormente, podendo-se tranformá-la
+para a DH e DN (ver página pageref{sec:Medidor-eletr=0000F4nico-de}
+para maiores detalhes).</p>
+<section id="influencia-da-curvatura-da-terra-nas-medidas-de-distancia-horizontal">
+<h3>Influência da curvatura da terra nas medidas de distância horizontal<a class="headerlink" href="#influencia-da-curvatura-da-terra-nas-medidas-de-distancia-horizontal" title="Link permanente para este título"></a></h3>
+<p>Na <a class="reference internal" href="#fig-errodistancia"><span class="std std-numref">Figura 43</span></a> são apresentados os pontos <span class="math notranslate nohighlight">\(A\)</span> e
+<span class="math notranslate nohighlight">\(B\)</span>, respectivamente, a posição inicial e final de um levantamento.
+Suponha, para fins de simplificação, que: estes dois pontos estão
+sobre o geóide (<span class="math notranslate nohighlight">\(\approx\)</span>,nível médio dos mares), ou seja, têm as mesmas
+altitudes, iguais a 0 m; o geóide tem uma forma de uma esfera de raio
+6.367 km (<span class="math notranslate nohighlight">\(R\)</span>), média dos raios do elipsóide WGS84 (ver Secção <a class="reference internal" href="capitulo3.html#elipsoide"><span class="std std-ref">Elipsóide</span></a>).
+Se <span class="math notranslate nohighlight">\(s\)</span> é a distância entre
+os dois pontos na superfície do geóide, aqui, um arco de circunferência
+de um ângulo <span class="math notranslate nohighlight">\(\alpha\)</span>, temos <span class="math notranslate nohighlight">\(s\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\frac{360^\circ}{\alpha} &amp; =\frac{2\pi R}{s}\\
+s &amp; =\frac{\alpha\pi R}{180}\end{split}\]</div>
+<p>Considerando <span class="math notranslate nohighlight">\(d\)</span> a distância no plano topográfico, para o triângulo
+<span class="math notranslate nohighlight">\(AB'C\)</span>, temos:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\tan\alpha &amp; =\frac{d}{R}\\
+d &amp; =R\tan\alpha\end{split}\]</div>
+<figure class="align-center" id="id5">
+<span id="fig-errodistancia"></span><a class="reference internal image-reference" href="../_images/fig_errodistancia.png"><img alt="fig_errodistancia.png" src="../_images/fig_errodistancia.png" style="width: 542.7px; height: 229.95000000000002px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 43 </span><span class="caption-text">Influência da esfericidade da terra nas medidadas topográficas.</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Na Figura ref{fig:errodistancia}, também é apresentada para algumas
+medidas de distância no geóide (<span class="math notranslate nohighlight">\(s\)</span>), a sua correspondente distância
+no plano topográfico (<span class="math notranslate nohighlight">\(d\)</span>). Verifica-se que, para distâncias curtas
+(<span class="math notranslate nohighlight">\(s&lt;5.000\)</span> m), a diferença entre as medidas, <span class="math notranslate nohighlight">\(d-s\)</span>, é insignificante
+(<span class="math notranslate nohighlight">\(&lt;1\)</span> mm). Todavia, para medidas de <span class="math notranslate nohighlight">\(s\)</span> maiores que 80 km, as diferenças
+com relação a <span class="math notranslate nohighlight">\(d\)</span> se tornam significativas (<span class="math notranslate nohighlight">\(&gt;4,2\)</span> m). Se considerarmos
+que as medidas topográficas são realizadas acima do nível médio dos
+mares, acima do geóide, as diferenças entre <span class="math notranslate nohighlight">\(s\)</span> e <span class="math notranslate nohighlight">\(d\)</span>, serão ainda
+maiores com relação as medidas de <span class="math notranslate nohighlight">\(s\)</span> no geóide. Para fins de levantamento
+topográfico, a citeonline{NBR13133} estabelece de <span class="math notranslate nohighlight">\(80\)</span> km a dimensão
+máxima a ser medida.</p>
+<p class="rubric">Footnotes</p>
+<dl class="footnote brackets">
+<dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Segundo a <span id="id3"><em>NBR 13133</em> [<a class="reference internal" href="capitulo3.html#id49" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span> a dimensão máxima de um levantamento topográfico está limitado a 80 km. }</p>
+</dd>
+</dl>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="capitulo5.html" class="btn btn-neutral float-left" title="Capitulo 5: Georreferenciamento de imóveis rurais" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="capitulo7.html" class="btn btn-neutral float-right" title="Capitulo 7" accesskey="n" rel="next">Seguinte <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Alexandre C Xavier.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
