@@ -779,6 +779,7 @@ o ângulo entre eles é de :math:`34^\circ`.
 
 .. math::
    A=\sqrt{p\left(p-a\right)\left(p-b\right)\left(p-c\right)}
+   :label: semiperímetro
 
 em que :math:`p` é semiperímetro:
 
@@ -893,7 +894,6 @@ a :math:`3` m.
    &=0,393\,\text{m}^2.
 
 ----
-
 
 .. admonition:: Sugestão de aula prática
 

@@ -65,7 +65,7 @@
 <li class="toctree-l1"><a class="reference internal" href="capitulo4.html">Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="capitulo5.html">Capitulo 5: Georreferenciamento de imóveis rurais</a></li>
 <li class="toctree-l1"><a class="reference internal" href="capitulo6.html">Capitulo 6: Medidas de distância</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo7.html">Capitulo 7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="capitulo7.html">Capitulo 7: Ângulos</a></li>
 </ul>
 
         </div>
@@ -144,10 +144,10 @@ ondulada. Vale salientar ainda que, além do geóide ser ondulado, ele
 é achatado na direção dos polos. A medida do raio da terra no equador
 é aproximadamente <span class="math notranslate nohighlight">\(21\,\text{km}\)</span> maior que o raio na linha que contém o eixo
 de rotação da terra.</p>
-<figure class="align-center" id="id50">
+<figure class="align-center" id="id53">
 <a class="reference internal image-reference" href="../_images/geoide.png"><img alt="geoide.png" src="../_images/geoide.png" style="width: 352.2px; height: 454.8px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 15 </span><span class="caption-text">Modelo do geoide EGM96 <span id="id4">[<a class="reference internal" href="#id24" title="F.G. Lemoine, S. C. Kenyon, J. K. Factor, R.G. Trimmer, N. K. Pavlis, D. S. Chinn, C. M. Cox, S. M. Klosko, S. B. Luthcke, M. H. Torrence, Y. M. Wang, R. G. Williamson, E. C. Pavlis, R. H. Rapp, and T. R. Olson. The development of the joint NASA GSFC and the National Imagery and Mapping Agency (NIMA) Geopotential Model EGM96. NASA technical paper. National Aeronautics and Space Administration, Goddard Space Flight Center, 1998. URL: https://books.google.com.br/books?id=eAMVAQAAIAAJ.">LKF+98</a>]</span></span><a class="headerlink" href="#id50" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 15 </span><span class="caption-text">Modelo do geoide EGM96 <span id="id4">[<a class="reference internal" href="#id24" title="F.G. Lemoine, S. C. Kenyon, J. K. Factor, R.G. Trimmer, N. K. Pavlis, D. S. Chinn, C. M. Cox, S. M. Klosko, S. B. Luthcke, M. H. Torrence, Y. M. Wang, R. G. Williamson, E. C. Pavlis, R. H. Rapp, and T. R. Olson. The development of the joint NASA GSFC and the National Imagery and Mapping Agency (NIMA) Geopotential Model EGM96. NASA technical paper. National Aeronautics and Space Administration, Goddard Space Flight Center, 1998. URL: https://books.google.com.br/books?id=eAMVAQAAIAAJ.">LKF+98</a>]</span></span><a class="headerlink" href="#id53" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <div class="admonition-verificando-diferentes-modelos-de-geoide admonition">
@@ -166,22 +166,22 @@ O maior semieixo do elipsóide é denominado por <span class="math notranslate n
 <span class="math notranslate nohighlight">\(b\)</span>. Geralmente, na definição dos parâmetros do elipsóide, ao invés
 de apresentar os dois raios, são apresentados, o raio do semieixo
 <span class="math notranslate nohighlight">\(a\)</span> e o achatamento,
-<span class="math notranslate nohighlight">\(f\)</span>, definido pela Equação <a class="reference internal" href="#equation-eq-achatamento">(21)</a>. O parâmetro <span class="math notranslate nohighlight">\(f\)</span>
+<span class="math notranslate nohighlight">\(f\)</span>, definido pela Equação <a class="reference internal" href="#equation-eq-achatamento">(22)</a>. O parâmetro <span class="math notranslate nohighlight">\(f\)</span>
 é preferível pois é utilizado nas equações para cálculo das, coordenadas
 sobre o elipsóide e das projeções cartográficas. Nota-se que, se tivermos
 quaisquer dois parâmetros do elipsóide, o terceiro poderá ser calculado
-por meio da Equação <a class="reference internal" href="#equation-eq-achatamento">(21)</a>. Observando esta Equação,
+por meio da Equação <a class="reference internal" href="#equation-eq-achatamento">(22)</a>. Observando esta Equação,
 se a terra tivesse a forma de uma esferoide, isto é <span class="math notranslate nohighlight">\(a=b\)</span>,
 <span class="math notranslate nohighlight">\(f\)</span> seria zero, não teria achatamento. Como a terra é achatada nos
 polos, <span class="math notranslate nohighlight">\(a&gt;b\)</span>, <span class="math notranslate nohighlight">\(f\)</span> será sempre maior que zero e menor que um. Caso
 trabalhando em pequenas escalas, pode-se considerar a terra um esferoide
 <span class="math notranslate nohighlight">\(a=b\)</span> ou <span class="math notranslate nohighlight">\(f=0\)</span>.</p>
 <div class="math notranslate nohighlight" id="equation-eq-achatamento">
-<span class="eqno">(21)<a class="headerlink" href="#equation-eq-achatamento" title="Permalink to this equation"></a></span>\[f=\frac{a-b}{a}=1-\frac{b}{a}\]</div>
-<figure class="align-center" id="id51">
+<span class="eqno">(22)<a class="headerlink" href="#equation-eq-achatamento" title="Permalink to this equation"></a></span>\[f=\frac{a-b}{a}=1-\frac{b}{a}\]</div>
+<figure class="align-center" id="id54">
 <span id="figelipsoide"></span><a class="reference internal image-reference" href="../_images/fig_elipsoide.png"><img alt="fig_elipsoide.png" src="../_images/fig_elipsoide.png" style="width: 605.6px; height: 254.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 16 </span><span class="caption-text">Apresentação de uma elipse e um elipsóide de revolução.</span><a class="headerlink" href="#id51" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 16 </span><span class="caption-text">Apresentação de uma elipse e um elipsóide de revolução.</span><a class="headerlink" href="#id54" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <hr class="docutils" />
@@ -190,7 +190,7 @@ o GPS, é denominado de WGS84, tendo como raios dos semieixos: <span class="math
 e <span class="math notranslate nohighlight">\(b=6.356.752,31424\,\text{m}\)</span>. Calcule
 o achatamento deste elipsóide.</p>
 <p><span class="solucao">Solução:</span>
-Por meio da Equação <a class="reference internal" href="#equation-eq-achatamento">(21)</a>, tem-se:</p>
+Por meio da Equação <a class="reference internal" href="#equation-eq-achatamento">(22)</a>, tem-se:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}f &amp; =1-\frac{b}{a}\\
 &amp; =1-\frac{6.356.752,31424}{6.378.137,0}\\
@@ -213,8 +213,8 @@ de forma a melhor se ajustar ao geóide local ou mundial, respectivamente.
 Na Tabelaref{tab:elipsoides} são apresentados alguns parâmetros
 de elipsoides e o local em que ele é ou foi utilizado
 <span id="id7">[<a class="reference internal" href="#id35" title="J.R. Smith. Introduction to Geodesy. Wiley Series in Surveying and Boundary Control. Wiley, 1997. ISBN 9780471166603.">Smi97</a>]</span>.</p>
-<table class="colwidths-auto docutils align-default" id="id52">
-<caption><span class="caption-number">Table 2 </span><span class="caption-text">Exemplo dos parâmetros de elipsoides.</span><a class="headerlink" href="#id52" title="Permalink to this table"></a></caption>
+<table class="colwidths-auto docutils align-default" id="id55">
+<caption><span class="caption-number">Table 2 </span><span class="caption-text">Exemplo dos parâmetros de elipsoides.</span><a class="headerlink" href="#id55" title="Permalink to this table"></a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>Elipsóide</p></th>
 <th class="head"><p><span class="math notranslate nohighlight">\(a\)</span> (m)</p></th>
@@ -287,12 +287,12 @@ para não cometer erros grosseiros de interpretação das informações
 GNSS. Por exemplo, a elevação apresentada pelos receptores, é em relação
 ao elipsóide e não em relação ao Geóide. Normalmente, em engenharia,
 o interesse é com a elevação em relação ao geóide.</p>
-<figure class="align-center" id="id53">
+<figure class="align-center" id="id56">
 <span id="fig-coordenadasretangulares"></span><a class="reference internal image-reference" href="../_images/fig_coordenadasretangulares.png"><img alt="fig_coordenadasretangulares.png" src="../_images/fig_coordenadasretangulares.png" style="width: 521.2px; height: 310.8px;" /></a>
 <figcaption>
 <p><span class="caption-number">Figura 17 </span><span class="caption-text">Variáveis necessárias para cálculo das coordenadas retangulares <span class="math notranslate nohighlight">\((x,y,z)\)</span>
 de um ponto <span class="math notranslate nohighlight">\(P\)</span> a partir das coordenadas geodésicas <span class="math notranslate nohighlight">\((\phi,\lambda)\)</span>
-e vice-versa.</span><a class="headerlink" href="#id53" title="Permalink to this image"></a></p>
+e vice-versa.</span><a class="headerlink" href="#id56" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -311,19 +311,19 @@ que coincide com o semieixo menor do elipsóide, eixo de rotação; o
 eixo-<span class="math notranslate nohighlight">\(x\)</span> é aquele dado pela intersecção do plano do Equador com o
 meridiano de Grw; e o eixo-<span class="math notranslate nohighlight">\(y\)</span> formando um diedro com os outros eixos
 (Figuraref{fig:coordenadasretangulares}). Quando as coordenadas
-Geodésicas são conhecidas, utilizam-se Equações <a class="reference internal" href="#equation-eq-cart-x">(22)</a> a <a class="reference internal" href="#equation-eq-grande-normal">(25)</a>
+Geodésicas são conhecidas, utilizam-se Equações <a class="reference internal" href="#equation-eq-cart-x">(23)</a> a <a class="reference internal" href="#equation-eq-grande-normal">(26)</a>
 para convertê-las retangulares.</p>
 <div class="math notranslate nohighlight" id="equation-eq-cart-x">
-<span class="eqno">(22)<a class="headerlink" href="#equation-eq-cart-x" title="Permalink to this equation"></a></span>\[\begin{split}x =\left(N+h\right)\cos\phi\cos\lambda\\\end{split}\]</div>
+<span class="eqno">(23)<a class="headerlink" href="#equation-eq-cart-x" title="Permalink to this equation"></a></span>\[\begin{split}x =\left(N+h\right)\cos\phi\cos\lambda\\\end{split}\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-cart-y">
-<span class="eqno">(23)<a class="headerlink" href="#equation-eq-cart-y" title="Permalink to this equation"></a></span>\[\begin{split}y =\left(N+h\right)\cos\phi\sin\lambda\\\end{split}\]</div>
+<span class="eqno">(24)<a class="headerlink" href="#equation-eq-cart-y" title="Permalink to this equation"></a></span>\[\begin{split}y =\left(N+h\right)\cos\phi\sin\lambda\\\end{split}\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-cart-z">
-<span class="eqno">(24)<a class="headerlink" href="#equation-eq-cart-z" title="Permalink to this equation"></a></span>\[z = \left({\displaystyle \frac{b^{2}}{a^{2}}N+h}\right)\sin\phi\]</div>
+<span class="eqno">(25)<a class="headerlink" href="#equation-eq-cart-z" title="Permalink to this equation"></a></span>\[z = \left({\displaystyle \frac{b^{2}}{a^{2}}N+h}\right)\sin\phi\]</div>
 <p>em que: <span class="math notranslate nohighlight">\(N\)</span> é denominado de grande normal, correspondendo
 ao comprimento da vertical que passa por <span class="math notranslate nohighlight">\(P'\)</span> ao eixo-z (Figuraref{fig:coordenadasretangulares})
 dado por:</p>
 <div class="math notranslate nohighlight" id="equation-eq-grande-normal">
-<span class="eqno">(25)<a class="headerlink" href="#equation-eq-grande-normal" title="Permalink to this equation"></a></span>\[N =\frac{a^{2}}{\sqrt{a^{2}\cos^{2}\phi+b^{2}\sin^{2}\phi}}\]</div>
+<span class="eqno">(26)<a class="headerlink" href="#equation-eq-grande-normal" title="Permalink to this equation"></a></span>\[N =\frac{a^{2}}{\sqrt{a^{2}\cos^{2}\phi+b^{2}\sin^{2}\phi}}\]</div>
 <hr class="docutils" />
 <p><span class="exem">Exemplo 2</span> A latitude, longitude
 e altitude geodésica de um ponto <span class="math notranslate nohighlight">\(P\)</span> valem: <span class="math notranslate nohighlight">\(\phi=-22^\circ13'21,1337''\)</span>,
@@ -332,8 +332,8 @@ e altitude geodésica de um ponto <span class="math notranslate nohighlight">\(P
 raios dos semieixos: <span class="math notranslate nohighlight">\(a=6.378.137,0\)</span> m e <span class="math notranslate nohighlight">\(b=6.356.752,3\)</span> m,
 calcule as coordenadas retangulares.</p>
 <p><span class="solucao">Solução:</span>
-Substituindo os valores nas Equações <a class="reference internal" href="#equation-eq-cart-x">(22)</a>
-a <a class="reference internal" href="#equation-eq-grande-normal">(25)</a>, tem-se:</p>
+Substituindo os valores nas Equações <a class="reference internal" href="#equation-eq-cart-x">(23)</a>
+a <a class="reference internal" href="#equation-eq-grande-normal">(26)</a>, tem-se:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}N &amp; =\frac{6.378.137^2}{\sqrt{6.378.137^2\cos^2\left(-22^\circ13'21,1337''\right)+6.356.752,3^2\sin^2\left(-22^\circ13'21,1337''\right)}}\\
 N &amp; =6.381.192,9127\,\text{m}\end{split}\]</div>
@@ -352,24 +352,24 @@ calcular as coordenadas geodésicas <span class="math notranslate nohighlight">\
 diferentes metodologias podem ser utilizadas, sendo alguns métodos
 apresentados em <span id="id9">[<a class="reference internal" href="#id27" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span> e <span id="id10">[<a class="reference internal" href="#id28" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span>. Aqui
 será apresentada uma metodologia em que não há necessidade de iterações
-(Equações eq:<cite>cart_to_geo_lat</cite> a <a class="reference internal" href="#equation-eq-cart-to-geo-h">(28)</a>),
+(Equações eq:<cite>cart_to_geo_lat</cite> a <a class="reference internal" href="#equation-eq-cart-to-geo-h">(29)</a>),
 ou seja, é simples, uma vez que, com a aplicação das equações, o resultado
 é obtido diretamente.</p>
 <div class="math notranslate nohighlight" id="equation-eq-cart-to-geo-lat">
-<span class="eqno">(26)<a class="headerlink" href="#equation-eq-cart-to-geo-lat" title="Permalink to this equation"></a></span>\[\phi ={\displaystyle \arctan\frac{z+e'^{2}b\sin^3\theta}{p-e^2a\cos^3\theta}}\]</div>
+<span class="eqno">(27)<a class="headerlink" href="#equation-eq-cart-to-geo-lat" title="Permalink to this equation"></a></span>\[\phi ={\displaystyle \arctan\frac{z+e'^{2}b\sin^3\theta}{p-e^2a\cos^3\theta}}\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-cart-to-geo-lon">
-<span class="eqno">(27)<a class="headerlink" href="#equation-eq-cart-to-geo-lon" title="Permalink to this equation"></a></span>\[\lambda  ={\displaystyle \arctan\frac{y}{x}}\label{eq:cart_to_geo_lon}\]</div>
+<span class="eqno">(28)<a class="headerlink" href="#equation-eq-cart-to-geo-lon" title="Permalink to this equation"></a></span>\[\lambda  ={\displaystyle \arctan\frac{y}{x}}\label{eq:cart_to_geo_lon}\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-cart-to-geo-h">
-<span class="eqno">(28)<a class="headerlink" href="#equation-eq-cart-to-geo-h" title="Permalink to this equation"></a></span>\[h  ={\displaystyle \frac{p}{\cos\phi}-N}\]</div>
+<span class="eqno">(29)<a class="headerlink" href="#equation-eq-cart-to-geo-h" title="Permalink to this equation"></a></span>\[h  ={\displaystyle \frac{p}{\cos\phi}-N}\]</div>
 <p>em que:</p>
 <div class="math notranslate nohighlight" id="equation-eq-ecentricidade-primeira">
-<span class="eqno">(29)<a class="headerlink" href="#equation-eq-ecentricidade-primeira" title="Permalink to this equation"></a></span>\[e^{2}  ={\displaystyle \frac{a^2-b^2}{a^2}}\]</div>
+<span class="eqno">(30)<a class="headerlink" href="#equation-eq-ecentricidade-primeira" title="Permalink to this equation"></a></span>\[e^{2}  ={\displaystyle \frac{a^2-b^2}{a^2}}\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-ecentricidade-segunda">
-<span class="eqno">(30)<a class="headerlink" href="#equation-eq-ecentricidade-segunda" title="Permalink to this equation"></a></span>\[e'^{2} ={\displaystyle \frac{a^2-b^2}{b^2}}\]</div>
+<span class="eqno">(31)<a class="headerlink" href="#equation-eq-ecentricidade-segunda" title="Permalink to this equation"></a></span>\[e'^{2} ={\displaystyle \frac{a^2-b^2}{b^2}}\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-cart-to-geo-aux-p">
-<span class="eqno">(31)<a class="headerlink" href="#equation-eq-cart-to-geo-aux-p" title="Permalink to this equation"></a></span>\[p ={\displaystyle \sqrt{x^2+y^2}}\]</div>
+<span class="eqno">(32)<a class="headerlink" href="#equation-eq-cart-to-geo-aux-p" title="Permalink to this equation"></a></span>\[p ={\displaystyle \sqrt{x^2+y^2}}\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-cart-to-geo-aux">
-<span class="eqno">(32)<a class="headerlink" href="#equation-eq-cart-to-geo-aux" title="Permalink to this equation"></a></span>\[\theta ={\displaystyle \arctan\frac{z\cdot a}{p\cdot b}}\]</div>
+<span class="eqno">(33)<a class="headerlink" href="#equation-eq-cart-to-geo-aux" title="Permalink to this equation"></a></span>\[\theta ={\displaystyle \arctan\frac{z\cdot a}{p\cdot b}}\]</div>
 <p>Os termos <span class="math notranslate nohighlight">\(e^{2}\text{ e }e'^{2}\)</span> são denominados, respectivamente
 de primeira e segunda excentricidade. O valor de <span class="math notranslate nohighlight">\(p\)</span> corresponde
 ao raio no paralelo analisado.</p>
@@ -379,15 +379,15 @@ retangulares do Exemplo ref{exem:coorde_geode_retang}, referentes
 ao sistema WGS84, encontrar as coordenadas geodésicas <span class="math notranslate nohighlight">\(\phi,\text{ }\lambda\text{ e }h\)</span>.</p>
 <p><span class="solucao">Solução:</span> Sabendo-se que <span class="math notranslate nohighlight">\(a=6.378.137,0\,\text{m}\)</span> e <span class="math notranslate nohighlight">\(b=6.356.752,3\,\text{m}\)</span>
 e substituindo <span class="math notranslate nohighlight">\({x=4.404.445,8857\text{ m}}\)</span>, <span class="math notranslate nohighlight">\({y=-3.936.872,4167\,\text{m}}\)</span>
-e <span class="math notranslate nohighlight">\({z=-2.397.345,4965\,\text{m}}\)</span> nas Equações <a class="reference internal" href="#equation-eq-ecentricidade-primeira">(29)</a>
-a <a class="reference internal" href="#equation-eq-cart-to-geo-aux">(32)</a> para o cálculo das variáveis auxiliares:</p>
+e <span class="math notranslate nohighlight">\({z=-2.397.345,4965\,\text{m}}\)</span> nas Equações <a class="reference internal" href="#equation-eq-ecentricidade-primeira">(30)</a>
+a <a class="reference internal" href="#equation-eq-cart-to-geo-aux">(33)</a> para o cálculo das variáveis auxiliares:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}e^{2} &amp; ={\displaystyle \frac{6.378.137^2-6.356.752,3^2}{6.378.137^2}=0,006\,694\,384\,442}\\
 e'^{2} &amp; ={\displaystyle \frac{6.378.137,0^2-6.356.752,3^2}{6.356.752,3^2}=0,006\,739\,501\,254}\\
 p &amp; =\sqrt{4.404.445,8857^2+-3.936.872,4167^2}=5.907.462,05962\\
 \theta &amp; ={\displaystyle \arctan\frac{-2.397.345,4965\cdot6.378.137,0}{5.907.462,059620\cdot6.356.752,3}=-22^{\circ}9'18,9119''}\end{split}\]</div>
-<p>Agora, aplicando as Equações <a class="reference internal" href="#equation-eq-cart-to-geo-lat">(26)</a>
-a <a class="reference internal" href="#equation-eq-cart-to-geo-h">(28)</a> e utilizando o valor de <span class="math notranslate nohighlight">\(N\)</span> já calculado
+<p>Agora, aplicando as Equações <a class="reference internal" href="#equation-eq-cart-to-geo-lat">(27)</a>
+a <a class="reference internal" href="#equation-eq-cart-to-geo-h">(29)</a> e utilizando o valor de <span class="math notranslate nohighlight">\(N\)</span> já calculado
 no Exemplo 2 tem-se:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\phi &amp; ={\displaystyle \arctan\frac{-2.397.345,4965+0,006\,739\,501\,254\cdot6.356.752,3\sin^3\left(-22^\circ9'18,9119''\right)}{5.907.462,059620-0,006\,694\,384\,442\cdot6.378.137\cos^3\left(-22^\circ9'18,9119''\right)}}\\
@@ -459,10 +459,10 @@ o Datum 2, geocêntrico, tem seu centro C1 que coincide com centro
 de massa da terra, tendo os seus parâmetros <span class="math notranslate nohighlight">\(a\)</span> e <span class="math notranslate nohighlight">\(f\)</span> definidos
 de forma a minimizar os desvios dele com o Geóide como um todo, não
 em apenas uma porção.</p>
-<figure class="align-center" id="id54">
+<figure class="align-center" id="id57">
 <span id="fig-elipsoide-geoides-png"></span><a class="reference internal image-reference" href="../_images/fig_elipsoide_geoides.png"><img alt="fig_elipsoide_geoides.png" src="../_images/fig_elipsoide_geoides.png" style="width: 369.20000000000005px; height: 379.6px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 18 </span><span class="caption-text">Datum horizontal do tipo topocêntrico e geocêntrico.</span><a class="headerlink" href="#id54" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 18 </span><span class="caption-text">Datum horizontal do tipo topocêntrico e geocêntrico.</span><a class="headerlink" href="#id57" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>Como dito anteriormente, o SGB é dinâmico, o Brasil já teve o index{Datum horizontal!Córrego Alegre}Datum
@@ -507,11 +507,11 @@ doppler, GPS, vértice de triangulação e estações de poligonal. Como
 é observado na <a class="reference internal" href="#fig-refer-horizontal"><span class="std std-numref">Figura 19</span></a>, algumas observações
 são realizadas fora do continente, em ilhas, por exemplo em Fernando
 de Noronha.</p>
-<figure class="align-center" id="id55">
+<figure class="align-center" id="id58">
 <span id="fig-refer-horizontal"></span><a class="reference internal image-reference" href="../_images/fig_refer_horizontal.png"><img alt="fig_elipsoide_geoides.png" src="../_images/fig_refer_horizontal.png" style="width: 464.45px; height: 273.0px;" /></a>
 <figcaption>
 <p><span class="caption-number">Figura 19 </span><span class="caption-text">Posição das referencias horizontais e os métodos em que as posições
-foram estimadas. Dados obtidos no IBGE em 7 de maio de 2012.</span><a class="headerlink" href="#id55" title="Permalink to this image"></a></p>
+foram estimadas. Dados obtidos no IBGE em 7 de maio de 2012.</span><a class="headerlink" href="#id58" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -529,10 +529,10 @@ Na Figura ao lado são apresentadas as posições da referência
 altimétrica do SGB, sendo um total de <span class="math notranslate nohighlight">\(9.397\)</span> referências de nível,
 <span class="math notranslate nohighlight">\(475\)</span> e <span class="math notranslate nohighlight">\(8.922\)</span>, respectivamente, referentes ao Datum de Santana e ao
 Datum de Imbituba (<a class="reference internal" href="#fig-refer-vertical"><span class="std std-numref">Figura 20</span></a>).</p>
-<figure class="align-center" id="id56">
+<figure class="align-center" id="id59">
 <span id="fig-refer-vertical"></span><a class="reference internal image-reference" href="../_images/fig_refer_vertical.png"><img alt="fig_refer_vertical.png" src="../_images/fig_refer_vertical.png" style="width: 285.25px; height: 288.4px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 20 </span><span class="caption-text">Posições das referencias horizontais das referências de nível dos Datum de Imbituba e Santana.</span><a class="headerlink" href="#id56" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 20 </span><span class="caption-text">Posições das referencias horizontais das referências de nível dos Datum de Imbituba e Santana.</span><a class="headerlink" href="#id59" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <div class="admonition-sistema-geodesico-brasileiro-na-internet admonition">
@@ -560,16 +560,16 @@ caso o cilindro seja tangente a um meridiano (e.g. Figura e);
 e é oblíqua caso o cilindro seja tangente à qualquer seção normal
 que passa pelo ponto central (e.g. <a class="reference internal" href="#proj-tipos"><span class="std std-numref">Figura 21</span></a> h).</p></li>
 </ul>
-<figure class="align-center" id="id57">
+<figure class="align-center" id="id60">
 <span id="proj-tipos"></span><a class="reference internal image-reference" href="../_images/proj_tipos.png"><img alt="proj_tipos.png" src="../_images/proj_tipos.png" style="width: 378.5px; height: 457.5px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 21 </span><span class="caption-text">Tipos de projeções.</span><a class="headerlink" href="#id57" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 21 </span><span class="caption-text">Tipos de projeções.</span><a class="headerlink" href="#id60" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id58">
+<figure class="align-center" id="id61">
 <span id="proj-tipos-sec"></span><a class="reference internal image-reference" href="../_images/proj_tipos_sec.png"><img alt="proj_tipos_sec.png" src="../_images/proj_tipos_sec.png" style="width: 533.05px; height: 200.54999999999998px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 22 </span><span class="caption-text">Projeções tipo secantes.</span><a class="headerlink" href="#id58" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 22 </span><span class="caption-text">Projeções tipo secantes.</span><a class="headerlink" href="#id61" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <section id="projecoes-plana-cilindrica-e-conica-secantes">
@@ -605,21 +605,21 @@ os paralelos em ângulos retos. Nesta projeção a escala sofre deformação
 ao longo da latitude e da longitude, de forma a manter <strong>igual
 área</strong> ao longo do mapa. Ela é utilizada para regiões que tem extensões
 na direção leste-oeste, como os Estados Unidos.</p>
-<figure class="align-center" id="id59">
+<figure class="align-center" id="id62">
 <span id="fig-albersequalarea-png"></span><a class="reference internal image-reference" href="../_images/fig_AlbersEqualArea.png"><img alt="fig_AlbersEqualArea.png" src="../_images/fig_AlbersEqualArea.png" style="width: 366.09999999999997px; height: 238.35px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 23 </span><span class="caption-text">Projeção cônica de Albers (igual área).</span><a class="headerlink" href="#id59" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 23 </span><span class="caption-text">Projeção cônica de Albers (igual área).</span><a class="headerlink" href="#id62" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>As fórmulas para a index{Projeção cartográfica!projeção cônica de Albers}projeção
-cônica de Albers para um esferoide (<cite>a=b</cite>) são apresentadas nas Equações <a class="reference internal" href="#equation-eq-proj-albers-igualarea-x">(33)</a>
-e <a class="reference internal" href="#equation-eq-proj-albers-igualarea-y">(34)</a>, para o modelo da terra sendo
+cônica de Albers para um esferoide (<cite>a=b</cite>) são apresentadas nas Equações <a class="reference internal" href="#equation-eq-proj-albers-igualarea-x">(34)</a>
+e <a class="reference internal" href="#equation-eq-proj-albers-igualarea-y">(35)</a>, para o modelo da terra sendo
 um esferoide. Para o modelo da terra sendo um elipsóide, consultar
 <span id="id15">[<a class="reference internal" href="#id32" title="J.P. Snyder. Map projections–a working manual. Geological Survey Bulletin Series. U.S. G.P.O., 1987. URL: http://pubs.er.usgs.gov/publication/pp1395.">Sny87</a>]</span>.</p>
 <div class="math notranslate nohighlight" id="equation-eq-proj-albers-igualarea-x">
-<span class="eqno">(33)<a class="headerlink" href="#equation-eq-proj-albers-igualarea-x" title="Permalink to this equation"></a></span>\[x  =\rho\sin\theta\]</div>
+<span class="eqno">(34)<a class="headerlink" href="#equation-eq-proj-albers-igualarea-x" title="Permalink to this equation"></a></span>\[x  =\rho\sin\theta\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-proj-albers-igualarea-y">
-<span class="eqno">(34)<a class="headerlink" href="#equation-eq-proj-albers-igualarea-y" title="Permalink to this equation"></a></span>\[y  =\rho_{0}-\rho\cos\theta\]</div>
+<span class="eqno">(35)<a class="headerlink" href="#equation-eq-proj-albers-igualarea-y" title="Permalink to this equation"></a></span>\[y  =\rho_{0}-\rho\cos\theta\]</div>
 <p>em que:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\rho                 &amp; =\frac{1}{n}R\left(C-2n\sin\phi\right)^{1/2}\\
@@ -651,19 +651,19 @@ o meridiano central. As equações para a projeção sinusoidal são simples.
 Considerando a forma da terra como um esferoide, as coordenadas retangulares
 da projeção Sinusoidal são:</p>
 <div class="math notranslate nohighlight" id="equation-eq-proj-sinu-equi">
-<span class="eqno">(35)<a class="headerlink" href="#equation-eq-proj-sinu-equi" title="Permalink to this equation"></a></span>\[x=(\lambda-\lambda_{0})\cos\phi\]</div>
+<span class="eqno">(36)<a class="headerlink" href="#equation-eq-proj-sinu-equi" title="Permalink to this equation"></a></span>\[x=(\lambda-\lambda_{0})\cos\phi\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-proj-sinu-equi-2">
-<span class="eqno">(36)<a class="headerlink" href="#equation-eq-proj-sinu-equi-2" title="Permalink to this equation"></a></span>\[y=\phi\]</div>
+<span class="eqno">(37)<a class="headerlink" href="#equation-eq-proj-sinu-equi-2" title="Permalink to this equation"></a></span>\[y=\phi\]</div>
 <p>As coordenadas devem estar em radianos. As funções inversas
 da projeção sinusoidal são:</p>
 <div class="math notranslate nohighlight" id="equation-eq-proj-sinu-equi-inv">
-<span class="eqno">(37)<a class="headerlink" href="#equation-eq-proj-sinu-equi-inv" title="Permalink to this equation"></a></span>\[\lambda=\frac{x}{\cos\phi}+\lambda_{0}\]</div>
+<span class="eqno">(38)<a class="headerlink" href="#equation-eq-proj-sinu-equi-inv" title="Permalink to this equation"></a></span>\[\lambda=\frac{x}{\cos\phi}+\lambda_{0}\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-proj-sinu-equi-inv2">
-<span class="eqno">(38)<a class="headerlink" href="#equation-eq-proj-sinu-equi-inv2" title="Permalink to this equation"></a></span>\[\phi=y\]</div>
-<figure class="align-center" id="id60">
+<span class="eqno">(39)<a class="headerlink" href="#equation-eq-proj-sinu-equi-inv2" title="Permalink to this equation"></a></span>\[\phi=y\]</div>
+<figure class="align-center" id="id63">
 <span id="sinusoidalqualarea-png"></span><a class="reference internal image-reference" href="../_images/SinusoidalqualArea.png"><img alt="SinusoidalqualArea.png" src="../_images/SinusoidalqualArea.png" style="width: 362.59999999999997px; height: 190.39999999999998px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 24 </span><span class="caption-text">Projeção sinusoidal (igual área).</span><a class="headerlink" href="#id60" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 24 </span><span class="caption-text">Projeção sinusoidal (igual área).</span><a class="headerlink" href="#id63" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <hr class="docutils" />
@@ -671,7 +671,7 @@ da projeção sinusoidal são:</p>
 de um ponto de latitude <span class="math notranslate nohighlight">\(-21,4324^\circ\)</span> e longitude
 de <span class="math notranslate nohighlight">\(-42,7912^\circ\)</span> considerando a projeção sendo sinusoidal
 com <span class="math notranslate nohighlight">\(\lambda_{0}=0^\circ\)</span>.</p>
-<p><span class="solucao">Solução:</span>  Considerando as Equações <a class="reference internal" href="#equation-eq-proj-sinu-equi">(35)</a> e <a class="reference internal" href="#equation-eq-proj-sinu-equi-2">(36)</a>,
+<p><span class="solucao">Solução:</span>  Considerando as Equações <a class="reference internal" href="#equation-eq-proj-sinu-equi">(36)</a> e <a class="reference internal" href="#equation-eq-proj-sinu-equi-2">(37)</a>,
 e observando que os ângulos devem estar em radianos tem-se:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}x &amp; =(\lambda-\lambda_{0})\cos\phi\\
@@ -690,10 +690,10 @@ do centro do mapa; os meridianos tem espaçamento igual, cortando os
 paralelos em ângulos retos; a escala só é verdadeira ao longo dos
 paralelos padrão; e no hemisfério sobre os paralelos padrão o polo
 é um ponto, e no outro polo, infinito.</p>
-<figure class="align-center" id="id61">
+<figure class="align-center" id="id64">
 <span id="lambertconformal"></span><a class="reference internal image-reference" href="../_images/LambertConformal.png"><img alt="LambertConformal.png" src="../_images/LambertConformal.png" style="width: 351.04999999999995px; height: 259.34999999999997px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 25 </span><span class="caption-text">Projeção cônica de Lambert (conforme).</span><a class="headerlink" href="#id61" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 25 </span><span class="caption-text">Projeção cônica de Lambert (conforme).</span><a class="headerlink" href="#id64" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p><strong>Projeção Azimutal (equidistante)</strong></p>
@@ -704,23 +704,23 @@ projeção: as distâncias a partir do centro e ao longo do raio são
 verdadeiras; o único ponto que não têm distorção é o central e nenhum
 ponto tem área igual ou conforme; paralelos são círculos espaçados
 em intervalos verdadeiros.</p>
-<figure class="align-center" id="id62">
+<figure class="align-center" id="id65">
 <span id="azimuthalequidistant"></span><a class="reference internal image-reference" href="../_images/AzimuthalEquidistant.png"><img alt="AzimuthalEquidistant.png" src="../_images/AzimuthalEquidistant.png" style="width: 285.59999999999997px; height: 281.04999999999995px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 26 </span><span class="caption-text">Projeção Azimutal (equidistante).</span><a class="headerlink" href="#id62" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 26 </span><span class="caption-text">Projeção Azimutal (equidistante).</span><a class="headerlink" href="#id65" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>A Equações para as coordenadas planas da projeção azimutal equidistante
 são:</p>
 <div class="math notranslate nohighlight" id="equation-eq-proj-azi-equidis">
-<span class="eqno">(39)<a class="headerlink" href="#equation-eq-proj-azi-equidis" title="Permalink to this equation"></a></span>\[\begin{split}x =k'\cos\phi\sin(\lambda-\lambda_{0})\\\end{split}\]</div>
+<span class="eqno">(40)<a class="headerlink" href="#equation-eq-proj-azi-equidis" title="Permalink to this equation"></a></span>\[\begin{split}x =k'\cos\phi\sin(\lambda-\lambda_{0})\\\end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[y =k'\left(\cos\phi_{1}\sin(\phi)-\sin\phi_{1}\cos\phi\cos(\lambda-\lambda_{0})\right)\]</div>
 <p>em que:</p>
 <div class="math notranslate nohighlight" id="equation-eq-proj-azi-equidis-k">
-<span class="eqno">(40)<a class="headerlink" href="#equation-eq-proj-azi-equidis-k" title="Permalink to this equation"></a></span>\[k' =c/\sin\]</div>
+<span class="eqno">(41)<a class="headerlink" href="#equation-eq-proj-azi-equidis-k" title="Permalink to this equation"></a></span>\[k' =c/\sin\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-proj-azi-equidis-cosc">
-<span class="eqno">(41)<a class="headerlink" href="#equation-eq-proj-azi-equidis-cosc" title="Permalink to this equation"></a></span>\[\cos c =\sin\phi_{1}\sin(\phi)-\cos\phi_{1}\cos\phi\cos(\lambda-\lambda_{0})\]</div>
+<span class="eqno">(42)<a class="headerlink" href="#equation-eq-proj-azi-equidis-cosc" title="Permalink to this equation"></a></span>\[\cos c =\sin\phi_{1}\sin(\phi)-\cos\phi_{1}\cos\phi\cos(\lambda-\lambda_{0})\]</div>
 <p>Sendo <span class="math notranslate nohighlight">\((\phi_{1},\lambda_{0})\)</span> são a latitude e a longitude do centro
 da projeção e a origem. O eixo-<span class="math notranslate nohighlight">\(y\)</span> coincide com o meridiano central,
 crescendo ao norte e diminuindo ao sul. Se <span class="math notranslate nohighlight">\(\cos c=1\)</span> na Equaçãoref{eq:proj_azi_equidis_cosc},
@@ -728,9 +728,9 @@ ela é indeterminada, mas <span class="math notranslate nohighlight">\(k'=1\)</s
 ponto é oposto ao centro <span class="math notranslate nohighlight">\((-\phi_{1},\lambda_{0}\pm180^{\circ})\)</span>.
 As funções inversas são:</p>
 <div class="math notranslate nohighlight" id="equation-eq-proj-azi-equidis-inv-lat">
-<span class="eqno">(42)<a class="headerlink" href="#equation-eq-proj-azi-equidis-inv-lat" title="Permalink to this equation"></a></span>\[\displaystyle \phi=\arcsin\left(\cos c\sin\phi_{1}+\left(\frac{y\sin c\cos\phi_{1}}{c}\right)\right),\]</div>
+<span class="eqno">(43)<a class="headerlink" href="#equation-eq-proj-azi-equidis-inv-lat" title="Permalink to this equation"></a></span>\[\displaystyle \phi=\arcsin\left(\cos c\sin\phi_{1}+\left(\frac{y\sin c\cos\phi_{1}}{c}\right)\right),\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-proj-azi-equidis-inv-long">
-<span class="eqno">(43)<a class="headerlink" href="#equation-eq-proj-azi-equidis-inv-long" title="Permalink to this equation"></a></span>\[\begin{split}{\displaystyle \lambda=\lambda_{0}+\begin{cases}
+<span class="eqno">(44)<a class="headerlink" href="#equation-eq-proj-azi-equidis-inv-long" title="Permalink to this equation"></a></span>\[\begin{split}{\displaystyle \lambda=\lambda_{0}+\begin{cases}
 {\displaystyle \arctan\left(\frac{x\sin c}{\rho\cos\phi_{1}\cos c-y\sin\phi_{1}\sin c}\right)} &amp; \text{se }\phi_{1}\neq\pm90^{\circ},\\
 {\displaystyle \arctan\left(\frac{x}{-y}\right)} &amp; \text{se }\phi_{1}=90^\circ,\\
 {\displaystyle \arctan\left(\frac{x}{y}\right)} &amp; \text{se }\phi_{1}=-90^\circ,
@@ -763,10 +763,10 @@ região dos polos, é adotado uma outra projeção, <em>Universal
 Polar Stereographic</em> (UPS).
 Ela não será tratada aqui, todavia, maiores informações podem ser
 encontradas em <span id="id16">[<a class="reference internal" href="#id32" title="J.P. Snyder. Map projections–a working manual. Geological Survey Bulletin Series. U.S. G.P.O., 1987. URL: http://pubs.er.usgs.gov/publication/pp1395.">Sny87</a>]</span>.</p>
-<figure class="align-center" id="id63">
+<figure class="align-center" id="id66">
 <span id="utmzone"></span><a class="reference internal image-reference" href="../_images/utmzone.png"><img alt="utmzone.png" src="../_images/utmzone.png" style="width: 512.05px; height: 239.04999999999998px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 27 </span><span class="caption-text">Fusos das coordenadas UTM.</span><a class="headerlink" href="#id63" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 27 </span><span class="caption-text">Fusos das coordenadas UTM.</span><a class="headerlink" href="#id66" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>O território Brasileiro está inserido ao longo de 8 fusos UTM, do
@@ -782,10 +782,10 @@ da latitude “K”. É por isto, que quando nos encontramos com um receptor
 GNSS em qualquer posição no estado, ele mostrará, juntamente com as
 coordenadas UTM do ponto, a informação “24K”, referente ao fuso
 e a linha de latitude onde o ponto se encontra.</p>
-<figure class="align-center" id="id64">
+<figure class="align-center" id="id67">
 <span id="utmzonebr"></span><a class="reference internal image-reference" href="../_images/utmzoneBR.png"><img alt="utmzoneBR.png" src="../_images/utmzoneBR.png" style="width: 472.0px; height: 461.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 28 </span><span class="caption-text">Fusos das coordenadas UTM Brasil.</span><a class="headerlink" href="#id64" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 28 </span><span class="caption-text">Fusos das coordenadas UTM Brasil.</span><a class="headerlink" href="#id67" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>Agora vamos abordar as coordenadas UTM, onde, uma apresentação gráfica
@@ -805,10 +805,10 @@ Em ambos os hemisférios, as coordenadas <span class="math notranslate nohighlig
 respectivamente, oeste-leste e sul-norte. Quando se trata de descrever
 as coordenadas UTM, normatizou-se em designar as coordenadas <span class="math notranslate nohighlight">\(x\)</span>,
 por “E”, de Este, e <span class="math notranslate nohighlight">\(y\)</span>, de “N”, de Norte.</p>
-<figure class="align-center" id="id65">
+<figure class="align-center" id="id68">
 <span id="utmonezone-png"></span><a class="reference internal image-reference" href="../_images/utmonezone.png"><img alt="utmonezone.png" src="../_images/utmonezone.png" style="width: 350.0px; height: 440.5px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 29 </span><span class="caption-text">Esquema das coordenadas UTM para um fuso qualquer.</span><a class="headerlink" href="#id65" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 29 </span><span class="caption-text">Esquema das coordenadas UTM para um fuso qualquer.</span><a class="headerlink" href="#id68" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>Na <a class="reference internal" href="#utmzonealegrees"><span class="std std-numref">Figura 30</span></a>  é apresentado o limite do Espírito
@@ -825,46 +825,46 @@ se encontrarem à esquerda da linha <span class="math notranslate nohighlight">\
 e <span class="math notranslate nohighlight">\(\text{N}=7.701.983\,\text{m}\)</span>, de onde
 pode-se concluir, por exemplo, que ele está <span class="math notranslate nohighlight">\(263.825\,\text{m}\)</span> do MC <span class="math notranslate nohighlight">\((500.000-236.175)\)</span>
 e a uma distância de <span class="math notranslate nohighlight">\(2.298.017\,\text{m}\)</span> m da linha do Equador <span class="math notranslate nohighlight">\((10.000.000-7.701.983)\)</span>.</p>
-<figure class="align-center" id="id66">
+<figure class="align-center" id="id69">
 <span id="utmzonealegrees"></span><a class="reference internal image-reference" href="../_images/utmzoneAlegreES.png"><img alt="utmzoneAlegreES.png" src="../_images/utmzoneAlegreES.png" style="width: 321.5px; height: 430.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 30 </span><span class="caption-text">Esquema das coordenadas UTM para a cidade de Alegre-ES.</span><a class="headerlink" href="#id66" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 30 </span><span class="caption-text">Esquema das coordenadas UTM para a cidade de Alegre-ES.</span><a class="headerlink" href="#id69" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p><strong>Coordenadas geográficas para UTM</strong></p>
 <p>Sendo conhecidas as coordenadas geodésicas, latitude (<span class="math notranslate nohighlight">\(\phi\)</span>) e longitude
 (<span class="math notranslate nohighlight">\(\lambda\)</span>), de um ponto, seguem as fórmulas que são utilizadas para
 cálculo das coordenadas UTM. Para se obter as coordenadas, a Este
-soma-se <span class="math notranslate nohighlight">\(500.000\)</span> m ao valor de <span class="math notranslate nohighlight">\(x\)</span> (Equação <a class="reference internal" href="#equation-eq-utmx">(44)</a>) e, para
+soma-se <span class="math notranslate nohighlight">\(500.000\)</span> m ao valor de <span class="math notranslate nohighlight">\(x\)</span> (Equação <a class="reference internal" href="#equation-eq-utmx">(45)</a>) e, para
 coordenada Norte no hemisfério sul, soma-se <span class="math notranslate nohighlight">\(10.000.000\)</span> m a <span class="math notranslate nohighlight">\(y\)</span>
-(Equação <a class="reference internal" href="#equation-eq-utmy">(45)</a>).</p>
+(Equação <a class="reference internal" href="#equation-eq-utmy">(46)</a>).</p>
 <div class="math notranslate nohighlight" id="equation-eq-utmx">
-<span class="eqno">(44)<a class="headerlink" href="#equation-eq-utmx" title="Permalink to this equation"></a></span>\[x=k_{0}N\text{(}A+(1-T+C)A^{3}/6+(5-18T+T^{2}+72C-58e'^{2}\text{)}A^{5}/120\]</div>
+<span class="eqno">(45)<a class="headerlink" href="#equation-eq-utmx" title="Permalink to this equation"></a></span>\[x=k_{0}N\text{(}A+(1-T+C)A^{3}/6+(5-18T+T^{2}+72C-58e'^{2}\text{)}A^{5}/120\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-utmy">
-<span class="eqno">(45)<a class="headerlink" href="#equation-eq-utmy" title="Permalink to this equation"></a></span>\[\begin{split}y=k_{0}\text{(}M+N\tan\phi(A^{2}/2+(5-T+9C+4C^{2})A^{4}/24+\\
+<span class="eqno">(46)<a class="headerlink" href="#equation-eq-utmy" title="Permalink to this equation"></a></span>\[\begin{split}y=k_{0}\text{(}M+N\tan\phi(A^{2}/2+(5-T+9C+4C^{2})A^{4}/24+\\
 (61-58T+T^{2}+600C-330e'^{2})A^{6}/720))\end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[\begin{split}k=k_{0}\text{(}1+(1+C)A^{2}/2+(5-4T+42C+13C^{2}-28e'^{2})A^{4}/24+\\
 (61-148T+16T^{2})A^{6}/270\text{)}\end{split}\]</div>
 <p>em que: <span class="math notranslate nohighlight">\(k_{0}\)</span> é a escala no meridiano central, para projeção
 UTM, <span class="math notranslate nohighlight">\(k_{0}=0,9996\)</span>. A grande normal, <span class="math notranslate nohighlight">\(N\)</span>, foi definida na
-Equação <a class="reference internal" href="#equation-eq-grande-normal">(25)</a>, a segunda excentricidade, <span class="math notranslate nohighlight">\(e'^2\)</span>,
-na Equação <a class="reference internal" href="#equation-eq-ecentricidade-segunda">(30)</a>, para as demais variáveis
+Equação <a class="reference internal" href="#equation-eq-grande-normal">(26)</a>, a segunda excentricidade, <span class="math notranslate nohighlight">\(e'^2\)</span>,
+na Equação <a class="reference internal" href="#equation-eq-ecentricidade-segunda">(31)</a>, para as demais variáveis
 auxiliares:</p>
 <div class="math notranslate nohighlight" id="equation-eq-utm-t">
-<span class="eqno">(46)<a class="headerlink" href="#equation-eq-utm-t" title="Permalink to this equation"></a></span>\[T =\tan^{2}\phi\]</div>
+<span class="eqno">(47)<a class="headerlink" href="#equation-eq-utm-t" title="Permalink to this equation"></a></span>\[T =\tan^{2}\phi\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-utm-c">
-<span class="eqno">(47)<a class="headerlink" href="#equation-eq-utm-c" title="Permalink to this equation"></a></span>\[C =e'^{2}\cos^{2}\phi\]</div>
+<span class="eqno">(48)<a class="headerlink" href="#equation-eq-utm-c" title="Permalink to this equation"></a></span>\[C =e'^{2}\cos^{2}\phi\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-utm-a">
-<span class="eqno">(48)<a class="headerlink" href="#equation-eq-utm-a" title="Permalink to this equation"></a></span>\[A =(\lambda-\lambda_{0})\cos\phi\]</div>
+<span class="eqno">(49)<a class="headerlink" href="#equation-eq-utm-a" title="Permalink to this equation"></a></span>\[A =(\lambda-\lambda_{0})\cos\phi\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-utm-m">
-<span class="eqno">(49)<a class="headerlink" href="#equation-eq-utm-m" title="Permalink to this equation"></a></span>\[\begin{split}M=a((1-e^{2}/4-3e^{4}/64-5e^{6}/256-...)\phi-\\
+<span class="eqno">(50)<a class="headerlink" href="#equation-eq-utm-m" title="Permalink to this equation"></a></span>\[\begin{split}M=a((1-e^{2}/4-3e^{4}/64-5e^{6}/256-...)\phi-\\
 (3e^{2}/8+3e^{4}/32+45e^{6}/1024+...)\sin2\phi+\\
 (15e^{4}/256+45e^{6}/1024)\sin4\phi-\\
 (35e^{6}/3072+...)\sin6\phi+...)\end{split}\]</div>
 <p>com <span class="math notranslate nohighlight">\(\phi\)</span> em radianos. <span class="math notranslate nohighlight">\(M\)</span> é a distância ao longo do
 meridiano central de <span class="math notranslate nohighlight">\(\phi\)</span>, ao equador. A primeira excentricidade
-<span class="math notranslate nohighlight">\(e^{2}\)</span> foi definida na Equação <a class="reference internal" href="#equation-eq-ecentricidade-primeira">(29)</a>.
+<span class="math notranslate nohighlight">\(e^{2}\)</span> foi definida na Equação <a class="reference internal" href="#equation-eq-ecentricidade-primeira">(30)</a>.
 Caso as coordenadas geodésicas estejam em graus, o parâmetro <span class="math notranslate nohighlight">\(A\)</span>
 deve ser transformado para ângulos em radianos, ou seja, <span class="math notranslate nohighlight">\(A=\frac{\pi}{180}(\lambda-\lambda_{0})\cos\phi\)</span>.</p>
 <hr class="docutils" />
@@ -875,22 +875,22 @@ Considere como modelo da terra o sistema WGS84.</p>
 <span class="math notranslate nohighlight">\(-39^\circ\)</span> <span class="math notranslate nohighlight">\((\lambda_{0})\)</span>). Do Exemplo 3 temos:
 <span class="math notranslate nohighlight">\(e^2=0,006\,694\,384\,442\)</span>, logo <span class="math notranslate nohighlight">\(e=0,081\,819\)</span>; e a segunda excentricidade,
 <span class="math notranslate nohighlight">\(e'^2=0,006\,739\,501\)</span>. Para as outras variáveis auxiliares, considerando
-as Equações <a class="reference internal" href="#equation-eq-grande-normal">(25)</a>, <a class="reference internal" href="#equation-eq-utm-t">(46)</a> a <a class="reference internal" href="#equation-eq-utm-a">(48)</a>,
+as Equações <a class="reference internal" href="#equation-eq-grande-normal">(26)</a>, <a class="reference internal" href="#equation-eq-utm-t">(47)</a> a <a class="reference internal" href="#equation-eq-utm-a">(49)</a>,
 temos:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}N &amp; =\frac{6\,378\,137^2}{\sqrt{6.378.137^2\cos^2\left(-21^\circ\right)+6.356.752,3^2\sin^2\left(-21^\circ\right)}}=6.380.880,55\text{ m}\\
 T &amp; =\tan^2(-21^\circ)=0,147\,351\,597\,390\\
 C &amp; =0,006\,739\,501\cos^2(-21^\circ)=0,005\,873\,963\,368\\
 A &amp; =\frac{\pi}{180^\circ}(-41^\circ--29^\circ)\cos(-21^\circ)=-0,0325\,881\,045\,490\end{split}\]</div>
-<p>Substituindo os valores na Equação <a class="reference internal" href="#equation-eq-utm-m">(49)</a>:</p>
+<p>Substituindo os valores na Equação <a class="reference internal" href="#equation-eq-utm-m">(50)</a>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}M= &amp; 6\,378\,137((1-0,081\,819^{2}/4-3\cdot0,081\,819^4/64-5\cdot0,081\,819^6/256)\cdot-21^\circ\cdot\pi/180\\
 &amp; -(3\cdot0,081\,819^2/8+3\cdot0,081\,819^4/32+45\cdot0,081\,819^6/1024)\cdot\sin(2\cdot-21^\circ)\\
 &amp; +(15\cdot0,081\,819/256+45\cdot0,081\,819/1024)\cdot\sin(4\cdot-21^\circ)\\
 &amp; -(35\cdot0,081\,819^6/3072)\cdot\sin(6\cdot-21^\circ))\\
 M= &amp; -2.323.076,859\,370\,594\,\text{m}\end{split}\]</div>
-<p>Aplicando os resultados nas Equações <a class="reference internal" href="#equation-eq-utmx">(44)</a>
-e <a class="reference internal" href="#equation-eq-utmy">(45)</a>:</p>
+<p>Aplicando os resultados nas Equações <a class="reference internal" href="#equation-eq-utmx">(45)</a>
+e <a class="reference internal" href="#equation-eq-utmy">(46)</a>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}x= &amp; 0,999\,6\cdot6.380.880,55(-0,032\,588\,104\,549+(1-0,147\,351\,597\,390+0,005\,873\,963\,368)\\
  &amp; -0,032\,588\,104\,549^3/6+(5-18\cdot 0,147\,351\,597\,390+0,147\,351\,597\,390^2+72\cdot0,005873963368\\
@@ -971,6 +971,9 @@ Calcular a distância entre eles?</p>
 <dt class="label" id="id36"><span class="brackets">Bha10</span></dt>
 <dd><p>B. Bhatta. <em>Global Navigation Satellite Systems</em>. BS Publications, 2010. ISBN 9788178002200.</p>
 </dd>
+<dt class="label" id="id51"><span class="brackets">Bor99</span></dt>
+<dd><p>A. C. Borges. <em>Topografia aplicada à engenharia civil: volume 1</em>. Volume 1. Editora Edgard Bluncher LTDA, São Paulo, SP, 1 edition, 1999.</p>
+</dd>
 <dt class="label" id="id23"><span class="brackets">CJ04</span></dt>
 <dd><p>J. A. Comastri and J. G. Junior. <em>Topografia aplicada</em>. Editora UFV, Viçosa, MG, 1 edition, 2004.</p>
 </dd>
@@ -983,6 +986,9 @@ Calcular a distância entre eles?</p>
 <dt class="label" id="id29"><span class="brackets"><a class="fn-backref" href="#id11">Gem99</a></span></dt>
 <dd><p>Camil Gemael. <em>Introdução à geodésia física</em>. Editora da UFPR, Curitiba, PR, 1 edition, 1999.</p>
 </dd>
+<dt class="label" id="id52"><span class="brackets">GonccalvesMS08</span></dt>
+<dd><p>J.A. Gonçalves, S. Madeira, and J.J. Souza. <em>Topografia</em>. Lidel, Lisboa, Portugal, 2 edition, 2008.</p>
+</dd>
 <dt class="label" id="id28"><span class="brackets"><a class="fn-backref" href="#id10">HWLW08</a></span></dt>
 <dd><p>Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. <em>GNSS</em>. SpringerWienNew York, Lexington, KY, 1 edition, 2008.</p>
 </dd>
@@ -994,6 +1000,9 @@ Calcular a distância entre eles?</p>
 </dd>
 <dt class="label" id="id24"><span class="brackets">LKF+98</span><span class="fn-backref">(<a href="#id3">1</a>,<a href="#id4">2</a>)</span></dt>
 <dd><p>F.G. Lemoine, S. C. Kenyon, J. K. Factor, R.G. Trimmer, N. K. Pavlis, D. S. Chinn, C. M. Cox, S. M. Klosko, S. B. Luthcke, M. H. Torrence, Y. M. Wang, R. G. Williamson, E. C. Pavlis, R. H. Rapp, and T. R. Olson. <em>The development of the joint NASA GSFC and the National Imagery and Mapping Agency (NIMA) Geopotential Model EGM96</em>. NASA technical paper. National Aeronautics and Space Administration, Goddard Space Flight Center, 1998. URL: <a class="reference external" href="https://books.google.com.br/books?id=eAMVAQAAIAAJ">https://books.google.com.br/books?id=eAMVAQAAIAAJ</a>.</p>
+</dd>
+<dt class="label" id="id50"><span class="brackets">LC95</span></dt>
+<dd><p>C. Loch and J. Cordini. <em>Topografia contemporânea</em>. Editora da UFSC, Florianópolis, SP, 3 edition, 1995.</p>
 </dd>
 <dt class="label" id="id35"><span class="brackets"><a class="fn-backref" href="#id7">Smi97</a></span></dt>
 <dd><p>J.R. Smith. <em>Introduction to Geodesy</em>. Wiley Series in Surveying and Boundary Control. Wiley, 1997. ISBN 9780471166603.</p>

@@ -20,7 +20,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Pesquisar" href="../search.html" />
-    <link rel="next" title="Capitulo 7" href="capitulo7.html" />
+    <link rel="next" title="Capitulo 5: Georreferenciamento de imóveis rurais" href="capitulo5.html" />
     <link rel="prev" title="Capitulo 3: Introdução a geodésia e cartografia" href="capitulo3.html" /> 
 </head>
 
@@ -86,6 +86,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#exercicios">Exercícios</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="capitulo5.html">Capitulo 5: Georreferenciamento de imóveis rurais</a></li>
+<li class="toctree-l1"><a class="reference internal" href="capitulo6.html">Capitulo 6: Medidas de distância</a></li>
 <li class="toctree-l1"><a class="reference internal" href="capitulo7.html">Capitulo 7</a></li>
 </ul>
 
@@ -172,7 +174,7 @@ ocorreu em 5 de dezembro de 1963.</p>
 orbitando a terra na altitude de <span class="math notranslate nohighlight">\(1.100\,\text{km}\)</span>, período orbital de 106
 min e enviando sinais em duas frequências (<span class="math notranslate nohighlight">\(150\,\text{MHz}\)</span> e <span class="math notranslate nohighlight">\(400\,\text{MHz}\)</span>). Em
 1967 o presidente dos Estados Unidos autorizou o uso comercial e privado,
-sendo fabricado mais de 80.000 receptores. Segundo <span id="id1">Hofmann-Wellenhof <em>et al.</em> [<a class="reference internal" href="capitulo3.html#id26" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span>,
+sendo fabricado mais de 80.000 receptores. Segundo <span id="id1">Hofmann-Wellenhof <em>et al.</em> [<a class="reference internal" href="capitulo1.html#id10" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span>,
 a precisão de posicionamento do sistema Transit, quando utilizando
 receptor com capacidade de rastreio de uma e de duas frequências,
 era de <span class="math notranslate nohighlight">\(100\,\text{m}\)</span> e <span class="math notranslate nohighlight">\(20\,\text{m}\)</span>, respectivamente. Este sistema tinha como limitação
@@ -180,14 +182,14 @@ a precisão e, principalmente, a baixa frequência para obter a posição,
 ou seja, não era apenas ligar o receptor em terra e já obter a coordenada,
 poderia demorar de 6 horas a 12 horas para ter satélites disponíveis
 e então obter a coordenada. Isto ocorria pelo número reduzido de satélites
-em órbita <span id="id2">[<a class="reference internal" href="capitulo3.html#id33" title="J.R. Smith. Introduction to Geodesy. Wiley Series in Surveying and Boundary Control. Wiley, 1997. ISBN 9780471166603.">Smi97</a>]</span>. Na mesma época, um sistema
+em órbita <span id="id2">[<a class="reference internal" href="capitulo1.html#id17" title="J.R. Smith. Introduction to Geodesy. Wiley Series in Surveying and Boundary Control. Wiley, 1997. ISBN 9780471166603.">Smi97</a>]</span>. Na mesma época, um sistema
 similar ao Transit, o <em>Cicata</em>, foi desenvolvido
 pela Rússia.</p>
 <p>O termo <span class="math notranslate nohighlight">\(\bf{GNSS}\)</span> (<span class="math notranslate nohighlight">\(\bf{G}\it{lobal}\)</span> <span class="math notranslate nohighlight">\(\bf{N}\it{avigation}\)</span>
 <span class="math notranslate nohighlight">\(\bf{S}\it{atellite}\)</span> <span class="math notranslate nohighlight">\(\bf{S}\it{ystems}\)</span>)
 descreve os diferentes sistemas de posicionamento por satélites, assim
 como as suas combinações para se obter o tempo, posição e velocidade
-em qualquer tempo e condição atmosférica <span id="id3">[<a class="reference internal" href="capitulo3.html#id34" title="B. Bhatta. Global Navigation Satellite Systems. BS Publications, 2010. ISBN 9788178002200.">Bha10</a>]</span>.
+em qualquer tempo e condição atmosférica <span id="id3">[<a class="reference internal" href="capitulo1.html#id18" title="B. Bhatta. Global Navigation Satellite Systems. BS Publications, 2010. ISBN 9788178002200.">Bha10</a>]</span>.
 Com o breve histórico apresentado anteriormente, percebe-se que toda
 uma base tecnológica de conhecimento estava formada para construção
 de novos GNSS. Desta forma, vários países ou nações, partiram para
@@ -205,7 +207,7 @@ Maiores detalhes destes sistemas serão apresentados em :ref:<a href="#id4"><spa
 <section id="posicionamento-por-satelite">
 <span id="posicionamento-satelite"></span><h2>Posicionamento por satélite<a class="headerlink" href="#posicionamento-por-satelite" title="Link permanente para este título"></a></h2>
 <p>Nesta secção será apresentado o princípio básico do posicionamento
-por satélite conforme explicação de <span id="id6">Hofmann-Wellenhof <em>et al.</em> [<a class="reference internal" href="capitulo3.html#id26" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span>. Como
+por satélite conforme explicação de <span id="id6">Hofmann-Wellenhof <em>et al.</em> [<a class="reference internal" href="capitulo1.html#id10" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span>. Como
 já foi dito, o GNSS fornece informação da posição de um lugar, por
 exemplo, a latitude, longitude e altitude geométrica. Para tanto,
 é necessário: uma constelação de satélites sobrevoando o espaço e
@@ -232,7 +234,7 @@ do receptor, por exemplo, a latitude, a longitude a altitude geométrica.
 A equação da distância entre cada satélite e receptor é determinada
 por:</p>
 <div class="math notranslate nohighlight" id="equation-eq-gnssdistanciasatelitereceptor">
-<span class="eqno">(50)<a class="headerlink" href="#equation-eq-gnssdistanciasatelitereceptor" title="Permalink to this equation"></a></span>\[\delta=\left\Vert \boldsymbol{\varrho^{s}-\varrho_{r}}\right\Vert\]</div>
+<span class="eqno">(51)<a class="headerlink" href="#equation-eq-gnssdistanciasatelitereceptor" title="Permalink to this equation"></a></span>\[\delta=\left\Vert \boldsymbol{\varrho^{s}-\varrho_{r}}\right\Vert\]</div>
 <figure class="align-center" id="id42">
 <span id="fig-gnss-posicion"></span><a class="reference internal image-reference" href="../_images/fig_GNSS_posicion.png"><img alt="fig_GNSS_posicion.png" src="../_images/fig_GNSS_posicion.png" style="width: 253.04999999999998px; height: 308.0px;" /></a>
 <figcaption>
@@ -278,26 +280,26 @@ temos apenas uma posição possível, a do receptor.</p>
 <figure class="align-center" id="gnssposicexemplo">
 <a class="reference internal image-reference" href="../_images/GNSSPosicExemplo.png"><img alt="GNSSPosicExemplo.png" src="../_images/GNSSPosicExemplo.png" style="width: 502.24999999999994px; height: 238.35px;" /></a>
 </figure>
-<p>Para encontrar a posição do receptor, utiliza-se a Equação <a class="reference internal" href="#equation-eq-gnssdistanciasatelitereceptor">(50)</a>,
+<p>Para encontrar a posição do receptor, utiliza-se a Equação <a class="reference internal" href="#equation-eq-gnssdistanciasatelitereceptor">(51)</a>,
 sendo, para o receptor e o satélite 1:</p>
 <div class="math notranslate nohighlight">
 \[4,123^2=\sqrt{(x_r-3)^2+(y_r-5)^2}\]</div>
 <div class="math notranslate nohighlight" id="equation-exem-a">
-<span class="eqno">(51)<a class="headerlink" href="#equation-exem-a" title="Permalink to this equation"></a></span>\[-17,001=x_r^2-6x_r+y_r^2-10y_r\]</div>
+<span class="eqno">(52)<a class="headerlink" href="#equation-exem-a" title="Permalink to this equation"></a></span>\[-17,001=x_r^2-6x_r+y_r^2-10y_r\]</div>
 <p>Para o satélite 2 e o receptor:</p>
 <div class="math notranslate nohighlight">
 \[3,606^2=\sqrt{(x_r-6)^2+(y_r-4)^2}\]</div>
 <div class="math notranslate nohighlight" id="equation-exem-b">
-<span class="eqno">(52)<a class="headerlink" href="#equation-exem-b" title="Permalink to this equation"></a></span>\[-38,997 = x_r^2-12x_r+y_r^2-8y_r\]</div>
-<p>Subtraindo a Equação <a class="reference internal" href="#equation-exem-a">(51)</a> da <a class="reference internal" href="#equation-exem-b">(52)</a> e isolando <span class="math notranslate nohighlight">\(y\)</span>:</p>
+<span class="eqno">(53)<a class="headerlink" href="#equation-exem-b" title="Permalink to this equation"></a></span>\[-38,997 = x_r^2-12x_r+y_r^2-8y_r\]</div>
+<p>Subtraindo a Equação <a class="reference internal" href="#equation-exem-a">(52)</a> da <a class="reference internal" href="#equation-exem-b">(53)</a> e isolando <span class="math notranslate nohighlight">\(y\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-exem-c">
-<span class="eqno">(53)<a class="headerlink" href="#equation-exem-c" title="Permalink to this equation"></a></span>\[y_r = -10,998+3x_r\]</div>
-<p>Substituindo <a class="reference internal" href="#equation-exem-c">(53)</a>  em <a class="reference internal" href="#equation-exem-a">(51)</a> :</p>
+<span class="eqno">(54)<a class="headerlink" href="#equation-exem-c" title="Permalink to this equation"></a></span>\[y_r = -10,998+3x_r\]</div>
+<p>Substituindo <a class="reference internal" href="#equation-exem-c">(54)</a>  em <a class="reference internal" href="#equation-exem-a">(52)</a> :</p>
 <div class="math notranslate nohighlight">
 \[x_r^2-6x_r+(-10,998+3x_r)^2-10(-10,998+3x_r) = -17,001\]</div>
 <div class="math notranslate nohighlight" id="equation-exem-d">
-<span class="eqno">(54)<a class="headerlink" href="#equation-exem-d" title="Permalink to this equation"></a></span>\[10x_r^2-101,988x_r+247,935=0\]</div>
-<p>A Equação <a class="reference internal" href="#equation-exem-d">(54)</a> é do tipo polinomial do segundo grau, sendo
+<span class="eqno">(55)<a class="headerlink" href="#equation-exem-d" title="Permalink to this equation"></a></span>\[10x_r^2-101,988x_r+247,935=0\]</div>
+<p>A Equação <a class="reference internal" href="#equation-exem-d">(55)</a> é do tipo polinomial do segundo grau, sendo
 suas raízes. A equação do segundo grau, <span class="math notranslate nohighlight">\(ax^{2}+bx+x=0\)</span>, tem raízes: <span class="math notranslate nohighlight">\(\displaystyle {x=\frac{-b\pm\sqrt{b^{2}-4ac}}{2a}}\)</span>
 . Logo, <span class="math notranslate nohighlight">\(x_{r1}=4\)</span> e <span class="math notranslate nohighlight">\(x_{r2}=6,2\)</span>. Por fim, substituindo as raízes na Equação
 (a) ou (b) encontram-se, <span class="math notranslate nohighlight">\(y_{r1}=1\)</span> e <span class="math notranslate nohighlight">\(y_{r2}=7,6\)</span>. Ou seja, temos
@@ -318,7 +320,7 @@ a distância calculada pelos receptores não será a distância geométrica,
 mais sim ao que se denomina pseudodistância
 <span class="math notranslate nohighlight">\((R)\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-eq-gnsspseudodistancia">
-<span class="eqno">(55)<a class="headerlink" href="#equation-eq-gnsspseudodistancia" title="Permalink to this equation"></a></span>\[R=\varrho+\Delta\varrho=\varrho+c\delta\]</div>
+<span class="eqno">(56)<a class="headerlink" href="#equation-eq-gnsspseudodistancia" title="Permalink to this equation"></a></span>\[R=\varrho+\Delta\varrho=\varrho+c\delta\]</div>
 <p>O sistema passa agora a ter quatro variáveis desconhecidas, a posição,
 três variáveis <span class="math notranslate nohighlight">\((x_{r},\,y_{r},\,z_{r})\)</span>, mais a variável erro do
 relógio <span class="math notranslate nohighlight">\((\delta)\)</span>, fazendo com que sejam necessários pelo menos
@@ -334,7 +336,7 @@ R_{4} &amp; =\sqrt{(x_{4}-x_{r})^{2}+(y_{4}-y_{r})^{2}+(z_{4}-z_{r})^{2}}+c\delt
 <p>As Equações acima são do tipo não lineares,
 onde as variáveis <span class="math notranslate nohighlight">\(x_{r}\)</span>, <span class="math notranslate nohighlight">\(y_{r}\)</span>, <span class="math notranslate nohighlight">\(z_{r}\)</span>
 e <span class="math notranslate nohighlight">\(\delta\)</span> podem ser estimadas de diferentes métodos, por exemplo,
-pelo método iterativo, baseando-se na sua linearização <span id="id7">[<a class="reference internal" href="capitulo3.html#id35" title="E.D. Kaplan and J.L. Leva. Fundamentals of satellite navigation. In E.D. Kaplan and C.J. Hegarty, editors, Understanding GPS, pages 21–65. Artech House, 2006. URL: http://pt.scribd.com/doc/57135596/208/Other-Satellite-Navigation-Systems$\#$outer\_page\_618.">KL06</a>]</span>.</p>
+pelo método iterativo, baseando-se na sua linearização <span id="id7">[<a class="reference internal" href="capitulo1.html#id19" title="E.D. Kaplan and J.L. Leva. Fundamentals of satellite navigation. In E.D. Kaplan and C.J. Hegarty, editors, Understanding GPS, pages 21–65. Artech House, 2006. URL: http://pt.scribd.com/doc/57135596/208/Other-Satellite-Navigation-Systems$\#$outer\_page\_618.">KL06</a>]</span>.</p>
 </section>
 <section id="segmentos-gnss">
 <h2>Segmentos GNSS<a class="headerlink" href="#segmentos-gnss" title="Link permanente para este título"></a></h2>
@@ -466,7 +468,7 @@ das estações são coletadas, e então calculadas as órbitas e parâmetros
 dos relógios dos satélites.  As informações das efemérides e do relógio
 dos satélites, calculadas pela estação <em>master</em>, são retransmitidas
 aos satélites, pelo menos três vezes ao dia, para atualização. Segundo
-<span id="id9">Hofmann-Wellenhof <em>et al.</em> [<a class="reference internal" href="capitulo3.html#id26" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span> até 2006 mais 11 estações monitoras se somaram
+<span id="id9">Hofmann-Wellenhof <em>et al.</em> [<a class="reference internal" href="capitulo1.html#id10" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span> até 2006 mais 11 estações monitoras se somaram
 ao segmento de controle GPS.</p>
 </section>
 <section id="glonass">
@@ -481,7 +483,7 @@ número de satélites, caindo ao número mínimo em 2001, com no máximo
 6 satélites em órbita e funcionando. Atualmente o GLONASS conta com
 24 satélites <a class="reference external" href="https://www.glonass-iac.ru/en/cus/">(aqui para dados atualizados)</a>,
 sendo 21 em operação, e os demais estão de reserva, em manutenção
-ou em avaliação <span id="id10">[<a class="reference internal" href="capitulo3.html#id36" title="Federal Space Agency. Federal space agency - glonass. 2021. [Online; acessado 10-out-2021]. URL: http://www.glonass-center.ru/en/GLONASS/.">FederalSAgency21</a>]</span>. Eles têm uma inclinação em relação
+ou em avaliação <span id="id10">[<a class="reference internal" href="capitulo1.html#id20" title="Federal Space Agency. Federal space agency - glonass. 2021. [Online; acessado 10-out-2021]. URL: http://www.glonass-center.ru/en/GLONASS/.">FederalSAgency21</a>]</span>. Eles têm uma inclinação em relação
 ao equador de <span class="math notranslate nohighlight">\(64,8^{\circ}\)</span>, orbitando a terra na altitude de 19.100 m,
 resultando em uma órbita ao redor da terra a cada 11 horas e 15 min
 e 44 s. Os planos orbitais estão separados em <span class="math notranslate nohighlight">\(120^{\circ}\)</span> (três
@@ -505,7 +507,7 @@ repectivamente <span class="math notranslate nohighlight">\(1.602\,\text{MHz}\)<
 são os canais de frequência. Nestas duas frequências são enviados
 códigos um para uso civil (C/A) e outra para uso militar (P), disponibilizando
 dois tipos de serviços, semelhante ao SPS e PPS do GPS.</p>
-<p>Segundo <span id="id11">Feairheller and Clark [<a class="reference internal" href="capitulo3.html#id37" title="Scott Feairheller and Richard Clark. Other satellite navigation systems. In E.D. Kaplan and C.J. Hegarty, editors, Understanding GPS, pages 595–634. Artech House, 2006. URL: http://pt.scribd.com/doc/57135596/208/Other-Satellite-Navigation-Systems$\#$outer\_page\_618.">FC06</a>]</span>, o segmento controle
+<p>Segundo <span id="id11">Feairheller and Clark [<a class="reference internal" href="capitulo1.html#id21" title="Scott Feairheller and Richard Clark. Other satellite navigation systems. In E.D. Kaplan and C.J. Hegarty, editors, Understanding GPS, pages 595–634. Artech House, 2006. URL: http://pt.scribd.com/doc/57135596/208/Other-Satellite-Navigation-Systems$\#$outer\_page\_618.">FC06</a>]</span>, o segmento controle
 do GLONASS é subdividido em: <em>i</em>) Sistema de controle central
 (SCC, <em>System control center</em>) localizado em Golitsyno-2 a
 70 km de Moscou, um complexo militar, responsável pela coordenação
@@ -534,7 +536,7 @@ Commission</em>) com a Agência Espacial Europeia (ESA, <em>European
 Space Agency</em>). A EC é responsável pelo dimensionamento político e
 os requisitos necessários para o sistema. Já a ESA, tem como responsabilidade
 a definição, o desenvolvimento e a validação do segmento espacial
-e de terra <span id="id12">[<a class="reference internal" href="capitulo3.html#id38" title="European Space Agency. Galileu navegation. 2021. [Online; acessado 10-out-2021]. URL: http://www.esa.int/esaNA/galileo.html.">EuropeanSAgency21</a>]</span>. O sistema Galileu teve sua concepção
+e de terra <span id="id12">[<a class="reference internal" href="capitulo1.html#id22" title="European Space Agency. Galileu navegation. 2021. [Online; acessado 10-out-2021]. URL: http://www.esa.int/esaNA/galileo.html.">EuropeanSAgency21</a>]</span>. O sistema Galileu teve sua concepção
 inicial nos anos 90, quando o GPS e o GLONASS já estavam quase em
 funcionamento completo.</p>
 <figure class="align-center" id="id46">
@@ -544,19 +546,19 @@ funcionamento completo.</p>
 </figcaption>
 </figure>
 <p>Em outubro de 2021 haviam 22 satélites em funcionamento(Informações atualizadas <a class="reference external" href="http://www.esa.int/Our_Activities/Navigation/The_future_-_Galileo/What_is_Galileo">aqui</a>.
-De acordo com <span id="id14">Falcone <em>et al.</em> [<a class="reference internal" href="capitulo3.html#id39" title="Marco Falcone, Philippe Erhard, and Hein Guenter W. Galileo. In E.D. Kaplan and C.J. Hegarty, editors, Understanding GPS, pages 559–594. Artech House, 2006. URL: http://pt.scribd.com/doc/57135596/208/Other-Satellite-Navigation-Systems$\#$outer\_page\_618 acessado em 12/08/2012.">FEW06</a>]</span>, quando o sistema
+De acordo com <span id="id14">Falcone <em>et al.</em> [<a class="reference internal" href="capitulo1.html#id23" title="Marco Falcone, Philippe Erhard, and Hein Guenter W. Galileo. In E.D. Kaplan and C.J. Hegarty, editors, Understanding GPS, pages 559–594. Artech House, 2006. URL: http://pt.scribd.com/doc/57135596/208/Other-Satellite-Navigation-Systems$\#$outer\_page\_618 acessado em 12/08/2012.">FEW06</a>]</span>, quando o sistema
 espacial estiver em plena operação terá de 30 satélites em três planos
 orbitais igualmente espaçados, cada plano com 9 satélites ativos e
 um de reserva, espaçados em <span class="math notranslate nohighlight">\(40^\circ\)</span>. A órbita tem inclinação
-de <span class="math notranslate nohighlight">\(56^\circ\)</span> no plano do equador <span id="id15">[<a class="reference internal" href="capitulo3.html#id38" title="European Space Agency. Galileu navegation. 2021. [Online; acessado 10-out-2021]. URL: http://www.esa.int/esaNA/galileo.html.">EuropeanSAgency21</a>]</span>. A altitude
+de <span class="math notranslate nohighlight">\(56^\circ\)</span> no plano do equador <span id="id15">[<a class="reference internal" href="capitulo1.html#id22" title="European Space Agency. Galileu navegation. 2021. [Online; acessado 10-out-2021]. URL: http://www.esa.int/esaNA/galileo.html.">EuropeanSAgency21</a>]</span>. A altitude
 de <span class="math notranslate nohighlight">\(23.222\)</span> km resultará em uma órbita a cada 14 horas. É esperado
 que existirá uma alta probabilidade (maior que 90%) que em qualquer
 posição e altitude, o usuário vá receber sinal de pelo menos 4 satélites.
-Segundo <span id="id16">Hofmann-Wellenhof <em>et al.</em> [<a class="reference internal" href="capitulo3.html#id26" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span>, as frequencias enviadas pelo sistema
+Segundo <span id="id16">Hofmann-Wellenhof <em>et al.</em> [<a class="reference internal" href="capitulo1.html#id10" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span>, as frequencias enviadas pelo sistema
 Galileu são: E1 (<span class="math notranslate nohighlight">\(1.575,420\)</span> MHz); E6 (<span class="math notranslate nohighlight">\(1.278,750\)</span> MHz); E5 (<span class="math notranslate nohighlight">\(1.191,795\)</span>
 MHz); E5a (<span class="math notranslate nohighlight">\(1.176,450\)</span> MHz) e; E5b (<span class="math notranslate nohighlight">\(1.207,140\)</span> MHz)</p>
 <p>São cinco os serviços que serão disponibilizados pelo sistema Galileu
-para os usuários <span id="id17">[<a class="reference internal" href="capitulo3.html#id40" title="European Union. Galileo. Publications Office of the European Union, 2002. URL: http://ec.europa.eu/dgs/energy\_transport/galileo/doc/galileo\_hld\_v3\_23\_09\_02.pdf.">Uni02</a>]</span>: <em>i</em>) serviço
+para os usuários <span id="id17">[<a class="reference internal" href="capitulo1.html#id24" title="European Union. Galileo. Publications Office of the European Union, 2002. URL: http://ec.europa.eu/dgs/energy\_transport/galileo/doc/galileo\_hld\_v3\_23\_09\_02.pdf.">Uni02</a>]</span>: <em>i</em>) serviço
 aberto (<em>open service</em>), que tem como objetivo prover informação
 de posição, velocidade e tempo sem custo algum para o usuário; <em>ii</em>)
 serviço comercial (<em>commercial service</em>), que possibilitará
@@ -568,7 +570,7 @@ regulated navigation</em>), um serviço em que o sinal é encriptado e apenas
 os usuários autorizados terão acesso a este sinal; e <em>v</em>) serviço
 de busca e resgate (<em>Search and Rescue Service</em>), utilizado
 para localização e resgate de usuários que utilizam rádio sinalizadores.</p>
-<p>Segundo <span id="id18">Falcone <em>et al.</em> [<a class="reference internal" href="capitulo3.html#id39" title="Marco Falcone, Philippe Erhard, and Hein Guenter W. Galileo. In E.D. Kaplan and C.J. Hegarty, editors, Understanding GPS, pages 559–594. Artech House, 2006. URL: http://pt.scribd.com/doc/57135596/208/Other-Satellite-Navigation-Systems$\#$outer\_page\_618 acessado em 12/08/2012.">FEW06</a>]</span>, o sistema Galileu tem
+<p>Segundo <span id="id18">Falcone <em>et al.</em> [<a class="reference internal" href="capitulo1.html#id23" title="Marco Falcone, Philippe Erhard, and Hein Guenter W. Galileo. In E.D. Kaplan and C.J. Hegarty, editors, Understanding GPS, pages 559–594. Artech House, 2006. URL: http://pt.scribd.com/doc/57135596/208/Other-Satellite-Navigation-Systems$\#$outer\_page\_618 acessado em 12/08/2012.">FEW06</a>]</span>, o sistema Galileu tem
 dois segmentos de controle principal em terra, o segmento de controle
 em terra (GCS, <em>Ground Control Segment</em>) que irá controlar
 e comandar a constelação de satélites e, o segmento de missão em terra
@@ -621,11 +623,11 @@ entre <span class="math notranslate nohighlight">\(32.000\)</span> km a <span cl
 E. O QZSS além do segmento espacial, consta do: segmento de controle,
 que compreende estações de monitoramento; uma estação de controle
 principal; estação de controle e rastreamento; e estação de administração
-do tempo <span id="id21">[<a class="reference internal" href="capitulo3.html#id41" title="Japan Aerospace Exploration Agency. Interface specification for QZSS. 2021. [Online; acessado 10-jul-2021]. URL: https://global.jaxa.jp/projects/sat/qzss/.">JapanAEAgency21</a>]</span>.</p>
+do tempo <span id="id21">[<a class="reference internal" href="capitulo1.html#id25" title="Japan Aerospace Exploration Agency. Interface specification for QZSS. 2021. [Online; acessado 10-jul-2021]. URL: https://global.jaxa.jp/projects/sat/qzss/.">JapanAEAgency21</a>]</span>.</p>
 <p>O sistema de navegação por satélite indiano (IRNSS,
 <em>Indian Regional Navigational Satellite System</em>) constituído
 de 7 satélites, sendo que o primeiro tem a estimativa de ser lançado
-em 2012-13 <span id="id22">[<a class="reference internal" href="capitulo3.html#id43" title="Indian Space Research Organization. Future programme. 2012. [Online; acessado 20-jun-2012]. URL: irnss.">IndianSROrganization12</a>]</span>. Como o sistema GPS, serão disponibilizados
+em 2012-13 <span id="id22">[<a class="reference internal" href="capitulo1.html#id27" title="Indian Space Research Organization. Future programme. 2012. [Online; acessado 20-jun-2012]. URL: irnss.">IndianSROrganization12</a>]</span>. Como o sistema GPS, serão disponibilizados
 os serviço SPS e PS.</p>
 </section>
 </section>
@@ -720,7 +722,7 @@ de suas posições, podem não resultar nas suas corretas posições no
 espaço. O erro da posição da órbita é avaliado pelas estações de controle
 em solo, e são disponibilizadas para pós-processamento, minimizando
 este erro. Dependendo do nível de precisão das órbitas que se deseja,
-pode-se levar até duas semanas para estarem disponíveis <span id="id26">[<a class="reference internal" href="capitulo3.html#id25" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>.
+pode-se levar até duas semanas para estarem disponíveis <span id="id26">[<a class="reference internal" href="capitulo1.html#id9" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>.
 Outra forma de anular este erro é por meio do posicionamento relativo
 (ver <span class="xref std std-ref">Posicionamento relativo:</span>).</p></li>
 </ol>
@@ -778,7 +780,7 @@ definido como o centro eletrônico da antena, varia com a orientação
 e a frequência do sinal. É necessário que ele corresponda ao centro
 físico da antena, sendo que nem sempre isto ocorre. Para levantamentos
 de alta precisão é necessário conhecer este desvio para correção.
-Procedimento para esta avaliação é encontrado em <span id="id28">Hofmann-Wellenhof <em>et al.</em> [<a class="reference internal" href="capitulo3.html#id26" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span>.</p></li>
+Procedimento para esta avaliação é encontrado em <span id="id28">Hofmann-Wellenhof <em>et al.</em> [<a class="reference internal" href="capitulo1.html#id10" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span>.</p></li>
 </ul>
 </li>
 <li><p><strong>Erro do relógio</strong>: os relógios presentes nos receptores GNSS não são de alta precisão como
@@ -797,7 +799,7 @@ a obra de construção civil e a superfície terrestre.</p>
 satélite-receptor (<span class="math notranslate nohighlight">\(\varrho\)</span>). O multicaminhamento pode ser de tal
 grandeza que o receptor não possa mais contar com a informação de
 determinado satélite, para o posicionamento do ponto. Maneiras para
-mitigar o multicaminhamento podem ser encontrados em <span id="id29">Ward <em>et al.</em> [<a class="reference internal" href="capitulo3.html#id42" title="Phillip W. Ward, John W. Betz, and Hegarty Christopher J. Interference, multipath, and scintillation. In E.D. Kaplan and C.J. Hegarty, editors, Understanding GPS, pages 243–299. Artech House, 2006. URL: http://pt.scribd.com/doc/57135596/208/Other-Satellite-Navigation-Systems$\#$outer\_page\_618.">WBJ06</a>]</span>.
+mitigar o multicaminhamento podem ser encontrados em <span id="id29">Ward <em>et al.</em> [<a class="reference internal" href="capitulo1.html#id26" title="Phillip W. Ward, John W. Betz, and Hegarty Christopher J. Interference, multipath, and scintillation. In E.D. Kaplan and C.J. Hegarty, editors, Understanding GPS, pages 243–299. Artech House, 2006. URL: http://pt.scribd.com/doc/57135596/208/Other-Satellite-Navigation-Systems$\#$outer\_page\_618.">WBJ06</a>]</span>.
 Pode-se citar, por exemplo, como uma maneira simples para minimizar
 o efeito do multicaminhamento devido à superfície refletora, a instalação
 da antena próxima a superfície.</p>
@@ -817,7 +819,7 @@ da antena próxima a superfície.</p>
 <h3>Terminologia<a class="headerlink" href="#terminologia" title="Link permanente para este título"></a></h3>
 <p>Não há um concenso quanto terminologia utilizada às diferentes técnicas
 de posicionamento GNSS. Aqui será utilizada a terminologia adotada
-por <span id="id30">Hofmann-Wellenhof <em>et al.</em> [<a class="reference internal" href="capitulo3.html#id26" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span>. No posicionamento, as medidas de pseudodistância
+por <span id="id30">Hofmann-Wellenhof <em>et al.</em> [<a class="reference internal" href="capitulo1.html#id10" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span>. No posicionamento, as medidas de pseudodistância
 podem ser obtidas de duas formas, por meio dos <strong>códigos</strong> (ver
 secção <a class="reference internal" href="#posicionamento-por-ponto"><span class="std std-ref">Posicionamento por ponto</span></a>) ou da medida
 de <strong>fase da onda portadora</strong> (ver ver <a class="reference internal" href="#pseudodistancia-por-fase-da-onda-portadora"><span class="std std-ref">Pseudodistância por fase da onda portadora</span></a>).
@@ -864,10 +866,10 @@ A precisão deste tipo de posicionamento depende da qualidade do sinal.
 No posicionamento por ponto no GPS, utilizando o código C/A, antes
 de maio de 2000, com disponibilidade seletiva (SA)
 em funcionamento, a precisão era em torno de 100 m na horizontal
-e 156 m na vertical, ao nível de 95% de probabilidade <span id="id32">[<a class="reference internal" href="capitulo3.html#id25" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span> [p. 346].
+e 156 m na vertical, ao nível de 95% de probabilidade <span id="id32">[<a class="reference internal" href="capitulo1.html#id9" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span> [p. 346].
 Quando ela foi desabilitada, a precisão aumentou, para velares menores
 que 13 m na horizontal, e menores que 22 m na vertical, a 95% de
-probabilidade  <span id="id33">Hofmann-Wellenhof <em>et al.</em> [<a class="reference internal" href="capitulo3.html#id26" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span> [p. 317], sendo esta a precisão obtida
+probabilidade  <span id="id33">Hofmann-Wellenhof <em>et al.</em> [<a class="reference internal" href="capitulo1.html#id10" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span> [p. 317], sendo esta a precisão obtida
 atualmente.</p>
 <figure class="align-center" id="id49">
 <span id="gnssposiabsoluto"></span><a class="reference internal image-reference" href="../_images/GNSSposiabsoluto.png"><img alt="GNSSposiabsoluto.png" src="../_images/GNSSposiabsoluto.png" style="width: 313.95px; height: 242.2px;" /></a>
@@ -901,11 +903,11 @@ suas respectivas pseudoditâncias aos satélites, e assim calcular as
 suas coordenadas com maior precisão. O DGNSS pode ser realizado por
 meio de receptores que trabalham com códigos ou com medidas de fase
 da onda portadora. Valores de precisão do levantamento DGNSS são apresentados
-na Tabela abaixo <span id="id34">[<a class="reference internal" href="capitulo3.html#id26" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span> [p. 437].
+na Tabela abaixo <span id="id34">[<a class="reference internal" href="capitulo1.html#id10" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span> [p. 437].
 Quando se utiliza as medidas de fase da onda portadora, este posicionamento
 é denominado de levantamento cinemático em tempo real
 (<em>real-time kinematic</em>, RTK)
-<span id="id35">[<a class="reference internal" href="capitulo3.html#id25" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>.</p>
+<span id="id35">[<a class="reference internal" href="capitulo1.html#id9" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>.</p>
 <figure class="align-center" id="id50">
 <span id="gnssposidgnss"></span><a class="reference internal image-reference" href="../_images/GNSSposiDGNSS.png"><img alt="GNSSposiDGNSS.png" src="../_images/GNSSposiDGNSS.png" style="width: 421.75px; height: 252.35px;" /></a>
 <figcaption>
@@ -959,8 +961,8 @@ O tempo para coleta dos dados depende do número de fases medidas e
 da distância que separa os receptores. Sugestões de tempo para obtenção
 da posição é apresentada na Tabela abaixo,
 sendo considerado pelo menos quatro satélites visíveis, condição atmosférica
-normal e boa geometria dos satélites <span id="id38">[<a class="reference internal" href="capitulo3.html#id26" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span> [p. 438].
-Segundo <span id="id39">[<a class="reference internal" href="capitulo3.html#id25" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span> [p. 361], a precisão deste tipo de posicionamento
+normal e boa geometria dos satélites <span id="id38">[<a class="reference internal" href="capitulo1.html#id10" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span> [p. 438].
+Segundo <span id="id39">[<a class="reference internal" href="capitulo1.html#id9" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span> [p. 361], a precisão deste tipo de posicionamento
 é de aproximadamente <span class="math notranslate nohighlight">\(\pm(3\,\text{mm}+1\,\text{ppm})\)</span>.</p>
 <table class="colwidths-auto docutils align-default" id="id52">
 <caption><span class="caption-number">Table 4 </span><span class="caption-text">Tempo para aquisição da posição pelo método relativo estático.</span><a class="headerlink" href="#id52" title="Permalink to this table"></a></caption>
@@ -1077,7 +1079,7 @@ SW ou NW com relação à coordenada do marco? Explique.</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
         <a href="capitulo3.html" class="btn btn-neutral float-left" title="Capitulo 3: Introdução a geodésia e cartografia" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="capitulo7.html" class="btn btn-neutral float-right" title="Capitulo 7" accesskey="n" rel="next">Seguinte <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="capitulo5.html" class="btn btn-neutral float-right" title="Capitulo 5: Georreferenciamento de imóveis rurais" accesskey="n" rel="next">Seguinte <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
