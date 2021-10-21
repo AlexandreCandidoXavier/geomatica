@@ -588,7 +588,8 @@ medido a partir do eixo-:math:`y` positivo, e o sentido de contagem angular
    Coordenadas polares para os pontos A e C da :numref:`figcoordretangular`.
 
 
-**Coordenada polar para retangular**
+Coordenada polar para retangular
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A transformação de coordenada polar para retangular pode ser deduzida
 a partir da :numref:`figPolar2Retangular`. Considere
@@ -641,7 +642,10 @@ Como era esperado, a coordenada retangular de C é a mesma apresentada na :numre
 
 ----
 
-**Coordenada retangular para polar**
+.. _Coordenada retangular para polar:
+
+Coordenada retangular para polar
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Agora será apresentada a transformação de coordenada retangular para
 polar. Para tanto utilizaremos mais uma vez o esquema da :numref:`figPolar2Retangular`.
@@ -1154,9 +1158,3 @@ internos.
 :math:`\hat{b}=52,549^\circ`; :math:`\hat{c}=90^\circ`.
 
 ----
-
-**Referências**
-
-.. bibliography::
-
-

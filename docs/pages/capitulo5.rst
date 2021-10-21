@@ -277,10 +277,15 @@ Exercícios
 
 :exem:`1)` O que é o georreferenciamento de imóveis rurais?
 
+----
 
 :exem:`2)` Quais são os prazos para o georreferenciamento
 de imóveis rurais?
 
+----
+
 :exem:`3)` Quais são os tipos de vértices que podemos
 ter no georreferenciamento de imóveis rurais? Como é realizada a sua
 codificação?
+
+----

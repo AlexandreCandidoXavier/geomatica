@@ -1134,3 +1134,6 @@ um receptor GNSS, e este mostrou a coordenada :math:`E= 595.650,0\,\text{m}` e
 SW ou NW com relação à coordenada do marco? Explique. 
 
 :exem:`Resp.`: SW.
+
+----
+

@@ -1122,6 +1122,3 @@ Calcular a distância entre eles?
 
 .. [#f1] baixar em: https://www.usna.edu/Users/oceano/pguth/md_help/html/egm96.htm}},
 
-**Referências**
-
-.. bibliography::

@@ -20,6 +20,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Pesquisar" href="../search.html" />
+    <link rel="next" title="Capitulo 8: Poligonal" href="capitulo8.html" />
     <link rel="prev" title="Capitulo 6: Medidas de distância" href="capitulo6.html" /> 
 </head>
 
@@ -59,10 +60,26 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#meridiano">Meridiano</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#azimute">Azimute</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rumo">Rumo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#conversao-de-azimutes-em-rumos">Conversão de azimutes em rumos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#erro-angular-de-fechamento">Erro angular de fechamento</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#compensacao-do-erro-angular">Compensação do erro angular</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#calculo-do-azimute-a-partir-dos-angulos-internos-a-direita">Cálculo do azimute a partir dos ângulos internos à direita</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#calculo-do-azimute-a-partir-da-deflexao">Cálculo do azimute a partir da deflexão</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#calculo-do-azimute-a-partir-das-coordenadas-retangulares">Cálculo do azimute a partir das coordenadas retangulares</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#medidas-de-azimute-em-campo">Medidas de azimute em campo</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#declinacao-magnetica">Declinação magnética</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#angulo-vertical">Ângulo vertical</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#medicao-do-angulo-vertical">Medição do ângulo vertical</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#exercicios">Exercícios</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="capitulo8.html">Capitulo 8: Poligonal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="referencias.html">Referências</a></li>
 </ul>
 
         </div>
@@ -128,10 +145,10 @@ horizontal, pode ser fixo em qualquer direção, ficando independente
 do movimento da luneta. Com o círculo horizontal, o ângulo horizontal
 entre dois pontos qualquer pode ser medido <span class="math notranslate nohighlight">\((\alpha)\)</span>, onde os procedimentos
 para a sua medição são apresentados na Secção ref{subsec:Medicao-do-=0000E2ngulo}.</p>
-<figure class="align-center" id="id8">
+<figure class="align-center" id="id29">
 <span id="fig-esquemateodo-png"></span><a class="reference internal image-reference" href="../_images/fig_esquemateodo.png"><img alt="fig_esquemateodo.png" src="../_images/fig_esquemateodo.png" style="width: 602.25px; height: 693.75px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 55 </span><span class="caption-text">Esquema de um teodolito com os círculos vertical e horizontal.</span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 55 </span><span class="caption-text">Esquema de um teodolito com os círculos vertical e horizontal.</span><a class="headerlink" href="#id29" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>Com relação ao ângulo vertical, quando o equipamento está nivelado,
@@ -154,10 +171,10 @@ ao início e ao final das medidas, denominamos de alinhamentos de <strong>ré</s
 e <strong>vante</strong>. Para este exemplo, AE é o alinhamento de ré e AB
 o de vante. O ângulo <span class="math notranslate nohighlight">\(\alpha\)</span> pode ser calculado subtraindo a medida
 do ângulo horizontal de vante da medida de ré.</p>
-<figure class="align-center" id="id9">
+<figure class="align-center" id="id30">
 <span id="fig-introangulo-png"></span><a class="reference internal image-reference" href="../_images/fig_introangulo.png"><img alt="fig_introangulo.png" src="../_images/fig_introangulo.png" style="width: 452.1px; height: 420.20000000000005px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 56 </span><span class="caption-text">Leitura do ângulos internos <span class="math notranslate nohighlight">\(\mathrm{EAB}\)</span>.</span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 56 </span><span class="caption-text">Leitura do ângulos internos <span class="math notranslate nohighlight">\(\mathrm{EAB}\)</span>.</span><a class="headerlink" href="#id30" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -171,7 +188,7 @@ de várias medidas de <span class="math notranslate nohighlight">\(\alpha\)</spa
 (ver secção ref{sec:=0000C2ngulo-vertical}, página pageref{sec:=0000C2ngulo-vertical}).
 Neste texto será apresentado o método das direções, que é o previsto
 para ser utilizado pela citeonline{NBR13133} na medição de ângulos.
-Para outros métodos, pode-se consultar, <span id="id1">Loch and Cordini [<a class="reference internal" href="capitulo3.html#id50" title="C. Loch and J. Cordini. Topografia contemporânea. Editora da UFSC, Florianópolis, SP, 3 edition, 1995.">LC95</a>]</span>, <span id="id2">Gonçalves <em>et al.</em> [<a class="reference internal" href="capitulo3.html#id52" title="J.A. Gonçalves, S. Madeira, and J.J. Souza. Topografia. Lidel, Lisboa, Portugal, 2 edition, 2008.">GonccalvesMS08</a>]</span> e <span id="id3">Wolf and Ghilani [<a class="reference internal" href="capitulo3.html#id27" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>.</p>
+Para outros métodos, pode-se consultar, <span id="id1">Loch and Cordini [<a class="reference internal" href="referencias.html#id31" title="C. Loch and J. Cordini. Topografia contemporânea. Editora da UFSC, Florianópolis, SP, 3 edition, 1995.">LC95</a>]</span>, <span id="id2">Gonçalves <em>et al.</em> [<a class="reference internal" href="referencias.html#id33" title="J.A. Gonçalves, S. Madeira, and J.J. Souza. Topografia. Lidel, Lisboa, Portugal, 2 edition, 2008.">GonccalvesMS08</a>]</span> e <span id="id3">Wolf and Ghilani [<a class="reference internal" href="referencias.html#id8" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>.</p>
 <section id="metodo-das-direcoes">
 <h4>Método das direções<a class="headerlink" href="#metodo-das-direcoes" title="Link permanente para este título"></a></h4>
 <p>Considere os alinhamentos apresentados na Figura ref{fig:introangulo}.
@@ -201,10 +218,10 @@ utiliza-se o teodolito do tipo ótico mecânico. Uma vez que o método
 das direções visa medir os ângulos horizontais em diferentes posições
 do limbo destes equipamentos. Para maiores informações, consultar
 cite:t:<cite>NBR13133</cite>, página 3.</p>
-<figure class="align-center" id="id10">
+<figure class="align-center" id="id31">
 <span id="fig-metododasdirecoes-png"></span><a class="reference internal image-reference" href="../_images/fig_metododasdirecoes.png"><img alt="fig_metododasdirecoes.png" src="../_images/fig_metododasdirecoes.png" style="width: 449.55px; height: 412.2px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 57 </span><span class="caption-text">Exemplo de anotações para medida de ângulo pelo método das direções.</span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 57 </span><span class="caption-text">Exemplo de anotações para medida de ângulo pelo método das direções.</span><a class="headerlink" href="#id31" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -238,11 +255,11 @@ respectivamente. Os ângulo de deflexão têm variação de <span class="math no
 As medidas de ângulos de deflexão são as mais utilizadas para a locação
 de estradas, dutos, canais de irrigação, etc. Em algumas estações
 totais, é possível configurá-la para trabalhar com este tipo de ângulo.</p>
-<figure class="align-center" id="id11">
+<figure class="align-center" id="id32">
 <span id="fig-exemploangulodexaointerno-png"></span><a class="reference internal image-reference" href="../_images/fig_ExemploAnguloDexaoInterno.png"><img alt="fig_ExemploAnguloDexaoInterno.png" src="../_images/fig_ExemploAnguloDexaoInterno.png" style="width: 408.85px; height: 555.75px;" /></a>
 <figcaption>
 <p><span class="caption-number">Figura 58 </span><span class="caption-text">Exemplo de poligonais medidas por ângulos internos à direita (a)
-e por de deflexão (b). DD  é a deflexão à direita e DE  deflexão à esquerda.</span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
+e por de deflexão (b). DD  é a deflexão à direita e DE  deflexão à esquerda.</span><a class="headerlink" href="#id32" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -286,22 +303,839 @@ O meridiano pode ser quaisquer dos apresentados na secção <a class="reference 
 <strong>azimute de vante</strong>. Na <a class="reference internal" href="#fig-azimutevantere-png"><span class="std std-numref">Figura 59</span></a> a
 são observados os azimutes de vante OA, OB, OC OD, respectivamente,
 de <span class="math notranslate nohighlight">\(45^\circ\)</span>, <span class="math notranslate nohighlight">\(160^\circ\)</span>, <span class="math notranslate nohighlight">\(230^\circ\)</span> e <span class="math notranslate nohighlight">\(300^\circ\)</span>.</p>
-<p>O <a href="#id6"><span class="problematic" id="id7">**</span></a>azimute de ré} index{Azimute!de ré} do alinhamento OA
-(vante) é o azimute de AO, ou seja, quando o azimute do alinhamento
+<p>O <strong>azimute</strong> de ré do alinhamento OA (vante) é o azimute de AO, ou seja,
+quando o azimute do alinhamento
 é medido do final para o início do alinhamento. Quando se conhece
 o azimute de vante um alinhamento, o seu azimute de ré pode ser calculado:
 i) subtraindo-se o azimute de <span class="math notranslate nohighlight">\(180^\circ\)</span> se ele estiver entre <span class="math notranslate nohighlight">\(180^\circ\)</span> e <span class="math notranslate nohighlight">\(360^\circ\)</span>
 ou; ii) somando-se ao azimute <span class="math notranslate nohighlight">\(180^\circ\)</span>, se ele estiver <span class="math notranslate nohighlight">\(0^\circ\)</span> e <span class="math notranslate nohighlight">\(180^\circ\)</span>.
-Na Figura ref{fig:azimute_vante_re}b é apresentado o alinhamento
+Na <a class="reference internal" href="#fig-azimutevantere-png"><span class="std std-numref">Figura 59</span></a> b é apresentado o alinhamento
 OA com azimute de vante, <span class="math notranslate nohighlight">\(45^\circ\)</span>, e o seu azimute de ré, AO, de
 <span class="math notranslate nohighlight">\(225^\circ\)</span> (<span class="math notranslate nohighlight">\(180^\circ+45^\circ\)</span>).</p>
-<figure class="align-center" id="id12">
-<span id="fig-azimutevantere-png"></span><a class="reference internal image-reference" href="../_images/fig_Azimutevantere.png"><img alt="fig_Azimutevantere.png" src="../_images/fig_Azimutevantere.png" style="width: 830.0500000000001px; height: 577.85px;" /></a>
+<figure class="align-center" id="id33">
+<span id="fig-azimutevantere-png"></span><a class="reference internal image-reference" href="../_images/fig_Azimutevantere.png"><img alt="fig_Azimutevantere.png" src="../_images/fig_Azimutevantere.png" style="width: 574.65px; height: 400.05px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 59 </span><span class="caption-text">Exemplo de azimutes de vante (a) e ré do alinhamento OA (b).</span><a class="headerlink" href="#id12" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 59 </span><span class="caption-text">Exemplo de azimutes de vante (a) e ré do alinhamento OA (b).</span><a class="headerlink" href="#id33" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
+<section id="rumo">
+<h3>Rumo<a class="headerlink" href="#rumo" title="Link permanente para este título"></a></h3>
+<p>O rumo de um alinhamento é o menor ângulo que ele faz com o meridiano,
+logo, nunca é maior que <span class="math notranslate nohighlight">\(90^\circ\)</span>. A medição dele começa no norte
+ou sul do meridiano, medindo-se à direita ou à esquerda, caso o alinhamento
+se encontre à leste (E) ou à oeste (W) do meridiano, respectivamente.
+Para a sua adequada descrição, além do ângulo, deve-se constar o quadrante
+na qual o alinhamento se encontra, nordeste (NE), sudeste (SE), sudoeste
+(SW) ou noroeste (NW). O meridiano pode ser o geodésico, da quadrícula,
+hipotético, etc.</p>
+<p>Chama-se de <strong>rumo de vante</strong>, quando o mesmo é medido do início
+do alinhamento para o finalindex{Rumo!de vante}. Na Figura ref{fig:Rumo_vante_re}a
+são observados exemplos de medidas de direção utilizando o rumo de
+vante. Observe que os alinhamentos estão nas mesmas direções e sentidos
+do exemplo apresentado para o azimute na <a class="reference internal" href="#fig-rumovantere-png"><span class="std std-numref">Figura 60</span></a> a.</p>
+<p>O <strong>rumo de ré</strong> OA é o rumo AO, ou seja,
+quando mede-se o rumo do fim do alinhamento para o começo. Os valores
+dos rumos de ré também são menores que <span class="math notranslate nohighlight">\(90^\circ\)</span>, e deve-se informar
+o quadrante em que se encontra. O rumo de ré é de fácil determinação,
+o valor angular é o mesmo e o quadrante, o oposto. Na <a class="reference internal" href="#fig-rumovantere-png"><span class="std std-numref">Figura 60</span></a> b
+é apresentado o rumo de ré do alinhamento OA, <span class="math notranslate nohighlight">\(45^\circ\,\text{SW}\)</span>.</p>
+<figure class="align-center" id="id34">
+<span id="fig-rumovantere-png"></span><a class="reference internal image-reference" href="../_images/fig_rumovantere.png"><img alt="fig_rumovantere.png" src="../_images/fig_rumovantere.png" style="width: 666.9px; height: 394.2px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 60 </span><span class="caption-text">Exemplo de rumos de vante (a) e ré (b) do alinhamento OA.</span><a class="headerlink" href="#id34" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="conversao-de-azimutes-em-rumos">
+<span id="id6"></span><h3>Conversão de azimutes em rumos<a class="headerlink" href="#conversao-de-azimutes-em-rumos" title="Link permanente para este título"></a></h3>
+<p>Para fazer a conversão de azimute para rumo basta verificar o quadrante
+em que se encontra o alinhamento e aplicar a regra da Equação <a class="reference internal" href="#equation-eq-azimute2rumo">(74)</a>.
+Note que para o rumo, deve-se acrescentar o quadrante em que se encontra
+o alinhamento.</p>
+<div class="math notranslate nohighlight" id="equation-eq-azimute2rumo">
+<span class="eqno">(74)<a class="headerlink" href="#equation-eq-azimute2rumo" title="Permalink to this equation"></a></span>\[\begin{gathered}\mathrm{Rumo}\end{gathered}
+=\begin{cases}
+\mathrm{Az} | \mathrm{(NE)\,se\,}\mathrm{0^{\circ}&lt;Az\leq90^{\circ}}
+\mathrm{180^{\circ}-\mathrm{Az}} | \mathrm{(SE)\,se\,}90^{\circ}&lt;\mathrm{Az}\leq180^{\circ}
+\mathrm{Az-180}^{\circ} | \mathrm{(SW)\,se\,}180^{\circ}&lt;\mathrm{Az}\leq270
+360^{\circ}-\mathrm{Az} | \mathrm{(NW)\,se\,}270^{\circ}&lt;\mathrm{Az}\leq360^{\circ}
+\end{cases}\]</div>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 1</span> Dados os azimutes dos alinhamentos: <span class="math notranslate nohighlight">\(12=37^\circ40'\)</span>,
+<span class="math notranslate nohighlight">\(23=122^\circ15'\)</span>, <span class="math notranslate nohighlight">\(34=257^\circ30'\)</span> e <span class="math notranslate nohighlight">\(45=290^\circ10'\)</span>. Calcular o rumo.</p>
+<p><span class="solucao">Solução:</span>
+Na Figura abaixo é apresentada a solução.</p>
+<figure class="align-center" id="fig-exrumoazimute-png">
+<a class="reference internal image-reference" href="../_images/fig_exrumoazimute.png"><img alt="fig_exrumoazimute.png" src="../_images/fig_exrumoazimute.png" style="width: 581.85px; height: 408.15000000000003px;" /></a>
+</figure>
+</section>
+<hr class="docutils" />
+<section id="erro-angular-de-fechamento">
+<h3>Erro angular de fechamento<a class="headerlink" href="#erro-angular-de-fechamento" title="Link permanente para este título"></a></h3>
+<p>Sempre que se realiza um levantamento topográfico é necessário fazer
+a verificação se os erros nas medições de ângulos e distâncias estão
+de acordo com a tolerância definida pela <span id="id7"><em>NBR 13133</em> [<a class="reference internal" href="referencias.html#id30" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span>, para
+depois compensá-los, se estiver dentro do máximo tolerado. Tal procedimento
+só é possível se a poligonal for do tipo fechada ou quando aberta
+e apoiada (ver <a class="reference internal" href="capitulo8.html#rst-capitulo8"><span class="std std-ref">Capitulo 8: Poligonal</span></a>). Por exemplo, se for
+uma poligonal fechada em um ponto e os ângulos internos medidos, o
+erro angular de fechamento é a diferença do somatório do ângulos internos
+medidos com o somatório
+dos ângulos internos teórico. Se aberta e apoiada, é a diferença do
+azimute calculado do alinhamento final com o azimute deste alinhamento
+previamente estabelecido.</p>
+<p>Para o somatório dos ângulos internos, considere, por exemplo, uma
+poligonal fechada fechada na forma de triângulo, em que foram medidos
+os ângulos internos, temos o número de lados desta poligonal, <span class="math notranslate nohighlight">\(n\)</span>,
+de três. Logo soma dos ângulos internos teórico é de <span class="math notranslate nohighlight">\(180^\circ\)</span>.
+Pode-se generalizar por <span class="math notranslate nohighlight">\((n-2)180^\circ\)</span> o
+somatório dos ângulos internos teórico de uma poligonal qualquer com
+<span class="math notranslate nohighlight">\(n\)</span> vértices.</p>
+<p>A tolerância para o erro angular de fechamento <span class="math notranslate nohighlight">\((\mathrm{T}\alpha)\)</span>
+vária de acordo com finalidade levantamento a ser realizado. Para
+uma poligonal fechada de <span class="math notranslate nohighlight">\(n\)</span> vértices e apoiada em um só ponto, cuja
+a finalidade é para estudos de viabilidade em projetos de engenharia,
+temos <span class="math notranslate nohighlight">\(\mathrm{T}\alpha\leq40''\sqrt{n}\)</span>. Para outros casos ver citeonline{NBR13133}.
+Em se encontrando um erro angular menor do que o estabelecido pela
+norma, é realizada a compensação, que nada mais é do que, a distribuição
+do erro angular de fechamento nos ângulos medidos.</p>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 2</span> Calcular o erro angular de fechamento da poligonal fechada da
+<a class="reference internal" href="#fig-exemploangulodexaointerno-png"><span class="std std-numref">Figura 58</span></a> a. Se o levantamento foi realizado
+para estudos de viabilidade em projetos de engenharia,
+pergunta-se, o erro angular de fechamento estaria dentro da tolerância estabelecida pela NBR13133?</p>
+<p><span class="solucao">Solução:</span>
+Para a poligonal em questão, temos 5 lados, <span class="math notranslate nohighlight">\(n=5\)</span>, então somatório de ângulos internos
+teórico é <span class="math notranslate nohighlight">\(540^\circ\)</span>, <span class="math notranslate nohighlight">\((5-2)180^\circ\)</span>. O somatório dos ângulos internos medidos é:</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Vértice</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\sphericalangle\)</span>  medido</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>A</p></td>
+<td><p><span class="math notranslate nohighlight">\(99^\circ48'54''\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>B</p></td>
+<td><p><span class="math notranslate nohighlight">\(95^\circ55'15''\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>C</p></td>
+<td><p><span class="math notranslate nohighlight">\(118^\circ37'50''\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>D</p></td>
+<td><p><span class="math notranslate nohighlight">\(82^\circ47'2''\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>E</p></td>
+<td><p><span class="math notranslate nohighlight">\(\underline{142^\circ50'14''\,\,\,\,\,\,\,\,\,}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><span class="math notranslate nohighlight">\(\Sigma=539^\circ59'15''\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>Desta forma, o erro angular de fechamento é de <span class="math notranslate nohighlight">\(-45''\)</span> <span class="math notranslate nohighlight">\((539^\circ59'15''-540^\circ)\)</span>.
+Se o levantamento fosse para  estudos de viabilidade em projetos de engenharia,
+<span class="math notranslate nohighlight">\(\mathrm{T}\alpha\leq40''\sqrt{n}=89''\)</span>. Como o erro do levantamento é menor,
+considerando valor absoluto <span class="math notranslate nohighlight">\((|-45''|)\)</span>, pode-se concluir que o erro nas medições
+dos ângulos da poligonal estão dentro do limite estabelecido pela NBR13133, podendo-se
+realizar a compensação.</p>
+</section>
+<hr class="docutils" />
+<section id="compensacao-do-erro-angular">
+<h3>Compensação do erro angular<a class="headerlink" href="#compensacao-do-erro-angular" title="Link permanente para este título"></a></h3>
+<p>Uma vez que o erro angular de fechamento foi menor do que a tolerância,
+e antes de se calcular os rumos ou os azimutes, é necessário que se
+faça a compensação do erro angular de fechamento, para que o somatório
+dos ângulos internos da poligonal levantada seja igual ao do valor
+teórico. Existem vários métodos de compensação, sendo que o mais comum
+é distribuir o erro angular de forma linear entre os ângulos medidos.
+Ou seja, aplicar em cada um dos vértices o erro médio, dado pelo erro
+angular de fechamento dividido pelo número de lados. No Exemplo abaixo
+é apresentada a distribuição do erro angular para o levantamento da
+<a class="reference internal" href="#fig-exemploangulodexaointerno-png"><span class="std std-numref">Figura 58</span></a> a.
+Este método deve ser utilizado quando os comprimentos dos alinhamentos
+forem aproximadamente iguais. Outros métodos de compensação podem
+ser encontrados, por exemplo, em <span id="id8">Loch and Cordini [<a class="reference internal" href="referencias.html#id31" title="C. Loch and J. Cordini. Topografia contemporânea. Editora da UFSC, Florianópolis, SP, 3 edition, 1995.">LC95</a>]</span>.</p>
+<p><span class="exem">Exemplo 3</span>
+Distribuir o erro angular de fechamento da poligonal fechada
+da <a class="reference internal" href="#fig-exemploangulodexaointerno-png"><span class="std std-numref">Figura 58</span></a> pelo método linear.</p>
+<p><span class="solucao">Solução:</span>
+Na tabela a seguir, é apresentado o resultado da compensação. Na coluna <strong>I</strong>
+estão os ângulos horizontais medidos em cada um dos vértices; na <strong>II</strong>
+o erro médio e na <strong>III</strong>, o ângulo interno compensado (<strong>I</strong> + <strong>II</strong>).
+Com o erro angular de fechamento de <span class="math notranslate nohighlight">\(-45''\)</span> (ver exemplo ref{exemplo:erro_angula_fechamento}), e sendo a poligonal de cinco lados, temos o erro médio de <span class="math notranslate nohighlight">\(9''\)</span> <span class="math notranslate nohighlight">\((45''/5)\)</span>. Note que, como o somatório dos ângulos medidos foi menor do que o teórico, então deve-se somar <span class="math notranslate nohighlight">\(9''\)</span> a cada um dos vértices. Caso contrário, o somatório das medidas angulares maiores que o teórico, deve-se subtrair.vspace{.5cm}</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Vértice</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\sphericalangle\)</span> medido <strong>(I)</strong>)</p></th>
+<th class="head"><p>erro médio <strong>(II)</strong></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\sphericalangle\)</span> compensado <strong>(I+II)</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(A\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(99^\circ48'54''\)</span></p></td>
+<td><p>+9</p></td>
+<td><p><span class="math notranslate nohighlight">\(99^\circ49'3''\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>B</p></td>
+<td><p><span class="math notranslate nohighlight">\(95^\circ55'15''\)</span></p></td>
+<td><p>+9</p></td>
+<td><p><span class="math notranslate nohighlight">\(95^\circ55'24''\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>C</p></td>
+<td><p><span class="math notranslate nohighlight">\(118^\circ37'50''\)</span></p></td>
+<td><p>+9</p></td>
+<td><p><span class="math notranslate nohighlight">\(118^\circ37'59''\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>D</p></td>
+<td><p><span class="math notranslate nohighlight">\(82^\circ47'2''\)</span></p></td>
+<td><p>+9</p></td>
+<td><p><span class="math notranslate nohighlight">\(82^\circ47'11''\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>E</p></td>
+<td><p><span class="math notranslate nohighlight">\(\underline{142^\circ50'14''\,\,\,\,\,\,\,\,\,\,\,}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\underline{+9\,\,\,\,}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\underline{142^\circ50'23''\,\,\,\,\,}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><span class="math notranslate nohighlight">\(\Sigma=539^\circ59'15''\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\Sigma=45''\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\Sigma=540^\circ00'00''\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="docutils" />
+<section id="calculo-do-azimute-a-partir-dos-angulos-internos-a-direita">
+<h3>Cálculo do azimute a partir dos ângulos internos à direita<a class="headerlink" href="#calculo-do-azimute-a-partir-dos-angulos-internos-a-direita" title="Link permanente para este título"></a></h3>
+<p>Para os cálculos das coordenadas parciais, é necessário determinar
+os azimutes ou rumos dos alinhamentos. Normalmente, nos cálculos,
+trabalha-se com valores de azimute, uma vez, que os sentidos das coordenadas
+parciais dos alinhamentos são dados diretamente. Já, com os rumos,
+temos que estabelecer os sentidos dos alinhamentos, por exemplo, se
+estão com sua projeção sobre o eixo-<span class="math notranslate nohighlight">\(x\)</span>, à direita ou à esquerda,
+respectivamente, E ou W, do meridiano utilizado.</p>
+<p>Quando o ângulo horizontal é medido para a direita, o cálculo do azimute
+de um alinhamento é dado pelo azimute de ré do alinhamento anterior
+mais o ângulo à direita. O azimute de ré, como já apresentado, é o
+azimute de vante <span class="math notranslate nohighlight">\(\pm 180^\circ\)</span>. Na <a class="reference internal" href="#fig-azimuterumocalculo1-png"><span class="std std-numref">Figura 61</span></a>
+é apresentado graficamente o cálculo dos azimutes dos alinhamentos
+para a poligonal da <a class="reference internal" href="#fig-exemploangulodexaointerno-png"><span class="std std-numref">Figura 58</span></a>. Para esta solução
+optou-se por calcular os azimutes de ré subtraindo <span class="math notranslate nohighlight">\(180^\circ\)</span>, sendo
+que não mudaria em nada os valores dos azimutes calculados se utilizasse
+a soma de <span class="math notranslate nohighlight">\(180^\circ\)</span>. Note que os ângulos internos utilizados são
+os compensados (ver Exemplo 3),
+e o azimute do alinhamento AB é conhecido <span class="math notranslate nohighlight">\((299^\circ8'19'')\)</span>. Para
+o azimute do alinhamento BC temos:</p>
+<ul class="simple">
+<li><p>o azimute do alinhamento anterior, AB, é conhecido, logo o seu azimute
+de ré, BA, é dado subtraindo do azimute AB de <span class="math notranslate nohighlight">\(180^\circ\)</span>, isto é,
+<span class="math notranslate nohighlight">\(\mathrm{Az_{BA}}=299^\circ8'19''-180^\circ = 119^\circ8'19''\)</span>;</p></li>
+<li><p>para se calcular <span class="math notranslate nohighlight">\(\mathrm{Az_{BC}}\)</span>, basta somar o <span class="math notranslate nohighlight">\(\mathrm{Az_{BA}}\)</span>
+ao ângulo interno medido em B, <span class="math notranslate nohighlight">\(\mathrm{Az_{BC}}=119^\circ8'19''+95^\circ55'24''=215^\circ3'34''\)</span>.</p></li>
+</ul>
+<p>O procedimento acima é repetido para os demais vértices. Um ângulo
+negativo indica que o ângulo está sendo contado no sentido anti-horário.
+Quando o azimute calculado for menor que <span class="math notranslate nohighlight">\(0^\circ\)</span> ou maior que <span class="math notranslate nohighlight">\(360^\circ\)</span>,
+deve-se somar ou subtrair <span class="math notranslate nohighlight">\(360^\circ\)</span>, respectivamente. Se a poligonal
+for fechada ou apoiada em vértices de controle, ao final dos cálculos
+deve-se confrontar os azimute calculado com: o azimute inicial, se
+a poligonal for fechada em um ponto ou; o azimute do alinhamento de
+controle final, quando a poligonal for aberta e apoiada ao final.
+Na Tabela ref{tab:calculoazimute} são apresentados os cálculos quando
+os dados estão tabelados.</p>
+<figure class="align-center" id="id35">
+<span id="fig-azimuterumocalculo1-png"></span><a class="reference internal image-reference" href="../_images/fig_AzimuteRumoCalculo1.png"><img alt="fig_AzimuteRumoCalculo1.png" src="../_images/fig_AzimuteRumoCalculo1.png" style="width: 514.25px; height: 745.4499999999999px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 61 </span><span class="caption-text">Cálculo dos azimutes utilizando ângulos internos.</span><a class="headerlink" href="#id35" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<table class="colwidths-auto docutils align-default" id="id36">
+<caption><span class="caption-number">Table 9 </span><span class="caption-text">Tabela de cálculo dos azimutes do exemplo da:numref`fig_ExemploAnguloDexaoInterno.png` a. Os ângulos internos são os compensados (Exemplo 3).</span><a class="headerlink" href="#id36" title="Permalink to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Vértice</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\sphericalangle\)</span> compensado</p></th>
+<th class="head"><p>Az</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>A</p></td>
+<td><p><span class="math notranslate nohighlight">\(99^\circ49'3''\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\color{blue}{\mathrm{\mathbf{Az_{AB}}}\mathbf{=299^\circ8'19''}}\)</span> (conhecido)</p></td>
+</tr>
+<tr class="row-odd"><td><p>B</p></td>
+<td><p><span class="math notranslate nohighlight">\(95^\circ55'24''\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\mathrm{Az_{BC}}=299^\circ8'19''-180^\circ+95^\circ55'24''=215^\circ3'43''\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>C</p></td>
+<td><p><span class="math notranslate nohighlight">\(118^\circ37'59''\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\mathrm{Az_{CD}}=215^\circ3'43''-180^\circ+118^\circ37'59''=153^\circ41'42''\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>D</p></td>
+<td><p><span class="math notranslate nohighlight">\(82^\circ47'11''\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\mathrm{Az_{DE}}=153^\circ41'42''-180^\circ+82^\circ47'11''=56^\circ28'53''\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>E</p></td>
+<td><p><span class="math notranslate nohighlight">\(142^\circ50'23''\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\mathrm{Az_{EA}}=56^\circ28'53''-180^\circ+142^\circ50'23''=19^\circ19'16''\)</span></p></td>
+</tr>
+<tr class="row-odd"><td colspan="3"><p>Verificação</p></td>
+</tr>
+<tr class="row-even"><td><p>A</p></td>
+<td><p><span class="math notranslate nohighlight">\(99^\circ49'3''\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\mathrm{Az_{AB}}=19^\circ19'16''-180^\circ+99^\circ49'3''=-60^\circ51'41''=\color{blue}\mathbf{299^\circ8'19''}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<dl class="simple">
+<dt>No que diz respeito ao cálculo dos rumos, já foi dito anteriormente</dt><dd><p>que é preferível trabalhar com os ângulos de azimute devido a facilidade na computação</p>
+</dd>
+</dl>
+<p>das projeções dos alinhamentos. Todavia, o cálculo do rumo é realizado
+de maneira similar aos do azimutes. Devendo-se considerar o rumo anterior
+e o ângulo interno medido. Outra possibilidade para determinação do
+rumo, seria calcular o azimute e posteriormente converter para rumo.</p>
+</section>
+<section id="calculo-do-azimute-a-partir-da-deflexao">
+<h3>Cálculo do azimute a partir da deflexão<a class="headerlink" href="#calculo-do-azimute-a-partir-da-deflexao" title="Link permanente para este título"></a></h3>
+<p>Quando se trabalha com ângulos de deflexão, o azimute de um alinhamento
+é dado pelo azimute anterior mais ou menos, respectivamente, o ângulo
+de deflexão à direita (DD) ou à esquerda (DE) do alinhamento a ser
+calculado. Tal procedimento é apresentado no Exemplo ref{exemplo:angulodeflexaoExErroAngu},
+juntamente com o cálculo do erro de fechamento angular e sua compensação.</p>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 4</span> A poligonal aberta da Figura a seguir foi medida por meio das deflexões,
+sendo que os azimutes inicial e final, respectivamente, O1 e 5P, são conhecidos.
+Calcular o erro angular de fechamento e compensar os azimutes pelo método linear.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/fig_angulodeflexaoExErroAngu.png"><img alt="fig_angulodeflexaoExErroAngu.png" src="../_images/fig_angulodeflexaoExErroAngu.png" style="width: 514.5px; height: 252.35px;" /></a>
+</figure>
+<p><span class="solucao">Solução:</span>
+O erro angular de fechamento será determinado comparando o azimute final do alinhamento 5P
+calculado com o conhecido. As deflexões são apresentadas na coluna <strong>I</strong>. Os azimutes
+são calculados somando ou subtraindo do azimute anterior a deflexão à direita ou à esquerda,
+respectivamente (<strong>II</strong>). O primeiro azimute O1 que é conhecido não é calculado no início,
+só no final, para avaliação do erro angular. O erro encontrado, depois de calculados os
+azimutes com os ângulos de deflexões medidos, é de <span class="math notranslate nohighlight">\(35''\)</span> a mais no azimute final
+calculado (ver três últimas linhas da Tabela). Desta forma, a compensação linear a ser aplicada
+em cada deflexão é de <span class="math notranslate nohighlight">\(-7''\)</span>, média do erro angular. Para evitar de se fazer novamente
+os cálculos dos azimutes com as deflexões compensadas, aplica-se diretamento nos azimutes
+calculados a compensação do erro médio acumulado (<strong>III</strong>). Observe que depois da compensação
+aplicada, o valor de azimute calculado do alinhamento final (5P) deve ser igual ao
+valor conhecido (<strong>IV</strong>).</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/tab_exemplo4.png"><img alt="tab_exemplo4.png" src="../_images/tab_exemplo4.png" style="width: 523.6px; height: 162.75px;" /></a>
+</figure>
+</section>
+<hr class="docutils" />
+<section id="calculo-do-azimute-a-partir-das-coordenadas-retangulares">
+<h3>Cálculo do azimute a partir das coordenadas retangulares<a class="headerlink" href="#calculo-do-azimute-a-partir-das-coordenadas-retangulares" title="Link permanente para este título"></a></h3>
+<p>A partir das coordenadas retangulares dos pontos de um alinhamento
+é possível calcular o seu azimute. Atualmente, com o auxílio do GNSS,
+ou a partir da rede do Sistema Geodésico Brasileiro, é comum começar
+o levantamento a partir de pontos de coordenadas UTM. Se o azimute
+for calculado das coordenadas UTM, os azimutes serão aqueles em relação
+ao norte da quadrícula. O cálculo do azimute
+é similar à conversão de coordenadas retangulares para polares (ver
+secção <a class="reference internal" href="capitulo1.html#coordenada-retangular-para-polar"><span class="std std-ref">Coordenada retangular para polar</span></a>,
+todavia com a contagem dos ângulos no eixo-<span class="math notranslate nohighlight">\(y\)</span> (N), e o sentido da
+medição dos ângulos, o horário. Uma vez definido o azimute, o rumo
+pode ser determinado como apresentado na Secção <a class="reference internal" href="#conversao-de-azimutes-em-rumos"><span class="std std-ref">Conversão de azimutes em rumos</span></a>.</p>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 5</span> Dadas as coordenadas UTM, levantados com receptor GNSS, dos pontos A, B, E e F, calcular
+os azimutes e rumos dos alinhamentos AB e EF.
+<span class="math notranslate nohighlight">\(\mathrm{A\,(E} = 485\,631\mathrm{~m;~N} = 7\,702\,079\mathrm{~m})\)</span>;
+<span class="math notranslate nohighlight">\(\mathrm{B\,(E}=485\,701\mathrm{~m;~N}=7\,701\,980\mathrm{~m})\)</span>;
+<span class="math notranslate nohighlight">\(\mathrm{E\,(E} = 485\,191\mathrm{~m;~N} = 7\,702\,043 \mathrm{~m})\)</span>;
+<span class="math notranslate nohighlight">\(\mathrm{F\,(E}= 485\,231\mathrm{~m;~N}= 7\,702\,148\mathrm{~m})\)</span>.</p>
+<p><span class="solucao">Solução:</span></p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/examplor5a.png"><img alt="examplor5a.png" src="../_images/examplor5a.png" style="width: 502.8px; height: 221.20000000000002px;" /></a>
+</figure>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/examplor5b.png"><img alt="examplor5b.png" src="../_images/examplor5b.png" style="width: 510.40000000000003px; height: 249.60000000000002px;" /></a>
+</figure>
+</section>
+<hr class="docutils" />
+<section id="medidas-de-azimute-em-campo">
+<h3>Medidas de azimute em campo<a class="headerlink" href="#medidas-de-azimute-em-campo" title="Link permanente para este título"></a></h3>
+<p>No campo, conhecendo o azimute de um alinhamento, é possível determinar
+os azimutes de outros alinhamentos. Por exemplo, considere o azimute
+AB do Exemplo 5,
+de <span class="math notranslate nohighlight">\({\mathrm{Az_{AB}}=142^\circ7'30''}\)</span>. Ele foi calculado de coordenadas
+UTM, obtidas por GNSS, logo o meridiano é o da quadrícula das coordenadas
+UTM. Suponha que temos que medir o azimute do alinhamento AC, conforme
+apresentado na Figura ao lado. A metodologia a ser seguida é, estacionar
+e nivelar o equipamento em A. Faz-se uma visada em B onde, via teclado,
+o ângulo horizontal de <span class="math notranslate nohighlight">\(142^\circ7'30''\)</span> é digitado para este ponto,
+caso se trabalhe com estação total. Desta forma, estabelecemos em
+campo o azimute de AB. Com teodolito, tal procedimento também é possível
+por meio dos parafusos que prendem e soltam o movimento do limbo ao
+equipamento. Uma vez que a direção AB é estabelecida, quando rodando
+a luneta horizontalmente, o ângulo horizontal mostrar <span class="math notranslate nohighlight">\(0^\circ00'00''\)</span>,
+teremos a direção norte, neste caso, o norte da quadrícula. Para o
+nosso exemplo, que é o de medir o azimute AC, basta fazer uma visada
+precisa em C onde, o ângulo horizontal apresentado na tela da estação
+total corresponderá ao valor do azimute AC <span class="math notranslate nohighlight">\((292^\circ50'2'')\)</span>.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/azimuteemcampo.png"><img alt="azimuteemcampo.png" src="../_images/azimuteemcampo.png" style="width: 341.55px; height: 349.2px;" /></a>
+</figure>
+<p>Se o equipamento estiver nivelado e centralizado em B, pode-se fazer
+uma visada para A. Como o azimute AB é conhecido, então o seu azimute
+de ré, BA, também é, sendo igual a <span class="math notranslate nohighlight">\(322^\circ7'30''~(142^\circ7'30''+180^\circ)\)</span>.
+Este valor é inserido para o ângulo horizontal. Mais uma vez, agora
+em B, quando o ângulo horizontal for <span class="math notranslate nohighlight">\(0^\circ00'00''\)</span>, corresponderá
+a direção do norte da quadrícula. Desta forma, as medidas de ângulo
+horizontal a partir de B corresponderão aos azimutes. Tal procedimento,
+de mudança de estação e medição dos azimutes a partir do anterior,
+pode ser realizada para se fazer o levantamento de uma poligonal qualquer.
+No caso dela ser fechada, como no exemplo da <a class="reference internal" href="#fig-exemploangulodexaointerno-png"><span class="std std-numref">Figura 58</span></a>, deve-se repetir
+a medida do alinhamento inicial, objetivando o calculo do erro angular
+de fechamento.</p>
+</section>
+</section>
+<section id="declinacao-magnetica">
+<h2>Declinação magnética<a class="headerlink" href="#declinacao-magnetica" title="Link permanente para este título"></a></h2>
+<p>Parte dos levantamentos topográficos realizados no passado, utilizaram
+como referência da direção norte, aquela observada pelo norte da bússola,
+a qual denomina-se de norte magnéticoindex{Norte!magnético}. A direção
+do norte magnético pode ser definida pela direção longitudinal de
+uma agulha magnetizada livre, apoiada apenas no seu centro. A agulha
+será orientada de acordo com o campo magnético da terra, que tem variação
+temporal e espacial. Logo, se o topógrafo têm como objetivo aviventar
+para o presente os alinhamentos medidos no passado, em relação ao
+norte magnético, deverá encontrar, por exemplo, a direção do norte
+verdadeiro do alinhamento. Isto é possível através do conhecimento
+da declinação magnética nas diferentes datas.</p>
+<p>A declinação magnética é o ângulo formado entre o norte geodésico
+e o norte magnético local. Quando o norte magnético se encontra à
+direita do norte geodésico, a declinação magnética é positiva e podemos
+abreviar pela letra <a href="#id9"><span class="problematic" id="id10">``</span></a>E”” (este). Por outro lado, quando o norte
+magnético encontra-se à esquerda do norte geodésico, a declinação
+magnética é negativa, ou pode-se utilizar a letra <a href="#id11"><span class="problematic" id="id12">``</span></a>W”” de <a href="#id13"><span class="problematic" id="id14">**</span></a>west}
+(oeste). Na Figura ref{fig:magnetismodaterra} temos a apresentação
+da declinação magnética de <span class="math notranslate nohighlight">\(-19^\circ\)</span> para o ano de 2000, em uma
+posição próxima a Brasília.</p>
+<figure class="align-center" id="id37">
+<span id="fig-magnetismodaterra-png"></span><a class="reference internal image-reference" href="../_images/fig_magnetismodaterra.png"><img alt="fig_magnetismodaterra.png" src="../_images/fig_magnetismodaterra.png" style="width: 444.95000000000005px; height: 499.40000000000003px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 62 </span><span class="caption-text">Representação gráfica da declinação magnética na região central do Brasil para o ano de 2000.</span><a class="headerlink" href="#id37" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 6</span> O azimute magnético do alinhamento AB é de <span class="math notranslate nohighlight">\(230^\circ 23'\)</span>. Sabendo-se que
+a declinação magnética local é <span class="math notranslate nohighlight">\(-21^\circ 9'\)</span>, calcular o azimute verdadeiro deste alinhamento.</p>
+<p><span class="solucao">Solução:</span></p>
+<figure class="align-center" id="fig-declinacaomagneticaex-png">
+<a class="reference internal image-reference" href="../_images/fig_declinacaomagneticaex.png"><img alt="fig_declinacaomagneticaex.png" src="../_images/fig_declinacaomagneticaex.png" style="width: 504.45px; height: 297.45px;" /></a>
+</figure>
+<hr class="docutils" />
+<p>A variação temporal da declinação magnética, denomina-se de <strong>variação secular</strong>. Um exemplo
+da variação secular da declinação magnética, logo, também, da variação
+temporal do norte magnético, é apresentado na <a class="reference internal" href="#fig-declinacaomagneticario-png"><span class="std std-numref">Figura 63</span></a>.
+Os valores da declinação magnética são para a cidade do Rio de Janeiro,
+baseados na Referência do Campo Geomagnético
+Internacional (IGRF, <strong>International Geomagnetic Reference Field</strong>).
+Em 1590, a declinação magnética era
+de <span class="math notranslate nohighlight">\(+13^\circ22'\)</span>. Com o passar dos anos, ela foi gradualmente se
+deslocando para a esquerda, sendo que em 1800 era de <span class="math notranslate nohighlight">\(+5^\circ13'\)</span>,
+e em julho de 1853 era de <span class="math notranslate nohighlight">\(0^\circ\)</span>. A declinação magnética continua
+se deslocando para a esquerda, em 2016 é de <span class="math notranslate nohighlight">\(-22^\circ44'\)</span>. Note
+que, a forma da seta que apresenta a direção da declinação magnética
+é representada de maneira distinta, quando está a este é desenhada
+apenas a ponta direita, enquanto se a oeste, a ponta esquerda. Esta
+nomenclatura é utilizada, por exemplo, nas cartas do IBGE.</p>
+<figure class="align-center" id="id38">
+<span id="fig-declinacaomagneticario-png"></span><a class="reference internal image-reference" href="../_images/fig_declinacaomagneticario.png"><img alt="fig_declinacaomagneticario.png" src="../_images/fig_declinacaomagneticario.png" style="width: 481.8px; height: 298.65000000000003px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 63 </span><span class="caption-text">Variação temporal da declinação magnética <span class="math notranslate nohighlight">\((\delta)\)</span> para o Município do Rio de Janeiro. Dados do modelo IGRF.</span><a class="headerlink" href="#id38" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p><strong>Linha isogônica</strong> se refere ao conjunto de pontos ligados por linhas onde a declinação
+magnética tem o mesmo valor em determinada época. Elas mostram a <strong>variação
+espacial</strong> da declinação magnética. Na <a class="reference internal" href="#fig-linhaisogonica-png"><span class="std std-numref">Figura 64</span></a>
+são apresentadas linhas isogônicas para o Brasil, ano de 2000, segundo
+o IGRF. Neste ano a declinação magnética no Brasil variou de aproximadamente
+<span class="math notranslate nohighlight">\(-23^\circ\)</span> a <span class="math notranslate nohighlight">\(-3^\circ\)</span>, costa leste e oeste do estado do Acre,
+respectivamente. A linha isogônica de <span class="math notranslate nohighlight">\(0^\circ\)</span>, direção do norte
+geográfico igual a do norte magnético, é denominada de <strong>linha agônica</strong>.</p>
+<figure class="align-center" id="id39">
+<span id="fig-linhaisogonica-png"></span><a class="reference internal image-reference" href="../_images/fig_linhaisogonica.png"><img alt="fig_linhaisogonica.png" src="../_images/fig_linhaisogonica.png" style="width: 497.20000000000005px; height: 477.40000000000003px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 64 </span><span class="caption-text">Linhas isogônicas em 2000 para a região do Brasil segundo IGRF.</span><a class="headerlink" href="#id39" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Uma <strong>linha isopórica</strong> consiste nos pontos de mesma variação anual da declinação magnética
+em determinada época. Ela apresenta a variação secular da declinação
+magnética. Na <a class="reference internal" href="#fig-linhaisoporica-png"><span class="std std-numref">Figura 65</span></a> são apresentadas linhas
+isopóricas para o Brasil no ano de 2000. A unidade das linhas isopóricas
+são de minutos por ano. Quando uma linha isopórica é negativa, a declinação
+magnética está se movendo para oeste (W), e positiva para este (E).
+No ano de 2000, as maiores variações anuais da declinação magnética
+ocorre no oeste do Brasil, com uma variação próxima de <span class="math notranslate nohighlight">\(-9'/\mathrm{ano}\)</span>.
+No nordeste se encontrava a linha isopórica de <span class="math notranslate nohighlight">\(0'/\mathrm{ano}\)</span>,
+ou seja, a variação anual de declividade magnética foi zero.</p>
+<p>Além da <strong>variação espacial</strong> e da <strong>variação secular</strong>
+da declinação magnética, pode-se citar:</p>
+<ul class="simple">
+<li><p>a <strong>variação diária</strong>, é aquela em que ocorre ao longo de 24
+horas. Ela é regular, ou seja, se repete a cada 24 horas. Ocorre devido
+à correntes elétricas na alta ionosfera (região acima dos 100 km)
+variar ao longo de 24 horas. A variação da declinação magnética ao
+longo de 24 horas é pequena, por exemplo, em Hartland, Reino Unido,
+verificou-se variação de aproximadamente <span class="math notranslate nohighlight">\(9'\)</span> (<a class="reference external" href="http://www.geomag.bgs.ac.uk/education/earthmag.html">ver aqui</a>).
+Já para os Estados Unidos, a variação é de aproximadamente <span class="math notranslate nohighlight">\(8'\)</span> ao
+longo de 24 horas <span id="id15">[<a class="reference internal" href="referencias.html#id8" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>;</p></li>
+<li><p>a <strong>variação irregular</strong>, é uma variação imprevisível. Pode ocorrer
+devido ao distúrbio das tempestades solares ao campo magnético da
+terra; ou por efeito de proximidade de materiais metálicos ou de correntes
+elétricas locais, como àquelas que são geradas por fios de alta tensão.
+Embora imprevisível, as tempestades solares tem uma frequência de
+aproximadamente 11 anos. Segundo <span id="id16">Wolf and Ghilani [<a class="reference internal" href="referencias.html#id8" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span> estas perturbações
+na declinação magnética são pequenas, de cerca de um grau ou mais.</p></li>
+</ul>
+<p>Por meio de interpolação das linhas isopóricas, pode-se encontrar
+a variação anual da declinação magnética para uma posição geográfica
+de interesse. O valor da variação encontrada, pode ser utilizada em
+conjunto com a declinação magnética local, para encontrar a declinação
+magnética em anos anteriores ou posteriores. Todavia, isto não se
+faz necessário atualmente, devido à disponibilidade na internet de
+dados de declinação magnética para diferentes posições geográficas
+e épocas.</p>
+<div class="admonition-obtendo-a-declinacao-magnetica admonition">
+<p class="admonition-title">Obtendo a declinação magnética</p>
+<p><a class="reference external" href="https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml?useFullSite=true">Clicando aqui</a> você
+será encaminhado para o <em>site</em> da NOAA (Administração Nacional Oceânica e Atmosférica,
+<em>National Oceanic and Atmospheric Administration</em>), onde poderá consultar a
+declinação magnética para todo globo terrestre e para diferentes períodos, tendo os
+seguintes modelos disponíveis:</p>
+<ol class="loweralpha simple">
+<li><p>o Modelo Magnético Mundial (<a class="reference external" href="https://www.ngdc.noaa.gov/geomag/WMM/">WMM</a>, <em>World Magnetic Model</em>);</p></li>
+<li><p>o Campo Magnético Melhorado (<a class="reference external" href="https://www.ngdc.noaa.gov/geomag/EMM/index.html">EMM</a>, <em>Enhanced Magnetic Model</em>);</p></li>
+<li><p>e o <a class="reference external" href="https://www.ngdc.noaa.gov/IAGA/vmod/igrf.html">IGRF</a>.</p></li>
+</ol>
+</div>
+<figure class="align-center" id="id40">
+<span id="fig-linhaisoporica-png"></span><a class="reference internal image-reference" href="../_images/fig_linhaisoporica.png"><img alt="fig_linhaisoporica.png" src="../_images/fig_linhaisoporica.png" style="width: 363.55px; height: 367.40000000000003px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 65 </span><span class="caption-text">Linhas isopóricas em 2000 para a região segundo o IGRF.</span><a class="headerlink" href="#id40" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 7</span> Na página da <a class="reference external" href="href{https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml?useFullSite=true">NOAA</a>
+é possível encontrar os valores da declinação magnética do modelo IGRF.
+Por meio dela, calcular a variação da declinação magnética para a cidade de Vitória,
+Espírito Santo <span class="math notranslate nohighlight">\((\phi=-20^\circ19'10'',~\lambda=-40^\circ20'16'')\)</span>, entre o período de 1/Jan/1960 e 1/Jan/2014.</p>
+<p><span class="solucao">Solução:</span></p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/fig_declividavariacao.png"><img alt="fig_declividavariacao.png" src="../_images/fig_declividavariacao.png" style="width: 491.74999999999994px; height: 239.04999999999998px;" /></a>
+</figure>
+<hr class="docutils" />
+<p>Uma vez que um alinhamento teve a sua direção determinada com referência
+ao norte o magnético, o seu azimute ou rumo é dito como sendo magnético.
+Conhecendo o azimute ou rumo magnético de um alinhamento é possível,
+por meio da declinação magnético da época, encontrar seu azimute ou
+rumo verdadeiro. Considerando o sinal negativo para declinação oeste
+(W) e positiva para a declinação à leste (E), o azimute verdadeiro
+é dado pelo azimute magnético mais a declinação magnética da época
+do levantamento.</p>
+<p>Muitas vezes no processo de aviventação de uma área levantada no passado,
+tem-se que encontrar novamente a direção dos respectivos alinhamentos
+em campo no presente. Se os alinhamentos tiveram suas direções obtidas
+com a referência do norte magnético, na época da aviventação, tem-se
+que fazer suas atualização, considerando a mudança da direção do norte
+magnético entre as duas épocas. Mais uma vez, tal procedimento é possível,
+por meio da aplicação da variação de declinação magnética entre as
+épocas aos azimutes ou rumos magnéticos medidos no passado (ver Exemplo
+a seguir).</p>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 8</span> Na região de Umuarama, PR, o alinhamento BC teve o seu azimute magnético medido de <span class="math notranslate nohighlight">\(153^\circ41'30'':math:\)</span> em
+10/12/1967. Qual é o azimute magnético deste alinhamento se você estivesse locando em campo este mesmo alinhamento em 4/5/2014?</p>
+<p><span class="solucao">Solução:</span></p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/DeclinacaoMagneticaUmuaramaShareLatex.png"><img alt="DeclinacaoMagneticaUmuaramaShareLatex.png" src="../_images/DeclinacaoMagneticaUmuaramaShareLatex.png" style="width: 404.95px; height: 314.29999999999995px;" /></a>
+</figure>
+<hr class="docutils" />
+</section>
+<section id="angulo-vertical">
+<span id="id17"></span><h2>Ângulo vertical<a class="headerlink" href="#angulo-vertical" title="Link permanente para este título"></a></h2>
+<p>O ângulo vertical é o ângulo medido no plano vertical. Quando a origem
+das medição do ângulo vertical for o zênite (direção contrária ao fio de prumo),
+o ângulo vertical é denominado de ângulo <strong>zenital</strong> <span class="math notranslate nohighlight">\((z)\)</span>.
+Caso a origem seja o plano horizontal, o ângulo vertical é de <strong>inclinação</strong>
+<span class="math notranslate nohighlight">\((\alpha)\)</span> (<a class="reference internal" href="#fig-angulovertical-png"><span class="std std-numref">Figura 66</span></a>). Os ângulos verticais
+medidos de estações totais e teodolitos são utilizados, por exemplo,
+para calcular diferenças de nível e reduzir a distância inclinada
+para distância horizontal. A maior parte dos teodolitos utilizam o
+ângulo vertical do tipo zenital. De modo geral, as estações totais
+têm a opção de se trabalhar com ângulo vertical tipo zenital ou de
+inclinação.</p>
+<figure class="align-center" id="id41">
+<span id="fig-angulovertical-png"></span><a class="reference internal image-reference" href="../_images/fig_AnguloVertical.png"><img alt="fig_AnguloVertical.png" src="../_images/fig_AnguloVertical.png" style="width: 408.79999999999995px; height: 326.54999999999995px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 66 </span><span class="caption-text">Ângulo vertical zenital <span class="math notranslate nohighlight">\((z)\)</span> e de inclinação <span class="math notranslate nohighlight">\((\alpha)\)</span>. As abreviações <span class="math notranslate nohighlight">\(ai\)</span> e <span class="math notranslate nohighlight">\(ap\)</span>,
+correspondem, respectivamente, a altura do instrumento
+e a altura do prisma, necessárias para calcular a diferença de nível.</span><a class="headerlink" href="#id41" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>A variação do ângulo zenital é de <span class="math notranslate nohighlight">\(0^\circ\)</span> a <span class="math notranslate nohighlight">\(360^\circ\)</span>. Se o
+ângulo zenital é de <span class="math notranslate nohighlight">\(0^\circ\)</span>, a luneta se encontra na direção contrária
+a vertical do lugar, ou seja, na direção do zênite. Na medida em que
+a luneta, é inclinada na direção do horizonte, quando o ângulo for
+de <span class="math notranslate nohighlight">\(90^\circ\)</span>, conterá o plano horizontal. Quando ela estiver na
+posição da vertical do lugar, direção do nadir, o ângulo
+será de <span class="math notranslate nohighlight">\(180^\circ\)</span>. A luneta está na <strong>posição direta}</strong>
+quando o ângulo zenital está entre <span class="math notranslate nohighlight">\(0^\circ\)</span> e <span class="math notranslate nohighlight">\(180^\circ\)</span>. Quando
+o ângulo zenital for de <span class="math notranslate nohighlight">\(270^\circ\)</span> a luneta estará novamente no
+plano horizontal, até que, se novamente a luneta estiver no zênite,
+o ângulo vertical medido será de <span class="math notranslate nohighlight">\(360^\circ\)</span> ou <span class="math notranslate nohighlight">\(0^\circ\)</span>. A
+<strong>posição inversa da luneta</strong> ocorre
+quando o ângulo zenital estiver entre <span class="math notranslate nohighlight">\(180^\circ\)</span> e <span class="math notranslate nohighlight">\(360^\circ\)</span>.</p>
+<p>Já o ângulo de inclinação tem variação de <span class="math notranslate nohighlight">\(0^\circ\)</span> a <span class="math notranslate nohighlight">\(+90^\circ\)</span>
+se a visada for ascendente e, de <span class="math notranslate nohighlight">\(0^\circ\)</span> a <span class="math notranslate nohighlight">\(-90^\circ\)</span> se a visada
+for descendente. A Tabela abaixo apresenta
+a relação entre o ângulo zenital, o de inclinação, o tipo de visada,
+se ascendente ou descendente, e a posição da luneta.</p>
+<table class="colwidths-auto docutils align-default" id="id42">
+<caption><span class="caption-number">Table 10 </span><span class="caption-text">Relação entre ângulo zenital <span class="math notranslate nohighlight">\((z)\)</span>, de inclinação <span class="math notranslate nohighlight">\((\alpha)\)</span> e tipo de visada.</span><a class="headerlink" href="#id42" title="Permalink to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(z\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\alpha\)</span></p></th>
+<th class="head"><p>Tipo de visada</p></th>
+<th class="head"><p>Posição da luneta</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(0^\circ&lt;z&lt;90^\circ\)</span></p></td>
+<td rowspan="2"><p><span class="math notranslate nohighlight">\(\alpha=90-z\)</span></p></td>
+<td><p>ascendente</p></td>
+<td rowspan="2"><p>Direta</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(90^\circ&lt;z&lt;180^\circ\)</span></p></td>
+<td><p>descendente</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(180^\circ&lt;z&lt;270^\circ\)</span></p></td>
+<td rowspan="2"><p><span class="math notranslate nohighlight">\(\alpha=z-270\)</span></p></td>
+<td><p>descendente</p></td>
+<td rowspan="2"><p>Inversa</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(270^\circ&lt;z&lt;360^\circ\)</span></p></td>
+<td><p>ascendente</p></td>
+</tr>
+</tbody>
+</table>
+<section id="medicao-do-angulo-vertical">
+<span id="id18"></span><h3>Medição do ângulo vertical<a class="headerlink" href="#medicao-do-angulo-vertical" title="Link permanente para este título"></a></h3>
+<p>Para reduzir os erros causados pelas medições dos ângulos verticais,
+ao invés de se realizar apenas uma medida, sugere-se realizar pares
+de medidas, com a luneta na posição direta e inversa, calculando-se
+o valor médio das medidas. Tem-se que o ângulo zenital médio na direção
+direta <span class="math notranslate nohighlight">\((\bar{z}_{d})\)</span> é dado por:</p>
+<div class="math notranslate nohighlight" id="equation-eq-mediaangulozenital">
+<span class="eqno">(75)<a class="headerlink" href="#equation-eq-mediaangulozenital" title="Permalink to this equation"></a></span>\[\bar{z}_{d}=\frac{\Sigma z_{d}}{n}+\frac{360^\circ\cdot n-(\Sigma z_{d}+\Sigma z_{i})}{2\cdot n}\]</div>
+<p>em que: <span class="math notranslate nohighlight">\(\Sigma z_d\)</span> é o somatório das medidas de <span class="math notranslate nohighlight">\(z\)</span>
+na posição direta; <span class="math notranslate nohighlight">\(\Sigma z_i\)</span> é o somatório das medidas de <span class="math notranslate nohighlight">\(z\)</span>
+na posição indireta; <span class="math notranslate nohighlight">\(n\)</span> é o número de pares de medidas de <span class="math notranslate nohighlight">\(z_d\)</span> e <span class="math notranslate nohighlight">\(z_i\)</span>.</p>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 9</span> Calcule o ângulo zenital médio a partir dos quatro pares de medidas de ângulo zenital,
+respectivamente, na posição direta e inversa da luneta:</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(111^\circ32'44''\)</span> e <span class="math notranslate nohighlight">\(248^\circ27'5''\)</span>;</p></li>
+<li><p><span class="math notranslate nohighlight">\(111^\circ32'40''\)</span> e <span class="math notranslate nohighlight">\(248^\circ27'11''\)</span>;</p></li>
+<li><p><span class="math notranslate nohighlight">\(111^\circ32'37''\)</span> e <span class="math notranslate nohighlight">\(248^\circ27'11''\)</span> e;</p></li>
+<li><p><span class="math notranslate nohighlight">\(111^\circ32'39''\)</span> e <span class="math notranslate nohighlight">\(248^\circ27'13''\)</span>.</p></li>
+</ol>
+<p><span class="solucao">Solução:</span> Os dados podem ser organizados conforme a tabela abaixo. Nela são apresentados
+os somatórios dos ângulos zenitais nas posições direta e inversa.</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Medida</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(z_d\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(z_i\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p><span class="math notranslate nohighlight">\(111^\circ32'44''\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(248^\circ27'5''\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p><span class="math notranslate nohighlight">\(111^\circ32'40''\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(248^\circ27'11''\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p><span class="math notranslate nohighlight">\(111^\circ32'37''\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(248^\circ27'11''\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p><span class="math notranslate nohighlight">\(\underline{111^\circ32'39''\,\,\,\,\,\,\,\,}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\underline{248^\circ27'13''\,\,\,\,\,\,\,\,}\)</span></p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><span class="math notranslate nohighlight">\(\Sigma z_d=446^\circ10'40''\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\Sigma z_i=993^\circ48'40''\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>De acordo com a Equação <a class="reference internal" href="#equation-eq-mediaangulozenital">(75)</a>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\bar{z}_{d}&amp;=\frac{446^\circ10'40''}{4}+\frac{4\cdot360^\circ-(446^\circ10'40''+993^\circ48'40'')}{2\cdot4}\\
+\bar{z}_{d}&amp;=111^\circ32'40''+\frac{1440^\circ-(1439^\circ59'20'')}{8}\\
+\bar{z}_{d}&amp;=111^\circ32'40''+0^\circ0'5''\\
+\bar{z}_{d}&amp;=111^\circ32'45''.\end{split}\]</div>
+<hr class="docutils" />
+<div class="admonition-sugestao-de-aula-pratica admonition">
+<p class="admonition-title">Sugestão de aula prática</p>
+<p><strong>Medição de ângulos pelo método das direções</strong></p>
+<p><em>Objetivo</em>: Medir em campo e calcular o ângulo horizontal pelo método das direções.</p>
+<p><em>Procedimento</em>: Em campo materializar três pontos consecutivos, A, B e C. Estacionar o equipamento em C, e realizar dois pares de medidas do ângulo horizontal ABC com a luneta na PD e PI. A caderneta de campo é o mesma apresentada na Figura ref{fig:metododasdirecoes}, página pageref{fig:metododasdirecoes}.</p>
+</div>
+</section>
+</section>
+<section id="exercicios">
+<h2>Exercícios<a class="headerlink" href="#exercicios" title="Link permanente para este título"></a></h2>
+<p>begin{exercicio}label{exer:metododasdirecoes}Calcular o ângulo
+horizontal no ponto 2 pelo método das direções, dada as leituras de
+ré e vante, respectivamente, nos pontos 1 e 3, com a luneta na posição
+direta e inversa, conforme a Tabela ref{tab:metododasdirecoes}.</p>
+<p>begin{SCtable}[][!h]
+begin{tabular}{ccccr}</p>
+<p>estação | multicolumn{1}{&gt;{centeringarraybackslash}m{15mm}}{posição luneta} | repetição | PV | multicolumn{1}{&gt;{centeringarraybackslash}m{15mm}}{Hz}
+multirow{8}{*}{2} |  multirow{4}{*}{PD} | multirow{2}{*}{1}  | 1  | :math:` 00^circ 00” 00””`</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line-block">
+<div class="line">|          | 3             | :math:` 45^circ19’14””`    cline{3-5}</div>
+<div class="line">| multirow{2}{*}{2}          | 1  | :math:` 00^circ 00” 00””`</div>
+<div class="line">|          | 3  | :math:` 45^circ19’27””`    cline{2-5}</div>
+</div>
+<div class="line">multirow{4}{*}{PI}            | multirow{2}{*}{1}  | 1  | <span class="math notranslate nohighlight">\(179^\circ59'57''\)</span></div>
+<div class="line-block">
+<div class="line">|          | 3  | :math:` 225^circ19’15””`    cline{3-5}</div>
+<div class="line">| multirow{2}{*}{2}          | 1  | <span class="math notranslate nohighlight">\(180^\circ 00'05''\)</span></div>
+<div class="line">|         | 3  | <span class="math notranslate nohighlight">\(225^\circ19'25''\)</span></div>
+</div>
+</div>
+</div></blockquote>
+<p>end{tabular}
+caption{~}
+label{tab:metododasdirecoes}
+end{SCtable} end{exercicio}</p>
+<p>noindent textsl{Resp.}: <span class="math notranslate nohighlight">\(45^\circ19'19,7''\)</span>.</p>
+<p>begin{exercicio}label{exer:exerazimuterumo1}Dados os azimutes
+de vante: <span class="math notranslate nohighlight">\(\mathrm{Az_{01}}=132^\circ43'6''\)</span>, <span class="math notranslate nohighlight">\(\mathrm{Az_{12}}=265^\circ18'9''\)</span>, <span class="math notranslate nohighlight">\(\mathrm{Az_{23}}=169^\circ36'4''\)</span> e <span class="math notranslate nohighlight">\(\mathrm{Az_{34}}=316^\circ21'34''\)</span>, calcule:
+begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+item os rumos de vante;
+item os rumos de ré e;
+item os azimutes de ré.
+end{enumerate} end{exercicio}</p>
+<p>noindent textsl{Resp.}: begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+item <span class="math notranslate nohighlight">\(\mathrm{R_{01}}=47^\circ16'54''\)</span>mathrm{R_{12}}=85^circ18’9””<cite>SW, :math:</cite>mathrm{R_{23}}=10^circ23’56””<cite>SE e  :math:</cite>mathrm{R_{34}}=43^circ38’26””<cite>NW.
+item :math:</cite>mathrm{R_{10}}=47^circ16’54””<cite>NW, :math:</cite>mathrm{R_{21}}=85^circ18’9””<cite>NE, :math:</cite>mathrm{R_{32}}=10^circ23’56””<cite>NW e  :math:</cite>mathrm{R_{43}}=43^circ38’26””<cite>SE.
+item :math:</cite>mathrm{Az_{10}}=312^circ43’6””<cite>,  :math:</cite>mathrm{Az_{21}}=85^circ18’9””<cite>,  :math:</cite>mathrm{Az_{32}}=349^circ36’4””` e  <span class="math notranslate nohighlight">\(\mathrm{Az_{43}}=136^\circ21'34''\)</span>.
+end{enumerate}</p>
+<p>begin{exercicio}label{exer:exerrumeazimute}Dados os rumos de vante: <span class="math notranslate nohighlight">\(\mathrm{R_{AB}}=54^\circ30'29''\)</span>mathrm{R_{BC}}=31^circ2’50””<cite>NE, :math:</cite>mathrm{R_{CD}}=11^circ3’41””<cite>SE, e :math:</cite>mathrm{R_{DE}}=61^circ21’34””<a href="#id19"><span class="problematic" id="id20">`</span></a>NW, calcule:
+begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+item os rumos de ré;
+item os azimutes de vante e;
+item os azimutes de ré.
+end{enumerate} end{exercicio}</p>
+<p>noindent textsl{Resp.}: begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+item <span class="math notranslate nohighlight">\(\mathrm{R_{BA}}=54^\circ30'29''\)</span>mathrm{R_{CB}}=31^circ2’50””<cite>SW, :math:</cite>mathrm{R_{DC}}=11^circ3’41””<cite>NW  e :math:</cite>mathrm{R_{ED}}=61^circ21’34””<cite>SE.
+item :math:</cite>mathrm{Az_{AB}}=234^circ30’29””<cite>, :math:</cite>mathrm{Az_{BC}}=31^circ2’50””<cite>, :math:</cite>mathrm{Az_{CD}}=168^circ56’19””` e <span class="math notranslate nohighlight">\(\mathrm{Az_{EF}}=298^\circ38'26''\)</span>.
+item <span class="math notranslate nohighlight">\(\mathrm{Az_{BA}}= 54^\circ30'29''\)</span>, <span class="math notranslate nohighlight">\(\mathrm{Az_{CB}}=211^\circ2'50''\)</span>, <span class="math notranslate nohighlight">\(\mathrm{Az_{DC}}=348^\circ56'19''\)</span> e  <span class="math notranslate nohighlight">\(\mathrm{Az_{FE}}=118^\circ38'26''\)</span>.
+end{enumerate}</p>
+<p>begin{exercicio}label{exerc:Calcular-o-azimute-angulointerno}Calcular
+o azimute CD sabendo que: o azimute AB é <span class="math notranslate nohighlight">\(47^\circ21'2''\)</span>; ângulos
+medidos à direita <span class="math notranslate nohighlight">\(\mathrm{ABC}=141^\circ1'54''\)</span> e <span class="math notranslate nohighlight">\(\mathrm{BCD}=85^\circ36'10''\)</span>.end{exercicio}</p>
+<p>noindent textsl{Resp.}: <span class="math notranslate nohighlight">\(\mathrm{Az_{CD}}= 273^\circ59'6''\)</span>.</p>
+<p>begin{exercicio}label{exerc:Calcular-o-azimute-angulointerno-1}Calcular o azimute 34 sabendo que: o azimute 12 é <span class="math notranslate nohighlight">\(242^\circ55'22''\)</span>; ângulos
+medidos à direita <span class="math notranslate nohighlight">\(123=65^\circ12'13''\)</span> e <span class="math notranslate nohighlight">\(234=125^\circ6'40''\)</span>.end{exercicio}</p>
+<p>noindent textsl{Resp.}: <span class="math notranslate nohighlight">\(\mathrm{Az_{34}}= 73^\circ14'15''\)</span>.</p>
+<p>begin{exercicio}label{exer:angulos_azimute_coorretan1}O alinhamento
+AB é de controle, sendo suas coordenadas retangulares, em metros,
+de A(559,432; 765,231) e de B(612,019; 791,692). Determine o azimute
+AB.end{exercicio}</p>
+<p>noindent textsl{Resp.}: <span class="math notranslate nohighlight">\(\mathrm{Az_{AB}}=63^\circ17'20,9''\)</span>.</p>
+<p>begin{exercicio}label{exer:angulos_azimute_coorretan2}Repetir
+o exercício ref{exer:angulos_azimute_coorretan1} para o alinhamento
+OP com O(975,796; 419,790) e P(801,218; 152,865).end{exercicio}</p>
+<p>noindent textsl{Resp.}: <span class="math notranslate nohighlight">\(\mathrm{Az_{OP}}=213^\circ11'9,8''\)</span>.</p>
+<p>begin{exercicio}label{exer:angulos_INTERNO}A soma dos ângulos
+internos medidos de uma poligonal de 9 lados é de <span class="math notranslate nohighlight">\(1259^\circ 59' 24''\)</span>.
+Determine qual o erro angular de fechamento e a compensação a ser
+aplicada em cada ângulo medido, a fim de tornar a poligonal com erro
+angular igual a zero.end{exercicio}</p>
+<p>noindent textsl{Resp.}: o erro angular de fechamento é de <span class="math notranslate nohighlight">\(-36''\)</span>.
+Será aplicado <span class="math notranslate nohighlight">\(+4''\)</span> em cada ângulo interno medido.</p>
+<p>begin{exercicio}label{exer:angulos_somaINTERNO}Na Tabela ref{tab:exem:mediaangulozenital}
+são apresentados os ângulos internos à direita medidos da poligonal
+fechada ABCD. Calcule o erro angular de fechamento. Compense pelo
+método linear e calcule os azimutes dos alinhamentos BC, CD e DA.
+end{exercicio}</p>
+<p>begin{SCtable}[][!h]
+begin{tabular}{rrl}</p>
+<div class="line-block">
+<div class="line">Alin}   |   Azimute    |  | <span class="math notranslate nohighlight">\(\sphericalangle\)</span> à direita}</div>
+<div class="line">AB}     <a href="#id21"><span class="problematic" id="id22">|</span></a><span class="math notranslate nohighlight">\(186^\circ9'33''\)</span>    |   <span class="math notranslate nohighlight">\(\mathrm{{A}}=128^\circ 4' 2''\)</span></div>
+<div class="line">BC}     |                     |   <span class="math notranslate nohighlight">\(\mathrm{{B}}= 68^\circ57'34''\)</span></div>
+<div class="line">CD}     |                     |   <span class="math notranslate nohighlight">\(\mathrm{{C}}=113^\circ41'32''\)</span></div>
+<div class="line">DA}     |                     |   <span class="math notranslate nohighlight">\(\mathrm{{D}}= 49^\circ17'32''\)</span></div>
+</div>
+<p>end{tabular}
+caption{Caderneta de campo.}
+label{tab:exem:mediaangulozenital}
+end{SCtable}</p>
+<p>noindent textsl{Resp.}: o erro angular de fechamento é de <span class="math notranslate nohighlight">\(40''\)</span>.
+Os azimutes compensados: <span class="math notranslate nohighlight">\(\mathrm{Az_{BC}}=75^\circ6'57''\)</span>, <span class="math notranslate nohighlight">\(\mathrm{Az_{CD}}=  8^\circ48'19''\)</span>  e <span class="math notranslate nohighlight">\(\mathrm{Az_{DA}}=238^\circ 5'41''\)</span>.</p>
+<p>parpic(5cm,6cm)[r]{includegraphics{angulodeflexaoExercicio}}begin{exercicio}label{exer:angulos_deflexao}No
+levantamento apresentado ao lado, poligonal aberta e apoiada, foram
+medidos os ângulos de deflexão: <span class="math notranslate nohighlight">\(\mathrm{DD_{BC}}=132^\circ43'6''\)</span>, <span class="math notranslate nohighlight">\(\mathrm{DE_{CD}}=65^\circ18'9''\)</span>, <span class="math notranslate nohighlight">\(\mathrm{DD_{DE}}=69^\circ36'4''\)</span>, <span class="math notranslate nohighlight">\(\mathrm{DE_{EF}}=66^\circ21'34''\)</span>, <span class="math notranslate nohighlight">\(\mathrm{DE_{FG}}=106^\circ10'11''\)</span>. Os azimutes de controle de saída e chegada foram de <span class="math notranslate nohighlight">\(\mathrm{Az_{AB}}=63^\circ52'8''\)</span> e <span class="math notranslate nohighlight">\(\mathrm{Az_{FG}}=28^\circ22'9''\)</span>.
+Determinar:
+begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+item o erro angular de fechamento;
+item os azimutes considerando a compensação  do erro angular de fechamento.
+end{enumerate} end{exercicio}</p>
+<p>noindent textsl{Resp.}: o erro angular de fechamento é de <span class="math notranslate nohighlight">\(45''\)</span>.
+Os azimutes compensados: <span class="math notranslate nohighlight">\({\mathrm{Az_{BC}}=196^\circ35'23''}\)</span>, <span class="math notranslate nohighlight">\(\mathrm{Az_{CD}}=131^\circ17'23''\)</span>, <span class="math notranslate nohighlight">\(\mathrm{Az_{DE}}=200^\circ53'36''\)</span> e <span class="math notranslate nohighlight">\(\mathrm{Az_{EF}}=134^\circ32'11''\)</span>.picskip{0}vspace{1cm}</p>
+<p>begin{exercicio} Converta em azimutes e rumos verdadeiros os seguintes
+azimutes magnéticos com suas respectivas declinações magnéticas <span class="math notranslate nohighlight">\((\delta)\)</span>:</p>
+<p>begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+item <span class="math notranslate nohighlight">\(6^\circ35'30'',~\delta=10^\circ5'\mathrm{W}\)</span>;
+item <span class="math notranslate nohighlight">\(28^\circ3'40'',~\delta=22^\circ32'\mathrm{W}\)</span>;
+item <span class="math notranslate nohighlight">\(228^\circ43'20'',~\delta=5^\circ52'\mathrm{E}\)</span>;
+end{enumerate}end{exercicio}</p>
+<p>noindent textsl{Resp.}: begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+item <span class="math notranslate nohighlight">\(\mathrm{Az_{verda}}=356^\circ30'30''\)</span> e <span class="math notranslate nohighlight">\(\mathrm{R_{verda}}=3^\circ29'30''\)</span>mathrm{Az_{verda}}=5^circ31’40””` e <span class="math notranslate nohighlight">\(\mathrm{R_{verda}}=5^\circ31'40''\)</span>mathrm{Az_{verda}}=234^circ35’20””` e :math:<a href="#id23"><span class="problematic" id="id24">`</span></a>mathrm{R_{verda}}=54^circ35’20””<a href="#id25"><span class="problematic" id="id26">`</span></a>SW.
+end{enumerate}</p>
+<p>begin{exercicio}label{exer:angulos_declinacao0}Pesquisar na página da NOAA (href{https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml?useFullSite=true}{Clicando aqui}) a declinação magnética para a Cidade de Campina
+Grande <span class="math notranslate nohighlight">\((\phi=-7^\circ13'50'',~\lambda=-35^\circ51'52'';~\mathrm{altitude}=551~\mathrm{m})\)</span>,
+PB, para a data de 28/jan/1996, modelo IGRF.end{exercicio}</p>
+<p>noindent textsl{Resp.}: <span class="math notranslate nohighlight">\(\delta=-22,33^\circ\)</span>.</p>
+<p>begin{exercicio}label{exer:angulos_declinacao}Repetir o cálculo
+da variação da declinação magnética como a realizada no Exemplo ref{exemplo:declinacaomagnetica1}
+(pg. pageref{exemplo:declinacaomagnetica1}) para o município de
+Piracicaba, São Paulo <span class="math notranslate nohighlight">\((\phi=-22^\circ43'31'',~\lambda=-47^\circ38'57'';~\mathrm{altitude}=547~\mathrm{m})\)</span>,
+entre o período 1/Jul/1950 e 15/Ago/2010.end{exercicio}</p>
+<p>noindent textsl{Resp.}: Em 1/Jul/1950 e 15/Ago/2010 a declinação
+magnética foi de, respectivamente, <span class="math notranslate nohighlight">\(-11,87^\circ\)</span> e <span class="math notranslate nohighlight">\(-20,10^\circ\)</span>,
+logo a variação é de :math:<a href="#id27"><span class="problematic" id="id28">`</span></a>8,23^circ`W.</p>
+<p>begin{exercicio}O ângulo zenital na posição direta é de <span class="math notranslate nohighlight">\(74^\circ2'48''\)</span>.
+Qual seria o ângulo equivalente se a luneta estivesse na posição inversa.end{exercicio}</p>
+<p>noindent textsl{Resp.}: <span class="math notranslate nohighlight">\(z_d=285^\circ57'12''\)</span>.</p>
+<p>begin{exercicio}label{exer:angulozenital}Foram medidos dois pares
+de ângulo zenital, na posição direta e inversa da luneta, resultando
+nas seguintes leituras: na posição direta <span class="math notranslate nohighlight">\(87^\circ9'37''\)</span> e <span class="math notranslate nohighlight">\(87^\circ9'43''\)</span>
+e, na posição inversa <span class="math notranslate nohighlight">\(272^\circ50'27''\)</span> e <span class="math notranslate nohighlight">\(272^\circ50'21''\)</span>. Calcular
+o ângulo zenital médio na posição direta da luneta (<span class="math notranslate nohighlight">\(\bar{z}_{d}\)</span>).end{exercicio}</p>
+<p>noindent textsl{Resp.}: <span class="math notranslate nohighlight">\(\bar{z}_{d}=87^\circ9'38''\)</span>.</p>
+<p>begin{exercicio}Repetir o exercício ref{exer:angulozenital} considerando
+os seguintes valores de ângulos zenitais: na posição direta <span class="math notranslate nohighlight">\(95^\circ49'14''\)</span> e <span class="math notranslate nohighlight">\(95^\circ49'18''\)</span>
+e, na posição inversa <span class="math notranslate nohighlight">\(264^\circ10'40''\)</span> e <span class="math notranslate nohighlight">\(264^\circ10'36''\)</span>.end{exercicio}</p>
+<p>noindent textsl{Resp.}: <span class="math notranslate nohighlight">\(\bar{z}_{d}=95^\circ49'19''\)</span>.</p>
 </section>
 </section>
 
@@ -310,6 +1144,7 @@ OA com azimute de vante, <span class="math notranslate nohighlight">\(45^\circ\)
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
         <a href="capitulo6.html" class="btn btn-neutral float-left" title="Capitulo 6: Medidas de distância" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="capitulo8.html" class="btn btn-neutral float-right" title="Capitulo 8: Poligonal" accesskey="n" rel="next">Seguinte <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

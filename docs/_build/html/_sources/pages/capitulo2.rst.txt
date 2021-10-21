@@ -623,6 +623,4 @@ com $10$ cm de tamanho.
 :exem:`11)` Desenhar uma escala gráfica de :math:`1:500`, com :math:`8` cm de
 tamanho.
 
-**Referências**
-
-.. bibliography::
+----
