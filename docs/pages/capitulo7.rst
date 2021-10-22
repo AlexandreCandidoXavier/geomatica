@@ -28,11 +28,11 @@ Para a determinação das coordenadas de pontos topográficos, uma vez
 na área do levantamento, e com o auxílio de teodolitos/estações totais,
 medem-se os ângulos e as distâncias entre alinhamentos. Neste capítulo
 analisaremos os ângulos medidos, que podem ser, horizontais (secção
-\ref{sec:=0000C2ngulo-horizontal}) ou verticais (secção \ref{sec:=0000C2ngulo-vertical}),
+:ref:`Ângulo horizontal`) ou verticais (secção :ref:`Ângulo vertical`),
 que são medidos em relação ao plano horizontal e vertical, respectivamente.
 Para os cálculos das coordenadas dos pontos, há a necessidade de conhecer
 (calcular) a direção dos alinhamentos em relação ao meridiano utilizado,
-ou seja, os azimutes ou rumos, sendo também vistos neste capítulo.\thispagestyle{empty}
+ou seja, os azimutes ou rumos, sendo também vistos neste capítulo.
 
 
 Medidores de ângulos
@@ -61,7 +61,7 @@ nossos equipamentos, os ângulos são medidos na unidade de graus, de
 horizontal, pode ser fixo em qualquer direção, ficando independente
 do movimento da luneta. Com o círculo horizontal, o ângulo horizontal
 entre dois pontos qualquer pode ser medido :math:`(\alpha)`, onde os procedimentos
-para a sua medição são apresentados na Secção \ref{subsec:Medicao-do-=0000E2ngulo}.
+para a sua medição são apresentados na Secção :ref:`Método das direções`.
 
 
 .. _fig_esquemateodo.png:
@@ -76,11 +76,11 @@ para a sua medição são apresentados na Secção \ref{subsec:Medicao-do-=0000E
 
 Com relação ao ângulo vertical, quando o equipamento está nivelado,
 o :math:`0^\circ` do círculo vertical tem direção do zênite ou do plano
-horizontal que passa pelo centro ótico da luneta, respectivamente, ângulo zenital e de inclinação\index{Ângulo!vertical!zenital}
+horizontal que passa pelo centro ótico da luneta, respectivamente, ângulo zenital e de inclinação
 :math:`(z)`. Maiores informações sobre os ângulos verticais podem ser encontrados
-na secção \ref{sec:=0000C2ngulo-vertical}, página \pageref{sec:=0000C2ngulo-vertical}. 
+na secção :ref:`Ângulo vertical`.
 
-
+.. _Ângulo horizontal:
 
 Ângulo horizontal
 =================
@@ -116,15 +116,17 @@ Existem várias formas de medição dos ângulos horizontais, a mais simples
 é determinado de apenas uma leitura no ponto de ré e no de vante.
 Todavia, devido aos erros instrumentais, deve-se considerar a média
 de várias medidas de :math:`\alpha`, com a luneta na posição direta e inversa
-(ver secção \ref{sec:=0000C2ngulo-vertical}, página \pageref{sec:=0000C2ngulo-vertical}).
+(ver secção :ref:`Ângulo vertical`).
 Neste texto será apresentado o método das direções, que é o previsto
 para ser utilizado pela \citeonline{NBR13133} na medição de ângulos.
 Para outros métodos, pode-se consultar, :cite:t:`loch`, :cite:t:`golcalves` e :cite:t:`WOLF`.
 
+.. _Método das direções:
+
 Método das direções
 ^^^^^^^^^^^^^^^^^^^
 
-Considere os alinhamentos apresentados na Figura \ref{fig:introangulo}.
+Considere os alinhamentos apresentados na :numref:`fig_introangulo.png`.
 O método das direções tem as seguintes etapas quando se trabalha com
 estação total:
 
@@ -179,7 +181,7 @@ que para medir os ângulos internos horizontais à direita da poligonal
 fechada ABCDE, tem-se que fazer um caminhamento no sentido anti-horário.
 No alinhamento AB é apresentado o seu azimute, ou seja a sua direção
 em relação ao meridiano. Ela é necessária para o cálculo dos azimutes
-dos demais alinhamentos, como será visto na Secção \ref{subsec:C=0000E1lculo-do-azimute}.
+dos demais alinhamentos, como será visto na Secção :ref:`Cálculodoazimute`.
 
 Ângulos de deflexão
 ^^^^^^^^^^^^^^^^^^^
@@ -216,21 +218,19 @@ Em um levantamento topográfico, tem-se que definir qual é a referência
 de meridiano que se vai utilizar, podendo ser:
 
 
-- o **meridiano astronômico**: é a linha que passa pelos pólos geográficos da terra (Secção \ref{sec:Posi=0000E7=0000E3o-Geod=0000E9sica}),
+- o **meridiano astronômico**: é a linha que passa pelos pólos geográficos da terra,
   é determinado usualmente por medidas astronômicas;
 - o **meridiano geodésico**: é a linha
   gerada pela intersecção do elipsóide de revolução com o plano que
-  passa pelos seus pólos (Secção \ref{sec:Posi=0000E7=0000E3o-Geod=0000E9sica}).
-  Atualmente com o GNSS (Secção \ref{sec:Posicionamento-por-sat=0000E9lite}),
-  a sua definição em campo tornou-se de fácil obtenção;
+  passa pelos seus pólos.  Atualmente com o GNSS,  a sua definição em campo tornou-se de fácil obtenção;
 - o **meridiano magnético**: é o plano
   vertical que passa pelo eixo da agulha magnetizada livre, com apoio
   apenas no seu centro. Por exemplo, a direção norte-sul dada por uma
-  bússola, é a direção do meridiano local (Secção \ref{declinacaomagnetica});
+  bússola, é a direção do meridiano local (Secção :ref:`Declinação magnética`);
 - o **meridiano da quadrícula**:
   corresponde a direção do eixo-:math:`y` do sistema cartesiano da quadrícula,
   da projeção cartográfica. Nas coordenas UTM, corresponde ao eixo Norte
-  (Secção \ref{subsec:Proje=0000E7=0000E3o-Universal-Transversa}).
+  (Secção :any:`UTM`).
   Também é de fácil determinação com uso do GNSS;
 - o **meridiano hipotético**: é aquele
   estabelecido em campo, sem relação com os apresentados acima. Deve
@@ -287,7 +287,7 @@ na qual o alinhamento se encontra, nordeste (NE), sudeste (SE), sudoeste
 hipotético, etc. 
 
 Chama-se de **rumo de vante**, quando o mesmo é medido do início
-do alinhamento para o final\index{Rumo!de vante}. Na Figura \ref{fig:Rumo_vante_re}a
+do alinhamento para o final. Na :numref:`fig_rumovantere.png` a
 são observados exemplos de medidas de direção utilizando o rumo de
 vante. Observe que os alinhamentos estão nas mesmas direções e sentidos
 do exemplo apresentado para o azimute na :numref:`fig_rumovantere.png` a.
@@ -392,21 +392,21 @@ teórico é :math:`540^\circ`, :math:`(5-2)180^\circ`. O somatório dos ângulos
 .. table::
    :widths: auto
 
-   +--------+-------------------------------------------------------+
-   |Vértice | :math:`\sphericalangle`  medido                       |
-   +========+=======================================================+
-   |A       | :math:`99^\circ48'54''`                               |
-   +--------+-------------------------------------------------------+
-   |B       | :math:`95^\circ55'15''`                               |
-   +--------+-------------------------------------------------------+
-   |C       | :math:`118^\circ37'50''`                              |
-   +--------+-------------------------------------------------------+
-   |D       | :math:`82^\circ47'2''`                                |
-   +--------+-------------------------------------------------------+
-   |E       | :math:`\underline{142^\circ50'14''\,\,\,\,\,\,\,\,\,}`|
-   +--------+-------------------------------------------------------+
-   |        | :math:`\Sigma=539^\circ59'15''`                       |
-   +--------+-------------------------------------------------------+
+   +-----------+-------------------------------------------------------+
+   | Vértice   | :math:`\sphericalangle`  medido                       |
+   +===========+=======================================================+
+   | :math:`A` | :math:`99^\circ48'54''`                               |
+   +           +                                                       +
+   | :math:`B` | :math:`95^\circ55'15''`                               |
+   +           +                                                       +
+   | :math:`C` | :math:`118^\circ37'50''`                              |
+   +           +                                                       +
+   | :math:`D` | :math:`82^\circ47'2''`                                |
+   +           +                                                       +
+   | :math:`E` | :math:`\underline{142^\circ50'14''\,\,\,\,\,\,\,\,}`  |
+   +-----------+-------------------------------------------------------+
+   |           | :math:`\Sigma=539^\circ59'15''`                       |
+   +-----------+-------------------------------------------------------+
 
 Desta forma, o erro angular de fechamento é de :math:`-45''` :math:`(539^\circ59'15''-540^\circ)`.
 Se o levantamento fosse para  estudos de viabilidade em projetos de engenharia,
@@ -442,7 +442,7 @@ da :numref:`fig_ExemploAnguloDexaoInterno.png` pelo método linear.
 Na tabela a seguir, é apresentado o resultado da compensação. Na coluna **I**
 estão os ângulos horizontais medidos em cada um dos vértices; na **II**
 o erro médio e na **III**, o ângulo interno compensado (**I** + **II**).
-Com o erro angular de fechamento de :math:`-45''` (ver exemplo \ref{exemplo:erro_angula_fechamento}), e sendo a poligonal de cinco lados, temos o erro médio de :math:`9''` :math:`(45''/5)`. Note que, como o somatório dos ângulos medidos foi menor do que o teórico, então deve-se somar :math:`9''` a cada um dos vértices. Caso contrário, o somatório das medidas angulares maiores que o teórico, deve-se subtrair.\vspace{.5cm}
+Com o erro angular de fechamento de :math:`-45''` (ver exemplo 2), e sendo a poligonal de cinco lados, temos o erro médio de :math:`9''` :math:`(45''/5)`. Note que, como o somatório dos ângulos medidos foi menor do que o teórico, então deve-se somar :math:`9''` a cada um dos vértices. Caso contrário, o somatório das medidas angulares maiores que o teórico, deve-se subtrair.\vspace{.5cm}
 
 .. table::
    :widths: auto
@@ -464,6 +464,8 @@ Com o erro angular de fechamento de :math:`-45''` (ver exemplo \ref{exemplo:erro
    +-----------+-------------------------------------------------------------+--------------------------------+------------------------------------------------+
 
 ----
+
+.. _Cálculodoazimute:
 
 Cálculo do azimute a partir dos ângulos internos à direita
 ----------------------------------------------------------
@@ -503,7 +505,7 @@ for fechada ou apoiada em vértices de controle, ao final dos cálculos
 deve-se confrontar os azimute calculado com: o azimute inicial, se
 a poligonal for fechada em um ponto ou; o azimute do alinhamento de
 controle final, quando a poligonal for aberta e apoiada ao final.
-Na Tabela \ref{tab:calculoazimute} são apresentados os cálculos quando
+Na Tabela abaixo são apresentados os cálculos quando
 os dados estão tabelados.
 
 .. _fig_AzimuteRumoCalculo1.png:
@@ -514,6 +516,7 @@ os dados estão tabelados.
    :align: center
 
    Cálculo dos azimutes utilizando ângulos internos.
+
 
 .. table:: Tabela de cálculo dos azimutes do exemplo da:numref`fig_ExemploAnguloDexaoInterno.png` a. Os ângulos internos são os compensados (Exemplo 3).
    :widths: auto
@@ -550,7 +553,7 @@ Cálculo do azimute a partir da deflexão
 Quando se trabalha com ângulos de deflexão, o azimute de um alinhamento
 é dado pelo azimute anterior mais ou menos, respectivamente, o ângulo
 de deflexão à direita (DD) ou à esquerda (DE) do alinhamento a ser
-calculado. Tal procedimento é apresentado no Exemplo \ref{exemplo:angulodeflexaoExErroAngu},
+calculado. Tal procedimento é apresentado no Exemplo 4,
 juntamente com o cálculo do erro de fechamento angular e sua compensação.
 
 ----
@@ -579,13 +582,33 @@ calculados a compensação do erro médio acumulado (**III**). Observe que depoi
 aplicada, o valor de azimute calculado do alinhamento final (5P) deve ser igual ao
 valor conhecido (**IV**).
 
-.. figure:: /images/capitulo7/tab_exemplo4.png
-   :scale: 35 %
-   :alt: tab_exemplo4.png
-   :align: center
+
+.. table:: ASD
+   :widths: auto
+
+   +------------+-------------------------------+------------------------------------------------------------------------------------------------------+---------------------------+-----------------------------------------------+
+   | Alin.      | **(I)** Deflexão medida       | **(II)** Cálculo do Az                                                                               | **(III)** Compensação     | **(IV)** Az comp                              |
+   +============+===============================+======================================================================================================+===========================+===============================================+
+   | :math:`O1` |          :math:`\,`           |         Azimute conhecido :math:`20^\circ51'16''`                                                    |   :math:`\,`              |  :math:`\,`                                   |
+   +------------+-------------------------------+------------------------------------------------------------------------------------------------------+---------------------------+-----------------------------------------------+
+   | :math:`12` | :math:`123^\circ21'52''` (DD) | :math:`20^\circ51'16''+123^\circ21'52''=144^\circ13'8''`                                             | :math:`-7''\cdot1=-7''`   | :math:`144^\circ13'1''`                       |
+   +            +                               +                                                                                                      +                           +                                               +
+   | :math:`23` | :math:`71^\circ47'25''` (DE)  | :math:`144^\circ13'8''-71^\circ47'25''=72^\circ25'43''`                                              | :math:`-7''\cdot2=-14''`  | :math:`72^\circ25'29''`                       |
+   +            +                               +                                                                                                      +                           +                                               +
+   | :math:`34` | :math:`49^\circ34'36''` (DD)  | :math:`72^\circ25'43''+49^\circ34'36''= 122^\circ0'19''`                                             | :math:`-7''\cdot3=-21''`  | :math:`121^\circ59'58''`                      |
+   +            +                               +                                                                                                      +                           +                                               +
+   | :math:`45` | :math:`76^\circ38'42''` (DE)  | :math:`122^\circ0'19''-76^\circ38'42''=45^\circ21'37''`                                              | :math:`-7''\cdot4=-28''`  | :math:`45^\circ21'9''`                        |
+   +            +                               +                                                                                                      +                           +                                               +
+   | :math:`5P` | :math:`99^\circ23'11''` (DD)  | :math:`45^\circ21'37''+99^\circ23'11''=144^\circ44'48''`                                             | :math:`-7''\cdot5=-35''`  | :math:`\color{blue}\mathbf{144^\circ44'13''}` |
+   +------------+-------------------------------+------------------------------------------------------------------------------------------------------+---------------------------+-----------------------------------------------+
+   | :math:`\,` |           :math:`\,`          | :math:`\text{Az}_\mathrm{5P}` calculado :math:`\,=\,\,\,\,\,\,144^\circ44'48''`                      |                           |                                               |
+   +            +                               +                                                                                                      +                           +                                               +
+   |            |                               | :math:`\text{Az}_\mathrm{5P}` conhecido :math:`=\color{blue}\underline{\mathbf{-144^\circ44'13''}}`  |                           |                                               |
+   +            +                               +                                                                                                      +                           +                                               +
+   |            |                               | :math:`\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\text{        erro}=35''`                     |                           |                                               |
+   +------------+-------------------------------+------------------------------------------------------------------------------------------------------+---------------------------+-----------------------------------------------+
 
 ----
-
 
 Cálculo do azimute a partir das coordenadas retangulares
 --------------------------------------------------------
@@ -667,6 +690,8 @@ No caso dela ser fechada, como no exemplo da :numref:`fig_ExemploAnguloDexaoInte
 a medida do alinhamento inicial, objetivando o calculo do erro angular
 de fechamento.
 
+.. _Declinação magnética:
+
 Declinação magnética
 ====================
 
@@ -688,7 +713,7 @@ direita do norte geodésico, a declinação magnética é positiva e podemos
 abreviar pela letra ``E'' (este). Por outro lado, quando o norte
 magnético encontra-se à esquerda do norte geodésico, a declinação
 magnética é negativa, ou pode-se utilizar a letra ``W'' de **west}
-(oeste). Na Figura \ref{fig:magnetismodaterra} temos a apresentação
+(oeste). Na Figura :ref:`fig_magnetismodaterra.png` temos a apresentação
 da declinação magnética de :math:`-19^\circ` para o ano de 2000, em uma
 posição próxima a Brasília.
 
@@ -1001,177 +1026,218 @@ De acordo com a Equação :eq:`eq:mediaangulozenital`:
 
    *Objetivo*: Medir em campo e calcular o ângulo horizontal pelo método das direções.
 
-   *Procedimento*: Em campo materializar três pontos consecutivos, A, B e C. Estacionar o equipamento em C, e realizar dois pares de medidas do ângulo horizontal ABC com a luneta na PD e PI. A caderneta de campo é o mesma apresentada na Figura \ref{fig:metododasdirecoes}, página \pageref{fig:metododasdirecoes}.
+   *Procedimento*: Em campo materializar três pontos consecutivos, A, B e C. Estacionar o equipamento
+   em C, e realizar dois pares de medidas do ângulo horizontal ABC com a luneta na PD e PI.
+   A caderneta de campo é o mesma apresentada na :numref:`fig_metododasdirecoes.png`.
 
 
 Exercícios
 ==========
 
-\begin{exercicio}\label{exer:metododasdirecoes}Calcular o ângulo
-horizontal no ponto 2 pelo método das direções, dada as leituras de
-ré e vante, respectivamente, nos pontos 1 e 3, com a luneta na posição
+:exem:`1)` Calcular o ângulo horizontal no ponto 2 pelo método das direções, dada as leituras
+de ré e vante, respectivamente, nos pontos 1 e 3, com a luneta na posição
 direta e inversa, conforme a Tabela \ref{tab:metododasdirecoes}.
 
-\begin{SCtable}[][!h]
-\begin{tabular}{ccccr}
+.. table::
+   :widths: auto
 
-estação | \multicolumn{1}{>{\centering\arraybackslash}m{15mm}}{posição luneta} | repetição | PV | \multicolumn{1}{>{\centering\arraybackslash}m{15mm}}{Hz}                 
-\multirow{8}{*}{2} |  \multirow{4}{*}{PD} | \multirow{2}{*}{1}  | 1  | :math:` 00^\circ 00' 00''`  
-                   |              |          | 3             | :math:` 45^\circ19'14''`    \cline{3-5}
-                   |              | \multirow{2}{*}{2}          | 1  | :math:` 00^\circ 00' 00''`  
-                   |              |          | 3  | :math:` 45^\circ19'27''`    \cline{2-5}
-                   |  \multirow{4}{*}{PI}            | \multirow{2}{*}{1}  | 1  | :math:`179^\circ59'57''`   
-                   |              |          | 3  | :math:` 225^\circ19'15''`    \cline{3-5}
-                   |              | \multirow{2}{*}{2}          | 1  | :math:`180^\circ 00'05''`   
-                   |              |         | 3  | :math:`225^\circ19'25''`    
-\end{tabular}
-\caption{~}
-\label{tab:metododasdirecoes}
-\end{SCtable} \end{exercicio} 
+   +--------+----------------+-----------+----+-------------------------------+
+   |estação | posição luneta | repetição | PV | Hz                            |
+   +========+================+===========+====+===============================+
+   | 2      |  PD            |    1      | 1  | :math:`00^\circ 00' 00''`     |
+   +        +                +           +----+-------------------------------+
+   |        |                |           | 3  | :math:`45^\circ19'14''`       |
+   +        +                +-----------+----+-------------------------------+
+   |        |                |    2      | 1  | :math:`00^\circ 00' 00''`     |
+   +        +                +           +----+-------------------------------+
+   |        |                |           | 3  | :math:`45^\circ19'27''`       |
+   +        +----------------+-----------+----+-------------------------------+
+   |        |  PI            |    1      | 1  | :math:`179^\circ59'57''`      |
+   +        +                +           +----+-------------------------------+
+   |        |                |           | 3  | :math:`225^\circ19'15''`      |
+   +        +                +-----------+----+-------------------------------+
+   |        |                |    2      | 1  | :math:`180^\circ 00'05''`     |
+   +        +                +           +----+-------------------------------+
+   |        |                |           | 3  | :math:`225^\circ19'25''`      |
+   +--------+----------------+-----------+----+-------------------------------+
 
-\noindent \textsl{Resp.}: :math:`45^\circ19'19,7''`.
+:exem:`Resp.:` :math:`45^\circ19'19,7''`.
 
-\begin{exercicio}\label{exer:exerazimuterumo1}Dados os azimutes
+----
+
+:exem:`2)`  Dados os azimutes
 de vante: :math:`\mathrm{Az_{01}}=132^\circ43'6''`, :math:`\mathrm{Az_{12}}=265^\circ18'9''`, :math:`\mathrm{Az_{23}}=169^\circ36'4''` e :math:`\mathrm{Az_{34}}=316^\circ21'34''`, calcule:
-\begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
-\item os rumos de vante;
-\item os rumos de ré e;
-\item os azimutes de ré.
-\end{enumerate} \end{exercicio} 
 
-\noindent \textsl{Resp.}: \begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
-\item :math:`\mathrm{R_{01}}=47^\circ16'54''`SE, :math:`\mathrm{R_{12}}=85^\circ18'9''`SW, :math:`\mathrm{R_{23}}=10^\circ23'56''`SE e  :math:`\mathrm{R_{34}}=43^\circ38'26''`NW.
-\item :math:`\mathrm{R_{10}}=47^\circ16'54''`NW, :math:`\mathrm{R_{21}}=85^\circ18'9''`NE, :math:`\mathrm{R_{32}}=10^\circ23'56''`NW e  :math:`\mathrm{R_{43}}=43^\circ38'26''`SE.
-\item :math:`\mathrm{Az_{10}}=312^\circ43'6''`,  :math:`\mathrm{Az_{21}}=85^\circ18'9''`,  :math:`\mathrm{Az_{32}}=349^\circ36'4''` e  :math:`\mathrm{Az_{43}}=136^\circ21'34''`.
-\end{enumerate}
+a) item os rumos de vante;
+b) os rumos de ré e;
+c) os azimutes de ré.
 
-\begin{exercicio}\label{exer:exerrumeazimute}Dados os rumos de vante: :math:`\mathrm{R_{AB}}=54^\circ30'29''`SW, :math:`\mathrm{R_{BC}}=31^\circ2'50''`NE, :math:`\mathrm{R_{CD}}=11^\circ3'41''`SE, e :math:`\mathrm{R_{DE}}=61^\circ21'34''`NW, calcule:
-\begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
-\item os rumos de ré;
-\item os azimutes de vante e;
-\item os azimutes de ré.
-\end{enumerate} \end{exercicio} 
+:exem:`Resp.:`
 
-\noindent \textsl{Resp.}: \begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
-\item :math:`\mathrm{R_{BA}}=54^\circ30'29''`NE, :math:`\mathrm{R_{CB}}=31^\circ2'50''`SW, :math:`\mathrm{R_{DC}}=11^\circ3'41''`NW  e :math:`\mathrm{R_{ED}}=61^\circ21'34''`SE.
-\item :math:`\mathrm{Az_{AB}}=234^\circ30'29''`, :math:`\mathrm{Az_{BC}}=31^\circ2'50''`, :math:`\mathrm{Az_{CD}}=168^\circ56'19''` e :math:`\mathrm{Az_{EF}}=298^\circ38'26''`.
-\item :math:`\mathrm{Az_{BA}}= 54^\circ30'29''`, :math:`\mathrm{Az_{CB}}=211^\circ2'50''`, :math:`\mathrm{Az_{DC}}=348^\circ56'19''` e  :math:`\mathrm{Az_{FE}}=118^\circ38'26''`.
-\end{enumerate}
+a) :math:`\mathrm{R_{01}}=47^\circ16'54''` SE, :math:`\mathrm{R_{12}}=85^\circ18'9''` SW, :math:`\mathrm{R_{23}}=10^\circ23'56''` SE e  :math:`\mathrm{R_{34}}=43^\circ38'26''` NW.
+b) :math:`\mathrm{R_{10}}=47^\circ16'54''` NW, :math:`\mathrm{R_{21}}=85^\circ18'9''` NE, :math:`\mathrm{R_{32}}=10^\circ23'56''` NW e  :math:`\mathrm{R_{43}}=43^\circ38'26''` SE.
+c) :math:`\mathrm{Az_{10}}=312^\circ43'6''`,  :math:`\mathrm{Az_{21}}=85^\circ18'9''`,  :math:`\mathrm{Az_{32}}=349^\circ36'4''` e  :math:`\mathrm{Az_{43}}=136^\circ21'34''`.
 
-\begin{exercicio}\label{exerc:Calcular-o-azimute-angulointerno}Calcular
-o azimute CD sabendo que: o azimute AB é :math:`47^\circ21'2''`; ângulos
-medidos à direita :math:`\mathrm{ABC}=141^\circ1'54''` e :math:`\mathrm{BCD}=85^\circ36'10''`.\end{exercicio} 
+----
 
-\noindent \textsl{Resp.}: :math:`\mathrm{Az_{CD}}= 273^\circ59'6''`.
+:exem:`3)` Dados os rumos de vante: :math:`\mathrm{R_{AB}}=54^\circ30'29''` SW,
+:math:`\mathrm{R_{BC}}=31^\circ2'50''` NE, :math:`\mathrm{R_{CD}}=11^\circ3'41''` SE,
+e :math:`\mathrm{R_{DE}}=61^\circ21'34''`NW, calcule:
 
-\begin{exercicio}\label{exerc:Calcular-o-azimute-angulointerno-1}Calcular o azimute 34 sabendo que: o azimute 12 é :math:`242^\circ55'22''`; ângulos
-medidos à direita :math:`123=65^\circ12'13''` e :math:`234=125^\circ6'40''`.\end{exercicio} 
+a) os rumos de ré;
+b) os azimutes de vante e;
+c) os azimutes de ré.
 
-\noindent \textsl{Resp.}: :math:`\mathrm{Az_{34}}= 73^\circ14'15''`.
+:exem:`Resp.:`
 
-\begin{exercicio}\label{exer:angulos_azimute_coorretan1}O alinhamento
-AB é de controle, sendo suas coordenadas retangulares, em metros,
+a) :math:`\mathrm{R_{BA}}=54^\circ30'29''`NE, :math:`\mathrm{R_{CB}}=31^\circ2'50''`SW, :math:`\mathrm{R_{DC}}=11^\circ3'41''`NW  e :math:`\mathrm{R_{ED}}=61^\circ21'34''`SE.
+b) :math:`\mathrm{Az_{AB}}=234^\circ30'29''`, :math:`\mathrm{Az_{BC}}=31^\circ2'50''`, :math:`\mathrm{Az_{CD}}=168^\circ56'19''` e :math:`\mathrm{Az_{EF}}=298^\circ38'26''`.
+c) :math:`\mathrm{Az_{BA}}= 54^\circ30'29''`, :math:`\mathrm{Az_{CB}}=211^\circ2'50''`, :math:`\mathrm{Az_{DC}}=348^\circ56'19''` e  :math:`\mathrm{Az_{FE}}=118^\circ38'26''`.
+
+----
+
+:exem:`4)` Calcular o azimute CD sabendo que: o azimute AB é :math:`47^\circ21'2''`; ângulos
+medidos à direita :math:`\mathrm{ABC}=141^\circ1'54''` e :math:`\mathrm{BCD}=85^\circ36'10''`. 
+
+:exem:`Resp.:` :math:`\mathrm{Az_{CD}}= 273^\circ59'6''`.
+
+----
+
+:exem:`5)`  Calcular o azimute 34 sabendo que: o azimute 12 é :math:`242^\circ55'22''`; ângulos
+medidos à direita :math:`123=65^\circ12'13''` e :math:`234=125^\circ6'40''`. 
+
+:exem:`Resp.:` :math:`\mathrm{Az_{34}}= 73^\circ14'15''`.
+
+----
+
+:exem:`6)`  O alinhamento AB é de controle, sendo suas coordenadas retangulares, em metros,
 de A(559,432; 765,231) e de B(612,019; 791,692). Determine o azimute
-AB.\end{exercicio} 
+AB. 
 
-\noindent \textsl{Resp.}: :math:`\mathrm{Az_{AB}}=63^\circ17'20,9''`.
+:exem:`Resp.:` :math:`\mathrm{Az_{AB}}=63^\circ17'20,9''`.
 
-\begin{exercicio}\label{exer:angulos_azimute_coorretan2}Repetir
-o exercício \ref{exer:angulos_azimute_coorretan1} para o alinhamento
-OP com O(975,796; 419,790) e P(801,218; 152,865).\end{exercicio} 
+----
 
-\noindent \textsl{Resp.}: :math:`\mathrm{Az_{OP}}=213^\circ11'9,8''`.
+:exem:`7)` Calcular o azimute do alinhamento OP, cuja as coordenadas são
+O(975,796; 419,790) e P(801,218; 152,865).
 
-\begin{exercicio}\label{exer:angulos_INTERNO}A soma dos ângulos
-internos medidos de uma poligonal de 9 lados é de :math:`1259^\circ 59' 24''`.
+:exem:`Resp.:` :math:`\mathrm{Az_{OP}}=213^\circ11'9,8''`.
+
+----
+
+:exem:`8)` A soma dos ângulos
+internos medidos de uma poligonal de 9 lados é de :math:`1\,259^\circ 59' 24''`.
 Determine qual o erro angular de fechamento e a compensação a ser
 aplicada em cada ângulo medido, a fim de tornar a poligonal com erro
-angular igual a zero.\end{exercicio} 
+angular igual a zero. 
 
-\noindent \textsl{Resp.}: o erro angular de fechamento é de :math:`-36''`.
+:exem:`Resp.:` o erro angular de fechamento é de :math:`-36''`.
 Será aplicado :math:`+4''` em cada ângulo interno medido.
 
-\begin{exercicio}\label{exer:angulos_somaINTERNO}Na Tabela \ref{tab:exem:mediaangulozenital}
+----
+
+:exem:`9)` Na Tabela \ref{tab:exem:mediaangulozenital}
 são apresentados os ângulos internos à direita medidos da poligonal
 fechada ABCD. Calcule o erro angular de fechamento. Compense pelo
 método linear e calcule os azimutes dos alinhamentos BC, CD e DA.
-\end{exercicio} 
-
-\begin{SCtable}[][!h]
-\begin{tabular}{rrl}
  
-| Alin}   |   Azimute    |  | :math:`\sphericalangle` à direita}
-| AB}     |:math:`186^\circ9'33''`    |   :math:`\mathrm{{A}}=128^\circ 4' 2''`
-| BC}     |                     |   :math:`\mathrm{{B}}= 68^\circ57'34''`
-| CD}     |                     |   :math:`\mathrm{{C}}=113^\circ41'32''`
-| DA}     |                     |   :math:`\mathrm{{D}}= 49^\circ17'32''`
+.. table:: Caderneta de campo.
+   :widths: auto
 
-\end{tabular}
-\caption{Caderneta de campo.}
-\label{tab:exem:mediaangulozenital}
-\end{SCtable}
+   +----------------+---------------------------+------------------------------------------+
+   | Alin           |   Azimute                 |   :math:`\sphericalangle` à direita}     |
+   +================+===========================+==========================================+
+   | :math:`AB`     | :math:`186^\circ9'33''`   |   :math:`\mathrm{{A}}=128^\circ 4' 2''`  |
+   +                +                           +                                          +
+   | :math:`BC`     | :math:`\,`                |   :math:`\mathrm{{B}}= 68^\circ57'34''`  |
+   +                +                           +                                          +
+   | :math:`CD`     | :math:`\,`                |   :math:`\mathrm{{C}}=113^\circ41'32''`  |
+   +                +                           +                                          +
+   | :math:`DA`     | :math:`\,`                |   :math:`\mathrm{{D}}= 49^\circ17'32''`  |
+   +----------------+---------------------------+------------------------------------------+
 
-\noindent \textsl{Resp.}: o erro angular de fechamento é de :math:`40''`.
+
+:exem:`Resp.:` o erro angular de fechamento é de :math:`40''`.
 Os azimutes compensados: :math:`\mathrm{Az_{BC}}=75^\circ6'57''`, :math:`\mathrm{Az_{CD}}=  8^\circ48'19''`  e :math:`\mathrm{Az_{DA}}=238^\circ 5'41''`.
 
-\parpic(5cm,6cm)[r]{\includegraphics{angulodeflexaoExercicio}}\begin{exercicio}\label{exer:angulos_deflexao}No
-levantamento apresentado ao lado, poligonal aberta e apoiada, foram
+----
+
+:exem:`10)`  No levantamento apresentado abaixo, poligonal aberta e apoiada, foram
 medidos os ângulos de deflexão: :math:`\mathrm{DD_{BC}}=132^\circ43'6''`, :math:`\mathrm{DE_{CD}}=65^\circ18'9''`, :math:`\mathrm{DD_{DE}}=69^\circ36'4''`, :math:`\mathrm{DE_{EF}}=66^\circ21'34''`, :math:`\mathrm{DE_{FG}}=106^\circ10'11''`. Os azimutes de controle de saída e chegada foram de :math:`\mathrm{Az_{AB}}=63^\circ52'8''` e :math:`\mathrm{Az_{FG}}=28^\circ22'9''`.
 Determinar:
-\begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
-\item o erro angular de fechamento;
-\item os azimutes considerando a compensação  do erro angular de fechamento.
-\end{enumerate} \end{exercicio} 
 
-\noindent \textsl{Resp.}: o erro angular de fechamento é de :math:`45''`.
-Os azimutes compensados: :math:`{\mathrm{Az_{BC}}=196^\circ35'23''}`, :math:`\mathrm{Az_{CD}}=131^\circ17'23''`, :math:`\mathrm{Az_{DE}}=200^\circ53'36''` e :math:`\mathrm{Az_{EF}}=134^\circ32'11''`.\picskip{0}\vspace{1cm}
+a) o erro angular de fechamento;
+b) os azimutes considerando a compensação  do erro angular de fechamento.
 
-\begin{exercicio} Converta em azimutes e rumos verdadeiros os seguintes
+.. _exemplo_10.png:
+
+.. figure:: /images/capitulo7/exemplo_10.png
+   :scale: 50 %
+   :alt: exemplo_10.png
+   :align: center
+
+:exem:`Resp.:` o erro angular de fechamento é de :math:`45''`.
+Os azimutes compensados: :math:`{\mathrm{Az_{BC}}=196^\circ35'23''}`,
+:math:`\mathrm{Az_{CD}}=131^\circ17'23''`, :math:`\mathrm{Az_{DE}}=200^\circ53'36''` e
+:math:`\mathrm{Az_{EF}}=134^\circ32'11''`.
+
+----
+
+:exem:`11)`   Converta em azimutes e rumos verdadeiros os seguintes
 azimutes magnéticos com suas respectivas declinações magnéticas :math:`(\delta)`:
 
-\begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
-\item :math:`6^\circ35'30'',~\delta=10^\circ5'\mathrm{W}`;
-\item :math:`28^\circ3'40'',~\delta=22^\circ32'\mathrm{W}`;
-\item :math:`228^\circ43'20'',~\delta=5^\circ52'\mathrm{E}`;
-\end{enumerate}\end{exercicio} 
+a) :math:`6^\circ35'30'',~\delta=10^\circ5'\mathrm{W}`;
+b) :math:`28^\circ3'40'',~\delta=22^\circ32'\mathrm{W}`;
+c) :math:`228^\circ43'20'',~\delta=5^\circ52'\mathrm{E}`;
 
-\noindent \textsl{Resp.}: \begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
-\item :math:`\mathrm{Az_{verda}}=356^\circ30'30''` e :math:`\mathrm{R_{verda}}=3^\circ29'30''`NW;
-\item :math:`\mathrm{Az_{verda}}=5^\circ31'40''` e :math:`\mathrm{R_{verda}}=5^\circ31'40''`NE;
-\item :math:`\mathrm{Az_{verda}}=234^\circ35'20''` e :math:`\mathrm{R_{verda}}=54^\circ35'20''`SW.
-\end{enumerate} 
+:exem:`Resp.:`
 
-\begin{exercicio}\label{exer:angulos_declinacao0}Pesquisar na página da NOAA (\href{https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml?useFullSite=true}{Clicando aqui}) a declinação magnética para a Cidade de Campina
+a) :math:`\mathrm{Az_{verda}}=356^\circ30'30''` e :math:`\mathrm{R_{verda}}=3^\circ29'30''` NW;
+b) :math:`\mathrm{Az_{verda}}=5^\circ31'40''` e :math:`\mathrm{R_{verda}}=5^\circ31'40''` NE;
+c) :math:`\mathrm{Az_{verda}}=234^\circ35'20''` e :math:`\mathrm{R_{verda}}=54^\circ35'20''` SW.
+
+----
+
+:exem:`12)` Pesquisar na página da `NOAA <https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml?useFullSite=true>`_
+a declinação magnética para a Cidade de Campina
 Grande :math:`(\phi=-7^\circ13'50'',~\lambda=-35^\circ51'52'';~\mathrm{altitude}=551~\mathrm{m})`,
-PB, para a data de 28/jan/1996, modelo IGRF.\end{exercicio} 
+PB, para a data de 28/jan/1996, modelo **IGRF**.
 
-\noindent \textsl{Resp.}: :math:`\delta=-22,33^\circ`.
+:exem:`Resp.:` :math:`\delta=-22,33^\circ`.
 
-\begin{exercicio}\label{exer:angulos_declinacao}Repetir o cálculo
-da variação da declinação magnética como a realizada no Exemplo \ref{exemplo:declinacaomagnetica1}
-(pg. \pageref{exemplo:declinacaomagnetica1}) para o município de
-Piracicaba, São Paulo :math:`(\phi=-22^\circ43'31'',~\lambda=-47^\circ38'57'';~\mathrm{altitude}=547~\mathrm{m})`,
-entre o período 1/Jul/1950 e 15/Ago/2010.\end{exercicio} 
+----
 
-\noindent \textsl{Resp.}: Em 1/Jul/1950 e 15/Ago/2010 a declinação
-magnética foi de, respectivamente, :math:`-11,87^\circ` e :math:`-20,10^\circ`,
-logo a variação é de :math:`8,23^\circ`W.
+:exem:`13)` Calcular a declinação magnética e a variação sua variação (modelo **IGRF**) para o município de
+Piracicaba, São Paulo :math:`(\phi=-22^\circ43'31'',~\lambda=-47^\circ38'57'')`,
+entre o período 1/Jul/1950 e 15/Ago/2010. 
 
-\begin{exercicio}O ângulo zenital na posição direta é de :math:`74^\circ2'48''`.
-Qual seria o ângulo equivalente se a luneta estivesse na posição inversa.\end{exercicio} 
+:exem:`Resp.:` Em 1/Jul/1950 e 15/Ago/2010 a declinação
+magnética foi de, respectivamente, :math:`-11,87^\circ` e :math:`-20,11^\circ`,
+logo a variação é de :math:`8,24^\circ` W.
 
-\noindent \textsl{Resp.}: :math:`z_d=285^\circ57'12''`.
+----
 
-\begin{exercicio}\label{exer:angulozenital}Foram medidos dois pares
+:exem:`14)`  O ângulo zenital na posição direta é de :math:`74^\circ2'48''`.
+Qual seria o ângulo equivalente se a luneta estivesse na posição inversa. 
+
+:exem:`Resp.:` :math:`z_d=285^\circ57'12''`.
+
+----
+
+:exem:`15)` Foram medidos dois pares
 de ângulo zenital, na posição direta e inversa da luneta, resultando
 nas seguintes leituras: na posição direta :math:`87^\circ9'37''` e :math:`87^\circ9'43''`
 e, na posição inversa :math:`272^\circ50'27''` e :math:`272^\circ50'21''`. Calcular
-o ângulo zenital médio na posição direta da luneta (:math:`\bar{z}_{d}`).\end{exercicio} 
+o ângulo zenital médio na posição direta da luneta :math:`(\bar{z}_{d})`.
 
-\noindent \textsl{Resp.}: :math:`\bar{z}_{d}=87^\circ9'38''`.
+:exem:`Resp.:` :math:`\bar{z}_{d}=87^\circ9'38''`.
 
-\begin{exercicio}Repetir o exercício \ref{exer:angulozenital} considerando
+----
+
+:exem:`10)`  Repetir o exercício 15 considerando
 os seguintes valores de ângulos zenitais: na posição direta :math:`95^\circ49'14''` e :math:`95^\circ49'18''`
-e, na posição inversa :math:`264^\circ10'40''` e :math:`264^\circ10'36''`.\end{exercicio} 
+e, na posição inversa :math:`264^\circ10'40''` e :math:`264^\circ10'36''`. 
 
-\noindent \textsl{Resp.}: :math:`\bar{z}_{d}=95^\circ49'19''`.
+:exem:`Resp.:` :math:`\bar{z}_{d}=95^\circ49'19''`.
+
+----
