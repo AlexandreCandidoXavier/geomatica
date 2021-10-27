@@ -7,6 +7,7 @@
   <title>Capitulo 7: Ângulos &mdash; Documentação Livro de Geomática 0.1</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/table_styling.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -188,7 +189,7 @@ de várias medidas de <span class="math notranslate nohighlight">\(\alpha\)</spa
 (ver secção <a class="reference internal" href="#angulo-vertical"><span class="std std-ref">Ângulo vertical</span></a>).
 Neste texto será apresentado o método das direções, que é o previsto
 para ser utilizado pela citeonline{NBR13133} na medição de ângulos.
-Para outros métodos, pode-se consultar, <span id="id2">Loch and Cordini [<a class="reference internal" href="referencias.html#id31" title="C. Loch and J. Cordini. Topografia contemporânea. Editora da UFSC, Florianópolis, SP, 3 edition, 1995.">LC95</a>]</span>, <span id="id3">Gonçalves <em>et al.</em> [<a class="reference internal" href="referencias.html#id33" title="J.A. Gonçalves, S. Madeira, and J.J. Souza. Topografia. Lidel, Lisboa, Portugal, 2 edition, 2008.">GonccalvesMS08</a>]</span> e <span id="id4">Wolf and Ghilani [<a class="reference internal" href="referencias.html#id8" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>.</p>
+Para outros métodos, pode-se consultar, <span id="id2">Loch and Cordini [<a class="reference internal" href="referencias.html#id32" title="C. Loch and J. Cordini. Topografia contemporânea. Editora da UFSC, Florianópolis, SP, 3 edition, 1995.">LC95a</a>]</span>, <span id="id3">Gonçalves <em>et al.</em> [<a class="reference internal" href="referencias.html#id34" title="J.A. Gonçalves, S. Madeira, and J.J. Souza. Topografia. Lidel, Lisboa, Portugal, 2 edition, 2008.">GonccalvesMS08</a>]</span> e <span id="id4">Wolf and Ghilani [<a class="reference internal" href="referencias.html#id9" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>.</p>
 <section id="metodo-das-direcoes">
 <span id="id5"></span><h4>Método das direções<a class="headerlink" href="#metodo-das-direcoes" title="Link permanente para este título"></a></h4>
 <p>Considere os alinhamentos apresentados na <a class="reference internal" href="#fig-introangulo-png"><span class="std std-numref">Figura 56</span></a>.
@@ -373,7 +374,7 @@ Na Figura abaixo é apresentada a solução.</p>
 <h3>Erro angular de fechamento<a class="headerlink" href="#erro-angular-de-fechamento" title="Link permanente para este título"></a></h3>
 <p>Sempre que se realiza um levantamento topográfico é necessário fazer
 a verificação se os erros nas medições de ângulos e distâncias estão
-de acordo com a tolerância definida pela <span id="id9"><em>NBR 13133</em> [<a class="reference internal" href="referencias.html#id30" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span>, para
+de acordo com a tolerância definida pela <span id="id9"><em>NBR 13133</em> [<a class="reference internal" href="referencias.html#id31" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span>, para
 depois compensá-los, se estiver dentro do máximo tolerado. Tal procedimento
 só é possível se a poligonal for do tipo fechada ou quando aberta
 e apoiada (ver <a class="reference internal" href="capitulo8.html#rst-capitulo8"><span class="std std-ref">Capitulo 8: Poligonal</span></a>). Por exemplo, se for
@@ -406,35 +407,6 @@ pergunta-se, o erro angular de fechamento estaria dentro da tolerância estabele
 <p><span class="solucao">Solução:</span>
 Para a poligonal em questão, temos 5 lados, <span class="math notranslate nohighlight">\(n=5\)</span>, então somatório de ângulos internos
 teórico é <span class="math notranslate nohighlight">\(540^\circ\)</span>, <span class="math notranslate nohighlight">\((5-2)180^\circ\)</span>. O somatório dos ângulos internos medidos é:</p>
-<table class="colwidths-auto docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Vértice</p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(\sphericalangle\)</span>  medido</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td rowspan="5"><p><span class="math notranslate nohighlight">\(A\)</span></p>
-<p><span class="math notranslate nohighlight">\(B\)</span></p>
-<p><span class="math notranslate nohighlight">\(C\)</span></p>
-<p><span class="math notranslate nohighlight">\(D\)</span></p>
-<p><span class="math notranslate nohighlight">\(E\)</span></p>
-</td>
-<td rowspan="5"><p><span class="math notranslate nohighlight">\(99^\circ48'54''\)</span></p>
-<p><span class="math notranslate nohighlight">\(95^\circ55'15''\)</span></p>
-<p><span class="math notranslate nohighlight">\(118^\circ37'50''\)</span></p>
-<p><span class="math notranslate nohighlight">\(82^\circ47'2''\)</span></p>
-<p><span class="math notranslate nohighlight">\(\underline{142^\circ50'14''\,\,\,\,\,\,\,\,}\)</span></p>
-</td>
-</tr>
-<tr class="row-odd"></tr>
-<tr class="row-even"></tr>
-<tr class="row-odd"></tr>
-<tr class="row-even"></tr>
-<tr class="row-odd"><td></td>
-<td><p><span class="math notranslate nohighlight">\(\Sigma=539^\circ59'15''\)</span></p></td>
-</tr>
-</tbody>
-</table>
 <p>Desta forma, o erro angular de fechamento é de <span class="math notranslate nohighlight">\(-45''\)</span> <span class="math notranslate nohighlight">\((539^\circ59'15''-540^\circ)\)</span>.
 Se o levantamento fosse para  estudos de viabilidade em projetos de engenharia,
 <span class="math notranslate nohighlight">\(\mathrm{T}\alpha\leq40''\sqrt{n}=89''\)</span>. Como o erro do levantamento é menor,
@@ -457,7 +429,7 @@ angular de fechamento dividido pelo número de lados. No Exemplo abaixo
 <a class="reference internal" href="#fig-exemploangulodexaointerno-png"><span class="std std-numref">Figura 58</span></a> a.
 Este método deve ser utilizado quando os comprimentos dos alinhamentos
 forem aproximadamente iguais. Outros métodos de compensação podem
-ser encontrados, por exemplo, em <span id="id10">Loch and Cordini [<a class="reference internal" href="referencias.html#id31" title="C. Loch and J. Cordini. Topografia contemporânea. Editora da UFSC, Florianópolis, SP, 3 edition, 1995.">LC95</a>]</span>.</p>
+ser encontrados, por exemplo, em <span id="id10">Loch and Cordini [<a class="reference internal" href="referencias.html#id32" title="C. Loch and J. Cordini. Topografia contemporânea. Editora da UFSC, Florianópolis, SP, 3 edition, 1995.">LC95a</a>]</span>.</p>
 <p><span class="exem">Exemplo 3</span>
 Distribuir o erro angular de fechamento da poligonal fechada
 da <a class="reference internal" href="#fig-exemploangulodexaointerno-png"><span class="std std-numref">Figura 58</span></a> pelo método linear.</p>
@@ -466,47 +438,6 @@ Na tabela a seguir, é apresentado o resultado da compensação. Na coluna <stro
 estão os ângulos horizontais medidos em cada um dos vértices; na <strong>II</strong>
 o erro médio e na <strong>III</strong>, o ângulo interno compensado (<strong>I</strong> + <strong>II</strong>).
 Com o erro angular de fechamento de <span class="math notranslate nohighlight">\(-45''\)</span> (ver exemplo 2), e sendo a poligonal de cinco lados, temos o erro médio de <span class="math notranslate nohighlight">\(9''\)</span> <span class="math notranslate nohighlight">\((45''/5)\)</span>. Note que, como o somatório dos ângulos medidos foi menor do que o teórico, então deve-se somar <span class="math notranslate nohighlight">\(9''\)</span> a cada um dos vértices. Caso contrário, o somatório das medidas angulares maiores que o teórico, deve-se subtrair.vspace{.5cm}</p>
-<table class="colwidths-auto docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Vértice</p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(\sphericalangle\)</span> medido <strong>(I)</strong>)</p></th>
-<th class="head"><p>erro médio <strong>(II)</strong></p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(\sphericalangle\)</span> compensado <strong>(I+II)</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(A\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(99^\circ48'54''\)</span></p></td>
-<td><p>+9</p></td>
-<td><p><span class="math notranslate nohighlight">\(99^\circ49'3''\)</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>B</p></td>
-<td><p><span class="math notranslate nohighlight">\(95^\circ55'15''\)</span></p></td>
-<td><p>+9</p></td>
-<td><p><span class="math notranslate nohighlight">\(95^\circ55'24''\)</span></p></td>
-</tr>
-<tr class="row-even"><td><p>C</p></td>
-<td><p><span class="math notranslate nohighlight">\(118^\circ37'50''\)</span></p></td>
-<td><p>+9</p></td>
-<td><p><span class="math notranslate nohighlight">\(118^\circ37'59''\)</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>D</p></td>
-<td><p><span class="math notranslate nohighlight">\(82^\circ47'2''\)</span></p></td>
-<td><p>+9</p></td>
-<td><p><span class="math notranslate nohighlight">\(82^\circ47'11''\)</span></p></td>
-</tr>
-<tr class="row-even"><td><p>E</p></td>
-<td><p><span class="math notranslate nohighlight">\(\underline{142^\circ50'14''\,\,\,\,\,\,\,\,\,\,\,}\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(\underline{+9\,\,\,\,}\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(\underline{142^\circ50'23''\,\,\,\,\,}\)</span></p></td>
-</tr>
-<tr class="row-odd"><td></td>
-<td><p><span class="math notranslate nohighlight">\(\Sigma=539^\circ59'15''\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(\Sigma=45''\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(\Sigma=540^\circ00'00''\)</span></p></td>
-</tr>
-</tbody>
-</table>
 <hr class="docutils" />
 </section>
 <section id="calculo-do-azimute-a-partir-dos-angulos-internos-a-direita">
@@ -553,43 +484,6 @@ os dados estão tabelados.</p>
 <p><span class="caption-number">Figura 61 </span><span class="caption-text">Cálculo dos azimutes utilizando ângulos internos.</span><a class="headerlink" href="#id35" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<table class="colwidths-auto docutils align-default" id="id36">
-<caption><span class="caption-number">Table 9 </span><span class="caption-text">Tabela de cálculo dos azimutes do exemplo da:numref`fig_ExemploAnguloDexaoInterno.png` a. Os ângulos internos são os compensados (Exemplo 3).</span><a class="headerlink" href="#id36" title="Permalink to this table"></a></caption>
-<thead>
-<tr class="row-odd"><th class="head"><p>Vértice</p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(\sphericalangle\)</span> compensado</p></th>
-<th class="head"><p>Az</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>A</p></td>
-<td><p><span class="math notranslate nohighlight">\(99^\circ49'3''\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(\color{blue}{\mathrm{\mathbf{Az_{AB}}}\mathbf{=299^\circ8'19''}}\)</span> (conhecido)</p></td>
-</tr>
-<tr class="row-odd"><td><p>B</p></td>
-<td><p><span class="math notranslate nohighlight">\(95^\circ55'24''\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(\mathrm{Az_{BC}}=299^\circ8'19''-180^\circ+95^\circ55'24''=215^\circ3'43''\)</span></p></td>
-</tr>
-<tr class="row-even"><td><p>C</p></td>
-<td><p><span class="math notranslate nohighlight">\(118^\circ37'59''\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(\mathrm{Az_{CD}}=215^\circ3'43''-180^\circ+118^\circ37'59''=153^\circ41'42''\)</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>D</p></td>
-<td><p><span class="math notranslate nohighlight">\(82^\circ47'11''\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(\mathrm{Az_{DE}}=153^\circ41'42''-180^\circ+82^\circ47'11''=56^\circ28'53''\)</span></p></td>
-</tr>
-<tr class="row-even"><td><p>E</p></td>
-<td><p><span class="math notranslate nohighlight">\(142^\circ50'23''\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(\mathrm{Az_{EA}}=56^\circ28'53''-180^\circ+142^\circ50'23''=19^\circ19'16''\)</span></p></td>
-</tr>
-<tr class="row-odd"><td colspan="3"><p>Verificação</p></td>
-</tr>
-<tr class="row-even"><td><p>A</p></td>
-<td><p><span class="math notranslate nohighlight">\(99^\circ49'3''\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(\mathrm{Az_{AB}}=19^\circ19'16''-180^\circ+99^\circ49'3''=-60^\circ51'41''=\color{blue}\mathbf{299^\circ8'19''}\)</span></p></td>
-</tr>
-</tbody>
-</table>
 <dl class="simple">
 <dt>No que diz respeito ao cálculo dos rumos, já foi dito anteriormente</dt><dd><p>que é preferível trabalhar com os ângulos de azimute devido a facilidade na computação</p>
 </dd>
@@ -626,71 +520,6 @@ os cálculos dos azimutes com as deflexões compensadas, aplica-se diretamento n
 calculados a compensação do erro médio acumulado (<strong>III</strong>). Observe que depois da compensação
 aplicada, o valor de azimute calculado do alinhamento final (5P) deve ser igual ao
 valor conhecido (<strong>IV</strong>).</p>
-<table class="colwidths-auto docutils align-default" id="id37">
-<caption><span class="caption-number">Table 10 </span><span class="caption-text">ASD</span><a class="headerlink" href="#id37" title="Permalink to this table"></a></caption>
-<thead>
-<tr class="row-odd"><th class="head"><p>Alin.</p></th>
-<th class="head"><p><strong>(I)</strong> Deflexão medida</p></th>
-<th class="head"><p><strong>(II)</strong> Cálculo do Az</p></th>
-<th class="head"><p><strong>(III)</strong> Compensação</p></th>
-<th class="head"><p><strong>(IV)</strong> Az comp</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(O1\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
-<td><p>Azimute conhecido <span class="math notranslate nohighlight">\(20^\circ51'16''\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
-</tr>
-<tr class="row-odd"><td rowspan="5"><p><span class="math notranslate nohighlight">\(12\)</span></p>
-<p><span class="math notranslate nohighlight">\(23\)</span></p>
-<p><span class="math notranslate nohighlight">\(34\)</span></p>
-<p><span class="math notranslate nohighlight">\(45\)</span></p>
-<p><span class="math notranslate nohighlight">\(5P\)</span></p>
-</td>
-<td rowspan="5"><p><span class="math notranslate nohighlight">\(123^\circ21'52''\)</span> (DD)</p>
-<p><span class="math notranslate nohighlight">\(71^\circ47'25''\)</span> (DE)</p>
-<p><span class="math notranslate nohighlight">\(49^\circ34'36''\)</span> (DD)</p>
-<p><span class="math notranslate nohighlight">\(76^\circ38'42''\)</span> (DE)</p>
-<p><span class="math notranslate nohighlight">\(99^\circ23'11''\)</span> (DD)</p>
-</td>
-<td rowspan="5"><p><span class="math notranslate nohighlight">\(20^\circ51'16''+123^\circ21'52''=144^\circ13'8''\)</span></p>
-<p><span class="math notranslate nohighlight">\(144^\circ13'8''-71^\circ47'25''=72^\circ25'43''\)</span></p>
-<p><span class="math notranslate nohighlight">\(72^\circ25'43''+49^\circ34'36''= 122^\circ0'19''\)</span></p>
-<p><span class="math notranslate nohighlight">\(122^\circ0'19''-76^\circ38'42''=45^\circ21'37''\)</span></p>
-<p><span class="math notranslate nohighlight">\(45^\circ21'37''+99^\circ23'11''=144^\circ44'48''\)</span></p>
-</td>
-<td rowspan="5"><p><span class="math notranslate nohighlight">\(-7''\cdot1=-7''\)</span></p>
-<p><span class="math notranslate nohighlight">\(-7''\cdot2=-14''\)</span></p>
-<p><span class="math notranslate nohighlight">\(-7''\cdot3=-21''\)</span></p>
-<p><span class="math notranslate nohighlight">\(-7''\cdot4=-28''\)</span></p>
-<p><span class="math notranslate nohighlight">\(-7''\cdot5=-35''\)</span></p>
-</td>
-<td rowspan="5"><p><span class="math notranslate nohighlight">\(144^\circ13'1''\)</span></p>
-<p><span class="math notranslate nohighlight">\(72^\circ25'29''\)</span></p>
-<p><span class="math notranslate nohighlight">\(121^\circ59'58''\)</span></p>
-<p><span class="math notranslate nohighlight">\(45^\circ21'9''\)</span></p>
-<p><span class="math notranslate nohighlight">\(\color{blue}\mathbf{144^\circ44'13''}\)</span></p>
-</td>
-</tr>
-<tr class="row-even"></tr>
-<tr class="row-odd"></tr>
-<tr class="row-even"></tr>
-<tr class="row-odd"></tr>
-<tr class="row-even"><td rowspan="3"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
-<td rowspan="3"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
-<td rowspan="3"><p><span class="math notranslate nohighlight">\(\text{Az}_\mathrm{5P}\)</span> calculado <span class="math notranslate nohighlight">\(\,=\,\,\,\,\,\,144^\circ44'48''\)</span></p>
-<p><span class="math notranslate nohighlight">\(\text{Az}_\mathrm{5P}\)</span> conhecido <span class="math notranslate nohighlight">\(=\color{blue}\underline{\mathbf{-144^\circ44'13''}}\)</span></p>
-<p><span class="math notranslate nohighlight">\(\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\text{        erro}=35''\)</span></p>
-</td>
-<td rowspan="3"></td>
-<td rowspan="3"></td>
-</tr>
-<tr class="row-odd"></tr>
-<tr class="row-even"></tr>
-</tbody>
-</table>
 </section>
 <hr class="docutils" />
 <section id="calculo-do-azimute-a-partir-das-coordenadas-retangulares">
@@ -781,10 +610,10 @@ magnética é negativa, ou pode-se utilizar a letra <a href="#id14"><span class=
 (oeste). Na Figura <a class="reference internal" href="#fig-magnetismodaterra-png"><span class="std std-ref">Representação gráfica da declinação magnética na região central do Brasil para o ano de 2000.</span></a> temos a apresentação
 da declinação magnética de <span class="math notranslate nohighlight">\(-19^\circ\)</span> para o ano de 2000, em uma
 posição próxima a Brasília.</p>
-<figure class="align-center" id="id38">
+<figure class="align-center" id="id36">
 <span id="fig-magnetismodaterra-png"></span><a class="reference internal image-reference" href="../_images/fig_magnetismodaterra.png"><img alt="fig_magnetismodaterra.png" src="../_images/fig_magnetismodaterra.png" style="width: 444.95000000000005px; height: 499.40000000000003px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 62 </span><span class="caption-text">Representação gráfica da declinação magnética na região central do Brasil para o ano de 2000.</span><a class="headerlink" href="#id38" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 62 </span><span class="caption-text">Representação gráfica da declinação magnética na região central do Brasil para o ano de 2000.</span><a class="headerlink" href="#id36" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <hr class="docutils" />
@@ -810,10 +639,10 @@ que, a forma da seta que apresenta a direção da declinação magnética
 é representada de maneira distinta, quando está a este é desenhada
 apenas a ponta direita, enquanto se a oeste, a ponta esquerda. Esta
 nomenclatura é utilizada, por exemplo, nas cartas do IBGE.</p>
-<figure class="align-center" id="id39">
+<figure class="align-center" id="id37">
 <span id="fig-declinacaomagneticario-png"></span><a class="reference internal image-reference" href="../_images/fig_declinacaomagneticario.png"><img alt="fig_declinacaomagneticario.png" src="../_images/fig_declinacaomagneticario.png" style="width: 481.8px; height: 298.65000000000003px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 63 </span><span class="caption-text">Variação temporal da declinação magnética <span class="math notranslate nohighlight">\((\delta)\)</span> para o Município do Rio de Janeiro. Dados do modelo IGRF.</span><a class="headerlink" href="#id39" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 63 </span><span class="caption-text">Variação temporal da declinação magnética <span class="math notranslate nohighlight">\((\delta)\)</span> para o Município do Rio de Janeiro. Dados do modelo IGRF.</span><a class="headerlink" href="#id37" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p><strong>Linha isogônica</strong> se refere ao conjunto de pontos ligados por linhas onde a declinação
@@ -824,10 +653,10 @@ o IGRF. Neste ano a declinação magnética no Brasil variou de aproximadamente
 <span class="math notranslate nohighlight">\(-23^\circ\)</span> a <span class="math notranslate nohighlight">\(-3^\circ\)</span>, costa leste e oeste do estado do Acre,
 respectivamente. A linha isogônica de <span class="math notranslate nohighlight">\(0^\circ\)</span>, direção do norte
 geográfico igual a do norte magnético, é denominada de <strong>linha agônica</strong>.</p>
-<figure class="align-center" id="id40">
+<figure class="align-center" id="id38">
 <span id="fig-linhaisogonica-png"></span><a class="reference internal image-reference" href="../_images/fig_linhaisogonica.png"><img alt="fig_linhaisogonica.png" src="../_images/fig_linhaisogonica.png" style="width: 497.20000000000005px; height: 477.40000000000003px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 64 </span><span class="caption-text">Linhas isogônicas em 2000 para a região do Brasil segundo IGRF.</span><a class="headerlink" href="#id40" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 64 </span><span class="caption-text">Linhas isogônicas em 2000 para a região do Brasil segundo IGRF.</span><a class="headerlink" href="#id38" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>Uma <strong>linha isopórica</strong> consiste nos pontos de mesma variação anual da declinação magnética
@@ -850,13 +679,13 @@ variar ao longo de 24 horas. A variação da declinação magnética ao
 longo de 24 horas é pequena, por exemplo, em Hartland, Reino Unido,
 verificou-se variação de aproximadamente <span class="math notranslate nohighlight">\(9'\)</span> (<a class="reference external" href="http://www.geomag.bgs.ac.uk/education/earthmag.html">ver aqui</a>).
 Já para os Estados Unidos, a variação é de aproximadamente <span class="math notranslate nohighlight">\(8'\)</span> ao
-longo de 24 horas <span id="id18">[<a class="reference internal" href="referencias.html#id8" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>;</p></li>
+longo de 24 horas <span id="id18">[<a class="reference internal" href="referencias.html#id9" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>;</p></li>
 <li><p>a <strong>variação irregular</strong>, é uma variação imprevisível. Pode ocorrer
 devido ao distúrbio das tempestades solares ao campo magnético da
 terra; ou por efeito de proximidade de materiais metálicos ou de correntes
 elétricas locais, como àquelas que são geradas por fios de alta tensão.
 Embora imprevisível, as tempestades solares tem uma frequência de
-aproximadamente 11 anos. Segundo <span id="id19">Wolf and Ghilani [<a class="reference internal" href="referencias.html#id8" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span> estas perturbações
+aproximadamente 11 anos. Segundo <span id="id19">Wolf and Ghilani [<a class="reference internal" href="referencias.html#id9" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span> estas perturbações
 na declinação magnética são pequenas, de cerca de um grau ou mais.</p></li>
 </ul>
 <p>Por meio de interpolação das linhas isopóricas, pode-se encontrar
@@ -880,10 +709,10 @@ seguintes modelos disponíveis:</p>
 <li><p>e o <a class="reference external" href="https://www.ngdc.noaa.gov/IAGA/vmod/igrf.html">IGRF</a>.</p></li>
 </ol>
 </div>
-<figure class="align-center" id="id41">
+<figure class="align-center" id="id39">
 <span id="fig-linhaisoporica-png"></span><a class="reference internal image-reference" href="../_images/fig_linhaisoporica.png"><img alt="fig_linhaisoporica.png" src="../_images/fig_linhaisoporica.png" style="width: 363.55px; height: 367.40000000000003px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 65 </span><span class="caption-text">Linhas isopóricas em 2000 para a região segundo o IGRF.</span><a class="headerlink" href="#id41" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 65 </span><span class="caption-text">Linhas isopóricas em 2000 para a região segundo o IGRF.</span><a class="headerlink" href="#id39" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <hr class="docutils" />
@@ -935,12 +764,12 @@ para distância horizontal. A maior parte dos teodolitos utilizam o
 ângulo vertical do tipo zenital. De modo geral, as estações totais
 têm a opção de se trabalhar com ângulo vertical tipo zenital ou de
 inclinação.</p>
-<figure class="align-center" id="id42">
+<figure class="align-center" id="id40">
 <span id="fig-angulovertical-png"></span><a class="reference internal image-reference" href="../_images/fig_AnguloVertical.png"><img alt="fig_AnguloVertical.png" src="../_images/fig_AnguloVertical.png" style="width: 408.79999999999995px; height: 326.54999999999995px;" /></a>
 <figcaption>
 <p><span class="caption-number">Figura 66 </span><span class="caption-text">Ângulo vertical zenital <span class="math notranslate nohighlight">\((z)\)</span> e de inclinação <span class="math notranslate nohighlight">\((\alpha)\)</span>. As abreviações <span class="math notranslate nohighlight">\(ai\)</span> e <span class="math notranslate nohighlight">\(ap\)</span>,
 correspondem, respectivamente, a altura do instrumento
-e a altura do prisma, necessárias para calcular a diferença de nível.</span><a class="headerlink" href="#id42" title="Permalink to this image"></a></p>
+e a altura do prisma, necessárias para calcular a diferença de nível.</span><a class="headerlink" href="#id40" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>A variação do ângulo zenital é de <span class="math notranslate nohighlight">\(0^\circ\)</span> a <span class="math notranslate nohighlight">\(360^\circ\)</span>. Se o
@@ -961,34 +790,6 @@ se a visada for ascendente e, de <span class="math notranslate nohighlight">\(0^
 for descendente. A Tabela abaixo apresenta
 a relação entre o ângulo zenital, o de inclinação, o tipo de visada,
 se ascendente ou descendente, e a posição da luneta.</p>
-<table class="colwidths-auto docutils align-default" id="id43">
-<caption><span class="caption-number">Table 11 </span><span class="caption-text">Relação entre ângulo zenital <span class="math notranslate nohighlight">\((z)\)</span>, de inclinação <span class="math notranslate nohighlight">\((\alpha)\)</span> e tipo de visada.</span><a class="headerlink" href="#id43" title="Permalink to this table"></a></caption>
-<thead>
-<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(z\)</span></p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(\alpha\)</span></p></th>
-<th class="head"><p>Tipo de visada</p></th>
-<th class="head"><p>Posição da luneta</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(0^\circ&lt;z&lt;90^\circ\)</span></p></td>
-<td rowspan="2"><p><span class="math notranslate nohighlight">\(\alpha=90-z\)</span></p></td>
-<td><p>ascendente</p></td>
-<td rowspan="2"><p>Direta</p></td>
-</tr>
-<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(90^\circ&lt;z&lt;180^\circ\)</span></p></td>
-<td><p>descendente</p></td>
-</tr>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(180^\circ&lt;z&lt;270^\circ\)</span></p></td>
-<td rowspan="2"><p><span class="math notranslate nohighlight">\(\alpha=z-270\)</span></p></td>
-<td><p>descendente</p></td>
-<td rowspan="2"><p>Inversa</p></td>
-</tr>
-<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(270^\circ&lt;z&lt;360^\circ\)</span></p></td>
-<td><p>ascendente</p></td>
-</tr>
-</tbody>
-</table>
 <section id="medicao-do-angulo-vertical">
 <span id="id21"></span><h3>Medição do ângulo vertical<a class="headerlink" href="#medicao-do-angulo-vertical" title="Link permanente para este título"></a></h3>
 <p>Para reduzir os erros causados pelas medições dos ângulos verticais,
@@ -1012,36 +813,6 @@ respectivamente, na posição direta e inversa da luneta:</p>
 </ol>
 <p><span class="solucao">Solução:</span> Os dados podem ser organizados conforme a tabela abaixo. Nela são apresentados
 os somatórios dos ângulos zenitais nas posições direta e inversa.</p>
-<table class="colwidths-auto docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Medida</p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(z_d\)</span></p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(z_i\)</span></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>1</p></td>
-<td><p><span class="math notranslate nohighlight">\(111^\circ32'44''\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(248^\circ27'5''\)</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>2</p></td>
-<td><p><span class="math notranslate nohighlight">\(111^\circ32'40''\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(248^\circ27'11''\)</span></p></td>
-</tr>
-<tr class="row-even"><td><p>3</p></td>
-<td><p><span class="math notranslate nohighlight">\(111^\circ32'37''\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(248^\circ27'11''\)</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>4</p></td>
-<td><p><span class="math notranslate nohighlight">\(\underline{111^\circ32'39''\,\,\,\,\,\,\,\,}\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(\underline{248^\circ27'13''\,\,\,\,\,\,\,\,}\)</span></p></td>
-</tr>
-<tr class="row-even"><td></td>
-<td><p><span class="math notranslate nohighlight">\(\Sigma z_d=446^\circ10'40''\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(\Sigma z_i=993^\circ48'40''\)</span></p></td>
-</tr>
-</tbody>
-</table>
 <p>De acordo com a Equação <a class="reference internal" href="#equation-eq-mediaangulozenital">(75)</a>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\bar{z}_{d}&amp;=\frac{446^\circ10'40''}{4}+\frac{4\cdot360^\circ-(446^\circ10'40''+993^\circ48'40'')}{2\cdot4}\\
@@ -1064,49 +835,6 @@ A caderneta de campo é o mesma apresentada na <a class="reference internal" hre
 <p><span class="exem">1)</span> Calcular o ângulo horizontal no ponto 2 pelo método das direções, dada as leituras
 de ré e vante, respectivamente, nos pontos 1 e 3, com a luneta na posição
 direta e inversa, conforme a Tabela ref{tab:metododasdirecoes}.</p>
-<table class="colwidths-auto docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>estação</p></th>
-<th class="head"><p>posição luneta</p></th>
-<th class="head"><p>repetição</p></th>
-<th class="head"><p>PV</p></th>
-<th class="head"><p>Hz</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td rowspan="8"><p>2</p></td>
-<td rowspan="4"><p>PD</p></td>
-<td rowspan="2"><p>1</p></td>
-<td><p>1</p></td>
-<td><p><span class="math notranslate nohighlight">\(00^\circ 00' 00''\)</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>3</p></td>
-<td><p><span class="math notranslate nohighlight">\(45^\circ19'14''\)</span></p></td>
-</tr>
-<tr class="row-even"><td rowspan="2"><p>2</p></td>
-<td><p>1</p></td>
-<td><p><span class="math notranslate nohighlight">\(00^\circ 00' 00''\)</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>3</p></td>
-<td><p><span class="math notranslate nohighlight">\(45^\circ19'27''\)</span></p></td>
-</tr>
-<tr class="row-even"><td rowspan="4"><p>PI</p></td>
-<td rowspan="2"><p>1</p></td>
-<td><p>1</p></td>
-<td><p><span class="math notranslate nohighlight">\(179^\circ59'57''\)</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>3</p></td>
-<td><p><span class="math notranslate nohighlight">\(225^\circ19'15''\)</span></p></td>
-</tr>
-<tr class="row-even"><td rowspan="2"><p>2</p></td>
-<td><p>1</p></td>
-<td><p><span class="math notranslate nohighlight">\(180^\circ 00'05''\)</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>3</p></td>
-<td><p><span class="math notranslate nohighlight">\(225^\circ19'25''\)</span></p></td>
-</tr>
-</tbody>
-</table>
 <p><span class="exem">Resp.:</span> <span class="math notranslate nohighlight">\(45^\circ19'19,7''\)</span>.</p>
 <hr class="docutils" />
 <p><span class="exem">2)</span>  Dados os azimutes
@@ -1167,36 +895,6 @@ Será aplicado <span class="math notranslate nohighlight">\(+4''\)</span> em cad
 são apresentados os ângulos internos à direita medidos da poligonal
 fechada ABCD. Calcule o erro angular de fechamento. Compense pelo
 método linear e calcule os azimutes dos alinhamentos BC, CD e DA.</p>
-<table class="colwidths-auto docutils align-default" id="id44">
-<caption><span class="caption-number">Table 12 </span><span class="caption-text">Caderneta de campo.</span><a class="headerlink" href="#id44" title="Permalink to this table"></a></caption>
-<thead>
-<tr class="row-odd"><th class="head"><p>Alin</p></th>
-<th class="head"><p>Azimute</p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(\sphericalangle\)</span> à direita}</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td rowspan="4"><p><span class="math notranslate nohighlight">\(AB\)</span></p>
-<p><span class="math notranslate nohighlight">\(BC\)</span></p>
-<p><span class="math notranslate nohighlight">\(CD\)</span></p>
-<p><span class="math notranslate nohighlight">\(DA\)</span></p>
-</td>
-<td rowspan="4"><p><span class="math notranslate nohighlight">\(186^\circ9'33''\)</span></p>
-<p><span class="math notranslate nohighlight">\(\,\)</span></p>
-<p><span class="math notranslate nohighlight">\(\,\)</span></p>
-<p><span class="math notranslate nohighlight">\(\,\)</span></p>
-</td>
-<td rowspan="4"><p><span class="math notranslate nohighlight">\(\mathrm{{A}}=128^\circ 4' 2''\)</span></p>
-<p><span class="math notranslate nohighlight">\(\mathrm{{B}}= 68^\circ57'34''\)</span></p>
-<p><span class="math notranslate nohighlight">\(\mathrm{{C}}=113^\circ41'32''\)</span></p>
-<p><span class="math notranslate nohighlight">\(\mathrm{{D}}= 49^\circ17'32''\)</span></p>
-</td>
-</tr>
-<tr class="row-odd"></tr>
-<tr class="row-even"></tr>
-<tr class="row-odd"></tr>
-</tbody>
-</table>
 <p><span class="exem">Resp.:</span> o erro angular de fechamento é de <span class="math notranslate nohighlight">\(40''\)</span>.
 Os azimutes compensados: <span class="math notranslate nohighlight">\(\mathrm{Az_{BC}}=75^\circ6'57''\)</span>, <span class="math notranslate nohighlight">\(\mathrm{Az_{CD}}=  8^\circ48'19''\)</span>  e <span class="math notranslate nohighlight">\(\mathrm{Az_{DA}}=238^\circ 5'41''\)</span>.</p>
 <hr class="docutils" />

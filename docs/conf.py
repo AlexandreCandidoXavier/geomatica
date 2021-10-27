@@ -18,7 +18,26 @@
 # -- Project information -----------------------------------------------------
 import os
 import sys
+import cloud_sptheme as csp
 
+# The theme to use for HTML and HTML Help pages.  See the documentation for
+# a list of builtin themes.
+html_theme = os.environ.get("SPHINX_THEME") or 'cloud'
+
+html_theme_options = {}
+if csp.is_cloud_theme(html_theme):
+    html_theme_options.update(
+        borderless_decor=True,
+        sidebarwidth="3in",
+        hyphenation_language="en",
+    )
+
+# Add any paths that contain custom themes here, relative to this directory.
+if csp.is_cloud_theme(html_theme):
+    # so build works even if package isn't installed
+    html_theme_path = [csp._theme_dir]
+
+# sys.path.insert(0, os.path.abspath('/home/alexandre/Dropbox/topo/geomatica/venv/lib/python3.8/site-packages/'))
 
 project = 'Livro de Geomática'
 copyright = '2021, Alexandre C Xavier'
@@ -34,7 +53,7 @@ release = '0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 # 'sphinxcontrib.stuffcounter'
-extensions = ['sphinx.ext.todo', 'sphinx.ext.mathjax', 'sphinxcontrib.bibtex',
+extensions = ['sphinx.ext.todo', 'sphinx.ext.mathjax', 'sphinxcontrib.bibtex', 'cloud_sptheme.ext.table_styling',
 ]
 # imgmath_image_format = 'png'
 # imgmath_dvipng_args = ['-gamma', '1.5', '-D', '400', '-bg', 'Transparent']

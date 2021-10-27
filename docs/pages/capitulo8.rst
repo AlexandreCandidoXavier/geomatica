@@ -171,6 +171,25 @@ em que o ângulo foi medido onde, as maiores compensações são aplicadas
 para os comprimentos mais curtos, pois estes estão sujeitos aos maiores
 erros nas suas medidas :cite:`loch`:cite:`WOLF`.
 
+b
+
+.. table:: Column Separators
+    :widths: 1 2 3
+    :header-columns: 1
+    :column-alignment: left center right
+    :column-dividers: none single double single
+    :column-wrapping: nnn
+
+    =========== =========== ===========
+    Width x1    Width x2    :math:`a`
+    =========== =========== ===========
+    Header 1    Center 1    Right 1
+    Header 2    Center 2    Right 2
+    Header 3    Center 3    Right 3
+    =========== =========== ===========
+
+
+
 .. table:: Compensação do erro angular pelo método linear
    :widths: auto
 
@@ -214,6 +233,7 @@ abaixo.
 :exem:`Exemplo 1` Calcular o azimute AB da poligonal fechada apresentada na :numref:`fig_PoligonalFechadaSolucao.png`,
 onde se conhecem as coordenadas UTM dos pontos O e A, e o ângulo OAB.
 
+:solucao:`Solução:`
 Cálculo do azimute OA por meio das coordenadas UTM:
 
 .. figure:: /images/capitulo8/exem_Calcularoazimutepoligonalfechadasolucaoa.png
@@ -254,31 +274,27 @@ onde no final, o azimute AB é recalculado para a verificação dos cálculos.
    +-------------+------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
    | :math:`E`   | :math:`216^\circ18' 14''`          | :math:`\mathrm{Az_{EA}}=20^\circ56'20'' -180^\circ+216^\circ18'14''= 57^\circ14'34''`                                          |
    +-------------+------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-   | :math:`~`   | Verificação                        |                                                                                                                                |
-   +             +                                    +                                                                                                                                +
+   |             | Verificação                        |                                                                                                                                |
+   +-------------+------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
    | :math:`A`   | :math:`49^\circ 7'51''`            | :math:`\mathrm{Az_{AB}}=57^\circ14'34'' -180^\circ+49^\circ 7'51''=-73^\circ37'35''=\color{blue}\mathbf{286^\circ22'25''}`     |
    +-------------+------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
 
-\end{tabular}
-\caption{Tabela de cálculo dos azimutes do exemplo da Figura \ref{fig:PoligonalAbertaApoiada}. Note que os ângulos internos são os compensados (Exemplo \ref{tabExemp:compensacaopolofechada}).}
-\label{tab:calculoazimutepoligonalfechadaexemplo}
-\end{table}
-\begin{itemize}
-\item \textit{Cálculo das coordenadas parciais}\index{Poligonal!fechada!coordenadas parciais}\index{Coordenadas parciais}
-\end{itemize}
+Cálculo das coordenadas parciais
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Uma vez calculados os azimutes provisórios, tem-se que determinar
 as coordenadas parciais dos alinhamentos, que nada mais são do que
-as projeções dos alinhamentos sobre o eixo-:math:`x`e :math:`y`. Na Figura
-\ref{fig:coordenadaparciaisdeterminacao} é apresentado um alinhamento
+as projeções dos alinhamentos sobre o eixo-:math:`x` e :math:`y`. Na
+:numref:`fig_coordenadasparciais` é apresentado um alinhamento
 hipotético AB, e a sua projeção sobre o eixo-:math:`x`e :math:`y`, correspondendo,
-respectivamente, a :math:`\Delta x`e a :math:`\Delta y`. Como este alinhamento
+respectivamente, a :math:`\Delta x` e a :math:`\Delta y`. Como este alinhamento
 teve a distância horizontal e o azimute determinados, por meio deles,
 pode-se calcular as suas coordenadas parciais.
 
 As coordenadas parciais, quando calculadas a partir do azimute, poderão
-ter valores positivos ou negativos. Se :math:`\Delta x`ou :math:`\Delta y`
+ter valores positivos ou negativos. Se :math:`\Delta x` ou :math:`\Delta y`
 forem positivos, indica que o alinhamento tem direção este ou norte,
-respectivamente. Por outro lado, se :math:`\Delta x`ou :math:`\Delta y`forem
+respectivamente. Por outro lado, se :math:`\Delta x` ou :math:`\Delta y`forem
 negativos, a direção do alinhamento é oeste ou sul, respectivamente.
 Para as coordenadas parciais calculadas por meio dos rumos, há a necessidade
 de se estabelecer se o alinhamento está projetado esquerda ou ao sul
@@ -286,146 +302,168 @@ de se estabelecer se o alinhamento está projetado esquerda ou ao sul
 o azimute retorna o sinal da projeção automaticamente, logo o sentido
 da projeção, a sua utilização se torna preferível.
 
-\begin{figure}[H]  \includegraphics[scale=0.9]{coordenadasparciais}
-\caption{Representação e cálculo das coordenadas parciais de um alinhamento
-por meio do seu azimute e da distância horizontal.}
-\label{fig:coordenadaparciaisdeterminacao} %Cap_Pologonal_calculoazimutepoligonalfechada.tex
-\end{figure}
+.. _fig_coordenadasparciais:
 
-Na Figura \ref{fig:coordenadasparciaispoligona} são apresentadas
+.. figure:: /images/capitulo8/fig_coordenadasparciais.png
+   :scale: 55 %
+   :alt: fig_coordenadasparciais.png
+   :align: center
+
+   Representação e cálculo das coordenadas parciais de um alinhamento
+   por meio do seu azimute e da distância horizontal.
+
+
+Na :numref:`fig_coordenadaspar` são apresentadas
 as coordenadas parciais dos alinhamentos da nossa poligonal de exemplo
-(Figura \ref{fig:PoligonalAbertaApoiada}). Também são apresentados
+(:numref:`fig_PoligonalFechadaSolucao.png`). Também são apresentados
 os somatórios das distâncias horizontais, :math:`\Sigma\mathrm{DH}`, e
-das coordenadas parciais, :math:`\Sigma\Delta x`e :math:`\Sigma\Delta y`. Estes
-somatórios serão utilizados nas próximas etapas, \textit{avaliação
-do erro de fechamento linear e a sua compensação}.
+das coordenadas parciais, :math:`\Sigma\Delta x` e :math:`\Sigma\Delta y`. Estes
+somatórios serão utilizados nas próximas etapas, 'avaliação
+do erro de fechamento linear e a sua compensação'.
 
-\begin{figure}[H]  \includegraphics{coordenadasparciaispoligona}
-\caption{Coordenadas parciais dos alinhamentos.}
-\label{fig:coordenadasparciaispoligona}
-\end{figure}
-\begin{itemize}
-\item \textit{Avaliação do erro de fechamento linear}\index{Poligonal!fechada!erro linear}\index{Erro linear}
-\end{itemize}
+.. _fig_coordenadaspar:
+
+.. figure:: /images/capitulo8/fig_coordenadasparciaispoligona.png
+   :scale: 35 %
+   :alt: fig_coordenadasparciaispoligona.png
+   :align: center
+
+   Coordenadas parciais dos alinhamentos.
+
+Avaliação do erro de fechamento linear
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 A nossa poligonal, ABCDEA, começa e termina em um mesmo ponto, o A.
 Uma vez que as medidas de ângulos e distância estão sujeitas a erros,
 caso se calcule as coordenadas retangulares das estações a partir
-das coordenadas parciais (Figura \ref{fig:coordenadasparciaispoligona}),
+das coordenadas parciais (:numref:`fig_coordenadaspar`),
 ao invés de obtermos ao final a mesma coordenada da estação A, obteríamos
-uma coordenada distinta, onde a denominaremos de A:math:`'`. Na Figura
-\ref{fig:erro_linear} é apresentado um esquema da nossa poligonal
+uma coordenada distinta, onde a denominaremos de A:math:`'`. Na :numref:`fig_errolinear`
+é apresentado um esquema da nossa poligonal
 que não fecha em A, mas sim em A:math:`'`. A distância entre A e A:math:`'`
 é denominado de erro de fechamento linear (:math:`E`). Ele é utilizado
 para avaliação da precisão do levantamento, sendo dado por:
 
-\begin{equation}\label{eq:errolinear}
-E = \sqrt{({\Sigma\Delta x})^2+({\Sigma\Delta y})^2}
-\end{equation}
+.. math::
+   E = \sqrt{({\Sigma\Delta x})^2+({\Sigma\Delta y})^2}
+   :label: erro_linear
 
-\begin{SCfigure}[][h]  \includegraphics{errolinear} \caption{Esquema do erro de fechamento linear de uma poligonal.}
+.. _fig_errolinear:
 
-\label{fig:erro_linear} \end{SCfigure}
+.. figure:: /images/capitulo8/fig_errolinear.png
+   :scale: 35 %
+   :alt: fig_errolinear
+   :align: center
+
+   Esquema do erro de fechamento linear de uma poligonal.
 
 Uma vez calculado :math:`E`, deve-se compará-lo com a tolerância do erro
-linear de fechamento (:math:`\mathrm{T}_p`), que é apresentado na \citeonline{NBR13133}.
-A :math:`\mathrm{T}_p`depende da finalidade da poligonal. Para os nossos
+linear de fechamento (:math:`\mathrm{T}_p`), que é apresentado na :cite:t:`NBR13133`.
+A :math:`\mathrm{T}_p` depende da finalidade da poligonal. Para os nossos
 exemplo e exercícios de poligonal fechada, utilizaremos :math:`\mathrm{T}_p\leq0,56\sqrt{L(\mathrm{km})}`,
-sendo que, :math:`L`é o perímetro da poligonal na unidade de quilômetros.
+sendo que, :math:`L` é o perímetro da poligonal na unidade de quilômetros.
 Em se obtendo valor de :math:`E\leq\mathrm{T}_p`, pode-se realizar a compensação
 do erro de fechamento linear, a fim de tornar a poligonal fechada.
 Caso contrário, :math:`E>\mathrm{T}_p`, o levantamento não está de acordo
 com a precisão necessária para o projeto, devendo-se voltar ao campo
 e refazer as medidas de ângulos e de distância da poligonal.
 
-\begin{mybox}[breakable,enhanced,pad at break=0mm,label={exem:Calcular_erro_linear}]{}Para a nossa poligonal
-de exemplo, calcular o erro de fechamento linear (:math:`E`) e, verificar
+----
+
+:exem:`Exemplo 2` Para a nossa poligonal
+de exemplo, calcular o erro de fechamento linear :math:`(E)` e, verificar
 se o mesmo se encontra dentro do limite de tolerância para o erro
 de fechamento linear.
 
-\soluca
-
-\noindent De acordo com a Equação \ref{eq:errolinear} e, os valores
-de :math:`\Sigma\Delta x`e :math:`\Sigma\Delta y`apresentados na Figura \ref{fig:coordenadasparciaispoligona},
+:solucao:`Solução:` De acordo com a :eq:`erro_linear` e, os valores
+de :math:`\Sigma\Delta x` e :math:`\Sigma\Delta y` apresentados na
+:numref:`fig_coordenadaspar`,
 temos:
 
-:math:`E = \sqrt{(0,301)^2+(-0,424)^2} =0,520`m.
+.. math::
+   E = \sqrt{(0,301)^2+(-0,424)^2} =0,520\,\text{m}.
 
-O valor do perímetro da poligonal é de 911,307 m (0,911307 km) (Figura
-\ref{fig:coordenadasparciaispoligona}), logo :math:`\mathrm{T}_p`:
+O valor do perímetro da poligonal é de :math:`911,307\text{m}\,(0,911307\,\text{km})`
+(:numref:`fig_coordenadaspar`, logo :math:`\mathrm{T}_p`:
 
-:math:`\mathrm{T}_p=0,56\sqrt{0,911307)}=0,535`m.
+:math:`\mathrm{T}_p=0,56\sqrt{0,911307)}=0,535\,\text{m}`.
 
 Uma vez que o :math:`E\leq\mathrm{T}_{p}`, pode-se concluir que a poligonal
 está dentro do limite máximo de erro de tolerância para o erro linear
 de fechamento, podendo-se aplicar a distribuição do erro linear.
-\end{mybox}
-\subsection*{Precisão relativa\index{Precisão relativa}}
+
+----
+
+Precisão relativa
+^^^^^^^^^^^^^^^^^
 
 Uma forma de apresentar no memorial descritivo e na planta, o grau
 de precisão interna da poligonal, é por meio da precisão relativa
-(:math:`P_r`). Ela é calculada pela razão entre o :math:`E`e o perímetro da
-poligonal (:math:`\Sigma\mathrm{DH}`). Desta forma, :math:`P_r`do nosso exemplo
+:math:`(P_r)`. Ela é calculada pela razão entre o :math:`E` e o perímetro da
+poligonal :math:`(\Sigma\mathrm{DH})`. Desta forma, :math:`P_r` do nosso exemplo
 será:
 
-\[ \displaystyle Pr=\frac{E}{\Sigma\mathrm{DH}}=\frac{0,520}{911,307} \]
+.. math::
+   Pr&=\frac{E}{\Sigma\mathrm{DH}}\\
+   Pr&=\frac{0,520}{911,307}
 
-Dividindo o numerador e o denominador por 0,520, com a finalidade
+Dividindo o numerador e o denominador por :math:`0,520`, com a finalidade
 de tornar o numerador 1 e, arredondando o denominador, temos:
 
-\[ \displaystyle Pr=\frac{\dfrac{0,520}{0,520}}{\dfrac{911,307}{0,520}}=\frac{1}{1\,753}. \]
+.. math::
+   Pr&=\frac{\dfrac{0,520}{0,520}}{\dfrac{911,307}{0,520}}\\
+   Pr&=\frac{1}{1\,753}.
 
 Significa que no nosso levantamento ocorre 1 m de erro a cada :math:`1\,753`
 m de perímetro da poligonal. Quanto maior o valor do denominador,
 maior é a precisão do levantamento.
-\begin{itemize}
-\item \textit{compensação do erro de fechamento linear}\index{Poligonal!fechada!compensação do erro de fechamento linear}\index{Erro de fechamento linear}
-\end{itemize}
+
+Compensação do erro de fechamento linear
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 A compensação do erro de fechamento linear, tem como objetivo tornar
 a poligonal fechada. Pode-se citar como metodologias empregadas para
-compensação do erro de fechamento linear: \textit{i}) a distribuição
+compensação do erro de fechamento linear: **i**) a distribuição
 do erro de fechamento igualmente por todas a coordenadas relativas;
-\textit{ii}) proporcional ao comprimento dos lados; \textit{iii})
-proporcional aos valores absolutos das coordenadas parciais. A \citeonline{NBR13133}
+**ii**) proporcional ao comprimento dos lados; **iii**)
+proporcional aos valores absolutos das coordenadas parciais. A :cite:t:`NBR13133`
 permite a compensação por quaisquer destes métodos. Para o nosso levantamento
 utilizaremos o método proporcional ao comprimento dos lados, para
-os demais métodos consultar, por exemplo, \citeonline{loch,WOLF} e \citeonline{cole2009surveyor}.
+os demais métodos consultar, por exemplo, em :cite:`loch`, :cite:`WOLF` e
+:cite:`cole2009sur`.
 
 A compensação do erro de fechamento linear, nas coordenadas parciais
-de um alinhamento qualquer (:math:`C_{\Delta x}`e :math:`C_{\Delta y}`), por
+de um alinhamento qualquer :math:`(C_{\Delta x}`e :math:`C_{\Delta y})`, por
 exemplo o AB, pelo método proporcional ao comprimento do lado será:
 
-\begin{equation}
-\label{eq:compensacaoerrolinearx}
-C_{\Delta x_{\mathrm{AB}}} = -\frac{\Sigma\Delta x}{\Sigma \mathrm{DH}}\times \mathrm{DH}_{\mathrm{AB}}
-\end{equation}
-\begin{equation}
-\label{eq:compensacaoerrolineary}
-C_{\Delta y_{\mathrm{AB}}} = -\frac{\Sigma\Delta y}{\Sigma \mathrm{DH}}\times \mathrm{DH}_{\mathrm{AB}}
-\end{equation}
+.. math::
+   C_{\Delta x_{\mathrm{AB}}} = -\frac{\Sigma\Delta x}{\Sigma \mathrm{DH}}\times \mathrm{DH}_{\mathrm{AB}}
+   :label: eq:compensacaoerrolinearx
 
-\begin{mybox}[breakable,enhanced,pad at break=0mm,label={exem:Calcular_erro_linear2}]{}Considerando as
-coordenadas parciais apresentada na Figura \ref{fig:coordenadasparciaispoligona},
+.. math::
+   C_{\Delta y_{\mathrm{AB}}} = -\frac{\Sigma\Delta y}{\Sigma \mathrm{DH}}\times \mathrm{DH}_{\mathrm{AB}}
+   :label: eq:compensacaoerrolineary
+
+----
+
+:exem:`Exemplo 3`  Considerando as coordenadas parciais apresentada na :numref:`fig_coordenadaspar`,
 referente a poligonal do nosso exemplo, calcular as coordenadas parciais
 compensadas por meio do método proporcional ao comprimento dos lados.
 
-\soluca
-
-\noindent De acordo com a Equação \ref{eq:compensacaoerrolinearx}
+:solucao: De acordo com a Equação \ref{eq:compensacaoerrolinearx}
 e \ref{eq:compensacaoerrolineary}, para o alinhamento AB, temos:
 
-:math:`{\displaystyle C_{\Delta x_{\mathrm{AB}}}=-\frac{0,301}{911,307}\times201,737=-0,067}`
-m,
+:math:`{\displaystyle C_{\Delta x_{\mathrm{AB}}}=-\frac{0,301}{911,307}\times201,737=-0,067}\,\text{m}`,
 
-:math:`{\displaystyle C_{\Delta y_{\mathrm{AB}}}=-\frac{-0,424}{911,307}\times201,737=0,094}`m.
+:math:`{\displaystyle C_{\Delta y_{\mathrm{AB}}}=-\frac{-0,424}{911,307}\times201,737=0,094}\,\text{m}`.
 
-\noindent Desta forma, :math:`\Delta x`e :math:`\Delta y`compensados (:math:`\Delta x_C`e :math:`\Delta y_C`),
+Desta forma, :math:`\Delta x` e :math:`\Delta y` compensados
+:math:`(\Delta x_C` e :math:`\Delta y_C)`,
 do alinhamento AB serão:
 
-:math:`{\displaystyle \Delta x_{C_{\mathrm{AB}}}=\Delta x_{\mathrm{AB}}+C_{\Delta x_{\mathrm{AB}}}=-193,555+-0,067=-193.622}`~
-m,
+:math:`{\displaystyle \Delta x_{C_{\mathrm{AB}}}=\Delta x_{\mathrm{AB}}+C_{\Delta x_{\mathrm{AB}}}=-193,555+-0,067=-193.622\,\text{m}}`,
 
-:math:`{\displaystyle \Delta y_{C_{\mathrm{AB}}}=\Delta y_{\mathrm{AB}}+C_{\Delta y_{\mathrm{AB}}}=56,870+0,094=56,964}`~
-m.
+:math:`{\displaystyle \Delta y_{C_{\mathrm{AB}}}=\Delta y_{\mathrm{AB}}+C_{\Delta y_{\mathrm{AB}}}=56,870+0,094=56,964\,\text{m}}`.
 
 As compensações dos demais alinhamentos são apresentadas na Tabela
 a seguir. Note que ao final da tabela é realizado o somatório das
@@ -434,18 +472,27 @@ compensações tem que ser de mesmo valor do somatório das coordenadas
 parciais, com sinal contrário. Já o somatório das coordenadas parciais
 compensadas, tem que resultar em zero.
 
-\footnotesize
-\begin{tabular} {crrrrrrr} 
-Esta\c{c}\~{a}o|\multicolumn{1}{>{\centering\arraybackslash}m{15mm}}{DH}| :math:`\Delta x`| :math:`\Delta y`| :math:`C_{\Delta x}`| :math:`C_{\Delta y}`|:math:`\Delta x_C`| :math:`\Delta y_C` | 
-A | 201,737  | --193,555    |    56,870 | --0,067 | 0,094 |--193,622 | 56,964|
-B | 224,863  | --100,134    |  --201,337 | --0,074 | 0,105 |--100,208 | --201,232|
-C | 141,247  | 88,854      |  --109,798 | --0,047 | 0,066 |88,807 | --109,732|
-D |  173,084  | 61,855      |   161,654 | --0,057 | 0,081|61,798 | 161,735|
-E | :math:`\underline{170,376 }`| \underline{143,281}|\underline{92,187}| \underline{--0,056} | \underline{0,078}| \underline{143,225}| \underline{92,265}|
- |  :math:`\Sigma=911,307`      | :math:`\Sigma=0,301`    | :math:`\Sigma=-0,424`| :math:`\Sigma=-0,301`| :math:`\Sigma=0,424`| :math:`\Sigma=0`| :math:`\Sigma=0`| 
-\end{tabular}\normalsize
+.. table::
+   :widths: auto
 
-\end{mybox}
+   +---------+--------------------------------------+----------------------------------+----------------------------------+--------------------------------+---------------------------------+---------------------------------+-----------------------------------+
+   | Estação |  DH                                  | :math:`\Delta x`                 | :math:`\Delta y`                 | :math:`C_{\Delta x}`           | :math:`C_{\Delta y}`            | :math:`\Delta x_C`              | :math:`\Delta y_C`                |
+   +---------+--------------------------------------+----------------------------------+----------------------------------+--------------------------------+---------------------------------+---------------------------------+-----------------------------------+
+   | A       | :math:`201,737`                      | :math:`-193,555`                 | :math:`56,870`                   | :math:`-0,067`                 | :math:`0,094`                   | :math:`-193,622`                | :math:`56,964`                    |
+   +---------+--------------------------------------+----------------------------------+----------------------------------+--------------------------------+---------------------------------+---------------------------------+-----------------------------------+
+   | B       | :math:`224,863`                      | :math:`-100,134`                 | :math:`-201,337`                 | :math:`-0,074`                 | :math:`0,105`                   | :math:`-100,208`                | :math:`-201,232`                  |
+   +---------+--------------------------------------+----------------------------------+----------------------------------+--------------------------------+---------------------------------+---------------------------------+-----------------------------------+
+   | C       | :math:`141,247`                      | :math:`88,854`                   | :math:`-109,798`                 | :math:`-0,047`                 | :math:`0,066`                   | :math:`88,807`                  | :math:`-109,732`                  |
+   +---------+--------------------------------------+----------------------------------+----------------------------------+--------------------------------+---------------------------------+---------------------------------+-----------------------------------+
+   | D       | :math:`173,084`                      | :math:`61,855`                   | :math:`161,654`                  | :math:`-0,057`                 | :math:`0,081`                   | :math:`61,798`                  | :math:`161,735`                   |
+   +---------+--------------------------------------+----------------------------------+----------------------------------+--------------------------------+---------------------------------+---------------------------------+-----------------------------------+
+   | E       | :math:`\underline{170,376 }`         | :math:`\underline{143,281}`      | :math:`\underline{92,187}`       | :math:`\underline{-0,056}`     | :math:`\underline{0,078}`       | :math:`\underline{143,225}`     | :math:`\underline{92,265}`        |
+   +---------+--------------------------------------+----------------------------------+----------------------------------+--------------------------------+---------------------------------+---------------------------------+-----------------------------------+
+   |         |  :math:`\Sigma=911,307`              | :math:`\Sigma=0,301`             | :math:`\Sigma=-0,424`            | :math:`\Sigma=-0,301`          | :math:`\Sigma=0,424`            | :math:`\Sigma=0`                | :math:`\Sigma=0`                  |
+   +---------+--------------------------------------+----------------------------------+----------------------------------+--------------------------------+---------------------------------+---------------------------------+-----------------------------------+
+
+
+----
 \begin{itemize}
 \item \textit{cálculo das coordenadas retangulares da poligonal}\index{Poligonal!fechada!coordenadas retangulares}\index{Coordenada!retangular}
 \end{itemize}
@@ -524,7 +571,7 @@ E | 143,225|  92,265|  267\,868,385 | 7\,370\,744,038||
 %\label{tab:coordenadatotal}
 %\end{table}
 
-\end{mybox}
+----
 \begin{itemize}
 \item \textit{cálculo da distância horizontal e azimute dos alinhamentos
 da poligonal}\index{Poligonal!fechada!cálculo azimute}\index{Azimute!cálculo}\index{Distância horizontal!cálculo}
@@ -617,7 +664,7 @@ dos cálculos da poligonal fechada, os erros angulares e lineares foram
 compensados, modificando as posições dos pontos, logo a distância
 horizontal entre eles os seus sentidos.
 
-\end{mybox}
+----
 
 Após os cálculo das coordenadas, e azimutes finais, a \citeonline[página 19]{NBR13133}
 ainda estabelece que:``\textit{Após o ajustamento, devem ser calculados
