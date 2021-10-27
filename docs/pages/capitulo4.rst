@@ -961,15 +961,15 @@ Quando se utiliza as medidas de fase da onda portadora, este posicionamento
 
 
 .. table:: Precisão DGNSS.
-   :widths: auto
+    :header-alignment: lcc
+    :column-alignment: lrr
 
-   +---------------+------------------------+---------------------+
-   |Observável     | Separação das estações | Precisão horizontal |
-   +===============+========================+=====================+
-   |Código         | :math:`1.000` km       | :math:`<10` m       |
-   +---------------+------------------------+---------------------+
-   |Onda portadora | :math:`\sim 10` km     | :math:`<0,1` m      |
-   +---------------+------------------------+---------------------+
+    =============== ======================= =====================
+    Observável      Separação das estações  Precisão horizontal
+    =============== ======================= =====================
+    Código          :math:`1.000` km        :math:`<10` m
+    Onda portadora  :math:`\sim 10` km      :math:`<0,1` m
+    =============== ======================= =====================
 
 .. _Posicionamento relativo:
 
@@ -1011,15 +1011,15 @@ Segundo :cite:`WOLF` [p. 361], a precisão deste tipo de posicionamento
 é de aproximadamente :math:`\pm(3\,\text{mm}+1\,\text{ppm})`.
 
 .. table:: Tempo para aquisição da posição pelo método relativo estático.
-   :widths: auto
+    :header-alignment: lcc
+    :column-alignment: lrr
 
-   +-------------------+-----------------------------------------+-----------------------------------------+
-   |Receptor (# fases) | Estático (m)                            | Estático rápido                         |
-   +===================+=========================================+=========================================+
-   |Simples frequência | 30 min + 3 min :math:`\,\text{km}^{-1}` | 20 min + 2 min :math:`\,\text{km}^{-1}` |
-   +-------------------+-----------------------------------------+-----------------------------------------+
-   |Dupla frequência   | 20 min + 2 min :math:`\,\text{km}^{-1}` | 10 min + 1 min :math:`\,\text{km}^{-1}` |
-   +-------------------+-----------------------------------------+-----------------------------------------+
+    =================== ======================================== =========================================
+    Receptor (# fases)  Estático (m)                             Estático rápido
+    =================== ======================================== =========================================
+    Simples frequência  30 min + 3 min :math:`\,\text{km}^{-1}`  20 min + 2 min :math:`\,\text{km}^{-1}`
+    Dupla frequência    20 min + 2 min :math:`\,\text{km}^{-1}`  10 min + 1 min :math:`\,\text{km}^{-1}`
+    =================== ======================================== =========================================
 
 .. _Posicionamento relativo pseudo-cinemático:
 

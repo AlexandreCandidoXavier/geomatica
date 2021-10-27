@@ -216,6 +216,54 @@ de forma a melhor se ajustar ao geóide local ou mundial, respectivamente.
 Na Tabelaref{tab:elipsoides} são apresentados alguns parâmetros
 de elipsoides e o local em que ele é ou foi utilizado
 <span id="id7">[<a class="reference internal" href="referencias.html#id17" title="J.R. Smith. Introduction to Geodesy. Wiley Series in Surveying and Boundary Control. Wiley, 1997. ISBN 9780471166603.">Smi97</a>]</span>.</p>
+<table class="colwidths-given styled-table docutils align-default" id="id22">
+<caption><span class="caption-number">Table 2 </span><span class="caption-text">Exemplo dos parâmetros de elipsoides.</span><a class="headerlink" href="#id22" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 20%" />
+<col style="width: 30%" />
+<col style="width: 40%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="left-align head"><p>Elipsóide</p></th>
+<th class="left-align head"><p><span class="math notranslate nohighlight">\(a\)</span> (m)</p></th>
+<th class="left-align head"><p><span class="math notranslate nohighlight">\(f^{-1}\)</span></p></th>
+<th class="left-align head"><p>Local de utilização</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="left-align"><p>Everest 1830</p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(6.377.276,345\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(300,8017\)</span></p></td>
+<td class="right-align"><p>Índia, Pakistão</p></td>
+</tr>
+<tr class="row-odd"><td class="left-align"><p>Hayford 1924</p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(6.378.388\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(297\)</span></p></td>
+<td class="right-align"><p>Europa e Brasil</p></td>
+</tr>
+<tr class="row-even"><td class="left-align"><p>Krassovskiy 1942</p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(6.378.245\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(298,3\)</span></p></td>
+<td class="right-align"><p>USSR</p></td>
+</tr>
+<tr class="row-odd"><td class="left-align"><p>Elip. Inter. de 1967</p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(6.378.160\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(298,25\)</span></p></td>
+<td class="right-align"><p>América do Sul</p></td>
+</tr>
+<tr class="row-even"><td class="left-align"><p><em>Geodetic Reference System</em> (GRS 1980)</p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(6.378.137\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(298,257\,222\,101\)</span></p></td>
+<td class="right-align"><p>Mundial</p></td>
+</tr>
+<tr class="row-odd"><td class="left-align"><p><em>World Geodetic System</em>       (WGS84)</p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(6.378.137\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(298,257\,223\,563\)</span></p></td>
+<td class="right-align"><p>Mundial</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="coordenada-geodesica">
 <span id="id8"></span><h2>Coordenada geodésica<a class="headerlink" href="#coordenada-geodesica" title="Link permanente para este título"></a></h2>
@@ -248,12 +296,12 @@ para não cometer erros grosseiros de interpretação das informações
 GNSS. Por exemplo, a elevação apresentada pelos receptores, é em relação
 ao elipsóide e não em relação ao Geóide. Normalmente, em engenharia,
 o interesse é com a elevação em relação ao geóide.</p>
-<figure class="align-center" id="id22">
+<figure class="align-center" id="id23">
 <span id="fig-coordenadasretangulares"></span><a class="reference internal image-reference" href="../_images/fig_coordenadasretangulares.png"><img alt="fig_coordenadasretangulares.png" src="../_images/fig_coordenadasretangulares.png" style="width: 521.2px; height: 310.8px;" /></a>
 <figcaption>
 <p><span class="caption-number">Figura 17 </span><span class="caption-text">Variáveis necessárias para cálculo das coordenadas retangulares <span class="math notranslate nohighlight">\((x,y,z)\)</span>
 de um ponto <span class="math notranslate nohighlight">\(P\)</span> a partir das coordenadas geodésicas <span class="math notranslate nohighlight">\((\phi,\lambda)\)</span>
-e vice-versa.</span><a class="headerlink" href="#id22" title="Permalink to this image"></a></p>
+e vice-versa.</span><a class="headerlink" href="#id23" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -420,10 +468,10 @@ o Datum 2, geocêntrico, tem seu centro C1 que coincide com centro
 de massa da terra, tendo os seus parâmetros <span class="math notranslate nohighlight">\(a\)</span> e <span class="math notranslate nohighlight">\(f\)</span> definidos
 de forma a minimizar os desvios dele com o Geóide como um todo, não
 em apenas uma porção.</p>
-<figure class="align-center" id="id23">
+<figure class="align-center" id="id24">
 <span id="fig-elipsoide-geoides-png"></span><a class="reference internal image-reference" href="../_images/fig_elipsoide_geoides.png"><img alt="fig_elipsoide_geoides.png" src="../_images/fig_elipsoide_geoides.png" style="width: 369.20000000000005px; height: 379.6px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 18 </span><span class="caption-text">Datum horizontal do tipo topocêntrico e geocêntrico.</span><a class="headerlink" href="#id23" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 18 </span><span class="caption-text">Datum horizontal do tipo topocêntrico e geocêntrico.</span><a class="headerlink" href="#id24" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>Como dito anteriormente, o SGB é dinâmico, o Brasil já teve o index{Datum horizontal!Córrego Alegre}Datum
@@ -468,11 +516,11 @@ doppler, GPS, vértice de triangulação e estações de poligonal. Como
 é observado na <a class="reference internal" href="#fig-refer-horizontal"><span class="std std-numref">Figura 19</span></a>, algumas observações
 são realizadas fora do continente, em ilhas, por exemplo em Fernando
 de Noronha.</p>
-<figure class="align-center" id="id24">
+<figure class="align-center" id="id25">
 <span id="fig-refer-horizontal"></span><a class="reference internal image-reference" href="../_images/fig_refer_horizontal.png"><img alt="fig_elipsoide_geoides.png" src="../_images/fig_refer_horizontal.png" style="width: 464.45px; height: 273.0px;" /></a>
 <figcaption>
 <p><span class="caption-number">Figura 19 </span><span class="caption-text">Posição das referencias horizontais e os métodos em que as posições
-foram estimadas. Dados obtidos no IBGE em 7 de maio de 2012.</span><a class="headerlink" href="#id24" title="Permalink to this image"></a></p>
+foram estimadas. Dados obtidos no IBGE em 7 de maio de 2012.</span><a class="headerlink" href="#id25" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -490,10 +538,10 @@ Na Figura ao lado são apresentadas as posições da referência
 altimétrica do SGB, sendo um total de <span class="math notranslate nohighlight">\(9.397\)</span> referências de nível,
 <span class="math notranslate nohighlight">\(475\)</span> e <span class="math notranslate nohighlight">\(8.922\)</span>, respectivamente, referentes ao Datum de Santana e ao
 Datum de Imbituba (<a class="reference internal" href="#fig-refer-vertical"><span class="std std-numref">Figura 20</span></a>).</p>
-<figure class="align-center" id="id25">
+<figure class="align-center" id="id26">
 <span id="fig-refer-vertical"></span><a class="reference internal image-reference" href="../_images/fig_refer_vertical.png"><img alt="fig_refer_vertical.png" src="../_images/fig_refer_vertical.png" style="width: 285.25px; height: 288.4px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 20 </span><span class="caption-text">Posições das referencias horizontais das referências de nível dos Datum de Imbituba e Santana.</span><a class="headerlink" href="#id25" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 20 </span><span class="caption-text">Posições das referencias horizontais das referências de nível dos Datum de Imbituba e Santana.</span><a class="headerlink" href="#id26" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <div class="admonition-sistema-geodesico-brasileiro-na-internet admonition">
@@ -521,16 +569,16 @@ caso o cilindro seja tangente a um meridiano (e.g. Figura e);
 e é oblíqua caso o cilindro seja tangente à qualquer seção normal
 que passa pelo ponto central (e.g. <a class="reference internal" href="#proj-tipos"><span class="std std-numref">Figura 21</span></a> h).</p></li>
 </ul>
-<figure class="align-center" id="id26">
+<figure class="align-center" id="id27">
 <span id="proj-tipos"></span><a class="reference internal image-reference" href="../_images/proj_tipos.png"><img alt="proj_tipos.png" src="../_images/proj_tipos.png" style="width: 378.5px; height: 457.5px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 21 </span><span class="caption-text">Tipos de projeções.</span><a class="headerlink" href="#id26" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 21 </span><span class="caption-text">Tipos de projeções.</span><a class="headerlink" href="#id27" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id27">
+<figure class="align-center" id="id28">
 <span id="proj-tipos-sec"></span><a class="reference internal image-reference" href="../_images/proj_tipos_sec.png"><img alt="proj_tipos_sec.png" src="../_images/proj_tipos_sec.png" style="width: 533.05px; height: 200.54999999999998px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 22 </span><span class="caption-text">Projeções tipo secantes.</span><a class="headerlink" href="#id27" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 22 </span><span class="caption-text">Projeções tipo secantes.</span><a class="headerlink" href="#id28" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <section id="projecoes-plana-cilindrica-e-conica-secantes">
@@ -566,10 +614,10 @@ os paralelos em ângulos retos. Nesta projeção a escala sofre deformação
 ao longo da latitude e da longitude, de forma a manter <strong>igual
 área</strong> ao longo do mapa. Ela é utilizada para regiões que tem extensões
 na direção leste-oeste, como os Estados Unidos.</p>
-<figure class="align-center" id="id28">
+<figure class="align-center" id="id29">
 <span id="fig-albersequalarea-png"></span><a class="reference internal image-reference" href="../_images/fig_AlbersEqualArea.png"><img alt="fig_AlbersEqualArea.png" src="../_images/fig_AlbersEqualArea.png" style="width: 366.09999999999997px; height: 238.35px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 23 </span><span class="caption-text">Projeção cônica de Albers (igual área).</span><a class="headerlink" href="#id28" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 23 </span><span class="caption-text">Projeção cônica de Albers (igual área).</span><a class="headerlink" href="#id29" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>As fórmulas para a index{Projeção cartográfica!projeção cônica de Albers}projeção
@@ -621,10 +669,10 @@ da projeção sinusoidal são:</p>
 <span class="eqno">(38)<a class="headerlink" href="#equation-eq-proj-sinu-equi-inv" title="Permalink to this equation"></a></span>\[\lambda=\frac{x}{\cos\phi}+\lambda_{0}\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-proj-sinu-equi-inv2">
 <span class="eqno">(39)<a class="headerlink" href="#equation-eq-proj-sinu-equi-inv2" title="Permalink to this equation"></a></span>\[\phi=y\]</div>
-<figure class="align-center" id="id29">
+<figure class="align-center" id="id30">
 <span id="sinusoidalqualarea-png"></span><a class="reference internal image-reference" href="../_images/SinusoidalqualArea.png"><img alt="SinusoidalqualArea.png" src="../_images/SinusoidalqualArea.png" style="width: 362.59999999999997px; height: 190.39999999999998px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 24 </span><span class="caption-text">Projeção sinusoidal (igual área).</span><a class="headerlink" href="#id29" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 24 </span><span class="caption-text">Projeção sinusoidal (igual área).</span><a class="headerlink" href="#id30" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <hr class="docutils" />
@@ -651,10 +699,10 @@ do centro do mapa; os meridianos tem espaçamento igual, cortando os
 paralelos em ângulos retos; a escala só é verdadeira ao longo dos
 paralelos padrão; e no hemisfério sobre os paralelos padrão o polo
 é um ponto, e no outro polo, infinito.</p>
-<figure class="align-center" id="id30">
+<figure class="align-center" id="id31">
 <span id="lambertconformal"></span><a class="reference internal image-reference" href="../_images/LambertConformal.png"><img alt="LambertConformal.png" src="../_images/LambertConformal.png" style="width: 351.04999999999995px; height: 259.34999999999997px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 25 </span><span class="caption-text">Projeção cônica de Lambert (conforme).</span><a class="headerlink" href="#id30" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 25 </span><span class="caption-text">Projeção cônica de Lambert (conforme).</span><a class="headerlink" href="#id31" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p><strong>Projeção Azimutal (equidistante)</strong></p>
@@ -665,10 +713,10 @@ projeção: as distâncias a partir do centro e ao longo do raio são
 verdadeiras; o único ponto que não têm distorção é o central e nenhum
 ponto tem área igual ou conforme; paralelos são círculos espaçados
 em intervalos verdadeiros.</p>
-<figure class="align-center" id="id31">
+<figure class="align-center" id="id32">
 <span id="azimuthalequidistant"></span><a class="reference internal image-reference" href="../_images/AzimuthalEquidistant.png"><img alt="AzimuthalEquidistant.png" src="../_images/AzimuthalEquidistant.png" style="width: 285.59999999999997px; height: 281.04999999999995px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 26 </span><span class="caption-text">Projeção Azimutal (equidistante).</span><a class="headerlink" href="#id31" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 26 </span><span class="caption-text">Projeção Azimutal (equidistante).</span><a class="headerlink" href="#id32" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>A Equações para as coordenadas planas da projeção azimutal equidistante
@@ -724,10 +772,10 @@ região dos polos, é adotado uma outra projeção, <em>Universal
 Polar Stereographic</em> (UPS).
 Ela não será tratada aqui, todavia, maiores informações podem ser
 encontradas em <span id="id16">[<a class="reference internal" href="referencias.html#id14" title="J.P. Snyder. Map projections–a working manual. Geological Survey Bulletin Series. U.S. G.P.O., 1987. URL: http://pubs.er.usgs.gov/publication/pp1395.">Sny87</a>]</span>.</p>
-<figure class="align-center" id="id32">
+<figure class="align-center" id="id33">
 <span id="utmzone"></span><a class="reference internal image-reference" href="../_images/utmzone.png"><img alt="utmzone.png" src="../_images/utmzone.png" style="width: 512.05px; height: 239.04999999999998px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 27 </span><span class="caption-text">Fusos das coordenadas UTM.</span><a class="headerlink" href="#id32" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 27 </span><span class="caption-text">Fusos das coordenadas UTM.</span><a class="headerlink" href="#id33" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>O território Brasileiro está inserido ao longo de 8 fusos UTM, do
@@ -743,10 +791,10 @@ da latitude “K”. É por isto, que quando nos encontramos com um receptor
 GNSS em qualquer posição no estado, ele mostrará, juntamente com as
 coordenadas UTM do ponto, a informação “24K”, referente ao fuso
 e a linha de latitude onde o ponto se encontra.</p>
-<figure class="align-center" id="id33">
+<figure class="align-center" id="id34">
 <span id="utmzonebr"></span><a class="reference internal image-reference" href="../_images/utmzoneBR.png"><img alt="utmzoneBR.png" src="../_images/utmzoneBR.png" style="width: 472.0px; height: 461.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 28 </span><span class="caption-text">Fusos das coordenadas UTM Brasil.</span><a class="headerlink" href="#id33" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 28 </span><span class="caption-text">Fusos das coordenadas UTM Brasil.</span><a class="headerlink" href="#id34" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>Agora vamos abordar as coordenadas UTM, onde, uma apresentação gráfica
@@ -766,10 +814,10 @@ Em ambos os hemisférios, as coordenadas <span class="math notranslate nohighlig
 respectivamente, oeste-leste e sul-norte. Quando se trata de descrever
 as coordenadas UTM, normatizou-se em designar as coordenadas <span class="math notranslate nohighlight">\(x\)</span>,
 por “E”, de Este, e <span class="math notranslate nohighlight">\(y\)</span>, de “N”, de Norte.</p>
-<figure class="align-center" id="id34">
+<figure class="align-center" id="id35">
 <span id="utmonezone-png"></span><a class="reference internal image-reference" href="../_images/utmonezone.png"><img alt="utmonezone.png" src="../_images/utmonezone.png" style="width: 350.0px; height: 440.5px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 29 </span><span class="caption-text">Esquema das coordenadas UTM para um fuso qualquer.</span><a class="headerlink" href="#id34" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 29 </span><span class="caption-text">Esquema das coordenadas UTM para um fuso qualquer.</span><a class="headerlink" href="#id35" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>Na <a class="reference internal" href="#utmzonealegrees"><span class="std std-numref">Figura 30</span></a>  é apresentado o limite do Espírito
@@ -786,10 +834,10 @@ se encontrarem à esquerda da linha <span class="math notranslate nohighlight">\
 e <span class="math notranslate nohighlight">\(\text{N}=7.701.983\,\text{m}\)</span>, de onde
 pode-se concluir, por exemplo, que ele está <span class="math notranslate nohighlight">\(263.825\,\text{m}\)</span> do MC <span class="math notranslate nohighlight">\((500.000-236.175)\)</span>
 e a uma distância de <span class="math notranslate nohighlight">\(2.298.017\,\text{m}\)</span> m da linha do Equador <span class="math notranslate nohighlight">\((10.000.000-7.701.983)\)</span>.</p>
-<figure class="align-center" id="id35">
+<figure class="align-center" id="id36">
 <span id="utmzonealegrees"></span><a class="reference internal image-reference" href="../_images/utmzoneAlegreES.png"><img alt="utmzoneAlegreES.png" src="../_images/utmzoneAlegreES.png" style="width: 321.5px; height: 430.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 30 </span><span class="caption-text">Esquema das coordenadas UTM para a cidade de Alegre-ES.</span><a class="headerlink" href="#id35" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 30 </span><span class="caption-text">Esquema das coordenadas UTM para a cidade de Alegre-ES.</span><a class="headerlink" href="#id36" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p><strong>Coordenadas geográficas para UTM</strong></p>
