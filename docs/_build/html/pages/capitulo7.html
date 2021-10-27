@@ -1,116 +1,79 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="pt-PT" >
-<head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Capitulo 7: Ângulos &mdash; Documentação Livro de Geomática 0.1</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/table_styling.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/translations.js"></script>
-        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="../_static/js/theme.js"></script>
+
+
+<!DOCTYPE html>
+
+<html lang="pt_PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Capitulo 7: Ângulos &#8212; Documentação Livro de Geomática 0.1</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/cloud.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/table_styling.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    
+    
+     
+        <script src="../_static/jquery.cookie.js"></script>
+    
+
+    
+     
+        <script src="../_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="../_static/cloud.js"></script>
+    
+
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Pesquisar" href="../search.html" />
     <link rel="next" title="Capitulo 8: Poligonal" href="capitulo8.html" />
     <link rel="prev" title="Capitulo 6: Medidas de distância" href="capitulo6.html" /> 
-</head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegação</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice Geral"
+             accesskey="I">índice</a></li>
+        <li class="right" >
+          <a href="capitulo8.html" title="Capitulo 8: Poligonal"
+             accesskey="N">próximo</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="capitulo6.html" title="Capitulo 6: Medidas de distância"
+             accesskey="P">anterior</a> &nbsp; &nbsp;</li>
+    <li><a href="../index.html">Documentação Livro de Geomática 0.1</a> &#187;</li>
 
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> Livro de Geomática
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Pesquisar docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
-              <p class="caption" role="heading"><span class="caption-text">Conteúdo:</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="capitulo1.html">Capitulo 1: Matemática fundamental</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo2.html">Capitulo 2: Unidades métricas, escala e determinação de áreas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo3.html">Capitulo 3: Introdução a geodésia e cartografia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo4.html">Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo5.html">Capitulo 5: Georreferenciamento de imóveis rurais</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo6.html">Capitulo 6: Medidas de distância</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Capitulo 7: Ângulos</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#introducao">Introdução</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#medidores-de-angulos">Medidores de ângulos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#angulo-horizontal">Ângulo horizontal</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#alinhamento-de-vante-e-re">Alinhamento de vante e ré</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#medicao-do-angulo-horizontal">Medição do ângulo horizontal</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#metodo-das-direcoes">Método das direções</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#angulos-horizontais-a-direita">Ângulos horizontais à direita</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#angulos-de-deflexao">Ângulos de deflexão</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#meridiano">Meridiano</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#azimute">Azimute</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#rumo">Rumo</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#conversao-de-azimutes-em-rumos">Conversão de azimutes em rumos</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#erro-angular-de-fechamento">Erro angular de fechamento</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#compensacao-do-erro-angular">Compensação do erro angular</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#calculo-do-azimute-a-partir-dos-angulos-internos-a-direita">Cálculo do azimute a partir dos ângulos internos à direita</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#calculo-do-azimute-a-partir-da-deflexao">Cálculo do azimute a partir da deflexão</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#calculo-do-azimute-a-partir-das-coordenadas-retangulares">Cálculo do azimute a partir das coordenadas retangulares</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#medidas-de-azimute-em-campo">Medidas de azimute em campo</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#declinacao-magnetica">Declinação magnética</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#angulo-vertical">Ângulo vertical</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#medicao-do-angulo-vertical">Medição do ângulo vertical</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#exercicios">Exercícios</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo8.html">Capitulo 8: Poligonal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="referencias.html">Referências</a></li>
-</ul>
+        <li class="nav-item nav-item-this"><a href="">Capitulo 7: Ângulos</a></li> 
+      </ul>
+    </div>
+    </div>
+  
 
-        </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Livro de Geomática</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Navegação da página">
-  <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Capitulo 7: Ângulos</li>
-      <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/pages/capitulo7.rst.txt" rel="nofollow"> Ver código-fonte da página</a>
-      </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
   <style> .exem {color:blue; font-weight: bold} </style><style> .solucao {font-weight: bold} </style><style> .blue {color:blue} </style><section id="capitulo-7-angulos">
-<span id="rst-capitulo7"></span><h1>Capitulo 7: Ângulos<a class="headerlink" href="#capitulo-7-angulos" title="Link permanente para este título"></a></h1>
+<span id="rst-capitulo7"></span><h1>Capitulo 7: Ângulos<a class="headerlink" href="#capitulo-7-angulos" title="Link permanente para este título">¶</a></h1>
 <section id="introducao">
-<h2>Introdução<a class="headerlink" href="#introducao" title="Link permanente para este título"></a></h2>
+<h2>Introdução<a class="headerlink" href="#introducao" title="Link permanente para este título">¶</a></h2>
 <p>Para a determinação das coordenadas de pontos topográficos, uma vez
 na área do levantamento, e com o auxílio de teodolitos/estações totais,
 medem-se os ângulos e as distâncias entre alinhamentos. Neste capítulo
@@ -122,7 +85,7 @@ Para os cálculos das coordenadas dos pontos, há a necessidade de conhecer
 ou seja, os azimutes ou rumos, sendo também vistos neste capítulo.</p>
 </section>
 <section id="medidores-de-angulos">
-<h2>Medidores de ângulos<a class="headerlink" href="#medidores-de-angulos" title="Link permanente para este título"></a></h2>
+<h2>Medidores de ângulos<a class="headerlink" href="#medidores-de-angulos" title="Link permanente para este título">¶</a></h2>
 <p>Na topografia, são utilizados bússolas, teodolitos ótico mecânicos,
 teodolitos eletrônicos e estações totais para a medição dos ângulos.
 Os ângulos que se podem medir com estes equipamentos são de dois tipos,
@@ -149,7 +112,7 @@ para a sua medição são apresentados na Secção <a class="reference internal"
 <figure class="align-center" id="id29">
 <span id="fig-esquemateodo-png"></span><a class="reference internal image-reference" href="../_images/fig_esquemateodo.png"><img alt="fig_esquemateodo.png" src="../_images/fig_esquemateodo.png" style="width: 602.25px; height: 693.75px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 55 </span><span class="caption-text">Esquema de um teodolito com os círculos vertical e horizontal.</span><a class="headerlink" href="#id29" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 55 </span><span class="caption-text">Esquema de um teodolito com os círculos vertical e horizontal.</span><a class="headerlink" href="#id29" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Com relação ao ângulo vertical, quando o equipamento está nivelado,
@@ -159,9 +122,9 @@ horizontal que passa pelo centro ótico da luneta, respectivamente, ângulo zeni
 na secção <a class="reference internal" href="#angulo-vertical"><span class="std std-ref">Ângulo vertical</span></a>.</p>
 </section>
 <section id="angulo-horizontal">
-<span id="id1"></span><h2>Ângulo horizontal<a class="headerlink" href="#angulo-horizontal" title="Link permanente para este título"></a></h2>
+<span id="id1"></span><h2>Ângulo horizontal<a class="headerlink" href="#angulo-horizontal" title="Link permanente para este título">¶</a></h2>
 <section id="alinhamento-de-vante-e-re">
-<h3>Alinhamento de vante e ré<a class="headerlink" href="#alinhamento-de-vante-e-re" title="Link permanente para este título"></a></h3>
+<h3>Alinhamento de vante e ré<a class="headerlink" href="#alinhamento-de-vante-e-re" title="Link permanente para este título">¶</a></h3>
 <p>A <a class="reference internal" href="#fig-introangulo-png"><span class="std std-numref">Figura 56</span></a> apresenta a sequência de vértices
 EAB, onde é realizada a medida do ângulo horizontal, no sentido horário,
 <span class="math notranslate nohighlight">\(\alpha\)</span>, no vértice A. Para a medida de <span class="math notranslate nohighlight">\(\alpha\)</span>, o ponto E é o
@@ -175,12 +138,12 @@ do ângulo horizontal de vante da medida de ré.</p>
 <figure class="align-center" id="id30">
 <span id="fig-introangulo-png"></span><a class="reference internal image-reference" href="../_images/fig_introangulo.png"><img alt="fig_introangulo.png" src="../_images/fig_introangulo.png" style="width: 452.1px; height: 420.20000000000005px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 56 </span><span class="caption-text">Leitura do ângulos internos <span class="math notranslate nohighlight">\(\mathrm{EAB}\)</span>.</span><a class="headerlink" href="#id30" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 56 </span><span class="caption-text">Leitura do ângulos internos <span class="math notranslate nohighlight">\(\mathrm{EAB}\)</span>.</span><a class="headerlink" href="#id30" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="medicao-do-angulo-horizontal">
-<h3>Medição do ângulo horizontal<a class="headerlink" href="#medicao-do-angulo-horizontal" title="Link permanente para este título"></a></h3>
+<h3>Medição do ângulo horizontal<a class="headerlink" href="#medicao-do-angulo-horizontal" title="Link permanente para este título">¶</a></h3>
 <p>Existem várias formas de medição dos ângulos horizontais, a mais simples
 é apresentada na <a class="reference internal" href="#fig-introangulo-png"><span class="std std-numref">Figura 56</span></a>, em que o ângulo <span class="math notranslate nohighlight">\(\alpha\)</span>
 é determinado de apenas uma leitura no ponto de ré e no de vante.
@@ -191,7 +154,7 @@ Neste texto será apresentado o método das direções, que é o previsto
 para ser utilizado pela citeonline{NBR13133} na medição de ângulos.
 Para outros métodos, pode-se consultar, <span id="id2">Loch and Cordini [<a class="reference internal" href="referencias.html#id32" title="C. Loch and J. Cordini. Topografia contemporânea. Editora da UFSC, Florianópolis, SP, 3 edition, 1995.">LC95a</a>]</span>, <span id="id3">Gonçalves <em>et al.</em> [<a class="reference internal" href="referencias.html#id34" title="J.A. Gonçalves, S. Madeira, and J.J. Souza. Topografia. Lidel, Lisboa, Portugal, 2 edition, 2008.">GonccalvesMS08</a>]</span> e <span id="id4">Wolf and Ghilani [<a class="reference internal" href="referencias.html#id9" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>.</p>
 <section id="metodo-das-direcoes">
-<span id="id5"></span><h4>Método das direções<a class="headerlink" href="#metodo-das-direcoes" title="Link permanente para este título"></a></h4>
+<span id="id5"></span><h4>Método das direções<a class="headerlink" href="#metodo-das-direcoes" title="Link permanente para este título">¶</a></h4>
 <p>Considere os alinhamentos apresentados na <a class="reference internal" href="#fig-introangulo-png"><span class="std std-numref">Figura 56</span></a>.
 O método das direções tem as seguintes etapas quando se trabalha com
 estação total:</p>
@@ -222,12 +185,12 @@ cite:t:<cite>NBR13133</cite>, página 3.</p>
 <figure class="align-center" id="id31">
 <span id="fig-metododasdirecoes-png"></span><a class="reference internal image-reference" href="../_images/fig_metododasdirecoes.png"><img alt="fig_metododasdirecoes.png" src="../_images/fig_metododasdirecoes.png" style="width: 449.55px; height: 412.2px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 57 </span><span class="caption-text">Exemplo de anotações para medida de ângulo pelo método das direções.</span><a class="headerlink" href="#id31" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 57 </span><span class="caption-text">Exemplo de anotações para medida de ângulo pelo método das direções.</span><a class="headerlink" href="#id31" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="angulos-horizontais-a-direita">
-<h4>Ângulos horizontais à direita<a class="headerlink" href="#angulos-horizontais-a-direita" title="Link permanente para este título"></a></h4>
+<h4>Ângulos horizontais à direita<a class="headerlink" href="#angulos-horizontais-a-direita" title="Link permanente para este título">¶</a></h4>
 <p>Os ângulos horizontais medidos entre os alinhamentos são na grande
 maioria os ângulos internos  e
 de deflexão. Na <a class="reference internal" href="#fig-exemploangulodexaointerno-png"><span class="std std-numref">Figura 58</span></a> a
@@ -243,7 +206,7 @@ em relação ao meridiano. Ela é necessária para o cálculo dos azimutes
 dos demais alinhamentos, como será visto na Secção <a class="reference internal" href="#calculodoazimute"><span class="std std-ref">Cálculo do azimute a partir dos ângulos internos à direita</span></a>.</p>
 </section>
 <section id="angulos-de-deflexao">
-<h4>Ângulos de deflexão<a class="headerlink" href="#angulos-de-deflexao" title="Link permanente para este título"></a></h4>
+<h4>Ângulos de deflexão<a class="headerlink" href="#angulos-de-deflexao" title="Link permanente para este título">¶</a></h4>
 <p>O <strong>ângulo de deflexão</strong> de um determinado
 alinhamento é o ângulo entre ele e o prolongamento do alinhamento
 anterior. Na <a class="reference internal" href="#fig-exemploangulodexaointerno-png"><span class="std std-numref">Figura 58</span></a> b é apresentado
@@ -260,13 +223,13 @@ totais, é possível configurá-la para trabalhar com este tipo de ângulo.</p>
 <span id="fig-exemploangulodexaointerno-png"></span><a class="reference internal image-reference" href="../_images/fig_ExemploAnguloDexaoInterno.png"><img alt="fig_ExemploAnguloDexaoInterno.png" src="../_images/fig_ExemploAnguloDexaoInterno.png" style="width: 408.85px; height: 555.75px;" /></a>
 <figcaption>
 <p><span class="caption-number">Figura 58 </span><span class="caption-text">Exemplo de poligonais medidas por ângulos internos à direita (a)
-e por de deflexão (b). DD  é a deflexão à direita e DE  deflexão à esquerda.</span><a class="headerlink" href="#id32" title="Permalink to this image"></a></p>
+e por de deflexão (b). DD  é a deflexão à direita e DE  deflexão à esquerda.</span><a class="headerlink" href="#id32" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 </section>
 </section>
 <section id="meridiano">
-<span id="id6"></span><h3>Meridiano<a class="headerlink" href="#meridiano" title="Link permanente para este título"></a></h3>
+<span id="id6"></span><h3>Meridiano<a class="headerlink" href="#meridiano" title="Link permanente para este título">¶</a></h3>
 <p>Em um levantamento topográfico, tem-se que definir qual é a referência
 de meridiano que se vai utilizar, podendo ser:</p>
 <ul class="simple">
@@ -293,7 +256,7 @@ Desta forma, seria possível a aviventação dos alinhamentos no futuro.</p></li
 </ul>
 </section>
 <section id="azimute">
-<span id="id7"></span><h3>Azimute<a class="headerlink" href="#azimute" title="Link permanente para este título"></a></h3>
+<span id="id7"></span><h3>Azimute<a class="headerlink" href="#azimute" title="Link permanente para este título">¶</a></h3>
 <p>O <strong>azimute</strong> (Az) de um alinhamento é o ângulo horizontal entre
 o meridiano e o alinhamento, medido no sentido horário. As medidas
 de azimute iniciam no norte do meridiano, variando de <span class="math notranslate nohighlight">\(0^{\circ}\)</span> a <span class="math notranslate nohighlight">\(360^{\circ}\)</span>.
@@ -314,12 +277,12 @@ OA com azimute de vante, <span class="math notranslate nohighlight">\(45^\circ\)
 <figure class="align-center" id="id33">
 <span id="fig-azimutevantere-png"></span><a class="reference internal image-reference" href="../_images/fig_Azimutevantere.png"><img alt="fig_Azimutevantere.png" src="../_images/fig_Azimutevantere.png" style="width: 574.65px; height: 400.05px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 59 </span><span class="caption-text">Exemplo de azimutes de vante (a) e ré do alinhamento OA (b).</span><a class="headerlink" href="#id33" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 59 </span><span class="caption-text">Exemplo de azimutes de vante (a) e ré do alinhamento OA (b).</span><a class="headerlink" href="#id33" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="rumo">
-<h3>Rumo<a class="headerlink" href="#rumo" title="Link permanente para este título"></a></h3>
+<h3>Rumo<a class="headerlink" href="#rumo" title="Link permanente para este título">¶</a></h3>
 <p>O rumo de um alinhamento é o menor ângulo que ele faz com o meridiano,
 logo, nunca é maior que <span class="math notranslate nohighlight">\(90^\circ\)</span>. A medição dele começa no norte
 ou sul do meridiano, medindo-se à direita ou à esquerda, caso o alinhamento
@@ -342,18 +305,18 @@ o valor angular é o mesmo e o quadrante, o oposto. Na <a class="reference inter
 <figure class="align-center" id="id34">
 <span id="fig-rumovantere-png"></span><a class="reference internal image-reference" href="../_images/fig_rumovantere.png"><img alt="fig_rumovantere.png" src="../_images/fig_rumovantere.png" style="width: 666.9px; height: 394.2px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 60 </span><span class="caption-text">Exemplo de rumos de vante (a) e ré (b) do alinhamento OA.</span><a class="headerlink" href="#id34" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 60 </span><span class="caption-text">Exemplo de rumos de vante (a) e ré (b) do alinhamento OA.</span><a class="headerlink" href="#id34" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="conversao-de-azimutes-em-rumos">
-<span id="id8"></span><h3>Conversão de azimutes em rumos<a class="headerlink" href="#conversao-de-azimutes-em-rumos" title="Link permanente para este título"></a></h3>
+<span id="id8"></span><h3>Conversão de azimutes em rumos<a class="headerlink" href="#conversao-de-azimutes-em-rumos" title="Link permanente para este título">¶</a></h3>
 <p>Para fazer a conversão de azimute para rumo basta verificar o quadrante
 em que se encontra o alinhamento e aplicar a regra da Equação <a class="reference internal" href="#equation-eq-azimute2rumo">(74)</a>.
 Note que para o rumo, deve-se acrescentar o quadrante em que se encontra
 o alinhamento.</p>
 <div class="math notranslate nohighlight" id="equation-eq-azimute2rumo">
-<span class="eqno">(74)<a class="headerlink" href="#equation-eq-azimute2rumo" title="Permalink to this equation"></a></span>\[\begin{gathered}\mathrm{Rumo}\end{gathered}
+<span class="eqno">(74)<a class="headerlink" href="#equation-eq-azimute2rumo" title="Permalink to this equation">¶</a></span>\[\begin{gathered}\mathrm{Rumo}\end{gathered}
 =\begin{cases}
 \mathrm{Az} | \mathrm{(NE)\,se\,}\mathrm{0^{\circ}&lt;Az\leq90^{\circ}}
 \mathrm{180^{\circ}-\mathrm{Az}} | \mathrm{(SE)\,se\,}90^{\circ}&lt;\mathrm{Az}\leq180^{\circ}
@@ -371,7 +334,7 @@ Na Figura abaixo é apresentada a solução.</p>
 </section>
 <hr class="docutils" />
 <section id="erro-angular-de-fechamento">
-<h3>Erro angular de fechamento<a class="headerlink" href="#erro-angular-de-fechamento" title="Link permanente para este título"></a></h3>
+<h3>Erro angular de fechamento<a class="headerlink" href="#erro-angular-de-fechamento" title="Link permanente para este título">¶</a></h3>
 <p>Sempre que se realiza um levantamento topográfico é necessário fazer
 a verificação se os erros nas medições de ângulos e distâncias estão
 de acordo com a tolerância definida pela <span id="id9"><em>NBR 13133</em> [<a class="reference internal" href="referencias.html#id31" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span>, para
@@ -407,6 +370,37 @@ pergunta-se, o erro angular de fechamento estaria dentro da tolerância estabele
 <p><span class="solucao">Solução:</span>
 Para a poligonal em questão, temos 5 lados, <span class="math notranslate nohighlight">\(n=5\)</span>, então somatório de ângulos internos
 teórico é <span class="math notranslate nohighlight">\(540^\circ\)</span>, <span class="math notranslate nohighlight">\((5-2)180^\circ\)</span>. O somatório dos ângulos internos medidos é:</p>
+<table class="colwidths-given styled-table docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 67%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="left-align head"><p>Vértice</p></th>
+<th class="center-align head"><p><span class="math notranslate nohighlight">\(\sphericalangle\)</span>  medido</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="left-align"><p><span class="math notranslate nohighlight">\(A\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(99^\circ48'54''\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="left-align"><p><span class="math notranslate nohighlight">\(B\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(95^\circ55'15''\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="left-align"><p><span class="math notranslate nohighlight">\(C\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(118^\circ37'50''\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="left-align"><p><span class="math notranslate nohighlight">\(D\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(82^\circ47'2''\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="left-align"><p><span class="math notranslate nohighlight">\(E\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\underline{142^\circ50'14''}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="left-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\Sigma=539^\circ59'15''\)</span></p></td>
+</tr>
+</tbody>
+</table>
 <p>Desta forma, o erro angular de fechamento é de <span class="math notranslate nohighlight">\(-45''\)</span> <span class="math notranslate nohighlight">\((539^\circ59'15''-540^\circ)\)</span>.
 Se o levantamento fosse para  estudos de viabilidade em projetos de engenharia,
 <span class="math notranslate nohighlight">\(\mathrm{T}\alpha\leq40''\sqrt{n}=89''\)</span>. Como o erro do levantamento é menor,
@@ -416,7 +410,7 @@ realizar a compensação.</p>
 </section>
 <hr class="docutils" />
 <section id="compensacao-do-erro-angular">
-<h3>Compensação do erro angular<a class="headerlink" href="#compensacao-do-erro-angular" title="Link permanente para este título"></a></h3>
+<h3>Compensação do erro angular<a class="headerlink" href="#compensacao-do-erro-angular" title="Link permanente para este título">¶</a></h3>
 <p>Uma vez que o erro angular de fechamento foi menor do que a tolerância,
 e antes de se calcular os rumos ou os azimutes, é necessário que se
 faça a compensação do erro angular de fechamento, para que o somatório
@@ -438,10 +432,57 @@ Na tabela a seguir, é apresentado o resultado da compensação. Na coluna <stro
 estão os ângulos horizontais medidos em cada um dos vértices; na <strong>II</strong>
 o erro médio e na <strong>III</strong>, o ângulo interno compensado (<strong>I</strong> + <strong>II</strong>).
 Com o erro angular de fechamento de <span class="math notranslate nohighlight">\(-45''\)</span> (ver exemplo 2), e sendo a poligonal de cinco lados, temos o erro médio de <span class="math notranslate nohighlight">\(9''\)</span> <span class="math notranslate nohighlight">\((45''/5)\)</span>. Note que, como o somatório dos ângulos medidos foi menor do que o teórico, então deve-se somar <span class="math notranslate nohighlight">\(9''\)</span> a cada um dos vértices. Caso contrário, o somatório das medidas angulares maiores que o teórico, deve-se subtrair.vspace{.5cm}</p>
+<table class="styled-table docutils align-default">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 33%" />
+<col style="width: 21%" />
+<col style="width: 37%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="center-align head"><p>Vértice</p></th>
+<th class="center-align head"><p><span class="math notranslate nohighlight">\(\sphericalangle\)</span> medido <strong>(I)</strong>)</p></th>
+<th class="center-align head"><p>erro médio <strong>(II)</strong></p></th>
+<th class="center-align head"><p><span class="math notranslate nohighlight">\(\sphericalangle\)</span> compensado <strong>(I+II)</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="center-align"><p><span class="math notranslate nohighlight">\(A\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(99^\circ48'54''\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(+9\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(99^\circ49'3''\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p><span class="math notranslate nohighlight">\(B\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(95^\circ55'15''\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(+9\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(95^\circ55'24''\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="center-align"><p><span class="math notranslate nohighlight">\(C\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(118^\circ37'50''\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(+9\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(118^\circ37'59''\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p><span class="math notranslate nohighlight">\(D\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(82^\circ47'2''\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(+9\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(82^\circ47'11''\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="center-align"><p><span class="math notranslate nohighlight">\(E\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\underline{142^\circ50'14''}\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\underline{+9}\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\underline{142^\circ50'23''}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\Sigma=539^\circ59'15''\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\Sigma=45''\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\Sigma=540^\circ00'00''\)</span></p></td>
+</tr>
+</tbody>
+</table>
 <hr class="docutils" />
 </section>
 <section id="calculo-do-azimute-a-partir-dos-angulos-internos-a-direita">
-<span id="calculodoazimute"></span><h3>Cálculo do azimute a partir dos ângulos internos à direita<a class="headerlink" href="#calculo-do-azimute-a-partir-dos-angulos-internos-a-direita" title="Link permanente para este título"></a></h3>
+<span id="calculodoazimute"></span><h3>Cálculo do azimute a partir dos ângulos internos à direita<a class="headerlink" href="#calculo-do-azimute-a-partir-dos-angulos-internos-a-direita" title="Link permanente para este título">¶</a></h3>
 <p>Para os cálculos das coordenadas parciais, é necessário determinar
 os azimutes ou rumos dos alinhamentos. Normalmente, nos cálculos,
 trabalha-se com valores de azimute, uma vez, que os sentidos das coordenadas
@@ -481,9 +522,53 @@ os dados estão tabelados.</p>
 <figure class="align-center" id="id35">
 <span id="fig-azimuterumocalculo1-png"></span><a class="reference internal image-reference" href="../_images/fig_AzimuteRumoCalculo1.png"><img alt="fig_AzimuteRumoCalculo1.png" src="../_images/fig_AzimuteRumoCalculo1.png" style="width: 514.25px; height: 745.4499999999999px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 61 </span><span class="caption-text">Cálculo dos azimutes utilizando ângulos internos.</span><a class="headerlink" href="#id35" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 61 </span><span class="caption-text">Cálculo dos azimutes utilizando ângulos internos.</span><a class="headerlink" href="#id35" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
+<table class="styled-table docutils align-default" id="id36">
+<caption><span class="caption-number">Table 9 </span><span class="caption-text">Tabela de cálculo dos azimutes do exemplo da <a class="reference internal" href="#fig-exemploangulodexaointerno-png"><span class="std std-numref">Figura 58</span></a> a. Os ângulos internos são os compensados (Exemplo 3).</span><a class="headerlink" href="#id36" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 21%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="center-align head"><p>Vértice</p></th>
+<th class="center-align head"><p><span class="math notranslate nohighlight">\(\sphericalangle\)</span> compensado</p></th>
+<th class="center-align head"><p>Az</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="center-align"><p>A</p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(99^\circ49'3''\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\color{blue}{\mathrm{\mathbf{Az_{AB}}}\mathbf{=299^\circ8'19''}}\)</span> (conhecido)</p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p>B</p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(95^\circ55'24''\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\mathrm{Az_{BC}}=299^\circ8'19''-180^\circ+95^\circ55'24''=215^\circ3'43''\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="center-align"><p>C</p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(118^\circ37'59''\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\mathrm{Az_{CD}}=215^\circ3'43''-180^\circ+118^\circ37'59''=153^\circ41'42''\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p>D</p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(82^\circ47'11''\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\mathrm{Az_{DE}}=153^\circ41'42''-180^\circ+82^\circ47'11''=56^\circ28'53''\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="center-align"><p>E</p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(142^\circ50'23''\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\mathrm{Az_{EA}}=56^\circ28'53''-180^\circ+142^\circ50'23''=19^\circ19'16''\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+<td class="right-align"><p><strong>Verificação</strong></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="center-align"><p>A</p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(99^\circ49'3''\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\mathrm{Az_{AB}}=19^\circ19'16''-180^\circ+99^\circ49'3''=-60^\circ51'41''=\color{blue}\mathbf{299^\circ8'19''}\)</span></p></td>
+</tr>
+</tbody>
+</table>
 <dl class="simple">
 <dt>No que diz respeito ao cálculo dos rumos, já foi dito anteriormente</dt><dd><p>que é preferível trabalhar com os ângulos de azimute devido a facilidade na computação</p>
 </dd>
@@ -494,7 +579,7 @@ e o ângulo interno medido. Outra possibilidade para determinação do
 rumo, seria calcular o azimute e posteriormente converter para rumo.</p>
 </section>
 <section id="calculo-do-azimute-a-partir-da-deflexao">
-<h3>Cálculo do azimute a partir da deflexão<a class="headerlink" href="#calculo-do-azimute-a-partir-da-deflexao" title="Link permanente para este título"></a></h3>
+<h3>Cálculo do azimute a partir da deflexão<a class="headerlink" href="#calculo-do-azimute-a-partir-da-deflexao" title="Link permanente para este título">¶</a></h3>
 <p>Quando se trabalha com ângulos de deflexão, o azimute de um alinhamento
 é dado pelo azimute anterior mais ou menos, respectivamente, o ângulo
 de deflexão à direita (DD) ou à esquerda (DE) do alinhamento a ser
@@ -520,10 +605,83 @@ os cálculos dos azimutes com as deflexões compensadas, aplica-se diretamento n
 calculados a compensação do erro médio acumulado (<strong>III</strong>). Observe que depois da compensação
 aplicada, o valor de azimute calculado do alinhamento final (5P) deve ser igual ao
 valor conhecido (<strong>IV</strong>).</p>
+<table class="styled-table docutils align-default">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 14%" />
+<col style="width: 47%" />
+<col style="width: 12%" />
+<col style="width: 22%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="center-align head"><p>Alin.</p></th>
+<th class="center-align head"><p><strong>(I)</strong> Deflexão medida</p></th>
+<th class="center-align head"><p><strong>(II)</strong> Cálculo do Az</p></th>
+<th class="center-align head"><p><strong>(III)</strong> Compensação</p></th>
+<th class="center-align head"><p><strong>(IV)</strong> Az comp</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="center-align"><p><span class="math notranslate nohighlight">\(O1\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+<td class="right-align"><p>Azimute conhecido <span class="math notranslate nohighlight">\(20^\circ51'16''\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p><span class="math notranslate nohighlight">\(12\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(123^\circ21'52''\)</span> (DD)</p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(20^\circ51'16''+123^\circ21'52''=144^\circ13'8''\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(-7''\cdot1=-7''\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(144^\circ13'1''\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="center-align"><p><span class="math notranslate nohighlight">\(23\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(71^\circ47'25''\)</span> (DE)</p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(144^\circ13'8''-71^\circ47'25''=72^\circ25'43''\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(-7''\cdot2=-14''\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(72^\circ25'29''\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p><span class="math notranslate nohighlight">\(34\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(49^\circ34'36''\)</span> (DD)</p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(72^\circ25'43''+49^\circ34'36''= 122^\circ0'19''\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(-7''\cdot3=-21''\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(121^\circ59'58''\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="center-align"><p><span class="math notranslate nohighlight">\(45\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(76^\circ38'42''\)</span> (DE)</p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(122^\circ0'19''-76^\circ38'42''=45^\circ21'37''\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(-7''\cdot4=-28''\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(45^\circ21'9''\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p><span class="math notranslate nohighlight">\(5P\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(99^\circ23'11''\)</span> (DD)</p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(45^\circ21'37''+99^\circ23'11''=144^\circ44'48''\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(-7''\cdot5=-35''\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\color{blue}\mathbf{144^\circ44'13''}\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="center-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\text{Az}_\mathrm{5P}\)</span> calculado <span class="math notranslate nohighlight">\(=144^\circ44'48''\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\text{Az}_\mathrm{5P}\)</span> conhecido <span class="math notranslate nohighlight">\(=\color{blue}\underline{\mathbf{-144^\circ44'13''}}\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="center-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\text{erro}=35''\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <hr class="docutils" />
 <section id="calculo-do-azimute-a-partir-das-coordenadas-retangulares">
-<h3>Cálculo do azimute a partir das coordenadas retangulares<a class="headerlink" href="#calculo-do-azimute-a-partir-das-coordenadas-retangulares" title="Link permanente para este título"></a></h3>
+<h3>Cálculo do azimute a partir das coordenadas retangulares<a class="headerlink" href="#calculo-do-azimute-a-partir-das-coordenadas-retangulares" title="Link permanente para este título">¶</a></h3>
 <p>A partir das coordenadas retangulares dos pontos de um alinhamento
 é possível calcular o seu azimute. Atualmente, com o auxílio do GNSS,
 ou a partir da rede do Sistema Geodésico Brasileiro, é comum começar
@@ -552,7 +710,7 @@ os azimutes e rumos dos alinhamentos AB e EF.
 </section>
 <hr class="docutils" />
 <section id="medidas-de-azimute-em-campo">
-<h3>Medidas de azimute em campo<a class="headerlink" href="#medidas-de-azimute-em-campo" title="Link permanente para este título"></a></h3>
+<h3>Medidas de azimute em campo<a class="headerlink" href="#medidas-de-azimute-em-campo" title="Link permanente para este título">¶</a></h3>
 <p>No campo, conhecendo o azimute de um alinhamento, é possível determinar
 os azimutes de outros alinhamentos. Por exemplo, considere o azimute
 AB do Exemplo 5,
@@ -589,7 +747,7 @@ de fechamento.</p>
 </section>
 </section>
 <section id="declinacao-magnetica">
-<span id="id11"></span><h2>Declinação magnética<a class="headerlink" href="#declinacao-magnetica" title="Link permanente para este título"></a></h2>
+<span id="id11"></span><h2>Declinação magnética<a class="headerlink" href="#declinacao-magnetica" title="Link permanente para este título">¶</a></h2>
 <p>Parte dos levantamentos topográficos realizados no passado, utilizaram
 como referência da direção norte, aquela observada pelo norte da bússola,
 a qual denomina-se de norte magnéticoindex{Norte!magnético}. A direção
@@ -610,10 +768,10 @@ magnética é negativa, ou pode-se utilizar a letra <a href="#id14"><span class=
 (oeste). Na Figura <a class="reference internal" href="#fig-magnetismodaterra-png"><span class="std std-ref">Representação gráfica da declinação magnética na região central do Brasil para o ano de 2000.</span></a> temos a apresentação
 da declinação magnética de <span class="math notranslate nohighlight">\(-19^\circ\)</span> para o ano de 2000, em uma
 posição próxima a Brasília.</p>
-<figure class="align-center" id="id36">
+<figure class="align-center" id="id37">
 <span id="fig-magnetismodaterra-png"></span><a class="reference internal image-reference" href="../_images/fig_magnetismodaterra.png"><img alt="fig_magnetismodaterra.png" src="../_images/fig_magnetismodaterra.png" style="width: 444.95000000000005px; height: 499.40000000000003px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 62 </span><span class="caption-text">Representação gráfica da declinação magnética na região central do Brasil para o ano de 2000.</span><a class="headerlink" href="#id36" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 62 </span><span class="caption-text">Representação gráfica da declinação magnética na região central do Brasil para o ano de 2000.</span><a class="headerlink" href="#id37" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <hr class="docutils" />
@@ -639,10 +797,10 @@ que, a forma da seta que apresenta a direção da declinação magnética
 é representada de maneira distinta, quando está a este é desenhada
 apenas a ponta direita, enquanto se a oeste, a ponta esquerda. Esta
 nomenclatura é utilizada, por exemplo, nas cartas do IBGE.</p>
-<figure class="align-center" id="id37">
+<figure class="align-center" id="id38">
 <span id="fig-declinacaomagneticario-png"></span><a class="reference internal image-reference" href="../_images/fig_declinacaomagneticario.png"><img alt="fig_declinacaomagneticario.png" src="../_images/fig_declinacaomagneticario.png" style="width: 481.8px; height: 298.65000000000003px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 63 </span><span class="caption-text">Variação temporal da declinação magnética <span class="math notranslate nohighlight">\((\delta)\)</span> para o Município do Rio de Janeiro. Dados do modelo IGRF.</span><a class="headerlink" href="#id37" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 63 </span><span class="caption-text">Variação temporal da declinação magnética <span class="math notranslate nohighlight">\((\delta)\)</span> para o Município do Rio de Janeiro. Dados do modelo IGRF.</span><a class="headerlink" href="#id38" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p><strong>Linha isogônica</strong> se refere ao conjunto de pontos ligados por linhas onde a declinação
@@ -653,10 +811,10 @@ o IGRF. Neste ano a declinação magnética no Brasil variou de aproximadamente
 <span class="math notranslate nohighlight">\(-23^\circ\)</span> a <span class="math notranslate nohighlight">\(-3^\circ\)</span>, costa leste e oeste do estado do Acre,
 respectivamente. A linha isogônica de <span class="math notranslate nohighlight">\(0^\circ\)</span>, direção do norte
 geográfico igual a do norte magnético, é denominada de <strong>linha agônica</strong>.</p>
-<figure class="align-center" id="id38">
+<figure class="align-center" id="id39">
 <span id="fig-linhaisogonica-png"></span><a class="reference internal image-reference" href="../_images/fig_linhaisogonica.png"><img alt="fig_linhaisogonica.png" src="../_images/fig_linhaisogonica.png" style="width: 497.20000000000005px; height: 477.40000000000003px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 64 </span><span class="caption-text">Linhas isogônicas em 2000 para a região do Brasil segundo IGRF.</span><a class="headerlink" href="#id38" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 64 </span><span class="caption-text">Linhas isogônicas em 2000 para a região do Brasil segundo IGRF.</span><a class="headerlink" href="#id39" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Uma <strong>linha isopórica</strong> consiste nos pontos de mesma variação anual da declinação magnética
@@ -709,10 +867,10 @@ seguintes modelos disponíveis:</p>
 <li><p>e o <a class="reference external" href="https://www.ngdc.noaa.gov/IAGA/vmod/igrf.html">IGRF</a>.</p></li>
 </ol>
 </div>
-<figure class="align-center" id="id39">
+<figure class="align-center" id="id40">
 <span id="fig-linhaisoporica-png"></span><a class="reference internal image-reference" href="../_images/fig_linhaisoporica.png"><img alt="fig_linhaisoporica.png" src="../_images/fig_linhaisoporica.png" style="width: 363.55px; height: 367.40000000000003px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 65 </span><span class="caption-text">Linhas isopóricas em 2000 para a região segundo o IGRF.</span><a class="headerlink" href="#id39" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 65 </span><span class="caption-text">Linhas isopóricas em 2000 para a região segundo o IGRF.</span><a class="headerlink" href="#id40" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <hr class="docutils" />
@@ -752,7 +910,7 @@ a seguir).</p>
 <hr class="docutils" />
 </section>
 <section id="angulo-vertical">
-<span id="id20"></span><h2>Ângulo vertical<a class="headerlink" href="#angulo-vertical" title="Link permanente para este título"></a></h2>
+<span id="id20"></span><h2>Ângulo vertical<a class="headerlink" href="#angulo-vertical" title="Link permanente para este título">¶</a></h2>
 <p>O ângulo vertical é o ângulo medido no plano vertical. Quando a origem
 das medição do ângulo vertical for o zênite (direção contrária ao fio de prumo),
 o ângulo vertical é denominado de ângulo <strong>zenital</strong> <span class="math notranslate nohighlight">\((z)\)</span>.
@@ -764,12 +922,12 @@ para distância horizontal. A maior parte dos teodolitos utilizam o
 ângulo vertical do tipo zenital. De modo geral, as estações totais
 têm a opção de se trabalhar com ângulo vertical tipo zenital ou de
 inclinação.</p>
-<figure class="align-center" id="id40">
+<figure class="align-center" id="id41">
 <span id="fig-angulovertical-png"></span><a class="reference internal image-reference" href="../_images/fig_AnguloVertical.png"><img alt="fig_AnguloVertical.png" src="../_images/fig_AnguloVertical.png" style="width: 408.79999999999995px; height: 326.54999999999995px;" /></a>
 <figcaption>
 <p><span class="caption-number">Figura 66 </span><span class="caption-text">Ângulo vertical zenital <span class="math notranslate nohighlight">\((z)\)</span> e de inclinação <span class="math notranslate nohighlight">\((\alpha)\)</span>. As abreviações <span class="math notranslate nohighlight">\(ai\)</span> e <span class="math notranslate nohighlight">\(ap\)</span>,
 correspondem, respectivamente, a altura do instrumento
-e a altura do prisma, necessárias para calcular a diferença de nível.</span><a class="headerlink" href="#id40" title="Permalink to this image"></a></p>
+e a altura do prisma, necessárias para calcular a diferença de nível.</span><a class="headerlink" href="#id41" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>A variação do ângulo zenital é de <span class="math notranslate nohighlight">\(0^\circ\)</span> a <span class="math notranslate nohighlight">\(360^\circ\)</span>. Se o
@@ -790,15 +948,53 @@ se a visada for ascendente e, de <span class="math notranslate nohighlight">\(0^
 for descendente. A Tabela abaixo apresenta
 a relação entre o ângulo zenital, o de inclinação, o tipo de visada,
 se ascendente ou descendente, e a posição da luneta.</p>
+<table class="styled-table docutils align-default" id="id42">
+<caption><span class="caption-number">Table 10 </span><span class="caption-text">Relação entre ângulo zenital <span class="math notranslate nohighlight">\((z)\)</span>, de inclinação <span class="math notranslate nohighlight">\((\alpha)\)</span> e tipo de visada.</span><a class="headerlink" href="#id42" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 34%" />
+<col style="width: 25%" />
+<col style="width: 18%" />
+<col style="width: 22%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="center-align head"><p><span class="math notranslate nohighlight">\(z\)</span></p></th>
+<th class="center-align head"><p><span class="math notranslate nohighlight">\(\alpha\)</span></p></th>
+<th class="center-align head"><p>Tipo de visada</p></th>
+<th class="left-align head"><p>Posição da luneta</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="center-align"><p><span class="math notranslate nohighlight">\(0^\circ&lt;z&lt;90^\circ\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\alpha=90-z\)</span></p></td>
+<td class="right-align"><p>ascendente</p></td>
+<td class="left-align"><p>Direta</p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p><span class="math notranslate nohighlight">\(90^\circ&lt;z&lt;180^\circ\)</span></p></td>
+<td class="right-align"></td>
+<td class="right-align"><p>descendente</p></td>
+<td class="left-align"></td>
+</tr>
+<tr class="row-even"><td class="center-align"><p><span class="math notranslate nohighlight">\(180^\circ&lt;z&lt;270^\circ\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\alpha=z-270\)</span></p></td>
+<td class="right-align"><p>descendente</p></td>
+<td class="left-align"><p>Inversa</p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p><span class="math notranslate nohighlight">\(270^\circ&lt;z&lt;360^\circ\)</span></p></td>
+<td class="right-align"></td>
+<td class="right-align"><p>ascendente</p></td>
+<td class="left-align"></td>
+</tr>
+</tbody>
+</table>
 <section id="medicao-do-angulo-vertical">
-<span id="id21"></span><h3>Medição do ângulo vertical<a class="headerlink" href="#medicao-do-angulo-vertical" title="Link permanente para este título"></a></h3>
+<span id="id21"></span><h3>Medição do ângulo vertical<a class="headerlink" href="#medicao-do-angulo-vertical" title="Link permanente para este título">¶</a></h3>
 <p>Para reduzir os erros causados pelas medições dos ângulos verticais,
 ao invés de se realizar apenas uma medida, sugere-se realizar pares
 de medidas, com a luneta na posição direta e inversa, calculando-se
 o valor médio das medidas. Tem-se que o ângulo zenital médio na direção
 direta <span class="math notranslate nohighlight">\((\bar{z}_{d})\)</span> é dado por:</p>
 <div class="math notranslate nohighlight" id="equation-eq-mediaangulozenital">
-<span class="eqno">(75)<a class="headerlink" href="#equation-eq-mediaangulozenital" title="Permalink to this equation"></a></span>\[\bar{z}_{d}=\frac{\Sigma z_{d}}{n}+\frac{360^\circ\cdot n-(\Sigma z_{d}+\Sigma z_{i})}{2\cdot n}\]</div>
+<span class="eqno">(75)<a class="headerlink" href="#equation-eq-mediaangulozenital" title="Permalink to this equation">¶</a></span>\[\bar{z}_{d}=\frac{\Sigma z_{d}}{n}+\frac{360^\circ\cdot n-(\Sigma z_{d}+\Sigma z_{i})}{2\cdot n}\]</div>
 <p>em que: <span class="math notranslate nohighlight">\(\Sigma z_d\)</span> é o somatório das medidas de <span class="math notranslate nohighlight">\(z\)</span>
 na posição direta; <span class="math notranslate nohighlight">\(\Sigma z_i\)</span> é o somatório das medidas de <span class="math notranslate nohighlight">\(z\)</span>
 na posição indireta; <span class="math notranslate nohighlight">\(n\)</span> é o número de pares de medidas de <span class="math notranslate nohighlight">\(z_d\)</span> e <span class="math notranslate nohighlight">\(z_i\)</span>.</p>
@@ -813,6 +1009,41 @@ respectivamente, na posição direta e inversa da luneta:</p>
 </ol>
 <p><span class="solucao">Solução:</span> Os dados podem ser organizados conforme a tabela abaixo. Nela são apresentados
 os somatórios dos ângulos zenitais nas posições direta e inversa.</p>
+<table class="styled-table docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 41%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="center-align head"><p>Medida</p></th>
+<th class="center-align head"><p><span class="math notranslate nohighlight">\(z_d\)</span></p></th>
+<th class="center-align head"><p><span class="math notranslate nohighlight">\(z_i\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="center-align"><p>1</p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(111^\circ32'44''\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(248^\circ27'5''\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p>2</p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(111^\circ32'40''\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(248^\circ27'11''\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="center-align"><p>3</p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(111^\circ32'37''\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(248^\circ27'11''\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p>4</p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\underline{111^\circ32'39''}\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\underline{248^\circ27'13''}\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="center-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\Sigma z_d=446^\circ10'40''\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\Sigma z_i=993^\circ48'40''\)</span></p></td>
+</tr>
+</tbody>
+</table>
 <p>De acordo com a Equação <a class="reference internal" href="#equation-eq-mediaangulozenital">(75)</a>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\bar{z}_{d}&amp;=\frac{446^\circ10'40''}{4}+\frac{4\cdot360^\circ-(446^\circ10'40''+993^\circ48'40'')}{2\cdot4}\\
@@ -831,10 +1062,77 @@ A caderneta de campo é o mesma apresentada na <a class="reference internal" hre
 </section>
 </section>
 <section id="exercicios">
-<h2>Exercícios<a class="headerlink" href="#exercicios" title="Link permanente para este título"></a></h2>
+<h2>Exercícios<a class="headerlink" href="#exercicios" title="Link permanente para este título">¶</a></h2>
 <p><span class="exem">1)</span> Calcular o ângulo horizontal no ponto 2 pelo método das direções, dada as leituras
 de ré e vante, respectivamente, nos pontos 1 e 3, com a luneta na posição
 direta e inversa, conforme a Tabela ref{tab:metododasdirecoes}.</p>
+<p>a</p>
+<table class="colwidths-given styled-table plain docutils align-default">
+<colgroup>
+<col style="width: 3%" />
+<col style="width: 6%" />
+<col style="width: 8%" />
+<col style="width: 11%" />
+<col style="width: 72%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="center-align head stub"><p>estação</p></th>
+<th class="center-align head"><p>posição luneta</p></th>
+<th class="center-align head"><p>repetição</p></th>
+<th class="center-align head"><p>PV</p></th>
+<th class="center-align head"><p>Hz</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><th class="center-align stub"><p><span class="math notranslate nohighlight">\(\,\)</span></p></th>
+<td class="right-align"><p>PD</p></td>
+<td class="right-align"><p>1</p></td>
+<td class="right-align"><p>1</p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(00^\circ 00' 00''\)</span></p></td>
+</tr>
+<tr class="row-odd"><th class="center-align stub"><p><span class="math notranslate nohighlight">\(\,\)</span></p></th>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+<td class="right-align"><p>3</p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(45^\circ19'14''\)</span></p></td>
+</tr>
+<tr class="row-even"><th class="center-align stub"><p><span class="math notranslate nohighlight">\(\,\)</span></p></th>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+<td class="right-align"><p>2</p></td>
+<td class="right-align"><p>1</p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(00^\circ 00' 00''\)</span></p></td>
+</tr>
+<tr class="row-odd"><th class="center-align stub"><p><span class="math notranslate nohighlight">\(\,\)</span></p></th>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+<td class="right-align" colspan="2"><p>3    <span class="math notranslate nohighlight">\(45^\circ19'27''\)</span></p></td>
+</tr>
+<tr class="row-even"><th class="center-align stub"><p>2</p></th>
+<td class="right-align"><p>PI</p></td>
+<td class="right-align"><p>1</p></td>
+<td class="right-align"><p>1</p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(179^\circ59'57''\)</span></p></td>
+</tr>
+<tr class="row-odd"><th class="center-align stub"><p><span class="math notranslate nohighlight">\(\,\)</span></p></th>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+<td class="right-align"><p>3</p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(225^\circ19'15''\)</span></p></td>
+</tr>
+<tr class="row-even"><th class="center-align stub"><p><span class="math notranslate nohighlight">\(\,\)</span></p></th>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+<td class="right-align"><p>2</p></td>
+<td class="right-align"><p>1</p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(180^\circ 00'05''\)</span></p></td>
+</tr>
+<tr class="row-odd"><th class="center-align stub"><p><span class="math notranslate nohighlight">\(\,\)</span></p></th>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(\,\)</span></p></td>
+<td class="right-align"><p>3</p></td>
+<td class="right-align"><p><span class="math notranslate nohighlight">\(225^\circ19'25''\)</span></p></td>
+</tr>
+</tbody>
+</table>
 <p><span class="exem">Resp.:</span> <span class="math notranslate nohighlight">\(45^\circ19'19,7''\)</span>.</p>
 <hr class="docutils" />
 <p><span class="exem">2)</span>  Dados os azimutes
@@ -960,34 +1258,121 @@ e, na posição inversa <span class="math notranslate nohighlight">\(264^\circ10
 </section>
 
 
-           </div>
+            <div class="clearer"></div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
-        <a href="capitulo6.html" class="btn btn-neutral float-left" title="Capitulo 6: Medidas de distância" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="capitulo8.html" class="btn btn-neutral float-right" title="Capitulo 8: Poligonal" accesskey="n" rel="next">Seguinte <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Copyright 2021, Alexandre C Xavier.</p>
-  </div>
-
-  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
-    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
         </div>
       </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
+    <h3><a href="../index.html">Page contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Capitulo 7: Ângulos</a><ul>
+<li><a class="reference internal" href="#introducao">Introdução</a></li>
+<li><a class="reference internal" href="#medidores-de-angulos">Medidores de ângulos</a></li>
+<li><a class="reference internal" href="#angulo-horizontal">Ângulo horizontal</a><ul>
+<li><a class="reference internal" href="#alinhamento-de-vante-e-re">Alinhamento de vante e ré</a></li>
+<li><a class="reference internal" href="#medicao-do-angulo-horizontal">Medição do ângulo horizontal</a><ul>
+<li><a class="reference internal" href="#metodo-das-direcoes">Método das direções</a></li>
+<li><a class="reference internal" href="#angulos-horizontais-a-direita">Ângulos horizontais à direita</a></li>
+<li><a class="reference internal" href="#angulos-de-deflexao">Ângulos de deflexão</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#meridiano">Meridiano</a></li>
+<li><a class="reference internal" href="#azimute">Azimute</a></li>
+<li><a class="reference internal" href="#rumo">Rumo</a></li>
+<li><a class="reference internal" href="#conversao-de-azimutes-em-rumos">Conversão de azimutes em rumos</a></li>
+<li><a class="reference internal" href="#erro-angular-de-fechamento">Erro angular de fechamento</a></li>
+<li><a class="reference internal" href="#compensacao-do-erro-angular">Compensação do erro angular</a></li>
+<li><a class="reference internal" href="#calculo-do-azimute-a-partir-dos-angulos-internos-a-direita">Cálculo do azimute a partir dos ângulos internos à direita</a></li>
+<li><a class="reference internal" href="#calculo-do-azimute-a-partir-da-deflexao">Cálculo do azimute a partir da deflexão</a></li>
+<li><a class="reference internal" href="#calculo-do-azimute-a-partir-das-coordenadas-retangulares">Cálculo do azimute a partir das coordenadas retangulares</a></li>
+<li><a class="reference internal" href="#medidas-de-azimute-em-campo">Medidas de azimute em campo</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#declinacao-magnetica">Declinação magnética</a></li>
+<li><a class="reference internal" href="#angulo-vertical">Ângulo vertical</a><ul>
+<li><a class="reference internal" href="#medicao-do-angulo-vertical">Medição do ângulo vertical</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#exercicios">Exercícios</a></li>
+</ul>
+</li>
+</ul>
 
-</body>
+  </div>
+  <div class="sphinxprev">
+    <h4>Previous page</h4>
+    <p class="topless"><a href="capitulo6.html"
+                          title="Previous page">&larr; Capitulo 6: Medidas de distância</a></p>
+  </div>
+  <div class="sphinxnext">
+    <h4>Next page</h4>
+    <p class="topless"><a href="capitulo8.html"
+                          title="Next page">&rarr; Capitulo 8: Poligonal</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>Esta Página</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/pages/capitulo7.rst.txt"
+            rel="nofollow">Exibir Fonte</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Pesquisa rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                 «
+                <span class="show-for-small">hide menu</span>
+                
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                 »
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegação</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice Geral"
+             >índice</a></li>
+        <li class="right" >
+          <a href="capitulo8.html" title="Capitulo 8: Poligonal"
+             >próximo</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="capitulo6.html" title="Capitulo 6: Medidas de distância"
+             >anterior</a> &nbsp; &nbsp;</li>
+    <li><a href="../index.html">Documentação Livro de Geomática 0.1</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">Capitulo 7: Ângulos</a></li> 
+      </ul>
+    </div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Alexandre C Xavier.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.2.0.
+    </div>
+    <!-- cloud_sptheme 1.4 -->
+  </body>
 </html>

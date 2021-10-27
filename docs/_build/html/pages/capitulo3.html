@@ -1,102 +1,77 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="pt-PT" >
-<head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Capitulo 3: Introdução a geodésia e cartografia &mdash; Documentação Livro de Geomática 0.1</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/table_styling.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/translations.js"></script>
-        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="../_static/js/theme.js"></script>
+
+
+<!DOCTYPE html>
+
+<html lang="pt_PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Capitulo 3: Introdução a geodésia e cartografia &#8212; Documentação Livro de Geomática 0.1</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/cloud.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/table_styling.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    
+    
+     
+        <script src="../_static/jquery.cookie.js"></script>
+    
+
+    
+     
+        <script src="../_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="../_static/cloud.js"></script>
+    
+
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Pesquisar" href="../search.html" />
     <link rel="next" title="Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)" href="capitulo4.html" />
     <link rel="prev" title="Capitulo 2: Unidades métricas, escala e determinação de áreas" href="capitulo2.html" /> 
-</head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegação</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice Geral"
+             accesskey="I">índice</a></li>
+        <li class="right" >
+          <a href="capitulo4.html" title="Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)"
+             accesskey="N">próximo</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="capitulo2.html" title="Capitulo 2: Unidades métricas, escala e determinação de áreas"
+             accesskey="P">anterior</a> &nbsp; &nbsp;</li>
+    <li><a href="../index.html">Documentação Livro de Geomática 0.1</a> &#187;</li>
 
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> Livro de Geomática
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Pesquisar docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
-              <p class="caption" role="heading"><span class="caption-text">Conteúdo:</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="capitulo1.html">Capitulo 1: Matemática fundamental</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo2.html">Capitulo 2: Unidades métricas, escala e determinação de áreas</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Capitulo 3: Introdução a geodésia e cartografia</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#geoide">Geóide</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#elipsoide">Elipsóide</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#coordenada-geodesica">Coordenada geodésica</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#coordenada-geodesica-cartesiana">Coordenada geodésica cartesiana</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#coordenada-astronomica">Coordenada astronômica</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#sistema-de-geodesico-brasileiro">Sistema de geodésico brasileiro</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#datum-horizontal">Datum horizontal</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#datum-vertical">Datum vertical</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#projecao-cartografica">Projeção cartográfica</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#projecoes-plana-cilindrica-e-conica-secantes">Projeções plana, cilíndrica e cônica secantes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#projecao-universal-transversa-de-mercador-utm">Projeção Universal Transversa de Mercador (UTM)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#exercicios">Exercícios</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo4.html">Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo5.html">Capitulo 5: Georreferenciamento de imóveis rurais</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo6.html">Capitulo 6: Medidas de distância</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo7.html">Capitulo 7: Ângulos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo8.html">Capitulo 8: Poligonal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="referencias.html">Referências</a></li>
-</ul>
+        <li class="nav-item nav-item-this"><a href="">Capitulo 3: Introdução a geodésia e cartografia</a></li> 
+      </ul>
+    </div>
+    </div>
+  
 
-        </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Livro de Geomática</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Navegação da página">
-  <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Capitulo 3: Introdução a geodésia e cartografia</li>
-      <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/pages/capitulo3.rst.txt" rel="nofollow"> Ver código-fonte da página</a>
-      </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
   <style> .exem {color:blue; font-weight: bold} </style><style> .solucao {font-weight: bold} </style><style> .blue {color:blue} </style><section id="capitulo-3-introducao-a-geodesia-e-cartografia">
-<span id="rst-capitulo-3"></span><h1>Capitulo 3: Introdução a geodésia e cartografia<a class="headerlink" href="#capitulo-3-introducao-a-geodesia-e-cartografia" title="Link permanente para este título"></a></h1>
+<span id="rst-capitulo-3"></span><h1>Capitulo 3: Introdução a geodésia e cartografia<a class="headerlink" href="#capitulo-3-introducao-a-geodesia-e-cartografia" title="Link permanente para este título">¶</a></h1>
 <p>Serão abordados neste capítulo os conceitos básicos da geodésia como:
 forma e dimensão da terra; modelos matemáticos que se aproximam da
 forma da terra (elipsóide); o sistema de referência geodésico adotado
@@ -104,7 +79,7 @@ pelo Brasil. Quanto a cartografia, será definida o que é uma projeção
 cartográfica mostrando alguns exemplos, como o sistema projeção e
 coordenadas UTM, que é uma das projeções mais utilizada no Brasil.</p>
 <section id="geoide">
-<h2>Geóide<a class="headerlink" href="#geoide" title="Link permanente para este título"></a></h2>
+<h2>Geóide<a class="headerlink" href="#geoide" title="Link permanente para este título">¶</a></h2>
 <p>A terra vista do espaço se aproxima de uma esfera. Todavia, quanto
 mais nos aproximamos dela, mais ela se torna desuniforme, sendo formada
 na sua superfície, pelos continentes e mares. Nos continentes tem-se
@@ -150,7 +125,7 @@ de rotação da terra.</p>
 <figure class="align-center" id="id20">
 <a class="reference internal image-reference" href="../_images/geoide.png"><img alt="geoide.png" src="../_images/geoide.png" style="width: 352.2px; height: 454.8px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 15 </span><span class="caption-text">Modelo do geoide EGM96 <span id="id4">[<a class="reference internal" href="referencias.html#id6" title="F.G. Lemoine, S. C. Kenyon, J. K. Factor, R.G. Trimmer, N. K. Pavlis, D. S. Chinn, C. M. Cox, S. M. Klosko, S. B. Luthcke, M. H. Torrence, Y. M. Wang, R. G. Williamson, E. C. Pavlis, R. H. Rapp, and T. R. Olson. The development of the joint NASA GSFC and the National Imagery and Mapping Agency (NIMA) Geopotential Model EGM96. NASA technical paper. National Aeronautics and Space Administration, Goddard Space Flight Center, 1998. URL: https://books.google.com.br/books?id=eAMVAQAAIAAJ.">LKF+98</a>]</span></span><a class="headerlink" href="#id20" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 15 </span><span class="caption-text">Modelo do geoide EGM96 <span id="id4">[<a class="reference internal" href="referencias.html#id6" title="F.G. Lemoine, S. C. Kenyon, J. K. Factor, R.G. Trimmer, N. K. Pavlis, D. S. Chinn, C. M. Cox, S. M. Klosko, S. B. Luthcke, M. H. Torrence, Y. M. Wang, R. G. Williamson, E. C. Pavlis, R. H. Rapp, and T. R. Olson. The development of the joint NASA GSFC and the National Imagery and Mapping Agency (NIMA) Geopotential Model EGM96. NASA technical paper. National Aeronautics and Space Administration, Goddard Space Flight Center, 1998. URL: https://books.google.com.br/books?id=eAMVAQAAIAAJ.">LKF+98</a>]</span></span><a class="headerlink" href="#id20" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <div class="admonition-verificando-diferentes-modelos-de-geoide admonition">
@@ -159,7 +134,7 @@ de rotação da terra.</p>
 </div>
 </section>
 <section id="elipsoide">
-<span id="id5"></span><h2>Elipsóide<a class="headerlink" href="#elipsoide" title="Link permanente para este título"></a></h2>
+<span id="id5"></span><h2>Elipsóide<a class="headerlink" href="#elipsoide" title="Link permanente para este título">¶</a></h2>
 <p>O que os cientistas fazem então para realizar mapeamentos, definir
 fronteiras etc, uma vez que a forma da terra tem a forma irregular?
 Fazem uma aproximação do geóide à figura matemática denominada de
@@ -180,11 +155,11 @@ polos, <span class="math notranslate nohighlight">\(a&gt;b\)</span>, <span class
 trabalhando em pequenas escalas, pode-se considerar a terra um esferoide
 <span class="math notranslate nohighlight">\(a=b\)</span> ou <span class="math notranslate nohighlight">\(f=0\)</span>.</p>
 <div class="math notranslate nohighlight" id="equation-eq-achatamento">
-<span class="eqno">(22)<a class="headerlink" href="#equation-eq-achatamento" title="Permalink to this equation"></a></span>\[f=\frac{a-b}{a}=1-\frac{b}{a}\]</div>
+<span class="eqno">(22)<a class="headerlink" href="#equation-eq-achatamento" title="Permalink to this equation">¶</a></span>\[f=\frac{a-b}{a}=1-\frac{b}{a}\]</div>
 <figure class="align-center" id="id21">
 <span id="figelipsoide"></span><a class="reference internal image-reference" href="../_images/fig_elipsoide.png"><img alt="fig_elipsoide.png" src="../_images/fig_elipsoide.png" style="width: 605.6px; height: 254.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 16 </span><span class="caption-text">Apresentação de uma elipse e um elipsóide de revolução.</span><a class="headerlink" href="#id21" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 16 </span><span class="caption-text">Apresentação de uma elipse e um elipsóide de revolução.</span><a class="headerlink" href="#id21" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <hr class="docutils" />
@@ -217,7 +192,7 @@ Na Tabelaref{tab:elipsoides} são apresentados alguns parâmetros
 de elipsoides e o local em que ele é ou foi utilizado
 <span id="id7">[<a class="reference internal" href="referencias.html#id17" title="J.R. Smith. Introduction to Geodesy. Wiley Series in Surveying and Boundary Control. Wiley, 1997. ISBN 9780471166603.">Smi97</a>]</span>.</p>
 <table class="colwidths-given styled-table docutils align-default" id="id22">
-<caption><span class="caption-number">Table 2 </span><span class="caption-text">Exemplo dos parâmetros de elipsoides.</span><a class="headerlink" href="#id22" title="Permalink to this table"></a></caption>
+<caption><span class="caption-number">Table 2 </span><span class="caption-text">Exemplo dos parâmetros de elipsoides.</span><a class="headerlink" href="#id22" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 10%" />
 <col style="width: 20%" />
@@ -266,7 +241,7 @@ de elipsoides e o local em que ele é ou foi utilizado
 </table>
 </section>
 <section id="coordenada-geodesica">
-<span id="id8"></span><h2>Coordenada geodésica<a class="headerlink" href="#coordenada-geodesica" title="Link permanente para este título"></a></h2>
+<span id="id8"></span><h2>Coordenada geodésica<a class="headerlink" href="#coordenada-geodesica" title="Link permanente para este título">¶</a></h2>
 <p>Para a determinação da latitude  (<span class="math notranslate nohighlight">\(\phi\)</span>, leia-se <em>fi</em>) e da longitude (<span class="math notranslate nohighlight">\(\lambda\)</span>, leia-se <em>lambda</em>) geodésica
 de um ponto <span class="math notranslate nohighlight">\(P\)</span> qualquer, é considerada a normal <span class="math notranslate nohighlight">\(P\)</span> ao elipsóide
 (<span class="math notranslate nohighlight">\(P'\)</span>, <a class="reference internal" href="#fig-coordenadasretangulares"><span class="std std-numref">Figura 17</span></a>) e:</p>
@@ -301,12 +276,12 @@ o interesse é com a elevação em relação ao geóide.</p>
 <figcaption>
 <p><span class="caption-number">Figura 17 </span><span class="caption-text">Variáveis necessárias para cálculo das coordenadas retangulares <span class="math notranslate nohighlight">\((x,y,z)\)</span>
 de um ponto <span class="math notranslate nohighlight">\(P\)</span> a partir das coordenadas geodésicas <span class="math notranslate nohighlight">\((\phi,\lambda)\)</span>
-e vice-versa.</span><a class="headerlink" href="#id23" title="Permalink to this image"></a></p>
+e vice-versa.</span><a class="headerlink" href="#id23" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="coordenada-geodesica-cartesiana">
-<h2>Coordenada geodésica cartesiana<a class="headerlink" href="#coordenada-geodesica-cartesiana" title="Link permanente para este título"></a></h2>
+<h2>Coordenada geodésica cartesiana<a class="headerlink" href="#coordenada-geodesica-cartesiana" title="Link permanente para este título">¶</a></h2>
 <p>Um outro meio de estabelecer a localização espacial de um ponto, por
 exemplo o <span class="math notranslate nohighlight">\(P\)</span>, a um determinado elipsóide, é por meio de sua coordenada
 geodésica cartesiana (<span class="math notranslate nohighlight">\(x_{P},\,y_{P},\,z_{P}\)</span>), também denominado
@@ -323,16 +298,16 @@ meridiano de Grw; e o eixo-<span class="math notranslate nohighlight">\(y\)</spa
 Geodésicas são conhecidas, utilizam-se Equações <a class="reference internal" href="#equation-eq-cart-x">(23)</a> a <a class="reference internal" href="#equation-eq-grande-normal">(26)</a>
 para convertê-las retangulares.</p>
 <div class="math notranslate nohighlight" id="equation-eq-cart-x">
-<span class="eqno">(23)<a class="headerlink" href="#equation-eq-cart-x" title="Permalink to this equation"></a></span>\[\begin{split}x =\left(N+h\right)\cos\phi\cos\lambda\\\end{split}\]</div>
+<span class="eqno">(23)<a class="headerlink" href="#equation-eq-cart-x" title="Permalink to this equation">¶</a></span>\[\begin{split}x =\left(N+h\right)\cos\phi\cos\lambda\\\end{split}\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-cart-y">
-<span class="eqno">(24)<a class="headerlink" href="#equation-eq-cart-y" title="Permalink to this equation"></a></span>\[\begin{split}y =\left(N+h\right)\cos\phi\sin\lambda\\\end{split}\]</div>
+<span class="eqno">(24)<a class="headerlink" href="#equation-eq-cart-y" title="Permalink to this equation">¶</a></span>\[\begin{split}y =\left(N+h\right)\cos\phi\sin\lambda\\\end{split}\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-cart-z">
-<span class="eqno">(25)<a class="headerlink" href="#equation-eq-cart-z" title="Permalink to this equation"></a></span>\[z = \left({\displaystyle \frac{b^{2}}{a^{2}}N+h}\right)\sin\phi\]</div>
+<span class="eqno">(25)<a class="headerlink" href="#equation-eq-cart-z" title="Permalink to this equation">¶</a></span>\[z = \left({\displaystyle \frac{b^{2}}{a^{2}}N+h}\right)\sin\phi\]</div>
 <p>em que: <span class="math notranslate nohighlight">\(N\)</span> é denominado de grande normal, correspondendo
 ao comprimento da vertical que passa por <span class="math notranslate nohighlight">\(P'\)</span> ao eixo-z (Figuraref{fig:coordenadasretangulares})
 dado por:</p>
 <div class="math notranslate nohighlight" id="equation-eq-grande-normal">
-<span class="eqno">(26)<a class="headerlink" href="#equation-eq-grande-normal" title="Permalink to this equation"></a></span>\[N =\frac{a^{2}}{\sqrt{a^{2}\cos^{2}\phi+b^{2}\sin^{2}\phi}}\]</div>
+<span class="eqno">(26)<a class="headerlink" href="#equation-eq-grande-normal" title="Permalink to this equation">¶</a></span>\[N =\frac{a^{2}}{\sqrt{a^{2}\cos^{2}\phi+b^{2}\sin^{2}\phi}}\]</div>
 <hr class="docutils" />
 <p><span class="exem">Exemplo 2</span> A latitude, longitude
 e altitude geodésica de um ponto <span class="math notranslate nohighlight">\(P\)</span> valem: <span class="math notranslate nohighlight">\(\phi=-22^\circ13'21,1337''\)</span>,
@@ -365,20 +340,20 @@ será apresentada uma metodologia em que não há necessidade de iterações
 ou seja, é simples, uma vez que, com a aplicação das equações, o resultado
 é obtido diretamente.</p>
 <div class="math notranslate nohighlight" id="equation-eq-cart-to-geo-lat">
-<span class="eqno">(27)<a class="headerlink" href="#equation-eq-cart-to-geo-lat" title="Permalink to this equation"></a></span>\[\phi ={\displaystyle \arctan\frac{z+e'^{2}b\sin^3\theta}{p-e^2a\cos^3\theta}}\]</div>
+<span class="eqno">(27)<a class="headerlink" href="#equation-eq-cart-to-geo-lat" title="Permalink to this equation">¶</a></span>\[\phi ={\displaystyle \arctan\frac{z+e'^{2}b\sin^3\theta}{p-e^2a\cos^3\theta}}\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-cart-to-geo-lon">
-<span class="eqno">(28)<a class="headerlink" href="#equation-eq-cart-to-geo-lon" title="Permalink to this equation"></a></span>\[\lambda  ={\displaystyle \arctan\frac{y}{x}}\label{eq:cart_to_geo_lon}\]</div>
+<span class="eqno">(28)<a class="headerlink" href="#equation-eq-cart-to-geo-lon" title="Permalink to this equation">¶</a></span>\[\lambda  ={\displaystyle \arctan\frac{y}{x}}\label{eq:cart_to_geo_lon}\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-cart-to-geo-h">
-<span class="eqno">(29)<a class="headerlink" href="#equation-eq-cart-to-geo-h" title="Permalink to this equation"></a></span>\[h  ={\displaystyle \frac{p}{\cos\phi}-N}\]</div>
+<span class="eqno">(29)<a class="headerlink" href="#equation-eq-cart-to-geo-h" title="Permalink to this equation">¶</a></span>\[h  ={\displaystyle \frac{p}{\cos\phi}-N}\]</div>
 <p>em que:</p>
 <div class="math notranslate nohighlight" id="equation-eq-ecentricidade-primeira">
-<span class="eqno">(30)<a class="headerlink" href="#equation-eq-ecentricidade-primeira" title="Permalink to this equation"></a></span>\[e^{2}  ={\displaystyle \frac{a^2-b^2}{a^2}}\]</div>
+<span class="eqno">(30)<a class="headerlink" href="#equation-eq-ecentricidade-primeira" title="Permalink to this equation">¶</a></span>\[e^{2}  ={\displaystyle \frac{a^2-b^2}{a^2}}\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-ecentricidade-segunda">
-<span class="eqno">(31)<a class="headerlink" href="#equation-eq-ecentricidade-segunda" title="Permalink to this equation"></a></span>\[e'^{2} ={\displaystyle \frac{a^2-b^2}{b^2}}\]</div>
+<span class="eqno">(31)<a class="headerlink" href="#equation-eq-ecentricidade-segunda" title="Permalink to this equation">¶</a></span>\[e'^{2} ={\displaystyle \frac{a^2-b^2}{b^2}}\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-cart-to-geo-aux-p">
-<span class="eqno">(32)<a class="headerlink" href="#equation-eq-cart-to-geo-aux-p" title="Permalink to this equation"></a></span>\[p ={\displaystyle \sqrt{x^2+y^2}}\]</div>
+<span class="eqno">(32)<a class="headerlink" href="#equation-eq-cart-to-geo-aux-p" title="Permalink to this equation">¶</a></span>\[p ={\displaystyle \sqrt{x^2+y^2}}\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-cart-to-geo-aux">
-<span class="eqno">(33)<a class="headerlink" href="#equation-eq-cart-to-geo-aux" title="Permalink to this equation"></a></span>\[\theta ={\displaystyle \arctan\frac{z\cdot a}{p\cdot b}}\]</div>
+<span class="eqno">(33)<a class="headerlink" href="#equation-eq-cart-to-geo-aux" title="Permalink to this equation">¶</a></span>\[\theta ={\displaystyle \arctan\frac{z\cdot a}{p\cdot b}}\]</div>
 <p>Os termos <span class="math notranslate nohighlight">\(e^{2}\text{ e }e'^{2}\)</span> são denominados, respectivamente
 de primeira e segunda excentricidade. O valor de <span class="math notranslate nohighlight">\(p\)</span> corresponde
 ao raio no paralelo analisado.</p>
@@ -408,7 +383,7 @@ e <span class="math notranslate nohighlight">\(h\)</span> do Exemplo 2.</p>
 </section>
 <hr class="docutils" />
 <section id="coordenada-astronomica">
-<h2>Coordenada astronômica<a class="headerlink" href="#coordenada-astronomica" title="Link permanente para este título"></a></h2>
+<h2>Coordenada astronômica<a class="headerlink" href="#coordenada-astronomica" title="Link permanente para este título">¶</a></h2>
 <p>Quando consideramos a vertical do ponto <span class="math notranslate nohighlight">\(P\)</span>, que pode ser dada pela
 direção do fio de prumo, que tem a direção do centro de massa da terra,
 tem-se como a latitude astronômica de <span class="math notranslate nohighlight">\(P\)</span>, o ângulo medido entre
@@ -416,7 +391,7 @@ a vertical em <span class="math notranslate nohighlight">\(P\)</span> o plano do
 é o ângulo entre o plano meridiano local e o meridiano de Grw.</p>
 </section>
 <section id="sistema-de-geodesico-brasileiro">
-<h2>Sistema de geodésico brasileiro<a class="headerlink" href="#sistema-de-geodesico-brasileiro" title="Link permanente para este título"></a></h2>
+<h2>Sistema de geodésico brasileiro<a class="headerlink" href="#sistema-de-geodesico-brasileiro" title="Link permanente para este título">¶</a></h2>
 <p>O objetivo de um sistema de referência geodésico é o de disponibilizar,
 implantar e manter uma infraestrutura básica para levantamento de
 posição de pontos na superfície da terra. Os sistemas de referências
@@ -450,7 +425,7 @@ de posições, é realizada por meio marcos, ao longo do estado Brasileiro
 e em sua fronteira. A responsabilidade pelo SGB no Brasil fica a cargo
 do Instituto Brasileiro de Geografia e Estatística (IBGE).</p>
 <section id="datum-horizontal">
-<span id="id13"></span><h3>Datum horizontal<a class="headerlink" href="#datum-horizontal" title="Link permanente para este título"></a></h3>
+<span id="id13"></span><h3>Datum horizontal<a class="headerlink" href="#datum-horizontal" title="Link permanente para este título">¶</a></h3>
 <p>Um Datum horizontal é constituído de um elipsóide mais uma série de
 parâmetros que o posiciona à terra, como, por exemplo, a latitude
 e a longitude do ponto inicial e o azimute de um alinhamento. A posição
@@ -471,7 +446,7 @@ em apenas uma porção.</p>
 <figure class="align-center" id="id24">
 <span id="fig-elipsoide-geoides-png"></span><a class="reference internal image-reference" href="../_images/fig_elipsoide_geoides.png"><img alt="fig_elipsoide_geoides.png" src="../_images/fig_elipsoide_geoides.png" style="width: 369.20000000000005px; height: 379.6px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 18 </span><span class="caption-text">Datum horizontal do tipo topocêntrico e geocêntrico.</span><a class="headerlink" href="#id24" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 18 </span><span class="caption-text">Datum horizontal do tipo topocêntrico e geocêntrico.</span><a class="headerlink" href="#id24" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Como dito anteriormente, o SGB é dinâmico, o Brasil já teve o index{Datum horizontal!Córrego Alegre}Datum
@@ -520,12 +495,12 @@ de Noronha.</p>
 <span id="fig-refer-horizontal"></span><a class="reference internal image-reference" href="../_images/fig_refer_horizontal.png"><img alt="fig_elipsoide_geoides.png" src="../_images/fig_refer_horizontal.png" style="width: 464.45px; height: 273.0px;" /></a>
 <figcaption>
 <p><span class="caption-number">Figura 19 </span><span class="caption-text">Posição das referencias horizontais e os métodos em que as posições
-foram estimadas. Dados obtidos no IBGE em 7 de maio de 2012.</span><a class="headerlink" href="#id25" title="Permalink to this image"></a></p>
+foram estimadas. Dados obtidos no IBGE em 7 de maio de 2012.</span><a class="headerlink" href="#id25" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="datum-vertical">
-<h3>Datum vertical<a class="headerlink" href="#datum-vertical" title="Link permanente para este título"></a></h3>
+<h3>Datum vertical<a class="headerlink" href="#datum-vertical" title="Link permanente para este título">¶</a></h3>
 <p>São duas as referencias de altitude adotado pelo Brasil, que coincide
 com nível médio dos mares (NMM), sendo: <em>i</em>)
 o <strong>Datum de Imbituba</strong>, definido de observações
@@ -541,7 +516,7 @@ Datum de Imbituba (<a class="reference internal" href="#fig-refer-vertical"><spa
 <figure class="align-center" id="id26">
 <span id="fig-refer-vertical"></span><a class="reference internal image-reference" href="../_images/fig_refer_vertical.png"><img alt="fig_refer_vertical.png" src="../_images/fig_refer_vertical.png" style="width: 285.25px; height: 288.4px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 20 </span><span class="caption-text">Posições das referencias horizontais das referências de nível dos Datum de Imbituba e Santana.</span><a class="headerlink" href="#id26" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 20 </span><span class="caption-text">Posições das referencias horizontais das referências de nível dos Datum de Imbituba e Santana.</span><a class="headerlink" href="#id26" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <div class="admonition-sistema-geodesico-brasileiro-na-internet admonition">
@@ -551,7 +526,7 @@ Datum de Imbituba (<a class="reference internal" href="#fig-refer-vertical"><spa
 </section>
 </section>
 <section id="projecao-cartografica">
-<h2>Projeção cartográfica<a class="headerlink" href="#projecao-cartografica" title="Link permanente para este título"></a></h2>
+<h2>Projeção cartográfica<a class="headerlink" href="#projecao-cartografica" title="Link permanente para este título">¶</a></h2>
 <p>Projeções cartográficas são funções matemáticas que transformam as
 coordenadas geodésicas <span class="math notranslate nohighlight">\((\phi,\,\lambda)\)</span>) para coordenadas planas
 <span class="math notranslate nohighlight">\((x,\,y)\)</span>), isto é, <span class="math notranslate nohighlight">\(x=f(\phi,\,\lambda)\)</span> e <span class="math notranslate nohighlight">\(y=f(\phi,\,\lambda)\)</span>.
@@ -572,17 +547,17 @@ que passa pelo ponto central (e.g. <a class="reference internal" href="#proj-tip
 <figure class="align-center" id="id27">
 <span id="proj-tipos"></span><a class="reference internal image-reference" href="../_images/proj_tipos.png"><img alt="proj_tipos.png" src="../_images/proj_tipos.png" style="width: 378.5px; height: 457.5px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 21 </span><span class="caption-text">Tipos de projeções.</span><a class="headerlink" href="#id27" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 21 </span><span class="caption-text">Tipos de projeções.</span><a class="headerlink" href="#id27" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id28">
 <span id="proj-tipos-sec"></span><a class="reference internal image-reference" href="../_images/proj_tipos_sec.png"><img alt="proj_tipos_sec.png" src="../_images/proj_tipos_sec.png" style="width: 533.05px; height: 200.54999999999998px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 22 </span><span class="caption-text">Projeções tipo secantes.</span><a class="headerlink" href="#id28" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 22 </span><span class="caption-text">Projeções tipo secantes.</span><a class="headerlink" href="#id28" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <section id="projecoes-plana-cilindrica-e-conica-secantes">
-<h3>Projeções plana, cilíndrica e cônica secantes<a class="headerlink" href="#projecoes-plana-cilindrica-e-conica-secantes" title="Link permanente para este título"></a></h3>
+<h3>Projeções plana, cilíndrica e cônica secantes<a class="headerlink" href="#projecoes-plana-cilindrica-e-conica-secantes" title="Link permanente para este título">¶</a></h3>
 <p>Nenhum mapa pode ser ao mesmo tempo <strong>igual área</strong> e <strong>conforme</strong>.
 Projeções que não são <strong>igual área</strong> nem <em>conforme</em> são
 denominadas de <strong>afiláticas</strong>. Pode-se citar outros termos que
@@ -617,7 +592,7 @@ na direção leste-oeste, como os Estados Unidos.</p>
 <figure class="align-center" id="id29">
 <span id="fig-albersequalarea-png"></span><a class="reference internal image-reference" href="../_images/fig_AlbersEqualArea.png"><img alt="fig_AlbersEqualArea.png" src="../_images/fig_AlbersEqualArea.png" style="width: 366.09999999999997px; height: 238.35px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 23 </span><span class="caption-text">Projeção cônica de Albers (igual área).</span><a class="headerlink" href="#id29" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 23 </span><span class="caption-text">Projeção cônica de Albers (igual área).</span><a class="headerlink" href="#id29" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>As fórmulas para a index{Projeção cartográfica!projeção cônica de Albers}projeção
@@ -626,9 +601,9 @@ e <a class="reference internal" href="#equation-eq-proj-albers-igualarea-y">(35)
 um esferoide. Para o modelo da terra sendo um elipsóide, consultar
 <span id="id15">[<a class="reference internal" href="referencias.html#id14" title="J.P. Snyder. Map projections–a working manual. Geological Survey Bulletin Series. U.S. G.P.O., 1987. URL: http://pubs.er.usgs.gov/publication/pp1395.">Sny87</a>]</span>.</p>
 <div class="math notranslate nohighlight" id="equation-eq-proj-albers-igualarea-x">
-<span class="eqno">(34)<a class="headerlink" href="#equation-eq-proj-albers-igualarea-x" title="Permalink to this equation"></a></span>\[x  =\rho\sin\theta\]</div>
+<span class="eqno">(34)<a class="headerlink" href="#equation-eq-proj-albers-igualarea-x" title="Permalink to this equation">¶</a></span>\[x  =\rho\sin\theta\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-proj-albers-igualarea-y">
-<span class="eqno">(35)<a class="headerlink" href="#equation-eq-proj-albers-igualarea-y" title="Permalink to this equation"></a></span>\[y  =\rho_{0}-\rho\cos\theta\]</div>
+<span class="eqno">(35)<a class="headerlink" href="#equation-eq-proj-albers-igualarea-y" title="Permalink to this equation">¶</a></span>\[y  =\rho_{0}-\rho\cos\theta\]</div>
 <p>em que:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\rho                 &amp; =\frac{1}{n}R\left(C-2n\sin\phi\right)^{1/2}\\
@@ -660,19 +635,19 @@ o meridiano central. As equações para a projeção sinusoidal são simples.
 Considerando a forma da terra como um esferoide, as coordenadas retangulares
 da projeção Sinusoidal são:</p>
 <div class="math notranslate nohighlight" id="equation-eq-proj-sinu-equi">
-<span class="eqno">(36)<a class="headerlink" href="#equation-eq-proj-sinu-equi" title="Permalink to this equation"></a></span>\[x=(\lambda-\lambda_{0})\cos\phi\]</div>
+<span class="eqno">(36)<a class="headerlink" href="#equation-eq-proj-sinu-equi" title="Permalink to this equation">¶</a></span>\[x=(\lambda-\lambda_{0})\cos\phi\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-proj-sinu-equi-2">
-<span class="eqno">(37)<a class="headerlink" href="#equation-eq-proj-sinu-equi-2" title="Permalink to this equation"></a></span>\[y=\phi\]</div>
+<span class="eqno">(37)<a class="headerlink" href="#equation-eq-proj-sinu-equi-2" title="Permalink to this equation">¶</a></span>\[y=\phi\]</div>
 <p>As coordenadas devem estar em radianos. As funções inversas
 da projeção sinusoidal são:</p>
 <div class="math notranslate nohighlight" id="equation-eq-proj-sinu-equi-inv">
-<span class="eqno">(38)<a class="headerlink" href="#equation-eq-proj-sinu-equi-inv" title="Permalink to this equation"></a></span>\[\lambda=\frac{x}{\cos\phi}+\lambda_{0}\]</div>
+<span class="eqno">(38)<a class="headerlink" href="#equation-eq-proj-sinu-equi-inv" title="Permalink to this equation">¶</a></span>\[\lambda=\frac{x}{\cos\phi}+\lambda_{0}\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-proj-sinu-equi-inv2">
-<span class="eqno">(39)<a class="headerlink" href="#equation-eq-proj-sinu-equi-inv2" title="Permalink to this equation"></a></span>\[\phi=y\]</div>
+<span class="eqno">(39)<a class="headerlink" href="#equation-eq-proj-sinu-equi-inv2" title="Permalink to this equation">¶</a></span>\[\phi=y\]</div>
 <figure class="align-center" id="id30">
 <span id="sinusoidalqualarea-png"></span><a class="reference internal image-reference" href="../_images/SinusoidalqualArea.png"><img alt="SinusoidalqualArea.png" src="../_images/SinusoidalqualArea.png" style="width: 362.59999999999997px; height: 190.39999999999998px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 24 </span><span class="caption-text">Projeção sinusoidal (igual área).</span><a class="headerlink" href="#id30" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 24 </span><span class="caption-text">Projeção sinusoidal (igual área).</span><a class="headerlink" href="#id30" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <hr class="docutils" />
@@ -702,7 +677,7 @@ paralelos padrão; e no hemisfério sobre os paralelos padrão o polo
 <figure class="align-center" id="id31">
 <span id="lambertconformal"></span><a class="reference internal image-reference" href="../_images/LambertConformal.png"><img alt="LambertConformal.png" src="../_images/LambertConformal.png" style="width: 351.04999999999995px; height: 259.34999999999997px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 25 </span><span class="caption-text">Projeção cônica de Lambert (conforme).</span><a class="headerlink" href="#id31" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 25 </span><span class="caption-text">Projeção cônica de Lambert (conforme).</span><a class="headerlink" href="#id31" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p><strong>Projeção Azimutal (equidistante)</strong></p>
@@ -716,20 +691,20 @@ em intervalos verdadeiros.</p>
 <figure class="align-center" id="id32">
 <span id="azimuthalequidistant"></span><a class="reference internal image-reference" href="../_images/AzimuthalEquidistant.png"><img alt="AzimuthalEquidistant.png" src="../_images/AzimuthalEquidistant.png" style="width: 285.59999999999997px; height: 281.04999999999995px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 26 </span><span class="caption-text">Projeção Azimutal (equidistante).</span><a class="headerlink" href="#id32" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 26 </span><span class="caption-text">Projeção Azimutal (equidistante).</span><a class="headerlink" href="#id32" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>A Equações para as coordenadas planas da projeção azimutal equidistante
 são:</p>
 <div class="math notranslate nohighlight" id="equation-eq-proj-azi-equidis">
-<span class="eqno">(40)<a class="headerlink" href="#equation-eq-proj-azi-equidis" title="Permalink to this equation"></a></span>\[\begin{split}x =k'\cos\phi\sin(\lambda-\lambda_{0})\\\end{split}\]</div>
+<span class="eqno">(40)<a class="headerlink" href="#equation-eq-proj-azi-equidis" title="Permalink to this equation">¶</a></span>\[\begin{split}x =k'\cos\phi\sin(\lambda-\lambda_{0})\\\end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[y =k'\left(\cos\phi_{1}\sin(\phi)-\sin\phi_{1}\cos\phi\cos(\lambda-\lambda_{0})\right)\]</div>
 <p>em que:</p>
 <div class="math notranslate nohighlight" id="equation-eq-proj-azi-equidis-k">
-<span class="eqno">(41)<a class="headerlink" href="#equation-eq-proj-azi-equidis-k" title="Permalink to this equation"></a></span>\[k' =c/\sin\]</div>
+<span class="eqno">(41)<a class="headerlink" href="#equation-eq-proj-azi-equidis-k" title="Permalink to this equation">¶</a></span>\[k' =c/\sin\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-proj-azi-equidis-cosc">
-<span class="eqno">(42)<a class="headerlink" href="#equation-eq-proj-azi-equidis-cosc" title="Permalink to this equation"></a></span>\[\cos c =\sin\phi_{1}\sin(\phi)-\cos\phi_{1}\cos\phi\cos(\lambda-\lambda_{0})\]</div>
+<span class="eqno">(42)<a class="headerlink" href="#equation-eq-proj-azi-equidis-cosc" title="Permalink to this equation">¶</a></span>\[\cos c =\sin\phi_{1}\sin(\phi)-\cos\phi_{1}\cos\phi\cos(\lambda-\lambda_{0})\]</div>
 <p>Sendo <span class="math notranslate nohighlight">\((\phi_{1},\lambda_{0})\)</span> são a latitude e a longitude do centro
 da projeção e a origem. O eixo-<span class="math notranslate nohighlight">\(y\)</span> coincide com o meridiano central,
 crescendo ao norte e diminuindo ao sul. Se <span class="math notranslate nohighlight">\(\cos c=1\)</span> na Equaçãoref{eq:proj_azi_equidis_cosc},
@@ -737,9 +712,9 @@ ela é indeterminada, mas <span class="math notranslate nohighlight">\(k'=1\)</s
 ponto é oposto ao centro <span class="math notranslate nohighlight">\((-\phi_{1},\lambda_{0}\pm180^{\circ})\)</span>.
 As funções inversas são:</p>
 <div class="math notranslate nohighlight" id="equation-eq-proj-azi-equidis-inv-lat">
-<span class="eqno">(43)<a class="headerlink" href="#equation-eq-proj-azi-equidis-inv-lat" title="Permalink to this equation"></a></span>\[\displaystyle \phi=\arcsin\left(\cos c\sin\phi_{1}+\left(\frac{y\sin c\cos\phi_{1}}{c}\right)\right),\]</div>
+<span class="eqno">(43)<a class="headerlink" href="#equation-eq-proj-azi-equidis-inv-lat" title="Permalink to this equation">¶</a></span>\[\displaystyle \phi=\arcsin\left(\cos c\sin\phi_{1}+\left(\frac{y\sin c\cos\phi_{1}}{c}\right)\right),\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-proj-azi-equidis-inv-long">
-<span class="eqno">(44)<a class="headerlink" href="#equation-eq-proj-azi-equidis-inv-long" title="Permalink to this equation"></a></span>\[\begin{split}{\displaystyle \lambda=\lambda_{0}+\begin{cases}
+<span class="eqno">(44)<a class="headerlink" href="#equation-eq-proj-azi-equidis-inv-long" title="Permalink to this equation">¶</a></span>\[\begin{split}{\displaystyle \lambda=\lambda_{0}+\begin{cases}
 {\displaystyle \arctan\left(\frac{x\sin c}{\rho\cos\phi_{1}\cos c-y\sin\phi_{1}\sin c}\right)} &amp; \text{se }\phi_{1}\neq\pm90^{\circ},\\
 {\displaystyle \arctan\left(\frac{x}{-y}\right)} &amp; \text{se }\phi_{1}=90^\circ,\\
 {\displaystyle \arctan\left(\frac{x}{y}\right)} &amp; \text{se }\phi_{1}=-90^\circ,
@@ -747,7 +722,7 @@ As funções inversas são:</p>
 <p>em que: <span class="math notranslate nohighlight">\(\rho=\left(x^2+y^2\right)^{1/2}\)</span> e <span class="math notranslate nohighlight">\(c=\rho/R\)</span>.</p>
 </section>
 <section id="projecao-universal-transversa-de-mercador-utm">
-<span id="utm"></span><h3>Projeção Universal Transversa de Mercador (UTM)<a class="headerlink" href="#projecao-universal-transversa-de-mercador-utm" title="Link permanente para este título"></a></h3>
+<span id="utm"></span><h3>Projeção Universal Transversa de Mercador (UTM)<a class="headerlink" href="#projecao-universal-transversa-de-mercador-utm" title="Link permanente para este título">¶</a></h3>
 <p>Na projeção Universal Transversa de Mercador, <em>Transverse Mercator
 Projection</em> (UTM), a terra,
 entre as latitudes de <span class="math notranslate nohighlight">\(84^\circ\)</span> de longitude, numeradas de 1 a 60, começando
@@ -775,7 +750,7 @@ encontradas em <span id="id16">[<a class="reference internal" href="referencias.
 <figure class="align-center" id="id33">
 <span id="utmzone"></span><a class="reference internal image-reference" href="../_images/utmzone.png"><img alt="utmzone.png" src="../_images/utmzone.png" style="width: 512.05px; height: 239.04999999999998px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 27 </span><span class="caption-text">Fusos das coordenadas UTM.</span><a class="headerlink" href="#id33" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 27 </span><span class="caption-text">Fusos das coordenadas UTM.</span><a class="headerlink" href="#id33" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>O território Brasileiro está inserido ao longo de 8 fusos UTM, do
@@ -794,7 +769,7 @@ e a linha de latitude onde o ponto se encontra.</p>
 <figure class="align-center" id="id34">
 <span id="utmzonebr"></span><a class="reference internal image-reference" href="../_images/utmzoneBR.png"><img alt="utmzoneBR.png" src="../_images/utmzoneBR.png" style="width: 472.0px; height: 461.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 28 </span><span class="caption-text">Fusos das coordenadas UTM Brasil.</span><a class="headerlink" href="#id34" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 28 </span><span class="caption-text">Fusos das coordenadas UTM Brasil.</span><a class="headerlink" href="#id34" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Agora vamos abordar as coordenadas UTM, onde, uma apresentação gráfica
@@ -817,7 +792,7 @@ por “E”, de Este, e <span class="math notranslate nohighlight">\(y\)</span>,
 <figure class="align-center" id="id35">
 <span id="utmonezone-png"></span><a class="reference internal image-reference" href="../_images/utmonezone.png"><img alt="utmonezone.png" src="../_images/utmonezone.png" style="width: 350.0px; height: 440.5px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 29 </span><span class="caption-text">Esquema das coordenadas UTM para um fuso qualquer.</span><a class="headerlink" href="#id35" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 29 </span><span class="caption-text">Esquema das coordenadas UTM para um fuso qualquer.</span><a class="headerlink" href="#id35" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Na <a class="reference internal" href="#utmzonealegrees"><span class="std std-numref">Figura 30</span></a>  é apresentado o limite do Espírito
@@ -837,7 +812,7 @@ e a uma distância de <span class="math notranslate nohighlight">\(2.298.017\,\t
 <figure class="align-center" id="id36">
 <span id="utmzonealegrees"></span><a class="reference internal image-reference" href="../_images/utmzoneAlegreES.png"><img alt="utmzoneAlegreES.png" src="../_images/utmzoneAlegreES.png" style="width: 321.5px; height: 430.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 30 </span><span class="caption-text">Esquema das coordenadas UTM para a cidade de Alegre-ES.</span><a class="headerlink" href="#id36" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 30 </span><span class="caption-text">Esquema das coordenadas UTM para a cidade de Alegre-ES.</span><a class="headerlink" href="#id36" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p><strong>Coordenadas geográficas para UTM</strong></p>
@@ -848,9 +823,9 @@ soma-se <span class="math notranslate nohighlight">\(500.000\)</span> m ao valor
 coordenada Norte no hemisfério sul, soma-se <span class="math notranslate nohighlight">\(10.000.000\)</span> m a <span class="math notranslate nohighlight">\(y\)</span>
 (Equação <a class="reference internal" href="#equation-eq-utmy">(46)</a>).</p>
 <div class="math notranslate nohighlight" id="equation-eq-utmx">
-<span class="eqno">(45)<a class="headerlink" href="#equation-eq-utmx" title="Permalink to this equation"></a></span>\[x=k_{0}N\text{(}A+(1-T+C)A^{3}/6+(5-18T+T^{2}+72C-58e'^{2}\text{)}A^{5}/120\]</div>
+<span class="eqno">(45)<a class="headerlink" href="#equation-eq-utmx" title="Permalink to this equation">¶</a></span>\[x=k_{0}N\text{(}A+(1-T+C)A^{3}/6+(5-18T+T^{2}+72C-58e'^{2}\text{)}A^{5}/120\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-utmy">
-<span class="eqno">(46)<a class="headerlink" href="#equation-eq-utmy" title="Permalink to this equation"></a></span>\[\begin{split}y=k_{0}\text{(}M+N\tan\phi(A^{2}/2+(5-T+9C+4C^{2})A^{4}/24+\\
+<span class="eqno">(46)<a class="headerlink" href="#equation-eq-utmy" title="Permalink to this equation">¶</a></span>\[\begin{split}y=k_{0}\text{(}M+N\tan\phi(A^{2}/2+(5-T+9C+4C^{2})A^{4}/24+\\
 (61-58T+T^{2}+600C-330e'^{2})A^{6}/720))\end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[\begin{split}k=k_{0}\text{(}1+(1+C)A^{2}/2+(5-4T+42C+13C^{2}-28e'^{2})A^{4}/24+\\
@@ -861,13 +836,13 @@ Equação <a class="reference internal" href="#equation-eq-grande-normal">(26)</
 na Equação <a class="reference internal" href="#equation-eq-ecentricidade-segunda">(31)</a>, para as demais variáveis
 auxiliares:</p>
 <div class="math notranslate nohighlight" id="equation-eq-utm-t">
-<span class="eqno">(47)<a class="headerlink" href="#equation-eq-utm-t" title="Permalink to this equation"></a></span>\[T =\tan^{2}\phi\]</div>
+<span class="eqno">(47)<a class="headerlink" href="#equation-eq-utm-t" title="Permalink to this equation">¶</a></span>\[T =\tan^{2}\phi\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-utm-c">
-<span class="eqno">(48)<a class="headerlink" href="#equation-eq-utm-c" title="Permalink to this equation"></a></span>\[C =e'^{2}\cos^{2}\phi\]</div>
+<span class="eqno">(48)<a class="headerlink" href="#equation-eq-utm-c" title="Permalink to this equation">¶</a></span>\[C =e'^{2}\cos^{2}\phi\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-utm-a">
-<span class="eqno">(49)<a class="headerlink" href="#equation-eq-utm-a" title="Permalink to this equation"></a></span>\[A =(\lambda-\lambda_{0})\cos\phi\]</div>
+<span class="eqno">(49)<a class="headerlink" href="#equation-eq-utm-a" title="Permalink to this equation">¶</a></span>\[A =(\lambda-\lambda_{0})\cos\phi\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-utm-m">
-<span class="eqno">(50)<a class="headerlink" href="#equation-eq-utm-m" title="Permalink to this equation"></a></span>\[\begin{split}M=a((1-e^{2}/4-3e^{4}/64-5e^{6}/256-...)\phi-\\
+<span class="eqno">(50)<a class="headerlink" href="#equation-eq-utm-m" title="Permalink to this equation">¶</a></span>\[\begin{split}M=a((1-e^{2}/4-3e^{4}/64-5e^{6}/256-...)\phi-\\
 (3e^{2}/8+3e^{4}/32+45e^{6}/1024+...)\sin2\phi+\\
 (15e^{4}/256+45e^{6}/1024)\sin4\phi-\\
 (35e^{6}/3072+...)\sin6\phi+...)\end{split}\]</div>
@@ -934,7 +909,7 @@ Desta forma, a coordenada do ponto é: <span class="math notranslate nohighlight
 </section>
 </section>
 <section id="exercicios">
-<h2>Exercícios<a class="headerlink" href="#exercicios" title="Link permanente para este título"></a></h2>
+<h2>Exercícios<a class="headerlink" href="#exercicios" title="Link permanente para este título">¶</a></h2>
 <p><span class="exem">1)</span>  Como é definida a forma da terra?</p>
 <hr class="docutils" />
 <p><span class="exem">2)</span>  O que é altitude?</p>
@@ -973,34 +948,109 @@ Calcular a distância entre eles?</p>
 </section>
 
 
-           </div>
+            <div class="clearer"></div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
-        <a href="capitulo2.html" class="btn btn-neutral float-left" title="Capitulo 2: Unidades métricas, escala e determinação de áreas" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="capitulo4.html" class="btn btn-neutral float-right" title="Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)" accesskey="n" rel="next">Seguinte <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Copyright 2021, Alexandre C Xavier.</p>
-  </div>
-
-  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
-    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
         </div>
       </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
+    <h3><a href="../index.html">Page contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Capitulo 3: Introdução a geodésia e cartografia</a><ul>
+<li><a class="reference internal" href="#geoide">Geóide</a></li>
+<li><a class="reference internal" href="#elipsoide">Elipsóide</a></li>
+<li><a class="reference internal" href="#coordenada-geodesica">Coordenada geodésica</a></li>
+<li><a class="reference internal" href="#coordenada-geodesica-cartesiana">Coordenada geodésica cartesiana</a></li>
+<li><a class="reference internal" href="#coordenada-astronomica">Coordenada astronômica</a></li>
+<li><a class="reference internal" href="#sistema-de-geodesico-brasileiro">Sistema de geodésico brasileiro</a><ul>
+<li><a class="reference internal" href="#datum-horizontal">Datum horizontal</a></li>
+<li><a class="reference internal" href="#datum-vertical">Datum vertical</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#projecao-cartografica">Projeção cartográfica</a><ul>
+<li><a class="reference internal" href="#projecoes-plana-cilindrica-e-conica-secantes">Projeções plana, cilíndrica e cônica secantes</a></li>
+<li><a class="reference internal" href="#projecao-universal-transversa-de-mercador-utm">Projeção Universal Transversa de Mercador (UTM)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#exercicios">Exercícios</a></li>
+</ul>
+</li>
+</ul>
 
-</body>
+  </div>
+  <div class="sphinxprev">
+    <h4>Previous page</h4>
+    <p class="topless"><a href="capitulo2.html"
+                          title="Previous page">&larr; Capitulo 2: Unidades métricas, escala e determinação de áreas</a></p>
+  </div>
+  <div class="sphinxnext">
+    <h4>Next page</h4>
+    <p class="topless"><a href="capitulo4.html"
+                          title="Next page">&rarr; Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>Esta Página</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/pages/capitulo3.rst.txt"
+            rel="nofollow">Exibir Fonte</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Pesquisa rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                 «
+                <span class="show-for-small">hide menu</span>
+                
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                 »
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegação</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice Geral"
+             >índice</a></li>
+        <li class="right" >
+          <a href="capitulo4.html" title="Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)"
+             >próximo</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="capitulo2.html" title="Capitulo 2: Unidades métricas, escala e determinação de áreas"
+             >anterior</a> &nbsp; &nbsp;</li>
+    <li><a href="../index.html">Documentação Livro de Geomática 0.1</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">Capitulo 3: Introdução a geodésia e cartografia</a></li> 
+      </ul>
+    </div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Alexandre C Xavier.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.2.0.
+    </div>
+    <!-- cloud_sptheme 1.4 -->
+  </body>
 </html>

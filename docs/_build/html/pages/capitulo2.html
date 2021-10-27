@@ -1,99 +1,77 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="pt-PT" >
-<head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Capitulo 2: Unidades métricas, escala e determinação de áreas &mdash; Documentação Livro de Geomática 0.1</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/table_styling.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/translations.js"></script>
-        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="../_static/js/theme.js"></script>
+
+
+<!DOCTYPE html>
+
+<html lang="pt_PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Capitulo 2: Unidades métricas, escala e determinação de áreas &#8212; Documentação Livro de Geomática 0.1</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/cloud.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/table_styling.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    
+    
+     
+        <script src="../_static/jquery.cookie.js"></script>
+    
+
+    
+     
+        <script src="../_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="../_static/cloud.js"></script>
+    
+
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Pesquisar" href="../search.html" />
     <link rel="next" title="Capitulo 3: Introdução a geodésia e cartografia" href="capitulo3.html" />
     <link rel="prev" title="Capitulo 1: Matemática fundamental" href="capitulo1.html" /> 
-</head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegação</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice Geral"
+             accesskey="I">índice</a></li>
+        <li class="right" >
+          <a href="capitulo3.html" title="Capitulo 3: Introdução a geodésia e cartografia"
+             accesskey="N">próximo</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="capitulo1.html" title="Capitulo 1: Matemática fundamental"
+             accesskey="P">anterior</a> &nbsp; &nbsp;</li>
+    <li><a href="../index.html">Documentação Livro de Geomática 0.1</a> &#187;</li>
 
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> Livro de Geomática
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Pesquisar docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
-              <p class="caption" role="heading"><span class="caption-text">Conteúdo:</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="capitulo1.html">Capitulo 1: Matemática fundamental</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Capitulo 2: Unidades métricas, escala e determinação de áreas</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#unidades-de-comprimento-e-area">Unidades de comprimento e área</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#escala">Escala</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#escala-numerica">Escala numérica</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#escala-grafica">Escala gráfica</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#determinacao-de-areas">Determinação de áreas</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#decomposicao-de-figuras-elementares">Decomposição de figuras elementares</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#area-ao-longo-de-um-transecto">Área ao longo de um transecto</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#calculo-de-area-por-gauss">Cálculo de área por Gauss</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#exercicios">Exercícios</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo3.html">Capitulo 3: Introdução a geodésia e cartografia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo4.html">Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo5.html">Capitulo 5: Georreferenciamento de imóveis rurais</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo6.html">Capitulo 6: Medidas de distância</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo7.html">Capitulo 7: Ângulos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo8.html">Capitulo 8: Poligonal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="referencias.html">Referências</a></li>
-</ul>
+        <li class="nav-item nav-item-this"><a href="">Capitulo 2: Unidades métricas, escala e determinação de áreas</a></li> 
+      </ul>
+    </div>
+    </div>
+  
 
-        </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Livro de Geomática</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Navegação da página">
-  <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Capitulo 2: Unidades métricas, escala e determinação de áreas</li>
-      <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/pages/capitulo2.rst.txt" rel="nofollow"> Ver código-fonte da página</a>
-      </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
   <style> .exem {color:blue; font-weight: bold} </style><style> .solucao {font-weight: bold} </style><style> .blue {color:blue} </style><section id="capitulo-2-unidades-metricas-escala-e-determinacao-de-areas">
-<span id="rst-capitulo-2"></span><h1>Capitulo 2: Unidades métricas, escala e determinação de áreas<a class="headerlink" href="#capitulo-2-unidades-metricas-escala-e-determinacao-de-areas" title="Link permanente para este título"></a></h1>
+<span id="rst-capitulo-2"></span><h1>Capitulo 2: Unidades métricas, escala e determinação de áreas<a class="headerlink" href="#capitulo-2-unidades-metricas-escala-e-determinacao-de-areas" title="Link permanente para este título">¶</a></h1>
 <p>Este capítulo tem como objetivo central a determinação de áreas. Começaremos
 com a apresentação das unidades de comprimento e de área mais utilizadas
 em geomática. Como geralmente os desenhos topográficos estão reduzidos
@@ -101,7 +79,7 @@ em geomática. Como geralmente os desenhos topográficos estão reduzidos
 determinação de distância e área. Por fim, alguns métodos de cálculo
 de área serão apresentados.</p>
 <section id="unidades-de-comprimento-e-area">
-<span id="unidadesmetricas"></span><h2>Unidades de comprimento e área<a class="headerlink" href="#unidades-de-comprimento-e-area" title="Link permanente para este título"></a></h2>
+<span id="unidadesmetricas"></span><h2>Unidades de comprimento e área<a class="headerlink" href="#unidades-de-comprimento-e-area" title="Link permanente para este título">¶</a></h2>
 <p>O Sistema Internacional de Unidades (SI) tem como unidade de comprimento
 o metro (m). Ele é definido como o comprimento do caminho viajado
 pela luz durante o intervalo de <span class="math notranslate nohighlight">\(1/299\,792\,458\)</span> segundo.
@@ -153,9 +131,9 @@ x_{\text{alqPau}} &amp; =41,3223~\text{alqueiro paulista}.\end{split}\]</div>
 </section>
 <hr class="docutils" />
 <section id="escala">
-<h2>Escala<a class="headerlink" href="#escala" title="Link permanente para este título"></a></h2>
+<h2>Escala<a class="headerlink" href="#escala" title="Link permanente para este título">¶</a></h2>
 <section id="escala-numerica">
-<h3>Escala numérica<a class="headerlink" href="#escala-numerica" title="Link permanente para este título"></a></h3>
+<h3>Escala numérica<a class="headerlink" href="#escala-numerica" title="Link permanente para este título">¶</a></h3>
 <p>Quando se realiza levantamento na superfície terrestre, obtêm-se as
 coordenadas dos pontos desejáveis, e posteriormente são apresentados
 em papel ou na tela do computador. Logicamente que as medidas de distância
@@ -167,7 +145,7 @@ o que vem a ser uma escala? A escala <span class="math notranslate nohighlight">
 de um objeto apresentado no papel/tela <span class="math notranslate nohighlight">\((l)\)</span> e a sua verdadeira distância
 na natureza <span class="math notranslate nohighlight">\((L)\)</span>, isto é:</p>
 <div class="math notranslate nohighlight" id="equation-eq-escala">
-<span class="eqno">(17)<a class="headerlink" href="#equation-eq-escala" title="Permalink to this equation"></a></span>\[E=\frac{l}{L}\]</div>
+<span class="eqno">(17)<a class="headerlink" href="#equation-eq-escala" title="Permalink to this equation">¶</a></span>\[E=\frac{l}{L}\]</div>
 <p>Para o uso desta Equação, as unidades de <span class="math notranslate nohighlight">\(l\)</span> e <span class="math notranslate nohighlight">\(L\)</span> devem
 ser as mesmas. Observe que para levantamentos sobre a superfície terrestre
 <span class="math notranslate nohighlight">\(L\gg l\)</span>. Desta forma, a <span class="math notranslate nohighlight">\(E\)</span> resulta em um número muito pequeno,
@@ -175,7 +153,7 @@ o que demandaria o uso de várias casas decimais para representá-la,
 dificultando a sua interpretação. Para apresentar a <span class="math notranslate nohighlight">\(E\)</span> de uma forma
 mais intuitiva, usa-se a forma:</p>
 <div class="math notranslate nohighlight" id="equation-eq-escala2">
-<span class="eqno">(18)<a class="headerlink" href="#equation-eq-escala2" title="Permalink to this equation"></a></span>\[E=\frac{1}{M},\]</div>
+<span class="eqno">(18)<a class="headerlink" href="#equation-eq-escala2" title="Permalink to this equation">¶</a></span>\[E=\frac{1}{M},\]</div>
 <p>em que <span class="math notranslate nohighlight">\(M\)</span> é denominado o módulo da escala, sendo <span class="math notranslate nohighlight">\(M=^L/l\)</span>.
 A escala numérica na forma da Equação <a class="reference internal" href="#equation-eq-escala2">(18)</a> tem uma interpretação
 bastante simples. Por exemplo, se na forma de decimal <span class="math notranslate nohighlight">\(E=0,00028571\)</span>,
@@ -227,7 +205,7 @@ relação entre área de desenho e área na natureza. Para a nossa escala
 </section>
 <hr class="docutils" />
 <section id="escala-grafica">
-<h3>Escala gráfica<a class="headerlink" href="#escala-grafica" title="Link permanente para este título"></a></h3>
+<h3>Escala gráfica<a class="headerlink" href="#escala-grafica" title="Link permanente para este título">¶</a></h3>
 <p>Uma outra forma de representação da escala é a gráfica, que tem como
 vantagem, que, mesmo se o mapa/carta for reduzida ou ampliada, a escala
 gráfica se mostrará apropriada para análises, uma vez que ela é reduzida
@@ -236,7 +214,7 @@ são apresentados na <a class="reference internal" href="#escalagrafica"><span c
 <figure class="align-center" id="id2">
 <span id="escalagrafica"></span><a class="reference internal image-reference" href="../_images/fig_escala_grafica.png"><img alt="fig_escala_grafica.png" src="../_images/fig_escala_grafica.png" style="width: 532.0px; height: 285.59999999999997px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 9 </span><span class="caption-text">Exemplos de escalas gráficas.</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 9 </span><span class="caption-text">Exemplos de escalas gráficas.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Para desenhar uma escala gráfica aplicam-se as seguinte etapas:</p>
@@ -263,7 +241,7 @@ desenhe uma escala gráfica com <span class="math notranslate nohighlight">\(6\,
 </section>
 <hr class="docutils" />
 <section id="determinacao-de-areas">
-<h2>Determinação de áreas<a class="headerlink" href="#determinacao-de-areas" title="Link permanente para este título"></a></h2>
+<h2>Determinação de áreas<a class="headerlink" href="#determinacao-de-areas" title="Link permanente para este título">¶</a></h2>
 <p>Normalmente, em problemas topográficos, há a necessidade de se calcular
 áreas. As áreas podem ser: <em>i</em>) da superfície projetada do
 plano topográfico ou cartográfico (plano horizontal), quando se deseja,
@@ -275,7 +253,7 @@ na secção <a class="reference internal" href="capitulo1.html#secareasdefiguras
 Neste capítulo veremos algumas metodologias para medição de áreas
 em topografia.</p>
 <section id="decomposicao-de-figuras-elementares">
-<h3>Decomposição de figuras elementares<a class="headerlink" href="#decomposicao-de-figuras-elementares" title="Link permanente para este título"></a></h3>
+<h3>Decomposição de figuras elementares<a class="headerlink" href="#decomposicao-de-figuras-elementares" title="Link permanente para este título">¶</a></h3>
 <p>Uma maneira grosseira de realizar medidas de uma área <span class="math notranslate nohighlight">\((A)\)</span>, seja
 diretamente em uma planta topográfica ou mesmo em levantamento de
 campo, é na decomposição de sua área em figuras geométricas simples,
@@ -303,12 +281,12 @@ a área total.</p>
 <figure class="align-center" id="id3">
 <span id="fig-figuraselementares"></span><a class="reference internal image-reference" href="../_images/fig_figuraselementares.png"><img alt="fig_figuraselementares.png" src="../_images/fig_figuraselementares.png" style="width: 513.1500000000001px; height: 383.35px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 10 </span><span class="caption-text">Decomposição de uma área em figuras elementares.</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 10 </span><span class="caption-text">Decomposição de uma área em figuras elementares.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="area-ao-longo-de-um-transecto">
-<h3>Área ao longo de um transecto<a class="headerlink" href="#area-ao-longo-de-um-transecto" title="Link permanente para este título"></a></h3>
+<h3>Área ao longo de um transecto<a class="headerlink" href="#area-ao-longo-de-um-transecto" title="Link permanente para este título">¶</a></h3>
 <p>Quando a superfície a ser determinada apresenta-se com uma forma estreita,
 pode-se estabelecer um alinhamento na direção do maior comprimento
 com o auxílio de um teodolito ou estação total, e a partir deste alinhamento,
@@ -328,13 +306,13 @@ e que, haverão trapézios que irão subestimar área e outros que irão
 superestimá-la, há uma tendência de que o valor calculado se aproximar
 do valor real. A área poderá ser calculada como:</p>
 <div class="math notranslate nohighlight" id="equation-eq-areatrapezio">
-<span class="eqno">(19)<a class="headerlink" href="#equation-eq-areatrapezio" title="Permalink to this equation"></a></span>\[\begin{split}A &amp; =\frac{\left(b_{0}+b_{1}\right)h}{2}+\frac{\left(b_{1}+b_{2}\right)h}{2}+\ldots+\frac{\left(b_{n-1}+b_{n}\right)h}{2}\\\end{split}\]</div>
+<span class="eqno">(19)<a class="headerlink" href="#equation-eq-areatrapezio" title="Permalink to this equation">¶</a></span>\[\begin{split}A &amp; =\frac{\left(b_{0}+b_{1}\right)h}{2}+\frac{\left(b_{1}+b_{2}\right)h}{2}+\ldots+\frac{\left(b_{n-1}+b_{n}\right)h}{2}\\\end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[A =h\left(\frac{b_{0}}{2}+b_{1}+b_{2}+\ldots+\frac{b_{n}}{2}\right).\]</div>
 <figure class="align-center" id="id4">
 <span id="transectrapezio"></span><a class="reference internal image-reference" href="../_images/fig_transectrapezio.png"><img alt="fig_transectrapezio.png" src="../_images/fig_transectrapezio.png" style="width: 593.1px; height: 252.9px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 11 </span><span class="caption-text">Exemplo de um transecto uniforme e a aproximação a figuras de trapézios.</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 11 </span><span class="caption-text">Exemplo de um transecto uniforme e a aproximação a figuras de trapézios.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <hr class="docutils" />
@@ -359,11 +337,11 @@ considerando as alturas distintas dos trapézios.</p>
 <figure class="align-center" id="id5">
 <span id="transectrapezio2"></span><a class="reference internal image-reference" href="../_images/fig_transectrapezio2.png"><img alt="fig_transectrapezio2.png" src="../_images/fig_transectrapezio2.png" style="width: 561.6px; height: 288.90000000000003px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 12 </span><span class="caption-text">Exemplo de um transecto uniforme e a aproximação a figuras de trapézios.</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 12 </span><span class="caption-text">Exemplo de um transecto uniforme e a aproximação a figuras de trapézios.</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <div class="math notranslate nohighlight" id="equation-eqareatrapezio2">
-<span class="eqno">(20)<a class="headerlink" href="#equation-eqareatrapezio2" title="Permalink to this equation"></a></span>\[\begin{split}A  =\frac{\left(b_{0}+b_{1}\right)h_{1}}{2}+\frac{\left(b_{1}+b_{2}\right)h_{2}}{2}+\ldots+\frac{\left(b_{n-1}+b_{n}\right)h_{n}}{2}\\\end{split}\]</div>
+<span class="eqno">(20)<a class="headerlink" href="#equation-eqareatrapezio2" title="Permalink to this equation">¶</a></span>\[\begin{split}A  =\frac{\left(b_{0}+b_{1}\right)h_{1}}{2}+\frac{\left(b_{1}+b_{2}\right)h_{2}}{2}+\ldots+\frac{\left(b_{n-1}+b_{n}\right)h_{n}}{2}\\\end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[A  =\frac{1}{2}\left((b_{0}+b_{1})h_{1}+(b_{1}+b_{2})h_{2}+\ldots+(b_{n-1}+b_{n})h_{n}\right).\]</div>
 <hr class="docutils" />
@@ -379,7 +357,7 @@ temos:</p>
 \[A=3\,686,4\,\text{m}^2.\]</div>
 </section>
 <section id="calculo-de-area-por-gauss">
-<h3>Cálculo de área por Gauss<a class="headerlink" href="#calculo-de-area-por-gauss" title="Link permanente para este título"></a></h3>
+<h3>Cálculo de área por Gauss<a class="headerlink" href="#calculo-de-area-por-gauss" title="Link permanente para este título">¶</a></h3>
 <p>Em levantamentos topográficos, as coordenadas retangulares dos pontos
 limitantes, são determinados por diversos métodos. A obtenção das
 coordenadas retangulares é de suma importância, uma vez, que a partir
@@ -408,11 +386,11 @@ de trapézios, desta forma, a área compreendida entre os vértices <span class=
 <figure class="align-center" id="id6">
 <span id="fig-areagaussdesenho"></span><a class="reference internal image-reference" href="../_images/fig_areagaussdesenho.png"><img alt="fig_areagaussdesenho.png" src="../_images/fig_areagaussdesenho.png" style="width: 364.95px; height: 357.3px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 13 </span><span class="caption-text">Esquema para dedução do cálculo de área por Gauss.</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 13 </span><span class="caption-text">Esquema para dedução do cálculo de área por Gauss.</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <div class="math notranslate nohighlight" id="equation-eqareagauss">
-<span class="eqno">(21)<a class="headerlink" href="#equation-eqareagauss" title="Permalink to this equation"></a></span>\[\begin{split}A &amp; =C\text{'}CDD\text{'}+D\text{'}DAA\text{'}-C\text{'}CBB\text{'}-B\text{'}BAA\text{'}\\
+<span class="eqno">(21)<a class="headerlink" href="#equation-eqareagauss" title="Permalink to this equation">¶</a></span>\[\begin{split}A &amp; =C\text{'}CDD\text{'}+D\text{'}DAA\text{'}-C\text{'}CBB\text{'}-B\text{'}BAA\text{'}\\
 A &amp; =\frac{1}{2}(x_{C}+x_{D})(y_{C}-y_{D})+\frac{1}{2}(x_{D}+x_{A})(y_{D}-y_{A})-\frac{1}{2}(x_{C}+x_{B})(y_{C}-y_{B})-\frac{1}{2}(x_{B}+x_{A})(y_{B}-y_{A})\\
 2A &amp; =(x_{C}+x_{D})(y_{C}-y_{D})+(x_{D}+x_{A})(y_{D}-y_{A})-(x_{C}+x_{B})(y_{C}-y_{B})-(x_{B}+x_{A})(y_{B}-y_{A})\\
 2A &amp; =y_{A}(x_{B}-x_{D})+y_{B}(x_{C}-x_{A})+y_{C}(x_{D}-x_{B})+y_{D}(x_{A}-x_{C})\\
@@ -436,7 +414,7 @@ com uma divisão e produto das coordenadas.</p>
 <figure class="align-center" id="id7">
 <span id="fig-areagauss2"></span><a class="reference internal image-reference" href="../_images/fig_areagauss2.png"><img alt="fig_areagauss2.png" src="../_images/fig_areagauss2.png" style="width: 499.5px; height: 257.40000000000003px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 14 </span><span class="caption-text">Organização dos dados para cálculo da área por Gauss.</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 14 </span><span class="caption-text">Organização dos dados para cálculo da área por Gauss.</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <hr class="docutils" />
@@ -473,7 +451,7 @@ cotar, determinar a área e o perímetro.</p>
 </section>
 </section>
 <section id="exercicios">
-<h2>Exercícios<a class="headerlink" href="#exercicios" title="Link permanente para este título"></a></h2>
+<h2>Exercícios<a class="headerlink" href="#exercicios" title="Link permanente para este título">¶</a></h2>
 <p><span class="exem">1)</span>  A distância entre duas paredes de um apartamento
 é de <span class="math notranslate nohighlight">\(12,32\,\text{m}\)</span>. No desenho da planta do apartamento, estas duas paredes
 estão separadas por <span class="math notranslate nohighlight">\(4,2\,\text{cm}\)</span>. Qual a escala da planta?</p>
@@ -549,34 +527,106 @@ tamanho.</p>
 </section>
 
 
-           </div>
+            <div class="clearer"></div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
-        <a href="capitulo1.html" class="btn btn-neutral float-left" title="Capitulo 1: Matemática fundamental" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="capitulo3.html" class="btn btn-neutral float-right" title="Capitulo 3: Introdução a geodésia e cartografia" accesskey="n" rel="next">Seguinte <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Copyright 2021, Alexandre C Xavier.</p>
-  </div>
-
-  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
-    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
         </div>
       </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
+    <h3><a href="../index.html">Page contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Capitulo 2: Unidades métricas, escala e determinação de áreas</a><ul>
+<li><a class="reference internal" href="#unidades-de-comprimento-e-area">Unidades de comprimento e área</a></li>
+<li><a class="reference internal" href="#escala">Escala</a><ul>
+<li><a class="reference internal" href="#escala-numerica">Escala numérica</a></li>
+<li><a class="reference internal" href="#escala-grafica">Escala gráfica</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#determinacao-de-areas">Determinação de áreas</a><ul>
+<li><a class="reference internal" href="#decomposicao-de-figuras-elementares">Decomposição de figuras elementares</a></li>
+<li><a class="reference internal" href="#area-ao-longo-de-um-transecto">Área ao longo de um transecto</a></li>
+<li><a class="reference internal" href="#calculo-de-area-por-gauss">Cálculo de área por Gauss</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#exercicios">Exercícios</a></li>
+</ul>
+</li>
+</ul>
 
-</body>
+  </div>
+  <div class="sphinxprev">
+    <h4>Previous page</h4>
+    <p class="topless"><a href="capitulo1.html"
+                          title="Previous page">&larr; Capitulo 1: Matemática fundamental</a></p>
+  </div>
+  <div class="sphinxnext">
+    <h4>Next page</h4>
+    <p class="topless"><a href="capitulo3.html"
+                          title="Next page">&rarr; Capitulo 3: Introdução a geodésia e cartografia</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>Esta Página</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/pages/capitulo2.rst.txt"
+            rel="nofollow">Exibir Fonte</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Pesquisa rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                 «
+                <span class="show-for-small">hide menu</span>
+                
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                 »
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegação</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice Geral"
+             >índice</a></li>
+        <li class="right" >
+          <a href="capitulo3.html" title="Capitulo 3: Introdução a geodésia e cartografia"
+             >próximo</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="capitulo1.html" title="Capitulo 1: Matemática fundamental"
+             >anterior</a> &nbsp; &nbsp;</li>
+    <li><a href="../index.html">Documentação Livro de Geomática 0.1</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">Capitulo 2: Unidades métricas, escala e determinação de áreas</a></li> 
+      </ul>
+    </div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Alexandre C Xavier.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.2.0.
+    </div>
+    <!-- cloud_sptheme 1.4 -->
+  </body>
 </html>

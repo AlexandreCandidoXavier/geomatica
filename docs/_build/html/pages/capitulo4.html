@@ -1,125 +1,77 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="pt-PT" >
-<head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS) &mdash; Documentação Livro de Geomática 0.1</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/table_styling.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/translations.js"></script>
-        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="../_static/js/theme.js"></script>
+
+
+<!DOCTYPE html>
+
+<html lang="pt_PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS) &#8212; Documentação Livro de Geomática 0.1</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/cloud.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/table_styling.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    
+    
+     
+        <script src="../_static/jquery.cookie.js"></script>
+    
+
+    
+     
+        <script src="../_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="../_static/cloud.js"></script>
+    
+
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Pesquisar" href="../search.html" />
     <link rel="next" title="Capitulo 5: Georreferenciamento de imóveis rurais" href="capitulo5.html" />
     <link rel="prev" title="Capitulo 3: Introdução a geodésia e cartografia" href="capitulo3.html" /> 
-</head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegação</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice Geral"
+             accesskey="I">índice</a></li>
+        <li class="right" >
+          <a href="capitulo5.html" title="Capitulo 5: Georreferenciamento de imóveis rurais"
+             accesskey="N">próximo</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="capitulo3.html" title="Capitulo 3: Introdução a geodésia e cartografia"
+             accesskey="P">anterior</a> &nbsp; &nbsp;</li>
+    <li><a href="../index.html">Documentação Livro de Geomática 0.1</a> &#187;</li>
 
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> Livro de Geomática
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Pesquisar docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
-              <p class="caption" role="heading"><span class="caption-text">Conteúdo:</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="capitulo1.html">Capitulo 1: Matemática fundamental</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo2.html">Capitulo 2: Unidades métricas, escala e determinação de áreas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo3.html">Capitulo 3: Introdução a geodésia e cartografia</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#introducao">Introdução</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#posicionamento-por-satelite">Posicionamento por satélite</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#segmentos-gnss">Segmentos GNSS</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#segmento-espacial">Segmento espacial</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#segmento-controle">Segmento controle</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#segmento-usuario">Segmento usuário</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#exemplos-de-gnss">Exemplos de GNSS</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#gps">GPS</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#glonass">GLONASS</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#galileu">Galileu</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#outros-gnss">Outros GNSS</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#observaveis-e-fontes-de-erro">Observáveis e fontes de erro</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#pseudodistancia-por-codigo">Pseudodistância por código</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#pseudodistancia-por-fase-da-onda-portadora">Pseudodistância por fase da onda portadora</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#erros-nas-observacoes">Erros nas observações</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#erro-devido-ao-satelite">Erro devido ao satélite</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#erro-devido-a-propagacao-do-sinal">Erro devido à propagação do sinal</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#erro-devido-ao-receptor">Erro devido ao receptor</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#tipos-de-posicionamento">Tipos de posicionamento</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#terminologia">Terminologia</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#posicionamento-por-ponto">Posicionamento por ponto</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#posicionamento-diferencial-dgnss">Posicionamento diferencial (DGNSS)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#posicionamento-relativo">Posicionamento relativo</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#posicionamento-relativo-estatico">Posicionamento relativo estático</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#posicionamento-relativo-pseudo-cinematico">Posicionamento relativo pseudo-cinemático</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#posicionamento-relativo-cinematico">Posicionamento relativo cinemático</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#exercicios">Exercícios</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo5.html">Capitulo 5: Georreferenciamento de imóveis rurais</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo6.html">Capitulo 6: Medidas de distância</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo7.html">Capitulo 7: Ângulos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo8.html">Capitulo 8: Poligonal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="referencias.html">Referências</a></li>
-</ul>
+        <li class="nav-item nav-item-this"><a href="">Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)</a></li> 
+      </ul>
+    </div>
+    </div>
+  
 
-        </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Livro de Geomática</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Navegação da página">
-  <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)</li>
-      <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/pages/capitulo4.rst.txt" rel="nofollow"> Ver código-fonte da página</a>
-      </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
   <style> .exem {color:blue; font-weight: bold} </style><style> .solucao {font-weight: bold} </style><style> .blue {color:blue} </style><section id="capitulo-4-sistemas-globais-de-navegacao-por-satelite-gnss">
-<span id="rst-capitulo-4"></span><h1>Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)<a class="headerlink" href="#capitulo-4-sistemas-globais-de-navegacao-por-satelite-gnss" title="Link permanente para este título"></a></h1>
+<span id="rst-capitulo-4"></span><h1>Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)<a class="headerlink" href="#capitulo-4-sistemas-globais-de-navegacao-por-satelite-gnss" title="Link permanente para este título">¶</a></h1>
 <p>Os Sistemas Globais de Navegação por Satélite
 (<em>Global Navigation Satellite Systems</em>, GNSS) tratam-se de
 diferentes sistemas, para fins de posicionamento, que utilizam ondas
@@ -132,7 +84,7 @@ de imóveis rurais. Neste capítulo será realizada uma apresentação
 do princípio de seu funcionamento, dos sistemas existentes, das fontes
 de erros, e dos tipos de posicionamento GNSS.</p>
 <section id="introducao">
-<h2>Introdução<a class="headerlink" href="#introducao" title="Link permanente para este título"></a></h2>
+<h2>Introdução<a class="headerlink" href="#introducao" title="Link permanente para este título">¶</a></h2>
 <p>O posicionamento baseado por satélite, se refere à obtenção da posição
 de um ponto (p.ex.: latitude e longitude), por meio de receptor que
 capta e processa sinais emitidos por satélites artificiais, na superfície
@@ -208,7 +160,7 @@ e, na Europa, sendo construído pela União Europeia, o sistema <span class="mat
 Maiores detalhes destes sistemas serão apresentados em :ref:<a href="#id4"><span class="problematic" id="id5">`</span></a>Exemplos de GNSS.</p>
 </section>
 <section id="posicionamento-por-satelite">
-<span id="posicionamento-satelite"></span><h2>Posicionamento por satélite<a class="headerlink" href="#posicionamento-por-satelite" title="Link permanente para este título"></a></h2>
+<span id="posicionamento-satelite"></span><h2>Posicionamento por satélite<a class="headerlink" href="#posicionamento-por-satelite" title="Link permanente para este título">¶</a></h2>
 <p>Nesta secção será apresentado o princípio básico do posicionamento
 por satélite conforme explicação de <span id="id6">Hofmann-Wellenhof <em>et al.</em> [<a class="reference internal" href="referencias.html#id10" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span>. Como
 já foi dito, o GNSS fornece informação da posição de um lugar, por
@@ -237,11 +189,11 @@ do receptor, por exemplo, a latitude, a longitude a altitude geométrica.
 A equação da distância entre cada satélite e receptor é determinada
 por:</p>
 <div class="math notranslate nohighlight" id="equation-eq-gnssdistanciasatelitereceptor">
-<span class="eqno">(51)<a class="headerlink" href="#equation-eq-gnssdistanciasatelitereceptor" title="Permalink to this equation"></a></span>\[\delta=\left\Vert \boldsymbol{\varrho^{s}-\varrho_{r}}\right\Vert\]</div>
+<span class="eqno">(51)<a class="headerlink" href="#equation-eq-gnssdistanciasatelitereceptor" title="Permalink to this equation">¶</a></span>\[\delta=\left\Vert \boldsymbol{\varrho^{s}-\varrho_{r}}\right\Vert\]</div>
 <figure class="align-center" id="id42">
 <span id="fig-gnss-posicion"></span><a class="reference internal image-reference" href="../_images/fig_GNSS_posicion.png"><img alt="fig_GNSS_posicion.png" src="../_images/fig_GNSS_posicion.png" style="width: 253.04999999999998px; height: 308.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 31 </span><span class="caption-text">Princípio do posicionamento por GNSS.</span><a class="headerlink" href="#id42" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 31 </span><span class="caption-text">Princípio do posicionamento por GNSS.</span><a class="headerlink" href="#id42" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Dado um vetor <span class="math notranslate nohighlight">\(\mathbf{a}\)</span>, no espaço tridimensional de coordenadas
@@ -288,20 +240,20 @@ sendo, para o receptor e o satélite 1:</p>
 <div class="math notranslate nohighlight">
 \[4,123^2=\sqrt{(x_r-3)^2+(y_r-5)^2}\]</div>
 <div class="math notranslate nohighlight" id="equation-exem-a">
-<span class="eqno">(52)<a class="headerlink" href="#equation-exem-a" title="Permalink to this equation"></a></span>\[-17,001=x_r^2-6x_r+y_r^2-10y_r\]</div>
+<span class="eqno">(52)<a class="headerlink" href="#equation-exem-a" title="Permalink to this equation">¶</a></span>\[-17,001=x_r^2-6x_r+y_r^2-10y_r\]</div>
 <p>Para o satélite 2 e o receptor:</p>
 <div class="math notranslate nohighlight">
 \[3,606^2=\sqrt{(x_r-6)^2+(y_r-4)^2}\]</div>
 <div class="math notranslate nohighlight" id="equation-exem-b">
-<span class="eqno">(53)<a class="headerlink" href="#equation-exem-b" title="Permalink to this equation"></a></span>\[-38,997 = x_r^2-12x_r+y_r^2-8y_r\]</div>
+<span class="eqno">(53)<a class="headerlink" href="#equation-exem-b" title="Permalink to this equation">¶</a></span>\[-38,997 = x_r^2-12x_r+y_r^2-8y_r\]</div>
 <p>Subtraindo a Equação <a class="reference internal" href="#equation-exem-a">(52)</a> da <a class="reference internal" href="#equation-exem-b">(53)</a> e isolando <span class="math notranslate nohighlight">\(y\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-exem-c">
-<span class="eqno">(54)<a class="headerlink" href="#equation-exem-c" title="Permalink to this equation"></a></span>\[y_r = -10,998+3x_r\]</div>
+<span class="eqno">(54)<a class="headerlink" href="#equation-exem-c" title="Permalink to this equation">¶</a></span>\[y_r = -10,998+3x_r\]</div>
 <p>Substituindo <a class="reference internal" href="#equation-exem-c">(54)</a>  em <a class="reference internal" href="#equation-exem-a">(52)</a> :</p>
 <div class="math notranslate nohighlight">
 \[x_r^2-6x_r+(-10,998+3x_r)^2-10(-10,998+3x_r) = -17,001\]</div>
 <div class="math notranslate nohighlight" id="equation-exem-d">
-<span class="eqno">(55)<a class="headerlink" href="#equation-exem-d" title="Permalink to this equation"></a></span>\[10x_r^2-101,988x_r+247,935=0\]</div>
+<span class="eqno">(55)<a class="headerlink" href="#equation-exem-d" title="Permalink to this equation">¶</a></span>\[10x_r^2-101,988x_r+247,935=0\]</div>
 <p>A Equação <a class="reference internal" href="#equation-exem-d">(55)</a> é do tipo polinomial do segundo grau, sendo
 suas raízes. A equação do segundo grau, <span class="math notranslate nohighlight">\(ax^{2}+bx+x=0\)</span>, tem raízes: <span class="math notranslate nohighlight">\(\displaystyle {x=\frac{-b\pm\sqrt{b^{2}-4ac}}{2a}}\)</span>
 . Logo, <span class="math notranslate nohighlight">\(x_{r1}=4\)</span> e <span class="math notranslate nohighlight">\(x_{r2}=6,2\)</span>. Por fim, substituindo as raízes na Equação
@@ -323,7 +275,7 @@ a distância calculada pelos receptores não será a distância geométrica,
 mais sim ao que se denomina pseudodistância
 <span class="math notranslate nohighlight">\((R)\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-eq-gnsspseudodistancia">
-<span class="eqno">(56)<a class="headerlink" href="#equation-eq-gnsspseudodistancia" title="Permalink to this equation"></a></span>\[R=\varrho+\Delta\varrho=\varrho+c\delta\]</div>
+<span class="eqno">(56)<a class="headerlink" href="#equation-eq-gnsspseudodistancia" title="Permalink to this equation">¶</a></span>\[R=\varrho+\Delta\varrho=\varrho+c\delta\]</div>
 <p>O sistema passa agora a ter quatro variáveis desconhecidas, a posição,
 três variáveis <span class="math notranslate nohighlight">\((x_{r},\,y_{r},\,z_{r})\)</span>, mais a variável erro do
 relógio <span class="math notranslate nohighlight">\((\delta)\)</span>, fazendo com que sejam necessários pelo menos
@@ -342,7 +294,7 @@ e <span class="math notranslate nohighlight">\(\delta\)</span> podem ser estimad
 pelo método iterativo, baseando-se na sua linearização <span id="id7">[<a class="reference internal" href="referencias.html#id19" title="E.D. Kaplan and J.L. Leva. Fundamentals of satellite navigation. In E.D. Kaplan and C.J. Hegarty, editors, Understanding GPS, pages 21–65. Artech House, 2006. URL: http://pt.scribd.com/doc/57135596/208/Other-Satellite-Navigation-Systems$\#$outer\_page\_618.">KL06</a>]</span>.</p>
 </section>
 <section id="segmentos-gnss">
-<h2>Segmentos GNSS<a class="headerlink" href="#segmentos-gnss" title="Link permanente para este título"></a></h2>
+<h2>Segmentos GNSS<a class="headerlink" href="#segmentos-gnss" title="Link permanente para este título">¶</a></h2>
 <p>Para que o GNSS seja capaz de calcular a posição, o tempo e a velocidade, em qualquer
 posição e hora na terra, são necessários três segmentos, denominados
 de segmentos espacial, de controle e usuário. Segue uma descrição
@@ -350,11 +302,11 @@ dos mesmos.</p>
 <figure class="align-center" id="id43">
 <span id="seg-gnss-png"></span><a class="reference internal image-reference" href="../_images/seg_gnss.png"><img alt="seg_gnss.png" src="../_images/seg_gnss.png" style="width: 297.5px; height: 325.84999999999997px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 32 </span><span class="caption-text">Segmentos GNSS.</span><a class="headerlink" href="#id43" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 32 </span><span class="caption-text">Segmentos GNSS.</span><a class="headerlink" href="#id43" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <section id="segmento-espacial">
-<h3>Segmento espacial<a class="headerlink" href="#segmento-espacial" title="Link permanente para este título"></a></h3>
+<h3>Segmento espacial<a class="headerlink" href="#segmento-espacial" title="Link permanente para este título">¶</a></h3>
 <p>É constituído da constelação de satélites, com um número adequado,
 orbitando a terra em diferentes posições no espaço, com a finalidade
 de garantir que em qualquer posição na superfície da terra ou acima
@@ -369,7 +321,7 @@ conseguem calcular, para época do seu envio, a pseudodistância <span class="ma
 e a posição orbital do satélite <span class="math notranslate nohighlight">\((\boldsymbol{\varrho}^{s})\)</span>.</p>
 </section>
 <section id="segmento-controle">
-<h3>Segmento controle<a class="headerlink" href="#segmento-controle" title="Link permanente para este título"></a></h3>
+<h3>Segmento controle<a class="headerlink" href="#segmento-controle" title="Link permanente para este título">¶</a></h3>
 <p>É o responsável, em terra, pelos satélites GNSS funcionarem de forma
 adequada. Geralmente há uma estação de controle principal e outras
 que auxiliam no rastreamento dos satélites. No rastreamento dos satélites,
@@ -382,7 +334,7 @@ Por exemplo, em época de guerra, para que os únicos usuários a terem
 informação de posição precisa, sejam os usuários de sua arma.</p>
 </section>
 <section id="segmento-usuario">
-<h3>Segmento usuário<a class="headerlink" href="#segmento-usuario" title="Link permanente para este título"></a></h3>
+<h3>Segmento usuário<a class="headerlink" href="#segmento-usuario" title="Link permanente para este título">¶</a></h3>
 <p>São todos aqueles que têm a sua disposição um receptor GNSS. Podem
 ser classificados nas categorias de usuário e tipo de receptor. A
 categoria usuário pode ser, militar ou civil. Geralmente, o usuário
@@ -398,9 +350,9 @@ de rastrear diferentes GNSS.</p>
 </section>
 </section>
 <section id="exemplos-de-gnss">
-<span id="id8"></span><h2>Exemplos de GNSS<a class="headerlink" href="#exemplos-de-gnss" title="Link permanente para este título"></a></h2>
+<span id="id8"></span><h2>Exemplos de GNSS<a class="headerlink" href="#exemplos-de-gnss" title="Link permanente para este título">¶</a></h2>
 <section id="gps">
-<h3>GPS<a class="headerlink" href="#gps" title="Link permanente para este título"></a></h3>
+<h3>GPS<a class="headerlink" href="#gps" title="Link permanente para este título">¶</a></h3>
 <p>O Sistema de Posicionamento Global (<span class="math notranslate nohighlight">\(\bf{GPS}\)</span>,
 <span class="math notranslate nohighlight">\(\bf{G}\it{lobal}\)</span> <span class="math notranslate nohighlight">\(\bf{P}\it{ositioning}\)</span> <span class="math notranslate nohighlight">\(\bf{S}\it{ystem}\)</span>) é o mais conhecido GNSS. O seu
 desenvolvimento começou em 1973, tendo como responsável o Departamento
@@ -424,7 +376,7 @@ frequência (L5).</p>
 <figure class="align-center" id="id44">
 <span id="seg-gps-png"></span><a class="reference internal image-reference" href="../_images/seg_gps.png"><img alt="seg_gps.png" src="../_images/seg_gps.png" style="width: 334.25px; height: 302.04999999999995px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 33 </span><span class="caption-text">Características principais do GPS.</span><a class="headerlink" href="#id44" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 33 </span><span class="caption-text">Características principais do GPS.</span><a class="headerlink" href="#id44" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Há dois tipos de serviços no GPS, o Serviço de Posicionamento Padrão
@@ -475,7 +427,7 @@ aos satélites, pelo menos três vezes ao dia, para atualização. Segundo
 ao segmento de controle GPS.</p>
 </section>
 <section id="glonass">
-<h3>GLONASS<a class="headerlink" href="#glonass" title="Link permanente para este título"></a></h3>
+<h3>GLONASS<a class="headerlink" href="#glonass" title="Link permanente para este título">¶</a></h3>
 <p>O Sistema de Navegação Global por Satélite
 (<span class="math notranslate nohighlight">\(\bf{GLONASS}\text{,}\,\)</span>
 <span class="math notranslate nohighlight">\(\bf{GL}\it{Obal'naya}\)</span> <span class="math notranslate nohighlight">\(\bf{NA}\it{vigatsionnaya}\)</span> <span class="math notranslate nohighlight">\(\bf{S}\it{putnikovaya}\)</span> <span class="math notranslate nohighlight">\(\bf{S}\it{istema}\)</span>)
@@ -495,7 +447,7 @@ em <span class="math notranslate nohighlight">\(45^{\circ}\)</span>.</p>
 <figure class="align-center" id="id45">
 <span id="seg-glonass-png"></span><a class="reference internal image-reference" href="../_images/seg_glonass.png"><img alt="seg_glonass.png" src="../_images/seg_glonass.png" style="width: 322.34999999999997px; height: 294.34999999999997px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 34 </span><span class="caption-text">Características principais do GLONASS.</span><a class="headerlink" href="#id45" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 34 </span><span class="caption-text">Características principais do GLONASS.</span><a class="headerlink" href="#id45" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>O sistema GLONASS transmite os sinais em duas ondas portadoras de frequências
@@ -527,7 +479,7 @@ Controle de navegação em campo (<em>Navigation Field Control Equipment</em>),
 responsável por monitorar os sinais de navegação do GLONAS e, em caso
 de alguma anomalia ser detectada, é enviado um comunicado para o SCC.</p>
 <section id="galileu">
-<h4>Galileu<a class="headerlink" href="#galileu" title="Link permanente para este título"></a></h4>
+<h4>Galileu<a class="headerlink" href="#galileu" title="Link permanente para este título">¶</a></h4>
 <p><span class="math notranslate nohighlight">\(\bf{Galileu}\)</span> é o nome do GNSS da União
 Europeia (EU, <em>European Union</em>). O nome, Galileu, é uma homenagem
 ao cientista italiano Galileu Galilei, que viveu entre os anos de
@@ -545,7 +497,7 @@ funcionamento completo.</p>
 <figure class="align-center" id="id46">
 <span id="seg-galileu-png"></span><a class="reference internal image-reference" href="../_images/seg_galileu.png"><img alt="seg_galileu.png" src="../_images/seg_galileu.png" style="width: 286.2px; height: 378.90000000000003px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 35 </span><span class="caption-text">Características principais do Galileu.</span><a class="headerlink" href="#id46" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 35 </span><span class="caption-text">Características principais do Galileu.</span><a class="headerlink" href="#id46" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Em outubro de 2021 haviam 22 satélites em funcionamento(Informações atualizadas <a class="reference external" href="http://www.esa.int/Our_Activities/Navigation/The_future_-_Galileo/What_is_Galileo">aqui</a>.
@@ -590,7 +542,7 @@ performance.</p>
 </section>
 </section>
 <section id="outros-gnss">
-<h3>Outros GNSS<a class="headerlink" href="#outros-gnss" title="Link permanente para este título"></a></h3>
+<h3>Outros GNSS<a class="headerlink" href="#outros-gnss" title="Link permanente para este título">¶</a></h3>
 <p>Além do GNSS americano, russo e europeu, outros países também desenvolvem
 o seu próprio sistema. O principal motivo para o desenvolvimento de
 novos GNSS é o de ter independência dos outros sistemas que, como
@@ -635,7 +587,7 @@ os serviço SPS e PS.</p>
 </section>
 </section>
 <section id="observaveis-e-fontes-de-erro">
-<h2>Observáveis e fontes de erro<a class="headerlink" href="#observaveis-e-fontes-de-erro" title="Link permanente para este título"></a></h2>
+<h2>Observáveis e fontes de erro<a class="headerlink" href="#observaveis-e-fontes-de-erro" title="Link permanente para este título">¶</a></h2>
 <p>Os satélites no espaço enviam os sinais para terra que são captados
 pelos receptores, sendo a distância, na verdade pseudodistânciaindex{Pseudodistância},
 entre o sinal emitido pelo satélite e recebido pelo sensor calculada,
@@ -646,7 +598,7 @@ resultando distâncias que não correspondem à distância geométrica
 do satélite ao receptor. Desta maneira as distâncias calculadas pelos
 receptores são denominadas de pseudodistâncias como já visto na secção <a class="reference internal" href="#posicionamento-satelite"><span class="std std-ref">Posicionamento por satélite</span></a>.</p>
 <section id="pseudodistancia-por-codigo">
-<span id="id23"></span><h3>Pseudodistância por código<a class="headerlink" href="#pseudodistancia-por-codigo" title="Link permanente para este título"></a></h3>
+<span id="id23"></span><h3>Pseudodistância por código<a class="headerlink" href="#pseudodistancia-por-codigo" title="Link permanente para este título">¶</a></h3>
 <p>Lembre-se que, por exemplo, no GPS há o envio do código C/A, onde
 são transmitidas várias informações, dentre elas a hora em que o sinal
 foi emitido pelo satélite, <span class="math notranslate nohighlight">\(t^{s}(sat)\)</span>. Esta informação chega ao
@@ -676,7 +628,7 @@ tem comprimento de onda de <span class="math notranslate nohighlight">\(\approx3
 em um erro da pseudodistância de <span class="math notranslate nohighlight">\(0,3\)</span> m na medida de <span class="math notranslate nohighlight">\(R\)</span>.</p>
 </section>
 <section id="pseudodistancia-por-fase-da-onda-portadora">
-<span id="id24"></span><h3>Pseudodistância por fase da onda portadora<a class="headerlink" href="#pseudodistancia-por-fase-da-onda-portadora" title="Link permanente para este título"></a></h3>
+<span id="id24"></span><h3>Pseudodistância por fase da onda portadora<a class="headerlink" href="#pseudodistancia-por-fase-da-onda-portadora" title="Link permanente para este título">¶</a></h3>
 <p>Uma outra maneira de medir a distância é por meio da fase de onda
 portadora. Esta medida apresentará maior precisão no posicionamento.
 Nesta técnica, em cada época em que o sinal é transmitido, mede-se
@@ -695,7 +647,7 @@ de outras observações no tempo, sem que ocorra a perda de sinal, pode-se
 determiná-la.</p>
 </section>
 <section id="erros-nas-observacoes">
-<h3>Erros nas observações<a class="headerlink" href="#erros-nas-observacoes" title="Link permanente para este título"></a></h3>
+<h3>Erros nas observações<a class="headerlink" href="#erros-nas-observacoes" title="Link permanente para este título">¶</a></h3>
 <p>Do que foi visto anteriormente, para o GNSS realizar as medidas de
 posição, tem-se: os satélites enviando sinais com várias informações,
 como o tempo e as efemérides; estes sinais viajam pelo espaço, passando
@@ -709,7 +661,7 @@ medidas simultâneas com dois receptores. Segue uma breve discussão
 dos erros.</p>
 </section>
 <section id="erro-devido-ao-satelite">
-<span id="id25"></span><h3>Erro devido ao satélite<a class="headerlink" href="#erro-devido-ao-satelite" title="Link permanente para este título"></a></h3>
+<span id="id25"></span><h3>Erro devido ao satélite<a class="headerlink" href="#erro-devido-ao-satelite" title="Link permanente para este título">¶</a></h3>
 <ol class="arabic simple">
 <li><p><strong>Relógio do satélite</strong>: o erro devido
 ao relógio do satélite é modelado, por: <span class="math notranslate nohighlight">\({\delta^{s}(t)=a_{0}+a_{1}(t-t_{0})+a_{2}(t-t_{0})^{2}}\)</span>,
@@ -731,7 +683,7 @@ Outra forma de anular este erro é por meio do posicionamento relativo
 </ol>
 </section>
 <section id="erro-devido-a-propagacao-do-sinal">
-<h3>Erro devido à propagação do sinal<a class="headerlink" href="#erro-devido-a-propagacao-do-sinal" title="Link permanente para este título"></a></h3>
+<h3>Erro devido à propagação do sinal<a class="headerlink" href="#erro-devido-a-propagacao-do-sinal" title="Link permanente para este título">¶</a></h3>
 <p>A velocidade de propagação da radiação eletromagnética depende do
 índice de refração do meio em que ela viaja, sendo no vácuo <span class="math notranslate nohighlight">\(c=299.792,458\,\text{km s}^{-1}\)</span>.
 Inicialmente, ao ser transmitida pelo satélite, ela viaja no vácuo
@@ -755,12 +707,12 @@ que estiverem acima de <span class="math notranslate nohighlight">\(20^{\circ}\)
 <span id="gnssmaskangle-png"></span><a class="reference internal image-reference" href="../_images/GNSSmaskangle.png"><img alt="GNSSmaskangle.png" src="../_images/GNSSmaskangle.png" style="width: 396.9px; height: 240.79999999999998px;" /></a>
 <figcaption>
 <p><span class="caption-number">Figura 36 </span><span class="caption-text">Princípio da utilização de máscara de elevação pera prevenir satélites
-próximos a linha do horizonte.</span><a class="headerlink" href="#id47" title="Permalink to this image"></a></p>
+próximos a linha do horizonte.</span><a class="headerlink" href="#id47" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="erro-devido-ao-receptor">
-<span id="id27"></span><h3>Erro devido ao receptor<a class="headerlink" href="#erro-devido-ao-receptor" title="Link permanente para este título"></a></h3>
+<span id="id27"></span><h3>Erro devido ao receptor<a class="headerlink" href="#erro-devido-ao-receptor" title="Link permanente para este título">¶</a></h3>
 <ol class="arabic">
 <li><p><strong>Antena</strong>
 - <strong>Centralização do centro da antena</strong>: em levantamento de precisão, a antena do receptor</p>
@@ -811,15 +763,15 @@ da antena próxima a superfície.</p>
 <figure class="align-center" id="id48">
 <span id="fig-gnss-multipath"></span><a class="reference internal image-reference" href="../_images/GNSSmultipath.png"><img alt="GNSSmultipath.png" src="../_images/GNSSmultipath.png" style="width: 320.59999999999997px; height: 228.2px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 37 </span><span class="caption-text">Multicaminhamento no GNSS.</span><a class="headerlink" href="#id48" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 37 </span><span class="caption-text">Multicaminhamento no GNSS.</span><a class="headerlink" href="#id48" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 </section>
 </section>
 <section id="tipos-de-posicionamento">
-<span id="sec-tipos-de-posicionamento"></span><h2>Tipos de posicionamento<a class="headerlink" href="#tipos-de-posicionamento" title="Link permanente para este título"></a></h2>
+<span id="sec-tipos-de-posicionamento"></span><h2>Tipos de posicionamento<a class="headerlink" href="#tipos-de-posicionamento" title="Link permanente para este título">¶</a></h2>
 <section id="terminologia">
-<h3>Terminologia<a class="headerlink" href="#terminologia" title="Link permanente para este título"></a></h3>
+<h3>Terminologia<a class="headerlink" href="#terminologia" title="Link permanente para este título">¶</a></h3>
 <p>Não há um concenso quanto terminologia utilizada às diferentes técnicas
 de posicionamento GNSS. Aqui será utilizada a terminologia adotada
 por <span id="id30">Hofmann-Wellenhof <em>et al.</em> [<a class="reference internal" href="referencias.html#id10" title="Bernhard Hofmann-Wellenhof, Herbert Lichtenegger, and Elmar Wasle. GNSS. SpringerWienNew York, Lexington, KY, 1 edition, 2008.">HWLW08</a>]</span>. No posicionamento, as medidas de pseudodistância
@@ -859,7 +811,7 @@ e, no escritório, são submetidos ao processamento. O método de pós-processam
 dos dois receptores são combinadas e processadas depois da coleta
 em campo.</p>
 <section id="posicionamento-por-ponto">
-<span id="id31"></span><h4>Posicionamento por ponto<a class="headerlink" href="#posicionamento-por-ponto" title="Link permanente para este título"></a></h4>
+<span id="id31"></span><h4>Posicionamento por ponto<a class="headerlink" href="#posicionamento-por-ponto" title="Link permanente para este título">¶</a></h4>
 <p>No posicionamento por ponto, utiliza-se apenas um receptor, sendo
 que este deve estar recebendo sinais de pelo menos 4 satélites para
 calcular as coordenadas tridimensionais (<a class="reference internal" href="#gnssposiabsoluto"><span class="std std-numref">Figura 38</span></a>).
@@ -877,7 +829,7 @@ atualmente.</p>
 <figure class="align-center" id="id49">
 <span id="gnssposiabsoluto"></span><a class="reference internal image-reference" href="../_images/GNSSposiabsoluto.png"><img alt="GNSSposiabsoluto.png" src="../_images/GNSSposiabsoluto.png" style="width: 313.95px; height: 242.2px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 38 </span><span class="caption-text">Concepção do posicionamento por ponto.</span><a class="headerlink" href="#id49" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 38 </span><span class="caption-text">Concepção do posicionamento por ponto.</span><a class="headerlink" href="#id49" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Pode-se obter coordenadas com maior precisão com um único receptor
@@ -889,7 +841,7 @@ frequência dupla que permitirá eliminar a influência da ionosfera.</p>
 </section>
 </section>
 <section id="posicionamento-diferencial-dgnss">
-<span id="posicionamento-diferencial"></span><h3>Posicionamento diferencial (DGNSS)<a class="headerlink" href="#posicionamento-diferencial-dgnss" title="Link permanente para este título"></a></h3>
+<span id="posicionamento-diferencial"></span><h3>Posicionamento diferencial (DGNSS)<a class="headerlink" href="#posicionamento-diferencial-dgnss" title="Link permanente para este título">¶</a></h3>
 <p>O posicionamento diferencial GNSS (DGNSS)
 é aquele em que se utilizam pelo menos 2 receptores, sendo um fixo
 na estação base (<em>base station</em>), também denominada de estação
@@ -914,11 +866,11 @@ Quando se utiliza as medidas de fase da onda portadora, este posicionamento
 <figure class="align-center" id="id50">
 <span id="gnssposidgnss"></span><a class="reference internal image-reference" href="../_images/GNSSposiDGNSS.png"><img alt="GNSSposiDGNSS.png" src="../_images/GNSSposiDGNSS.png" style="width: 421.75px; height: 252.35px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 39 </span><span class="caption-text">Concepção do posicionamento relativo.</span><a class="headerlink" href="#id50" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 39 </span><span class="caption-text">Concepção do posicionamento relativo.</span><a class="headerlink" href="#id50" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <table class="styled-table docutils align-default" id="id51">
-<caption><span class="caption-number">Table 3 </span><span class="caption-text">Precisão DGNSS.</span><a class="headerlink" href="#id51" title="Permalink to this table"></a></caption>
+<caption><span class="caption-number">Table 3 </span><span class="caption-text">Precisão DGNSS.</span><a class="headerlink" href="#id51" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 25%" />
 <col style="width: 39%" />
@@ -943,7 +895,7 @@ Quando se utiliza as medidas de fase da onda portadora, este posicionamento
 </table>
 </section>
 <section id="posicionamento-relativo">
-<span id="id36"></span><h3>Posicionamento relativo<a class="headerlink" href="#posicionamento-relativo" title="Link permanente para este título"></a></h3>
+<span id="id36"></span><h3>Posicionamento relativo<a class="headerlink" href="#posicionamento-relativo" title="Link permanente para este título">¶</a></h3>
 <p>No posicionamento relativo (<a class="reference internal" href="#gnssposiarelativo"><span class="std std-numref">Figura 40</span></a>)
 o que se calcula é a distância relativa entre o receptor que se encontra
 fixo na estação de coordenada conhecida (<span class="math notranslate nohighlight">\(A\)</span>) e o que se encontra
@@ -960,7 +912,7 @@ observados pelos receptores da estação base e no móvel durante o período
 de aquisição dos dados.</p>
 </section>
 <section id="posicionamento-relativo-estatico">
-<span id="id37"></span><h3>Posicionamento relativo estático<a class="headerlink" href="#posicionamento-relativo-estatico" title="Link permanente para este título"></a></h3>
+<span id="id37"></span><h3>Posicionamento relativo estático<a class="headerlink" href="#posicionamento-relativo-estatico" title="Link permanente para este título">¶</a></h3>
 <p>O posicionamento dito como <strong>posicionamento relativo estático</strong>
 ocorre quando os dois receptores ficam estacionados por um tempo suficientemente
 longo para resolver o problema das medidas relativas entre eles. Este
@@ -973,7 +925,7 @@ normal e boa geometria dos satélites <span id="id38">[<a class="reference inter
 Segundo <span id="id39">[<a class="reference internal" href="referencias.html#id9" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span> [p. 361], a precisão deste tipo de posicionamento
 é de aproximadamente <span class="math notranslate nohighlight">\(\pm(3\,\text{mm}+1\,\text{ppm})\)</span>.</p>
 <table class="styled-table docutils align-default" id="id52">
-<caption><span class="caption-number">Table 4 </span><span class="caption-text">Tempo para aquisição da posição pelo método relativo estático.</span><a class="headerlink" href="#id52" title="Permalink to this table"></a></caption>
+<caption><span class="caption-number">Table 4 </span><span class="caption-text">Tempo para aquisição da posição pelo método relativo estático.</span><a class="headerlink" href="#id52" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 19%" />
 <col style="width: 40%" />
@@ -998,7 +950,7 @@ Segundo <span id="id39">[<a class="reference internal" href="referencias.html#id
 </table>
 </section>
 <section id="posicionamento-relativo-pseudo-cinematico">
-<span id="id40"></span><h3>Posicionamento relativo pseudo-cinemático<a class="headerlink" href="#posicionamento-relativo-pseudo-cinematico" title="Link permanente para este título"></a></h3>
+<span id="id40"></span><h3>Posicionamento relativo pseudo-cinemático<a class="headerlink" href="#posicionamento-relativo-pseudo-cinematico" title="Link permanente para este título">¶</a></h3>
 <p>O <strong>posicionamento relativo pseudo-cinemático</strong> (<em>Pseudokinematic
 relative positioning</em>)
 é aquele em que as posições relativas dos pontos a serem determinadas
@@ -1011,12 +963,12 @@ pelo receptor pode passar a ser um problema.</p>
 <figure class="align-center" id="id53">
 <span id="gnssposiarelativo"></span><a class="reference internal image-reference" href="../_images/GNSSposiarelativo.png"><img alt="GNSSposiarelativo.png" src="../_images/GNSSposiarelativo.png" style="width: 431.54999999999995px; height: 277.2px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 40 </span><span class="caption-text">Concepção do posicionamento relativo.</span><a class="headerlink" href="#id53" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 40 </span><span class="caption-text">Concepção do posicionamento relativo.</span><a class="headerlink" href="#id53" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="posicionamento-relativo-cinematico">
-<span id="id41"></span><h3>Posicionamento relativo cinemático<a class="headerlink" href="#posicionamento-relativo-cinematico" title="Link permanente para este título"></a></h3>
+<span id="id41"></span><h3>Posicionamento relativo cinemático<a class="headerlink" href="#posicionamento-relativo-cinematico" title="Link permanente para este título">¶</a></h3>
 <p>O <strong>posicionamento relativo cinemático</strong> (<em>kinematic relative positioning</em>)
 é aquele em que é possível determinar as posições de um maior número
 pontos, no menor tempo, com grande precisão. É necessário que a ambiguidade
@@ -1060,7 +1012,7 @@ a qualidade do levantamento de uma área, quando um receptor GNSS de navegação
 </section>
 </section>
 <section id="exercicios">
-<h2>Exercícios<a class="headerlink" href="#exercicios" title="Link permanente para este título"></a></h2>
+<h2>Exercícios<a class="headerlink" href="#exercicios" title="Link permanente para este título">¶</a></h2>
 <p><span class="exem">1)</span> Quais são os segmentos do GNSS? Explique-os?</p>
 <hr class="docutils" />
 <p><span class="exem">2)</span> Explique como os GNSS calculam as coordenadas de
@@ -1089,34 +1041,132 @@ SW ou NW com relação à coordenada do marco? Explique.</p>
 </section>
 
 
-           </div>
+            <div class="clearer"></div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
-        <a href="capitulo3.html" class="btn btn-neutral float-left" title="Capitulo 3: Introdução a geodésia e cartografia" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="capitulo5.html" class="btn btn-neutral float-right" title="Capitulo 5: Georreferenciamento de imóveis rurais" accesskey="n" rel="next">Seguinte <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Copyright 2021, Alexandre C Xavier.</p>
-  </div>
-
-  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
-    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
         </div>
       </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
+    <h3><a href="../index.html">Page contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)</a><ul>
+<li><a class="reference internal" href="#introducao">Introdução</a></li>
+<li><a class="reference internal" href="#posicionamento-por-satelite">Posicionamento por satélite</a></li>
+<li><a class="reference internal" href="#segmentos-gnss">Segmentos GNSS</a><ul>
+<li><a class="reference internal" href="#segmento-espacial">Segmento espacial</a></li>
+<li><a class="reference internal" href="#segmento-controle">Segmento controle</a></li>
+<li><a class="reference internal" href="#segmento-usuario">Segmento usuário</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#exemplos-de-gnss">Exemplos de GNSS</a><ul>
+<li><a class="reference internal" href="#gps">GPS</a></li>
+<li><a class="reference internal" href="#glonass">GLONASS</a><ul>
+<li><a class="reference internal" href="#galileu">Galileu</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#outros-gnss">Outros GNSS</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#observaveis-e-fontes-de-erro">Observáveis e fontes de erro</a><ul>
+<li><a class="reference internal" href="#pseudodistancia-por-codigo">Pseudodistância por código</a></li>
+<li><a class="reference internal" href="#pseudodistancia-por-fase-da-onda-portadora">Pseudodistância por fase da onda portadora</a></li>
+<li><a class="reference internal" href="#erros-nas-observacoes">Erros nas observações</a></li>
+<li><a class="reference internal" href="#erro-devido-ao-satelite">Erro devido ao satélite</a></li>
+<li><a class="reference internal" href="#erro-devido-a-propagacao-do-sinal">Erro devido à propagação do sinal</a></li>
+<li><a class="reference internal" href="#erro-devido-ao-receptor">Erro devido ao receptor</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tipos-de-posicionamento">Tipos de posicionamento</a><ul>
+<li><a class="reference internal" href="#terminologia">Terminologia</a><ul>
+<li><a class="reference internal" href="#posicionamento-por-ponto">Posicionamento por ponto</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#posicionamento-diferencial-dgnss">Posicionamento diferencial (DGNSS)</a></li>
+<li><a class="reference internal" href="#posicionamento-relativo">Posicionamento relativo</a></li>
+<li><a class="reference internal" href="#posicionamento-relativo-estatico">Posicionamento relativo estático</a></li>
+<li><a class="reference internal" href="#posicionamento-relativo-pseudo-cinematico">Posicionamento relativo pseudo-cinemático</a></li>
+<li><a class="reference internal" href="#posicionamento-relativo-cinematico">Posicionamento relativo cinemático</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#exercicios">Exercícios</a></li>
+</ul>
+</li>
+</ul>
 
-</body>
+  </div>
+  <div class="sphinxprev">
+    <h4>Previous page</h4>
+    <p class="topless"><a href="capitulo3.html"
+                          title="Previous page">&larr; Capitulo 3: Introdução a geodésia e cartografia</a></p>
+  </div>
+  <div class="sphinxnext">
+    <h4>Next page</h4>
+    <p class="topless"><a href="capitulo5.html"
+                          title="Next page">&rarr; Capitulo 5: Georreferenciamento de imóveis rurais</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>Esta Página</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/pages/capitulo4.rst.txt"
+            rel="nofollow">Exibir Fonte</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Pesquisa rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                 «
+                <span class="show-for-small">hide menu</span>
+                
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                 »
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegação</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice Geral"
+             >índice</a></li>
+        <li class="right" >
+          <a href="capitulo5.html" title="Capitulo 5: Georreferenciamento de imóveis rurais"
+             >próximo</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="capitulo3.html" title="Capitulo 3: Introdução a geodésia e cartografia"
+             >anterior</a> &nbsp; &nbsp;</li>
+    <li><a href="../index.html">Documentação Livro de Geomática 0.1</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)</a></li> 
+      </ul>
+    </div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Alexandre C Xavier.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.2.0.
+    </div>
+    <!-- cloud_sptheme 1.4 -->
+  </body>
 </html>

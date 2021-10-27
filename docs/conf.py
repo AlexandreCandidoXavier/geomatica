@@ -28,8 +28,8 @@ html_theme_options = {}
 if csp.is_cloud_theme(html_theme):
     html_theme_options.update(
         borderless_decor=True,
-        sidebarwidth="3in",
-        hyphenation_language="en",
+        sidebarwidth="2in",
+        hyphenation_language='pt_PT',
     )
 
 # Add any paths that contain custom themes here, relative to this directory.
@@ -83,7 +83,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # a list of builtin themes.
 #
 # html_theme = 'alabaster'
-html_theme = 'sphinx_rtd_theme'
+# html_theme = 'sphinx_rtd_theme'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

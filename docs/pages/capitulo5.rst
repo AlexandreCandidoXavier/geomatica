@@ -108,17 +108,16 @@ interseção desta linha com qualquer outra linha limítrofe de imóvel contígu
 sendo que estes podem ser de diferentes tipos, conforme Tabela abaixo.
 
 .. table:: Tipos de vértices no georreferenciamento de imóveis rurais (ver :cite:t:`limitantes_georre2013`).
-   :widths: auto
+    :header-alignment: cc
+    :column-alignment: cr
 
-   +------+-----------------------------------------------+
-   Tipo  Característica                                 
-   +======+===============================================+
-   **M**  medido, materializado e codificado em campo   
-   +------+-----------------------------------------------+
-   **P**  medido, mais não materializado                
-   +------+-----------------------------------------------+
-   **V**  determinado indiretamente e não materializado 
-   +------+-----------------------------------------------+
+    ====== ===============================================
+    Tipo   Característica
+    ====== ===============================================
+    **M**  medido, materializado e codificado em campo
+    **P**  medido, mais não materializado
+    **V**  determinado indiretamente e não materializado
+    ====== ===============================================
 
 A seguir é apresentada uma descrição dos tipos de vértices com uma
 descrição.
@@ -189,82 +188,54 @@ levantamento por irradiação ou triangulação. Para todos os metodos
 viáveis, ver tabela abaixo e o seu detalamento em :cite:t:`manual_georre2013`.
 
 .. table:: Tipos de posicionamentos que podem ser realizados no georreferenciamento.
-   :widths: auto
+    :header-alignment: cc
+    :column-alignment: cr
 
-   +-------+----------------------------------+
-   Código  Método de Posicionamento         
-   +=======+==================================+
-   PG1    Relativo estático                 
-   +-------+----------------------------------+
-   PG2    Relativo estático-rápido          
-   +-------+----------------------------------+
-   PG6    RTK convencional                  
-   +-------+----------------------------------+
-   PG7    RTK em rede                       
-   +-------+----------------------------------+
-   PG9     Posicionamento por Ponto Preciso 
-   +-------+----------------------------------+
-   PT1    Poligonação                       
-   +-------+----------------------------------+
-   PT2    Triangulação                      
-   +-------+----------------------------------+
-   PT3    Trilateração                      
-   +-------+----------------------------------+
-   PT4    Triangulateração                  
-   +-------+----------------------------------+
+    ======= ==================================
+    Código  Método de Posicionamento
+    ======= ==================================
+    PG1     Relativo estático
+    PG2     Relativo estático-rápido
+    PG6     RTK convencional
+    PG7     RTK em rede
+    PG9     Posicionamento por Ponto Preciso
+    PT1     Poligonação
+    PT2     Triangulação
+    PT3     Trilateração
+    PT4     Triangulateração
+    ======= ==================================
 
 .. table:: Métodos de posicionamento de acordo com a aplicação :cite:`manual_georre2013`.
-   :widths: auto
+    :header-alignment: ccc
+    :column-alignment: crr
 
-   +-------+-------------------------------------+-------------------------------------------------+
-   Código  Método de Posicionamento            Aplicação                                        
-   +-------+-------------------------------------+-------------------------------------------------+
-   PG1    Relativo estático                    Limite Artificial ou Natural                     
-   +-------+-------------------------------------+-------------------------------------------------+
-   PG2    Relativo estático-rápido             Limite Artificial ou Natural                     
-   +-------+-------------------------------------+-------------------------------------------------+
-   PG3    Relativo semicinemático              Limite Artificial ou Natural                     
-   +-------+-------------------------------------+-------------------------------------------------+
-   PG4    Relativo cinemático                  Limite Artificial ou Natural                     
-   +-------+-------------------------------------+-------------------------------------------------+
-   PG5    Relativo a partir do código C/A      Limite Natural                                   
-   +-------+-------------------------------------+-------------------------------------------------+
-   PG6    RTK convencional                     Limite Artificial ou Natural                     
-   +-------+-------------------------------------+-------------------------------------------------+
-   PG7    RTK em rede                          Limite Artificial ou Natural                     
-   +-------+-------------------------------------+-------------------------------------------------+
-   PG8    Differential GPS (DGPS)              Limite Natural                                   
-   +-------+-------------------------------------+-------------------------------------------------+
-   PG9    Posicionamento por Ponto Preciso     Limite Artificial ou Natural                     
-   +-------+-------------------------------------+-------------------------------------------------+
-   PT1    Poligonação                          Limite Artificial ou Natural                     
-   +-------+-------------------------------------+-------------------------------------------------+
-   PT2    Triangulação                         Limite Artificial ou Natural                     
-   +-------+-------------------------------------+-------------------------------------------------+
-   PT3    Trilateração                         Limite Artificial ou Natural                     
-   +-------+-------------------------------------+-------------------------------------------------+
-   PT4    Triangulateração                     Limite Artificial ou Natural                     
-   +-------+-------------------------------------+-------------------------------------------------+
-   PT5    Irradiação                           Limite Artificial ou Natural                     
-   +-------+-------------------------------------+-------------------------------------------------+
-   PT6    Interseção linear                    Limite Artificial ou Natural                     
-   +-------+-------------------------------------+-------------------------------------------------+
-   PT7    Interseção angular                   Limite Artificial ou Natural                     
-   +-------+-------------------------------------+-------------------------------------------------+
-   PT8    Alinhamento                          Limite Artificial ou Natural                     
-   +-------+-------------------------------------+-------------------------------------------------+
-   PA1    Paralela                             Limite Artificial ou Natural                     
-   +-------+-------------------------------------+-------------------------------------------------+
-   PA2    Interseção de Retas                  Limite Artificial ou Natural                     
-   +-------+-------------------------------------+-------------------------------------------------+
-   PS1    Aerofotogrametria                    Limite Artificial [#f1]_, Natural ou Inacessível 
-   +-------+-------------------------------------+-------------------------------------------------+
-   PS2    Radar aerotransportado               Limite Artificial [#f1]_, Natural ou Inacessível 
-   +-------+-------------------------------------+-------------------------------------------------+
-   PS3    Laser scanner aerotransportado       Limite Artificial [#f1]_, Natural ou Inacessível 
-   +-------+-------------------------------------+-------------------------------------------------+
-   PS4    Sensores orbitais                    Limite Artificial [#f1]_, Natural ou Inacessível 
-   +-------+-------------------------------------+-------------------------------------------------+
+    ======= ==================================== ==================================================
+    Código  Método de Posicionamento             Aplicação
+    ======= ==================================== ==================================================
+    PG1     Relativo estático                    Limite Artificial ou Natural
+    PG2     Relativo estático-rápido             Limite Artificial ou Natural
+    PG3     Relativo semicinemático              Limite Artificial ou Natural
+    PG4     Relativo cinemático                  Limite Artificial ou Natural
+    PG5     Relativo a partir do código C/A      Limite Natural
+    PG6     RTK convencional                     Limite Artificial ou Natural
+    PG7     RTK em rede                          Limite Artificial ou Natural
+    PG8     Differential GPS (DGPS)              Limite Natural
+    PG9     Posicionamento por Ponto Preciso     Limite Artificial ou Natural
+    PT1     Poligonação                          Limite Artificial ou Natural
+    PT2     Triangulação                         Limite Artificial ou Natural
+    PT3     Trilateração                         Limite Artificial ou Natural
+    PT4     Triangulateração                     Limite Artificial ou Natural
+    PT5     Irradiação                           Limite Artificial ou Natural
+    PT6     Interseção linear                    Limite Artificial ou Natural
+    PT7     Interseção angular                   Limite Artificial ou Natural
+    PT8     Alinhamento                          Limite Artificial ou Natural
+    PA1     Paralela                             Limite Artificial ou Natural
+    PA2     Interseção de Retas                  Limite Artificial ou Natural
+    PS1     Aerofotogrametria                    Limite Artificial [#f1]_, Natural ou Inacessível
+    PS2     Radar aerotransportado               Limite Artificial [#f1]_, Natural ou Inacessível
+    PS3     Laser scanner aerotransportado       Limite Artificial [#f1]_, Natural ou Inacessível
+    PS4     Sensores orbitais                    Limite Artificial [#f1]_, Natural ou Inacessível
+    ======= ==================================== ==================================================
 
 
 .. rubric:: Footnotes

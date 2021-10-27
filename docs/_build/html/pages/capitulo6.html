@@ -1,112 +1,79 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="pt-PT" >
-<head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Capitulo 6: Medidas de distância &mdash; Documentação Livro de Geomática 0.1</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/table_styling.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/translations.js"></script>
-        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="../_static/js/theme.js"></script>
+
+
+<!DOCTYPE html>
+
+<html lang="pt_PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Capitulo 6: Medidas de distância &#8212; Documentação Livro de Geomática 0.1</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/cloud.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/table_styling.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    
+    
+     
+        <script src="../_static/jquery.cookie.js"></script>
+    
+
+    
+     
+        <script src="../_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="../_static/cloud.js"></script>
+    
+
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Pesquisar" href="../search.html" />
     <link rel="next" title="Capitulo 7: Ângulos" href="capitulo7.html" />
     <link rel="prev" title="Capitulo 5: Georreferenciamento de imóveis rurais" href="capitulo5.html" /> 
-</head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegação</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice Geral"
+             accesskey="I">índice</a></li>
+        <li class="right" >
+          <a href="capitulo7.html" title="Capitulo 7: Ângulos"
+             accesskey="N">próximo</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="capitulo5.html" title="Capitulo 5: Georreferenciamento de imóveis rurais"
+             accesskey="P">anterior</a> &nbsp; &nbsp;</li>
+    <li><a href="../index.html">Documentação Livro de Geomática 0.1</a> &#187;</li>
 
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> Livro de Geomática
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Pesquisar docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
-              <p class="caption" role="heading"><span class="caption-text">Conteúdo:</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="capitulo1.html">Capitulo 1: Matemática fundamental</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo2.html">Capitulo 2: Unidades métricas, escala e determinação de áreas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo3.html">Capitulo 3: Introdução a geodésia e cartografia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo4.html">Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo5.html">Capitulo 5: Georreferenciamento de imóveis rurais</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Capitulo 6: Medidas de distância</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#introducao">Introdução</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#tipos-de-distancias">Tipos de distâncias</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#influencia-da-curvatura-da-terra-nas-medidas-de-distancia-horizontal">Influência da curvatura da terra nas medidas de distância horizontal</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#medicao-com-trena">Medição com trena</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#erros-instrumentais">Erros instrumentais</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#erros-naturais">Erros naturais</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#erro-devido-a-temperatura-de-trabalho-distinta-da-do-padrao">Erro devido à temperatura de trabalho distinta da do padrão</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#erro-devido-a-tensao-de-trabalho-distinta-da-do-padrao">Erro devido à tensão de trabalho distinta da do padrão</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#correcao-do-efeito-combinado-da-temperatura-tensao-e-catenaria">Correção do efeito combinado da temperatura, tensão e catenária</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#procedimento-em-campo-para-medidas-a-trena">Procedimento em campo para medidas à trena</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#medicao-taqueometrica">Medição taqueométrica</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#medidor-eletronico-de-distancia-med">Medidor Eletrônico de Distância (MED)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#radiacao-eletromagnetica">Radiação eletromagnética</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#principio-de-funcionamento-do-med">Princípio de funcionamento do MED</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#fontes-de-erro">Fontes de erro</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#exercicios">Exercícios</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo7.html">Capitulo 7: Ângulos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo8.html">Capitulo 8: Poligonal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="referencias.html">Referências</a></li>
-</ul>
+        <li class="nav-item nav-item-this"><a href="">Capitulo 6: Medidas de distância</a></li> 
+      </ul>
+    </div>
+    </div>
+  
 
-        </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Livro de Geomática</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Navegação da página">
-  <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Capitulo 6: Medidas de distância</li>
-      <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/pages/capitulo6.rst.txt" rel="nofollow"> Ver código-fonte da página</a>
-      </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
   <style> .exem {color:blue; font-weight: bold} </style><style> .solucao {font-weight: bold} </style><style> .blue {color:blue} </style><section id="capitulo-6-medidas-de-distancia">
-<span id="rst-capitulo-6"></span><h1>Capitulo 6: Medidas de distância<a class="headerlink" href="#capitulo-6-medidas-de-distancia" title="Link permanente para este título"></a></h1>
+<span id="rst-capitulo-6"></span><h1>Capitulo 6: Medidas de distância<a class="headerlink" href="#capitulo-6-medidas-de-distancia" title="Link permanente para este título">¶</a></h1>
 <section id="introducao">
-<h2>Introdução<a class="headerlink" href="#introducao" title="Link permanente para este título"></a></h2>
+<h2>Introdução<a class="headerlink" href="#introducao" title="Link permanente para este título">¶</a></h2>
 <p>As distâncias horizontais entre pontos, juntamente com os ângulos,
 são os elementos básicos necessários para o cálculo das coordenadas
 dos pontos. Neste capítulo serão abordados os métodos mais utilizados
@@ -122,7 +89,7 @@ um obsoleto, principalmente devido a baixa precisão e baixa produtividade
 em campo.</p>
 </section>
 <section id="tipos-de-distancias">
-<h2>Tipos de distâncias<a class="headerlink" href="#tipos-de-distancias" title="Link permanente para este título"></a></h2>
+<h2>Tipos de distâncias<a class="headerlink" href="#tipos-de-distancias" title="Link permanente para este título">¶</a></h2>
 <p>Em geomática, temos vários tipos de distância, podendo-se citar, por
 exemplo, a distância no plano de projeção cartográfico e a distância
 no elipsóide. Quando realizando levantamentos topográficos, em pequenas
@@ -145,7 +112,7 @@ do terreno, ou da visada.</p>
 <figure class="align-center" id="id11">
 <span id="fig-tiposdedistancia-png"></span><a class="reference internal image-reference" href="../_images/fig_tiposdedistancia.png"><img alt="fig_tiposdedistancia.png" src="../_images/fig_tiposdedistancia.png" style="width: 640.35px; height: 233.55px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 42 </span><span class="caption-text">Distâncias em topografia.</span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 42 </span><span class="caption-text">Distâncias em topografia.</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>As DH’s são utilizadas nos cálculos planimétricos, como: na determinação das medidas
@@ -158,7 +125,7 @@ nas estações total medem primeiramente, posteriormente, podendo-se tranformá-
 para a DH e DN (ver página pageref{sec:Medidor-eletr=0000F4nico-de}
 para maiores detalhes).</p>
 <section id="influencia-da-curvatura-da-terra-nas-medidas-de-distancia-horizontal">
-<h3>Influência da curvatura da terra nas medidas de distância horizontal<a class="headerlink" href="#influencia-da-curvatura-da-terra-nas-medidas-de-distancia-horizontal" title="Link permanente para este título"></a></h3>
+<h3>Influência da curvatura da terra nas medidas de distância horizontal<a class="headerlink" href="#influencia-da-curvatura-da-terra-nas-medidas-de-distancia-horizontal" title="Link permanente para este título">¶</a></h3>
 <p>Na <a class="reference internal" href="#fig-errodistancia"><span class="std std-numref">Figura 43</span></a> são apresentados os pontos <span class="math notranslate nohighlight">\(A\)</span> e
 <span class="math notranslate nohighlight">\(B\)</span>, respectivamente, a posição inicial e final de um levantamento.
 Suponha, para fins de simplificação, que: estes dois pontos estão
@@ -179,7 +146,7 @@ d &amp; =R\tan\alpha\end{split}\]</div>
 <figure class="align-center" id="id12">
 <span id="fig-errodistancia"></span><a class="reference internal image-reference" href="../_images/fig_errodistancia.png"><img alt="fig_errodistancia.png" src="../_images/fig_errodistancia.png" style="width: 542.7px; height: 229.95000000000002px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 43 </span><span class="caption-text">Influência da esfericidade da terra nas medidadas topográficas.</span><a class="headerlink" href="#id12" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 43 </span><span class="caption-text">Influência da esfericidade da terra nas medidadas topográficas.</span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Na <a class="reference internal" href="#fig-errodistancia"><span class="std std-numref">Figura 43</span></a>, também é apresentada, para algumas
@@ -200,7 +167,7 @@ Contudo, para quem tiver interesse, pode consular, por exemplo, <span id="id3">W
 </section>
 </section>
 <section id="medicao-com-trena">
-<h2>Medição com trena<a class="headerlink" href="#medicao-com-trena" title="Link permanente para este título"></a></h2>
+<h2>Medição com trena<a class="headerlink" href="#medicao-com-trena" title="Link permanente para este título">¶</a></h2>
 <p>As trenas podem ser utilizadas para as medidas de distância entre
 pontos. Elas podem ter como material de fabricação, por exemplo, o
 aço, o invar (níquel e aço) ou a fibra de vidro. Normalmente apresentam
@@ -212,7 +179,7 @@ como de: 5 m, 10 m, 20 m, ou 50 m.</p>
 <figure class="align-center" id="id13">
 <span id="baliza-ficha-png"></span><a class="reference internal image-reference" href="../_images/baliza_ficha.png"><img alt="baliza_ficha.png" src="../_images/baliza_ficha.png" style="width: 238.15px; height: 482.90000000000003px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 44 </span><span class="caption-text">Baliza e ficha.</span><a class="headerlink" href="#id13" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 44 </span><span class="caption-text">Baliza e ficha.</span><a class="headerlink" href="#id13" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Faz-se necessário, quando se trabalhando com medidas de distância com a trena,
@@ -232,7 +199,7 @@ para materializar a posição de início da próxima medida.</p>
 <figure class="align-center" id="id14">
 <span id="fig-balizavertical-png"></span><a class="reference internal image-reference" href="../_images/fig_balizavertical.png"><img alt="fig_balizavertical.png" src="../_images/fig_balizavertical.png" style="width: 548.35px; height: 343.75px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 45 </span><span class="caption-text">Qualidade da verticalização da balizas no momento da medida. Manter sempre na vertical.</span><a class="headerlink" href="#id14" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 45 </span><span class="caption-text">Qualidade da verticalização da balizas no momento da medida. Manter sempre na vertical.</span><a class="headerlink" href="#id14" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Outros cuidados que devem ser verificados durante o procedimento de
@@ -269,7 +236,7 @@ os pontos.</p>
 <p><span class="caption-number">Figura 46 </span><span class="caption-text">Levantamento do alinhamento <span class="math notranslate nohighlight">\(AB\)</span>  com o auxílio da trena.
 As duas figuras na parte inferior, apresentam duas possíveis configurações
 do levantamento visto no plano, uma com os alinhamentos realizados
-corretamente e outra, incorretamente.</span><a class="headerlink" href="#id15" title="Permalink to this image"></a></p>
+corretamente e outra, incorretamente.</span><a class="headerlink" href="#id15" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Outros erros que devem-se evitar durante o levantamento são em relação
@@ -285,7 +252,7 @@ uma catenária elevada (ver erro de tensão, página pageref{subsec:Erro-devido-
 <figure class="align-center" id="id16">
 <span id="fig-trenahorizontal-png"></span><a class="reference internal image-reference" href="../_images/fig_trenahorizontal.png"><img alt="fig_trenahorizontal.png" src="../_images/fig_trenahorizontal.png" style="width: 476.34999999999997px; height: 199.5px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 47 </span><span class="caption-text">Exemplos de trenadas em posição de desnível, com pouca tensão e quando utilizada corretamente.</span><a class="headerlink" href="#id16" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 47 </span><span class="caption-text">Exemplos de trenadas em posição de desnível, com pouca tensão e quando utilizada corretamente.</span><a class="headerlink" href="#id16" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Além dos erros durante a realização das medidas com trena, podem-se
@@ -297,7 +264,7 @@ quando os dados são anotados errados ou a leitura equivocada, alinhamentos
 incorretos, etc. Abaixo seguem uma descrição dos erros e maneiras
 de evitar e, se possível, corrigi-los.</p>
 <section id="erros-instrumentais">
-<h3>Erros instrumentais<a class="headerlink" href="#erros-instrumentais" title="Link permanente para este título"></a></h3>
+<h3>Erros instrumentais<a class="headerlink" href="#erros-instrumentais" title="Link permanente para este título">¶</a></h3>
 <p>Por falha de fabricação, envelhecimento ou defeito devido à, por exemplo,
 dobramento da mesma, a trena pode apresentar o comprimento atual diferente
 daquele mostrado nominalmente. A verificação e a correção deste tipo
@@ -305,7 +272,7 @@ de erro só é possível se estiver a disponibilidade de um comprimento
 padrão para comparação. Desta forma, pode-se aplicar a correção para
 as medidas de uma trena defeituosa.</p>
 <section id="erros-naturais">
-<h4>Erros naturais<a class="headerlink" href="#erros-naturais" title="Link permanente para este título"></a></h4>
+<h4>Erros naturais<a class="headerlink" href="#erros-naturais" title="Link permanente para este título">¶</a></h4>
 <p>A seguir são apresentado os erros naturais que podem ser corrigidos
 quando, nas medidas de distância com a trena. Um erro natural que
 pode ocorrer, mas não tem como realizar a correção, é o devido ao
@@ -313,7 +280,7 @@ efeito do vento. Logo, deve-se evitar fazer medidas em condições de
 vento desfavorável.</p>
 </section>
 <section id="erro-devido-a-temperatura-de-trabalho-distinta-da-do-padrao">
-<h4>Erro devido à temperatura de trabalho distinta da do padrão<a class="headerlink" href="#erro-devido-a-temperatura-de-trabalho-distinta-da-do-padrao" title="Link permanente para este título"></a></h4>
+<h4>Erro devido à temperatura de trabalho distinta da do padrão<a class="headerlink" href="#erro-devido-a-temperatura-de-trabalho-distinta-da-do-padrao" title="Link permanente para este título">¶</a></h4>
 <p>Normalmente as trenas são aferidas para uma determinada temperatura
 padrão. Ou seja, ela só vai apresentar o comprimento real de <span class="math notranslate nohighlight">\(20\)</span> m,
 por exemplo, se trabalhando naquela temperatura. Caso se esteja trabalhando
@@ -325,7 +292,7 @@ nominal. A correção a ser aplicada devida a temperatura (<span class="math not
 em uma trenada de comprimento nominal (<span class="math notranslate nohighlight">\(S)\)</span>, quando se está trabalhando
 com temperatura distinta da padrão é:</p>
 <div class="math notranslate nohighlight" id="equation-eq-trenatemperatura">
-<span class="eqno">(57)<a class="headerlink" href="#equation-eq-trenatemperatura" title="Permalink to this equation"></a></span>\[C_{t}=S(t-t_{0})\alpha\]</div>
+<span class="eqno">(57)<a class="headerlink" href="#equation-eq-trenatemperatura" title="Permalink to this equation">¶</a></span>\[C_{t}=S(t-t_{0})\alpha\]</div>
 <p>em que: <span class="math notranslate nohighlight">\(t\)</span> é a temperatura de trabalho <span class="math notranslate nohighlight">\((^\circ\text{C})\)</span>;
 <span class="math notranslate nohighlight">\(t_{0}\)</span> é a temperatura na qual a trena foi aferida <span class="math notranslate nohighlight">\((^\circ\text{C})\)</span>;
 e <span class="math notranslate nohighlight">\(\alpha\)</span> é o coeficiente de dilatação da trena <span class="math notranslate nohighlight">\((^\circ\mathrm{C}^{-1})\)</span>.</p>
@@ -343,7 +310,7 @@ De acordo com a Equação <a class="reference internal" href="#equation-eq-trena
 </section>
 <hr class="docutils" />
 <section id="erro-devido-a-tensao-de-trabalho-distinta-da-do-padrao">
-<h4>Erro devido à tensão de trabalho distinta da do padrão<a class="headerlink" href="#erro-devido-a-tensao-de-trabalho-distinta-da-do-padrao" title="Link permanente para este título"></a></h4>
+<h4>Erro devido à tensão de trabalho distinta da do padrão<a class="headerlink" href="#erro-devido-a-tensao-de-trabalho-distinta-da-do-padrao" title="Link permanente para este título">¶</a></h4>
 <p>Assim como com a variável temperatura, a trena é aferida para determinada
 tensão padrão <span class="math notranslate nohighlight">\((T_{0})\)</span>, caso ela seja submetida a uma menor tensão,
 o seu comprimento real será menor que o mostrado nominalmente, e caso
@@ -351,7 +318,7 @@ de submetida à uma tensão maior, o comprimento real será maior do
 que o nominal. A correção, devido a se trabalhar com uma tensão (<span class="math notranslate nohighlight">\(T\)</span>,
 kg) distinta da tensão padrão (<span class="math notranslate nohighlight">\(T_{0}\)</span>, kg) é:</p>
 <div class="math notranslate nohighlight" id="equation-eq-trenatensao">
-<span class="eqno">(58)<a class="headerlink" href="#equation-eq-trenatensao" title="Permalink to this equation"></a></span>\[C_{T}=S\frac{(T-T_{0})}{qE},\]</div>
+<span class="eqno">(58)<a class="headerlink" href="#equation-eq-trenatensao" title="Permalink to this equation">¶</a></span>\[C_{T}=S\frac{(T-T_{0})}{qE},\]</div>
 <p>em que: <span class="math notranslate nohighlight">\(q\)</span> é a área da seção transversal da trena <span class="math notranslate nohighlight">\((\text{mm}^{2})\)</span>;
 <span class="math notranslate nohighlight">\(S\)</span> é a medida de distância medida; <span class="math notranslate nohighlight">\(E\)</span> é o módulo
 de elasticidade por tração, normalmente <span class="math notranslate nohighlight">\(20\,000\,\mathrm{kg mm}^{-2}\)</span>.
@@ -377,14 +344,14 @@ Logo, a leitura que será feita, não corresponderá à real, mais sim,
 um pouco inferior que a real. O erro devido a catenária <span class="math notranslate nohighlight">\((C_{c})\)</span>
 é dado por:</p>
 <div class="math notranslate nohighlight" id="equation-eq-catenaria">
-<span class="eqno">(59)<a class="headerlink" href="#equation-eq-catenaria" title="Permalink to this equation"></a></span>\[C_{C}=-\frac{P^{2}S^{3}}{24T^{2}},\]</div>
+<span class="eqno">(59)<a class="headerlink" href="#equation-eq-catenaria" title="Permalink to this equation">¶</a></span>\[C_{C}=-\frac{P^{2}S^{3}}{24T^{2}},\]</div>
 <p>em que: <span class="math notranslate nohighlight">\(P\)</span> é o peso da trena (<span class="math notranslate nohighlight">\(\text{kg m}^{-1}\)</span>). Observe
 que o erro sempre será negativo, isto é, a medida lida quando ela
 está suspensa, é sempre menor do que a real.</p>
 <figure class="align-center" id="id17">
 <span id="fig-catenari-png"></span><a class="reference internal image-reference" href="../_images/fig_catenari.png"><img alt="fig_catenari.png" src="../_images/fig_catenari.png" style="width: 497.25px; height: 259.2px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 48 </span><span class="caption-text">Demonstração do erro devido à catenária.</span><a class="headerlink" href="#id17" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 48 </span><span class="caption-text">Demonstração do erro devido à catenária.</span><a class="headerlink" href="#id17" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p><span class="exem">Exemplo 3</span> A distância de <span class="math notranslate nohighlight">\(54,3\)</span> m foi
@@ -402,13 +369,13 @@ da trena considerando e erro da catenária é <span class="math notranslate nohi
 </section>
 <hr class="docutils" />
 <section id="correcao-do-efeito-combinado-da-temperatura-tensao-e-catenaria">
-<h4>Correção do efeito combinado da temperatura, tensão e catenária<a class="headerlink" href="#correcao-do-efeito-combinado-da-temperatura-tensao-e-catenaria" title="Link permanente para este título"></a></h4>
+<h4>Correção do efeito combinado da temperatura, tensão e catenária<a class="headerlink" href="#correcao-do-efeito-combinado-da-temperatura-tensao-e-catenaria" title="Link permanente para este título">¶</a></h4>
 <p>Os três erros mostrado anteriormente devido, à temperatura, à tensão
 e à catenária, devem ser considerados concomitantemente, desta forma,
 o comprimento corrigido devido a estes três erros <span class="math notranslate nohighlight">\((S_{\mathrm{corrigido}})\)</span>
 é:</p>
 <div class="math notranslate nohighlight" id="equation-eq-trenaerrototal">
-<span class="eqno">(60)<a class="headerlink" href="#equation-eq-trenaerrototal" title="Permalink to this equation"></a></span>\[S_{\mathrm{corrigido}}=S+C_{t}+C_{T}+C_{C},\]</div>
+<span class="eqno">(60)<a class="headerlink" href="#equation-eq-trenaerrototal" title="Permalink to this equation">¶</a></span>\[S_{\mathrm{corrigido}}=S+C_{t}+C_{T}+C_{C},\]</div>
 <p>em que: <span class="math notranslate nohighlight">\(S_{\mathrm{corrigido}}\)</span> é o comprimento do alinhamento
 corrigido (m); <span class="math notranslate nohighlight">\(S\)</span> é o comprimento do alinhamento medido com a trena
 (m); <span class="math notranslate nohighlight">\(C_{t}\)</span> é a compensação devido à temperatura (m); <span class="math notranslate nohighlight">\(C_{T}\)</span> é
@@ -425,7 +392,7 @@ De acordo com a Equação <a class="reference internal" href="#equation-eq-trena
 </section>
 <hr class="docutils" />
 <section id="procedimento-em-campo-para-medidas-a-trena">
-<h4>Procedimento em campo para medidas à trena<a class="headerlink" href="#procedimento-em-campo-para-medidas-a-trena" title="Link permanente para este título"></a></h4>
+<h4>Procedimento em campo para medidas à trena<a class="headerlink" href="#procedimento-em-campo-para-medidas-a-trena" title="Link permanente para este título">¶</a></h4>
 <p>Se for para medição de área, mede-se a poligonal e as diagonais internar
 que subdividem a área em vários triângulos. A Figura ref{fig:levantamentoAtrena}
 apresenta a poligonal textit{ABCDEFA} a ser medida com a trena. A
@@ -448,7 +415,7 @@ as diagonais <span class="math notranslate nohighlight">\(h:\)</span> e <span cl
 <figure class="align-center" id="id18">
 <span id="fig-levantamentoatrena-png"></span><a class="reference internal image-reference" href="../_images/fig_levantamentoAtrena.png"><img alt="fig_levantamentoAtrena.png" src="../_images/fig_levantamentoAtrena.png" style="width: 574.2px; height: 351.90000000000003px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 49 </span><span class="caption-text">Esquema de um levantamento à trena.</span><a class="headerlink" href="#id18" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 49 </span><span class="caption-text">Esquema de um levantamento à trena.</span><a class="headerlink" href="#id18" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <div class="admonition-sugestao-de-aula-pratica admonition">
@@ -471,7 +438,7 @@ as diagonais <span class="math notranslate nohighlight">\(h:\)</span> e <span cl
 </section>
 </section>
 <section id="medicao-taqueometrica">
-<h2>Medição taqueométrica<a class="headerlink" href="#medicao-taqueometrica" title="Link permanente para este título"></a></h2>
+<h2>Medição taqueométrica<a class="headerlink" href="#medicao-taqueometrica" title="Link permanente para este título">¶</a></h2>
 <p>Nos teodolitos (<a class="reference external" href="https://en.wikipedia.org/wiki/Theodolite">aqui para ver exemplares</a>),
 quando se observa a luneta, com
 o foco adequado, pode-se observar três retículos (fios) na horizontal
@@ -502,7 +469,7 @@ são estimados.</p>
 <figure class="align-center" id="id19">
 <span id="fig-luneta-mira-png"></span><a class="reference internal image-reference" href="../_images/fig_luneta_mira.png"><img alt="fig_luneta_mira.png" src="../_images/fig_luneta_mira.png" style="width: 358.6px; height: 523.6px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 50 </span><span class="caption-text">Esquema ilustrativo dos retículos de um teodolito (a) e de uma mira (b).</span><a class="headerlink" href="#id19" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 50 </span><span class="caption-text">Esquema ilustrativo dos retículos de um teodolito (a) e de uma mira (b).</span><a class="headerlink" href="#id19" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Nas medições taqueométricas, o ângulo vertical pode ser o zenital e o de inclinação (maiores informações
@@ -521,16 +488,16 @@ há ainda a necessidade da medição da altura do instrumento <span class="math 
 <figure class="align-center" id="id20">
 <span id="fig-visadataqueometica-png"></span><a class="reference internal image-reference" href="../_images/fig_visadataqueometica.png"><img alt="fig_visadataqueometica.png" src="../_images/fig_visadataqueometica.png" style="width: 542.25px; height: 397.35px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 51 </span><span class="caption-text">Esquema de um levantamento taqueométrico em campo para as medidas da DH e da DN.</span><a class="headerlink" href="#id20" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 51 </span><span class="caption-text">Esquema de um levantamento taqueométrico em campo para as medidas da DH e da DN.</span><a class="headerlink" href="#id20" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>A DH (m) e a DN (m), entre os pontos A e B no terreno, respectivamente,
 <span class="math notranslate nohighlight">\(\mathrm{DH}_{\mathrm{AB}}\)</span> e <span class="math notranslate nohighlight">\(\mathrm{DN}_{\mathrm{AB}}\)</span>, quando
 se trabalha com ângulos zenitais (<span class="math notranslate nohighlight">\(z\)</span>), são dadas por:</p>
 <div class="math notranslate nohighlight" id="equation-eq-taqueometria-dh">
-<span class="eqno">(61)<a class="headerlink" href="#equation-eq-taqueometria-dh" title="Permalink to this equation"></a></span>\[\mathrm{DH}_{\mathrm{AB}}=100H\sin^{2}z;\]</div>
+<span class="eqno">(61)<a class="headerlink" href="#equation-eq-taqueometria-dh" title="Permalink to this equation">¶</a></span>\[\mathrm{DH}_{\mathrm{AB}}=100H\sin^{2}z;\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-taqueometria-dn">
-<span class="eqno">(62)<a class="headerlink" href="#equation-eq-taqueometria-dn" title="Permalink to this equation"></a></span>\[\mathrm{DN}_{\mathrm{AB}}=\frac{100H\sin2z}{2}+\mathit{ai}-\mathit{rm},\]</div>
+<span class="eqno">(62)<a class="headerlink" href="#equation-eq-taqueometria-dn" title="Permalink to this equation">¶</a></span>\[\mathrm{DN}_{\mathrm{AB}}=\frac{100H\sin2z}{2}+\mathit{ai}-\mathit{rm},\]</div>
 <p>em que: <span class="math notranslate nohighlight">\(ai\)</span> é a altura do instrumento (m); <span class="math notranslate nohighlight">\(H=(rs-ri)\)</span>;
 <span class="math notranslate nohighlight">\(rs\)</span>, :math:<cite>rm</cite> e <span class="math notranslate nohighlight">\(ri\)</span>, respectivamente, retículo
 superior, médio e inferior (m); e <span class="math notranslate nohighlight">\(z\)</span>, o ângulo zenital <span class="math notranslate nohighlight">\((^{\circ})\)</span>.
@@ -542,7 +509,7 @@ para o cálculo do retículo faltante. Na <a class="reference internal" href="#f
 observa-se que a separação entre o <span class="math notranslate nohighlight">\(rm\)</span> aos <span class="math notranslate nohighlight">\(rs\)</span> e <span class="math notranslate nohighlight">\(ri\)</span>, são as
 mesmas, <span class="math notranslate nohighlight">\(h\)</span>, logo:</p>
 <div class="math notranslate nohighlight" id="equation-eq-taqueometria-reticulos">
-<span class="eqno">(63)<a class="headerlink" href="#equation-eq-taqueometria-reticulos" title="Permalink to this equation"></a></span>\[2\mathit{rm}=\mathit{rs}+\mathit{ri}.\]</div>
+<span class="eqno">(63)<a class="headerlink" href="#equation-eq-taqueometria-reticulos" title="Permalink to this equation">¶</a></span>\[2\mathit{rm}=\mathit{rs}+\mathit{ri}.\]</div>
 <hr class="docutils" />
 <p><span class="exem">Exemplo 5</span> Utilizando um teodolito estacionado no ponto A,
 de altitude de <span class="math notranslate nohighlight">\(456,785\,\text{m}\)</span>  e <span class="math notranslate nohighlight">\(ai=1,65\,\text{m}\)</span>, fez-se uma visada ao ponto
@@ -558,9 +525,9 @@ Da Equação <a class="reference internal" href="#equation-eq-taqueometria-dh">(
 </section>
 <hr class="docutils" />
 <section id="medidor-eletronico-de-distancia-med">
-<h2>Medidor Eletrônico de Distância (MED)<a class="headerlink" href="#medidor-eletronico-de-distancia-med" title="Link permanente para este título"></a></h2>
+<h2>Medidor Eletrônico de Distância (MED)<a class="headerlink" href="#medidor-eletronico-de-distancia-med" title="Link permanente para este título">¶</a></h2>
 <section id="radiacao-eletromagnetica">
-<h3>Radiação eletromagnética<a class="headerlink" href="#radiacao-eletromagnetica" title="Link permanente para este título"></a></h3>
+<h3>Radiação eletromagnética<a class="headerlink" href="#radiacao-eletromagnetica" title="Link permanente para este título">¶</a></h3>
 <p>Considerando a <strong>radiação eletromagnética</strong> (REM),
 com comportamento de onda, ela será composta de dois campos perpendiculares
 entre si, o campo magnético e o campo elétrico, que viajam na direção
@@ -570,18 +537,18 @@ A REM que trabalhamos não viaja no vácuo, e sim submetida às condições
 atmosféricas, logo com velocidade menor que <span class="math notranslate nohighlight">\(c\)</span>. A velocidade da
 luz, sob condições de de um meio refratário <span class="math notranslate nohighlight">\((V)\)</span>, será de:</p>
 <div class="math notranslate nohighlight" id="equation-eq-velocidadeluzvacuo">
-<span class="eqno">(64)<a class="headerlink" href="#equation-eq-velocidadeluzvacuo" title="Permalink to this equation"></a></span>\[V=\frac{c}{\eta},\]</div>
+<span class="eqno">(64)<a class="headerlink" href="#equation-eq-velocidadeluzvacuo" title="Permalink to this equation">¶</a></span>\[V=\frac{c}{\eta},\]</div>
 <p>em que, <span class="math notranslate nohighlight">\(\eta\)</span> é o índice de refração da atmosfera, entre
 <span class="math notranslate nohighlight">\(1,0001\)</span> e <span class="math notranslate nohighlight">\(1,0005\)</span>. O comprimento de onda (<span class="math notranslate nohighlight">\(\lambda\)</span>, m) da REM é definido
 como a distância que separa dois pontos que nela se repete. A relação
 de <span class="math notranslate nohighlight">\(V\)</span> com o <span class="math notranslate nohighlight">\(\lambda\)</span> e a frequência (<span class="math notranslate nohighlight">\(f\)</span>, Hz, onde Hz é a abreviação de hertz, unidade de frequência igual a 1 ciclo
 por segundo <span class="math notranslate nohighlight">\((\text{s}^{-1})\)</span>):</p>
 <div class="math notranslate nohighlight" id="equation-eq-velocidadedaluzatmosfera">
-<span class="eqno">(65)<a class="headerlink" href="#equation-eq-velocidadedaluzatmosfera" title="Permalink to this equation"></a></span>\[V=\lambda f,\]</div>
+<span class="eqno">(65)<a class="headerlink" href="#equation-eq-velocidadedaluzatmosfera" title="Permalink to this equation">¶</a></span>\[V=\lambda f,\]</div>
 <figure class="align-center" id="id21">
 <span id="fig-rem-png"></span><a class="reference internal image-reference" href="../_images/fig_rem.png"><img alt="fig_rem.png" src="../_images/fig_rem.png" style="width: 471.09999999999997px; height: 262.5px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 52 </span><span class="caption-text">Representação da radiação eletromagnética como onda.</span><a class="headerlink" href="#id21" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 52 </span><span class="caption-text">Representação da radiação eletromagnética como onda.</span><a class="headerlink" href="#id21" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Normalmente a frequência de trabalho da REM nos medidores
@@ -601,7 +568,7 @@ Das Equações <a class="reference internal" href="#equation-eq-velocidadeluzvac
 </section>
 <hr class="docutils" />
 <section id="principio-de-funcionamento-do-med">
-<h3>Princípio de funcionamento do MED<a class="headerlink" href="#principio-de-funcionamento-do-med" title="Link permanente para este título"></a></h3>
+<h3>Princípio de funcionamento do MED<a class="headerlink" href="#principio-de-funcionamento-do-med" title="Link permanente para este título">¶</a></h3>
 <p>O medidor eletrônico de distância (MED)
 é um equipamento que está presente nas estações totais. O MED emite
 a REM na direção de um refletor, sendo refletida de volta ao equipamento,
@@ -620,16 +587,16 @@ do comprimento de onda (<span class="math notranslate nohighlight">\(\Delta\lamb
 um <span class="math notranslate nohighlight">\(\lambda\)</span> inteiro. Como o sinal percorreu a distância de ida e
 volta estação prisma, divide-se resultado por dois, ou seja:</p>
 <div class="math notranslate nohighlight" id="equation-eq-distanciamed">
-<span class="eqno">(66)<a class="headerlink" href="#equation-eq-distanciamed" title="Permalink to this equation"></a></span>\[d=\frac{n\lambda+\Delta\lambda}{2},\]</div>
+<span class="eqno">(66)<a class="headerlink" href="#equation-eq-distanciamed" title="Permalink to this equation">¶</a></span>\[d=\frac{n\lambda+\Delta\lambda}{2},\]</div>
 <p>Para a determinação de <span class="math notranslate nohighlight">\(\Delta\lambda\)</span>, o equipamento é capaz de
 medir a diferença de fase (<span class="math notranslate nohighlight">\(\varphi\)</span>), que é a diferença na unidade
 de ângulo do ângulo da REM de saída e o de chegada. Sabendo-se que
 um ciclo completo da onda em graus e radianos, <span class="math notranslate nohighlight">\(360^{\circ}\)</span> e <span class="math notranslate nohighlight">\(2\pi\)</span>, respectivamente,
 equivale a um <span class="math notranslate nohighlight">\(\lambda\)</span>, então:</p>
 <div class="math notranslate nohighlight" id="equation-eq-diferencadefase">
-<span class="eqno">(67)<a class="headerlink" href="#equation-eq-diferencadefase" title="Permalink to this equation"></a></span>\[\Delta\lambda=\frac{\varphi}{360^{\circ}}\lambda,\]</div>
+<span class="eqno">(67)<a class="headerlink" href="#equation-eq-diferencadefase" title="Permalink to this equation">¶</a></span>\[\Delta\lambda=\frac{\varphi}{360^{\circ}}\lambda,\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-diferencadefaseangulorad">
-<span class="eqno">(68)<a class="headerlink" href="#equation-eq-diferencadefaseangulorad" title="Permalink to this equation"></a></span>\[\Delta\lambda=\frac{\varphi}{2\pi}\lambda,\]</div>
+<span class="eqno">(68)<a class="headerlink" href="#equation-eq-diferencadefaseangulorad" title="Permalink to this equation">¶</a></span>\[\Delta\lambda=\frac{\varphi}{2\pi}\lambda,\]</div>
 <p><span class="math notranslate nohighlight">\(\varphi\)</span> a mudança de fase da onda entre a onda
 emitida e a onda recebida (<span class="math notranslate nohighlight">\(^{\circ}\)</span>), em graus e radianos
 (Equação <a class="reference internal" href="#equation-eq-diferencadefaseangulorad">(68)</a>). Na realizade, o MED, para
@@ -639,7 +606,7 @@ distância com precisão milimétrica.</p>
 <figure class="align-center" id="id22">
 <span id="fig-medesquema-png"></span><a class="reference internal image-reference" href="../_images/fig_MEDesquema.png"><img alt="fig_MEDesquema.png" src="../_images/fig_MEDesquema.png" style="width: 424.9px; height: 284.54999999999995px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 53 </span><span class="caption-text">Determinação da <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> e da <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> por meio do MED.</span><a class="headerlink" href="#id22" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 53 </span><span class="caption-text">Determinação da <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> e da <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> por meio do MED.</span><a class="headerlink" href="#id22" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <hr class="docutils" />
@@ -675,25 +642,25 @@ na DH ou na DN. O que se deve fazer é, com o auxílio do ângulo zenital
 de <span class="math notranslate nohighlight">\(ai\)</span> e da altura do prisma, <span class="math notranslate nohighlight">\(ap\)</span>, calcular a DN. De acordo com
 as equações que seguem para os pontos A e B temos, para DH:</p>
 <div class="math notranslate nohighlight" id="equation-eq-meddhz">
-<span class="eqno">(69)<a class="headerlink" href="#equation-eq-meddhz" title="Permalink to this equation"></a></span>\[\mathrm{DH} =d\sin z,\]</div>
+<span class="eqno">(69)<a class="headerlink" href="#equation-eq-meddhz" title="Permalink to this equation">¶</a></span>\[\mathrm{DH} =d\sin z,\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-meddhzalpha">
-<span class="eqno">(70)<a class="headerlink" href="#equation-eq-meddhzalpha" title="Permalink to this equation"></a></span>\[\mathrm{DH} =d\cos\alpha.\]</div>
+<span class="eqno">(70)<a class="headerlink" href="#equation-eq-meddhzalpha" title="Permalink to this equation">¶</a></span>\[\mathrm{DH} =d\cos\alpha.\]</div>
 <figure class="align-center" id="id23">
 <span id="fig-medreducao-png"></span><a class="reference internal image-reference" href="../_images/fig_MEDreducao.png"><img alt="fig_MEDreducao.png" src="../_images/fig_MEDreducao.png" style="width: 539.1px; height: 369.90000000000003px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 54 </span><span class="caption-text">Esquema da redução da distância inclinada obtida pelo MED para DH e DN.</span><a class="headerlink" href="#id23" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 54 </span><span class="caption-text">Esquema da redução da distância inclinada obtida pelo MED para DH e DN.</span><a class="headerlink" href="#id23" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Para a medida de DN, considere <span class="math notranslate nohighlight">\(V\)</span> a distância vertical entre o centro
 do equipamento (C) ao centro do prisma (D). Então, de acordo com o
 ângulo medido, o zenital <span class="math notranslate nohighlight">\((z)\)</span> ou o de inclinação <span class="math notranslate nohighlight">\((\alpha)\)</span>, temos:</p>
 <div class="math notranslate nohighlight" id="equation-eq-medvz">
-<span class="eqno">(71)<a class="headerlink" href="#equation-eq-medvz" title="Permalink to this equation"></a></span>\[V  =d\cos z,\]</div>
+<span class="eqno">(71)<a class="headerlink" href="#equation-eq-medvz" title="Permalink to this equation">¶</a></span>\[V  =d\cos z,\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-medvzalpha">
-<span class="eqno">(72)<a class="headerlink" href="#equation-eq-medvzalpha" title="Permalink to this equation"></a></span>\[V  =d\sin\alpha.\]</div>
+<span class="eqno">(72)<a class="headerlink" href="#equation-eq-medvzalpha" title="Permalink to this equation">¶</a></span>\[V  =d\sin\alpha.\]</div>
 <p>A DN entre o ponto A e B será:</p>
 <div class="math notranslate nohighlight" id="equation-eq-meddnz">
-<span class="eqno">(73)<a class="headerlink" href="#equation-eq-meddnz" title="Permalink to this equation"></a></span>\[\mathrm{DN}=V+ai-ap,\]</div>
+<span class="eqno">(73)<a class="headerlink" href="#equation-eq-meddnz" title="Permalink to this equation">¶</a></span>\[\mathrm{DN}=V+ai-ap,\]</div>
 <p>em que: <span class="math notranslate nohighlight">\(ai\)</span> é a altura do equipamento (m), medida vertical
 do centro da estação total (MED) ao ponto de interesse; <span class="math notranslate nohighlight">\(z\)</span> é o ângulo
 zenital, <span class="math notranslate nohighlight">\(\alpha\)</span> é o ângulo de inclinação; <span class="math notranslate nohighlight">\(ap\)</span> é a altura do primas
@@ -728,7 +695,7 @@ Da Equação <a class="reference internal" href="#equation-eq-meddhz">(69)</a>:<
 </section>
 <hr class="docutils" />
 <section id="fontes-de-erro">
-<h3>Fontes de erro<a class="headerlink" href="#fontes-de-erro" title="Link permanente para este título"></a></h3>
+<h3>Fontes de erro<a class="headerlink" href="#fontes-de-erro" title="Link permanente para este título">¶</a></h3>
 <p>Quando trabalhando de forma adequada com um MED, a precisão deste
 equipamento normalmente é muito alta, por exemplo, precisão de <span class="math notranslate nohighlight">\(\pm(5\mathrm{\,mm}+2\mathrm{\,ppm)}\)</span>,
 isto é, para uma medida, de 5.000 m de distância, o erro esperado
@@ -759,7 +726,7 @@ forma, periodicamente, o equipamento deve ser checado. Este procedimento
 </section>
 </section>
 <section id="exercicios">
-<h2>Exercícios<a class="headerlink" href="#exercicios" title="Link permanente para este título"></a></h2>
+<h2>Exercícios<a class="headerlink" href="#exercicios" title="Link permanente para este título">¶</a></h2>
 <p><span class="exem">1)</span> A distância horizontal real do alinhamento AB é
 de <span class="math notranslate nohighlight">\(82,58\,\text{m}\)</span>; Este alinhamento, ao ser medido com uma trena de comprimento
 nominal de <span class="math notranslate nohighlight">\(20,00\,\text{m}\)</span>, resultou em <span class="math notranslate nohighlight">\(82,42\,\text{m}\)</span>. Determinar o comprimento real
@@ -838,34 +805,117 @@ Q e R.</p>
 </section>
 
 
-           </div>
+            <div class="clearer"></div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
-        <a href="capitulo5.html" class="btn btn-neutral float-left" title="Capitulo 5: Georreferenciamento de imóveis rurais" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="capitulo7.html" class="btn btn-neutral float-right" title="Capitulo 7: Ângulos" accesskey="n" rel="next">Seguinte <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Copyright 2021, Alexandre C Xavier.</p>
-  </div>
-
-  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
-    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
         </div>
       </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
+    <h3><a href="../index.html">Page contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Capitulo 6: Medidas de distância</a><ul>
+<li><a class="reference internal" href="#introducao">Introdução</a></li>
+<li><a class="reference internal" href="#tipos-de-distancias">Tipos de distâncias</a><ul>
+<li><a class="reference internal" href="#influencia-da-curvatura-da-terra-nas-medidas-de-distancia-horizontal">Influência da curvatura da terra nas medidas de distância horizontal</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#medicao-com-trena">Medição com trena</a><ul>
+<li><a class="reference internal" href="#erros-instrumentais">Erros instrumentais</a><ul>
+<li><a class="reference internal" href="#erros-naturais">Erros naturais</a></li>
+<li><a class="reference internal" href="#erro-devido-a-temperatura-de-trabalho-distinta-da-do-padrao">Erro devido à temperatura de trabalho distinta da do padrão</a></li>
+<li><a class="reference internal" href="#erro-devido-a-tensao-de-trabalho-distinta-da-do-padrao">Erro devido à tensão de trabalho distinta da do padrão</a></li>
+<li><a class="reference internal" href="#correcao-do-efeito-combinado-da-temperatura-tensao-e-catenaria">Correção do efeito combinado da temperatura, tensão e catenária</a></li>
+<li><a class="reference internal" href="#procedimento-em-campo-para-medidas-a-trena">Procedimento em campo para medidas à trena</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#medicao-taqueometrica">Medição taqueométrica</a></li>
+<li><a class="reference internal" href="#medidor-eletronico-de-distancia-med">Medidor Eletrônico de Distância (MED)</a><ul>
+<li><a class="reference internal" href="#radiacao-eletromagnetica">Radiação eletromagnética</a></li>
+<li><a class="reference internal" href="#principio-de-funcionamento-do-med">Princípio de funcionamento do MED</a></li>
+<li><a class="reference internal" href="#fontes-de-erro">Fontes de erro</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#exercicios">Exercícios</a></li>
+</ul>
+</li>
+</ul>
 
-</body>
+  </div>
+  <div class="sphinxprev">
+    <h4>Previous page</h4>
+    <p class="topless"><a href="capitulo5.html"
+                          title="Previous page">&larr; Capitulo 5: Georreferenciamento de imóveis rurais</a></p>
+  </div>
+  <div class="sphinxnext">
+    <h4>Next page</h4>
+    <p class="topless"><a href="capitulo7.html"
+                          title="Next page">&rarr; Capitulo 7: Ângulos</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>Esta Página</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/pages/capitulo6.rst.txt"
+            rel="nofollow">Exibir Fonte</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Pesquisa rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                 «
+                <span class="show-for-small">hide menu</span>
+                
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                 »
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegação</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice Geral"
+             >índice</a></li>
+        <li class="right" >
+          <a href="capitulo7.html" title="Capitulo 7: Ângulos"
+             >próximo</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="capitulo5.html" title="Capitulo 5: Georreferenciamento de imóveis rurais"
+             >anterior</a> &nbsp; &nbsp;</li>
+    <li><a href="../index.html">Documentação Livro de Geomática 0.1</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">Capitulo 6: Medidas de distância</a></li> 
+      </ul>
+    </div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Alexandre C Xavier.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.2.0.
+    </div>
+    <!-- cloud_sptheme 1.4 -->
+  </body>
 </html>

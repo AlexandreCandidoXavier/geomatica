@@ -1,95 +1,79 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="pt-PT" >
-<head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Capitulo 5: Georreferenciamento de imóveis rurais &mdash; Documentação Livro de Geomática 0.1</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/table_styling.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/translations.js"></script>
-        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="../_static/js/theme.js"></script>
+
+
+<!DOCTYPE html>
+
+<html lang="pt_PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Capitulo 5: Georreferenciamento de imóveis rurais &#8212; Documentação Livro de Geomática 0.1</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/cloud.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/table_styling.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    
+    
+     
+        <script src="../_static/jquery.cookie.js"></script>
+    
+
+    
+     
+        <script src="../_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="../_static/cloud.js"></script>
+    
+
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Pesquisar" href="../search.html" />
     <link rel="next" title="Capitulo 6: Medidas de distância" href="capitulo6.html" />
     <link rel="prev" title="Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)" href="capitulo4.html" /> 
-</head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegação</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice Geral"
+             accesskey="I">índice</a></li>
+        <li class="right" >
+          <a href="capitulo6.html" title="Capitulo 6: Medidas de distância"
+             accesskey="N">próximo</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="capitulo4.html" title="Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)"
+             accesskey="P">anterior</a> &nbsp; &nbsp;</li>
+    <li><a href="../index.html">Documentação Livro de Geomática 0.1</a> &#187;</li>
 
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> Livro de Geomática
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Pesquisar docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
-              <p class="caption" role="heading"><span class="caption-text">Conteúdo:</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="capitulo1.html">Capitulo 1: Matemática fundamental</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo2.html">Capitulo 2: Unidades métricas, escala e determinação de áreas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo3.html">Capitulo 3: Introdução a geodésia e cartografia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo4.html">Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Capitulo 5: Georreferenciamento de imóveis rurais</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#introducao">Introdução</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#objetivo-e-prazos">Objetivo e prazos</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#profissional-habilitado">Profissional habilitado</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tipos-de-vertices-e-sua-identificacao">Tipos de vértices e sua identificação</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#exercicios">Exercícios</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo6.html">Capitulo 6: Medidas de distância</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo7.html">Capitulo 7: Ângulos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capitulo8.html">Capitulo 8: Poligonal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="referencias.html">Referências</a></li>
-</ul>
+        <li class="nav-item nav-item-this"><a href="">Capitulo 5: Georreferenciamento de imóveis rurais</a></li> 
+      </ul>
+    </div>
+    </div>
+  
 
-        </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Livro de Geomática</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Navegação da página">
-  <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Capitulo 5: Georreferenciamento de imóveis rurais</li>
-      <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/pages/capitulo5.rst.txt" rel="nofollow"> Ver código-fonte da página</a>
-      </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
   <style> .exem {color:blue; font-weight: bold} </style><style> .solucao {font-weight: bold} </style><style> .blue {color:blue} </style><section id="capitulo-5-georreferenciamento-de-imoveis-rurais">
-<span id="rst-capitulo-5"></span><h1>Capitulo 5: Georreferenciamento de imóveis rurais<a class="headerlink" href="#capitulo-5-georreferenciamento-de-imoveis-rurais" title="Link permanente para este título"></a></h1>
+<span id="rst-capitulo-5"></span><h1>Capitulo 5: Georreferenciamento de imóveis rurais<a class="headerlink" href="#capitulo-5-georreferenciamento-de-imoveis-rurais" title="Link permanente para este título">¶</a></h1>
 <section id="introducao">
-<h2>Introdução<a class="headerlink" href="#introducao" title="Link permanente para este título"></a></h2>
+<h2>Introdução<a class="headerlink" href="#introducao" title="Link permanente para este título">¶</a></h2>
 <p>O georreferenciamento de imóveis rurais trata da identificação do
 imóvel, realizado por profissional habilitado onde, no memorial descritivo,
 deve conter as coordenadas dos vértices definidores dos limites. As
@@ -105,7 +89,7 @@ e o Manual Técnico de Limites e Confrontações, publicado pelo INCRA
 (<a class="reference external" href="https://sigef.incra.gov.br/static/documentos/manual_tecnico_limites_confrontacoes_1ed.pdf">disponível aqui</a>) <span id="id5">[<a class="reference internal" href="referencias.html#id30" title="INCRA. MANUAL TÉCNICO DE LIMITES E CONFRONTAÇÕES: georreferenciamento de imóveis rurais. INCRA, 1 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/manual_tecnico_limites_confrontacoes_1ed.pdf.">INCRA13a</a>]</span>.
 Nesta secção será realizada uma breve apresentação do georreferenciamento.</p>
 <section id="objetivo-e-prazos">
-<h3>Objetivo e prazos<a class="headerlink" href="#objetivo-e-prazos" title="Link permanente para este título"></a></h3>
+<h3>Objetivo e prazos<a class="headerlink" href="#objetivo-e-prazos" title="Link permanente para este título">¶</a></h3>
 <p>O objetivo do georreferenciamento de imóveis rurais é o de disponibilizar
 um Cadastro Nacional de Imóveis Rurais (CNIR), sistema único de registro
 de imóveis rurais para o país, tornando os limites das propriedades
@@ -119,32 +103,32 @@ remembramento e em qualquer situação de transferência de imóvel rural,
 os <a class="reference external" href="http://www.planalto.gov.br/ccivil_03/_Ato2011-2014/2011/Decreto/D7620.htm">prazos</a>
 para o georreferenciamento variam de acordo com o tamanho da propriedade
 (Tabela abaixo).</p>
-<table class="styled-table docutils align-default" id="id10">
-<caption><span class="caption-number">Table 5 </span><span class="caption-text">Prazos para o georreferenciamento de imóveis rurais</span><a class="headerlink" href="#id10" title="Permalink to this table"></a></caption>
+<table class="styled-table docutils align-default" id="id16">
+<caption><span class="caption-number">Table 5 </span><span class="caption-text">Prazos para o georreferenciamento de imóveis rurais</span><a class="headerlink" href="#id16" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 47%" />
 <col style="width: 53%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="left-align head"><p>Área</p></th>
+<tr class="row-odd"><th class="center-align head"><p>Área</p></th>
 <th class="center-align head"><p>Prazo</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="left-align"><p><span class="math notranslate nohighlight">\(100\vdash250\)</span></p></td>
+<tr class="row-even"><td class="center-align"><p><span class="math notranslate nohighlight">\(100\vdash250\)</span></p></td>
 <td class="right-align"><p>20 de novembro de 2016</p></td>
 </tr>
-<tr class="row-odd"><td class="left-align"><p><span class="math notranslate nohighlight">\(25\vdash100\)</span></p></td>
+<tr class="row-odd"><td class="center-align"><p><span class="math notranslate nohighlight">\(25\vdash100\)</span></p></td>
 <td class="right-align"><p>20 de novembro de 2019</p></td>
 </tr>
-<tr class="row-even"><td class="left-align"><p><span class="math notranslate nohighlight">\(&lt;25\)</span></p></td>
+<tr class="row-even"><td class="center-align"><p><span class="math notranslate nohighlight">\(&lt;25\)</span></p></td>
 <td class="right-align"><p>20 de novembro de 2023</p></td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="profissional-habilitado">
-<h3>Profissional habilitado<a class="headerlink" href="#profissional-habilitado" title="Link permanente para este título"></a></h3>
+<h3>Profissional habilitado<a class="headerlink" href="#profissional-habilitado" title="Link permanente para este título">¶</a></h3>
 <p>O georreferenciamento só pode ser realizado por profissional habilitado,
 com registro no Conselho Regional de Engenharia e Arquitetura
 (CREA, a entidade autárquica de fiscalização do exercício e das atividades
@@ -173,11 +157,34 @@ Engenheiro Civil; Engenheiro Florestal; Engenheiro Agrícola; Engenheiro
 de Minas e Geólogo.</p>
 </section>
 <section id="tipos-de-vertices-e-sua-identificacao">
-<h3>Tipos de vértices e sua identificação<a class="headerlink" href="#tipos-de-vertices-e-sua-identificacao" title="Link permanente para este título"></a></h3>
+<h3>Tipos de vértices e sua identificação<a class="headerlink" href="#tipos-de-vertices-e-sua-identificacao" title="Link permanente para este título">¶</a></h3>
 <p>Para a definição dos limites do imóvel rural são utilizados vértices
 (vértice é “<strong>É  o  ponto  onde  a  linha  limítrofe  do  imóvel  rural  muda  de  direção  ou  onde  existe
 interseção desta linha com qualquer outra linha limítrofe de imóvel contíguo</strong>” <span id="id7">[<a class="reference internal" href="referencias.html#id29" title="INCRA. Manual Técnico de Posicionamento: georreferenciamento de imóveis rurais. INCRA, 1 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/manual_tecnico_posicionamento_1ed.pdf.">INCRA13b</a>]</span>),
 sendo que estes podem ser de diferentes tipos, conforme Tabela abaixo.</p>
+<table class="styled-table docutils align-default" id="id17">
+<caption><span class="caption-number">Table 6 </span><span class="caption-text">Tipos de vértices no georreferenciamento de imóveis rurais (ver <span id="id8">INCRA [<a class="reference internal" href="referencias.html#id30" title="INCRA. MANUAL TÉCNICO DE LIMITES E CONFRONTAÇÕES: georreferenciamento de imóveis rurais. INCRA, 1 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/manual_tecnico_limites_confrontacoes_1ed.pdf.">INCRA13a</a>]</span>).</span><a class="headerlink" href="#id17" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 89%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="center-align head"><p>Tipo</p></th>
+<th class="center-align head"><p>Característica</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="center-align"><p><strong>M</strong></p></td>
+<td class="right-align"><p>medido, materializado e codificado em campo</p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p><strong>P</strong></p></td>
+<td class="right-align"><p>medido, mais não materializado</p></td>
+</tr>
+<tr class="row-even"><td class="center-align"><p><strong>V</strong></p></td>
+<td class="right-align"><p>determinado indiretamente e não materializado</p></td>
+</tr>
+</tbody>
+</table>
 <p>A seguir é apresentada uma descrição dos tipos de vértices com uma
 descrição.</p>
 <ul class="simple">
@@ -214,10 +221,10 @@ vértice medido pelo técnico <span class="math notranslate nohighlight">\(\bf{M
 de imóveis rurais. Quando, no georreferenciamento do imóvel, um ou
 mais vértices já foram credenciados no INCRA, deve-se respeitar o
 código do vértice já existente e não gerar um novo.</p>
-<figure class="align-center" id="id11">
+<figure class="align-center" id="id18">
 <span id="modelo-plaqueta-png"></span><a class="reference internal image-reference" href="../_images/Modelo_plaqueta.png"><img alt="Modelo_plaqueta.png" src="../_images/Modelo_plaqueta.png" style="width: 367.2px; height: 173.4px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 41 </span><span class="caption-text">Modelo da plaqueta retirado do <span id="id8">INCRA [<a class="reference internal" href="referencias.html#id29" title="INCRA. Manual Técnico de Posicionamento: georreferenciamento de imóveis rurais. INCRA, 1 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/manual_tecnico_posicionamento_1ed.pdf.">INCRA13b</a>]</span>.</span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figura 41 </span><span class="caption-text">Modelo da plaqueta retirado do <span id="id9">INCRA [<a class="reference internal" href="referencias.html#id29" title="INCRA. Manual Técnico de Posicionamento: georreferenciamento de imóveis rurais. INCRA, 1 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/manual_tecnico_posicionamento_1ed.pdf.">INCRA13b</a>]</span>.</span><a class="headerlink" href="#id18" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Para a Norma, medidas de distância, área e azimute, são aqueles calculados
@@ -237,17 +244,166 @@ são realizadas medições de ângulos e distâncias por meio de estações
 totais. Os métodos a serem empregados e equipamentos
 que poderão ser utilizados, variam conforme o objetivo o tipo de poligonal,
 levantamento por irradiação ou triangulação. Para todos os metodos
-viáveis, ver tabela abaixo e o seu detalamento em <span id="id9">INCRA [<a class="reference internal" href="referencias.html#id29" title="INCRA. Manual Técnico de Posicionamento: georreferenciamento de imóveis rurais. INCRA, 1 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/manual_tecnico_posicionamento_1ed.pdf.">INCRA13b</a>]</span>.</p>
+viáveis, ver tabela abaixo e o seu detalamento em <span id="id10">INCRA [<a class="reference internal" href="referencias.html#id29" title="INCRA. Manual Técnico de Posicionamento: georreferenciamento de imóveis rurais. INCRA, 1 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/manual_tecnico_posicionamento_1ed.pdf.">INCRA13b</a>]</span>.</p>
+<table class="styled-table docutils align-default" id="id19">
+<caption><span class="caption-number">Table 7 </span><span class="caption-text">Tipos de posicionamentos que podem ser realizados no georreferenciamento.</span><a class="headerlink" href="#id19" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 83%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="center-align head"><p>Código</p></th>
+<th class="center-align head"><p>Método de Posicionamento</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="center-align"><p>PG1</p></td>
+<td class="right-align"><p>Relativo estático</p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p>PG2</p></td>
+<td class="right-align"><p>Relativo estático-rápido</p></td>
+</tr>
+<tr class="row-even"><td class="center-align"><p>PG6</p></td>
+<td class="right-align"><p>RTK convencional</p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p>PG7</p></td>
+<td class="right-align"><p>RTK em rede</p></td>
+</tr>
+<tr class="row-even"><td class="center-align"><p>PG9</p></td>
+<td class="right-align"><p>Posicionamento por Ponto Preciso</p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p>PT1</p></td>
+<td class="right-align"><p>Poligonação</p></td>
+</tr>
+<tr class="row-even"><td class="center-align"><p>PT2</p></td>
+<td class="right-align"><p>Triangulação</p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p>PT3</p></td>
+<td class="right-align"><p>Trilateração</p></td>
+</tr>
+<tr class="row-even"><td class="center-align"><p>PT4</p></td>
+<td class="right-align"><p>Triangulateração</p></td>
+</tr>
+</tbody>
+</table>
+<table class="styled-table docutils align-default" id="id20">
+<caption><span class="caption-number">Table 8 </span><span class="caption-text">Métodos de posicionamento de acordo com a aplicação <span id="id11">[<a class="reference internal" href="referencias.html#id29" title="INCRA. Manual Técnico de Posicionamento: georreferenciamento de imóveis rurais. INCRA, 1 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/manual_tecnico_posicionamento_1ed.pdf.">INCRA13b</a>]</span>.</span><a class="headerlink" href="#id20" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 39%" />
+<col style="width: 54%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="center-align head"><p>Código</p></th>
+<th class="center-align head"><p>Método de Posicionamento</p></th>
+<th class="center-align head"><p>Aplicação</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="center-align"><p>PG1</p></td>
+<td class="right-align"><p>Relativo estático</p></td>
+<td class="right-align"><p>Limite Artificial ou Natural</p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p>PG2</p></td>
+<td class="right-align"><p>Relativo estático-rápido</p></td>
+<td class="right-align"><p>Limite Artificial ou Natural</p></td>
+</tr>
+<tr class="row-even"><td class="center-align"><p>PG3</p></td>
+<td class="right-align"><p>Relativo semicinemático</p></td>
+<td class="right-align"><p>Limite Artificial ou Natural</p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p>PG4</p></td>
+<td class="right-align"><p>Relativo cinemático</p></td>
+<td class="right-align"><p>Limite Artificial ou Natural</p></td>
+</tr>
+<tr class="row-even"><td class="center-align"><p>PG5</p></td>
+<td class="right-align"><p>Relativo a partir do código C/A</p></td>
+<td class="right-align"><p>Limite Natural</p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p>PG6</p></td>
+<td class="right-align"><p>RTK convencional</p></td>
+<td class="right-align"><p>Limite Artificial ou Natural</p></td>
+</tr>
+<tr class="row-even"><td class="center-align"><p>PG7</p></td>
+<td class="right-align"><p>RTK em rede</p></td>
+<td class="right-align"><p>Limite Artificial ou Natural</p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p>PG8</p></td>
+<td class="right-align"><p>Differential GPS (DGPS)</p></td>
+<td class="right-align"><p>Limite Natural</p></td>
+</tr>
+<tr class="row-even"><td class="center-align"><p>PG9</p></td>
+<td class="right-align"><p>Posicionamento por Ponto Preciso</p></td>
+<td class="right-align"><p>Limite Artificial ou Natural</p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p>PT1</p></td>
+<td class="right-align"><p>Poligonação</p></td>
+<td class="right-align"><p>Limite Artificial ou Natural</p></td>
+</tr>
+<tr class="row-even"><td class="center-align"><p>PT2</p></td>
+<td class="right-align"><p>Triangulação</p></td>
+<td class="right-align"><p>Limite Artificial ou Natural</p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p>PT3</p></td>
+<td class="right-align"><p>Trilateração</p></td>
+<td class="right-align"><p>Limite Artificial ou Natural</p></td>
+</tr>
+<tr class="row-even"><td class="center-align"><p>PT4</p></td>
+<td class="right-align"><p>Triangulateração</p></td>
+<td class="right-align"><p>Limite Artificial ou Natural</p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p>PT5</p></td>
+<td class="right-align"><p>Irradiação</p></td>
+<td class="right-align"><p>Limite Artificial ou Natural</p></td>
+</tr>
+<tr class="row-even"><td class="center-align"><p>PT6</p></td>
+<td class="right-align"><p>Interseção linear</p></td>
+<td class="right-align"><p>Limite Artificial ou Natural</p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p>PT7</p></td>
+<td class="right-align"><p>Interseção angular</p></td>
+<td class="right-align"><p>Limite Artificial ou Natural</p></td>
+</tr>
+<tr class="row-even"><td class="center-align"><p>PT8</p></td>
+<td class="right-align"><p>Alinhamento</p></td>
+<td class="right-align"><p>Limite Artificial ou Natural</p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p>PA1</p></td>
+<td class="right-align"><p>Paralela</p></td>
+<td class="right-align"><p>Limite Artificial ou Natural</p></td>
+</tr>
+<tr class="row-even"><td class="center-align"><p>PA2</p></td>
+<td class="right-align"><p>Interseção de Retas</p></td>
+<td class="right-align"><p>Limite Artificial ou Natural</p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p>PS1</p></td>
+<td class="right-align"><p>Aerofotogrametria</p></td>
+<td class="right-align"><p>Limite Artificial <a class="footnote-reference brackets" href="#f1" id="id12">1</a>, Natural ou Inacessível</p></td>
+</tr>
+<tr class="row-even"><td class="center-align"><p>PS2</p></td>
+<td class="right-align"><p>Radar aerotransportado</p></td>
+<td class="right-align"><p>Limite Artificial <a class="footnote-reference brackets" href="#f1" id="id13">1</a>, Natural ou Inacessível</p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p>PS3</p></td>
+<td class="right-align"><p>Laser scanner aerotransportado</p></td>
+<td class="right-align"><p>Limite Artificial <a class="footnote-reference brackets" href="#f1" id="id14">1</a>, Natural ou Inacessível</p></td>
+</tr>
+<tr class="row-even"><td class="center-align"><p>PS4</p></td>
+<td class="right-align"><p>Sensores orbitais</p></td>
+<td class="right-align"><p>Limite Artificial <a class="footnote-reference brackets" href="#f1" id="id15">1</a>, Natural ou Inacessível</p></td>
+</tr>
+</tbody>
+</table>
 <p class="rubric">Footnotes</p>
 <dl class="footnote brackets">
-<dt class="label" id="f1"><span class="brackets">1</span></dt>
+<dt class="label" id="f1"><span class="brackets">1</span><span class="fn-backref">(<a href="#id12">1</a>,<a href="#id13">2</a>,<a href="#id14">3</a>,<a href="#id15">4</a>)</span></dt>
 <dd><p>Com exceção de vértices tipo M e limites por cerca.</p>
 </dd>
 </dl>
 </section>
 </section>
 <section id="exercicios">
-<h2>Exercícios<a class="headerlink" href="#exercicios" title="Link permanente para este título"></a></h2>
+<h2>Exercícios<a class="headerlink" href="#exercicios" title="Link permanente para este título">¶</a></h2>
 <p><span class="exem">1)</span> O que é o georreferenciamento de imóveis rurais?</p>
 <hr class="docutils" />
 <p><span class="exem">2)</span> Quais são os prazos para o georreferenciamento
@@ -261,34 +417,100 @@ codificação?</p>
 </section>
 
 
-           </div>
+            <div class="clearer"></div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
-        <a href="capitulo4.html" class="btn btn-neutral float-left" title="Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="capitulo6.html" class="btn btn-neutral float-right" title="Capitulo 6: Medidas de distância" accesskey="n" rel="next">Seguinte <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Copyright 2021, Alexandre C Xavier.</p>
-  </div>
-
-  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
-    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
         </div>
       </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
+    <h3><a href="../index.html">Page contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Capitulo 5: Georreferenciamento de imóveis rurais</a><ul>
+<li><a class="reference internal" href="#introducao">Introdução</a><ul>
+<li><a class="reference internal" href="#objetivo-e-prazos">Objetivo e prazos</a></li>
+<li><a class="reference internal" href="#profissional-habilitado">Profissional habilitado</a></li>
+<li><a class="reference internal" href="#tipos-de-vertices-e-sua-identificacao">Tipos de vértices e sua identificação</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#exercicios">Exercícios</a></li>
+</ul>
+</li>
+</ul>
 
-</body>
+  </div>
+  <div class="sphinxprev">
+    <h4>Previous page</h4>
+    <p class="topless"><a href="capitulo4.html"
+                          title="Previous page">&larr; Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)</a></p>
+  </div>
+  <div class="sphinxnext">
+    <h4>Next page</h4>
+    <p class="topless"><a href="capitulo6.html"
+                          title="Next page">&rarr; Capitulo 6: Medidas de distância</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>Esta Página</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/pages/capitulo5.rst.txt"
+            rel="nofollow">Exibir Fonte</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Pesquisa rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                 «
+                <span class="show-for-small">hide menu</span>
+                
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                 »
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegação</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice Geral"
+             >índice</a></li>
+        <li class="right" >
+          <a href="capitulo6.html" title="Capitulo 6: Medidas de distância"
+             >próximo</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="capitulo4.html" title="Capitulo 4: Sistemas Globais de Navegação por Satélite (GNSS)"
+             >anterior</a> &nbsp; &nbsp;</li>
+    <li><a href="../index.html">Documentação Livro de Geomática 0.1</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">Capitulo 5: Georreferenciamento de imóveis rurais</a></li> 
+      </ul>
+    </div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Alexandre C Xavier.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.2.0.
+    </div>
+    <!-- cloud_sptheme 1.4 -->
+  </body>
 </html>
