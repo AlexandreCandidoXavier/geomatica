@@ -1014,7 +1014,7 @@ Exercícios
 de ré e vante, respectivamente, nos pontos 1 e 3, com a luneta na posição
 direta e inversa, conforme a Tabela \ref{tab:metododasdirecoes}.
 
-p
+t
 
 .. rst-class:: plain
 
