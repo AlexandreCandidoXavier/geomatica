@@ -118,7 +118,7 @@ Todavia, devido aos erros instrumentais, deve-se considerar a média
 de várias medidas de :math:`\alpha`, com a luneta na posição direta e inversa
 (ver secção :ref:`Ângulo vertical`).
 Neste texto será apresentado o método das direções, que é o previsto
-para ser utilizado pela \citeonline{NBR13133} na medição de ângulos.
+para ser utilizado pela :cite:t:`NBR13133` na medição de ângulos.
 Para outros métodos, pode-se consultar, :cite:t:`loch`, :cite:t:`golcalves` e :cite:t:`WOLF`.
 
 .. _Método das direções:
@@ -154,7 +154,7 @@ de ré quando a luneta está na posição inversa, não é realizado quando
 utiliza-se o teodolito do tipo ótico mecânico. Uma vez que o método
 das direções visa medir os ângulos horizontais em diferentes posições
 do limbo destes equipamentos. Para maiores informações, consultar
-cite:t:`NBR13133`, página 3.
+:cite:t:`NBR13133`, página 3.
 
 .. _fig_metododasdirecoes.png:
 
@@ -1014,7 +1014,7 @@ Exercícios
 de ré e vante, respectivamente, nos pontos 1 e 3, com a luneta na posição
 direta e inversa, conforme a Tabela \ref{tab:metododasdirecoes}.
 
-a
+p
 
 .. rst-class:: plain
 

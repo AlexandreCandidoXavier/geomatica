@@ -725,14 +725,14 @@ dos erros.
 Erro devido ao satélite
 -----------------------
 
-#. **Relógio do satélite**: o erro devido
+-  **Relógio do satélite**: o erro devido
    ao relógio do satélite é modelado, por: :math:`{\delta^{s}(t)=a_{0}+a_{1}(t-t_{0})+a_{2}(t-t_{0})^{2}}`,
    em que: {:math:`\delta^{s}(t)`} é o erro do satélite
    na época :math:`t;` :math:`t_{0}` é a época de referência do relógio do satélite;
    :math:`a_{0},\,a_{1}` e :math:`a_{2}` são parâmetros do modelo, sendo enviados
    na mensagem do satélite, juntamente com :math:`t_{0}`. Se for utilizado
    o posicionamento relativo este erro pode ser anulado (ver :ref:`sec_Tipos-de-posicionamento`).
-#. **Órbita do satélite**: devido a variação
+-  **Órbita do satélite**: devido a variação
    da força gravitacional da terra e da variação das marés, por exemplo,
    as efemérides enviadas pelos satélites, que são utilizadas para determinação
    de suas posições, podem não resultar nas suas corretas posições no

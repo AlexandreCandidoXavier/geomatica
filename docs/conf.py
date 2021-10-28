@@ -30,6 +30,7 @@ if csp.is_cloud_theme(html_theme):
         borderless_decor=True,
         sidebarwidth="2in",
         hyphenation_language='pt_PT',
+        default_layout_text_size="150%",
     )
 
 # Add any paths that contain custom themes here, relative to this directory.
