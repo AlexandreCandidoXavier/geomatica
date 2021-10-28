@@ -158,7 +158,7 @@ Ao longo do tempo, vários elipsoides foram definidos, pois as medidas
 da dimensão terra eram aperfeiçoadas. Os elipsoides podem ser utilizados
 em nível local ou mundial, onde se estabelecem medidas de :math:`a` e :math:`f`,
 de forma a melhor se ajustar ao geóide local ou mundial, respectivamente.
-Na Tabela\ \ref{tab:elipsoides} são apresentados alguns parâmetros
+Na Tabela abaixo são apresentados alguns parâmetros
 de elipsoides e o local em que ele é ou foi utilizado
 :cite:p:`smith1997introduction`.
 
@@ -232,7 +232,7 @@ Coordenada geodésica cartesiana
 Um outro meio de estabelecer a localização espacial de um ponto, por
 exemplo o :math:`P`, a um determinado elipsóide, é por meio de sua coordenada
 geodésica cartesiana (:math:`x_{P},\,y_{P},\,z_{P}`), também denominado
-de sistema de coordenada geocêntrico\index{Coordenada!Geocêntrico}.
+de sistema de coordenada geocêntrica.
 Este é o sistema onde primeiramente a coordenada de um ponto é determinada
 pelos receptores GNSS. As coordenadas geodésicas retangulares também
 são utilizadas para efetuar transformação de coordenadas entre elipsoides.
@@ -242,7 +242,7 @@ Definiremos primeiro a origem do sistema e os eixos-:math:`x`, -:math:`y` e
 que coincide com o semieixo menor do elipsóide, eixo de rotação; o
 eixo-:math:`x` é aquele dado pela intersecção do plano do Equador com o
 meridiano de Grw; e o eixo-:math:`y` formando um diedro com os outros eixos
-(Figura\ \ref{fig:coordenadasretangulares}). Quando as coordenadas
+(:numref:`fig_coordenadasretangulares`). Quando as coordenadas
 Geodésicas são conhecidas, utilizam-se Equações :eq:`eq_cart_x` a :eq:`eq_grande_normal`
 para convertê-las retangulares.
 
@@ -260,7 +260,7 @@ para convertê-las retangulares.
 
 
 em que: :math:`N` é denominado de grande normal, correspondendo
-ao comprimento da vertical que passa por :math:`P'` ao eixo-z (Figura\ \ref{fig:coordenadasretangulares})
+ao comprimento da vertical que passa por :math:`P'` ao eixo-z (:numref:`fig_coordenadasretangulares`)
 dado por:
 
 .. math::
@@ -346,7 +346,7 @@ ao raio no paralelo analisado.
 ----
 
 :exem:`Exemplo 3` A partir das coordenadas
-retangulares do Exemplo \ref{exem:coorde_geode_retang}, referentes
+retangulares do Exemplo 2, referentes
 ao sistema WGS84, encontrar as coordenadas geodésicas :math:`\phi,\text{ }\lambda\text{ e }h`.
 
 :solucao:`Solução:` Sabendo-se que :math:`a=6.378.137,0\,\text{m}` e :math:`b=6.356.752,3\,\text{m}`
@@ -455,16 +455,16 @@ em apenas uma porção.
 
    Datum horizontal do tipo topocêntrico e geocêntrico.
 
-Como dito anteriormente, o SGB é dinâmico, o Brasil já teve o \index{Datum horizontal!Córrego Alegre}Datum
+Como dito anteriormente, o SGB é dinâmico, o Brasil já teve o Datum
 horizontal denominado de Córrego Alegre, que tinha como figura geométrica
 da terra o elipsóide Hayford 1924 (Tabela 2).
-Atualmente o Brasil adota dois Data\footnote{Data é o plural de Datum.},
+Atualmente o Brasil adota dois Data [#f2]_,
 o SAD69 (SAD é a abreviação de *South American Datum*, Datum Sul Americano)
 e o SIRGA2000 (SIRGAS é a abreviação de **Sistema de Referência Geocêntrico para
 as Américas**) . As características do SAD69 e do SISGAS2000 :cite:p:`IBGE:sgb` são
 apresentadas abaixo:
 
-Para o Datum SAD69\index{Datum horizontal!SAD69}:
+Para o Datum SAD69:
 
 - Figura geométrica para a Terra: Elipsóide Internacional de 1967; Semi
   eixo maior :math:`a=6.378.160` m; :math:`f=1/298,2`.
@@ -484,8 +484,8 @@ entre altura do elipsóide e do geóide na posição analisada.
 Para o SIRGAS2000:
 
 - Figura geométrica para a Terra: Elipsóide do Sistema Geodésico de
-  Referência de 1980 (*Geodetic Reference System} 1980 -
-  GRS80*) Semieixo maior :math:`{a=\text{6.378.137 m}}`, :math:`f=1/298,257\,222\,101`;
+  Referência de 1980 (*Geodetic Reference System* 1980 -
+  GRS80) Semieixo maior :math:`{a=\text{6.378.137 m}}`, :math:`f=1/298,257\,222\,101`;
 - Origem: Centro de massa da Terra;
 - Orientação: Polos e meridiano de referência consistentes em :math:`\pm0,005''`
   com as direções definidas pelo BIH (*Bureau International de
@@ -553,8 +553,7 @@ Podem-se classificar as projeções cartográficas de acordo com:
 - a superfície utilizada na projeção: **plana** (:numref:`proj_tipos` a, d, g), **cilíndrica** (Figuras b, e, h)
   ou **cônica** (:numref:`proj_tipos` c, f, i). Na prática, a projeção é realizada analiticamente, ou seja, por meio
   de equações matemáticas, que são variantes destas formas geométricas;
-- se é **tangente** ou **secante**
-  (Figura~\ref{fig:proj_tipos_sec});
+- se é **tangente** ou **secante** (:numref:`proj_tipos_sec`);
 - a posição da figura geométrica, por exemplo, caso a projeção seja
   cilíndrica tangente, ela é dita como sendo normal se o cilindro é
   tangente no equador (e.g. :numref:`proj_tipos` b); transversa,
@@ -590,8 +589,8 @@ Projeções que não são **igual área** nem *conforme* são
 denominadas de **afiláticas**. Pode-se citar outros termos que
 descrevem características especiais de projeções:
 
-#. Escala: projeções que mantém a escala em uma ou mais linhas do mapa são denominadas de \textit{equidistante}. Vale salientar que nenhuma projeção é capaz de manter a escala correta em todo mapa;
-#. Direção: são mapas em que uma determinadas direção ou azimute são apresentadas corretamente. Por exemplo, se a direção do azimute é apresentada corretamente entre dois pontos, diz-se que a projeção é \textit{azimutal};
+#. Escala: projeções que mantém a escala em uma ou mais linhas do mapa são denominadas de **equidistante**. Vale salientar que nenhuma projeção é capaz de manter a escala correta em todo mapa;
+#. Direção: são mapas em que uma determinadas direção ou azimute são apresentadas corretamente. Por exemplo, se a direção do azimute é apresentada corretamente entre dois pontos, diz-se que a projeção é **azimutal**;
 
 
 As deformações da projeção só serão visíveis para grandes áreas, como
@@ -631,8 +630,7 @@ na direção leste-oeste, como os Estados Unidos.
    Projeção cônica de Albers (igual área).
 
 
-As fórmulas para a \index{Projeção cartográfica!projeção cônica de Albers}projeção
-cônica de Albers para um esferoide (`a=b`) são apresentadas nas Equações :eq:`eq:proj_albers_igualarea_x`
+As fórmulas para a projeção cônica de Albers para um esferoide :math:`(a=b)` são apresentadas nas Equações :eq:`eq:proj_albers_igualarea_x`
 e :eq:`eq:proj_albers_igualarea_y`, para o modelo da terra sendo
 um esferoide. Para o modelo da terra sendo um elipsóide, consultar
 :cite:p:`snyder1987map`.
@@ -799,7 +797,7 @@ em que:
 
 Sendo :math:`(\phi_{1},\lambda_{0})` são a latitude e a longitude do centro
 da projeção e a origem. O eixo-:math:`y` coincide com o meridiano central,
-crescendo ao norte e diminuindo ao sul. Se :math:`\cos c=1` na Equação\ \ref{eq:proj_azi_equidis_cosc},
+crescendo ao norte e diminuindo ao sul. Se :math:`\cos c=1` na Equação :eq:`eq:proj_azi_equidis_cosc`,
 ela é indeterminada, mas :math:`k'=1`, e :math:`x=y=0.` Se :math:`\cos c=-1` , o
 ponto é oposto ao centro :math:`(-\phi_{1},\lambda_{0}\pm180^{\circ})`.
 As funções inversas são:
@@ -1116,5 +1114,6 @@ Calcular a distância entre eles?
 
 .. rubric:: Footnotes
 
-.. [#f1] baixar em: https://www.usna.edu/Users/oceano/pguth/md_help/html/egm96.htm}},
+.. [#f1] baixar dados em: https://www.usna.edu/Users/oceano/pguth/md_help/html/egm96.htm
 
+.. [#f2] Data é o plural de Datum.

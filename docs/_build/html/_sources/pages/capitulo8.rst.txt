@@ -32,13 +32,15 @@ quanto aos ângulos e distâncias medidas, devem ser verificadas. Neste
 capítulo apresentaremos os procedimentos para determinação e avaliação
 de poligonais.
 
+.. _poligonal_fechada:
+
 Poligonal fechada
 =================
 
 Uma poligonal fechada é aquela que começa e termina no mesmo ponto,
 é matematicamente e geometricamente fechada, permitindo a avaliação
 dos erros angulares e lineares. Um exemplo deste tipo de poligonal
-é apresentado na Figura \ref{fig:PoligonalAbertaNaFechada}, onde
+é apresentado na :numref:`fig_ExemploPoligonalFechada.png`, onde
 os ângulos horizontais são medidos à direita. Os procedimentos para
 a medição dos ângulos horizontais são apresentados no :any:`RST Capitulo7`,
 sendo os medidores eletrônicos, presentes em estações totais, os equipamentos
@@ -69,8 +71,7 @@ apoiada. Na poligonal aberta e apoiada (:numref:`ExemploPoligonalAbertaApoiada`a
 ela começa e termina em alinhamentos conhecidos, onde as suas coordenadas
 foram previamente estabelecidas. Esta poligonal é dita geometricamente
 aberta e matematicamente fechada, sendo possível realizar uma avaliação
-do erro angular de fechamento (ver secção \ref{subsec:Erro-angular-de-fechamento},
-página \pageref{subsec:Erro-angular-de-fechamento}) e do erro linear.
+do erro angular de fechamento (ver secção :ref:`eaf`) e do erro linear.
 Já a poligonal aberta e sem apoio (:numref:`ExemploPoligonalAbertaApoiada`b), não é possível a avaliação dos
 erros angulares e lineares, logo, deve-se evitá-la. Contudo, caso
 ela não possa ser evitada, faz-se necessário realizar as medidas de
@@ -149,6 +150,8 @@ sendo os seus valores anotados na tabela da caderneta de campo.
 
    Caderneta de campo de uma poligonal fechada.
 
+.. _eaf:
+
 Avaliação do erro angular de fechamento
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -162,7 +165,7 @@ Considerando a tolerância máxima do erro angular de fechamento
 conclui-se que os ângulos internos foram medidos dentro dos limites
 admissível de erro, logo, os ângulos internos podem ser compensados.
 A compensação que será aplicada é a linear, conforme apresentada na
-Tabela \ref{tabExemp:compensacaopolofechada}. Note que o método linear
+Tabela abaixo. Note que o método linear
 é indicado quando o comprimento do alinhamentos forem aproximadamente
 constante (ver secção \ref{subsec:Erro-angular-de-fechamento}, página
 \pageref{subsec:Erro-angular-de-fechamento}). Quando isto não ocorrer,
@@ -171,28 +174,10 @@ em que o ângulo foi medido onde, as maiores compensações são aplicadas
 para os comprimentos mais curtos, pois estes estão sujeitos aos maiores
 erros nas suas medidas :cite:`loch`:cite:`WOLF`.
 
-b
-
-.. table:: Column Separators
-    :widths: 1 2 3
-    :header-columns: 1
-    :column-alignment: left center right
-    :column-dividers: none single double single
-    :column-wrapping: nnn
-
-    =========== =========== ===========
-    Width x1    Width x2    :math:`a`
-    =========== =========== ===========
-    Header 1    Center 1    Right 1
-    Header 2    Center 2    Right 2
-    Header 3    Center 3    Right 3
-    =========== =========== ===========
-
-
-
 .. table:: Compensação do erro angular pelo método linear
-    :widths: 1 2 3 4
-    :column-alignment: left right right right
+    :widths: 1 1 1 1
+    :header-alignment: cccc
+    :column-alignment: cccr
 
     ============ ======================================= ================================= ========================================
     Estação      :math:`\sphericalangle` medido          erro médio                        :math:`\sphericalangle` compensado}
@@ -489,9 +474,11 @@ compensadas, tem que resultar em zero.
 
 
 ----
-\begin{itemize}
-\item \textit{cálculo das coordenadas retangulares da poligonal}\index{Poligonal!fechada!coordenadas retangulares}\index{Coordenada!retangular}
-\end{itemize}
+
+
+textit{cálculo das coordenadas retangulares da poligonal
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 A poligonal vai servir de apoio para as medidas dos pontos de detalhe
 do mapeamento logo, o cálculo das suas coordenadas retangulares se
 faz necessário. A partir das coordenadas retangulares, por exemplo,
@@ -507,9 +494,9 @@ onde será utilizada as coordenadas UTM. Em não havendo pontos de apoio
 topográfico, pode-se atribuir uma coordenada a um ponto, tomando-se
 o cuidado dele ter valores suficientemente altos, para não resultar
 em coordenadas retângulares negativas nos outros pontos. Por exemplo
-pode-se adotar no ponto inicial, :math:`x`= 10.000 m e :math:`y`= 10.000 m.
+pode-se adotar no ponto inicial, :math:`x=10.000\,\text{m}` e :math:`y=10.000\,\text{m}`.
 Outros procedimentos para a amarração da poligonal podem ser verificados
-na \citeonline[páginas 7-8]{NBR13133}.
+na :cite:`NBR13133` [páginas 7-8].
 
 Considere um alinhamento hipotético AB, onde são conhecidas, a coordenada
 retangular do ponto A (:math:`x_\mathrm{A},\,x_\mathrm{A}`) e as coordenadas

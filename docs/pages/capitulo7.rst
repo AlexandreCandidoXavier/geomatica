@@ -91,7 +91,7 @@ Alinhamento de vante e ré
 A :numref:`fig_introangulo.png` apresenta a sequência de vértices
 EAB, onde é realizada a medida do ângulo horizontal, no sentido horário,
 :math:`\alpha`, no vértice A. Para a medida de :math:`\alpha`, o ponto E é o
-ponto inicial (**ponto de ré**), onde se realiza a **visada de ré}**,
+ponto inicial (**ponto de ré**), onde se realiza a **visada de ré**,
 enquanto e B, é o ponto final (**ponto de vante**), onde
 é realizada a **visada de vante**. Aos alinhamentos que correspondem
 ao início e ao final das medidas, denominamos de alinhamentos de **ré**
@@ -136,11 +136,11 @@ c. o ângulo horizontal em E pode ser zerado, ou o seu valor lido, teremos :math
 d. com o movimento horizontal e vertical solto, faz-se uma visada aproximada em B, ponto de vante, e com os parafusos micrométricos, depois que os movimentos horizontal e vertical estiverem travados, faz-se a aproximação precisa ao centro do prisma, anotando-se o ângulo horizontal :math:`(L_{\mathrm{PD}}^\mathrm{vante})`. Se na etapa anterior  o ângulo horizonal foi zerado, o ângulo horizontal em B corresponderá a :math:`\alpha` na posição direta, :math:`\alpha_{\mathrm{PD}}`. Se o ângulo horizontal na etapa anterior não foi zerado, o valor de :math:`\alpha_{\mathrm{PD}}` será dado pela diferença dos ângulos horizontais de vante e de ré, no nosso caso,  :math:`\alpha_{\mathrm{PD}}=L_{\mathrm{PD}}^\mathrm{vante}-\mathrm{L}_{\mathrm{PD}}^\mathrm{r\acute{e}}`;
 e. repete-se as estapas b a d, :math:`n` vezes;
 f. coloca-se a luneta na posição inversa (PI), e repete-se as etapas de b a d mais :math:`n`  vezes, onde teremos :math:`n` valores de :math:`\alpha` com a luneta na PI, :math:`\alpha_{\mathrm{PI}}`;
-g. o valor médio de :math:`\alpha` `(\bar{\alpha})`, será a média de todas as medidas na posição direta e inversa:
+g. o valor médio de :math:`\alpha\,(\bar{\alpha})`, será a média de todas as medidas na posição direta e inversa:
 
 .. math::
-   \bar{\alpha} = \frac{\sum_{i=1}^n\left(\alpha_{\mathrm{PD},i}+\alpha_{\mathrm{PI},i}\right)}{2n}=\frac{\sum_{i=1}^n\left(L_{\mathrm{PD,}i}^\mathrm{vante}-L_{\mathrm{PD,}i}^\mathrm{r\acute{e}}+L_{\mathrm{PI,}i}^\mathrm{vante}-\mathrm{L}_{\mathrm{PI,}i}^\mathrm{r\acute{e}}\right)}{2n}
-
+   \bar{\alpha} &= \frac{\sum_{i=1}^n\left(\alpha_{\mathrm{PD},i}+\alpha_{\mathrm{PI},i}\right)}{2n}\\
+   &=\frac{\sum_{i=1}^n\left(L_{\mathrm{PD,}i}^\mathrm{vante}-L_{\mathrm{PD,}i}^\mathrm{r\acute{e}}+L_{\mathrm{PI,}i}^\mathrm{vante}-\mathrm{L}_{\mathrm{PI,}i}^\mathrm{r\acute{e}}\right)}{2n}
 
 Na :numref:`fig_metododasdirecoes.png` é apresentado um exemplo de
 cálculo de um ângulo horizontal entre dois alinhamentos pelo método
@@ -321,10 +321,10 @@ o alinhamento.
 .. math::
    \begin{gathered}\mathrm{Rumo}\end{gathered}
    =\begin{cases}
-   \mathrm{Az} | \mathrm{(NE)\,se\,}\mathrm{0^{\circ}<Az\leq90^{\circ}}
-   \mathrm{180^{\circ}-\mathrm{Az}} | \mathrm{(SE)\,se\,}90^{\circ}<\mathrm{Az}\leq180^{\circ}
-   \mathrm{Az-180}^{\circ} | \mathrm{(SW)\,se\,}180^{\circ}<\mathrm{Az}\leq270
-   360^{\circ}-\mathrm{Az} | \mathrm{(NW)\,se\,}270^{\circ}<\mathrm{Az}\leq360^{\circ}
+   \mathrm{Az} & \mathrm{(NE)\,se\,}\mathrm{0^{\circ}<Az\leq90^{\circ}}\\
+   \mathrm{180^{\circ}-\mathrm{Az}} & \mathrm{(SE)\,se\,}90^{\circ}<\mathrm{Az}\leq180^{\circ}\\
+   \mathrm{Az-180}^{\circ} & \mathrm{(SW)\,se\,}180^{\circ}<\mathrm{Az}\leq270\\
+   360^{\circ}-\mathrm{Az} & \mathrm{(NW)\,se\,}270^{\circ}<\mathrm{Az}\leq360^{\circ}
    \end{cases}
    :label: eq:azimute2rumo
 
@@ -373,7 +373,7 @@ A tolerância para o erro angular de fechamento :math:`(\mathrm{T}\alpha)`
 vária de acordo com finalidade levantamento a ser realizado. Para
 uma poligonal fechada de :math:`n` vértices e apoiada em um só ponto, cuja
 a finalidade é para estudos de viabilidade em projetos de engenharia,
-temos :math:`\mathrm{T}\alpha\leq40''\sqrt{n}`. Para outros casos ver \citeonline{NBR13133}.
+temos :math:`\mathrm{T}\alpha\leq40''\sqrt{n}`. Para outros casos ver :cite:t:`NBR13133`.
 Em se encontrando um erro angular menor do que o estabelecido pela
 norma, é realizada a compensação, que nada mais é do que, a distribuição
 do erro angular de fechamento nos ângulos medidos. 
@@ -439,7 +439,11 @@ da :numref:`fig_ExemploAnguloDexaoInterno.png` pelo método linear.
 Na tabela a seguir, é apresentado o resultado da compensação. Na coluna **I**
 estão os ângulos horizontais medidos em cada um dos vértices; na **II**
 o erro médio e na **III**, o ângulo interno compensado (**I** + **II**).
-Com o erro angular de fechamento de :math:`-45''` (ver exemplo 2), e sendo a poligonal de cinco lados, temos o erro médio de :math:`9''` :math:`(45''/5)`. Note que, como o somatório dos ângulos medidos foi menor do que o teórico, então deve-se somar :math:`9''` a cada um dos vértices. Caso contrário, o somatório das medidas angulares maiores que o teórico, deve-se subtrair.\vspace{.5cm}
+Com o erro angular de fechamento de :math:`-45''` (ver exemplo 2), e sendo a poligonal
+de cinco lados, temos o erro médio de :math:`9''` :math:`(45''/5)`. Note que,
+como o somatório dos ângulos medidos foi menor do que o teórico, então deve-se
+somar :math:`9''` a cada um dos vértices. Caso contrário, o somatório das medidas
+angulares maiores que o teórico, deve-se subtrair.
 
 .. table::
     :header-alignment: cccc
@@ -608,12 +612,14 @@ pode ser determinado como apresentado na Secção :ref:`Conversão de azimutes e
 
 ----
 
-:exem:`Exemplo 5` Dadas as coordenadas UTM, levantados com receptor GNSS, dos pontos A, B, E e F, calcular
-os azimutes e rumos dos alinhamentos AB e EF.
-:math:`\mathrm{A\,(E} = 485\,631\mathrm{~m;~N} = 7\,702\,079\mathrm{~m})`;
-:math:`\mathrm{B\,(E}=485\,701\mathrm{~m;~N}=7\,701\,980\mathrm{~m})`;
-:math:`\mathrm{E\,(E} = 485\,191\mathrm{~m;~N} = 7\,702\,043 \mathrm{~m})`;
-:math:`\mathrm{F\,(E}= 485\,231\mathrm{~m;~N}= 7\,702\,148\mathrm{~m})`.
+:exem:`Exemplo 5` Dadas as coordenadas UTM, levantados com receptor GNSS, dos pontos
+:math:`\mathrm{A}`, :math:`\mathrm{B}`, :math:`\mathrm{E}` e :math:`\mathrm{F}`, calcular
+os azimutes e rumos dos alinhamentos :math:`\mathrm{AB}` e :math:`\mathrm{EF}`.
+
+- :math:`\mathrm{A\,(E} = 485\,631\mathrm{~m;~N} = 7\,702\,079\mathrm{~m})`;
+- :math:`\mathrm{B\,(E}=485\,701\mathrm{~m;~N}=7\,701\,980\mathrm{~m})`;
+- :math:`\mathrm{E\,(E} = 485\,191\mathrm{~m;~N} = 7\,702\,043 \mathrm{~m})`;
+- :math:`\mathrm{F\,(E}= 485\,231\mathrm{~m;~N}= 7\,702\,148\mathrm{~m})`.
 
 :solucao:`Solução:`
 
@@ -678,7 +684,7 @@ Declinação magnética
 
 Parte dos levantamentos topográficos realizados no passado, utilizaram
 como referência da direção norte, aquela observada pelo norte da bússola,
-a qual denomina-se de norte magnético\index{Norte!magnético}. A direção
+a qual denomina-se de norte magnético. A direção
 do norte magnético pode ser definida pela direção longitudinal de
 uma agulha magnetizada livre, apoiada apenas no seu centro. A agulha
 será orientada de acordo com o campo magnético da terra, que tem variação
@@ -691,9 +697,9 @@ da declinação magnética nas diferentes datas.
 A declinação magnética é o ângulo formado entre o norte geodésico
 e o norte magnético local. Quando o norte magnético se encontra à
 direita do norte geodésico, a declinação magnética é positiva e podemos
-abreviar pela letra ``E'' (este). Por outro lado, quando o norte
+abreviar pela letra 'E' (este). Por outro lado, quando o norte
 magnético encontra-se à esquerda do norte geodésico, a declinação
-magnética é negativa, ou pode-se utilizar a letra ``W'' de **west}
+magnética é negativa, ou pode-se utilizar a letra 'W' de *west*
 (oeste). Na Figura :ref:`fig_magnetismodaterra.png` temos a apresentação
 da declinação magnética de :math:`-19^\circ` para o ano de 2000, em uma
 posição próxima a Brasília.
@@ -912,7 +918,7 @@ a vertical do lugar, ou seja, na direção do zênite. Na medida em que
 a luneta, é inclinada na direção do horizonte, quando o ângulo for
 de :math:`90^\circ`, conterá o plano horizontal. Quando ela estiver na
 posição da vertical do lugar, direção do nadir, o ângulo
-será de :math:`180^\circ`. A luneta está na **posição direta}**
+será de :math:`180^\circ`. A luneta está na **posição direta**
 quando o ângulo zenital está entre :math:`0^\circ` e :math:`180^\circ`. Quando
 o ângulo zenital for de :math:`270^\circ` a luneta estará novamente no
 plano horizontal, até que, se novamente a luneta estiver no zênite,
@@ -1012,17 +1018,11 @@ Exercícios
 
 :exem:`1)` Calcular o ângulo horizontal no ponto 2 pelo método das direções, dada as leituras
 de ré e vante, respectivamente, nos pontos 1 e 3, com a luneta na posição
-direta e inversa, conforme a Tabela \ref{tab:metododasdirecoes}.
-
-t
-
-.. rst-class:: plain
+direta e inversa, conforme a Tabela na :numref:`fig_metododasdirecoes.png`.
 
 .. table::
-    :widths: 1 2 3 4
-    :header-columns: 1
     :header-alignment: ccccc
-    :column-alignment: crrrr
+    :column-alignment: ccccr
 
     =========== ================ =========== ==== ==========================
     estação     posição luneta   repetição   PV   Hz
@@ -1031,7 +1031,7 @@ t
     :math:`\,`  :math:`\,`       :math:`\,`  3    :math:`45^\circ19'14''`
     :math:`\,`  :math:`\,`       2           1    :math:`00^\circ 00' 00''`
     :math:`\,`  :math:`\,`       :math:`\,`  3    :math:`45^\circ19'27''`
-    ----------- ---------------- ----------- -------------------------------
+    ----------- ---------------- ----------- ---- --------------------------
     2           PI               1           1    :math:`179^\circ59'57''`
     :math:`\,`  :math:`\,`       :math:`\,`  3    :math:`225^\circ19'15''`
     :math:`\,`  :math:`\,`       2           1    :math:`180^\circ 00'05''`
@@ -1051,15 +1051,15 @@ c) os azimutes de ré.
 
 :exem:`Resp.:`
 
-a) :math:`\mathrm{R_{01}}=47^\circ16'54''` SE, :math:`\mathrm{R_{12}}=85^\circ18'9''` SW, :math:`\mathrm{R_{23}}=10^\circ23'56''` SE e  :math:`\mathrm{R_{34}}=43^\circ38'26''` NW.
-b) :math:`\mathrm{R_{10}}=47^\circ16'54''` NW, :math:`\mathrm{R_{21}}=85^\circ18'9''` NE, :math:`\mathrm{R_{32}}=10^\circ23'56''` NW e  :math:`\mathrm{R_{43}}=43^\circ38'26''` SE.
+a) :math:`\mathrm{R_{01}}=47^\circ16'54''\,\text{SE}`, :math:`\mathrm{R_{12}}=85^\circ18'9''\,\text{SW}`, :math:`\mathrm{R_{23}}=10^\circ23'56''\,\text{SE}` e  :math:`\mathrm{R_{34}}=43^\circ38'26''\,\text{NW}`.
+b) :math:`\mathrm{R_{10}}=47^\circ16'54''\,\text{NW}`, :math:`\mathrm{R_{21}}=85^\circ18'9''\,\text{NE}`, :math:`\mathrm{R_{32}}=10^\circ23'56''\,\text{NW}` e  :math:`\mathrm{R_{43}}=43^\circ38'26''\,\text{SE}`.
 c) :math:`\mathrm{Az_{10}}=312^\circ43'6''`,  :math:`\mathrm{Az_{21}}=85^\circ18'9''`,  :math:`\mathrm{Az_{32}}=349^\circ36'4''` e  :math:`\mathrm{Az_{43}}=136^\circ21'34''`.
 
 ----
 
-:exem:`3)` Dados os rumos de vante: :math:`\mathrm{R_{AB}}=54^\circ30'29''` SW,
-:math:`\mathrm{R_{BC}}=31^\circ2'50''` NE, :math:`\mathrm{R_{CD}}=11^\circ3'41''` SE,
-e :math:`\mathrm{R_{DE}}=61^\circ21'34''`NW, calcule:
+:exem:`3)` Dados os rumos de vante: :math:`\mathrm{R_{AB}}=54^\circ30'29''\,\text{SW}`,
+:math:`\mathrm{R_{BC}}=31^\circ2'50''` NE, :math:`\mathrm{R_{CD}}=11^\circ3'41''\,\text{SE}`,
+e :math:`\mathrm{R_{DE}}=61^\circ21'34''\,\text{NW}`, calcule:
 
 a) os rumos de ré;
 b) os azimutes de vante e;
@@ -1067,7 +1067,7 @@ c) os azimutes de ré.
 
 :exem:`Resp.:`
 
-a) :math:`\mathrm{R_{BA}}=54^\circ30'29''`NE, :math:`\mathrm{R_{CB}}=31^\circ2'50''`SW, :math:`\mathrm{R_{DC}}=11^\circ3'41''`NW  e :math:`\mathrm{R_{ED}}=61^\circ21'34''`SE.
+a) :math:`\mathrm{R_{BA}}=54^\circ30'29''\,\text{NE}`, :math:`\mathrm{R_{CB}}=31^\circ2'50''\,\text{SW}`, :math:`\mathrm{R_{DC}}=11^\circ3'41''\,\text{NW}`   e :math:`\mathrm{R_{ED}}=61^\circ21'34''\,\text{SE}`.
 b) :math:`\mathrm{Az_{AB}}=234^\circ30'29''`, :math:`\mathrm{Az_{BC}}=31^\circ2'50''`, :math:`\mathrm{Az_{CD}}=168^\circ56'19''` e :math:`\mathrm{Az_{EF}}=298^\circ38'26''`.
 c) :math:`\mathrm{Az_{BA}}= 54^\circ30'29''`, :math:`\mathrm{Az_{CB}}=211^\circ2'50''`, :math:`\mathrm{Az_{DC}}=348^\circ56'19''` e  :math:`\mathrm{Az_{FE}}=118^\circ38'26''`.
 
@@ -1088,7 +1088,7 @@ medidos à direita :math:`123=65^\circ12'13''` e :math:`234=125^\circ6'40''`.
 ----
 
 :exem:`6)`  O alinhamento AB é de controle, sendo suas coordenadas retangulares, em metros,
-de A(559,432; 765,231) e de B(612,019; 791,692). Determine o azimute
+de :math:`\mathrm{A}(559,432; 765,231)` e de :math:`\mathrm{B}(612,019; 791,692)`. Determine o azimute
 AB. 
 
 :exem:`Resp.:` :math:`\mathrm{Az_{AB}}=63^\circ17'20,9''`.
@@ -1096,7 +1096,7 @@ AB.
 ----
 
 :exem:`7)` Calcular o azimute do alinhamento OP, cuja as coordenadas são
-O(975,796; 419,790) e P(801,218; 152,865).
+:math:`\mathrm{O}(975,796; 419,790)` e :math:`\mathrm{P}(801,218; 152,865)`.
 
 :exem:`Resp.:` :math:`\mathrm{Az_{OP}}=213^\circ11'9,8''`.
 
@@ -1113,25 +1113,24 @@ Será aplicado :math:`+4''` em cada ângulo interno medido.
 
 ----
 
-:exem:`9)` Na Tabela \ref{tab:exem:mediaangulozenital}
+:exem:`9)` Na Tabela abaixo
 são apresentados os ângulos internos à direita medidos da poligonal
-fechada ABCD. Calcule o erro angular de fechamento. Compense pelo
-método linear e calcule os azimutes dos alinhamentos BC, CD e DA.
+fechada :math:`\mathrm{ABCD}`. Calcule o erro angular de fechamento. Compense pelo
+método linear e calcule os azimutes dos alinhamentos :math:`\mathrm{BC}`,
+:math:`\mathrm{CD}` e :math:`\mathrm{DA}`.
  
-.. table:: Caderneta de campo.
+.. table:: Caderneta de campo do exemplo 9.
+    :header-alignment: cccc
+    :column-alignment: cccr
 
-   +----------------+---------------------------+------------------------------------------+
-    Alin              Azimute                    :math:`\sphericalangle` à direita}
-   +================+===========================+==========================================+
+    =============== ============================ ==========================================
+    Alin            Azimute                      :math:`\sphericalangle` à direita
+    =============== ============================ ==========================================
     :math:`AB`      :math:`186^\circ9'33''`      :math:`\mathrm{{A}}=128^\circ 4' 2''`
-   +                +                           +                                          +
     :math:`BC`      :math:`\,`                   :math:`\mathrm{{B}}= 68^\circ57'34''`
-   +                +                           +                                          +
     :math:`CD`      :math:`\,`                   :math:`\mathrm{{C}}=113^\circ41'32''`
-   +                +                           +                                          +
     :math:`DA`      :math:`\,`                   :math:`\mathrm{{D}}= 49^\circ17'32''`
-   +----------------+---------------------------+------------------------------------------+
-
+    =============== ============================ ==========================================
 
 :exem:`Resp.:` o erro angular de fechamento é de :math:`40''`.
 Os azimutes compensados: :math:`\mathrm{Az_{BC}}=75^\circ6'57''`, :math:`\mathrm{Az_{CD}}=  8^\circ48'19''`  e :math:`\mathrm{Az_{DA}}=238^\circ 5'41''`.

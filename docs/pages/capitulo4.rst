@@ -321,8 +321,8 @@ orbitando a terra em diferentes posições no espaço, com a finalidade
 de garantir que em qualquer posição na superfície da terra ou acima
 dela, pelo menos quatro satélites disponíveis enviando sinais. Os
 satélites são equipados com diversos instrumentos, podendo-se citar:
-relógio(s) atômicos de alta precisão\footnote{Os relógios atômicos utilizam a frequência em diversas regiões de
-espectro eletromagnético de átomos para a medição do tempo.}; painéis para captar energia solar, transformando em energia elétrica
+relógio(s) atômicos de alta precisão que utilizam a frequência em diversas regiões de
+espectro eletromagnético de átomos para a medição do tempo; painéis para captar energia solar, transformando em energia elétrica
 para ser utilizada nos diversos equipamentos do satélite; computadores;
 e transmissores de rádios, para enviar os sinais à terra. É por meio
 dos sinais enviados, por cada satélite visível, que os receptores
@@ -380,7 +380,7 @@ com satélites do Bloco II e IIA. No espaço eles estão distribuídos
 em 6 planos orbitais distintos, com um ângulo de :math:`55^{\circ}` na
 linha do Equador, a uma altitude de :math:`20.200\,\text{km}`, resultando em uma
 volta ao redor da terra a cada 12 horas. Atualmente o segmento espacial
-conta com 32 satélites, dos Blocos II/IIA/IIR/IIR-M\footnote{26/06/2012. Informações atualizadas podem
+conta com 32 satélites, dos Blocos II/IIA/IIR/IIR-M. Informações atualizadas podem
 ser encontradas em `Navegation Center <https://www.navcen.uscg.gov/?Do=constellationStatus>`_.
 Esta configuração de satélites permite que em qualquer hora do dia,
 de quatro a oito satélites estejam simultaneamente disponíveis na
@@ -607,7 +607,8 @@ satélites em outubro de 2021 (dados atualizados
 `aqui <http://en.wikipedia.org/wiki/Beidou_navigation_system>`_).
 
 O sistema de posicionamento japonês é denominado de sistema de satélite
-quase zenital (QZSS, :math:`\bf{Q}\it{uasi-}\bf{Z}enith` :math:`\bf{S}\it{atellite}` System}), desenvolvido
+quase zenital (QZSS, :math:`\bf{Q}\it{uasi-}\bf{Z}\it{enith}` :math:`\bf{S}\it{atellite}`
+:math:`\bf{S}\it{ystem}`), desenvolvido
 pela agência de exploração aeroespacial do Japão (JAXA, *Japan Aerospace Exploration Agency*). O QZSS oferece seus serviços na região
 compreendendo o Japão, sul da Ásia e Oceania. Os satélites QZSS enviam
 os sinais à terra na direção quase zenital, o que aumenta sua disponibilidade
@@ -634,7 +635,7 @@ Observáveis e fontes de erro
 ============================
 
 Os satélites no espaço enviam os sinais para terra que são captados
-pelos receptores, sendo a distância, na verdade pseudodistância\index{Pseudodistância},
+pelos receptores, sendo a distância, na verdade pseudodistância,
 entre o sinal emitido pelo satélite e recebido pelo sensor calculada,
 ou por código (medida de tempo) ou pela medida de fase da onda portadora.
 A distância calculada tem várias fontes de erro, por exemplo, a falta
@@ -726,8 +727,8 @@ Erro devido ao satélite
 -----------------------
 
 -  **Relógio do satélite**: o erro devido
-   ao relógio do satélite é modelado, por: :math:`{\delta^{s}(t)=a_{0}+a_{1}(t-t_{0})+a_{2}(t-t_{0})^{2}}`,
-   em que: {:math:`\delta^{s}(t)`} é o erro do satélite
+   ao relógio do satélite é modelado, por: :math:`\delta^{s}(t)=a_{0}+a_{1}(t-t_{0})+a_{2}(t-t_{0})^{2}`,
+   em que: :math:`\delta^{s}(t)` é o erro do satélite
    na época :math:`t;` :math:`t_{0}` é a época de referência do relógio do satélite;
    :math:`a_{0},\,a_{1}` e :math:`a_{2}` são parâmetros do modelo, sendo enviados
    na mensagem do satélite, juntamente com :math:`t_{0}`. Se for utilizado

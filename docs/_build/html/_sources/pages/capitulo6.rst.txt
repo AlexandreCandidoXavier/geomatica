@@ -78,8 +78,7 @@ do terreno; determinação de elevação
 de pontos topográficos; e, cálculos de volume e aterro no terreno. As DI's são as medidas de
 distâncias que os medidores de distância eletrônicos, presentem
 nas estações total medem primeiramente, posteriormente, podendo-se tranformá-la
-para a DH e DN (ver página \pageref{sec:Medidor-eletr=0000F4nico-de}
-para maiores detalhes).
+para a DH e DN.
 
 Influência da curvatura da terra nas medidas de distância horizontal
 --------------------------------------------------------------------
@@ -232,7 +231,7 @@ os balizeiros de ré e intermediários devem tomar cuidados, devendo-se
 subir ou descer a posição da trena para se ter a horizontalidade.
 Uma pessoa olhando o perfil da trenada pode auxiliar na correta horizontalidade
 da trenada. Com relação a baixa tensão, quando puxando a trena, em
-uma catenária elevada (ver erro de tensão, página \pageref{subsec:Erro-devido-=0000E0-cat}). 
+uma catenária elevada (ver :ref:`erro_tensao`).
 
 .. _fig_trenahorizontal.png:
 
@@ -312,6 +311,8 @@ De acordo com a Equação :eq:`eq:trenatemperatura`, temos:
 Logo, aplicando a correção, :math:`54,3\,\mathrm{m}+0,013\,\mathrm{m}=54,313\,\mathrm{m}`. 
 
 ----
+
+.. _erro_tensao:
 
 Erro devido à tensão de trabalho distinta da do padrão
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -433,8 +434,8 @@ Procedimento em campo para medidas à trena
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Se for para medição de área, mede-se a poligonal e as diagonais internar
-que subdividem a área em vários triângulos. A Figura \ref{fig:levantamentoAtrena}
-apresenta a poligonal \textit{ABCDEFA} a ser medida com a trena. A
+que subdividem a área em vários triângulos. A Figura :numref:`fig_levantamentoAtrena.png`
+apresenta a poligonal :math:`ABCDEFA` a ser medida com a trena. A
 partir do ponto E foram determinadas as diagonais internas, subdividindo
 a área em quatro triângulos. Deve-se medir em campo os alinhamento
 :math:`a,\,b,\,c,\,d,\,e\,\mathrm{e\,}f`, da poligonal e as diagonais internas
@@ -447,7 +448,7 @@ e somando estas área individuais, obter a área total.
 
 Conhecendo-se as DH's da poligonal e os ângulos internos dos vértices,
 é possível calcular as coordenadas dos vértices, sendo este procedimento
-apresentado na Secção \ref{sec:C=0000E1lculoPolfechada}.
+apresentado na Secção :any:`poligonal_fechada`.
 Os ângulos internos de cada vértice podem ser calculados com o auxílio
 da lei dos cossenos (Equação :eq:`eqleicos1`).
 Por exemplo, no vértice :math:`A`, o ângulo interno, :math:`88,35^{\circ}`,
@@ -527,7 +528,7 @@ são estimados.
    Esquema ilustrativo dos retículos de um teodolito (a) e de uma mira (b).
 
 Nas medições taqueométricas, o ângulo vertical pode ser o zenital e o de inclinação (maiores informações
-na Secção \ref{sec:=0000C2ngulo-vertical}.
+na Secção :any:`Ângulo vertical`.
 Se o teodolito for eletrônico o ângulo vertical será apresentado no visor, mas se o teodolito for do tipo ótico mecânico, deverá ser realizado uma leitura
 em uma luneta no equipamento, e o ângulo anotado. Na :numref:`fig_visadataqueometica.png`
 é apresentada um esquema de uma medição da DH e DN entre os pontos A e B utilizando
@@ -667,7 +668,7 @@ a REM na direção de um refletor, sendo refletida de volta ao equipamento,
 onde o sinal é processado e, a distância, do MED ao refletor (prisma),
 é determinada.
 
-Na Figura \ref{fig:MEDesquema} é apresentado um esquema de uma estação
+Na :numref:`fig_MEDesquema.png` é apresentado um esquema de uma estação
 total, que tem um MED, estacionada e nivelada em A e, o prisma, em
 B. A distância entre o centro do MED ao prisma será denominado por
 :math:`d`. O MED emite um feixe de REM, modulada em determinada frequência,
@@ -807,13 +808,13 @@ o ponto A, posição da estação. Caso contrário, DN negativa, o ponto
 A é o mais elevado. Logicamente, se a altitude de A for igual a de
 B, eles estão em uma mesma elevação, desta forma, a DN entre A e B
 é zero. Considerações a respeito da influência da curvatura da terra
-e do efeito da refração serão tratados no Capítulo \ref{ch:Altimetria},
+e do efeito da refração serão tratados no :any:`RST Capitulo9`,
 Secção \ref{sec:Erro-de-esfericidade}.
 
 :exem:`Exemplo 8`  De uma estação total estacionada no ponto 30, fez
 uma visada no ponto 31, onde se encontrava o prisma. Sendo a :math:`ai=1,60\,\mathrm{m}`,
 :math:`ap=2,000\,\mathrm{m}`. As leituras obtidas no visor da estação foram:
-:math:`z=95^{\circ}41'10''`; \textbf{:math:`d=329,715\,\mathrm{m}`}. Calcular
+:math:`z=95^{\circ}41'10''`; :math:`d=329,715\,\mathrm{m}`. Calcular
 a DH e a DN entre os pontos 30 e 31.
 
 :solucao:`Solução:`
@@ -855,7 +856,7 @@ a serem evitados:
   deve-se conhecer: a frequência de trabalho, a temperatura, a pressão
   atmosférica e a umidade relativa. Nas estações totais, este erro é
   possível de ser corrigido, desde que as informações sejam conhecidas
-  e inseridas no MED (estação total)\cite{WOLF};
+  e inseridas no MED (estação total) :cite:`WOLF`;
 - **centro do refletor**: o centro do refletor não coincide com
   a linha vertical ao ponto de interesse;
 - **desvio da frequência**: o equipamento pode mudar a frequência
@@ -952,5 +953,5 @@ Q e R.
 
 .. rubric:: Footnotes
 
-.. [1] Segundo a :cite:t:`NBR13133` a dimensão máxima de um levantamento topográfico está limitado a 80 km. }
+.. [1] Segundo a :cite:t:`NBR13133` a dimensão máxima de um levantamento topográfico está limitado a 80 km.
 .. [2] Abreviação de polegada é *in* onde, :math:`1\,\mathrm{in}=0,0254\,\mathrm{m}=2,54\,\mathrm{cm}`.

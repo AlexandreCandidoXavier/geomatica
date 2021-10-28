@@ -151,6 +151,7 @@ transformados em graus, como apresentado no `Exemplo 1`_.
 .. _exemplo 1:
 
 :exem:`Exemplo 1` Converta o ângulo sexagesimal :math:`116^\circ33'54,18''` para grau decimal.
+
 :solucao:`Solução:`
 Sabendo-se que :math:`1^\circ=60'` e :math:`1^\circ=3\,600''`, temos:
 
@@ -177,6 +178,7 @@ e o auxílio da tecla :degree2sex:`shift`.
 .. _exemplo 2:
 
 :exem:`Exemplo 2` Transforme o ângulo decimal do `Exemplo 1`_ para o sistema sexagesimal.
+
 :solucao:`Solução:`
 O ângulo é :math:`116,5650511^\circ`, logo :math:`116^\circ`. A decimal :math:`0,5650511^\circ` em minutos:
 
@@ -340,22 +342,22 @@ domínios, para maiores detalhes ver :cite:authors:`Stewart`.
 
 ----
 
-| :exem:`Exemplo 4` Para o triângulo retângulo da Figura abaixo, determinar :math:`\theta`, :math:`\alpha`, e o seno, o cosseno e a tangente destes ângulos?
+:exem:`Exemplo 4` Para o triângulo retângulo da Figura abaixo, determinar :math:`\theta`, :math:`\alpha`, e o seno, o cosseno e a tangente destes ângulos?
 
 .. figure:: /images/capitulo1/fig_trian_retangulo_exemplo.png
    :scale: 35 %
    :alt: fig_trian_retangulo_exemplo
    :align: center
 
-| :solucao:`Solução:`
-| A hipotenusa vale :math:`6,4` m. Para o ângulo :math:`\theta`, o lado de :math:`5:math:` m é o seu cateto oposto. Desta forma, pode-se utilizar a função arco seno para determinar :math:`\theta`:
+:solucao:`Solução:`
+A hipotenusa vale :math:`6,4` m. Para o ângulo :math:`\theta`, o lado de :math:`5:math:` m é o seu cateto oposto. Desta forma, pode-se utilizar a função arco seno para determinar :math:`\theta`:
 
 .. math::
 
    \theta & =\arcsin\left(\frac{\text{cateto oposto}}{\text{hipotenusa}}\right)\\
    & =\arcsin\left(\frac{5}{6,4}\right)\\  & =51,3752{}^\circ.
 
-| Para calcular :math:`\alpha`, sabe-se que a soma dos ângulos internos de um triângulo é :math:`180^\circ`, logo :math:`\alpha=180^\circ-(51,3752^\circ+90^\circ)=38,6248^\circ`. As funções trigonométricas para :math:`\theta` e :math:`\alpha`:
+Para calcular :math:`\alpha`, sabe-se que a soma dos ângulos internos de um triângulo é :math:`180^\circ`, logo :math:`\alpha=180^\circ-(51,3752^\circ+90^\circ)=38,6248^\circ`. As funções trigonométricas para :math:`\theta` e :math:`\alpha`:
 
 .. math::
 
@@ -415,7 +417,7 @@ encontrados em livros de cálculo.
 Agora, considere um triângulo de lados :math:`a`, :math:`b` e :math:`c`, com os ângulos opostos a estes lados, respectivamente,
 :math:`\widehat{A}`, :math:`\widehat{B}` e :math:`\widehat{C}`. A lei dos senos apresenta as relações apresentadas
 na Equação :eq:`figleidossenoscosenos`. Um exemplo clássico de aplicação da lei dos senos aplicada à topografia é
-apresentado no Exemplo~\ref{ex:pontoinacessivel}.
+apresentado no Exemplo 6.
 
 .. figure:: /images/capitulo1/fig_leidossenoscosenos.png
    :scale: 35 %
@@ -464,7 +466,7 @@ Uma vez que conhecemos o lado AB=50~m, o seu ângulo oposto, :math:`\gamma=66^\c
 
 A outra lei trigonométrica que vamos apresentar é a dos cossenos. Ela relaciona os lados do triângulo com um ângulo interno
 interno segundo as Equações :eq:`eqleicos1`-:eq:`eqleicos2`. Pode-se utilizar estas Equações para marcação de ângulos em campo,
-como será apresentado no Exemplo~\ref{ex:marcacaodeangulo}.
+como será apresentado no Exemplo 7.
 
 
 .. math:: a^{2}=b^{2}+c^{2}-2bc\cos\widehat{A} \,\,\,\text{então:}\,\, \widehat{A}=\arccos\left(\frac{a^{2}-\left(b^{2}+c^{2}\right)}{-2bc}\right)
@@ -512,12 +514,12 @@ Coordenada retangular
 
 A coordenada retangular de um ponto é dada por sua posição horizontal
 e vertical, coordenada :math:`x` e coordenada :math:`y`, respectivamente. Exemplo
-do plano cartesiano e pontos com suas respectivas }coordenadas
+do plano cartesiano e pontos com suas respectivas coordenadas
 retangulares são apresentados na :numref:`figcoordretangular`.
 Estas coordenadas podem estar em qualquer unidade de comprimento,
 sendo que em geomática a mais comum é a de metro (m). Logicamente,
 caso a unidade fosse de metro, esta figura estaria reduzida a determinada
-escala (ver Secção \ref{sec:Escala}, página \pageref{sec:Escala}).
+escala (ver Secção :any:`escala`).
 
 .. _figcoordretangular:
 
@@ -813,9 +815,9 @@ A área será:
 
 **Área de trapézio**
 
-A área de um trapézio é calculada pela soma da bases, $b_{1}$ e
-$b_{2}$,  multiplicada pela altura\footnote{Chamam-se de bases de um trapézio os seus lados paralelos e, sua altura,
-a distância que separa estes dois lados.} ($h$) dividida por dois, isto é:\picskip{0}
+Chamam-se de bases de um trapézio os seus lados paralelos e, sua altura,
+a distância que separa estes dois lados. A área de um trapézio é calculada pela soma da bases, :math:`b_{1}` e
+:math:`b_{2}`,  multiplicada pela altura :math:`(h)` dividida por dois, isto é:
 
 .. figure:: /images/capitulo1/figAreaTrabezio.png
    :scale: 35 %

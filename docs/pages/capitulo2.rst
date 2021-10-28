@@ -95,6 +95,8 @@ então a área em alqueire paulista :math:`(x_{\text{alqPau}})`:
 
 ----
 
+.. _escala:
+
 Escala
 ======
 
@@ -445,7 +447,7 @@ de trapézios, desta forma, a área compreendida entre os vértices :math:`ABCD`
 
 Considere agora um número qualquer de vértices :math:`(n)`, convenientemente
 organizados, que delimitam a área. Poderemos, para fins de facilidade
-do cálculo, organizar os dados como mostrados na Figura~\ref{fig:areagauss2},
+do cálculo, organizar os dados como mostrados na :numref:`fig_areagauss2`,
 com as coordenadas :math:`x` acima das coordenadas :math:`y` para cada ponto.
 As coordenadas devem estar em sequência para formar um polígono, seguindo
 o sentido horário ou anti-horário. Também não se deve pular coordenada
@@ -497,7 +499,7 @@ apresentada na :numref:`fig_areagauss2`, temos:
 
 .. admonition:: Sugestão de aula prática
 
-   *Objetivo*: utilizar a ferramenta \emph{Cad} para fins de desenho de planta topográfica.
+   *Objetivo*: utilizar a ferramenta **Cad** para fins de desenho de planta topográfica.
 
    Serão apresentadas algumas funções básicas, necessárias para o desenho da planta.
 
