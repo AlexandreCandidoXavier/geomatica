@@ -65,14 +65,14 @@ Poligonal aberta
 
 Uma poligonal aberta, geometricamente aberta, é aquela que apresenta
 uma série de alinhamentos, não retornando ao ponto inicial, podendo
-ser apoiada ou não. Por exemplo, na :numref:`ExemploPoligonalAbertaApoiada`a
+ser apoiada ou não. Por exemplo, na :numref:`ExemploPoligonalAbertaApoiada` a
 e b é apresentada, respectivamente, uma poligonal dita apoiada e não
-apoiada. Na poligonal aberta e apoiada (:numref:`ExemploPoligonalAbertaApoiada`a),
+apoiada. Na poligonal aberta e apoiada (:numref:`ExemploPoligonalAbertaApoiada` a),
 ela começa e termina em alinhamentos conhecidos, onde as suas coordenadas
 foram previamente estabelecidas. Esta poligonal é dita geometricamente
 aberta e matematicamente fechada, sendo possível realizar uma avaliação
 do erro angular de fechamento (ver secção :ref:`eaf`) e do erro linear.
-Já a poligonal aberta e sem apoio (:numref:`ExemploPoligonalAbertaApoiada`b), não é possível a avaliação dos
+Já a poligonal aberta e sem apoio (:numref:`ExemploPoligonalAbertaApoiada` b), não é possível a avaliação dos
 erros angulares e lineares, logo, deve-se evitá-la. Contudo, caso
 ela não possa ser evitada, faz-se necessário realizar as medidas de
 distância e de ângulos com o máximo de atenção, se possível com repetição,
@@ -119,8 +119,6 @@ campo.
    :align: center
 
    Procedimento para cálculo de uma poligonal fechada em um ponto.}
-
-asd
 
 Exemplo de cálculo de poligonal fechada
 ---------------------------------------
@@ -356,7 +354,7 @@ de exemplo, calcular o erro de fechamento linear :math:`(E)` e, verificar
 se o mesmo se encontra dentro do limite de tolerância para o erro
 de fechamento linear.
 
-:solucao:`Solução:` De acordo com a :eq:`erro_linear` e, os valores
+:solucao:`Solução:` De acordo com a Equação :eq:`erro_linear` e, os valores
 de :math:`\Sigma\Delta x` e :math:`\Sigma\Delta y` apresentados na
 :numref:`fig_coordenadaspar`,
 temos:
@@ -431,8 +429,8 @@ exemplo o AB, pelo método proporcional ao comprimento do lado será:
 referente a poligonal do nosso exemplo, calcular as coordenadas parciais
 compensadas por meio do método proporcional ao comprimento dos lados.
 
-:solucao: De acordo com a Equação \ref{eq:compensacaoerrolinearx}
-e \ref{eq:compensacaoerrolineary}, para o alinhamento AB, temos:
+:solucao:`Solução:` De acordo com a Equação :eq:`eq:compensacaoerrolinearx`
+e :eq:`eq:compensacaoerrolineary`, para o alinhamento AB, temos:
 
 :math:`{\displaystyle C_{\Delta x_{\mathrm{AB}}}=-\frac{0,301}{911,307}\times201,737=-0,067}\,\text{m}`,
 
@@ -475,8 +473,7 @@ compensadas, tem que resultar em zero.
 
 ----
 
-
-cálculo das coordenadas retangulares da poligonal
+Cálculo das coordenadas retangulares da poligonal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A poligonal vai servir de apoio para as medidas dos pontos de detalhe
@@ -484,8 +481,7 @@ do mapeamento logo, o cálculo das suas coordenadas retangulares se
 faz necessário. A partir das coordenadas retangulares, por exemplo,
 podem-se calcular as distâncias horizontais e os azimutes finais dos
 alinhamentos. Também, a partir das coordenadas retângulares, pode-se
-calcular a área da poligonal pelo método de Gauss (Secção \ref{subsec:C=0000E1lculo-de-=0000E1rea-gauss},
-página \pageref{subsec:C=0000E1lculo-de-=0000E1rea-gauss}).
+calcular a área da poligonal pelo método de Gauss (Secção :any:`areaGauss`).
 
 Para o cálculo das coordenadas retângulares, há a necessidade de se
 conhecer pelo menos a coordenada de um ponto. Em uma situação ideal,
@@ -503,14 +499,13 @@ retangular do ponto A (:math:`x_\mathrm{A},\,x_\mathrm{A}`) e as coordenadas
 parciais de AB :math:`(\Delta x_{\mathrm{AB}}`e :math:`\Delta y_{\mathrm{AB}})`,
 então a coordenada de B será:
 
-\begin{equation}
-\label{eq:coordenadatoalx}
-x_\mathrm{B} = x_\mathrm{A}+\Delta x_{\mathrm{AB}}
-\end{equation}
-\begin{equation}
-\label{eq:coordenadatoaly}
-y_\mathrm{B} = y_\mathrm{A}+\Delta y_{\mathrm{AB}}
-\end{equation}
+.. math::
+   x_\mathrm{B} = x_\mathrm{A}+\Delta x_{\mathrm{AB}}
+   :label: eq:coordenadatoalx
+
+.. math::
+   y_\mathrm{B} = y_\mathrm{A}+\Delta y_{\mathrm{AB}}
+   :label: eq:coordenadatoaly
 
 \begin{mybox}[breakable,enhanced,pad at break=0mm,label={exemplo_cooredenadadotal}]{}Calcular as coordenadas retangulares da poligonal
 da Figura \ref{fig:PoligonalFechadaSolucao}, considerando conhecida

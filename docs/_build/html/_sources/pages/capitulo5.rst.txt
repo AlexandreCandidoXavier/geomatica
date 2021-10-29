@@ -76,7 +76,7 @@ com registro no Conselho Regional de Engenharia e Arquitetura
 (CREA, a entidade autárquica de fiscalização do exercício e das atividades
 profissionais dotada de personalidade jurídica de direito público,
 constituindo serviço público federal, vinculada ao Conselho Federal
-de Engenharia e Agronomia (CONFEA)). Cada estado tem o
+de Engenharia e Agronomia (CONFEA). Cada estado tem o
 seu CREA, será necessário a emissão de uma Anotação de Responsabilidade Técnica (ART)
 pelo técnico responsável. Há também a necessidade deste profissional
 ser credenciado junto ao Instituto Nacional de Colonização e Reforma

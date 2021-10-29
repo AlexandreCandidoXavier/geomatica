@@ -73,25 +73,25 @@ Para ha: sabe-se agora que a área é de :math:`10^6\,\text{m}^2`,
 como :math:`1\,\text{ha}=10\,000\,\text{m}^2`, então a área em ha :math:`(x_{\text{ha}})`:
 
 .. math::
-   \frac{x_{\text{ha}}}{10^{6}~\text{m}^{2}} & =\frac{1~\text{ha}}{10\,000~\text{m}^{2}}\\
-   x_{\text{ha}} & =\frac{1~\text{ha}\cdot10^{6}~\text{m}^{2}}{10\,000~\text{m}^{2}}\\
-   x_{\text{ha}} & =100~\text{ha};
+   \frac{x_{\text{ha}}}{10^{6}\,\text{m}^{2}} & =\frac{1\,\text{ha}}{10\,000\,\text{m}^{2}}\\
+   x_{\text{ha}} & =\frac{1\,\text{ha}\cdot10^{6}\,\text{m}^{2}}{10\,000\,\text{m}^{2}}\\
+   x_{\text{ha}} & =100\,\text{ha};
 
 Para alqueire geométrico: como :math:`1\,\text{alqueire}=48\,400\,\text{m}^2`,
 então a área em alqueire geométrico :math:`(x_{\text{alqGeo}})`:
 
 .. math::
-   \frac{x_{\text{alqGeo}}}{10^{6}~\text{m}^{2}} & =\frac{1~\text{ha}}{48\,400~\text{m}^{2}}\\
-   x_{\text{alqGeo}} & =\frac{1~\text{alqueiro}\cdot10^{6}~\text{m}^{2}}{48\,400~\text{m}^{2}}\\
-   x_{\text{alqGeo}} & =20,6612~\text{alqueiro geométrico};
+   \frac{x_{\text{alqGeo}}}{10^{6}\,\text{m}^{2}} & =\frac{1\,\text{ha}}{48\,400\,\text{m}^{2}}\\
+   x_{\text{alqGeo}} & =\frac{1\,\text{alqueiro}\cdot10^{6}\,\text{m}^{2}}{48\,400\,\text{m}^{2}}\\
+   x_{\text{alqGeo}} & =20,6612\,\text{alqueiro geométrico};
 
 Para alqueire paulista: como :math:`1\,\text{alqueire}=24\,200\,\text{m}^2`,
 então a área em alqueire paulista :math:`(x_{\text{alqPau}})`:
 
 .. math::
-   \frac{x_{\text{alqPau}}}{10^{6}~\text{m}^{2}} & =\frac{1~\text{ha}}{24\,200~\text{m}^{2}}\\
-   x_{\text{alqPau}} & =\frac{1~\text{alqueiro}\cdot10^{6}~\text{m}^{2}}{24\,200~\text{m}^{2}}\\
-   x_{\text{alqPau}} & =41,3223~\text{alqueiro paulista}.
+   \frac{x_{\text{alqPau}}}{10^{6}\,\text{m}^{2}} & =\frac{1\,\text{ha}}{24\,200\,\text{m}^{2}}\\
+   x_{\text{alqPau}} & =\frac{1\,\text{alqueiro}\cdot10^{6}\,\text{m}^{2}}{24\,200\,\text{m}^{2}}\\
+   x_{\text{alqPau}} & =41,3223\,\text{alqueiro paulista}.
 
 ----
 
@@ -184,10 +184,10 @@ relação entre área de desenho e área na natureza. Para a nossa escala
 :math:`(1\,\text{cm}=60\,\text{m})`, elevando ambos os lados ao quadrado tem-se:
 
 .. math::
-   \left(1~\text{cm}\right)^2 & =\left(60~\text{m}\right)^2\\
-   1\text{cm}^2 & =3\,600~\text{m}^2.
+   \left(1\,\text{cm}\right)^2 & =\left(60\,\text{m}\right)^2\\
+   1\text{cm}^2 & =3\,600\,\text{m}^2.
 
-Logo, a área do talhão será :math:`2,07\times3\,600=7\,452$\,\text{m}^2`.
+Logo, a área do talhão será :math:`2,07\times3\,600=7\,452\,\text{m}^2`.
 
 ----
 
@@ -395,6 +395,7 @@ temos:
 .. math::
    A=3\,686,4\,\text{m}^2.
 
+.. _areaGauss:
 
 Cálculo de área por Gauss
 -------------------------
@@ -422,7 +423,7 @@ Para demonstrar como o método funciona, considere a :numref:`fig_areagaussdesen
 onde pretende-se calcular a área limitada pelos vértices :math:`ABCD`,
 onde suas coordenadas retangulares são conhecidas. Para obter a área
 total, soma-se as áreas limitadas pelos pontos :math:`C\text{'}CDD\text{'}`
-e :math:`D\text{'}DAA\text{'}` e subtrai-se das áreas :math:`C\text{'}CBB\text{'}$
+e :math:`D\text{'}DAA\text{'}` e subtrai-se das áreas :math:`C\text{'}CBB\text{'}`
 e :math:`B\text{'}BAA\text{'}`. Observe que todas estas áreas formam figuras
 de trapézios, desta forma, a área compreendida entre os vértices :math:`ABCD`
 é dada pela Equação :eq:`eqareagauss`.
@@ -525,14 +526,16 @@ estão separadas por :math:`4,2\,\text{cm}`. Qual a escala da planta?
 ----
 
 :exem:`2)`  Um galpão, visto em uma planta topográfica, tem a forma de um trapézio, com dimensões:
-bases de :math:`30` cm e :math:`25\,\text{cm}` e, altura de :math:`27\,\text{cm}. Sabendo que a escala é
-de :math:`1:200`, qual a área do galpão em :math:`\,\text{m}^2`?
+bases de :math:`30\,\text{cm}` e :math:`25\,\text{cm}` e, altura de :math:`27\,\text{cm}`.
+Sabendo que a escala é de :math:`1:200`, qual a área do galpão em :math:`\,\text{m}^2`?
 
 :exem:`Resp.:`  Área de :math:`2\,970\,{m}^2`.
 
 ----
 
-:exem:`3)` Com a finalidade de determinar uma área de forma circular em uma planta topográfica, mediu-se, com uma régua, o seu  diâmetro, obtendo-se a medida de 25 cm. A escala desta planta é de :math:`1:4\,000`. Pergunda-se: qual é esta respectiva área, em ha, no terreno?
+:exem:`3)` Com a finalidade de determinar uma área de forma circular em uma planta topográfica,
+mediu-se, com uma régua, o seu  diâmetro, obtendo-se a medida de :math:`25\,\text{cm}`.
+A escala desta planta é de :math:`1:4\,000`. Pergunda-se: qual é esta respectiva área, em ha, no terreno?
 
 :exem:`Resp.:`  Área de :math:`78,54\,\text{ha}`.
 
@@ -546,13 +549,13 @@ da :numref:`fig_figuraselementares`?
 ----
 
 :exem:`5)` Seguem as coordenadas
-em metros dos vértices de uma área levantada: **1**:math:(0,\,19)`,
+em metros dos vértices de uma área levantada: **1**:math:`(0,\,19)`,
 **2**:math:`(4,\,29)`,  **3**:math:`(34,\,44)`,  **4**:math:`(64,\,29)`,  **5**:math:`(71,\,11)`,
 **6**:math:`(49,\,2)`,  **7**:math:`(34,\,10)`,  **8**:math:`(29,\,11)`,  **9**:math:`(14,\,0)`.
-Calcule a área pela fórmula de Gauss nas unidade de m:math:`^2` e ha.
+Calcule a área pela fórmula de Gauss nas unidade de :math:`\text{m}^2` e ha.
 Represente graficamente.
 
-:exem:`Resp.:` área = :math:`1\,925\,\text{m}^2`; área = :math:`0,1925` ha.
+:exem:`Resp.:` área = :math:`1\,925\,\text{m}^2`; área = :math:`0,1925\,\text{ha}`.
 
 .. figure:: /images/capitulo2/exe_calculodearea26.png
    :scale: 35 %
@@ -571,8 +574,8 @@ b) Qual a distância entre os pontos **B** e **C**?
 
 c) Qual a distância entre os pontos **C** e **D**?
 
-:exem:`Resp.:`  a) :math:`518` :math:`\text{m}^2` e :math:`0,0518` ha; b) :math:`20,125` m;
-c) :math:`15,232` m.
+:exem:`Resp.:`  a) :math:`518` :math:`\text{m}^2` e :math:`0,0518\,\text{ha}`;
+b) :math:`20,125\,\text{m}`; c) :math:`15,232\,\text{m}`.
 
 ----
 
@@ -588,8 +591,8 @@ c) Qual a distância entre os pontos **a** e **b**?
 
 d) Qual a distância entre os pontos **e** e **f**?
 
-:exem:`Resp.:`  a) :math:`1\,009\,\text{m}^2`; :math:`0,1009` ha; c) :math:`46,690` m;
-d) :math:`19,235` m.
+:exem:`Resp.:`  a) :math:`1\,009\,\text{m}^2`; :math:`0,1009\,\text{ha}`; c) :math:`46,690\,\text{m}`;
+d) :math:`19,235\,\text{m}`.
 
 ----
 
@@ -615,14 +618,14 @@ em hectare.
    :alt: exe_calculodearea28.png
    :align: center
 
-:exem:`Resp.:`  :math:`0,6723` ha.
+:exem:`Resp.:`  :math:`0,6723\,\text{ha}`.
 
 ----
 
-:exem:`10)` Desenhar uma escala gráfica de $1:2\,000$,
-com $10$ cm de tamanho.
+:exem:`10)` Desenhar uma escala gráfica de :math:`1:2\,000`,
+com :math:`10\,\text{cm}` de tamanho.
 
-:exem:`11)` Desenhar uma escala gráfica de :math:`1:500`, com :math:`8` cm de
+:exem:`11)` Desenhar uma escala gráfica de :math:`1:500`, com :math:`8\,\text{cm}` de
 tamanho.
 
 ----

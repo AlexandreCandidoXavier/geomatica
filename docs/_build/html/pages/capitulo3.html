@@ -313,7 +313,7 @@ dado por:</p>
 e altitude geodésica de um ponto <span class="math notranslate nohighlight">\(P\)</span> valem: <span class="math notranslate nohighlight">\(\phi=-22^\circ13'21,1337''\)</span>,
 <span class="math notranslate nohighlight">\(\lambda=-41^\circ47'29,8921''\)</span> e
 <span class="math notranslate nohighlight">\(h=272,32\,\mathrm{m}\)</span>. Considerando elipsóide WGS84, tendo como
-raios dos semieixos: <span class="math notranslate nohighlight">\(a=6.378.137,0\)</span> m e <span class="math notranslate nohighlight">\(b=6.356.752,3\)</span> m,
+raios dos semieixos: <span class="math notranslate nohighlight">\(a=6.378.137,0\,\text{m}\)</span> e <span class="math notranslate nohighlight">\(b=6.356.752,3\,\text{m}\)</span>,
 calcule as coordenadas retangulares.</p>
 <p><span class="solucao">Solução:</span>
 Substituindo os valores nas Equações <a class="reference internal" href="#equation-eq-cart-x">(23)</a>
@@ -460,13 +460,14 @@ apresentadas abaixo:</p>
 <p>Para o Datum SAD69:</p>
 <ul class="simple">
 <li><p>Figura geométrica para a Terra: Elipsóide Internacional de 1967; Semi
-eixo maior <span class="math notranslate nohighlight">\(a=6.378.160\)</span> m; <span class="math notranslate nohighlight">\(f=1/298,2\)</span>.</p></li>
+eixo maior <span class="math notranslate nohighlight">\(a=6.378.160\,\text{m}\)</span>; <span class="math notranslate nohighlight">\(f=1/298,2\)</span>.</p></li>
 <li><p>Parâmetros referentes ao posicionamento espacial do elipsóide: Orientação
 geocêntrica com eixo de rotação paralelo ao eixo de rotação da Terra;
 plano meridiano origem paralelo ao plano meridiano de Greenwich;</p></li>
 <li><p>Orientação topocêntrica, com: Ponto Datum = Vértice de triangulação
-Chuá; <span class="math notranslate nohighlight">\(\phi_{\mathrm{G}}=19^\circ45'41,6527''\)</span> S; <span class="math notranslate nohighlight">\(\lambda_{\text{G}}=48^\circ06'04,0639''\)</span> W;
-<span class="math notranslate nohighlight">\(\phi_{\text{A}}=19^\circ45'41,34''\)</span> S; <span class="math notranslate nohighlight">\(\lambda_{\text{A}}=48^\circ06'07,80''\)</span> W;
+Chuá; <span class="math notranslate nohighlight">\(\phi_{\mathrm{G}}=19^\circ45'41,6527''\,\text{S}\)</span>;
+<span class="math notranslate nohighlight">\(\lambda_{\text{G}}=48^\circ06'04,0639''\,\text{W}\)</span>;
+<span class="math notranslate nohighlight">\(\phi_{\text{A}}=19^\circ45'41,34''\,\text{S}\)</span>; <span class="math notranslate nohighlight">\(\lambda_{\text{A}}=48^\circ06'07,80''\,\text{W}\)</span>;
 <span class="math notranslate nohighlight">\(A_{\text{G}}=271^\circ30'04,05''\)</span> SWNE para VT-Uberaba;
 <span class="math notranslate nohighlight">\(N=0,0\,\text{m.}\)</span></p></li>
 </ul>
@@ -528,18 +529,18 @@ Datum de Imbituba (<a class="reference internal" href="#fig-refer-vertical"><spa
 <section id="projecao-cartografica">
 <h2>Projeção cartográfica<a class="headerlink" href="#projecao-cartografica" title="Link permanente para este título">¶</a></h2>
 <p>Projeções cartográficas são funções matemáticas que transformam as
-coordenadas geodésicas <span class="math notranslate nohighlight">\((\phi,\,\lambda)\)</span>) para coordenadas planas
-<span class="math notranslate nohighlight">\((x,\,y)\)</span>), isto é, <span class="math notranslate nohighlight">\(x=f(\phi,\,\lambda)\)</span> e <span class="math notranslate nohighlight">\(y=f(\phi,\,\lambda)\)</span>.
+coordenadas geodésicas <span class="math notranslate nohighlight">\((\phi,\,\lambda)\)</span> para coordenadas planas
+<span class="math notranslate nohighlight">\((x,\,y)\)</span>, isto é, <span class="math notranslate nohighlight">\(x=f(\phi,\,\lambda)\)</span> e <span class="math notranslate nohighlight">\(y=f(\phi,\,\lambda)\)</span>.
 Podem-se classificar as projeções cartográficas de acordo com:</p>
 <ul class="simple">
-<li><p>a superfície utilizada na projeção: <strong>plana</strong> (<a class="reference internal" href="#proj-tipos"><span class="std std-numref">Figura 21</span></a> a, d, g), <strong>cilíndrica</strong> (Figuras b, e, h)
+<li><p>a superfície utilizada na projeção: <strong>plana</strong> (<a class="reference internal" href="#proj-tipos"><span class="std std-numref">Figura 21</span></a> a, d, g),  <strong>cilíndrica</strong> (<a class="reference internal" href="#proj-tipos"><span class="std std-numref">Figura 21</span></a> b, e, h)
 ou <strong>cônica</strong> (<a class="reference internal" href="#proj-tipos"><span class="std std-numref">Figura 21</span></a> c, f, i). Na prática, a projeção é realizada analiticamente, ou seja, por meio
 de equações matemáticas, que são variantes destas formas geométricas;</p></li>
 <li><p>se é <strong>tangente</strong> ou <strong>secante</strong> (<a class="reference internal" href="#proj-tipos-sec"><span class="std std-numref">Figura 22</span></a>);</p></li>
 <li><p>a posição da figura geométrica, por exemplo, caso a projeção seja
 cilíndrica tangente, ela é dita como sendo normal se o cilindro é
 tangente no equador (e.g. <a class="reference internal" href="#proj-tipos"><span class="std std-numref">Figura 21</span></a> b); transversa,
-caso o cilindro seja tangente a um meridiano (e.g. Figura e);
+caso o cilindro seja tangente a um meridiano (e.g. <a class="reference internal" href="#proj-tipos"><span class="std std-numref">Figura 21</span></a> e);
 e é oblíqua caso o cilindro seja tangente à qualquer seção normal
 que passa pelo ponto central (e.g. <a class="reference internal" href="#proj-tipos"><span class="std std-numref">Figura 21</span></a> h).</p></li>
 </ul>
@@ -757,7 +758,7 @@ de H à N (<a class="reference internal" href="#utmzonebr"><span class="std std-
 estados, são necessários mais de um fuso para se trabalhar com as
 coordenadas UTM. Por exemplo, para o estado do Amazonas será necessário
 trabalhar com quatro fusos. Já o estado do Espírito Santo, encontra-se
-inserido em um único fuso, o <span class="math notranslate nohighlight">\(24\)</span>, cujos meridianos limites são <span class="math notranslate nohighlight">\(42^{\circ}\)</span> W
+inserido em um único fuso, o <span class="math notranslate nohighlight">\(24\)</span>, cujos meridianos limites são <span class="math notranslate nohighlight">\(42^{\circ}\text{W}\)</span>
 e <span class="math notranslate nohighlight">\(36^\circ\text{W}\)</span>  <span class="math notranslate nohighlight">\((\text{MC}=39^\circ\text{W})\)</span>. Este estado encontra-se
 entre os paralelos <span class="math notranslate nohighlight">\(24^\circ\text{S}\)</span> e <span class="math notranslate nohighlight">\(16^\circ\text{S}\)</span>, letra de linha
 da latitude “K”. É por isto, que quando nos encontramos com um receptor
@@ -800,13 +801,14 @@ MC de <span class="math notranslate nohighlight">\(-39^{\circ}\)</span>, como j�
 que 500.000m. No MC deste fuso é aplicada uma redução na escala
 de <span class="math notranslate nohighlight">\(0,9996\,(k_{0})\)</span>. É apresentada nesta Figura a linha em que não
 há redução de escala <span class="math notranslate nohighlight">\((k=1)\)</span>, encontrando-se a aproximadamente
-180 km de MC. Todos os pontos que encontram-se a direita desta linha
+<span class="math notranslate nohighlight">\(180\,\text{km}\)</span> de MC. Todos os pontos que encontram-se a direita desta linha
 e a esquerda do MC terão a escala reduzida, <span class="math notranslate nohighlight">\(k&lt;1\)</span>. Já pontos que
 se encontrarem à esquerda da linha <span class="math notranslate nohighlight">\(k=1\)</span>, será aplicada uma ampliação
 <span class="math notranslate nohighlight">\((k&gt;1)\)</span>. A coordenada do município de Alegre, <span class="math notranslate nohighlight">\(\text{E}=236.175\,\text{m}\)</span>
 e <span class="math notranslate nohighlight">\(\text{N}=7.701.983\,\text{m}\)</span>, de onde
 pode-se concluir, por exemplo, que ele está <span class="math notranslate nohighlight">\(263.825\,\text{m}\)</span> do MC <span class="math notranslate nohighlight">\((500.000-236.175)\)</span>
-e a uma distância de <span class="math notranslate nohighlight">\(2.298.017\,\text{m}\)</span> m da linha do Equador <span class="math notranslate nohighlight">\((10.000.000-7.701.983)\)</span>.</p>
+e a uma distância de <span class="math notranslate nohighlight">\(2.298.017\,\text{m}\)</span> da linha do Equador
+<span class="math notranslate nohighlight">\((10.000.000-7.701.983)\)</span>.</p>
 <figure class="align-center" id="id37">
 <span id="utmzonealegrees"></span><a class="reference internal image-reference" href="../_images/utmzoneAlegreES.png"><img alt="utmzoneAlegreES.png" src="../_images/utmzoneAlegreES.png" style="width: 321.5px; height: 430.0px;" /></a>
 <figcaption>
@@ -817,8 +819,8 @@ e a uma distância de <span class="math notranslate nohighlight">\(2.298.017\,\t
 <p>Sendo conhecidas as coordenadas geodésicas, latitude (<span class="math notranslate nohighlight">\(\phi\)</span>) e longitude
 (<span class="math notranslate nohighlight">\(\lambda\)</span>), de um ponto, seguem as fórmulas que são utilizadas para
 cálculo das coordenadas UTM. Para se obter as coordenadas, a Este
-soma-se <span class="math notranslate nohighlight">\(500.000\)</span> m ao valor de <span class="math notranslate nohighlight">\(x\)</span> (Equação <a class="reference internal" href="#equation-eq-utmx">(45)</a>) e, para
-coordenada Norte no hemisfério sul, soma-se <span class="math notranslate nohighlight">\(10.000.000\)</span> m a <span class="math notranslate nohighlight">\(y\)</span>
+soma-se <span class="math notranslate nohighlight">\(500.000\,\text{m}\)</span> ao valor de <span class="math notranslate nohighlight">\(x\)</span> (Equação <a class="reference internal" href="#equation-eq-utmx">(45)</a>) e, para
+coordenada Norte no hemisfério sul, soma-se <span class="math notranslate nohighlight">\(10.000.000\,\text{m}\)</span> a <span class="math notranslate nohighlight">\(y\)</span>
 (Equação <a class="reference internal" href="#equation-eq-utmy">(46)</a>).</p>
 <div class="math notranslate nohighlight" id="equation-eq-utmx">
 <span class="eqno">(45)<a class="headerlink" href="#equation-eq-utmx" title="Permalink to this equation">¶</a></span>\[x=k_{0}N\text{(}A+(1-T+C)A^{3}/6+(5-18T+T^{2}+72C-58e'^{2}\text{)}A^{5}/120\]</div>

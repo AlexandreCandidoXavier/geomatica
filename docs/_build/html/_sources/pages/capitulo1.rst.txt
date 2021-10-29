@@ -71,7 +71,7 @@ adiante. A constante :math:`k` faz com que a medida do ângulo seja independente
 do comprimento do arco :math:`s` ou da posição :math:`r` em que o arco esteja
 iniciando.
 
-Ângulo em grau, grado e radiano
+Ângulo em grau, radiano e grado
 -------------------------------
 
 Vimos que ângulo e uma medida da abertura entre dois segmentos de
@@ -232,16 +232,16 @@ se considerar apenas meio círculo, têm-se: :math:`\pi\text{ rad}=180^\circ=200
 ----
 
 :exem:`Exemplo 3` Quanto vale :math:`116^\circ33'54,18''` em radiano e grado?
-solucao:`Solução:`
+
+:solucao:`Solução:`
 Primeiramente, este ângulo deve ser transformado para grau decimal, o que foi realizado no
 `exemplo 1`_. Por meio da relação entre as unidades de graus e radianos, mostradas acima,
 tem-se, para transformá-lo em radianos :math:`(x_{\text{rad}})`:
 
 .. math::
-
    \frac{x_{\text{rad}}}{116,5650511^\circ} & =\frac{\pi}{180^\circ}\\
    x_{\text{rad}} & =\frac{116,5650511^\circ\cdot\pi}{180^\circ}\\
-   x_{\text{rad}} & =2,0344\text{~rad}
+   x_{\text{rad}} & =2,0344\,\text{rad}
 
 Aplica-se agora a relação entre grau e grado para encontrar o valor angular em
 grado :math:`(x_{\text{grado}})`, como:
@@ -382,7 +382,7 @@ A visada :math:`AH` é tangente à terra em :math:`H`. :math:`AH` é perpendicul
 é reto :math:`(90^\circ)` para o triângulo :math:`AOH`. O lado deste triângulo oposto a :math:`H` :math:`(R\mathrm{+5\:km})`
 é a hipotenusa. Percebe-se também que, o ângulo entre a linha do horizonte que passa em :math:`A` e a linha :math:`AO` é
 de :math:`90^\circ`, então o ângulo :math:`\theta` é de :math:`87,74^\circ` :math:`(90^\circ-2,26^\circ)`. Considerando
-:math:`\sin\theta` temos:\\
+:math:`\sin\theta` temos:
 
 .. math::
    \sin\theta & =\frac{R}{R+5}\\
@@ -450,7 +450,7 @@ foram medidos, pode-se calcular o outro, ao qual denominaremos de :math:`\gamma`
    & =180-\left(37^\circ51'+75^\circ47'\right)\\
    & =66^\circ22'
 
-Uma vez que conhecemos o lado AB=50~m, o seu ângulo oposto, :math:`\gamma=66^\circ22'`, e o ângulo
+Uma vez que conhecemos o lado AB=50 m, o seu ângulo oposto, :math:`\gamma=66^\circ22'`, e o ângulo
 :math:`\alpha=75^\circ47'`, oposto ao lado que queremos determinar, AP, pode-se aplicar a lei dos senos, como segue abaixo:
 
 .. math::
@@ -458,7 +458,7 @@ Uma vez que conhecemos o lado AB=50~m, o seu ângulo oposto, :math:`\gamma=66^\c
    \frac{\text{AB}}{\sin\gamma} & =\frac{\text{AP}}{\sin\beta}\\
    \frac{50\,\text{m}}{\sin66^\circ22'} & =\frac{AP}{\sin75^\circ47'}\\
    \text{AP} & =\frac{50\,\text{m}\cdot\sin75^\circ47'}{\sin66^\circ22'}\\
-   \text{AP} & =52,906~\text{m}.
+   \text{AP} & =52,906\,\text{m}.
 
 ----
 
@@ -564,6 +564,7 @@ respectivamente. Aplicando a Equação :eq:`distanciaeuclidiana`:
    & =\sqrt{\left(4,5+4,9\right)^{2}+\left(2,1+3,2\right)^{2}}\\
    & =10,791\,\text{m}.
 
+----
 
 Coordenada polar
 ^^^^^^^^^^^^^^^^
@@ -636,9 +637,9 @@ Qual a sua coordenada retangular? A unidade de comprimento é o metro.
 :solucao:`Solução:`
 A coordenada polar de C é :math:`(213,147^\circ, 5,85)`. Então:
 
-:math:`x_{\mathrm{C}} =r_{\mathrm{C}}\cos\theta_{\mathrm{C}}=5,85\cos 213,147^\circ=-4,9\mathrm{~m}`.
+:math:`x_{\mathrm{C}} =r_{\mathrm{C}}\cos\theta_{\mathrm{C}}=5,85\cos 213,147^\circ=-4,9\,\mathrm{m}`.
 
-:math:`y_{\mathrm{C}} =r_{\mathrm{C}}\sin\theta_{\mathrm{C}}=5,85\sin 213,147^\circ=-3,2\mathrm{~m}`.
+:math:`y_{\mathrm{C}} =r_{\mathrm{C}}\sin\theta_{\mathrm{C}}=5,85\sin 213,147^\circ=-3,2\,\mathrm{m}`.
 
 Como era esperado, a coordenada retangular de C é a mesma apresentada na :numref:`figcoordretangular`.
 
@@ -769,8 +770,8 @@ lados e/ou ângulos internos. Considere o triângulo da Figura ao lado. Caso sej
 
 ----
 
-:exem:`Exemplo 13` Qual a área de triângulo em que dois lados medem :math:`3,1$ m e :math:`6,8` m, e
-o ângulo entre eles é de :math:`34^\circ`.
+:exem:`Exemplo 13` Qual a área de triângulo em que dois lados medem :math:`3,1\,\text{m}` e
+:math:`6,8\,\text{m}`, e o ângulo entre eles é de :math:`34^\circ`.
 
 :solucao:`Solução:`
 
@@ -917,7 +918,8 @@ a :math:`3` m.
 Exercícios
 ==========
 
-:exem:`1)` Com o triângulo da Figura abaixo, de coordenada :math:`R(12,3\,text{m},\,6,1\,text{m})`,
+:exem:`1)` Com o triângulo da Figura abaixo, de coordenada
+:math:`R(12,3\,\text{m},\,6,1\,\text{m})`,
 calcular os ângulos :math:`\alpha`, :math:`\beta,` e o seno, cosseno e tangente
 destes ângulos.
 
@@ -955,8 +957,9 @@ destes ângulos.
 
 ----
 
-:exem:`6)` Um triângulo tem lados :math:`a=7,5` m, :math:`b=8,9` m e :math:`c=10,2` m. Calcule:
-i) a área (m:math:`^2` e ha); ii) os ângulos internos. 
+:exem:`6)` Um triângulo tem lados :math:`a=7,5\,\text{m}`, :math:`b=8,9\,\text{m}`
+e :math:`c=10,2\,\text{m}`. Calcule:
+i) a área (:math:`\text{m}^2` e ha); ii) os ângulos internos.
 
 :exem:`Resp.:`  :math:`32,437\,\text{m}^2`; :math:`0,003243` ha; :math:`\hat{a}=45,614^\circ`;
 :math:`\hat{b}=57,999^\circ`; :math:`\hat{c}=76,387^\circ`.
@@ -1029,7 +1032,7 @@ da terra aproximado, por meio destas medidas.
    :alt: exer_1_11.png
    :align: center
 
-:exem:`Resp.:`  :math:`6\,308,3` km.
+:exem:`Resp.:`  :math:`6\,308,3\,\text{km}`.
 
 ----
 
@@ -1044,7 +1047,7 @@ que o engenheiro mede :math:`1,80` m, qual é a altura da árvore?
    :alt: exer_1_12.png
    :align: center
 
-:exem:`Resp.:`  :math:`20,546` m.
+:exem:`Resp.:`  :math:`20,546\,\text{m}`.
 
 ----
 
@@ -1056,7 +1059,7 @@ as medidas de distância em metros.
    :alt: exer_1_13.png
    :align: center
 
-:exem:`Resp.:`  Altura = :math:`18,466` m.
+:exem:`Resp.:`  Altura = :math:`18,466\,\text{m}`.
 
 ----
 
@@ -1070,7 +1073,7 @@ altura da igreja?
    :alt: exer_1_14.png
    :align: center
 
-:exem:`Resp.:`  Altura = :math:`31,275` m.
+:exem:`Resp.:`  Altura = :math:`31,275\,\text{m}`.
 
 ----
 
@@ -1087,11 +1090,12 @@ e :math:`h`.
    :alt: exer_1_15.png
    :align: center
 
-:exem:`Resp.:`  :math:`x=140,628\,\text{m}` e :math:`h=340,628\text{m}`.
+:exem:`Resp.:`  :math:`x=140,628\,\text{m}` e :math:`h=340,628\,\text{m}`.
 
 ----
 
-:exem:`16)` Calcule a área de um triângulo retângulo de base :math:`20,0\,\text{m}` e altura de :math:`14,2` m.
+:exem:`16)` Calcule a área de um triângulo retângulo de base :math:`20,0\,\text{m}` e
+altura de :math:`14,2\,\text{m}`.
 
 :exem:`Resp.:`  :math:`142\,\text{m}^2`.
 
@@ -1105,7 +1109,7 @@ e :math:`h`.
    :alt: exer_1_17.png
    :align: center
 
-:exem:`Resp.:`  :math:`x=571,93` m; :math:`y=660,069` m.
+:exem:`Resp.:`  :math:`x=571,93\,\text{m}`; :math:`y=660,069`.
 
 ----
 

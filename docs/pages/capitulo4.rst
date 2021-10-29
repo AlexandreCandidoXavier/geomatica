@@ -59,7 +59,7 @@ O primeiro satélite a ser lançado foi o Sputnik, Russo, em 4 de outubro
 de 1957. Desde então vários outros foram lançados, fazendo com que
 uma outra metodologia pudesse ser utilizada para o posicionamento,
 sendo denominada de programa mundial de triangulação por satélite
-(*worldwide satellate triangulation program*). Constituia em
+(*worldwide satellite triangulation program*). Constituia em
 fotografar, de dois pontos da terra, satélites com características
 refletivas no espaço, com estrelas ao fundo, ao longo de um tempo.
 Por técnicas fotogramétricas era possível encontrar a direção entre
@@ -519,8 +519,7 @@ _______
 Europeia (EU, *European Union*). O nome, Galileu, é uma homenagem
 ao cientista italiano Galileu Galilei, que viveu entre os anos de
 1564 e 1642, tendo realizado grandes contribuições às ciências, como,
-por exemplo, a melhoria do telescópio (Maiores informações
-`aqui <http://en.wikipedia.org/wiki/Galileo_Galilei>`_).
+por exemplo, a melhoria do telescópio (`Maiores informações aqui <https://pt.wikipedia.org/wiki/Galileu_Galilei>`_).
 O sistema Galileu envolve uma parceria da Comissão Europeia (EC, *European
 Commission*) com a Agência Espacial Europeia (ESA, *European
 Space Agency*). A EC é responsável pelo dimensionamento político e
@@ -785,6 +784,7 @@ Erro devido ao receptor
 -----------------------
 
 #. **Antena**
+
    - **Centralização do centro da antena**: em levantamento de precisão, a antena do receptor
      GNSS terá que estar centralizada sobre um ponto, geralmente materializado
      por um marco. A vertical do centro da antena é materializada por um

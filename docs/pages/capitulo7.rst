@@ -527,13 +527,13 @@ os dados estão tabelados.
     C           :math:`118^\circ37'59''`            :math:`\mathrm{Az_{CD}}=215^\circ3'43''-180^\circ+118^\circ37'59''=153^\circ41'42''`
     D           :math:`82^\circ47'11''`             :math:`\mathrm{Az_{DE}}=153^\circ41'42''-180^\circ+82^\circ47'11''=56^\circ28'53''`
     E           :math:`142^\circ50'23''`            :math:`\mathrm{Az_{EA}}=56^\circ28'53''-180^\circ+142^\circ50'23''=19^\circ19'16''`
-    :math:`\,`          **Verificação**             :math:`\,`
-    ----------- ----------------------------------- ----------------------------------------------------------------------------------------------------------------------------
+    **Verificação**
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     A           :math:`99^\circ49'3''`              :math:`\mathrm{Az_{AB}}=19^\circ19'16''-180^\circ+99^\circ49'3''=-60^\circ51'41''=\color{blue}\mathbf{299^\circ8'19''}`
     =========== =================================== ============================================================================================================================
 
 No que diz respeito ao cálculo dos rumos, já foi dito anteriormente
- que é preferível trabalhar com os ângulos de azimute devido a facilidade na computação
+que é preferível trabalhar com os ângulos de azimute devido a facilidade na computação
 das projeções dos alinhamentos. Todavia, o cálculo do rumo é realizado
 de maneira similar aos do azimutes. Devendo-se considerar o rumo anterior
 e o ângulo interno medido. Outra possibilidade para determinação do
@@ -576,22 +576,23 @@ valor conhecido (**IV**).
 
 
 .. table::
+    :widths: 1 1 3 1 1
     :header-alignment: ccccc
     :column-alignment: crrrr
 
-    =========== ============================== ===================================================================================================== ========================== ================================================
-    Alin.        **(I)** Deflexão medida       **(II)** Cálculo do Az                                                                                **(III)** Compensação      **(IV)** Az comp
-    =========== ============================== ===================================================================================================== ========================== ================================================
-    :math:`O1`  :math:`\,`                     Azimute conhecido :math:`20^\circ51'16''`                                                             :math:`\,`                 :math:`\,`
-    :math:`12`  :math:`123^\circ21'52''` (DD)  :math:`20^\circ51'16''+123^\circ21'52''=144^\circ13'8''`                                              :math:`-7''\cdot1=-7''`    :math:`144^\circ13'1''`
-    :math:`23`  :math:`71^\circ47'25''` (DE)   :math:`144^\circ13'8''-71^\circ47'25''=72^\circ25'43''`                                               :math:`-7''\cdot2=-14''`   :math:`72^\circ25'29''`
-    :math:`34`  :math:`49^\circ34'36''` (DD)   :math:`72^\circ25'43''+49^\circ34'36''= 122^\circ0'19''`                                              :math:`-7''\cdot3=-21''`   :math:`121^\circ59'58''`
-    :math:`45`  :math:`76^\circ38'42''` (DE)   :math:`122^\circ0'19''-76^\circ38'42''=45^\circ21'37''`                                               :math:`-7''\cdot4=-28''`   :math:`45^\circ21'9''`
-    :math:`5P`  :math:`99^\circ23'11''` (DD)   :math:`45^\circ21'37''+99^\circ23'11''=144^\circ44'48''`                                              :math:`-7''\cdot5=-35''`   :math:`\color{blue}\mathbf{144^\circ44'13''}`
-    :math:`\,`  :math:`\,`                     :math:`\text{Az}_\mathrm{5P}` calculado :math:`=144^\circ44'48''`                                     :math:`\,`                 :math:`\,`
-    :math:`\,`  :math:`\,`                     :math:`\text{Az}_\mathrm{5P}` conhecido :math:`=\color{blue}\underline{\mathbf{-144^\circ44'13''}}`   :math:`\,`                 :math:`\,`
-    :math:`\,`  :math:`\,`                     :math:`\text{erro}=35''`                                                                              :math:`\,`                 :math:`\,`
-    =========== ============================== ===================================================================================================== ========================== ================================================
+    =========== ====================================== ===================================================================================================== ========================== ================================================
+    Alin.        **(I)** Deflexão medida               **(II)** Cálculo do Az                                                                                **(III)** Compensação      **(IV)** Az comp
+    =========== ====================================== ===================================================================================================== ========================== ================================================
+    :math:`O1`  :math:`\,`                             Azimute conhecido :math:`20^\circ51'16''`                                                             :math:`\,`                 :math:`\,`
+    :math:`12`  :math:`123^\circ21'52''\,\text{(DD)}`  :math:`20^\circ51'16''+123^\circ21'52''=144^\circ13'8''`                                              :math:`-7''\cdot1=-7''`    :math:`144^\circ13'1''`
+    :math:`23`  :math:`71^\circ47'25''\,\text{(DE)}`   :math:`144^\circ13'8''-71^\circ47'25''=72^\circ25'43''`                                               :math:`-7''\cdot2=-14''`   :math:`72^\circ25'29''`
+    :math:`34`  :math:`49^\circ34'36''\,\text{(DD)}`   :math:`72^\circ25'43''+49^\circ34'36''= 122^\circ0'19''`                                              :math:`-7''\cdot3=-21''`   :math:`121^\circ59'58''`
+    :math:`45`  :math:`76^\circ38'42''\,\text{(DE)}`   :math:`122^\circ0'19''-76^\circ38'42''=45^\circ21'37''`                                               :math:`-7''\cdot4=-28''`   :math:`45^\circ21'9''`
+    :math:`5P`  :math:`99^\circ23'11''\,\text{(DD)}`   :math:`45^\circ21'37''+99^\circ23'11''=144^\circ44'48''`                                              :math:`-7''\cdot5=-35''`   :math:`\color{blue}\mathbf{144^\circ44'13''}`
+    :math:`\,`  :math:`\,`                             :math:`\text{Az}_\mathrm{5P}` calculado :math:`=144^\circ44'48''`                                     :math:`\,`                 :math:`\,`
+    :math:`\,`  :math:`\,`                             :math:`\text{Az}_\mathrm{5P}` conhecido :math:`=\color{blue}\underline{\mathbf{-144^\circ44'13''}}`   :math:`\,`                 :math:`\,`
+    :math:`\,`  :math:`\,`                             :math:`\text{erro}=35''`                                                                              :math:`\,`                 :math:`\,`
+    =========== ====================================== ===================================================================================================== ========================== ================================================
 
 ----
 

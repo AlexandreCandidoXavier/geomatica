@@ -273,7 +273,7 @@ dado por:
 e altitude geodésica de um ponto :math:`P` valem: :math:`\phi=-22^\circ13'21,1337''`,
 :math:`\lambda=-41^\circ47'29,8921''` e
 :math:`h=272,32\,\mathrm{m}`. Considerando elipsóide WGS84, tendo como
-raios dos semieixos: :math:`a=6.378.137,0` m e :math:`b=6.356.752,3` m,
+raios dos semieixos: :math:`a=6.378.137,0\,\text{m}` e :math:`b=6.356.752,3\,\text{m}`,
 calcule as coordenadas retangulares.
 
 :solucao:`Solução:`
@@ -467,13 +467,14 @@ apresentadas abaixo:
 Para o Datum SAD69:
 
 - Figura geométrica para a Terra: Elipsóide Internacional de 1967; Semi
-  eixo maior :math:`a=6.378.160` m; :math:`f=1/298,2`.
+  eixo maior :math:`a=6.378.160\,\text{m}`; :math:`f=1/298,2`.
 - Parâmetros referentes ao posicionamento espacial do elipsóide: Orientação
   geocêntrica com eixo de rotação paralelo ao eixo de rotação da Terra;
   plano meridiano origem paralelo ao plano meridiano de Greenwich;
 - Orientação topocêntrica, com: Ponto Datum = Vértice de triangulação
-  Chuá; :math:`\phi_{\mathrm{G}}=19^\circ45'41,6527''` S; :math:`\lambda_{\text{G}}=48^\circ06'04,0639''` W;
-  :math:`\phi_{\text{A}}=19^\circ45'41,34''` S; :math:`\lambda_{\text{A}}=48^\circ06'07,80''` W;
+  Chuá; :math:`\phi_{\mathrm{G}}=19^\circ45'41,6527''\,\text{S}`;
+  :math:`\lambda_{\text{G}}=48^\circ06'04,0639''\,\text{W}`;
+  :math:`\phi_{\text{A}}=19^\circ45'41,34''\,\text{S}`; :math:`\lambda_{\text{A}}=48^\circ06'07,80''\,\text{W}`;
   :math:`A_{\text{G}}=271^\circ30'04,05''` SWNE para VT-Uberaba;
   :math:`N=0,0\,\text{m.}`
 
@@ -545,19 +546,19 @@ Projeção cartográfica
 =====================
 
 Projeções cartográficas são funções matemáticas que transformam as
-coordenadas geodésicas :math:`(\phi,\,\lambda)`) para coordenadas planas
-:math:`(x,\,y)`), isto é, :math:`x=f(\phi,\,\lambda)` e :math:`y=f(\phi,\,\lambda)`.
+coordenadas geodésicas :math:`(\phi,\,\lambda)` para coordenadas planas
+:math:`(x,\,y)`, isto é, :math:`x=f(\phi,\,\lambda)` e :math:`y=f(\phi,\,\lambda)`.
 Podem-se classificar as projeções cartográficas de acordo com:
 
 
-- a superfície utilizada na projeção: **plana** (:numref:`proj_tipos` a, d, g), **cilíndrica** (Figuras b, e, h)
+- a superfície utilizada na projeção: **plana** (:numref:`proj_tipos` a, d, g),  **cilíndrica** (:numref:`proj_tipos` b, e, h)
   ou **cônica** (:numref:`proj_tipos` c, f, i). Na prática, a projeção é realizada analiticamente, ou seja, por meio
   de equações matemáticas, que são variantes destas formas geométricas;
 - se é **tangente** ou **secante** (:numref:`proj_tipos_sec`);
 - a posição da figura geométrica, por exemplo, caso a projeção seja
   cilíndrica tangente, ela é dita como sendo normal se o cilindro é
   tangente no equador (e.g. :numref:`proj_tipos` b); transversa,
-  caso o cilindro seja tangente a um meridiano (e.g. Figura e);
+  caso o cilindro seja tangente a um meridiano (e.g. :numref:`proj_tipos` e);
   e é oblíqua caso o cilindro seja tangente à qualquer seção normal
   que passa pelo ponto central (e.g. :numref:`proj_tipos` h).
 
@@ -866,7 +867,7 @@ de H à N (:numref:`utmzoneBR`). Para a grande maioria dos
 estados, são necessários mais de um fuso para se trabalhar com as
 coordenadas UTM. Por exemplo, para o estado do Amazonas será necessário
 trabalhar com quatro fusos. Já o estado do Espírito Santo, encontra-se
-inserido em um único fuso, o :math:`24`, cujos meridianos limites são :math:`42^{\circ}` W
+inserido em um único fuso, o :math:`24`, cujos meridianos limites são :math:`42^{\circ}\text{W}`
 e :math:`36^\circ\text{W}`  :math:`(\text{MC}=39^\circ\text{W})`. Este estado encontra-se
 entre os paralelos :math:`24^\circ\text{S}` e :math:`16^\circ\text{S}`, letra de linha
 da latitude 'K'. É por isto, que quando nos encontramos com um receptor
@@ -918,13 +919,14 @@ MC de :math:`-39^{\circ}`, como já dito anteriormente. O estado encontra-se
 que 500.000\ m. No MC deste fuso é aplicada uma redução na escala
 de :math:`0,9996\,(k_{0})`. É apresentada nesta Figura a linha em que não
 há redução de escala :math:`(k=1)`, encontrando-se a aproximadamente
-180 km de MC. Todos os pontos que encontram-se a direita desta linha
+:math:`180\,\text{km}` de MC. Todos os pontos que encontram-se a direita desta linha
 e a esquerda do MC terão a escala reduzida, :math:`k<1`. Já pontos que
 se encontrarem à esquerda da linha :math:`k=1`, será aplicada uma ampliação
 :math:`(k>1)`. A coordenada do município de Alegre, :math:`\text{E}=236.175\,\text{m}`
 e :math:`\text{N}=7.701.983\,\text{m}`, de onde
 pode-se concluir, por exemplo, que ele está :math:`263.825\,\text{m}` do MC :math:`(500.000-236.175)`
-e a uma distância de :math:`2.298.017\,\text{m}` m da linha do Equador :math:`(10.000.000-7.701.983)`.
+e a uma distância de :math:`2.298.017\,\text{m}` da linha do Equador
+:math:`(10.000.000-7.701.983)`.
 
 
 .. _utmzoneAlegreES:
@@ -941,8 +943,8 @@ e a uma distância de :math:`2.298.017\,\text{m}` m da linha do Equador :math:`(
 Sendo conhecidas as coordenadas geodésicas, latitude (:math:`\phi`) e longitude
 (:math:`\lambda`), de um ponto, seguem as fórmulas que são utilizadas para
 cálculo das coordenadas UTM. Para se obter as coordenadas, a Este
-soma-se :math:`500.000` m ao valor de :math:`x` (Equação :eq:`eq:utmx`) e, para
-coordenada Norte no hemisfério sul, soma-se :math:`10.000.000` m a :math:`y`
+soma-se :math:`500.000\,\text{m}` ao valor de :math:`x` (Equação :eq:`eq:utmx`) e, para
+coordenada Norte no hemisfério sul, soma-se :math:`10.000.000\,\text{m}` a :math:`y`
 (Equação :eq:`eq:utmy`).
 
 .. math::

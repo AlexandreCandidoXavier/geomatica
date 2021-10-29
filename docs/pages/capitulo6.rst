@@ -189,7 +189,7 @@ de :math:`A` para :math:`B`, um balizeiro ficará parado em :math:`B` (balizeiro
 e, os outros dois balizeiros farão as medidas, o balizeiro de ré,
 inicialmente no ponto :math:`A` e o balizeiro intermediário, que vai puxar
 a trena na direção de :math:`B`. Após o balizeiro intermediário chegar próximo
-ao limite da trenada, por exemplo :math:`20\,\tetxt{m}`, terá que fazer o correto alinhamento
+ao limite da trenada, por exemplo :math:`20\,\text{m}`, terá que fazer o correto alinhamento
 com a linha :math:`AB`. Isto será possível com a orientação do balizeiro de
 ré que, olhando para a sua baliza e para a baliza no ponto de vante,
 orientará o balizeiro intermediário para o correto alinhamento. Uma
@@ -451,8 +451,8 @@ Conhecendo-se as DH's da poligonal e os ângulos internos dos vértices,
 apresentado na Secção :any:`poligonal_fechada`.
 Os ângulos internos de cada vértice podem ser calculados com o auxílio
 da lei dos cossenos (Equação :eq:`eqleicos1`).
-Por exemplo, no vértice :math:`A`, o ângulo interno, :math:`88,35^{\circ}`,
-será a soma de dois ângulos, o :math:`\alpha:math:` e o :math:`\beta`, opostos, respectivamente,
+Por exemplo, no vértice :math:`B`, o ângulo interno, :math:`88,35^{\circ}`,
+será a soma de dois ângulos, :math:`\alpha` e :math:`\beta`, opostos, respectivamente,
 as diagonais :math:`h:` e :math:`i`.
 
 .. _fig_levantamentoAtrena.png:
@@ -839,7 +839,7 @@ Fontes de erro
 
 Quando trabalhando de forma adequada com um MED, a precisão deste
 equipamento normalmente é muito alta, por exemplo, precisão de :math:`\pm(5\mathrm{\,mm}+2\mathrm{\,ppm)}`,
-isto é, para uma medida, de 5.000 m de distância, o erro esperado
+isto é, para uma medida, de :math:`5.000\,\text{m}` de distância, o erro esperado
 é de :math:`\pm15\,\mathrm{mm}` :math:`\left(5\,\mathrm{mm}+\left(\frac{2}{1\,000\,000}\right)5\,000\,\textrm{m}\cdot1\,000\,\textrm{mm m}^{-1}\right)`.
 Todavia algumas precauções no uso deste equipamento deve ser observadas,
 pois pode implicar em erros nas medidas. Pode-se citar como erros
