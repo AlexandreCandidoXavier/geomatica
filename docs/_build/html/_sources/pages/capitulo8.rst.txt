@@ -93,6 +93,8 @@ No entanto, o método das deflexões também poderia ser o utilizado.
    e geometricamente aberta e poligonal aberta (b), matematicamente
    e geometricamente aberta.
 
+.. _Cálculo de uma poligonal fechada:
+
 Cálculo de uma poligonal fechada
 ================================
 
@@ -127,12 +129,12 @@ que devem ser realizados neste tipo de politonal. Na caderneta de
 campo há a indicação de que os ângulo internos foram medidos pelo
 método das direções e a distâncias horizontais correspondem a média
 das leituras de ré e vante dos alinhamentos. Existe dois pontos de
-controle, o O e o A, onde suas coordenadas UTM foram determinadas
-por meio de levantamento GNSS, logo, o azimute OA pode ser determinado.
+controle, o :math:`\mathrm{O}` e o :math:`\mathrm{A}`, onde suas coordenadas UTM foram determinadas
+por meio de levantamento GNSS, logo, o azimute :math:`\mathrm{OA}` pode ser determinado.
 Ele será a referência para a determinação dos demais azimutes. No
-início do levantamento, com o equipamento na estação A, a primeira
+início do levantamento, com o equipamento na estação :math:`\mathrm{A}`, a primeira
 medida de ângulo horizontal foi do alinhamento de azimute conhecido,
-OA, ao primeiro alinhamento da poligonal, AB. Depois passou-se a medir
+:math:`\mathrm{OA}`, ao primeiro alinhamento da poligonal, :math:`\mathrm{AB}`. Depois passou-se a medir
 os ângulos internos e as distâncias horizontais dos alinhamentos,
 sendo os seus valores anotados na tabela da caderneta de campo.
 
@@ -153,7 +155,7 @@ Avaliação do erro angular de fechamento
 A avaliação o erro angular de fechamento é realizada por meio da verificação
 do somatório dos ângulos internos medidos com o somatório dos ângulos
 internos teórico. Para o nosso exemplo, como o número de vértices
-é de :math:`5`:math:`(n=5)`, temos que o somatório teórico é de :math:`540^\circ`,
+é de :math:`5` :math:`(n=5)`, temos que o somatório teórico é de :math:`540^\circ`,
 :math:`(n-2)180^\circ`. Logo, erro angular de fechamento é de :math:`35''`.
 Considerando a tolerância máxima do erro angular de fechamento
 :math:`\text{T}\alpha\leq40''\sqrt{n} = 89''`,
@@ -166,7 +168,7 @@ constante. Quando isto não ocorrer,
 melhor ponderar as compensações pelos comprimentos dos alinhamentos
 em que o ângulo foi medido onde, as maiores compensações são aplicadas
 para os comprimentos mais curtos, pois estes estão sujeitos aos maiores
-erros nas suas medidas :cite:`loch`:cite:`WOLF`.
+erros nas suas medidas (ver :cite:`loch` e :cite:`WOLF`).
 
 .. table:: Compensação do erro angular pelo método linear
     :widths: 1 1 1 1
@@ -174,7 +176,7 @@ erros nas suas medidas :cite:`loch`:cite:`WOLF`.
     :column-alignment: cccr
 
     ============ ======================================= ================================= ========================================
-    Estação      :math:`\sphericalangle` medido          erro médio                        :math:`\sphericalangle` compensado}
+    Estação      :math:`\sphericalangle` medido          erro médio                        :math:`\sphericalangle` compensado
     ============ ======================================= ================================= ========================================
     :math:`A`    :math:`49^\circ  7'44''`                :math:`+7`                        :math:`49^\circ 7'51''`
     :math:`B`    :math:`100^\circ  4' 4''`               :math:`+7`                        :math:`100^\circ 4'11''`
@@ -197,26 +199,30 @@ o hipotético ou o da quadrícula.
 Com o uso do GNSS, trabalhando com coordenadas do tipo UTM, a partir
 da determinação de dois pontos na área a ser levantada, o azimute
 inicial tornou-se de fácil obtenção. Este azimute tem como referência
-o meridiano da quadrícula\index{Norte!quadrícula}. Como no nosso
+o meridiano da quadrícula. Como no nosso
 exemplo foram determinadas as coordenadas UTM dos pontos de controle
-O e A, pode-se calcular o azimute OA e, como o ângulo OAB também foi
-medido, o azimute AB pode ser calculado, conforme apresentado no Exemplo
+:math:`\mathrm{O}` e :math:`\mathrm{A}`, pode-se calcular o azimute :math:`\mathrm{OA}`
+e, como o ângulo :math:`\mathrm{OAB}` também foi
+medido, o azimute :math:`\mathrm{AB}` pode ser calculado, conforme apresentado no Exemplo
 abaixo.
 
 ----
 
-:exem:`Exemplo 1` Calcular o azimute AB da poligonal fechada apresentada na :numref:`fig_PoligonalFechadaSolucao.png`,
-onde se conhecem as coordenadas UTM dos pontos O e A, e o ângulo OAB.
+:exem:`Exemplo 1` Calcular o azimute :math:`\mathrm{AB}` da
+poligonal fechada apresentada na :numref:`fig_PoligonalFechadaSolucao.png`,
+onde se conhecem as coordenadas UTM dos pontos :math:`\mathrm{O}` e :math:`\mathrm{A}`,
+e o ângulo :math:`\mathrm{OAB}`.
 
 :solucao:`Solução:`
-Cálculo do azimute OA por meio das coordenadas UTM:
+Cálculo do azimute :math:`\mathrm{OA}` por meio das coordenadas UTM:
 
 .. figure:: /images/capitulo8/exem_Calcularoazimutepoligonalfechadasolucaoa.png
    :scale: 55 %
    :alt: exem_Calcularoazimutepoligonalfechadasolucaoa.png
    :align: center
 
-Cálculo do azimute AB utilizando o azimute OA e o ângulo horizontal OAB:
+Cálculo do azimute :math:`\mathrm{AB}` utilizando o azimute :math:`\mathrm{OA}` e
+o ângulo horizontal :math:`\mathrm{OAB}':
 
 .. figure:: /images/capitulo8/exem_Calcularoazimutepoligonalfechadasolucaob.png
    :scale: 55 %
@@ -226,12 +232,13 @@ Cálculo do azimute AB utilizando o azimute OA e o ângulo horizontal OAB:
 ----
 
 Por meio de um azimute da poligonal conhecido, no nosso exemplo o
-azimute AB e; com as medidas dos ângulos internos compensadas, os
+azimute :math:`\mathrm{AB}` e; com as medidas dos ângulos internos compensadas, os
 demais azimutes da poligonal podem ser calculados. O azimute de um
 alinha manto é dado pelo azimute do alinhamento anterior :math:`\pm180^\circ`,
 mais o ângulo interno compensado. Os azimutes provisórios calculados
 para o nosso exemplo são apresentados na Tabela abaixo,
-onde no final, o azimute AB é recalculado para a verificação dos cálculos.
+onde no final, o azimute :math:`\mathrm{AB}` é recalculado
+para a verificação dos cálculos.
 
 .. table:: Tabela de cálculo dos azimutes do exemplo da :numref:`fig_PoligonalFechadaSolucao.png`. Note que os ângulos internos são os compensados.
     :header-alignment: ccc
@@ -257,7 +264,7 @@ Uma vez calculados os azimutes provisórios, tem-se que determinar
 as coordenadas parciais dos alinhamentos, que nada mais são do que
 as projeções dos alinhamentos sobre o eixo-:math:`x` e :math:`y`. Na
 :numref:`fig_coordenadasparciais` é apresentado um alinhamento
-hipotético AB, e a sua projeção sobre o eixo-:math:`x`e :math:`y`, correspondendo,
+hipotético :math:`\mathrm{AB}, e a sua projeção sobre o eixo-:math:`x`e :math:`y`, correspondendo,
 respectivamente, a :math:`\Delta x` e a :math:`\Delta y`. Como este alinhamento
 teve a distância horizontal e o azimute determinados, por meio deles,
 pode-se calcular as suas coordenadas parciais.
@@ -304,15 +311,15 @@ do erro de fechamento linear e a sua compensação'.
 Avaliação do erro de fechamento linear
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A nossa poligonal, ABCDEA, começa e termina em um mesmo ponto, o A.
+A nossa poligonal, :math:`\mathrm{ABCDEA}`, começa e termina em um mesmo ponto, o :math:`\mathrm{A}`.
 Uma vez que as medidas de ângulos e distância estão sujeitas a erros,
 caso se calcule as coordenadas retangulares das estações a partir
 das coordenadas parciais (:numref:`fig_coordenadaspar`),
-ao invés de obtermos ao final a mesma coordenada da estação A, obteríamos
-uma coordenada distinta, onde a denominaremos de A:math:`'`. Na :numref:`fig_errolinear`
+ao invés de obtermos ao final a mesma coordenada da estação :math:`A`, obteríamos
+uma coordenada distinta, onde a denominaremos de :math:`A'`. Na :numref:`fig_errolinear`
 é apresentado um esquema da nossa poligonal
-que não fecha em A, mas sim em A:math:`'`. A distância entre A e A:math:`'`
-é denominado de erro de fechamento linear (:math:`E`). Ele é utilizado
+que não fecha em :math:`A`, mas sim em :math:`A'`. A distância entre :math:`A` e :math:`A'`
+é denominado de erro de fechamento linear :math:`(E)`. Ele é utilizado
 para avaliação da precisão do levantamento, sendo dado por:
 
 .. math::
@@ -354,7 +361,7 @@ temos:
 .. math::
    E = \sqrt{(0,301)^2+(-0,424)^2} =0,520\,\text{m}.
 
-O valor do perímetro da poligonal é de :math:`911,307\text{m}\,(0,911307\,\text{km})`
+O valor do perímetro da poligonal é de :math:`911,307\,\text{m}\,(0,911307\,\text{km})`
 (:numref:`fig_coordenadaspar`, logo :math:`\mathrm{T}_p`:
 
 :math:`\mathrm{T}_p=0,56\sqrt{0,911307)}=0,535\,\text{m}`.
@@ -375,18 +382,18 @@ poligonal :math:`(\Sigma\mathrm{DH})`. Desta forma, :math:`P_r` do nosso exemplo
 será:
 
 .. math::
-   Pr&=\frac{E}{\Sigma\mathrm{DH}}\\
-   Pr&=\frac{0,520}{911,307}
+   Pr =\frac{E}{\Sigma\mathrm{DH}}\\
+   Pr =\frac{0,520}{911,307}
 
 Dividindo o numerador e o denominador por :math:`0,520`, com a finalidade
-de tornar o numerador 1 e, arredondando o denominador, temos:
+de tornar o numerador :math:`1` e, arredondando o denominador, temos:
 
 .. math::
-   Pr&=\frac{\dfrac{0,520}{0,520}}{\dfrac{911,307}{0,520}}\\
-   Pr&=\frac{1}{1\,753}.
+   Pr =\frac{\dfrac{0,520}{0,520}}{\dfrac{911,307}{0,520}}\\
+   Pr =\frac{1}{1\,753}.
 
-Significa que no nosso levantamento ocorre 1 m de erro a cada :math:`1\,753`
-m de perímetro da poligonal. Quanto maior o valor do denominador,
+Significa que no nosso levantamento ocorre :math:`1\,\text{m}` de erro a cada :math:`1\,753\,\text{m}`
+de perímetro da poligonal. Quanto maior o valor do denominador,
 maior é a precisão do levantamento.
 
 Compensação do erro de fechamento linear
@@ -579,9 +586,9 @@ estiver no quadrante SE ou SW e, somando :math:`360^\circ` se o alinhamento
 estiver no quadrante NW. No quadrante NE, o azimute é dado diretamente
 na Equação.
 
-Cabe também salientar que, a Equação \ref{eq:calculoAzimutefinal}
-não é definida quando :math:`\Delta y=0`, nem a Equação \ref{eq:calculoDHfinal},
-quando :math:`\sin \mathrm{Az}_{\mathrm{AB}}=0` ou :math:`\cos \mathrm{Az}_{\mathrm{AB}}=0`.
+Cabe também salientar que, a Equação :eq:`eq:calculoAzimutefinal`
+não é definida quando :math:`\Delta y=0`, nem a Equação :eq:`eq:calculoDHfinal2` e :eq:`eq:calculoDHfina3`,
+quando  :math:`\sin \mathrm{Az}_{\mathrm{AB}}=0` ou :math:`\cos \mathrm{Az}_{\mathrm{AB}}=0`.
 Desta forma, comsiderar:
 
 
@@ -600,13 +607,14 @@ Desta forma, comsiderar:
 finais dos alinhamentos do nosso exemplo.
 
 :solucao:`Solução:` A partir das  coordenadas parciais compensadas do Exemplo
-2 e, por meio da Equação :eq:`eq:calculoAzimutefinal, o azimute
+2 e, por meio da Equação :eq:`eq:calculoAzimutefinal`, o azimute
 AB será:
 
 .. math::
-   \tan\mathrm{Az}_{\mathrm{AB}}&=\frac{-193,622}{56,964}=-3,3990\\
-   Az_{AB}&=\arctan(-3,3990)\\
-   Az_{AB}&=-73^{\circ}36'22'',
+   \tan\mathrm{Az}_{\mathrm{AB}} &=\frac{-193,622}{56,964}\\
+   \tan\mathrm{Az}_{\mathrm{AB}} &=-3,3990\\
+   Az_{AB} &=\arctan(-3,3990)\\
+   Az_{AB} &=-73^{\circ}36'22'',
 
 Como o alinhamento está no quadrante NW:
 
@@ -649,3 +657,335 @@ todos os lados poligonais), o erro médio em azimute e o erro médio
 em coordenadas (de posição)'**. Estes procedimentos de avaliação fogem
 ao objetivo introdutório deste livro, logo, não serão apresentados.
 Todavia, estas informações podem ser obtidas na :cite:`NBR13133`.
+
+
+Cálculo da poligonal quando pontos não podem ser ocupados
+---------------------------------------------------------
+
+Muitas vezes, no levantamento de uma poligonal, não é possível ocupar
+os pontos do limite da área, por exemplo, se o limite é materializado
+por uma cerca. Logo, o que se pode fazer é, estacionar o equipamento
+em uma posição próxima, e a partir desta estação, medir o ângulo horizontal
+entre o alinhamento da poligonal e o ponto de interesse e, também,
+a distância horizontal entre a estação e o ponto. Com o ângulo horizontal
+do alinhamento e o azimute da poligonal conhecido, é calculado o azimute
+da estação ao ponto obstruído e suas coordenadas parciais. Então,
+a coordenada do ponto obstruído pode ser calculada, uma vez que ele
+está apoiado em um ponto de coordenada conhecida e se conhecem as
+suas coordenadas parciais.
+
+:exem:`Exemplo 6`  Considere que no nosso exemplo, ao invés da poligonal
+de interesse ser a :math:`\mathrm{ABCDEA}`, passe a ser a :math:`\mathrm{ABPDEA}`, de acordo com a Figura
+que segue. A distância horizontal :math:`\mathrm{CP}` e o ângulo à direita :math:`\mathrm{BCP}` foram
+medidos, sendo, respectivamente, de :math:`7,85\,\text{m}` e  :math:`253^\circ22'` . Calcular
+o azimute e a distância horizontal do alinhamento :math:`\mathrm{BP}`.
+
+
+.. figure:: /images/capitulo8/fig_pontoobstruido.png
+   :scale: 35 %
+   :alt: fig_pontoobstruido.png
+   :align: center
+
+:solucao:`Solução:` Primeiramente, deve-se calcular a coordenada do ponto :math:`\mathrm{P}`. Para tanto,
+temos que determinar o  :math:`\mathrm{Az}_{\mathrm{CP}}`  e as suas coordenadas
+parciais do alinhamento :math:`\mathrm{CP}`. O  :math:`\mathrm{Az}_{\mathrm{CP}}`  é:
+
+.. math::
+   \mathrm{Az}_{\mathrm{CP}} &=\mathrm{Az}_{\mathrm{BC}}-180^{\circ}+\mathrm{BCP}\\
+   \mathrm{Az}_{\mathrm{CP}} &=206^{\circ}26'36''-180^{\circ}+253^{\circ}22'\\
+   \mathrm{Az}_{\mathrm{CP}} &=279^{\circ}48'36''.
+
+As coordenadas parciais do alinhamento :math:`\mathrm{CP}`:
+
+.. math::
+   \Delta x_{{\mathrm{CP}}}  &=\mathrm{DH}_{\mathrm{CP}}\sin\mathrm{Az}_{\mathrm{CP}}\\
+   &=7,85\sin279^{\circ}48'36''\\
+   &=-7,735\,\text{m},
+
+.. math::
+   \Delta y_{{\mathrm{CP}}} &=\mathrm{DH}_{\mathrm{CP}}\cos\mathrm{Az}_{\mathrm{CP}}\\
+   &=7,85\cos279^{\circ}48'36''\\
+   &=1,338\,\text{m}.
+
+Uma vez que a coordenada do ponto :math:`\mathrm{C}` foi calculada (Exemplo \ref{exemplo_cooredenadadotal}),
+:math:`x_\mathrm{C}=267.717,780\,\text{m}`  e  :math:`y_\mathrm{C}=7.370.692,035\,\text{m}`, a
+coordenada de :math:`\mathrm{C}` será (Equações :eq:`eq:coordenadatoalx` e :eq:`eq:coordenadatoaly`):
+
+.. math::
+   x_{\mathrm{P}} &=x_{\mathrm{C}}+\Delta x_{{\mathrm{CP}}}\\
+   &=267.717,780+-7,735\\
+   &=267.710,045\,\text{m},
+
+.. math::
+   y_{\mathrm{P}} &=y_{\mathrm{C}}+\Delta y_{{\mathrm{CP}}}\\
+   &=7.370.692,035+1,337\\
+   &=7.370.693,372\,\text{m}.
+
+Com a coordenada do ponto :math:`\mathrm{B}` conhecida (Exemplo 5)
+e utilizando as Equação :eq:`eq:calculoAzimutefinal`, temos o azimute
+:math:`\mathrm{BP}`:
+
+.. math::
+   \tan\mathrm{Az}_{\mathrm{BP}}&=\frac{x_{\mathrm{B}}-x_{\mathrm{P}}}{y_{\mathrm{B}}-y_{\mathrm{P}}}\\
+   &=\frac{267.817,988-267.710,045}{7.370.893,267-7.370.693,372}\\
+   &=\frac{107,943}{199.895}
+
+Como o alinhamento :math:`\mathrm{BP}' está no quadrante SW:
+
+.. math::
+   \mathrm{Az}_{\mathrm{BP}}&=\arctan\frac{107,943}{199.895}+180^{\circ}\\
+   \mathrm{Az}_{\mathrm{BP}}&=208^{\circ}22'8''.
+
+A distância horizontal :math:`\mathrm{BP}` (Equação :eq:`eq:calculoDHfinal`):
+
+.. math::
+   \mathrm{Az}_{\mathrm{BP}} &=\sqrt{(x_{\mathrm{B}}-x_{\mathrm{P}})^{2}+(y_{\mathrm{B}}-y_{\mathrm{P}})^{2}}\\
+   \mathrm{Az}_{\mathrm{BP}} &=\sqrt{(267.817,988-267.710,045)^{2}+(7.370.893,267-7.370.693,372)^{2}}\\
+   \mathrm{Az}_{\mathrm{BP}} &=227,178\,\text{m}.
+
+----
+
+Cálculo de uma poligonal aberta e apoiada
+-----------------------------------------
+
+No cálculo de uma poligonal aberta e apoiada, as compensações dos
+erros angulares e lineares são realizadas da mesma forma que na poligonal
+fechada, caso estejam dentro da tolerância estabelecida pela :cite:t:`NBR13133`.
+Na avaliação dos erros, se a poligonal aberta e apoiada tem desenvolvimento
+curvo, deve-se calcular o erro de fechamento angular e linear da mesma
+forma que na poligonal fechada em um ponto, conforme apresentado na
+Secção :ref:`Cálculo de uma poligonal fechada`, e comparar com a tolerância
+máxima para este tipo de poligonal. Já, se o desenvolvimento da poligonal
+for retilíneo, devem-se calcular os erros de fechamento longitudinal
+:math:`(\mathit{efl})` e o transversal :math:`(\mathit{eft})`,
+e comparar se estes estão de acordo com a tolerância da :cite:t:`NBR13133`.
+
+
+.. _AbertaApoiadaErro.png:
+
+.. figure:: /images/capitulo8/AbertaApoiadaErro.png
+   :scale: 35 %
+   :alt: AbertaApoiadaErro.png
+   :align: center
+
+   Representação do erro de fechamento longitudinal e transversal de uma poligonal aberta e apoiada.
+
+
+Na :numref:`AbertaApoiadaErro.png` é apresentada uma representação
+gráfica conceitual do :math:`\mathit{efl}`  e do :math:`\mathit{eft}`.
+Seja :math:`\mathrm{AE}` o alinhamento entre os pontos das estações de apoio, de saída e de
+chegada, do levantamento da poligonal :math:`\mathrm{ABCDE}`. Como o levantamento está
+sujeito aos erros angulares e lineares, quando calculada a posição
+do ponto de chegada, ao invés de encontrarmos a coordenada de :math:`\mathrm{E}`, será
+outra, denominaremos de :math:`\mathrm{E}'` . A intersecção da projeção perpendicular
+de :math:`\mathrm{E}'`  ao alinhamento :math:`\mathrm{AB}`, será denominado
+de :math:`\mathrm{H}`. Desta forma, o :math:`\mathit{efl}`
+será comprimento entre o ponto :math:`\mathrm{H}` e :math:`\mathrm{E}`,
+enquanto o :math:`\mathit{eft}`  é
+a distância entre :math:`\mathrm{H}` e :math:`\mathrm{E}'` . Como a poligonal tem desenvolvimento
+retilíneo, :math:`\mathit{eft}`  é função dos erro angular de fechamento,
+enquanto o :math:`\mathit{efl}`  é função do erro linear.
+
+O :math:`\mathit{eft}`  e o :math:`\mathit{efl}`  podem ser obtidos analiticamente,
+antes da compensação angular. Um exemplo de procedimento de cálculo
+é apresentado no Exemplo que segue.
+
+----
+
+:exem:`Exemplo 7` De acordo com a :numref:`AbertaApoiadaErro.png`, seja: a coordenada da estação de controle
+:math:`\mathrm{E}` igual a :math:`x_{\mathrm E}=1\,420,118\,\text{m}` e
+:math:`y_{\mathrm E}=1\,159,889\,\text{m}`; a
+coordenada :math:`\mathrm{E}'` , calculada a partir das medidas de campo, sem a correção
+angular e linear igual a :math:`x_{\mathrm{E}'}=1\,419,080\,\text{m}`
+e :math:`y_{\mathrm{E}'}=1\,160,235\,\text{m}`;
+o azimute entre as estações de controle :math:`\mathrm{AE} de :math:`230^\circ28'40''` .
+Pergunta-se, qual o :math:`\mathit{eft}` e o :math:`\mathit{efl}` desta poligonal aberta
+e apoiada.
+
+:solucao:`Solução:`
+
+.. figure:: /images/capitulo8/ExemploAbertaApoiadaErro.png
+   :scale: 35 %
+   :alt: ExemploAbertaApoiadaErro.png
+   :align: center
+
+----
+
+.. admonition:: Sugestão de aula prática
+
+   **Levantamento de uma poligonal fechada**
+
+   *Objetivo*: Levantar, e calcular as coordenadas finais de uma poligonal a ser estabelecida em campo. Considerar o modelo da caderneta de campo apresentada na :numref:`fig:PoligonalFechadaSolucao.png`.
+
+   *Material*: Estação total e acessórios.
+
+   Como sugestão de roteiro:
+
+   - materializar em campo o poligonal a ser levantada;
+   - no ponto inicial, depois do equipamento nivelado, estabelecer a direção do Norte;
+   - medir o azimute do primeiro alinhamento;
+   - fazer as medições no sentido anti-horário da poligonal, medindo os ângulos internos à direita e a distância horizontal do vétice ao ponto de vante;
+   - avaliar o erro angular de fechamento;
+   - compensar o erro angular de fechamento pelo método linear;
+   - avaliar o erro linear;
+   - calcular a precisão relativa;
+   - compensar o erro de fechamento;
+   - calcular as coordenadas totais;
+   - desenhar no *AutoCad*;
+
+   Apresentar a poligonal em planta, com a sua precisão.
+
+Exercícios
+==========
+
+:exem:`1)`  Em uma poligonal fechada com 5 vértices, :math:`\mathrm{ABCDE}`,
+foram medidos os ângulos horizontais à direita
+(internos), sendo: :math:`\mathrm{A}=100^\circ 27' 9''`,
+:math:`\mathrm{B}=71^\circ 20' 45''`, :math:`\mathrm{C}=216^\circ 47' 5''` , :math:`\mathrm{D}=60^\circ 0' 3''`
+e :math:`\mathrm{E}=91^\circ 25'18''`. Calcular o erro angular de fechamento
+e realizar a compensação pelo método linear. 
+
+:exem:`Resp.:`  :math:`E=20'`; ângulos compensados: :math:`\mathrm{A}=100^\circ27' 5''`;
+:math:`\mathrm{B}= 71^\circ20'41''`; :math:`\mathrm{C}=216^\circ47' 1''`; :math:`\mathrm{D}= 59^\circ59'59''`
+e :math:`\mathrm{E}=91^\circ25'14''`.
+
+----
+
+:exem:`2)`  Fazer um esboço da
+poligonal :math:`\mathrm{ABCDE}` e: calcular as coordenadas parciais; o erro de fechamento
+linear :math:`(E)` e; a precisão relativa :math:`(P_r)` do levantamento do exercício
+1. Considere o azimute do alinhamento :math:`\mathrm{AB}`
+de :math:`201^\circ 4'55''`  e, as distâncias horizontais dos alinhamentos
+em metros, de: :math:`\mathrm{AB}=173,831`; :math:`\mathrm{BC}=82,447`;
+:math:`\mathrm{CD}=100,334`; :math:`\mathrm{DE}=206,936`  e
+:math:`\mathrm{EA}133,172`.
+
+:exem:`Resp.:`  Na Figura abaixo.
+
+.. _resp_exer_2.png:
+
+.. figure:: /images/capitulo8/resp_exer_2.png
+   :scale: 35 %
+   :alt: resp_exer_2.png
+   :align: center
+
+----
+
+:exem:`3)`  O erro linear de fechamento encontrado no exercício
+3 está dentro do limite estabelecido pela
+NBR13133, considerando :math:`\mathrm{T}_p\leq0,56\sqrt{L(\mathrm{km})}` ?
+
+
+:exem:`Resp.:`  Sim.
+
+----
+
+:exem:`4)`  Compensar as coordenadas
+parciais do exercício 2  utilizando o método
+proporcional ao comprimento dos lados e, sendo atribuída a coordenada
+do ponto :math:`\mathrm{A}`, :math:`x_\mathrm{A}=1.000\,\text{m}` e
+:math:`y_\mathrm{A}=1.000\,\text{m}`, calcular
+as coordenadas dos demais vértices. 
+
+:exem:`Resp.:`  Na Tabela abaixo.
+
+.. table::
+    :header-alignment: cccccc
+    :column-alignment: crrrrr
+
+    ====================== =============================== ============================== ================== ===================== ====================
+    Alin                   :math:`\Delta x_{\mathrm{C}}`   :math:`\Delta y_{\mathrm{C}}`  Ponto              :math:`x`             :math:`y`
+    ====================== =============================== ============================== ================== ===================== ====================
+    :math:`\mathrm{AB}`    :math:`-62,484`                 :math:`-162,126`               :math:`\mathrm{A}` :math:`1\,000,000`    :math:`1\,000,000`
+    :math:`\mathrm{BC}`    :math:`82,394`                  :math:`-3,458`                 :math:`\mathrm{B}` :math:`937,517`       :math:`837,874`
+    :math:`\mathrm{CD}`    :math:`77,768`                  :math:`-63,388`                :math:`\mathrm{C}` :math:`1\,019,911`    :math:`834,416`
+    :math:`\mathrm{DE}`    :math:`33,174`                  :math:`204,351`                :math:`\mathrm{D}` :math:`1\,097,679`    :math:`771,028`
+    :math:`\mathrm{EA}`    :math:`-130,852`                :math:`24,620`                 :math:`\mathrm{E}` :math:`1\,130,852`    :math:`975,380`
+    ====================== =============================== ============================== ================== ===================== ====================
+
+----
+
+:exem:`5)`  Calcular os azimutes finais dos alinhamentos
+:math:`\mathrm{BC}` e :math:`\mathrm{CD}` do exercício 4.
+
+:exem:`Resp.:`  :math:`\mathrm{Az}_{\mathrm{BC}}=92^\circ24' 11,4''` 
+e :math:`\mathrm{Az}_{\mathrm{CD}}=129^\circ10'59,5''`.
+
+----
+
+:exem:`6)`  Calcular as distâncias horizontais finais dos alinhamentos
+:math:`\mathrm{BC}` e :math:`\mathrm{CD}` do exercício 4.
+
+:exem:`Resp.:`  :math:`\mathrm{DH}_{\mathrm{BC}}=82,467\,\text{m}` e
+:math:`\mathrm{DH}_{\mathrm{CD}}=100,329\,\text{m}`.
+
+----
+
+:exem:`7)` Seja a poligonal
+fechada apresentada na :numref:`ExerciPoligoaltriangulo`, com: os
+ângulos internos medidos à direita; o azimute :math:`\mathrm{AB}` de :math:`106^\circ12'36''`
+e; a coordenada de :math:`\mathrm{A}`, :math:`x_\mathrm{A}=5\,000\,\text{m}` e
+:math:`y_\mathrm{A}=5\,000\,\text{m}`.
+Sendo a compensação do erro de fechamento angular compensado pelo
+método linear e, a compensação do erro de fechamento linear pelo o
+método proporcional ao comprimento dos lados, calcular: 
+
+a. o erro angular de fechamento;
+b. o erro de fechamento linear :math:`(E)`;
+c. a precisão relativa :math:`(P_r)`;
+d. as coordenadas dos pontos :math:`\mathrm{B}` e :math:`\mathrm{C}`;
+e. o azimute final :math:`\mathrm{BC}`.
+
+.. _ExerciPoligoaltriangulo:
+
+.. figure:: /images/capitulo8/ExerciPoligoaltriangulo.png
+   :scale: 35 %
+   :alt: ExerciPoligoaltriangulo
+   :align: center
+
+   Dados do Exercício 7.
+
+----
+
+:exem:`Resp.:`  a) erro angular de fechamento de :math:`9''`;
+b) :math:`E=0,145\,\text{m}`;
+c) :math:`P_r=1/15\,892`;
+d) Ponto :math:`\mathrm{B}` :math:`(x_\mathrm{B}=5\,633,767\,\text{m; }`
+:math:`y_\mathrm{B}=4\,815,722\,\text{m})` e
+ponto :math:`\mathrm{C}` :math:`(x_\mathrm{C}=5\,198,167\,\text{m; }` :math:`y_\mathrm{C}=5\,660,787\,\text{m})`;
+e) :math:`\mathrm{Az}_{\mathrm{BC}}=332^\circ43'50''`.
+
+:exem:`8)`  Na :numref:`fig_ExerciPoligoal3` são apresentadas
+as distâncias horizontais e as coordenadas parciais não compensadas
+da poligonal :math:`\mathrm{ABCDE}`. Calcular:
+
+a. o erro de fechamento linear :math:`(E)`;
+b. a precisão relativa :math:`(P_r)`;
+c. os azimutes e as distâncias horizontais após a compensação do erro de fechamento linear pelo o método proporcional ao comprimento dos lados.
+
+.. _fig_ExerciPoligoal3:
+
+.. figure:: /images/capitulo8/fig_ExerciPoligoal3.png
+   :scale: 35 %
+   :alt: fig_ExerciPoligoal3
+   :align: center
+
+   Dados do Exercício 8.
+
+:exem:`Resp.:`  a) :math:`E=0,424\,\text{m}`; b) :math:`P_r=1/10\,379` ;
+d) na Tabela abaixo.
+
+.. table::
+    :header-alignment: ccc
+    :column-alignment: crr
+
+    ===================== ========================== =====================
+    Alinhamento           Az                          DH
+    ===================== ========================== =====================
+    :math:`\mathrm{AB}`   :math:`213^\circ38'10''`    :math:`632,008`
+    :math:`\mathrm{BC}`   :math:`121^\circ53'49''`    :math:`1\,128,664`
+    :math:`\mathrm{CD}`   :math:`45^\circ57'10''`    :math:`1\,160,489`
+    :math:`\mathrm{DE}`   :math:`282^\circ20'53''`    :math:`1\,476,432`
+    ===================== ========================== =====================
+
+----

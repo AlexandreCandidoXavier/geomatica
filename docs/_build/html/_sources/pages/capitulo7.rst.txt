@@ -89,13 +89,13 @@ Alinhamento de vante e ré
 -------------------------
 
 A :numref:`fig_introangulo.png` apresenta a sequência de vértices
-EAB, onde é realizada a medida do ângulo horizontal, no sentido horário,
-:math:`\alpha`, no vértice A. Para a medida de :math:`\alpha`, o ponto E é o
+:math:`\mathrm{EAB}`, onde é realizada a medida do ângulo horizontal, no sentido horário,
+:math:`\alpha`, no vértice :math:`\mathrm{A}`. Para a medida de :math:`\alpha`, o ponto :math:`\mathrm{E}` é o
 ponto inicial (**ponto de ré**), onde se realiza a **visada de ré**,
-enquanto e B, é o ponto final (**ponto de vante**), onde
+enquanto e :math:`\mathrm{B}`, é o ponto final (**ponto de vante**), onde
 é realizada a **visada de vante**. Aos alinhamentos que correspondem
 ao início e ao final das medidas, denominamos de alinhamentos de **ré**
-e **vante**. Para este exemplo, AE é o alinhamento de ré e AB
+e **vante**. Para este exemplo, :math:`\mathrm{AE}` é o alinhamento de ré e :math:`\mathrm{AB}`
 o de vante. O ângulo :math:`\alpha` pode ser calculado subtraindo a medida
 do ângulo horizontal de vante da medida de ré.
 
@@ -173,12 +173,14 @@ Os ângulos horizontais medidos entre os alinhamentos são na grande
 maioria os ângulos internos  e
 de deflexão. Na :numref:`fig_ExemploAnguloDexaoInterno.png` a
 são apresentados ângulos **horizontais internos** medidos
-**à direita**, ou seja, no sentido horário nos vértices A, B, C, D e E.
-Os ângulos são medidos na sequência A, B, C, D e E. Desta forma, os
-alinhamentos AB, BC, CD, DE e EA são denominados de *vante*.
-Já BA, CB, DC, DE e AE são os alinhamentos de *ré*. Observe
+**à direita**, ou seja, no sentido horário nos vértices :math:`\mathrm{A, B, C, D}` e :math:`\mathrm{E}`.
+Os ângulos são medidos na sequência :math:`\mathrm{A, B, C, D}` e :math:`\mathrm{E}`. Desta forma, os
+alinhamentos :math:`\mathrm{AB}`, :math:`\mathrm{BC}`,
+:math:`\mathrm{CD}`, :math:`\mathrm{DE}` e :math:`\mathrm{EA}` são denominados de *vante*.
+Já :math:`\mathrm{BA}`, :math:`\mathrm{CB}`, :math:`\mathrm{DC}`,
+:math:`\mathrm{DE}` e :math:`\mathrm{AE}` são os alinhamentos de *ré*. Observe
 que para medir os ângulos internos horizontais à direita da poligonal
-fechada ABCDE, tem-se que fazer um caminhamento no sentido anti-horário.
+fechada :math:`\mathrm{ABCDE}`, tem-se que fazer um caminhamento no sentido anti-horário.
 No alinhamento AB é apresentado o seu azimute, ou seja a sua direção
 em relação ao meridiano. Ela é necessária para o cálculo dos azimutes
 dos demais alinhamentos, como será visto na Secção :ref:`Cálculodoazimute`.
