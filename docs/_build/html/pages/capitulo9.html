@@ -19,6 +19,7 @@
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/translations.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
     
     
@@ -71,6 +72,537 @@
             
   <style> .exem {color:blue; font-weight: bold} </style><style> .solucao {font-weight: bold} </style><style> .blue {color:blue} </style><section id="capitulo-9-altimetria">
 <span id="rst-capitulo9"></span><h1>Capitulo 9: Altimetria<a class="headerlink" href="#capitulo-9-altimetria" title="Link permanente para este título">¶</a></h1>
+<p>Um ponto na superfície da terra só estará completamente definido depois
+de estabelecida as suas coordenadas horizontal e vertical. Por exemplo,
+um ponto que tenha as suas coordenadas horizontais do tipo geográficas
+<span class="math notranslate nohighlight">\((\phi,\,\lambda)\)</span> poderá estar em infinitas distâncias verticais
+acima do Datum vertical utilizado (ver página <a class="reference internal" href="capitulo3.html#datum-vertical"><span class="std std-ref">Datum vertical</span></a>).
+Desta forma, depois de ser apresentado os métodos para os cálculos
+no plano horizontal topográfico, agora estudaremos da altimetria, que
+trata das medidas das distâncias verticais entre pontos. A altimetria
+é necessária em várias aplicações na engenharia, podendo-se citar:
+na determinação da distância vertical entre pontos onde será realizada
+a construção de uma elevatória; na construção de curvas de nível;
+na determinação de greides (rampas); e para cálculo de volume de corte
+ou aterro de uma área.</p>
+<section id="definicoes">
+<h2>Definições<a class="headerlink" href="#definicoes" title="Link permanente para este título">¶</a></h2>
+<p>Na <a class="reference internal" href="#cap-altimetria-definicoes"><span class="std std-numref">Figura 77</span></a> são apresentados os
+elementos da altimetria, em que:</p>
+<ul class="simple">
+<li><p><strong>Fio de prumo</strong> é um cordão com um peso
+em uma extremidade onde, quando solto, indica a direção da gravidade
+local;</p></li>
+<li><p><strong>Linha vertical</strong> é a linha de qualquer
+ponto da terra ao centro da terra. Ela tem a direção da gravidade
+local. A linha vertical do lugar coincide com o fio de prumo em repouso;</p></li>
+<li><p><strong>Plano horizontal</strong>  é o plano perpendicular
+a direção da gravidade local;</p></li>
+<li><p><strong>Linha horizontal</strong> é uma linha no
+plano horizontal, perpendicular à direção da gravidade local;</p></li>
+<li><p><strong>Superfície de nível</strong> é uma superfície
+curva em que ela é perpendicular a linha vertical local, sendo o potencial
+gravitacional igual em todos os pontos desta superfície;</p></li>
+<li><p><strong>Linha de nível</strong> uma linha qualquer em
+uma determinada superfície de nível;</p></li>
+<li><p><strong>Datum vertical</strong> é uma superfície de
+nível que será utilizada como referência para determinação de elevações
+de outros pontos. Pontos em uma mesma superfície de nível têm diferença
+de elevação zero;</p></li>
+<li><p><strong>Elevação</strong> é a distância ao longo da linha
+vertical entre o ponto observado e o Datum vertical;</p></li>
+<li><p><strong>Diferença de nível</strong> <span class="math notranslate nohighlight">\((\mathrm{DN})\)</span> é a
+diferença entre a elevação de dois pontos. É também denominada de</p></li>
+<li><p><strong>Distância Vertical</strong> <span class="math notranslate nohighlight">\((\mathrm{DV})\)</span>;</p></li>
+<li><p><strong>nivelamento</strong> é o processo para se determinar a altitude, elevação
+ou a <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> entre entre pontos topográficos;</p></li>
+<li><p><strong>Referência de nível</strong> <span class="math notranslate nohighlight">\(\mathrm{(RN})\)</span> é um
+ponto materializada em que sua altitude foi determinada.</p></li>
+</ul>
+<figure class="align-center" id="id10">
+<span id="cap-altimetria-definicoes"></span><a class="reference internal image-reference" href="../_images/cap_altimetria_definicoes.png"><img alt="cap_altimetria_definicoes.png" src="../_images/cap_altimetria_definicoes.png" style="width: 485.45px; height: 318.84999999999997px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 77 </span><span class="caption-text">Elementos básicos da altimetria (adaptado de <span id="id1">[<a class="reference internal" href="referencias.html#id10" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>).</span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Pode-se ainda recordar da Secção <a class="reference internal" href="capitulo3.html#datum-vertical"><span class="std std-ref">Datum vertical</span></a>,
+que a altitude ortométrica corresponde à distância vertical entre
+um ponto ao Datum Altimétrico utilizado, no caso do Brasil Datum de
+Imbituba ou o de Santana.
+Já a altitude geométrica é distância vertical
+entre o ponto e o <a class="reference internal" href="capitulo3.html#datum-horizontal"><span class="std std-ref">Datum horizontal</span></a>, por exemplo o SIRGAS2000.</p>
+<p>Sempre que possível, é desejável que se trabalhe com valores de altitude
+ortométrica, pois assim os pontos levantados poderão ser comparados
+com mapas e a outros levantamentos existentes. Entretanto, nem sempre
+se trabalha com ela, seja porque, a <span class="math notranslate nohighlight">\(\mathrm{RN}\)</span> de <strong>altitude ortométrica</strong>
+mais próxima esteja muito distante do local a ser levantado e o seu
+transporte seria de alto custo, ou porque o levantamento a ser
+realizado não a faz necessária.</p>
+<p>Em levantamentos em que não há <span class="math notranslate nohighlight">\(\mathrm{RN}\)</span> próxima ou ela não se faz necessária,
+precisa-se arbitrar uma <span class="math notranslate nohighlight">\(\mathrm{RN}\)</span> local para ser utilizada nas medidas altimétricas.
+É então atribuído <span class="math notranslate nohighlight">\(\mathrm{RN}\)</span> inicial do levantamento, ou seja, um valor de
+<span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> dele à uma superfície de nível arbitrária, um Datum altimétrico
+local. A esta <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span>, e às demais <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span>”s que serão calculadas em relação
+a este Datum local, denominam-se de <strong>cota</strong>.</p>
+<p>A partir da <span class="math notranslate nohighlight">\(\mathrm{RN}\)</span> inicial, em que se conhece a altitude ou a cota, e
+com os métodos que serão vistos a seguir, pode-se medir a <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> deste
+ponto a outro ponto. Tais procedimentos podem ser repetidos, determinando-se
+as <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> entre os pontos. Uma vez conhecida a <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> entre dois pontos e
+a altitude ou cota do ponto inicial, por exemplo, para os pontos <span class="math notranslate nohighlight">\(\mathrm{A}\)</span>
+e <span class="math notranslate nohighlight">\(\mathrm{B}\)</span>, a <span class="math notranslate nohighlight">\(\mathrm{DN_{AB}}\)</span>  e a altitude de <span class="math notranslate nohighlight">\(\mathrm{A}\,(\mathrm{alt_{A}})\)</span>,
+pode-se calcular a altitude de <span class="math notranslate nohighlight">\(\mathrm{B}\,(\mathrm{alt_{B}})\)</span>, conforme
+Equação <a class="reference internal" href="#equation-eq-altitude">(85)</a>. O mesmo raciocínio pode ser utilizado
+para cálculo das altitudes dos demais pontos levantados.</p>
+<div class="math notranslate nohighlight" id="equation-eq-altitude">
+<span class="eqno">(85)<a class="headerlink" href="#equation-eq-altitude" title="Permalink to this equation">¶</a></span>\[\begin{split}\mathrm{alt_{B}} =\mathrm{alt_{A}+DN_{AB}}\\\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-eq-cota">
+<span class="eqno">(86)<a class="headerlink" href="#equation-eq-cota" title="Permalink to this equation">¶</a></span>\[\mathrm{cota_{B}} =\mathrm{cota_{A}+DN_{AB}}\]</div>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 1</span> De uma marco do IBGE de altitude
+<span class="math notranslate nohighlight">\(691,421\,\text{m}\)</span> ao ponto <span class="math notranslate nohighlight">\(\mathbf{X}\)</span>, mediu-se uma <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> de
+<span class="math notranslate nohighlight">\(-39,697\,\text{m}\)</span>. Qual a altitude de <span class="math notranslate nohighlight">\(\mathbf{X}\)</span>?</p>
+<p><span class="solucao">Solução:</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathrm{alt_{\mathbf{X}}} &amp; =\mathrm{alt_{IBGE}+DN_{IBGE,\,\mathbf{X}}}\\
+ &amp; =691,421-39,697\\
+ &amp; =651,724\,\text{m}\end{split}\]</div>
+</section>
+<hr class="docutils" />
+<section id="erro-de-esfericidade-e-refracao">
+<h2>Erro de esfericidade e refração<a class="headerlink" href="#erro-de-esfericidade-e-refracao" title="Link permanente para este título">¶</a></h2>
+<p>Quando o nivelamento é realizado entre pontos distantes em mais de
+<span class="math notranslate nohighlight">\(100\,\text{m}\)</span>, a <span id="id2"><em>NBR 13133</em> [<a class="reference internal" href="referencias.html#id32" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span> recomenda que o efeito da curvatura terrestre
+<span class="math notranslate nohighlight">\((C_{c})\)</span> e o da refração atmosférica <span class="math notranslate nohighlight">\((C_{r})\)</span> sejam compensadas.</p>
+<section id="erro-de-esfericidade">
+<h3>Erro de esfericidade<a class="headerlink" href="#erro-de-esfericidade" title="Link permanente para este título">¶</a></h3>
+<p>Na <a class="reference internal" href="#cap-ref-cur2"><span class="std std-numref">Figura 78</span></a> são apresentados dois pontos topográficos,
+<span class="math notranslate nohighlight">\(A\)</span>  e <span class="math notranslate nohighlight">\(B\)</span>, na mesma linha de nível. A partir de <span class="math notranslate nohighlight">\(A\)</span>  é realizada
+uma visada horizontal para medidas de elevação. A medida que um ponto
+a ser medido se afasta de <span class="math notranslate nohighlight">\(A\)</span>, há um aumento da separação entre a
+linha horizontal e a linha de nível que passa por <span class="math notranslate nohighlight">\(A\)</span>. Por exemplo,
+em <span class="math notranslate nohighlight">\(B\)</span>, que está na mesma linha de nível de <span class="math notranslate nohighlight">\(A\)</span>, há uma separação,
+correspondendo a <span class="math notranslate nohighlight">\(BC\)</span>. A esta separação denominamos <span class="math notranslate nohighlight">\(C_{c}\)</span>.
+Do triângulo retângulo <span class="math notranslate nohighlight">\(AOC\)</span> :</p>
+<div class="math notranslate nohighlight" id="equation-eq-cc1">
+<span class="eqno">(87)<a class="headerlink" href="#equation-eq-cc1" title="Permalink to this equation">¶</a></span>\[\begin{split}OC^{2} &amp; =OA^{2}+AC^{2}\nonumber \\
+(R+C_{c})^{2} &amp; =R^{2}+\mathrm{DH^{2}}\nonumber \\
+R^{2}+2RC_{c}+C_{c}^{2} &amp; =R^{2}+\mathrm{DH^{2}}\nonumber \\
+C_{c}(2R+C_{c}) &amp; =\mathrm{DH^{2}}\nonumber \\
+C_{c} &amp; =\frac{\mathrm{DH^{2}}}{2R+C_{c}}.\end{split}\]</div>
+<p>considerando o valor de <span class="math notranslate nohighlight">\(R\)</span>  como sendo a média dos raios
+do WGS84footnote{Raios do Datum WGS84: <span class="math notranslate nohighlight">\(a=6\,378\,137\,\text{m}\)</span>,
+<span class="math notranslate nohighlight">\(b=6\,356\,752,314\,\text{m}\)</span>, <span class="math notranslate nohighlight">\(R=6\,367\text{ km}\)</span>; e no denominador da <a class="reference internal" href="#equation-eq-cc1">(87)</a>,
+<span class="math notranslate nohighlight">\(2R+C_{c}\)</span>, o valor de <span class="math notranslate nohighlight">\(C_{c}\)</span>  insignificante em relação a ordem
+de grandeza de <span class="math notranslate nohighlight">\(2R\)</span>, tem-se, para <span class="math notranslate nohighlight">\(C_{c}\)</span>  em metros e <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> em km a
+Equação:</p>
+<div class="math notranslate nohighlight" id="equation-eq-cc2">
+<span class="eqno">(88)<a class="headerlink" href="#equation-eq-cc2" title="Permalink to this equation">¶</a></span>\[\begin{split}C_{c}&amp;=1\,000\cdot\frac{\mathrm{DH^{2}}}{2R}\\
+C_{c}&amp;=0,078\,53\mathrm{DH^{2}}.\end{split}\]</div>
+<p>Com a finalidade de ilustrar o efeito de <span class="math notranslate nohighlight">\(C_{c}\)</span>, imagine uma embarcação,
+que em <span class="math notranslate nohighlight">\(A\)</span>  é verificado que a sua altura é de <span class="math notranslate nohighlight">\(4\,\text{m}\)</span>. Se ela parte ao
+mar, quando estiver a uma distância de aproximadamente <span class="math notranslate nohighlight">\(7,14\,\text{km}\)</span> de
+<span class="math notranslate nohighlight">\(A\)</span>  <span class="math notranslate nohighlight">\((\mathrm{DH}=(4/0,078\,53)^{0,5})\)</span>, Equação <a class="reference internal" href="#equation-eq-cc2">(88)</a>, não
+será mais possível observá-la. É lógico que a embarcação não ficou
+<span class="math notranslate nohighlight">\(4\,\text{m}\)</span>  menor, é apenas o efeito de <span class="math notranslate nohighlight">\(C_{c}\)</span>  que, estando a embarcação
+a <span class="math notranslate nohighlight">\(7,14\,\text{km}\)</span> de <span class="math notranslate nohighlight">\(A\)</span>, faz com que ela não seja mais visível. Daí pode-se
+concluir que, devido à <span class="math notranslate nohighlight">\(C_{c}\)</span>, qualquer ponto que esteja a uma distância
+de <span class="math notranslate nohighlight">\(7,14\,\text{km}\)</span> de onde se está realizando a medida de <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span>, tem-se que considerar
+que a <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> é <span class="math notranslate nohighlight">\(4\,\text{km}\)</span> maior do que a calculada, quando considerando o erro
+devido a esfericidade da terra.</p>
+<figure class="align-center" id="id11">
+<span id="cap-ref-cur2"></span><a class="reference internal image-reference" href="../_images/cap_ref_cur2.png"><img alt="cap_ref_cur2.png" src="../_images/cap_ref_cur2.png" style="width: 335.65px; height: 228.54999999999998px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 78 </span><span class="caption-text">Elementos básicos para definição do efeito da curvatura terrestre
+<span class="math notranslate nohighlight">\((C_{c})\)</span> e da refração <span class="math notranslate nohighlight">\((C_{r})\)</span> sobre as medidas de altitude.</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="erro-de-refracao">
+<h3>Erro de refração<a class="headerlink" href="#erro-de-refracao" title="Link permanente para este título">¶</a></h3>
+<p>A luz, ao passar pela a atmosfera, é refratada para a Terra, assim
+os objetos parecem ser mais altos do que eles realmente são. Na Figura
+<a class="reference internal" href="#cap-ref-cur2"><span class="std std-numref">Figura 78</span></a> é apresentada como seria uma visada horizontal
+<span class="math notranslate nohighlight">\(AH\)</span>, mas como realmente é o trajeto da luz, <span class="math notranslate nohighlight">\(AD\)</span>. A refração
+atmosférica depende das condições atmosféricas, da altitude, do ângulo
+de visada e da distância medida. Para visadas horizontais, com <span class="math notranslate nohighlight">\(C_{r}\)</span>
+em metros e a <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> em quilômetro:</p>
+<div class="math notranslate nohighlight" id="equation-eq-cr">
+<span class="eqno">(89)<a class="headerlink" href="#equation-eq-cr" title="Permalink to this equation">¶</a></span>\[C_{r}=0,011\mathrm{DH^{2}}.\]</div>
+</section>
+<section id="erro-de-esfericidade-e-refracao-combinado">
+<h3>Erro de esfericidade e refração combinado<a class="headerlink" href="#erro-de-esfericidade-e-refracao-combinado" title="Link permanente para este título">¶</a></h3>
+<p>A combinação dos <span class="math notranslate nohighlight">\(C_{c}\)</span>  e <span class="math notranslate nohighlight">\(C_{r}\)</span>  resulta em <span class="math notranslate nohighlight">\(C_{cr}\)</span>, ou seja,
+a compensação que deve ser aplicada nas medidas de altimétricas a
+pontos distantes entre si em mais de <span class="math notranslate nohighlight">\(100\,\text{m}\)</span>. Como <span class="math notranslate nohighlight">\(C_{c}\)</span>  resulta
+em alturas menores e <span class="math notranslate nohighlight">\(C_{r}\)</span>  os pontos parecem ser mais altos, a
+compensação, <span class="math notranslate nohighlight">\(C_{cr}\)</span> é:</p>
+<div class="math notranslate nohighlight" id="equation-eq-ccr">
+<span class="eqno">(90)<a class="headerlink" href="#equation-eq-ccr" title="Permalink to this equation">¶</a></span>\[\begin{split}C_{cr} &amp; =0,078\,53\mathrm{DH}^2-0,011\mathrm{DH}^2\nonumber \\
+C_{cr} &amp; =0,067\,53\mathrm{DH}^2\end{split}\]</div>
+<p>Mais uma vez, a unidade de <span class="math notranslate nohighlight">\(C_{cr}\)</span> é metro e a DH em quilômetro.</p>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 2</span>  Qual será o erro cometido em um nivelamento se
+não for considerado o efeito da curvatura da terra e da refração atmosférica
+na medida de <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> entre pontos distantes entre si em <span class="math notranslate nohighlight">\(1\,398\,\text{m}\)</span>?</p>
+<p><span class="solucao">Solução:</span>
+Considerando a <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> em km e de acordo com a Equação <a class="reference internal" href="#equation-eq-ccr">(90)</a>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}C_{cr} &amp; =0,067\,53\cdot1,398^2\\
+&amp; =0,132\text{ m}\end{split}\]</div>
+<p>O erro cometido corresponderia a <span class="math notranslate nohighlight">\(0,132\,\text{m}\)</span> para menos na
+<span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> entre os pontos.</p>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 3</span> No exemplo 1, considere que na
+<span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> de <span class="math notranslate nohighlight">\(-39,697\,\text{m}\)</span>, entre o marco
+do IBGE ao ponto <span class="math notranslate nohighlight">\(\mathrm{X}\)</span>, não foi
+considerado o erro de curvatura e de refração <span class="math notranslate nohighlight">\((C_{cr})\)</span>. Calcule
+novamente a altitude de <span class="math notranslate nohighlight">\(\mathbf{X}\)</span> aplicando a correção para <span class="math notranslate nohighlight">\(C_{cr}\)</span>.
+Considere a distância entre os pontos de <span class="math notranslate nohighlight">\(753,982\,\text{m}\)</span>.</p>
+<p><span class="solucao">Solução:</span>
+Uma vez que se queira realizar a compensação, basta aplicar
+à <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> a <span class="math notranslate nohighlight">\(C_{cr}\)</span>, desta forma:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathrm{\mathrm{alt_{\mathbf{X}}}} &amp; =\mathrm{alt_{IBGE}+DN_{IBGE,\,\mathbf{X}}+}C_{cr}\\
+ &amp; =\mathrm{alt_{IBGE}+DN_{\mathbf{X}IBGE}}+0,067\,53\mathrm{DH^{2}}\\
+ &amp; =691,421-39,697+0,067\,53\cdot0,753\,982^{2}\\
+ &amp; =651,762{\rm \,m.}\end{split}\]</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="declividade">
+<h2>Declividade<a class="headerlink" href="#declividade" title="Link permanente para este título">¶</a></h2>
+<p>A declividade mede o grau de inclinação do terreno, podendo ser calculada
+em percentagem <span class="math notranslate nohighlight">\(d(\%)\)</span>  ou em graus <span class="math notranslate nohighlight">\(d(^{\circ})\)</span>, conforme, respectivamente,
+as Equações <a class="reference internal" href="#equation-eq-c1">(91)</a> e <a class="reference internal" href="#equation-eq-c2">(92)</a>:</p>
+<div class="math notranslate nohighlight" id="equation-eq-c1">
+<span class="eqno">(91)<a class="headerlink" href="#equation-eq-c1" title="Permalink to this equation">¶</a></span>\[d(\%)=100\frac{\mathrm{DN}}{\mathrm{DH}}\]</div>
+<div class="math notranslate nohighlight" id="equation-eq-c2">
+<span class="eqno">(92)<a class="headerlink" href="#equation-eq-c2" title="Permalink to this equation">¶</a></span>\[d(^{\circ})=\arctan\frac{\mathrm{DN}}{\mathrm{DH}}\]</div>
+<p>A declividade é um parâmetro importante pois, de acordo com a grandeza
+da declividade do terreno, pode haver limitação: ao uso agrícola;
+à utilização de equipamentos agrícolas, como tratores; à construção
+de estrada, uma vez que no transporte de cargas em caminhões, por
+exemplo, há um limite para sua circulação em rampas com alta declividade.
+Valores positivos e negativos de <span class="math notranslate nohighlight">\(d(\%)\)</span>  e <span class="math notranslate nohighlight">\(d(^{\circ})\)</span>  representam,
+respectivamente, o terreno aclive e declive (ver <a class="reference internal" href="#id3"><span class="std std-numref">Figura 79</span></a>).</p>
+<figure class="align-center" id="id12">
+<span id="id3"></span><a class="reference internal image-reference" href="../_images/declividade.png"><img alt="declividade.png" src="../_images/declividade.png" style="width: 461.65px; height: 193.89999999999998px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 79 </span><span class="caption-text">Exemplo gráfico e numérico de terreno em aclive e em declive. O eixo-<span class="math notranslate nohighlight">\(x\)</span>  representa a
+distância horizontal e o eixo-<span class="math notranslate nohighlight">\(y\)</span>, a altitude ou a cota do terreno.</span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 4</span> Calcule a declividade em percentagem
+e graus para uma <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> e <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> entre dois pontos de <span class="math notranslate nohighlight">\(-27,9\,\text{m}\)</span>
+e <span class="math notranslate nohighlight">\(162,2\,\text{m}\)</span>, respectivamente?</p>
+<p><span class="solucao">Solução:</span>
+A <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> negativa tem como significado que o terreno onde foi
+realizada a medição se apresenta em declive do ponto inicial ao final,
+isto é, ponto inicial tem cota/altitude maior do que o ponto final.</p>
+<ul class="simple">
+<li><p>A declividade em percentagem:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}d(\%) &amp; =\frac{\mathrm{DN}}{\mathrm{DH}}100\\
+ &amp; =\frac{-27,9}{162,2}100\\
+ &amp; =-17,201\%.\end{split}\]</div>
+<ul class="simple">
+<li><p>Em graus:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}d(^{\circ}) &amp; =\arctan\frac{\mathrm{DN}}{\mathrm{DH}}\\
+&amp; =\arctan\frac{-27,9}{162,2}\\
+&amp; =-9^\circ45'36''.\end{split}\]</div>
+<hr class="docutils" />
+<p>Uma maneira de interpretar o valor da declividade em percentagem
+é, por exemplo, de acordo com o Exemplo 4, se o
+terreno fosse uniforme com <span class="math notranslate nohighlight">\(d(\%)=-17,201\)</span>, quando fosse percorrido
+uma <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> de <span class="math notranslate nohighlight">\(100\,\text{m}\)</span>, a <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> seria de <span class="math notranslate nohighlight">\(-17,201\,\text{m}\)</span>.</p>
+</section>
+<section id="nivelamento">
+<h2>Nivelamento<a class="headerlink" href="#nivelamento" title="Link permanente para este título">¶</a></h2>
+<p>Em topografia, chama-se de nivelamento, aos métodos utilizados para
+medir a <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span>, a altitude ou a cota. Vários são os métodos que podem
+ser empregados para o nivelamento. A utilização de um ou outro método
+dependerá dos objetivos do nivelamento (ver cite:t:<cite>NBR13133</cite>).
+Nesta secção serão apresentados os métodos: <em>i</em>) <a class="reference internal" href="#nivelamento-barometrico"><span class="std std-ref">Nivelamento barométrico</span></a>;
+<em>ii</em>) <a class="reference internal" href="#nivelamento-trigonometrico"><span class="std std-ref">Nivelamento trigonométrico</span></a>; <em>iii</em>) taqueométricos; <em>iv</em>) GNSS; e <em>v</em>) geométrico.</p>
+<section id="nivelamento-barometrico">
+<span id="id4"></span><h3>Nivelamento barométrico<a class="headerlink" href="#nivelamento-barometrico" title="Link permanente para este título">¶</a></h3>
+<p>Por meio de equipamentos que medem a pressão do ar, que denominam-se
+barômetros, é possível encontrar a <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> entre os pontos. A explicação
+é dada pela relação inversa que há entre pressão do ar e a altitude
+(<a class="reference internal" href="#baromehgvsaltitude"><span class="std std-numref">Figura 80</span></a>). Quanto mais alto um ponto, menor é a camada atmosférica
+atuando nele, logo, menor será a pressão devida à atmosfera. Por outro
+lado, um ponto em uma altitude menor, está sujeito a uma maior camada
+de ar, resultando numa maior pressão atmosférica cite{espartel}.
+A pressão do ar depende também da temperatura do ar e em menor grau
+da umidade e da latitude do lugar (ver <span id="id5">[<a class="reference internal" href="referencias.html#id2" title="F. Deumlich and W. Faig. Surveying Instruments. De Gruyter, 1982. ISBN 9783110838916. URL: https://books.google.com.br/books?id=\_eGJVl8oSKsC.">DF82</a>]</span>, página 222).</p>
+<figure class="align-center" id="id13">
+<span id="baromehgvsaltitude"></span><a class="reference internal image-reference" href="../_images/BaromeHGvsAltitude.png"><img alt="BaromeHGvsAltitude.png" src="../_images/BaromeHGvsAltitude.png" style="width: 461.29999999999995px; height: 236.24999999999997px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 80 </span><span class="caption-text">Relação entre pressão atmosférica e altitude.</span><a class="headerlink" href="#id13" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Existem vários tipos de barômetros,
+destacando-se os de <strong>mercúrio</strong> e os <strong>aneroides</strong>. O <strong>barômetro de mercúrio</strong>,
+é constituído de um recipiente, fechado de um lado e aberto do outro.
+É colocado mercúrio nesta coluna e a parte aberta é virada em um reservatório.
+Na parte superior é criado um vácuo, que será equilibrado de acordo
+com a pressão atmosférica que é aplicada no reservatório (<a class="reference internal" href="#barometrohg"><span class="std std-numref">Figura 81</span></a>).
+Ao nível do mar, a coluna mede <span class="math notranslate nohighlight">\(760\,\text{mm}\)</span>. Quanto maior a pressão atmosférica,
+maior a força agindo sobre o reservatório, forçando a coluna de mercúrio
+a subir. Uma variação de <span class="math notranslate nohighlight">\(1\,\text{mm}\)</span>  na coluna de mercúrio corresponde a
+aproximadamente uma variação de <span class="math notranslate nohighlight">\(11\,\text{m}\)</span> de altitude. Estes equipamentos
+devem ser evitados por apresentarem pouca precisão, por exemplo, segundo
+<span id="id6">[<a class="reference internal" href="referencias.html#id2" title="F. Deumlich and W. Faig. Surveying Instruments. De Gruyter, 1982. ISBN 9783110838916. URL: https://books.google.com.br/books?id=\_eGJVl8oSKsC.">DF82</a>]</span>, um erro de <span class="math notranslate nohighlight">\(\pm2\,\text{m}\)</span>  (<span class="math notranslate nohighlight">\(\pm0,15\,\text{mm Hg}\)</span>
+à <span class="math notranslate nohighlight">\(\pm0,19\,\text{mm Hg}\)</span>) pode ser encontrado para uma diferença
+de elevação de <span class="math notranslate nohighlight">\(200\,\text{m}\)</span>.</p>
+<figure class="align-center" id="id14">
+<span id="barometrohg"></span><a class="reference internal image-reference" href="../_images/barometroHg.png"><img alt="barometroHg.png" src="../_images/barometroHg.png" style="width: 209.64999999999998px; height: 310.45px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 81 </span><span class="caption-text">Barômetro de mercúrio ao nível do mar.</span><a class="headerlink" href="#id14" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Os barômetros do tipo <strong>aneroides</strong> consistem de uma pequena caixa flexível onde o ar interno é retirado,
+criando-se um vácuo. Na medida que a pressão do ar muda, a membrana
+da caixa se deforma, comprimindo-se os expandindo-se. Um mecanismo
+mede esta deformação, que está relacionada a pressão do ar, e é mostrado
+em uma escala graduada e em painel digital. São mais precisos que
+os de mercúrio, por exemplo, o aumento precisão na medida de pressão
+resulta em desvio padrão da <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> entre pontos de <span class="math notranslate nohighlight">\(\pm0,8\,\text{m}\)</span>
+(ver <span id="id7">[<a class="reference internal" href="referencias.html#id2" title="F. Deumlich and W. Faig. Surveying Instruments. De Gruyter, 1982. ISBN 9783110838916. URL: https://books.google.com.br/books?id=\_eGJVl8oSKsC.">DF82</a>]</span>, página 224).</p>
+</section>
+<section id="nivelamento-trigonometrico">
+<span id="id8"></span><h3>Nivelamento trigonométrico<a class="headerlink" href="#nivelamento-trigonometrico" title="Link permanente para este título">¶</a></h3>
+<p>Nivelamento trigonométrico é aquele em que a <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> é avaliada com o auxílio
+das funções trigonométricas. Em campo são medidos: o ângulo vertical
+e a <span class="math notranslate nohighlight">\(\mathrm{DI}\)</span> ou a <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> entre os pontos de interesse. As medidas de distâncias
+podem ser realizadas utilizando a trena, o teodolito ou a estação
+total, e as angulares, com estes dois últimos equipamentos ou com
+clinômetros. Na <a class="reference internal" href="#cap-niv-trig"><span class="std std-numref">Figura 82</span></a> é apresentado um esquema do
+nivelamento trigonométrico para medidas de <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> entre os pontos <span class="math notranslate nohighlight">\(\mathrm{A}\)</span> e
+<span class="math notranslate nohighlight">\(\mathrm{B}\)</span>, materializados por piquetes. No ponto <span class="math notranslate nohighlight">\(\mathrm{A}\)</span> é estacionada a
+estação total, e em <span class="math notranslate nohighlight">\(\mathrm{B}\)</span>, o prisma. O centro da estação total corresponde
+a <span class="math notranslate nohighlight">\(\mathrm{C}\)</span>, e a intersecção da linha horizontal que passa por C com a linha
+vertical que passa por <span class="math notranslate nohighlight">\(\mathrm{B}\)</span>, corresponde à <span class="math notranslate nohighlight">\(\mathrm{E}\)</span>. A distância vertical entre
+<span class="math notranslate nohighlight">\(\mathrm{E}\)</span> e <span class="math notranslate nohighlight">\(\mathrm{D}\)</span> denominaremos por <span class="math notranslate nohighlight">\(V\)</span>. Considerando o triângulo retângulo
+<span class="math notranslate nohighlight">\(\mathrm{CED}\)</span> e que foi medida a <span class="math notranslate nohighlight">\(\mathrm{DI}\)</span>, tem-se <span class="math notranslate nohighlight">\(V\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}V &amp; =\mathrm{DI}\cos z,\label{eq:cap_alt_V_di_z}\\
+V &amp; =\mathrm{DI}\sin\alpha,\end{split}\]</div>
+<p>para medidas de <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}V &amp; =\mathrm{DH}\cot z,\\
+V &amp; =\mathrm{DH}\tan\alpha,\end{split}\]</div>
+<p>A distância <span class="math notranslate nohighlight">\(\mathrm{BD}\)</span> corresponde à altura do prisma <span class="math notranslate nohighlight">\((ap)\)</span>. É facilmente
+obtida por meio da leitura na régua presente no bastão em que o prisma
+está conectado. A altura do equipamento <span class="math notranslate nohighlight">\((ai)\)</span>, distância vertical
+entre <span class="math notranslate nohighlight">\(\mathrm{C}\)</span> e <span class="math notranslate nohighlight">\(\mathrm{A}\)</span>, pode ser obtida com uma trena. Com estas definições,
+para a determinação da <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> tem que somar a <span class="math notranslate nohighlight">\(V\)</span>, a <span class="math notranslate nohighlight">\(ai\)</span> e
+subtrair <span class="math notranslate nohighlight">\(ap\)</span>:</p>
+<div class="math notranslate nohighlight" id="equation-eq-cap-alt-tri">
+<span class="eqno">(93)<a class="headerlink" href="#equation-eq-cap-alt-tri" title="Permalink to this equation">¶</a></span>\[\mathrm{DN}=V+ai-ap.\]</div>
+<p>Para realizar a correção para os efeitos da curvatura da terra e da
+refração atmosférica no nivelamento trigonométrico, basta somar à
+Equação <a class="reference internal" href="#equation-eq-cap-alt-tri">(93)</a> o valor de <span class="math notranslate nohighlight">\(C_{cr}\)</span>, isto é:</p>
+<div class="math notranslate nohighlight" id="equation-eq-cap-alt-tri-2">
+<span class="eqno">(94)<a class="headerlink" href="#equation-eq-cap-alt-tri-2" title="Permalink to this equation">¶</a></span>\[\mathrm{DN}=V+ai-ap+C_{cr}.\]</div>
+<p>O valor de <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> poderá ter valores positivos ou negativos. Valores positivos
+indicam que o terreno está em aclive, enquanto valores negativos,
+terreno em declive. Por exemplo, caso a <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> seja positivo, indica que
+a cota ou altitude de <span class="math notranslate nohighlight">\(\mathrm{B}\)</span> é maior que em <span class="math notranslate nohighlight">\(\mathrm{A}\)</span>.</p>
+<figure class="align-center" id="id15">
+<span id="cap-niv-trig"></span><a class="reference internal image-reference" href="../_images/cap_niv_trig.png"><img alt="cap_niv_trig.png" src="../_images/cap_niv_trig.png" style="width: 451.15px; height: 320.25px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 82 </span><span class="caption-text">Elementos básicos para o nivelamento trigonométrico.</span><a class="headerlink" href="#id15" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 5</span> Em um levantamento para determinar a <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> entre os
+pontos <span class="math notranslate nohighlight">\(\mathrm{A}\)</span> e <span class="math notranslate nohighlight">\(\mathrm{B}\)</span>, estacionou-se a estação total em <span class="math notranslate nohighlight">\(\mathrm{A}\)</span> e, em <span class="math notranslate nohighlight">\(\mathrm{B}\)</span>, o prisma.
+Da estação total mirou-se o prisma, resultando na DI de <span class="math notranslate nohighlight">\(322,567\,\text{m}\)</span>.
+Anotou-se também: o ângulo zenital de <span class="math notranslate nohighlight">\(85^\circ24'\)</span>; a altura do
+instrumento de <span class="math notranslate nohighlight">\(1,769\,\text{m}\)</span>; e a altura do prisma de <span class="math notranslate nohighlight">\(2,000\,\text{m}\)</span>. Pergunta-se,
+qual a <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> entre <span class="math notranslate nohighlight">\(\mathrm{A}\)</span> e <span class="math notranslate nohighlight">\(\mathrm{B}\)</span>, sem e com os efeitos da curvatura da terra
+e da refração atmosférica sendo considerado?</p>
+<p><span class="solucao">Solução:</span>
+Sem <span class="math notranslate nohighlight">\(C_{cr}\)</span>, considerando a Equação <a class="reference internal" href="#equation-eq-cap-alt-tri">(93)</a>
+com o valor de <span class="math notranslate nohighlight">\(V\)</span> dado pela Equação <code class="xref eq docutils literal notranslate"><span class="pre">eq:cap_alt_V_di_z</span></code>,
+pois os dados disponíveis são DI e <span class="math notranslate nohighlight">\(z\)</span>, tem-se:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathrm{DN_{AB}} &amp; =\textit{\ensuremath{\mathrm{DI_{AB}}}}\cos z+ai-ap\\
+&amp; =322,567\cos85^{\circ}24'+1,769-2,000\\
+&amp; =25,638\,{\rm m.}\end{split}\]</div>
+<p>No cálculo de emph{DN }considerando <span class="math notranslate nohighlight">\(C_{cr}\)</span>, utiliza-se
+a Equação~ref{eq:cap_alt_tri_2}. Para <span class="math notranslate nohighlight">\(C_{cr}\)</span>  (Equação~ref{eq:Ccr})
+DH é na unidade de km, então por trigonometria:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathrm{DH_{AB}} &amp; =\frac{\textit{\ensuremath{\mathrm{\mathrm{DI}}}}\sin z}{1000}\\
+&amp; =\frac{322,567\sin85^{\circ}24'}{1000}\\
+&amp; =0,3215{\rm \,km.}\end{split}\]</div>
+<p>Por fim, aplicando-se a Equação <a class="reference internal" href="#equation-eq-cap-alt-tri-2">(94)</a>,
+tem-se:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathrm{DN_{AB}} &amp; =\mathrm{DI_{AB}}\cos z+ai-ap+C_{cr}\\
+&amp; =\mathrm{DI}\cos z+ai-ap+0,067\,53\mathrm{DH^{2}}\\
+&amp; =322,567\cos85^{\circ}24'+1,769-2,000+0,067\,53\cdot0,321\,5^{2}\\
+&amp; =25,646\,{\rm m.}\end{split}\]</div>
+<hr class="docutils" />
+</section>
+<section id="nivelamento-taqueometrico">
+<span id="id9"></span><h3>Nivelamento taqueométrico<a class="headerlink" href="#nivelamento-taqueometrico" title="Link permanente para este título">¶</a></h3>
+<p>parpic[r]{begin{minipage}{80mm}includegraphics{Cap_altimetria/taqueometria.pdf}captionof{figure}{Esquema para o nivelamento taqueométrico.} label{fig:taqueometria}
+end{minipage}}De acordo com a Figura~ref{fig:fig1}, agora, em A, é estacionado
+um teodolito e em B, uma mira. O nivelamento taqueométrico é aquele
+realizado por meio das leituras dos retículos sobre a mira e do ângulo
+vertical com o auxílio do teodolito (ver Secção ref{sec:Medi=0000E7=0000E3o-por-taqueometria}).
+Sendo emph{V}, a distância vertical entre o plano que passa pelo
+centro do equipamento ao que passa por <span class="math notranslate nohighlight">\(rm\)</span>, temos:</p>
+<p>begin{equation}
+textit{V}=100Hcos zsin z=frac{100Hsin2z}{2}label{eq:taque}
+end{equation}</p>
+<p>noindent em que: <span class="math notranslate nohighlight">\(H=(rs-ri)\)</span>  sendo, <span class="math notranslate nohighlight">\(rs\)</span>  e <span class="math notranslate nohighlight">\(ri\)</span>, respectivamente,
+a leitura sobre a mira em B dos retículos superior e inferior.picskip{0}</p>
+<p>Para calcular a <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span>, aplicam-se as Equação~ref{eq:cap_alt_tri} ou
+ref{eq:cap_alt_tri_2}, esta última se <span class="math notranslate nohighlight">\(C_{cr}\)</span>  for utilizado. O
+valor da altura do prisma (emph{ap}), nestas Equações, é substituído
+pela leitura do retículo médio (emph{rm}).</p>
+<p>Por se tratar de um método que é a cada dia menos empregado nos levantamentos
+topográficos, não será apresentado a determinação Equação ref{eq:taque}.
+Aos interessados, consultar citeonline{godoy,comastri} e citeonline{casaca},
+entre outros.</p>
+<p>begin{mybox}[breakable,enhanced,pad at break=0mm]{} Com um teodolito no ponto 9 de cota <span class="math notranslate nohighlight">\(100,0\)</span>  m, visou-se
+o ponto 10, onde foram medidos: a altura do instrumento de <span class="math notranslate nohighlight">\(1,532\)</span> ~m;
+visando-se a mira em 10, as leitura do <span class="math notranslate nohighlight">\(rs=2,984\,{\rm m}\)</span>  e do <span class="math notranslate nohighlight">\(ri=0,200\,{\rm m}\)</span>;
+e ângulo zenital de <span class="math notranslate nohighlight">\(97^{\circ}\)</span>. Determine a diferença de nível
+entre os pontos 9 e 10 e a cota em 10.</p>
+<p>soluca</p>
+<p>noindent Da Equação~ref{eq:taque}, verifica-se que temos que determinar
+<span class="math notranslate nohighlight">\(rm\)</span>. Em taqueometria, <span class="math notranslate nohighlight">\(rs-rm\)</span>  é igual a <span class="math notranslate nohighlight">\(rm-ri\)</span>  (ver Equação ref{eq:taqueometria_reticulos},
+página pageref{eq:taqueometria_reticulos}), desta forma:</p>
+<p>[
+rm=frac{rs+ri}{2}=frac{2,984+0,200}{2}=1,592,{rm m.}
+]</p>
+<p>noindent Substituindo as medidas na Equação~ref{eq:taque} tem-se
+para emph{V}:</p>
+<p>[
+textit{V}=frac{100Hsin2z}{2}=frac{100(2,984-0,200)sin(2cdot97^{circ})}{2}=-33,676,{rm m.}
+]</p>
+<p>noindent Aplicando a Equação~ref{eq:cap_alt_tri} com emph{ap
+}igual a emph{rm}:</p>
+<p>[
+mathrm{DN_{9,10}}=V+ai-rm=-33,676+1,532-1,592=-33,736,{rm m.}
+]</p>
+<p>noindent Para o transporte da cota em 9 para o ponto 10:</p>
+<p>noindent
+[
+mathrm{cota_{10}}=mathrm{cota_{9}+DN_{9,10}}=100-33,736=66,264,{rm m.}
+]</p>
+<blockquote>
+<div><p>end{mybox}</p>
+</div></blockquote>
+<p>subsection{index{Nivelamento!GNSS}Nivelamento GNSSlabel{subsec:Nivelamento-GNSS}}</p>
+<p>Como já foi visto anteriormente, a altitude que os receptores GNSS
+determinam, corresponde à distância vertical do centro físico da antena
+do receptor ao Datum horizontal considerado (ver Capítulo ref{ch:IntroducaoGeodesiaCartografia}).
+Esta distância é denominada de altitude geométricaindex{altitude!geométrica}
+(<span class="math notranslate nohighlight">\(h\)</span> ). A altitude que trabalhamos é a altitude em relação ao geóideindex{geóide},
+altitude ortométricaindex{altitude!ortométrica} <span class="math notranslate nohighlight">\((H)\)</span>, que é a
+distância vertical do ponto na superfície ao geóide, isto é, aproximadamente
+ao nível médio dos mares. Valores de <span class="math notranslate nohighlight">\(H\)</span>  são, normalmente, medidos
+por meio do nivelamento geométrico (ver Secção ref{subsec:Nivelamento-geom=0000E9trico}).
+Todavia, pode-se obter <span class="math notranslate nohighlight">\(H\)</span>  se conhecer <span class="math notranslate nohighlight">\(h\)</span>, medida por GNSS e, a
+ondulação geoidal (<span class="math notranslate nohighlight">\(N\)</span> ) local, diferença entre emph{h }e emph{H}
+(Equação ref{eq:geoide}e Figura~ref{fig:geoide}a).</p>
+<p>begin{equation}
+Happrox h-Nlabel{eq:geoide}
+end{equation}</p>
+<p>Na Figura~ref{fig:geoide}b é apresentado, do modelo EGM96, a <span class="math notranslate nohighlight">\(N\)</span>
+para parte da região da América do Sul. O EGM96 tem como referência
+o Datum WGS84. Valores positivos indicam que o geóide está acima do
+index{WGS84}WGS84, e negativos, abaixo. Segundo este modelo, no
+Acre <span class="math notranslate nohighlight">\(N\approx30\,\mathrm{m}\)</span>, já no Amapá, <span class="math notranslate nohighlight">\(N\approx-30\,\mathrm{m}\)</span>.
+Na América do sul, os maiores valores se encontram nas Cordilheira
+dos Andes, com <span class="math notranslate nohighlight">\(N\approx50\,\mathrm{m}\)</span>.</p>
+<p>Valores de <span class="math notranslate nohighlight">\(N\)</span>  com relação aos Data utilizados no Brasil, o SAD69
+e o SIRGAS2000, podem ser obtidos por meio do programa MAPGEO2010
+cite{mapgeo}. No MAPGEO2010, tem que informar para obter a estimativa
+de <span class="math notranslate nohighlight">\(N\)</span>, o Datum utilizado na coleta dos dados de <span class="math notranslate nohighlight">\(h\)</span>  com  receptor
+GNSS, o SAD69index{Datum!horizontal!SAD69} ou SIRGASS2000index{Datum!horizontal!SIRGAS2000},
+e, as coordenadas do ponto, em latitude e longitude. Uma vez conhecidos
+os valores de <span class="math notranslate nohighlight">\(h\)</span>  (receptor GNSS) e <span class="math notranslate nohighlight">\(N\)</span>  (MAPGEO2010), pode-se calcular
+<span class="math notranslate nohighlight">\(H\)</span>  pela Equação~ref{eq:geoide}.</p>
+<p>begin{figure}[H] includegraphics[scale=0.95]{Cap_altimetria/geoide.pdf}
+caption{Relação entre altura ortométrica (<span class="math notranslate nohighlight">\(H\)</span> ), altura geométrica (<span class="math notranslate nohighlight">\(h\)</span> )
+e ondulação geoidal (<span class="math notranslate nohighlight">\(N\)</span> ) em (a). Ondulação geoidal segundo EGM96
+cite{lemoine1998development}, tendo <span class="math notranslate nohighlight">\(h\)</span>  em relação ao WGS84 (b).}</p>
+<p>label{fig:geoide}
+end{figure}</p>
+<p>A precisão na determinação de emph{H}, dependerá: i) da precisão
+de emph{h},emph{ }ou seja, do tipo de receptor GNSS, do método de
+posicionamento, e ii) da precisão da estimativa da emph{N}. Para
+a <span class="math notranslate nohighlight">\(N\)</span>  do modelo MAPGEO2010, segundo citeonline{Matos2012}, o desvio
+com relação à <span class="math notranslate nohighlight">\(N\)</span>  calculadas de medidas de GPS (<span class="math notranslate nohighlight">\(H\)</span> ) em referências
+de níveis (<span class="math notranslate nohighlight">\(h\)</span> ) do IBGE, foi de aproximadamente <span class="math notranslate nohighlight">\(\pm1\)</span>  m.</p>
+<p>Para aumentar a precisão do receptor, ou seja, a <span class="math notranslate nohighlight">\(h\)</span>, sugere-se utilizar
+os métodos de medidas relativas e por diferença de fase por onda portadora.
+Já, para aumentar a precisão no que diz respeito a <span class="math notranslate nohighlight">\(N\)</span>, pode-se realizar
+a sua calibração local. Esta calibração não será apresentada, por
+este texto ser apenas introdutório à esta disciplina. Maiores detalhes
+podem ser encontrados em citeonline{WOLF}.</p>
+<p>begin{mybox}[breakable,enhanced,pad at break=0mm]{} Encontre, por meio do programa MAPGEO2010, a ondulação
+geoidal para um ponto de coordenadas <span class="math notranslate nohighlight">\(-22^{\circ}6'41''\)</span>  de latitude
+e <span class="math notranslate nohighlight">\(-41^{\circ}54'8''\)</span>  de longitude, no index{Datum!horizontal!SIRGAS2000}Datum
+SIRGAS2000. Sabendo-se que a altura geométrica calculada pelo receptor
+GNSSindex{GNSS} nesta coordenada foi de <span class="math notranslate nohighlight">\(562,672\)</span> ~m, qual a altitude
+ortométrica.</p>
+<p>noindent soluca</p>
+<p>noindent parpic[r]{includegraphics[scale=.4]{Cap_altimetria/mapgeopdf.pdf}}Com
+as coordenadas e o Datum apresentados acima, obteve-se por meio do
+MAPGEO2010 o valor de <span class="math notranslate nohighlight">\(N\)</span> ~de~:math:<cite>-6,44</cite> ~m (Figura ao lado). Para
+calcular a altitude ortométrica (emph{H}), aplica-se a Equação~ref{eq:geoide}:</p>
+<p>[
+H=h-N=562,672–6,44=569,112~{rm m.}
+]</p>
+<p>vspace{1cm}end{mybox}</p>
+<p>begin{mybox}[breakable,enhanced,pad at break=0mm]{}Trabalhando com receptores GNSS com a técnica de
+medida relativa por diferença de fase, obteve-se para um ponto a altitude
+geométrica de 231,849~m no Datum SIRGAS2000. Utilizando o programa
+MAPGEO2010index{MAPGEO2010}, foi encontrado a ondulação geoidal
+de <span class="math notranslate nohighlight">\(-12,598\)</span> ~m. Calcule a altitude ortométrica.</p>
+<p>soluca</p>
+<p>Da Equação~ref{eq:geoide}, e com os dados apresentados acima, temos:</p>
+<p>noindent
+[
+H=h-N=231,849–12,598=244,447~{rm m.}
+]
+end{mybox}</p>
+<p>section*{Sugestão de aula prática}</p>
+<p>begin{tcolorbox}[breakable,enhanced,pad at break=0mm,adjusted title= Levantamento de ponto inacessível.]</p>
+<p>textbf{Introdução}: Um problema comum em topografia é ter pontos
+onde se deseja conhecer sua altitude ou, a <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> entre ele e o ponto
+da estação. Isto é facilmente resolvido se for possível levar ao ponto
+de interesse, uma mira ou um prisma, respectivamente, para levantamento
+com teodolito ou estação total, Secções ref{subsec:Nivelamento-trigonom=0000E9trico}
+e ref{subsec:Nivelamento-taqueom=0000E9trico}. Todavia, em algumas
+situações, este procedimento não pode ser realizado devido, por exemplo,
+a não se ter acesso ao ponto de interesse.</p>
+<p>textbf{Objetivo}: Determinar a <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> entre o ponto em que a estação
+total está estacionada, a um ponto inacessível, escolhido em campo.</p>
+<p>textbf{Material}:  Estação total, prisma, trena e estaca.</p>
+<p>textbf{Procedimento}: é apresentado graficamente abaixo, onde: A
+é o ponto de referência para a medida de <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span>, primeiro ponto onde a
+estação total será estacionada; O é o ponto inacessível; B é uma posição
+onde se tem acesso; AB é a base, onde é medida a <span class="math notranslate nohighlight">\(\mathrm{DH_{AB}}\)</span>;
+<span class="math notranslate nohighlight">\(\alpha\)</span>  e <span class="math notranslate nohighlight">\(\beta\)</span>  são os ângulos horizontais medidos em A e B,
+respectivamente; <span class="math notranslate nohighlight">\(ai\)</span>  é a altura do instrumento em A, medida com
+a trena. vspace{0.4cm}</p>
+<p>includegraphics[trim = 0mm 20mm 200mm 0mm,scale=1]{Cap_altimetria/pontoinacessivel}
+end{tcolorbox}</p>
+</section>
+</section>
 </section>
 
 
@@ -79,7 +611,29 @@
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
+        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
+    <h3><a href="../index.html">Page contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Capitulo 9: Altimetria</a><ul>
+<li><a class="reference internal" href="#definicoes">Definições</a></li>
+<li><a class="reference internal" href="#erro-de-esfericidade-e-refracao">Erro de esfericidade e refração</a><ul>
+<li><a class="reference internal" href="#erro-de-esfericidade">Erro de esfericidade</a></li>
+<li><a class="reference internal" href="#erro-de-refracao">Erro de refração</a></li>
+<li><a class="reference internal" href="#erro-de-esfericidade-e-refracao-combinado">Erro de esfericidade e refração combinado</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#declividade">Declividade</a></li>
+<li><a class="reference internal" href="#nivelamento">Nivelamento</a><ul>
+<li><a class="reference internal" href="#nivelamento-barometrico">Nivelamento barométrico</a></li>
+<li><a class="reference internal" href="#nivelamento-trigonometrico">Nivelamento trigonométrico</a></li>
+<li><a class="reference internal" href="#nivelamento-taqueometrico">Nivelamento taqueométrico</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
   <div class="sphinxprev">
     <h4>Previous page</h4>
     <p class="topless"><a href="capitulo8.html"

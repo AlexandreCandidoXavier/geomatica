@@ -118,7 +118,7 @@ campo.
    :alt: fig_fluxugramaPolig.png
    :align: center
 
-   Procedimento para cálculo de uma poligonal fechada em um ponto.}
+   Procedimento para cálculo de uma poligonal fechada em um ponto.
 
 Exemplo de cálculo de poligonal fechada
 ---------------------------------------
@@ -264,7 +264,7 @@ Uma vez calculados os azimutes provisórios, tem-se que determinar
 as coordenadas parciais dos alinhamentos, que nada mais são do que
 as projeções dos alinhamentos sobre o eixo-:math:`x` e :math:`y`. Na
 :numref:`fig_coordenadasparciais` é apresentado um alinhamento
-hipotético :math:`\mathrm{AB}, e a sua projeção sobre o eixo-:math:`x`e :math:`y`, correspondendo,
+hipotético :math:`\mathrm{AB}`, e a sua projeção sobre o eixo-:math:`x` e :math:`y`, correspondendo,
 respectivamente, a :math:`\Delta x` e a :math:`\Delta y`. Como este alinhamento
 teve a distância horizontal e o azimute determinados, por meio deles,
 pode-se calcular as suas coordenadas parciais.
@@ -707,7 +707,7 @@ As coordenadas parciais do alinhamento :math:`\mathrm{CP}`:
    &=7,85\cos279^{\circ}48'36''\\
    &=1,338\,\text{m}.
 
-Uma vez que a coordenada do ponto :math:`\mathrm{C}` foi calculada (Exemplo \ref{exemplo_cooredenadadotal}),
+Uma vez que a coordenada do ponto :math:`\mathrm{C}` foi calculada (Exemplo 4),
 :math:`x_\mathrm{C}=267.717,780\,\text{m}`  e  :math:`y_\mathrm{C}=7.370.692,035\,\text{m}`, a
 coordenada de :math:`\mathrm{C}` será (Equações :eq:`eq:coordenadatoalx` e :eq:`eq:coordenadatoaly`):
 
@@ -728,12 +728,12 @@ e utilizando as Equação :eq:`eq:calculoAzimutefinal`, temos o azimute
 .. math::
    \tan\mathrm{Az}_{\mathrm{BP}}&=\frac{x_{\mathrm{B}}-x_{\mathrm{P}}}{y_{\mathrm{B}}-y_{\mathrm{P}}}\\
    &=\frac{267.817,988-267.710,045}{7.370.893,267-7.370.693,372}\\
-   &=\frac{107,943}{199.895}
+   &=\frac{107,943}{199,895}
 
-Como o alinhamento :math:`\mathrm{BP}' está no quadrante SW:
+Como o alinhamento :math:`\mathrm{BP}` está no quadrante SW:
 
 .. math::
-   \mathrm{Az}_{\mathrm{BP}}&=\arctan\frac{107,943}{199.895}+180^{\circ}\\
+   \mathrm{Az}_{\mathrm{BP}}&=\arctan\frac{107,943}{199,895}+180^{\circ}\\
    \mathrm{Az}_{\mathrm{BP}}&=208^{\circ}22'8''.
 
 A distância horizontal :math:`\mathrm{BP}` (Equação :eq:`eq:calculoDHfinal`):
@@ -798,7 +798,7 @@ antes da compensação angular. Um exemplo de procedimento de cálculo
 coordenada :math:`\mathrm{E}'` , calculada a partir das medidas de campo, sem a correção
 angular e linear igual a :math:`x_{\mathrm{E}'}=1\,419,080\,\text{m}`
 e :math:`y_{\mathrm{E}'}=1\,160,235\,\text{m}`;
-o azimute entre as estações de controle :math:`\mathrm{AE} de :math:`230^\circ28'40''` .
+o azimute entre as estações de controle :math:`\mathrm{AE}` de :math:`230^\circ28'40''`.
 Pergunta-se, qual o :math:`\mathit{eft}` e o :math:`\mathit{efl}` desta poligonal aberta
 e apoiada.
 
@@ -815,7 +815,8 @@ e apoiada.
 
    **Levantamento de uma poligonal fechada**
 
-   *Objetivo*: Levantar, e calcular as coordenadas finais de uma poligonal a ser estabelecida em campo. Considerar o modelo da caderneta de campo apresentada na :numref:`fig:PoligonalFechadaSolucao.png`.
+   *Objetivo*: Levantar, e calcular as coordenadas finais de uma poligonal a ser estabelecida em campo.
+   Considerar o modelo da caderneta de campo apresentada na :numref:`fig_PoligonalFechadaSolucao.png`.
 
    *Material*: Estação total e acessórios.
 

@@ -511,6 +511,8 @@ de Noronha.
    Posição das referencias horizontais e os métodos em que as posições
    foram estimadas. Dados obtidos no IBGE em 7 de maio de 2012.
 
+.. _Datum Vertical:
+
 Datum vertical
 --------------
 

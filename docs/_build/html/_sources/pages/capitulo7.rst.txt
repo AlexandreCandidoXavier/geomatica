@@ -181,7 +181,7 @@ Já :math:`\mathrm{BA}`, :math:`\mathrm{CB}`, :math:`\mathrm{DC}`,
 :math:`\mathrm{DE}` e :math:`\mathrm{AE}` são os alinhamentos de *ré*. Observe
 que para medir os ângulos internos horizontais à direita da poligonal
 fechada :math:`\mathrm{ABCDE}`, tem-se que fazer um caminhamento no sentido anti-horário.
-No alinhamento AB é apresentado o seu azimute, ou seja a sua direção
+No alinhamento :math:`\mathrm{AB}` é apresentado o seu azimute, ou seja a sua direção
 em relação ao meridiano. Ela é necessária para o cálculo dos azimutes
 dos demais alinhamentos, como será visto na Secção :ref:`Cálculodoazimute`.
 
