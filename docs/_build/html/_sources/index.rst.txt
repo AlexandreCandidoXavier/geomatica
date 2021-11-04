@@ -10,6 +10,7 @@ Livro de Geomática
    :maxdepth: 3
    :caption: Conteúdo:
 
+   pages/prefasio
    pages/capitulo1
    pages/capitulo2
    pages/capitulo3

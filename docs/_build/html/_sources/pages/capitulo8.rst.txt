@@ -16,7 +16,7 @@
 
 .. role:: blue
 
-.. _RST Capitulo8:
+.. _RST Capitulo 8:
 
 Capitulo 8: Poligonal
 *********************

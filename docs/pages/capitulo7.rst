@@ -16,7 +16,7 @@
 
 .. role:: blue
 
-.. _RST Capitulo7:
+.. _RST Capitulo 7:
 
 Capitulo 7: Ângulos
 *******************
