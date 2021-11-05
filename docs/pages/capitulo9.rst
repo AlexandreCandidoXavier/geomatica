@@ -130,9 +130,9 @@ para cálculo das altitudes dos demais pontos levantados.
 :solucao:`Solução:`
 
 .. math::
-   \mathrm{alt_{\mathbf{X}}} & =\mathrm{alt_{IBGE}+DN_{IBGE,\,\mathbf{X}}}\\
-    & =691,421-39,697\\
-    & =651,724\,\text{m}
+   \mathrm{alt_{\mathbf{X}}}  =\mathrm{alt_{IBGE}+DN_{IBGE,\,\mathbf{X}}}\\
+     =691,421-39,697\\
+     =651,724\,\text{m}
 
 ----
 
@@ -156,11 +156,11 @@ correspondendo a :math:`BC`. A esta separação denominamos :math:`C_{c}`.
 Do triângulo retângulo :math:`AOC` :
 
 .. math::
-   OC^{2} & =OA^{2}+AC^{2}\nonumber \\
-   (R+C_{c})^{2} & =R^{2}+\mathrm{DH^{2}}\nonumber \\
-   R^{2}+2RC_{c}+C_{c}^{2} & =R^{2}+\mathrm{DH^{2}}\nonumber \\
-   C_{c}(2R+C_{c}) & =\mathrm{DH^{2}}\nonumber \\
-   C_{c} & =\frac{\mathrm{DH^{2}}}{2R+C_{c}}.
+   OC^{2}  =OA^{2}+AC^{2}\nonumber \\
+   (R+C_{c})^{2}  =R^{2}+\mathrm{DH^{2}}\nonumber \\
+   R^{2}+2RC_{c}+C_{c}^{2}  =R^{2}+\mathrm{DH^{2}}\nonumber \\
+   C_{c}(2R+C_{c})  =\mathrm{DH^{2}}\nonumber \\
+   C_{c}  =\frac{\mathrm{DH^{2}}}{2R+C_{c}}.
    :label: eq:Cc1
 
 
@@ -172,8 +172,8 @@ de grandeza de :math:`2R`, tem-se, para :math:`C_{c}`  em metros e :math:`\mathr
 Equação:
 
 .. math::
-   C_{c}&=1\,000\cdot\frac{\mathrm{DH^{2}}}{2R}\\
-   C_{c}&=0,078\,53\mathrm{DH^{2}}.
+   C_{c}=1\,000\cdot\frac{\mathrm{DH^{2}}}{2R}\\
+   C_{c}=0,078\,53\mathrm{DH^{2}}.
    :label: eq:Cc2
 
 Com a finalidade de ilustrar o efeito de :math:`C_{c}`, imagine uma embarcação,
@@ -223,8 +223,8 @@ em alturas menores e :math:`C_{r}`  os pontos parecem ser mais altos, a
 compensação, :math:`C_{cr}` é:
 
 .. math::
-   C_{cr} & =0,078\,53\mathrm{DH}^2-0,011\mathrm{DH}^2\nonumber \\
-   C_{cr} & =0,067\,53\mathrm{DH}^2
+   C_{cr}  =0,078\,53\mathrm{DH}^2-0,011\mathrm{DH}^2\nonumber \\
+   C_{cr}  =0,067\,53\mathrm{DH}^2
    :label: eq:Ccr
 
 Mais uma vez, a unidade de :math:`C_{cr}` é metro e a DH em quilômetro.
@@ -239,8 +239,8 @@ na medida de :math:`\mathrm{DN}` entre pontos distantes entre si em :math:`1\,39
 Considerando a :math:`\mathrm{DH}` em km e de acordo com a Equação :eq:`eq:Ccr`:
 
 .. math::
-   C_{cr} & =0,067\,53\cdot1,398^2\\
-   & =0,132\text{ m}
+   C_{cr}  =0,067\,53\cdot1,398^2\\
+    =0,132\text{ m}
 
 O erro cometido corresponderia a :math:`0,132\,\text{m}` para menos na
 :math:`\mathrm{DN}` entre os pontos.
@@ -259,10 +259,10 @@ Uma vez que se queira realizar a compensação, basta aplicar
 à :math:`\mathrm{DN}` a :math:`C_{cr}`, desta forma:
 
 .. math::
-   \mathrm{\mathrm{alt_{\mathbf{X}}}} & =\mathrm{alt_{IBGE}+DN_{IBGE,\,\mathbf{X}}+}C_{cr}\\
-    & =\mathrm{alt_{IBGE}+DN_{\mathbf{X}IBGE}}+0,067\,53\mathrm{DH^{2}}\\
-    & =691,421-39,697+0,067\,53\cdot0,753\,982^{2}\\
-    & =651,762{\rm \,m.}
+   \mathrm{\mathrm{alt_{\mathbf{X}}}}  =\mathrm{alt_{IBGE}+DN_{IBGE,\,\mathbf{X}}+}C_{cr}\\
+     =\mathrm{alt_{IBGE}+DN_{\mathbf{X}IBGE}}+0,067\,53\mathrm{DH^{2}}\\
+     =691,421-39,697+0,067\,53\cdot0,753\,982^{2}\\
+     =651,762{\rm \,m.}
 
 ----
 
@@ -313,16 +313,16 @@ isto é, ponto inicial tem cota/altitude maior do que o ponto final.
 - A declividade em percentagem:
 
 .. math::
-   d(\%) & =\frac{\mathrm{DN}}{\mathrm{DH}}100\\
-    & =\frac{-27,9}{162,2}100\\
-    & =-17,201\%.
+   d(\%)  =\frac{\mathrm{DN}}{\mathrm{DH}}100\\
+     =\frac{-27,9}{162,2}100\\
+     =-17,201\%.
 
 - Em graus:
 
 .. math::
-   d(^{\circ}) & =\arctan\frac{\mathrm{DN}}{\mathrm{DH}}\\
-   & =\arctan\frac{-27,9}{162,2}\\
-   & =-9^\circ45'36''.
+   d(^{\circ})  =\arctan\frac{\mathrm{DN}}{\mathrm{DH}}\\
+    =\arctan\frac{-27,9}{162,2}\\
+    =-9^\circ45'36''.
 
 ----
 
@@ -431,14 +431,14 @@ vertical que passa por :math:`\mathrm{B}`, corresponde à :math:`\mathrm{E}`. A 
 para medidas de :math:`\mathrm{DH}`:
 
 .. math::
-   V & =\mathrm{DH}\cot z,\\
-   V & =\mathrm{DH}\tan\alpha,
+   V  =\mathrm{DH}\cot z,\\
+   V  =\mathrm{DH}\tan\alpha,
 
 A distância :math:`\mathrm{BD}` corresponde à altura do prisma :math:`(ap)`. É facilmente
 obtida por meio da leitura na régua presente no bastão em que o prisma
-está conectado. A altura do equipamento :math:`(ai)`, distância vertical
+está conectado. A altura do equipamento :math:`\mathrm{AI}`, distância vertical
 entre :math:`\mathrm{C}` e :math:`\mathrm{A}`, pode ser obtida com uma trena. Com estas definições,
-para a determinação da :math:`\mathrm{DN}` tem que somar a :math:`V`, a :math:`ai` e
+para a determinação da :math:`\mathrm{DN}` tem que somar a :math:`V`, a :math:`\mathrm{AI}` e
 subtrair :math:`ap`:
 
 .. math::
@@ -483,27 +483,27 @@ com o valor de :math:`V` dado pela Equação :eq:`eq:cap_alt_V_di_z`,
 pois os dados disponíveis são DI e :math:`z`, tem-se:
 
 .. math::
-   \mathrm{DN_{AB}} & =\mathrm{DI_{AB}}\cos z+ai-ap\\
-   & =322,567\cos85^{\circ}24'+1,769-2,000\\
-   & =25,638\,{\rm m.}
+   \mathrm{DN_{AB}}  =\mathrm{DI_{AB}}\cos z+ai-ap\\
+    =322,567\cos85^{\circ}24'+1,769-2,000\\
+    =25,638\,{\rm m.}
 
 No cálculo de :math:`\mathrm{DN}` considerando :math:`C_{cr}`, utiliza-se
 a Equação :eq:`eq:cap_alt_tri_2`. Para :math:`C_{cr}`  (Equação :eq:`eq:Ccr`)
 :math:`\mathrm{DH}` é na unidade de :math:`\mathrm{km}`, então por trigonometria:
 
 .. math::
-   \mathrm{DH_{AB}} & =\frac{\mathrm{\mathrm{DI}}\sin z}{1000}\\
-   & =\frac{322,567\sin85^{\circ}24'}{1000}\\
-   & =0,3215{\rm \,km.}
+   \mathrm{DH_{AB}}  =\frac{\mathrm{\mathrm{DI}}\sin z}{1000}\\
+    =\frac{322,567\sin85^{\circ}24'}{1000}\\
+    =0,3215{\rm \,km.}
 
 Por fim, aplicando-se a Equação :eq:`eq:cap_alt_tri_2`,
 tem-se:
 
 .. math::
-   \mathrm{DN_{AB}} & =\mathrm{DI_{AB}}\cos z+ai-ap+C_{cr}\\
-   & =\mathrm{DI}\cos z+ai-ap+0,067\,53\mathrm{DH^{2}}\\
-   & =322,567\cos85^{\circ}24'+1,769-2,000+0,067\,53\cdot0,321\,5^{2}\\
-   & =25,646\,{\rm m.}
+   \mathrm{DN_{AB}}  =\mathrm{DI_{AB}}\cos z+ai-ap+C_{cr}\\
+    =\mathrm{DI}\cos z+ai-ap+0,067\,53\mathrm{DH^{2}}\\
+    =322,567\cos85^{\circ}24'+1,769-2,000+0,067\,53\cdot0,321\,5^{2}\\
+    =25,646\,{\rm m.}
 
 ----
 
@@ -535,13 +535,13 @@ a leitura sobre a mira em B dos retículos superior e inferior.
 
    Esquema para o nivelamento taqueométrico.
 
-Para calcular a :math:`\mathrm{DN}`, aplicam-se as Equação~\ref{eq:cap_alt_tri} ou
+Para calcular a :math:`\mathrm{DN}`, aplicam-se as Equação :eq:`eq:cap_alt_tri} ou
 :eq:`eq:cap_alt_tri_2`, esta última se :math:`C_{cr}`  for utilizado. O
 valor da altura do prisma :math:`(ap)`, nestas Equações, é substituído
 pela leitura do retículo médio :math:`(rm)`.
 
 Por se tratar de um método que é a cada dia menos empregado nos levantamentos
-topográficos, não será apresentado a determinação Equação \ref{eq:taque}.
+topográficos, não será apresentado a determinação Equação :eq:`eq:taque}.
 Aos interessados, consultar :cite:`godoy`, :cite:`comastri` e :cite:`casaca`,
 entre outros.
 
@@ -558,34 +558,34 @@ Da Equação :eq:`eq:taque`, verifica-se que temos que determinar
 :math:`rm`. Em taqueometria, :math:`rs-rm`  é igual a :math:`rm-ri`, desta forma:
 
 .. math::
-   rs-rm&=rm-ri\\
-   2rm&=rs+ri\\
-   rm&=\frac{rs+ri}{2}\\
-   rm&=\frac{2,984+0,200}{2}\\
-   rm&=1,592\,{\rm m.}
+   rs-rm=rm-ri\\
+   2rm=rs+ri\\
+   rm=\frac{rs+ri}{2}\\
+   rm=\frac{2,984+0,200}{2}\\
+   rm=1,592\,{\rm m.}
 
 
 Substituindo as medidas na Equação :eq:`eq:taque` tem-se
 para :math:`V`:
 
 .. math::
-   V&=\frac{100H\sin2z}{2}\\
-   V&=\frac{100(2,984-0,200)\sin(2\cdot97^{\circ})}{2}\\
-   V&=-33,676\,{\rm m.}
+   V=\frac{100H\sin2z}{2}\\
+   V=\frac{100(2,984-0,200)\sin(2\cdot97^{\circ})}{2}\\
+   V=-33,676\,{\rm m.}
 
 Aplicando a Equação :eq:`eq:cap_alt_tri` com :math:`ap` igual a :math:`rm`:
 
 .. math::
-   \mathrm{DN_{9,10}}&=V+ai-rm\\
-   \mathrm{DN_{9,10}}&=-33,676+1,532-1,592
-   \mathrm{DN_{9,10}}&=-33,736\,{\rm m.}
+   \mathrm{DN_{9,10}}=V+ai-rm\\
+   \mathrm{DN_{9,10}}=-33,676+1,532-1,592
+   \mathrm{DN_{9,10}}=-33,736\,{\rm m.}
 
 Para o transporte da cota em :math:`9` para o ponto :math:`10`:
 
 .. math::
-   \mathrm{cota_{10}}&=\mathrm{cota_{9}+DN_{9,10}}\\
-   \mathrm{cota_{10}}&=100-33,736\\
-   \mathrm{cota_{10}}&=66,264\,{\rm m.}
+   \mathrm{cota_{10}}=\mathrm{cota_{9}+DN_{9,10}}\\
+   \mathrm{cota_{10}}=100-33,736\\
+   \mathrm{cota_{10}}=66,264\,{\rm m.}
 
 ----
 
@@ -620,7 +620,7 @@ Na América do sul, os maiores valores se encontram nas Cordilheira
 dos Andes, com :math:`N\approx50\,\mathrm{m}`.
 
 Valores de :math:`N`  com relação aos Data utilizados no Brasil, o
-SIRGAS2000, podem ser obtidos por meio do programa `HgeoHNOR2020 <https://www.ibge.gov.br/geociencias/modelos-digitais-de-superficie/modelos-digitais-de-superficie/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?=&t=processar-os-dados>`_.
+SIRGAS2000, podem ser obtidos por meio do programa `HgeoHNOR2020 <https://www.ibge.gov.br/geociencias/modelos-digitais-de-superficie/modelos-digitais-de-superficie/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?=t=processar-os-dados>`_.
 No HgeoHNOR2020, tem que informar para obter a estimativa
 de :math:`N`, o Datum utilizado na coleta dos dados de :math:`h`  com  receptor
 GNSS, SIRGASS2000,
@@ -658,7 +658,7 @@ podem ser encontrados em :cite:`WOLF`.
 
 ----
 
-:exem:`Exemplo 7` Encontre, por meio do programa `HgeoHNOR2020 <https://www.ibge.gov.br/geociencias/modelos-digitais-de-superficie/modelos-digitais-de-superficie/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?=&t=processar-os-dados>`_,
+:exem:`Exemplo 7` Encontre, por meio do programa `HgeoHNOR2020 <https://www.ibge.gov.br/geociencias/modelos-digitais-de-superficie/modelos-digitais-de-superficie/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?=t=processar-os-dados>`_,
 a ondulação geoidal para um ponto de coordenadas :math:`-22^{\circ}6'41''`  de latitude
 e :math:`-41^{\circ}54'8''`  de longitude, no Datum
 SIRGAS2000. Sabendo-se que a altura geométrica calculada pelo receptor
@@ -667,21 +667,21 @@ ortométrica.
 
 :solucao:`Solução:`
 Com as coordenadas e o Datum apresentados acima, obteve-se por meio do
-`HgeoHNOR2020 <https://www.ibge.gov.br/geociencias/modelos-digitais-de-superficie/modelos-digitais-de-superficie/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?=&t=processar-os-dados>`_
+`HgeoHNOR2020 <https://www.ibge.gov.br/geociencias/modelos-digitais-de-superficie/modelos-digitais-de-superficie/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?=t=processar-os-dados>`_
 o valor de :math:`N` de :math:`-6,54\,\text{m}`. Para
 calcular a altitude ortométrica :math:`(H)`, aplica-se a Equação :eq:`eq:geoide`:
 
 .. math::
-   H&=h-N\\
-   H&=562,672--6,54\\
-   H&=569,112~{\rm m.}
+   H=h-N\\
+   H=562,672--6,54\\
+   H=569,112 {\rm m.}
 
 ----
 
 :exem:`Exemplo 8` Trabalhando com receptores GNSS com a técnica de
 medida relativa por diferença de fase, obteve-se para um ponto a altitude
 geométrica de :math:`231,849\,\text{m}` no Datum SIRGAS2000. Utilizando o programa
-`HgeoHNOR2020 <https://www.ibge.gov.br/geociencias/modelos-digitais-de-superficie/modelos-digitais-de-superficie/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?=&t=processar-os-dados>`_,
+`HgeoHNOR2020 <https://www.ibge.gov.br/geociencias/modelos-digitais-de-superficie/modelos-digitais-de-superficie/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?=t=processar-os-dados>`_,
 foi encontrado a ondulação geoidal de :math:`-12,598\,\text{m}`.
 Calcule a altitude ortométrica.
 
@@ -689,12 +689,11 @@ Calcule a altitude ortométrica.
 
 
 .. math::
-   H&=h-N\\
-   H&=231,849--12,598\\
-   H&=244,447~{\rm m.}
+   H=h-N\\
+   H=231,849--12,598\\
+   H=244,447 {\rm m.}
 
 ----
-
 
 .. admonition:: Sugestão de aula prática
 
@@ -719,7 +718,7 @@ Calcule a altitude ortométrica.
    estação total será estacionada; O é o ponto inacessível; B é uma posição
    onde se tem acesso; AB é a base, onde é medida a :math:`\mathrm{DH_{AB}}`;
    :math:`\alpha`  e :math:`\beta`  são os ângulos horizontais medidos em A e B,
-   respectivamente; :math:`ai`  é a altura do instrumento em A, medida com
+   respectivamente; :math:`\mathrm{AI}`  é a altura do instrumento em A, medida com
    a trena.
 
 
@@ -752,10 +751,10 @@ Na :numref:`fig_nivelageome1` é apresentado o procedimento para
 o nivelamento entre dois pontos, o :math:`A` e o :math:`B`. O nível é estacionado,
 de preferência em um ponto intermediário à :math:`A` e :math:`B`. Ao primeiro
 ponto em que é realizada a leitura na mira, denomina-se de ponto de
-ré, no nosso exemplo o ponto
-:math:`A`. Este ponto deve ter a sua cota ou altitude conhecida, será a
-:math:`RN`. Uma vez conhecida a cota ou a altitude do ponto de ré, pode-se
-calcular a altura do instrumento :math:`(AI)`,
+:math:`\mathrm{ré}`, no nosso exemplo o ponto
+:math:`A`. Este ponto deve ter a sua :math:`\mathrm{cota}` ou altitude conhecida, será a
+:math:`RN`. Uma vez conhecida a :math:`\mathrm{cota}` ou a altitude do ponto de ré, pode-se
+calcular a altura do instrumento :math:`\mathrm{AI}`,
 Equação :eq:`eq:AI`), distância vertical do centro do equipamento
 ao Datum vertical utilizado.
 
@@ -764,7 +763,7 @@ ao Datum vertical utilizado.
    :label: eq:AI
 
 Os demais pontos de um NGS denominam-se de pontos de vante. Logo,
-a leitura da mira em :math:`B`, é de vante. A cota dos pontos de vante
+a leitura da mira em :math:`B`, é de vante. A :math:`\mathrm{cota}` dos pontos de vante
 é calculada subtraindo da :eq:`eq:AI` o valor da sua leitura de vante,
 isto é:
 
@@ -774,7 +773,7 @@ isto é:
 
 Observe que o conceito de :math:`\mathrm{AI}` para o NG é diferente do que foi visto
 no nivelamento trigonométrico e taqueométrico, onde a altura do instrumento
-:math:`(ai)` é a distância vertical do centro do equipamento ao piquete
+:math:`\mathrm{AI}` é a distância vertical do centro do equipamento ao piquete
 ou ao marco do ponto onde o equipamento está estacionada.
 
 .. _fig_nivelageome1:
@@ -788,83 +787,115 @@ ou ao marco do ponto onde o equipamento está estacionada.
 
 
 De acordo com a :numref:`fig_nivelageome1` a, suponha que se deseja
-calcular a cota de :math:`B` e a :math:`\mathrm{DN}_{AB}`. O ponto :math:`A`
-tem cota de :math:`253,543\,\text{m}`, :math:`RN` do levantamento. Inicialmente estaciona-se
+calcular a :math:`\mathrm{cota}` de :math:`B` e a :math:`\mathrm{DN}_{AB}`. O ponto :math:`A`
+tem :math:`\mathrm{cota}` de :math:`253,543\,\text{m}`, :math:`RN` do levantamento. Inicialmente estaciona-se
 o nível em um ponto intermediário aos pontos :math:`A` e :math:`B` e,
 sobre o ponto :math:`A`, é colocada a mira. Não há a necessidade do
 nível estar alinhado com os pontos :math:`A` e :math:`B`, no entando
 a distância deveria ser aproximadamente igual aos pontos de interesse.
 A mira em :math:`A` é visada com o nível e, realiza-se a leitura, denominada
-de ré. Considere o valor de ré de :math:`3,580\,\text{m}` (Figura~\ref{fig:nivelageome1}b).
-Pode-se, de acordo com a Equação~\ref{eq:AI}, calcular a AI:
+de :math:`\mathrm{ré}`. Considere o valor de :math:`\mathrm{ré}` de :math:`3,580\,\text{m}`
+(:numref:`fig_nivelageome1` b).
+Pode-se, de acordo com a Equação :eq:`eq:AI`, calcular a AI:
 
 :math:`\mathrm{AI}=253,543+3,580=257,123\text{ m}`.
 
-O próximo passo é deslocar a mira para \emph{B}, ponto de vante. Faz-se
+O próximo passo é deslocar a mira para :math:`B`, ponto de :math:`\mathrm{vante}`. Faz-se
 a leitura com a luneta do nível apontado sobre a mira em :math:`B`, onde,
-para este exemplo, o valor de :math:`0,643\,\text{m}`, leitura de vante (Figura~\ref{fig:nivelageome1}c).
-Desta forma, a :math:`\mathrm{cota}{}_{\textit{B}}` é (Equação~\ref{eq:cota}):
+para este exemplo, o valor de :math:`0,643\,\text{m}`, leitura de :math:`\mathrm{vante}`
+(:numref:`fig_nivelageome1` c).
+Desta forma, a :math:`\mathrm{cota}_{\textit{B}}` é (Equação :eq:`eq:cota`):
 
 :math:`\mathrm{cota}_{B}=257,123-0,643=256,480\text{ m}`.
 
-Uma vez conhecidas as cotas de \emph{A }e \emph{B}, a\emph{ :math:`\mathrm{DN}{}_{\textit{AB}}`}
-(Figura~\ref{fig:nivelageome1}d) será:
+Uma vez conhecidas as :math:`\mathrm{cotas}` de :math:`A` e :math:`B`, a
+:math:`\mathrm{DN}_{\textit{AB}}` (:numref:`fig_nivelageome1` d) será:
 
-:math:`\textit{\ensuremath{\mathrm{DN}}}_{\textit{AB}}=\textit{\ensuremath{\mathrm{cota}}}_{B}-\mathrm{cota}_{A}=256,480-253,543=2,937\text{ m.}`
+.. math::
+   \mathrm{DN}_{\textit{AB}}&=\mathrm{cota}_{B}-\mathrm{cota}_{A}\\
+   \mathrm{DN}_{\textit{AB}}&=256,480-253,543\\
+   \mathrm{DN}_{\textit{AB}}&=2,937\text{ m.}
 
-\begin{table}[H]
-\includegraphics{Cap_altimetria/tabelaNGS}
-\caption{Exemplo de caderneta de campo.}\label{tab:tabelaNGS}
-\end{table}
+----
 
-\parpic[r]{\begin{minipage}{80mm}\includegraphics{Cap_altimetria/cap_alt_niv_geometrico_espaco}\captionof{figure}{Exemplo da distribuição espacial dos pontos do NGS da Tabela \ref{tab:tabelaNGS}.} \label{fig:tabelaNGS}  
-\end{minipage}}Supondo-se que há outras estacas (pontos) a serem levantados, os dados
-terão que ser tabelados de forma organizada. Na Tabela~\ref{tab:tabelaNGS}
+Supondo-se que há outras estacas (pontos) a serem levantados, os dados
+terão que ser tabelados de forma organizada. Na :numref:`tab_tabelaNGS`
 é apresentado um exemplo de caderneta de campo para o NGS com cinco
-pontos A, B, C, D e E. Nesta Tabela, a coluna: (I) é a posição onde
-a mira foi estacionada e se fez a leitura; (II) é o valor da leitura
-de ré, o primeiro ponto visado; (III) é altura do instrumento (Equação
-\ref{eq:AI}); (IV) são as leituras de vante e; (V), com exceção da
-estaca :math:`A`, referência de nível, são as cotas calculadas (Equação~\ref{eq:cota}).
-Para o cálculo das cotas, a AI é sempre igual a 257,123~m, modificando-se
-apenas os valores das leituras de vante dos pontos. Um fato importante
+pontos :math:`A,\,B,\,C,\,D` e :math:`E`. Nesta Tabela, a coluna: (**I**) é a posição onde
+a mira foi estacionada e se fez a leitura; (**II**) é o valor da leitura
+de :math:`\mathrm{ré}`, o primeiro ponto visado; (**III**) é altura do instrumento (Equação
+:eq:`eq:AI`); (**IV**) são as leituras de :math:`\mathrm{vante}` e; (**V**), com exceção da
+estaca :math:`A`, referência de nível, são as :math:`\mathrm{cotas}`
+calculadas (Equação:eq:`eq:cota`).
+Para o cálculo das :math:`\mathrm{cotas}`, a :math:`\mathrm{AI}` é sempre igual a
+:math:`257,123\,\text{m}`, modificando-se
+apenas os valores das leituras de :math:`\mathrm{vante}` dos pontos. Um fato importante
 a ser observado nesta Tabela de nivelamento, é que não é possível
 conhecer a distribuição espacial dos pontos na superfície terrestre,
 uma vez que não são apresentadas, por exemplo, as suas respectivas
 coordenadas. Se for necessário conhecer a distribuição espacial dos
 pontos no plano, terá que ser realizado o levantamento planimétrico
-para os pontos do NG. A título de ilustração, a Figura~\ref{fig:tabelaNGS}
+para os pontos do NG. A título de ilustração, a :numref:`cap_alt_niv_geometrico_espaco`
 apresenta uma possível configuração espacial dos pontos referentes
-aos dados da Tabela~\ref{tab:tabelaNGS} em uma superfície topográfica.
+aos dados da :numref:`tab_tabelaNGS` em uma superfície topográfica.
 
-\begin{mybox}[breakable,enhanced,pad at break=0mm]{} Com os dados da caderneta de campo de um NGS, figura
-a seguir, calcule as cotas dos pontos 1, 2, 3, 4, e 5. Considere o
-ponto 0 como sendo a RN, com cota atribuída de :math:`100\,\text{m}`. 
+.. _tab_tabelaNGS:
 
-\includegraphics[trim = 60mm 110mm 20mm 80mm,scale=1]{Cap_altimetria/cap_niv_intr_NG_exe1}
+.. figure:: /images/capitulo9/tabelaNGS.png
+   :scale: 35 %
+   :alt: tabelaNGS.png
+   :align: center
 
-\noindent \soluca
+   Exemplo de caderneta de campo.
 
-\noindent De acordo com as Equações \ref{eq:AI} e \ref{eq:cota},
+.. _cap_alt_niv_geometrico_espaco:
+
+.. figure:: /images/capitulo9/cap_alt_niv_geometrico_espaco.png
+   :scale: 35 %
+   :alt: cap_alt_niv_geometrico_espaco.png
+   :align: center
+
+   Exemplo da distribuição espacial dos pontos do NGS da :numref:`tab_tabelaNGS`.
+
+----
+
+:exem:`Exemplo 8` Com os dados da caderneta de campo de um NGS, figura
+a seguir, calcule as :math:`\mathrm{cotas}` dos pontos
+:math:`1,\,2,\,3,\,4` e :math:`5`. Considere o
+ponto :math:`0` como sendo a :math:`\mathrm{RN}`,
+com :math:`\mathrm{cota}` atribuída de :math:`100\,\text{m}`.
+
+.. figure:: /images/capitulo9/cap_niv_intr_NG_exe1.png
+   :scale: 35 %
+   :alt: cap_niv_intr_NG_exe1.png
+   :align: center
+
+:solucao:`Solução:` 
+De acordo com as Equações :eq:`eq:AI` e :eq:`eq:cota`,
 a solução é apresentada na Tabela que segue, onde, em negrito são
 as respostas e, em parenteses, os cálculos realizados.
 
-\noindent \small
-\setlength{\extrarowheight}{2pt} % 
-\begin{tabular}{ccccr} \hline  
-Ponto  &  ré   &  AI                     &  vante  &  \multicolumn{1}{c}{cota}  \hline 
-0  &     :math:`1,937`  &  :math:`\mathbf{101,937}\,(100+1,937)`  &        &  :math:`100`  
-1  &            &                                   & :math:`2,189`  & :math:`\mathbf{99,748}\,(101,937-2,189)`   
-2  &            &                                   & :math:`3,105`  & :math:`\mathbf{98,832}\,(101,937-3,105)`   
-3  &            &                                   & :math:`0,825`  & :math:`\mathbf{101,112}\,(101,937-0,825)`  
-4  &            &                                   & :math:`0,194`  & :math:`\mathbf{101,743}\,(101,937-0,194)`   
-5  &            &                                   & :math:`0,491`  & :math:`\mathbf{101,446}\,(101,937-0,491)` \hline
-\end{tabular}
+.. table:: Compensação do erro angular pelo método linear
+    :widths: 1 1 2 1 2
+    :header-alignment: ccccc
+    :column-alignment: ccrcr
+    :column-dividers:  none single single single single none
 
-\end{mybox}
+    ============= ==================== ========================================= ========================= ==========================================
+    Ponto         :math:`\mathrm{ré}`  :math:`\mathbf{AI}`                       :math:`\mathrm{vante}`    :math:`\mathrm{cota}`
+    ============= ==================== ========================================= ========================= ==========================================
+    :math:`0`     :math:`1,937`        :math:`\mathbf{101,937}\,(100+1,937)`                               :math:`100`
+    :math:`1`                                                                    :math:`2,189`             :math:`\mathbf{99,748}\,(101,937-2,189)`
+    :math:`2`                                                                    :math:`3,105`             :math:`\mathbf{98,832}\,(101,937-3,105)`
+    :math:`3`                                                                    :math:`0,825`             :math:`\mathbf{101,112}\,(101,937-0,825)`
+    :math:`4`                                                                    :math:`0,194`             :math:`\mathbf{101,743}\,(101,937-0,194)`
+    :math:`5`                                                                    :math:`0,491`             :math:`\mathbf{101,446}\,(101,937-0,491)`
+    ============= ==================== ========================================= ========================= ==========================================
 
-\subsubsection{\index{Nivelamento!geométrico!composto}Nivelamento geométrico composto
-(NGC)}
+----
+
+Nivelamento geométrico composto (NGC)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Quando de uma única estação, ponto em que o nível é estacionado, não
 se consegue fazer a visada para o ponto de interesse, há a necessidade
@@ -873,68 +904,74 @@ ser medidos. A este NG, com mudança de estação, denomina-se de nivelamento
 geométrico composto (NGC).
 
 O procedimento inicial do NGC é o mesmo do NGS. Inicialmente faz-se
-a leitura de \emph{ré}\index{Nivelamento!geométrico composto!ponto de ré}
-em um ponto de cota conhecida ou estabelecida (RN). Os próximas pontos
-a serem visados também são denominadas de pontos \emph{vante}\index{Nivelamento!geométrico composto!ponto de vante},
-todavia, eles podem ser de dois tipos, ponto intermediário (PI) ou
-ponto de mudança (PM). Será PI até o penúltimo ponto a ser visado
-de uma determinada estação e, PM é o último ponto observado da estação.
-Desta forma, no NGC, após a leitura de um PM, o equipamento é colocado
+a leitura de :math:`\mathrm{ré}`
+em um ponto de :math:`\mathrm{cota}` conhecida ou estabelecida (RN). Os próximas pontos
+a serem visados também são denominadas de pontos   :math:`\mathrm{vante}`,
+todavia, eles podem ser de dois tipos, **ponto intermediário** (:math:`\mathrm{PI}`) ou
+**ponto de mudança** (:math:`\mathrm{PM}`). Será :math:`\mathrm{PI}` até o penúltimo ponto a ser visado
+de uma determinada estação e, :math:`\mathrm{PM}` é o último ponto observado da estação.
+Desta forma, no NGC, após a leitura de um :math:`\mathrm{PM}`, o equipamento é colocado
 em outra estação, tendo que realizar em seguida, a sua primeira visada,
-sobre a mira no PM da estação anterior. Esta leitura, agora realizada
-da nova estação, também é denominada de ré. Pode-se então calcular
-a nova AI (Equação~\ref{eq:AI}).
+sobre a mira no :math:`\mathrm{PM}` da estação anterior. Esta leitura, agora realizada
+da nova estação, também é denominada de :math:`\mathrm{ré}`. Pode-se então calcular
+a nova :math:`\mathrm{AI}` (Equação :eq:`eq:AI`).
 
-As cotas dos pontos vante de uma nova estação, que poderão ser PI
-ou PM, serão calculadas pela Equação~\ref{eq:cota}. O último ponto
-medido no NGC é sempre denominado de PM\index{Nivelamento!geométrico composto!ponto de mudança}.
+As :math:`\mathrm{cotas}` dos pontos :math:`\mathrm{vante}` de uma nova estação, que poderão ser :math:`\mathrm{PI}`
+ou :math:`\mathrm{PM}`, serão calculadas pela Equação :eq:`eq:cota`. O último ponto
+medido no NGC é sempre denominado de :math:`\mathrm{PM}`.
 
-Os cálculos do NGC podem ser verificados de acordo com a Equação~\ref{eq:verificacaongc}.
+Os cálculos do NGC podem ser verificados de acordo com a Equação :eq:`eq:verificacaongc}.
 Nesta verificação, não é observado se o trabalho foi bem realizado
 ou não. Ela apenas informa se os cálculos foram feitos corretamente.
-A avaliação da qualidade do levantamento será avaliada na Secção \ref{sec:Toler=0000E2ncia_nivelamento}.
+A avaliação da qualidade do levantamento será avaliada na Secção :eq:`sec:Toler=0000E2ncia_nivelamento}.
 
-\begin{equation}
-\Sigma\mathrm{{r\acute{e}}}-\Sigma\mathrm{PM}=\mathrm{\text{cota}_{final}}-\mathrm{\text{cota}_{inicial}}.\label{eq:verificacaongc}
-\end{equation}
+.. math::
+   \Sigma\mathrm{{r\acute{e}}}-\Sigma\mathrm{PM}=\mathrm{\text{cota}_{final}}-\mathrm{\text{cota}_{inicial}}.
+   :label: eq:verificacaongc
 
-\begin{mybox}[breakable,enhanced,pad at break=0mm,label={exemplongc}]{}Com os dados de um NGC coletados
-em campo conforme o esquema gráfico a seguir, calcule as cotas das estacas
+----
+
+:exem:`Exemplo 9` Com os dados de um NGC coletados
+em campo conforme o esquema gráfico a seguir, calcule as :math:`\mathrm{cotas}` das estacas
 (pontos materializados em campo por estacas). 
 
-\includegraphics[trim = 50mm 160mm 20mm 30mm,scale=.9]{Cap_altimetria/cap_niv_intr_NGC_exe1} 
+.. figure:: /images/capitulo9/cap_niv_intr_NGC_exe1.png
+   :scale: 35 %
+   :alt: cap_niv_intr_NGC_exe1.png
+   :align: center
 
-\soluca
-
-\noindent Solução na Tabela \ref{tab:exemngc2}, sendo que em negrito
+:solucao:`Solução:` 
+Solução na Tabela abaixo, sendo que em negrito
 são  os valores calculados e, entre parenteses, os cálculos realizados.
 
-\scriptsize
-\centering 
-\setlength{\extrarowheight}{2pt} % 
-\begin{tabular}{cccccc} \hline  
-Estaca & ré  & AI   (cota + ré)                     & PI  & PM  &  cota ( AI -- vante)
- \hline  
-0      & :math:`0,796`  & :math:`\mathbf{200,796}(200,000+0,796)`      &        &         & 200,000  
-\rowcolor[gray]{.95}
-1      &         &                                & :math:`1,491`  &         & :math:`\mathbf{199,305}(200,796-1,491)`  
-2      & :math:`0,264`   & :math:`\mathbf{197,359}(197,095+0,264)` &        & :math:`3,701`   & :math:`\mathbf{197,095}(200,796-3,701)`  
+.. table:: Compensação do erro angular pelo método linear
+    :widths: 1 1 2 1 2
+    :header-alignment: cccccc
+    :column-alignment: ccrccr
+    :column-dividers:  none single single single single single none
 
-3      & :math:`0,450`  & :math:`\mathbf{193,920}(193,470+0,450)` &        & :math:`3,889`   & :math:`\mathbf{193,470}197,359-3,889)`  
-4      &        &                                 & :math:`1.982`  &         & :math:`\mathbf{191,938}(193,920-1,982)` 
+    ========== ===================== =========================================== ===================== ====================== =========================================
+    Estaca     :math:`\mathrm{ré}`   :math:`\mathrm{AI (cota+ré)}`               :math:`\mathrm{PI}`   :math:`\mathrm{PM}`    :math:`\mathrm{cota (AI-vante)}`
+    ========== ===================== =========================================== ===================== ====================== =========================================
+    :math:`0`  :math:`0,796`         :math:`\mathbf{200,796}(200,000+0,796)`                                                  200,000
+    :math:`1`                                                                    :math:`1,491`                                :math:`\mathbf{199,305}(200,796-1,491)`
+    :math:`2`  :math:`0,264`         :math:`\mathbf{197,359}(197,095+0,264)`                           :math:`3,701`          :math:`\mathbf{197,095}(200,796-3,701)`
+    :math:`3`  :math:`0,450`         :math:`\mathbf{193,920}(193,470+0,450)`                           :math:`3,889`          :math:`\mathbf{193,470}197,359-3,889)`
+    :math:`4`                                                                    :math:`1.982`                                :math:`\mathbf{191,938}(193,920-1,982)`
+    :math:`5`  :math:`0,868`         :math:`\mathbf{191,142}(190,274+0,868)`                           :math:`3,646`          :math:`\mathbf{190,274}(193,920-3,646)`
+    :math:`6`                                                                                          :math:`3,317`          :math:`\mathbf{187,825}(191,142 -3,317)`
+    ========== ===================== =========================================== ===================== ====================== =========================================
 
-5      & :math:`0,868`  & :math:`\mathbf{191,142}(190,274+0,868)`  &        & :math:`3,646`    & :math:`\mathbf{190,274}(193,920-3,646)`  
-6      &        &                                &        & :math:`3,317`   & :math:`\mathbf{187,825}(191,142 -3,317)`     
-\hline  
-       & :math:`\Sigma  \mathrm{r\acute{e}}=2,378`  &  &        &  :math:`\Sigma  \mathrm{PM}=14,553`  &    
- & \multicolumn{1}{r}{Verificação:} &\multicolumn{4}{l}{:math:`\Sigma{\mathrm{r\acute{e}}}-\Sigma{\mathrm{PM}} =\mathrm{cota}_{\mathrm{final}}-\mathrm{inicial}_{\mathrm{inicial}}`}   
-&               &\multicolumn{4}{l}{:math:`2,378-14,553=187,825-200,000`}   
-&               &\multicolumn{4}{l}{:math:`-12,175  =-12,175\text{ (OK!)}`}   \hline
-\end{tabular}\label{tab:exemngc2}
 
-\end{mybox}
+:math:`\Sigma  \mathrm{r\acute{e}}=2,378`              :math:`\Sigma  \mathrm{PM}=14,553`
+  \multicolumn{1}{r}{Verificação:} \multicolumn{4}{l}{:math:`\Sigma{\mathrm{r\acute{e}}}-\Sigma{\mathrm{PM}} =\mathrm{cota}_{\mathrm{final}}-\mathrm{inicial}_{\mathrm{inicial}}`}   
+               \multicolumn{4}{l}{:math:`2,378-14,553=187,825-200,000`}   
+               \multicolumn{4}{l}{:math:`-12,175  =-12,175\text{ (OK!)}`}   
 
-\subsection*{Cuidados no nivelamento geométrico}
+----
+
+Cuidados no nivelamento geométrico
+----------------------------------
 
 Alguns cuidados devem ser tomados em um NG a fim de se obter melhores
 resultados no NG. Podendo-se citar, por exemplo \cite{NBR13133}:
@@ -945,17 +982,17 @@ resultados no NG. Podendo-se citar, por exemplo \cite{NBR13133}:
 \item sejam estabelecidos pontos materializados para o controle do nivelamento;
 \item realização do nivelamento e o contra-nivelamente em horários destintos.
 Assim, pode-se calcular a diferença entre o desnível nas duas medições,
-e compará-lo com a tolerância do nivelamento (Secção~\ref{sec:Toler=0000E2ncia_nivelamento});
-\item os comprimentos das visadas de ré e de vante devem ser de no máximo
-80~m, minimizando os erros de refração e curvatura da terra, além
+e compará-lo com a tolerância do nivelamento (Secção :eq:`sec:Toler=0000E2ncia_nivelamento});
+\item os comprimentos das visadas de :math:`\mathrm{ré}` e de :math:`\mathrm{vante}` devem ser de no máximo
+80 m, minimizando os erros de refração e curvatura da terra, além
 de facilitar as leituras na mira. As distâncias podem ser medidas
-utilizando-se uma trena, ou mais comumente, com a leitura dos \emph{rs}
-e \emph{ri} e aplicando a fórmula taqueométricas. As informações de
+utilizando-se uma trena, ou mais comumente, com a leitura dos   rs}
+e   ri} e aplicando a fórmula taqueométricas. As informações de
 distâncias podem ser inseridas na tabela de campo do NGC com a inclusão
 de mais duas colunas, indicando as distâncias do nível ao ponto de
-ré e de vante (ver \citeonline[pg. 30]{NBR13133}; 
-\item as visadas de ré e de vante devem ser à uma altura em relação ao solo,
-superior a 0,50~m, com a finalidade de minimizar o problema de reverberação;
+:math:`\mathrm{ré}` e de :math:`\mathrm{vante}` (ver \citeonline[pg. 30]{NBR13133};
+\item as visadas de :math:`\mathrm{ré}` e de :math:`\mathrm{vante}` devem ser à uma altura em relação ao solo,
+superior a 0,50 m, com a finalidade de minimizar o problema de reverberação;
 \item a mira deve ser de madeira e dobrável, não de encaixe, devendo ser
 apoiada sobre sapatas\footnote{Equipamento que é colocado no solo, e permite que a mira, sobre ele,
 gire sem se deslocar no ponto.}.
@@ -990,26 +1027,26 @@ O erro de nivelamento pode ser obtido, por exemplo, das seguintes
 formas:
 \begin{enumerate}
 \item se for uma poligonal de nivelamento fechada, ponto de partida é o
-ponto de chegada, é só calcular a diferença entre as cotas de partida
+ponto de chegada, é só calcular a diferença entre as :math:`\mathrm{cotas}` de partida
 e de chegada;
-\item se for aberta e, se conhece a cota do ponto de partida e o de chegada,
+\item se for aberta e, se conhece a :math:`\mathrm{cota}` do ponto de partida e o de chegada,
 o erro será a diferença entre a DN medida em campo e a DN conhecida
 entre os pontos;
-\item se a poligonal for aberta, mas sem conhecimento das cotas de partida
+\item se a poligonal for aberta, mas sem conhecimento das :math:`\mathrm{cotas}` de partida
 e de chegada, é realizado o nivelamento e o contra-nivelamente, e
 a DN entre esses dois levantamentos, é o erro do nivelamento.
 \end{enumerate}
 O procedimento para a compensação do erro do nivelamento pode ser,
 para o caso: (a) e (b), distribuir de forma linear o erro entre as
-estacas; e (c) distribuir o erro linearmente, por exemplo, nas cotas
+estacas; e (c) distribuir o erro linearmente, por exemplo, nas :math:`\mathrm{cotas}`
 do contra-nivelamento e, calcular a média entre as contas do nivelamento
 e do contra-nivelamente compensada. Maiores detalhes e outros métodos
 de ajuste para nivelamento podem ser encontrados em: \citeonline[pg. 84-89]{comastri}, \citeonline[pg. 122-125]{MCCORMAC} e \citeonline[pg. 406-411]{WOLF}.
 
 \begin{mybox}[breakable,enhanced,pad at break=0mm,label={exe:cap_alt_tolerancianivelamento}]{}
-Foram realizados um nivelamento e um contra-nivelamento de 800~m
+Foram realizados um nivelamento e um contra-nivelamento de 800 m
 de extensão. A DN, entre o ponto inicial e final do nivelamento e
-do contra-nivelamento, foram de 8,581~m e :math:`-8,603\,\text{m}`, respectivamente.
+do contra-nivelamento, foram de 8,581 m e :math:`-8,603\,\text{m}`, respectivamente.
 Este nivelamento é da classe IIN, de acordo com a NBR13133. Pergunta-se:
 o levantamento é aceitável?
 
@@ -1021,8 +1058,8 @@ dada pelas diferenças das DNs em valores absolutos:
 
 :math:`\textit{erro}_{\textit{\textit{nivelamento}}}=\left|-8,603\right|-\left|8,581\right|=0,022\text{ m.}`
 
-\noindent Para a classe de IIN, o parâmentro \emph{a} da Equação \ref{eq:tolerancia_nivelamento}
-é de 20~mm. Com K de 0,8 km, o erro máximo a ser tolerado:
+\noindent Para a classe de IIN, o parâmentro   a} da Equação :eq:`eq:tolerancia_nivelamento}
+é de 20 mm. Com K de 0,8 km, o erro máximo a ser tolerado:
 
 :math:`\textit{T}_{\textit{nivelamento}}=20\,\text{mm}\sqrt{0,8}=17,9`
 mm.
@@ -1035,18 +1072,18 @@ e, posterioremente, verificada se está de acordo com a tolerância.
 
 \section{\index{Perfil topográfico}Perfil topográfico}
 
-O perfil topográfico é um gráfico em que, o eixo-\emph{x} representa
+O perfil topográfico é um gráfico em que, o eixo-  x} representa
 a distância horizontal, geralmente dado por números de estacas, e
-o eixo-\emph{y} os valores das cotas ou altitudes das respectivas
+o eixo-  y} os valores das :math:`\mathrm{cotas}` ou altitudes das respectivas
 estacas, determinadas em um nivelamento. A DH entre as estacas, na
 maioria dos casos é constante, de :math:`10\,\text{m}` em :math:`10\,\text{m}` ou de :math:`20\,\text{m}` em :math:`20\,\text{m}`,
 de acordo com o relevo. A metodologia mais empregada de nivelamento
 para a determinação do perfil topográfico é o nivelamento geométrico,
 por ser o mais preciso.
 
-No desenho do perfil deve-se utilizar escalas para o eixo-\emph{x},
+No desenho do perfil deve-se utilizar escalas para o eixo-  x},
 escala\index{Escala!horizontal} horizontal (EH), distinta daquela
-utilizada no eixo-\emph{y, }escala\index{Escala!vertical} vertical
+utilizada no eixo-  y, }escala\index{Escala!vertical} vertical
 (EV). As escalas devem ser diferentes devido às variações das DHs
 serem, na grande maioria dos casos, superiores às das DNs. Desta forma,
 se colocadas em mesma escala, não se poderia avaliar o perfil do terreno
@@ -1055,8 +1092,8 @@ para teste, :math:`\mathrm{EV}=10\cdot\mathrm{EH}` \cite{godoy}. Deve-se verific
 se este valor é adequado para construção do perfil no tamanho do papel
 utilizado. Se necessário escolhe-se outra EV. 
 
-Na Figura~\ref{fig:perfil1} é apresentado o perfil do NG do Exemplo~\ref{exemplongc}
-(pg.~\pageref{exemplongc}). Considerando as estacas espaçadas em
+Na Figura :eq:`fig:perfil1} é apresentado o perfil do NG do Exemplo :eq:`exemplongc}
+(pg. \pageref{exemplongc}). Considerando as estacas espaçadas em
 :math:`20\,\text{m}`. No entanto, uma estaca a mais foi medida, localizada entre
 a 3 e a 4, a estaca :math:`3+12\,\text{m}`. Isto é, distante :math:`12\,\text{m}` da estaca
 número 3. A necessidade da medição de uma estaca intermediária pode
@@ -1066,26 +1103,26 @@ a mudança de direção do levantamento. Entre as estacas 0 e :math:`3+12\,\text
 o Az é de :math:`137^{\circ}22'`, posteriormente o Az é de :math:`101^{\circ}49'`.
 
 Além dos azimutes, pode-se também, apresentar no gráfico do perfil
-topográfico, informações referentes a DH. Por exemplo, na Figura~\ref{fig:perfil1}
+topográfico, informações referentes a DH. Por exemplo, na Figura :eq:`fig:perfil1}
 é apresentada a DH entre a estaca 0 e :math:`3+12\,\text{m}`, de :math:`72\,\text{m}`,
 e entre :math:`3+12\,\text{m}` e :math:`6`, de :math:`48\,\text{m}`.
 
 \begin{figure}[H] \includegraphics[trim = 0mm 0mm 0mm 0mm,scale=1]{Cap_altimetria/cap_niv_perfil}
-\caption{Representação gráfica do perfil topográfico do Exemplo~\ref{exemplongc}.}
+\caption{Representação gráfica do perfil topográfico do Exemplo :eq:`exemplongc}.}
 
 \label{fig:perfil1} \end{figure}
 
 \section{Greide\index{Greide} ou rampa\index{Rampa}}
 
 Juntamente com o perfil do terreno, pode-se ter um greide, também
-denominado de rampa, com uma declividade (Equações~\ref{eq:c1}~e~\ref{eq:c2}).
+denominado de rampa, com uma declividade (Equações :eq:`eq:c1} e :eq:`eq:c2}).
 O greide pode representar, por exemplo, o eixo onde uma estrada passará,
 um canal de irrigação ou a posição de uma rede de esgoto. Observando
-as cotas do perfil topográfico com as do greide, pode-se também avaliar
+as :math:`\mathrm{cotas}` do perfil topográfico com as do greide, pode-se também avaliar
 as áreas que serão cortadas ou aterradas, ou a profundidade de escavamento
 para posicionamento de uma rede de esgoto. A DN entre a cota greide
-(:math:`\mathrm{cota}_{\text{greide}}`) e a cota do terreno (:math:`\mathrm{cota}_{\text{terreno}}`)
-é denominada de cota vermelha\index{Cota vermelha} (\index{CV|see@CV\textbar{}see cota vermelha}CV): 
+(:math:`\mathrm{cota}_{\text{greide}}`) e a :math:`\mathrm{cota}` do terreno (:math:`\mathrm{cota}_{\text{terreno}}`)
+é denominada de :math:`\mathrm{cota}` vermelha\index{Cota vermelha} (\index{CV|see@CV\textbar{}see cota vermelha}CV):
 
 \begin{equation}
 \mathrm{CV}={\rm \mathrm{cota}_{\text{greide}}-\mathrm{cota}_{\text{terreno}}\label{eq:cv}}
@@ -1099,31 +1136,31 @@ ou aterro, em que:
 \item se CV for negativa, :math:`\mathrm{cota_{greide}}<\textit{\ensuremath{\mathrm{cota_{terreno}}}}`,
 é um ponto de corte e;
 \item se CV for igual a zero, :math:`\mathrm{cota_{greide}}=\textit{\ensuremath{\mathrm{cota_{terreno}}}}`,
-é um ponto de passagem\index{Ponto de passagem} (\index{PP|see Poonto de passagem@PP\textbar{}see Poonto de passagem,~}PP),
+é um ponto de passagem\index{Ponto de passagem} (\index{PP|see Poonto de passagem@PP\textbar{}see Poonto de passagem, }PP),
 não haverá nem corte nem aterro.
 \end{enumerate}
 Sempre que o sinal algébrico da CV mudar entre estacas, haverá um
-PP. Na Tabela~\ref{tab:ngc_greideCV} é apresentado um exemplo de
-uma caderneta de campo para um NGC com: as estacas de 20~m em 20~m;
-as cotas do terreno calculadas; um greide arbitrário; e as respectivas
-CV's. Na Figura~\ref{fig:perfil} é apresentada a representação gráfica
+PP. Na Tabela :eq:`tab:ngc_greideCV} é apresentado um exemplo de
+uma caderneta de campo para um NGC com: as estacas de 20 m em 20 m;
+as :math:`\mathrm{cotas}` do terreno calculadas; um greide arbitrário; e as respectivas
+CV's. Na Figura :eq:`fig:perfil} é apresentada a representação gráfica
 destes dados, inclusive com a posição dos PPs. O perfil do terreno
 apresentado começa na estaca :math:`5+13,5\,\text{m}` de cota de :math:`200,00\,\text{m}` e
-termina na estaca :math:`10+15,1` m de cota :math:`202,1`1~m, ou seja, uma DN
+termina na estaca :math:`10+15,1` m de cota :math:`202,1`1 m, ou seja, uma DN
 total de :math:`2,11\,\text{m}`, com o terreno em aclive entre a primeira estaca
 e a última.
 
 \begin{table}[H]
 \caption{Apresentação da {\rm{CV}} em uma caderneta de campo.}\label{tab:ngc_greideCV}
-\begin{tabular}{cccccccc} \hline 
- Estacas  & ré  & AI  & PI  & PM  & :math:`\text{cota}_{\text{terreno}}`  & :math:`\text{cota}_{\text{greide}}`  & CV  \hline  
-:math:`5+13,5` m & :math:`1,75`  & :math:`201,75`  &  &  & :math:`200,00`  & :math:`200,465`  & :math:`0,465`  
-\rowcolor[gray]{.95}:math:`6`  &  &  & :math:`1,43` &  & :math:`200,32`  & :math:`200,530`  & :math:`0,210` 
-:math:`7`  &  &  & :math:`0,67`  &  & :math:`201,08`  & :math:`200,730`  & :math:`-0,350` 
- \rowcolor[gray]{.95}:math:`8`  &  &  & :math:`0,50`  &  & :math:`201,25`  & :math:`200,930`  & :math:`-0,320`
-:math:`9`  & :math:`0,79`  & :math:`202,43`  &  & :math:`0,11` & :math:`201,64`  & :math:`201,130`  & :math:`-0,510` 
- \rowcolor[gray]{.95}:math:`10`  &  &  & :math:`1,59`  &  & :math:`200,84`  & :math:`201,330`  & :math:`0,490` 
-:math:`10+15,1` m  &  &  &  & :math:`0,32`  & :math:`202,11`  & :math:`201,481`  & :math:`-0,629`  \hline  
+\begin{tabular}{cccccccc}  
+ Estacas   :math:`\mathrm{ré}`   AI   :math:`\mathrm{PI}`   :math:`\mathrm{PM}`   :math:`\text{cota}_{\text{terreno}}`   :math:`\text{cota}_{\text{greide}}`   CV  
+:math:`5+13,5` m  :math:`1,75`   :math:`201,75`       :math:`200,00`   :math:`200,465`   :math:`0,465`  
+  :math:`6`       :math:`1,43`    :math:`200,32`   :math:`200,530`   :math:`0,210` 
+:math:`7`       :math:`0,67`     :math:`201,08`   :math:`200,730`   :math:`-0,350` 
+   :math:`8`       :math:`0,50`     :math:`201,25`   :math:`200,930`   :math:`-0,320`
+:math:`9`   :math:`0,79`   :math:`202,43`     :math:`0,11`  :math:`201,64`   :math:`201,130`   :math:`-0,510` 
+   :math:`10`       :math:`1,59`     :math:`200,84`   :math:`201,330`   :math:`0,490` 
+:math:`10+15,1` m         :math:`0,32`   :math:`202,11`   :math:`201,481`   :math:`-0,629`    
 \end{tabular}
 \end{table}
 
@@ -1131,47 +1168,47 @@ Mais uma vez, a interpretação dos números das estacas intermediárias
 é: \textit{i}) o primeiro número corresponde ao número da estaca anterior;
 e \textit{ii}) o segundo número, caso ocorra, é a fração que a estaca
 se encontra em relação a estaca anterior. Então, a estaca inicial
-:math:`5+13,5\,\text{m}` está :math:`13,5\,\text{m}` à frente da estaca número 5, e 6,5~m atrás
-da estaca 6 (:math:`20~{\rm m-13,5~{\rm m}}`). Segundo esta mesma linha
+:math:`5+13,5\,\text{m}` está :math:`13,5\,\text{m}` à frente da estaca número 5, e 6,5 m atrás
+da estaca 6 (:math:`20 {\rm m-13,5 {\rm m}}`). Segundo esta mesma linha
 de raciocínio, somando as distâncias entre as estacas, tem-se que
 a DH entre as estacas inicial e final é de :math:`101,6\,\text{m}` {:math:`(6,5+20\cdot4+15,1`)}. 
 
 \begin{figure}[H] \includegraphics[trim = 0mm 0mm 0mm 0mm,scale=1]{Cap_altimetria/cap_niv_perfil_2}
-\caption{Perfil topográfico, greide e CV dos dados apresentados na Tabela~\ref{tab:ngc_greideCV}.}
+\caption{Perfil topográfico, greide e CV dos dados apresentados na Tabela :eq:`tab:ngc_greideCV}.}
 
 \label{fig:perfil} \end{figure}
 
 \begin{mybox}[breakable,enhanced,pad at break=0mm,label={exe:cap_alt_PP}]{}
-Com os dados da Tabela~\ref{tab:ngc_greideCV} , pergunta-se: a)
-qual é a declividade do greide (\%); b) qual a cota do greide na estaca
-8; e, c) a estaca a cota do segundo PP.
+Com os dados da Tabela :eq:`tab:ngc_greideCV} , pergunta-se: a)
+qual é a declividade do greide (\%); b) qual a :math:`\mathrm{cota}` do greide na estaca
+8; e, c) a estaca a :math:`\mathrm{cota}` do segundo PP.
 
 \soluca
 
-\noindent Questão (a): considerando as cotas do greide nas estacas
+\noindent Questão (a): considerando as :math:`\mathrm{cotas}` do greide nas estacas
 :math:`5+13,5\text{ m}` e :math:`{10+15,1\text{ m}}` e a DH entre estas estacas
-de 101,6~m:
+de 101,6 m:
 
 \[
-\begin{split}d(\%) & =\frac{\mathrm{DN}}{\mathrm{DH}}100\\
- & =\frac{201,481-200,465}{101,6}100\\
- & =1\%.
+\begin{split}d(\%)  =\frac{\mathrm{DN}}{\mathrm{DH}}100\\
+  =\frac{201,481-200,465}{101,6}100\\
+  =1\%.
 \end{split}
 \]
 
-\noindent Questão (b): as cotas do greide, que na Tabela~\ref{tab:ngc_greideCV}
+\noindent Questão (b): as :math:`\mathrm{cotas}` do greide, que na Tabela :eq:`tab:ngc_greideCV}
 são apenas apresentadas, são calculadas conhecendo-se: i) a declividade
 do greide, neste caso de :math:`1`\% e, ii) as DHs entre a primeira estaca
 às estacas de interesse, para o exercício, a 8. A DH é de :math:`46,5\,\text{m}`
 :math:`{(6,5+20\cdot2)}`. Como a declividade do greide é de :math:`1`\%, tem-se
 que para uma DH de :math:`100\,\text{m}` neste greide, há uma DN de :math:`1\,\text{m}`, então,
 para uma DH de :math:`46,5\,\text{m}`, tem-se uma :math:`\text{DN}_{\text{greide\,(}8,\text{ 5\,+\,13,5\,\ m)}}`
-de 0,465~m :math:`{\left(\frac{46,5}{100}1\right)}`, logo:
+de 0,465 m :math:`{\left(\frac{46,5}{100}1\right)}`, logo:
 
 \[
-\begin{split}\mathrm{cota}_{\text{greide,\,}8} & =\mathrm{cota}_{\text{greide,\,}5+13,5\text{ m}}+\mathrm{DN}_{\text{greide\,(}8,\text{ 5\,+\,13,5\,\ m)}}\\
- & =200,465+0,465\\
- & =200,930\text{ m}.
+\begin{split}\mathrm{cota}_{\text{greide,\,}8}  =\mathrm{cota}_{\text{greide,\,}5+13,5\text{ m}}+\mathrm{DN}_{\text{greide\,(}8,\text{ 5\,+\,13,5\,\ m)}}\\
+  =200,465+0,465\\
+  =200,930\text{ m}.
 \end{split}
 \]
 
@@ -1179,14 +1216,14 @@ de 0,465~m :math:`{\left(\frac{46,5}{100}1\right)}`, logo:
 e 10. A figura a seguir apresenta uma ampliação do perfil
 do terreno e do greide entre esras estacas. As CVs são apresentadas
 em valores absolutos, uma vez que se vai avaliar as distância que
-separam o greide do terreno em valores absolutos. Seja \emph{x }a
+separam o greide do terreno em valores absolutos. Seja   x }a
 DH da estaca 9 ao PP. Como a DH entre as estacas é de :math:`20\,\text{m}`, a DH
 de PP à estaca 10 será de :math:`20-x`. Por semelhança de triângulos:
 
 \[
-\begin{split}\frac{x}{0,51} & =\frac{20-x}{0,49}\\
-x & =\frac{20\cdot0,51}{0,49+0,51}\\
-x & =10,2\text{ m}.
+\begin{split}\frac{x}{0,51}  =\frac{20-x}{0,49}\\
+x  =\frac{20\cdot0,51}{0,49+0,51}\\
+x  =10,2\text{ m}.
 \end{split}
 \]
 
@@ -1194,16 +1231,16 @@ x & =10,2\text{ m}.
 
 \includegraphics[trim = 0mm 0mm 0mm 0mm,scale=1]{Cap_altimetria/cap_niv_perfil_ex} 
 
-\noindent Para calcular o valor da cota no PP, a DH entre a estaca
+\noindent Para calcular o valor da :math:`\mathrm{cota}` no PP, a DH entre a estaca
 :math:`{5+13,5\text{ m}}` e a estaca no PP, {:math:`9+10,2\text{ m}`}, é de
-76,7~m {:math:`(6,5+20\cdot3+10,2)`}. Sendo a declividade do greide de
-1\%, a DN entre estas estacas é de 0,767~m {:math:`\left(\frac{76,7}{100}1\right)`}.
+76,7 m {:math:`(6,5+20\cdot3+10,2)`}. Sendo a declividade do greide de
+1\%, a DN entre estas estacas é de 0,767 m {:math:`\left(\frac{76,7}{100}1\right)`}.
 Desta forma:
 
 \[
-\begin{split}\mathrm{cota}_{9+10,2\text{ m}} & =\mathrm{cota}_{5+13,5\text{ m}}+\mathrm{DN}\\
- & =200,465+0,767\\
- & =201,232\text{ m}.
+\begin{split}\mathrm{cota}_{9+10,2\text{ m}}  =\mathrm{cota}_{5+13,5\text{ m}}+\mathrm{DN}\\
+  =200,465+0,767\\
+  =201,232\text{ m}.
 \end{split}
 \]
 \end{mybox}
@@ -1236,29 +1273,29 @@ trigonométricos para pontos separados em:
 visou-se um prisma sobre o ponto P, registrando-se os seguintes valores:
 :math:`z=81^{\circ}2'45''`; :math:`\mathrm{DI_{AP}}=792,298\text{ m}`; :math:`\textit{ai}=1,521\text{ m}`;
 :math:`\textit{ap}=1,775\text{ m}`. Considerando o erro da curvatura da
-terra e o de refração, qual a altitude em \emph{P}?\end{exercicio}
+terra e o de refração, qual a altitude em   P}?\end{exercicio}
 
 \resp Altitude em P = :math:`1.515,972` m.
 
 \begin{exercicio}Um nivelamento foi realizado da estação A para B,
-sendo a altitude de \emph{B} de :math:`409,56\,\text{m}`. Obteve-se os seguintes
+sendo a altitude de   B} de :math:`409,56\,\text{m}`. Obteve-se os seguintes
 dados: :math:`z_{\mathrm{AB}}=86^{\circ}8'47''`; :math:`\mathrm{DI_{AB}}=3\,524,68\text{ m}`;
 :math:`ai_{\mathrm{A}}=1,440\text{ m}`; altura do centro do refletor (:math:`ap`)
-no ponto \emph{B} de :math:`2,510\,\text{m}`. Calcular a altitude do ponto \emph{A}.
+no ponto   B} de :math:`2,510\,\text{m}`. Calcular a altitude do ponto   A}.
 Considere o efeito de curvatura e o de refração terrestre.\end{exercicio}
 
-\resp Altitude em \emph{A} = :math:`172,911` m.
+\resp Altitude em   A} = :math:`172,911` m.
 
 \begin{exercicio}A distância inclinada e o ângulo zenital foram medidos
-de \emph{X }para \emph{Y}, sendo :math:`\mathrm{DI}=474,3\,\text{m}` e :math:`z=93^{\circ}13'46''`,
+de   X }para   Y}, sendo :math:`\mathrm{DI}=474,3\,\text{m}` e :math:`z=93^{\circ}13'46''`,
 respectivamente. A altura do prisma e a altura do equipamento foi
-a mesma. Se a elevação de \emph{X }foi de 837,5~m acima do Datum,
-qual a elevação de \emph{Y}?\end{exercicio}
+a mesma. Se a elevação de   X }foi de 837,5 m acima do Datum,
+qual a elevação de   Y}?\end{exercicio}
 
-\resp Elevação\emph{ }de \emph{Y} = :math:`810,781\,\text{m}`.
+\resp Elevação   }de   Y} = :math:`810,781\,\text{m}`.
 
 \begin{exercicio}De um teodolito estacionado no ponto 13, de altitude
-492,7~m, foi visada a mira no ponto 14, realizando as seguintes medidas:
+492,7 m, foi visada a mira no ponto 14, realizando as seguintes medidas:
 :math:`z=92^{\circ}27'`; :math:`\textit{ri}=1,000\text{ m}`; :math:`\textit{rm}=1,598\text{ m}`;
 :math:`\textit{rs}=2,196\text{ m}`; :math:`\textit{ai}=1,7\text{ m}`. Pergunta-se:
 
@@ -1269,27 +1306,27 @@ qual a elevação de \emph{Y}?\end{exercicio}
 
 \end{exercicio}
 
-\resp \emph{DN = }\textendash :math:`5,006\,\text{m}`; altitude do ponto 14 é de
+\resp   DN = }\textendash :math:`5,006\,\text{m}`; altitude do ponto 14 é de
 :math:`487,694\,\text{m}`.
 
-\begin{exercicio} Em nivelamento taqueométrico do ponto \emph{X }para
-\emph{Y}, foram realizadas as seguinte leituras: :math:`z=86^{\circ}10'`;
+\begin{exercicio} Em nivelamento taqueométrico do ponto   X }para
+  Y}, foram realizadas as seguinte leituras: :math:`z=86^{\circ}10'`;
 :math:`\textit{ri}=1,700\text{ m}`; :math:`\textit{rs}=2,300\text{ m}`. Sabendo-se
 que a altura do instrumento foi igual a leitura do retículo médio.
-Pergunta-se qual a \emph{DN }entre os pontos \emph{X} e \emph{Y}?
+Pergunta-se qual a   DN }entre os pontos   X} e   Y}?
 
 \end{exercicio}
 
-\resp \emph{DN = }:math:`4,002\,\text{m}`
+\resp   DN = }:math:`4,002\,\text{m}`
 
 \begin{exercicio}Com o objetivo de determinar a altitude do ponto
-inacessível, \emph{P}, foram realizadas as seguintes medidas: comprimento
-de uma base \emph{AB} de :math:`50\,\text{m}`; ângulos horizontais :math:`\widehat{PAB}`
+inacessível,   P}, foram realizadas as seguintes medidas: comprimento
+de uma base   AB} de :math:`50\,\text{m}`; ângulos horizontais :math:`\widehat{PAB}`
 (:math:`\alpha=67^{\circ}37'49''`) e :math:`\widehat{ABP}` (:math:`\beta=52^{\circ}25'38''`),
-conforme Figura~\ref{fig:cap_alt_perfil_exercicio} (plano topográfico);
+conforme Figura :eq:`fig:cap_alt_perfil_exercicio} (plano topográfico);
 :math:`\textit{ai}_{\textit{A}}=1,745\text{ m}`; e ângulo zenital da luneta
-em \emph{A} visando \emph{P} de :math:`57^{\circ}27'31''`. Sabe-se que
-a altitude em \emph{A} é de :math:`564,693\,\text{m}`. Pede-se:
+em   A} visando   P} de :math:`57^{\circ}27'31''`. Sabe-se que
+a altitude em   A} é de :math:`564,693\,\text{m}`. Pede-se:
 
 \begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
 \item a  DH de \it A \rm a \it P\rm;
@@ -1338,7 +1375,7 @@ a altitude em \emph{A} é de :math:`564,693\,\text{m}`. Pede-se:
 %\caption{}
 %\label{fig:cap_alt_perfil_exercicio} \end{SCfigure}\end{exercicio}
 
-\resp :math:`\mathrm{DH}_{AP}=45,786\text{ m}`; Altitude \emph{P} = :math:`595,654`
+\resp :math:`\mathrm{DH}_{AP}=45,786\text{ m}`; Altitude   P} = :math:`595,654`
 m.
 
 \begin{exercicio}Calcule a altitude ortométrica :math:`(H)` para uma estação
@@ -1366,13 +1403,13 @@ Utilizar o programa MAPGEO2010. \end{exercicio}
 \noindent \textsl{Resp.}: :math:`278,48` m.
 
 \begin{exercicio}Em um perfil topográfico, a estaca :math:`5+14\,\text{m}` tem
-cota :math:`200`,5~m e a estaca :math:`10+2\,\text{m}` tem cota :math:`204,7\,\text{m}`. O terreno entre
+:math:`\mathrm{cota}` :math:`200`,5 m e a estaca :math:`10+2\,\text{m}` tem cota :math:`204,7\,\text{m}`. O terreno entre
 essas estacas é aproximadamente plano. Com estas informações calcular:
 
 \begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
 \item a declividade :math:`(\%)` de um greide que passaria pelas referidas estacas, se na estaca :math:`5+14\,\text{m}` fosse feito um aterro de :math:`1,7` m de altura e um corte da mesma altura na estaca  :math:`10+2\,\text{m}`; 
-\item a cota do ponto de passagem e sua distância com relação à estaca :math:`5+14\,\text{m}`; 
-\item a cota no terreno e no greide na estaca 7.
+\item a :math:`\mathrm{cota}` do ponto de passagem e sua distância com relação à estaca :math:`5+14\,\text{m}`;
+\item a :math:`\mathrm{cota}` no terreno e no greide na estaca 7.
 \end{enumerate}
 
 \end{exercicio}
@@ -1382,8 +1419,8 @@ e distância de PP à estaca :math:`5+14\,\text{m}` é de :math:`44\,\text{m}`; 
 e :math:`\mathrm{cota_{terreno(7)}}=201,741\text{ m}`.
 
 \begin{exercicio}Foi realizado um nivelamento e um contra-nivelamento
-entre os pontos \emph{A }e \emph{B}, obtendo-se a DN de, respectivamente,
-:math:`3,837\,\text{m}` e :math:`3,842\,\text{m}`. Sabendo-se que o trecho \emph{AB }tem uma extensão
+entre os pontos   A }e   B}, obtendo-se a DN de, respectivamente,
+:math:`3,837\,\text{m}` e :math:`3,842\,\text{m}`. Sabendo-se que o trecho   AB }tem uma extensão
 de :math:`580\,\text{m}`. Pede-se:
 
 \begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
@@ -1393,11 +1430,11 @@ de :math:`580\,\text{m}`. Pede-se:
 
 \end{exercicio}
 
-\resp erro = 0,005~m; está de acordo com a Norma.
+\resp erro = 0,005 m; está de acordo com a Norma.
 
 \begin{exercicio}Com os dados das cadernetas de nivelamento e contra-nivelamento
-(Tabela~\ref{tab:exer_erro_nivelamento}), e sabendo-se que as estacas
-estão espaçadas de 20~m, calcular:
+(Tabela :eq:`tab:exer_erro_nivelamento}), e sabendo-se que as estacas
+estão espaçadas de 20 m, calcular:
 
 \begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
 \item o erro cometido no trecho;
@@ -1411,28 +1448,28 @@ estão espaçadas de 20~m, calcular:
 \setlength{\extrarowheight}{4pt} % 
 \begin{tabular}{cm{1.2cm}m{1.2cm}m{1.2cm}m{1.2cm}m{1.2cm}}
 \bf Nivelamento 
-\hline  
-Estaca  & ré  &  AI  &  PI  & PM  & cota
- \hline :math:`4`	& :math:`3,321`	&		&	&	&:math:`100,000`   
-:math:`5`	&	&		&:math:`1,325`	&	&	   
-:math:`6`	&	&		&:math:`3,793`	&	&	   
-:math:`7`	&:math:`2,650`	&     		&	&:math:`1,467`	&	   
-:math:`8`	&	&		&:math:`3,820`	&	&	   
-:math:`9`	&	&		&	&:math:`2,100`	&	 
-\hline 
+  
+Estaca   :math:`\mathrm{ré}`    AI    :math:`\mathrm{PI}`   :math:`\mathrm{PM}`   :math:`\mathrm{cota}`
+  :math:`4`	 :math:`3,321`					:math:`100,000`   
+:math:`5`				:math:`1,325`			   
+:math:`6`				:math:`3,793`			   
+:math:`7`	:math:`2,650`	     			:math:`1,467`		   
+:math:`8`				:math:`3,820`			   
+:math:`9`					:math:`2,100`		 
+ 
 
 
 \bf Contra-Nive. 
-\hline
-Estaca  & ré  & AI  & PI  &  PM  & cota
- \hline 
-9	&:math:`1,200`	&	&	&	&    
-8	&	&	&:math:`2,923`	&	&   
-7	&:math:`0,621`	&	&	&:math:`1,756`	&    
-6	&	&	&:math:`2,947`	&	&     
-5	&:math:`0,710`	&	&	&:math:`0,479`	&    
-4	&	&	&	&:math:`2,706`	&  
- \hline 
+
+Estaca   :math:`\mathrm{ré}`   AI   :math:`\mathrm{PI}`    :math:`\mathrm{PM}`   :math:`\mathrm{cota}`
+  
+9	:math:`1,200`				    
+8			:math:`2,923`		   
+7	:math:`0,621`			:math:`1,756`	    
+6			:math:`2,947`		     
+5	:math:`0,710`			:math:`0,479`	    
+4				:math:`2,706`	  
+  
 \end{tabular}
 \label{tab:exer_erro_nivelamento}
 \end{SCtable}
@@ -1440,7 +1477,7 @@ Estaca  & ré  & AI  & PI  &  PM  & cota
 \resp erro do nivelamento :math:`0,006\,\text{m}`; está de acordo com a Norma.
 
 \begin{exercicio}Com os dados de um NGC apresentados na caderneta
-de campo da Tabela~\ref{tab:exer_NGC_2}, calcule:
+de campo da Tabela :eq:`tab:exer_NGC_2}, calcule:
 
 \begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
 \item a declividade, em \%, de um plano inclinado que passa pelas estacas :math:`7+12\,\text{m}` e :math:`12+5\,\text{m}`, considerando-se que o espaçamento entre as estacas é de :math:`20,0` m; 
@@ -1453,25 +1490,25 @@ de campo da Tabela~\ref{tab:exer_NGC_2}, calcule:
 \centering 
 \caption{Tabela de nivelamento.}
 \setlength{\extrarowheight}{4pt} % 
-\begin{tabular}{cccccccm{1.2cm}} \hline  
+\begin{tabular}{cccccccm{1.2cm}}   
 
-Estaca  &  ré  &  AI  & PI  & PM  & cota &  greide & CV
+Estaca    :math:`\mathrm{ré}`    AI   :math:`\mathrm{PI}`   :math:`\mathrm{PM}`   :math:`\mathrm{cota}`   greide  CV
  
- :math:`7+12\,\text{m}`   & :math:`1,316` &       &       &       & :math:`200,0` &       &       
-:math:`8`     	&       &       & :math:`2,725` &       &       &       &       
-:math:`9`     	& :math:`2,321` &       &       & :math:`0,214` &       &       &     
-:math:`10 `   	& :math:`0,340` &       &       & :math:`2,500` &       &       &  
-:math:`11`    	&       &       & :math:`1,470` &       &       &       &   
-:math:`12`    	&       &       & :math:`3,218` &       &       &       &     
-:math:`12+5\,\text{m}`  	&       &       &       & :math:`2,200` &       &       &   
- \hline 
+ :math:`7+12\,\text{m}`    :math:`1,316`                       :math:`200,0`               
+:math:`8`     	               :math:`2,725`                             
+:math:`9`     	 :math:`2,321`                :math:`0,214`                    
+:math:`10 `   	 :math:`0,340`                :math:`2,500`                 
+:math:`11`    	               :math:`1,470`                         
+:math:`12`    	               :math:`3,218`                           
+:math:`12+5\,\text{m}`  	                      :math:`2,200`                  
+  
 \end{tabular}\label{tab:exer_NGC_2}\end{SCtable}
 
-\resp a) \emph{d} = :math:`-1,008`\%; b) :math:`\mathrm{CV}{}_{7+12{\rm \ m}}`
+\resp a)   d} = :math:`-1,008`\%; b) :math:`\mathrm{CV}{}_{7+12{\rm \ m}}`
 = 0 m, :math:`\mathrm{CV}_{8}=1,328\,\text{m}`, :math:`\mathrm{CV}_{9}=-1,384\,\text{m}`,
 :math:`\mathrm{CV}_{10}=-1,407\,\text{m}`, :math:`\mathrm{CV}_{11}=-0,478\,\text{m}`, :math:`\mathrm{CV}_{12}=1,068\,\text{m}`,
 :math:`\mathrm{CV}_{12+5\,{\rm m}}=0\,\text{m}`; c) :math:`\mathrm{PP_{1}}=8+9.795\,\text{m}`,
-:math:`\mathrm{PP_{2}}=11+6.183:math:`~m.
+:math:`\mathrm{PP_{2}}=11+6.183:math:` m.
 
 
 
