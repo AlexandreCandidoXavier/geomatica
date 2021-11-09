@@ -128,7 +128,7 @@ trabalhando em pequenas escalas, pode-se considerar a terra um esferoide
 ----
 
 :exem:`Exemplo 1` O elipsóide de referência utilizado pelo sistema norte-americano de posicionamento por satélite,
-o GPS, é denominado de WGS84, tendo como raios dos semieixos: :math:`a=6.378.137,0\,{m}`
+o GPS, é denominado de WGS84, tendo como raios dos semieixos: :math:`a=6.378.137,0\,\text{m}`
 e :math:`b=6.356.752,31424\,\text{m}`. Calcule
 o achatamento deste elipsóide.
 
