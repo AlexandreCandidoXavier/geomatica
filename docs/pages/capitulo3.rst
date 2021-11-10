@@ -163,7 +163,8 @@ de elipsoides e o local em que ele é ou foi utilizado
 :cite:p:`smith1997introduction`.
 
 .. table:: Exemplo dos parâmetros de elipsoides.
-    :widths: 1 2 3 4
+    :widths: 1 1 1 1
+    :header-alignment: cccc
     :column-alignment: left right right right
 
     ======================================= ======================= ========================= ========================

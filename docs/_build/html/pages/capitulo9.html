@@ -39,7 +39,7 @@
 
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Pesquisar" href="../search.html" />
-    <link rel="next" title="Referências" href="referencias.html" />
+    <link rel="next" title="Capitulo 10: Curva de nível e cáculo de volume" href="capitulo10.html" />
     <link rel="prev" title="Capitulo 8: Poligonal" href="capitulo8.html" /> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
   </head><body>
@@ -52,7 +52,7 @@
           <a href="../genindex.html" title="Índice Geral"
              accesskey="I">índice</a></li>
         <li class="right" >
-          <a href="referencias.html" title="Referências"
+          <a href="capitulo10.html" title="Capitulo 10: Curva de nível e cáculo de volume"
              accesskey="N">próximo</a> &nbsp; &nbsp;</li>
         <li class="right" >
           <a href="capitulo8.html" title="Capitulo 8: Poligonal"
@@ -130,7 +130,7 @@ que a altitude ortométrica corresponde à distância vertical entre
 um ponto ao Datum Altimétrico utilizado, no caso do Brasil Datum de
 Imbituba ou o de Santana.
 Já a altitude geométrica é distância vertical
-entre o ponto e o <a class="reference internal" href="capitulo3.html#datum-horizontal"><span class="std std-ref">Datum horizontal</span></a>, por exemplo o SIRGAS2000.</p>
+entre o ponto e o <a class="reference internal" href="capitulo3.html#datum-horizontal"><span class="std std-ref">Datum horizontal</span></a>, por exemplo o <a class="reference external" href="https://geoftp.ibge.gov.br/informacoes_sobre_posicionamento_geodesico/rede_planialtimetrica/relatorio/rel_sirgas2000.pdf">SIRGAS2000</a>.</p>
 <p>Sempre que possível, é desejável que se trabalhe com valores de altitude
 ortométrica, pois assim os pontos levantados poderão ser comparados
 com mapas e a outros levantamentos existentes. Entretanto, nem sempre
@@ -156,7 +156,7 @@ para cálculo das altitudes dos demais pontos levantados.</p>
 <div class="math notranslate nohighlight" id="equation-eq-altitude">
 <span class="eqno">(85)<a class="headerlink" href="#equation-eq-altitude" title="Permalink to this equation">¶</a></span>\[\begin{split}\mathrm{alt_{B}} =\mathrm{alt_{A}+DN_{AB}}\\\end{split}\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-cota">
-<span class="eqno">(100)<a class="headerlink" href="#equation-eq-cota" title="Permalink to this equation">¶</a></span>\[\mathrm{cota_{B}} =\mathrm{cota_{A}+DN_{AB}}\]</div>
+<span class="eqno">(86)<a class="headerlink" href="#equation-eq-cota" title="Permalink to this equation">¶</a></span>\[\mathrm{cota_{B}} =\mathrm{cota_{A}+DN_{AB}}\]</div>
 <hr class="docutils" />
 <p><span class="exem">Exemplo 1</span> De uma marco do IBGE de altitude
 <span class="math notranslate nohighlight">\(691,421\,\text{m}\)</span> ao ponto <span class="math notranslate nohighlight">\(\mathbf{X}\)</span>, mediu-se uma <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> de
@@ -248,7 +248,7 @@ na medida de <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> e
 Considerando a <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> em km e de acordo com a Equação <a class="reference internal" href="#equation-eq-ccr">(90)</a>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}C_{cr}&amp;=0,067\,53\cdot1,398^2\\
-&amp;=0,132\text{ m}\end{split}\]</div>
+&amp;=0,132\,\text{m}\end{split}\]</div>
 <p>O erro cometido corresponderia a <span class="math notranslate nohighlight">\(0,132\,\text{m}\)</span> para menos na
 <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> entre os pontos.</p>
 <hr class="docutils" />
@@ -536,7 +536,7 @@ Acre <span class="math notranslate nohighlight">\(N\approx30\,\mathrm{m}\)</span
 Na América do sul, os maiores valores se encontram nas Cordilheira
 dos Andes, com <span class="math notranslate nohighlight">\(N\approx50\,\mathrm{m}\)</span>.</p>
 <p>Valores de <span class="math notranslate nohighlight">\(N\)</span>  com relação aos Data utilizados no Brasil, o
-SIRGAS2000, podem ser obtidos por meio do programa <a class="reference external" href="https://www.ibge.gov.br/geociencias/modelos-digitais-de-superficie/modelos-digitais-de-superficie/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?=t=processar-os-dados">HgeoHNOR2020</a>.
+<a class="reference external" href="https://geoftp.ibge.gov.br/informacoes_sobre_posicionamento_geodesico/rede_planialtimetrica/relatorio/rel_sirgas2000.pdf">SIRGAS2000</a>, podem ser obtidos por meio do programa <a class="reference external" href="https://www.ibge.gov.br/geociencias/informacoes-sobre-posicionamento-geodesico/servicos-para-posicionamento-geodesico/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?edicao=31284&amp;t=processar-os-dados">HgeoHNOR2020</a>.
 No HgeoHNOR2020, tem que informar para obter a estimativa
 de <span class="math notranslate nohighlight">\(N\)</span>, o Datum utilizado na coleta dos dados de <span class="math notranslate nohighlight">\(h\)</span>  com  receptor
 GNSS, SIRGASS2000,
@@ -548,13 +548,13 @@ os valores de <span class="math notranslate nohighlight">\(h\)</span>  (receptor
 <figcaption>
 <p><span class="caption-number">Figura 84 </span><span class="caption-text">Relação entre altura ortométrica <span class="math notranslate nohighlight">\((H)\)</span>, altura geométrica <span class="math notranslate nohighlight">\((h)\)</span>
 e ondulação geoidal <span class="math notranslate nohighlight">\((N)\)</span> em (a). Ondulação geoidal segundo EGM96
-<span id="id16">[<a class="reference internal" href="referencias.html#id14" title="F.G. Lemoine, S. C. Kenyon, J. K. Factor, R.G. Trimmer, N. K. Pavlis, D. S. Chinn, C. M. Cox, S. M. Klosko, S. B. Luthcke, M. H. Torrence, Y. M. Wang, R. G. Williamson, E. C. Pavlis, R. H. Rapp, and T. R. Olson. The development of the joint NASA GSFC and the National Imagery and Mapping Agency (NIMA) Geopotential Model EGM96. NASA technical paper. National Aeronautics and Space Administration, Goddard Space Flight Center, 1998. URL: https://books.google.com.br/books?id=eAMVAQAAIAAJ.">LKF+98</a>]</span>, tendo <span class="math notranslate nohighlight">\(h\)</span>  em relação ao WGS84 (b).</span><a class="headerlink" href="#id45" title="Permalink to this image">¶</a></p>
+<span id="id17">[<a class="reference internal" href="referencias.html#id14" title="F.G. Lemoine, S. C. Kenyon, J. K. Factor, R.G. Trimmer, N. K. Pavlis, D. S. Chinn, C. M. Cox, S. M. Klosko, S. B. Luthcke, M. H. Torrence, Y. M. Wang, R. G. Williamson, E. C. Pavlis, R. H. Rapp, and T. R. Olson. The development of the joint NASA GSFC and the National Imagery and Mapping Agency (NIMA) Geopotential Model EGM96. NASA technical paper. National Aeronautics and Space Administration, Goddard Space Flight Center, 1998. URL: https://books.google.com.br/books?id=eAMVAQAAIAAJ.">LKF+98</a>]</span>, tendo <span class="math notranslate nohighlight">\(h\)</span>  em relação ao WGS84 (b).</span><a class="headerlink" href="#id45" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>A precisão na determinação de <span class="math notranslate nohighlight">\(H\)</span>, dependerá: <em>i</em>) da precisão
 de <span class="math notranslate nohighlight">\(h\)</span> ou seja, do tipo de receptor GNSS, do método de
 posicionamento, e <em>ii</em>) da precisão da estimativa da <span class="math notranslate nohighlight">\(N\)</span>. Para
-a <span class="math notranslate nohighlight">\(N\)</span>  do modelo HgeoHNOR2020, segundo <span id="id17">IBGE [<a class="reference internal" href="referencias.html#id4" title="IBGE. Modelo hgeohnor2020 para conversão de altitudes geométricas em altitudes normais / ibge, coordenação de geodésia. Technical Report, IBGE, Rio de Janeiro, RJ, Brasil, 2021. URL: https://biblioteca.ibge.gov.br/visualizacao/livros/liv101841.pdf.">IBGE21</a>]</span>, o resíduo
+a <span class="math notranslate nohighlight">\(N\)</span>  do modelo HgeoHNOR2020, segundo <span id="id18">IBGE [<a class="reference internal" href="referencias.html#id4" title="IBGE. Modelo hgeohnor2020 para conversão de altitudes geométricas em altitudes normais / ibge, coordenação de geodésia. Technical Report, IBGE, Rio de Janeiro, RJ, Brasil, 2021. URL: https://biblioteca.ibge.gov.br/visualizacao/livros/liv101841.pdf.">IBGE21</a>]</span>, o resíduo
 (<em>reqm</em>, raiz do erro quadrático médio) em ralação
 à <span class="math notranslate nohighlight">\(N\)</span>  estimadas e  a medida por meio de GNSS em pontos onde se conhecia o valor de
 <span class="math notranslate nohighlight">\(H\)</span>, pontos de RN do IBGE, foi de <span class="math notranslate nohighlight">\(6,5\,\text{cm}\)</span>.</p>
@@ -563,17 +563,17 @@ os métodos de medidas relativas e por diferença de fase por onda portadora.
 Já, para aumentar a precisão no que diz respeito a <span class="math notranslate nohighlight">\(N\)</span>, pode-se realizar
 a sua calibração local. Esta calibração não será apresentada, por
 este texto ser apenas introdutório à esta disciplina. Maiores detalhes
-podem ser encontrados em <span id="id18">[<a class="reference internal" href="referencias.html#id17" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>.</p>
+podem ser encontrados em <span id="id19">[<a class="reference internal" href="referencias.html#id17" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>.</p>
 <hr class="docutils" />
-<p><span class="exem">Exemplo 7</span> Encontre, por meio do programa <a class="reference external" href="https://www.ibge.gov.br/geociencias/modelos-digitais-de-superficie/modelos-digitais-de-superficie/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?=t=processar-os-dados">HgeoHNOR2020</a>,
+<p><span class="exem">Exemplo 7</span> Encontre, por meio do programa <a class="reference external" href="https://www.ibge.gov.br/geociencias/informacoes-sobre-posicionamento-geodesico/servicos-para-posicionamento-geodesico/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?edicao=31284&amp;t=processar-os-dados">HgeoHNOR2020</a>,
 a ondulação geoidal para um ponto de coordenadas <span class="math notranslate nohighlight">\(-22^{\circ}6'41''\)</span>  de latitude
 e <span class="math notranslate nohighlight">\(-41^{\circ}54'8''\)</span>  de longitude, no Datum
-SIRGAS2000. Sabendo-se que a altura geométrica calculada pelo receptor
+<a class="reference external" href="https://geoftp.ibge.gov.br/informacoes_sobre_posicionamento_geodesico/rede_planialtimetrica/relatorio/rel_sirgas2000.pdf">SIRGAS2000</a>. Sabendo-se que a altura geométrica calculada pelo receptor
 GNSS nesta coordenada foi de <span class="math notranslate nohighlight">\(562,672\,\text{m}\)</span>, qual a altitude
 ortométrica.</p>
 <p><span class="solucao">Solução:</span>
 Com as coordenadas e o Datum apresentados acima, obteve-se por meio do
-<a class="reference external" href="https://www.ibge.gov.br/geociencias/modelos-digitais-de-superficie/modelos-digitais-de-superficie/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?=t=processar-os-dados">HgeoHNOR2020</a>
+<a class="reference external" href="https://www.ibge.gov.br/geociencias/informacoes-sobre-posicionamento-geodesico/servicos-para-posicionamento-geodesico/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?edicao=31284&amp;t=processar-os-dados">HgeoHNOR2020</a>
 o valor de <span class="math notranslate nohighlight">\(N\)</span> de <span class="math notranslate nohighlight">\(-6,54\,\text{m}\)</span>. Para
 calcular a altitude ortométrica <span class="math notranslate nohighlight">\((H)\)</span>, aplica-se a Equação <a class="reference internal" href="#equation-eq-geoide">(98)</a>:</p>
 <div class="math notranslate nohighlight">
@@ -583,8 +583,8 @@ calcular a altitude ortométrica <span class="math notranslate nohighlight">\((H
 <hr class="docutils" />
 <p><span class="exem">Exemplo 8</span> Trabalhando com receptores GNSS com a técnica de
 medida relativa por diferença de fase, obteve-se para um ponto a altitude
-geométrica de <span class="math notranslate nohighlight">\(231,849\,\text{m}\)</span> no Datum SIRGAS2000. Utilizando o programa
-<a class="reference external" href="https://www.ibge.gov.br/geociencias/modelos-digitais-de-superficie/modelos-digitais-de-superficie/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?=t=processar-os-dados">HgeoHNOR2020</a>,
+geométrica de <span class="math notranslate nohighlight">\(231,849\,\text{m}\)</span> no Datum <a class="reference external" href="https://geoftp.ibge.gov.br/informacoes_sobre_posicionamento_geodesico/rede_planialtimetrica/relatorio/rel_sirgas2000.pdf">SIRGAS2000</a>. Utilizando o programa
+<a class="reference external" href="https://www.ibge.gov.br/geociencias/informacoes-sobre-posicionamento-geodesico/servicos-para-posicionamento-geodesico/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?edicao=31284&amp;t=processar-os-dados">HgeoHNOR2020</a>,
 foi encontrado a ondulação geoidal de <span class="math notranslate nohighlight">\(-12,598\,\text{m}\)</span>.
 Calcule a altitude ortométrica.</p>
 <p><span class="solucao">Solução:</span> Da Equação <a class="reference internal" href="#equation-eq-geoide">(98)</a>, e com os dados apresentados acima, temos:</p>
@@ -620,10 +620,10 @@ a trena.</p>
 </div>
 </section>
 <section id="nivelamento-geometrico">
-<span id="id22"></span><h3>Nivelamento geométrico<a class="headerlink" href="#nivelamento-geometrico" title="Link permanente para este título">¶</a></h3>
+<span id="id25"></span><h3>Nivelamento geométrico<a class="headerlink" href="#nivelamento-geometrico" title="Link permanente para este título">¶</a></h3>
 <p>O nivelamento geométrico (NG) é aquele em que, a DN, a cota ou a altitude,
 é calculada por meio de visadas horizontais às miras localizadas sobre
-os pontos de interesse <span id="id23">[<a class="reference internal" href="referencias.html#id39" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span>. Os equipamentos topográficos
+os pontos de interesse <span id="id26">[<a class="reference internal" href="referencias.html#id39" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span>. Os equipamentos topográficos
 que fazem visadas horizontais são denominados de níveis.</p>
 <p>Se o NG é realizado de uma única estação, ponto em que o nível é estacionado,
 denomina-se nivelamento geométrico simples (NGS). Caso tenha que ocorrer
@@ -647,8 +647,8 @@ ao Datum vertical utilizado.</p>
 a leitura da mira em <span class="math notranslate nohighlight">\(B\)</span>, é de vante. A <span class="math notranslate nohighlight">\(\mathrm{cota}\)</span> dos pontos de vante
 é calculada subtraindo da <a class="reference internal" href="#equation-eq-ai">(99)</a> o valor da sua leitura de vante,
 isto é:</p>
-<div class="math notranslate nohighlight" id="equation-eq-cota">
-<span class="eqno">(100)<a class="headerlink" href="#equation-eq-cota" title="Permalink to this equation">¶</a></span>\[\mathrm{cota=AI-vante}.\]</div>
+<div class="math notranslate nohighlight" id="equation-eq-cotang">
+<span class="eqno">(100)<a class="headerlink" href="#equation-eq-cotang" title="Permalink to this equation">¶</a></span>\[\mathrm{cota=AI-vante}.\]</div>
 <p>Observe que o conceito de <span class="math notranslate nohighlight">\(\mathrm{AI}\)</span> para o NG é diferente do que foi visto
 no nivelamento trigonométrico e taqueométrico, onde a altura do instrumento
 <span class="math notranslate nohighlight">\(\mathrm{AI}\)</span> é a distância vertical do centro do equipamento ao piquete
@@ -670,13 +670,13 @@ A mira em <span class="math notranslate nohighlight">\(A\)</span> é visada com 
 de <span class="math notranslate nohighlight">\(\mathrm{ré}\)</span>. Considere o valor de <span class="math notranslate nohighlight">\(\mathrm{ré}\)</span> de <span class="math notranslate nohighlight">\(3,580\,\text{m}\)</span>
 (<a class="reference internal" href="#fig-nivelageome1"><span class="std std-numref">Figura 85</span></a> b).
 Pode-se, de acordo com a Equação <a class="reference internal" href="#equation-eq-ai">(99)</a>, calcular a AI:</p>
-<p><span class="math notranslate nohighlight">\(\mathrm{AI}=253,543+3,580=257,123\text{ m}\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(\mathrm{AI}=253,543+3,580=257,123\,\text{m}\)</span>.</p>
 <p>O próximo passo é deslocar a mira para <span class="math notranslate nohighlight">\(B\)</span>, ponto de <span class="math notranslate nohighlight">\(\mathrm{vante}\)</span>. Faz-se
 a leitura com a luneta do nível apontado sobre a mira em <span class="math notranslate nohighlight">\(B\)</span>, onde,
 para este exemplo, o valor de <span class="math notranslate nohighlight">\(0,643\,\text{m}\)</span>, leitura de <span class="math notranslate nohighlight">\(\mathrm{vante}\)</span>
 (<a class="reference internal" href="#fig-nivelageome1"><span class="std std-numref">Figura 85</span></a> c).
-Desta forma, a <span class="math notranslate nohighlight">\(\mathrm{cota}_{\textit{B}}\)</span> é (Equação <a class="reference internal" href="#equation-eq-cota">(100)</a>):</p>
-<p><span class="math notranslate nohighlight">\(\mathrm{cota}_{B}=257,123-0,643=256,480\text{ m}\)</span>.</p>
+Desta forma, a <span class="math notranslate nohighlight">\(\mathrm{cota}_{\textit{B}}\)</span> é (Equação <a class="reference internal" href="#equation-eq-cotang">(100)</a>):</p>
+<p><span class="math notranslate nohighlight">\(\mathrm{cota}_{B}=257,123-0,643=256,480\,\text{m}\)</span>.</p>
 <p>Uma vez conhecidas as <span class="math notranslate nohighlight">\(\mathrm{cotas}\)</span> de <span class="math notranslate nohighlight">\(A\)</span> e <span class="math notranslate nohighlight">\(B\)</span>, a
 <span class="math notranslate nohighlight">\(\mathrm{DN}_{\textit{AB}}\)</span> (<a class="reference internal" href="#fig-nivelageome1"><span class="std std-numref">Figura 85</span></a> d) será:</p>
 <div class="math notranslate nohighlight">
@@ -692,7 +692,7 @@ a mira foi estacionada e se fez a leitura; (<strong>II</strong>) é o valor da l
 de <span class="math notranslate nohighlight">\(\mathrm{ré}\)</span>, o primeiro ponto visado; (<strong>III</strong>) é altura do instrumento (Equação
 <a class="reference internal" href="#equation-eq-ai">(99)</a>); (<strong>IV</strong>) são as leituras de <span class="math notranslate nohighlight">\(\mathrm{vante}\)</span> e; (<strong>V</strong>), com exceção da
 estaca <span class="math notranslate nohighlight">\(A\)</span>, referência de nível, são as <span class="math notranslate nohighlight">\(\mathrm{cotas}\)</span>
-calculadas (Equação:eq:<cite>eq:cota</cite>).
+calculadas (Equação <a class="reference internal" href="#equation-eq-cotang">(100)</a>).
 Para o cálculo das <span class="math notranslate nohighlight">\(\mathrm{cotas}\)</span>, a <span class="math notranslate nohighlight">\(\mathrm{AI}\)</span> é sempre igual a
 <span class="math notranslate nohighlight">\(257,123\,\text{m}\)</span>, modificando-se
 apenas os valores das leituras de <span class="math notranslate nohighlight">\(\mathrm{vante}\)</span> dos pontos. Um fato importante
@@ -726,7 +726,7 @@ com <span class="math notranslate nohighlight">\(\mathrm{cota}\)</span> atribuí
 <a class="reference internal image-reference" href="../_images/cap_niv_intr_NG_exe1.png"><img alt="cap_niv_intr_NG_exe1.png" src="../_images/cap_niv_intr_NG_exe1.png" style="width: 522.55px; height: 295.4px;" /></a>
 </figure>
 <p><span class="solucao">Solução:</span>
-De acordo com as Equações <a class="reference internal" href="#equation-eq-ai">(99)</a> e <a class="reference internal" href="#equation-eq-cota">(100)</a>,
+De acordo com as Equações <a class="reference internal" href="#equation-eq-ai">(99)</a> e <a class="reference internal" href="#equation-eq-cotang">(100)</a>,
 a solução é apresentada na Tabela que segue, onde, em negrito são
 as respostas e, em parenteses, os cálculos realizados.</p>
 <table class="colwidths-given styled-table docutils align-default" id="id49">
@@ -807,13 +807,13 @@ sobre a mira no <span class="math notranslate nohighlight">\(\mathrm{PM}\)</span
 da nova estação, também é denominada de <span class="math notranslate nohighlight">\(\mathrm{ré}\)</span>. Pode-se então calcular
 a nova <span class="math notranslate nohighlight">\(\mathrm{AI}\)</span> (Equação <a class="reference internal" href="#equation-eq-ai">(99)</a>).</p>
 <p>As <span class="math notranslate nohighlight">\(\mathrm{cotas}\)</span> dos pontos <span class="math notranslate nohighlight">\(\mathrm{vante}\)</span> de uma nova estação, que poderão ser <span class="math notranslate nohighlight">\(\mathrm{PI}\)</span>
-ou <span class="math notranslate nohighlight">\(\mathrm{PM}\)</span>, serão calculadas pela Equação <a class="reference internal" href="#equation-eq-cota">(100)</a>. O último ponto
+ou <span class="math notranslate nohighlight">\(\mathrm{PM}\)</span>, serão calculadas pela Equação <a class="reference internal" href="#equation-eq-cotang">(100)</a>. O último ponto
 medido no NGC é sempre denominado de <span class="math notranslate nohighlight">\(\mathrm{PM}\)</span>.</p>
 <p>Os cálculos do NGC podem ser verificados de acordo com a Equação <a class="reference internal" href="#equation-eq-verificacaongc">(101)</a>.
 Nesta verificação, não é observado se o trabalho foi bem realizado
 ou não. Ela apenas informa se os cálculos foram feitos corretamente.
 A avaliação da qualidade do levantamento será avaliada na Secção
-<code class="xref eq docutils literal notranslate"><span class="pre">sec:Toler=0000E2ncia_nivelamento</span></code>.</p>
+<a class="reference internal" href="#equation-eq-tolerancia-nivelamento">(102)</a>.</p>
 <div class="math notranslate nohighlight" id="equation-eq-verificacaongc">
 <span class="eqno">(101)<a class="headerlink" href="#equation-eq-verificacaongc" title="Permalink to this equation">¶</a></span>\[\Sigma\mathrm{{r\acute{e}}}-\Sigma\mathrm{PM}=\mathrm{\text{cota}_{final}}-\mathrm{\text{cota}_{inicial}}.\]</div>
 <hr class="docutils" />
@@ -908,7 +908,7 @@ são  os valores calculados e, entre parenteses, os cálculos realizados.</p>
 <section id="cuidados-no-nivelamento-geometrico">
 <h3>Cuidados no nivelamento geométrico<a class="headerlink" href="#cuidados-no-nivelamento-geometrico" title="Link permanente para este título">¶</a></h3>
 <p>Alguns cuidados devem ser tomados em um NG a fim de se obter melhores
-resultados no NG. Podendo-se citar, por exemplo <span id="id24">[<a class="reference internal" href="referencias.html#id39" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span>:</p>
+resultados no NG. Podendo-se citar, por exemplo <span id="id27">[<a class="reference internal" href="referencias.html#id39" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span>:</p>
 <ul class="simple">
 <li><p>medir sempre pontos de destaque no terreno, como depressões e elevações;</p></li>
 <li><p>repetição das medidas;</p></li>
@@ -918,13 +918,13 @@ resultados no NG. Podendo-se citar, por exemplo <span id="id24">[<a class="refer
 Assim, pode-se calcular a diferença entre o desnível nas duas medições,
 e compará-lo com a tolerância do nivelamento (Secção <a class="reference internal" href="#tolerancia-nivelamento"><span class="std std-ref">Tolerância para o nivelamento</span></a>);</p></li>
 <li><p>os comprimentos das visadas de <span class="math notranslate nohighlight">\(\mathrm{ré}\)</span> e de <span class="math notranslate nohighlight">\(\mathrm{vante}\)</span> devem ser de no máximo
-80 m, minimizando os erros de refração e curvatura da terra, além
+<span class="math notranslate nohighlight">\(80\,\text{m}\)</span>, minimizando os erros de refração e curvatura da terra, além
 de facilitar as leituras na mira. As distâncias podem ser medidas
-utilizando-se uma trena, ou mais comumente, com a leitura dos   <span class="math notranslate nohighlight">\(rsm\)</span>
-e   <span class="math notranslate nohighlight">\(ri\)</span> e aplicando a fórmula taqueométricas. As informações de
+utilizando-se uma trena, ou mais comumente, com a leitura dos   <span class="math notranslate nohighlight">\(rs\)</span>, <span class="math notranslate nohighlight">\(rm\)</span>
+e <span class="math notranslate nohighlight">\(ri\)</span> e aplicando a fórmula taqueométricas. As informações de
 distâncias podem ser inseridas na tabela de campo do NGC com a inclusão
 de mais duas colunas, indicando as distâncias do nível ao ponto de
-<span class="math notranslate nohighlight">\(\mathrm{ré}\)</span> e de <span class="math notranslate nohighlight">\(\mathrm{vante}\)</span> (<span id="id25">[<a class="reference internal" href="referencias.html#id39" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span>, página 30);</p></li>
+<span class="math notranslate nohighlight">\(\mathrm{ré}\)</span> e de <span class="math notranslate nohighlight">\(\mathrm{vante}\)</span> (<span id="id28">[<a class="reference internal" href="referencias.html#id39" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span>, página 30);</p></li>
 <li><p>as visadas de <span class="math notranslate nohighlight">\(\mathrm{ré}\)</span> e de <span class="math notranslate nohighlight">\(\mathrm{vante}\)</span> devem ser à uma altura em relação ao solo,
 superior a <span class="math notranslate nohighlight">\(0,50\,\text{m}\)</span>, com a finalidade de minimizar o problema de reverberação;</p></li>
 <li><p>a mira deve ser de madeira e dobrável, não de encaixe, devendo ser
@@ -935,7 +935,7 @@ e permite que a mira, sobre ele, gire sem se deslocar no ponto.</p></li>
 <section id="tolerancia-para-o-nivelamento">
 <span id="tolerancia-nivelamento"></span><h3>Tolerância para o nivelamento<a class="headerlink" href="#tolerancia-para-o-nivelamento" title="Link permanente para este título">¶</a></h3>
 <p>Em um nivelamento, é sempre prudente realizar uma avaliação da qualidade
-do levantamento. A <span id="id26"><em>NBR 13133</em> [<a class="reference internal" href="referencias.html#id39" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span> estabelece os métodos, os
+do levantamento. A <span id="id29"><em>NBR 13133</em> [<a class="reference internal" href="referencias.html#id39" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span> estabelece os métodos, os
 equipamentos e as tolerâncias que serão permitidas, que dependerá
 da escala, da equidistância das curvas de nível e da densidade de
 pontos medidos.</p>
@@ -947,7 +947,7 @@ para ser considerado aceitável:</p>
 <div class="math notranslate nohighlight" id="equation-eq-tolerancia-nivelamento">
 <span class="eqno">(102)<a class="headerlink" href="#equation-eq-tolerancia-nivelamento" title="Permalink to this equation">¶</a></span>\[T_{\textit{nivelamento}}=a\,\sqrt{\text{K}}\]</div>
 <p>em que: <span class="math notranslate nohighlight">\(a\)</span> dependerá da classe do nivelamento, por exemplo
-para a classe IIN <a class="footnote-reference brackets" href="#f1" id="id27">1</a>, <span class="math notranslate nohighlight">\(a=20\,\text{mm}\)</span>; <span class="math notranslate nohighlight">\(K\)</span> é a extensão
+para a classe IIN <a class="footnote-reference brackets" href="#f1" id="id30">1</a>, <span class="math notranslate nohighlight">\(a=20\,\text{mm}\)</span>; <span class="math notranslate nohighlight">\(K\)</span> é a extensão
 nivelada em <span class="math notranslate nohighlight">\(km\)</span>, medida num único
 sentido. Para os demais valores de <span class="math notranslate nohighlight">\(a\)</span>, consultar NBR13133.</p>
 <p>O erro de nivelamento pode ser obtido, por exemplo, das seguintes
@@ -970,8 +970,8 @@ estacas; e (c) distribuir o erro linearmente, por exemplo, nas <span class="math
 do contra-nivelamento e, calcular a média entre as contas do nivelamento
 e do contra-nivelamente compensada. Maiores detalhes e outros métodos
 de ajuste para nivelamento podem ser encontrados em:
-<span id="id28">[<a class="reference internal" href="referencias.html#id7" title="J. A. Comastri and J. C. Tuler. Topografia: Altimetria. Editora UFV, Viçosa, MG, 3 edition, 2003.">CT03</a>]</span> [pg. 84-89], <span id="id29">[<a class="reference internal" href="referencias.html#id2" title="J. C. McCormac. Topografia. LCT, Rio de Janeiro, RJ, 5 edition, 2007.">McC07</a>]</span> [pg. 122-125] e
-<span id="id30">[<a class="reference internal" href="referencias.html#id17" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span> [pg. 406-411].</p>
+<span id="id31">[<a class="reference internal" href="referencias.html#id7" title="J. A. Comastri and J. C. Tuler. Topografia: Altimetria. Editora UFV, Viçosa, MG, 3 edition, 2003.">CT03</a>]</span> [pg. 84-89], <span id="id32">[<a class="reference internal" href="referencias.html#id2" title="J. C. McCormac. Topografia. LCT, Rio de Janeiro, RJ, 5 edition, 2007.">McC07</a>]</span> [pg. 122-125] e
+<span id="id33">[<a class="reference internal" href="referencias.html#id17" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span> [pg. 406-411].</p>
 <hr class="docutils" />
 <p><span class="exem">Exemplo 11</span> Foram realizados um nivelamento e um contra-nivelamento de 800 m
 de extensão. A <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span>, entre o ponto inicial e final do nivelamento e
@@ -1011,7 +1011,7 @@ utilizada no eixo-<span class="math notranslate nohighlight">\(y\)</span>, escal
 serem, na grande maioria dos casos, superiores às das DNs. Desta forma,
 se colocadas em mesma escala, não se poderia avaliar o perfil do terreno
 de forma adequada. Uma vez conhecida a EH, pode-se considerar inicialmente
-para teste, <span class="math notranslate nohighlight">\(\mathrm{EV}=10\mathrm{EH}\)</span> <span id="id31">[<a class="reference internal" href="referencias.html#id8" title="R. Godoy. Topografia básica. FEALQ, Piracicaba, SP, 2 edition, 1988.">God88</a>]</span>. Deve-se verificar
+para teste, <span class="math notranslate nohighlight">\(\mathrm{EV}=10\mathrm{EH}\)</span> <span id="id34">[<a class="reference internal" href="referencias.html#id8" title="R. Godoy. Topografia básica. FEALQ, Piracicaba, SP, 2 edition, 1988.">God88</a>]</span>. Deve-se verificar
 se este valor é adequado para construção do perfil no tamanho do papel
 utilizado. Se necessário escolhe-se outra <span class="math notranslate nohighlight">\(\mathrm{EV}\)</span>.</p>
 <p>Na <a class="reference internal" href="#cap-niv-perfil"><span class="std std-numref">Figura 88</span></a> é apresentado o perfil do NG do Exemplo 10.
@@ -1067,17 +1067,17 @@ ou aterro, em que:</p>
 não haverá nem corte nem aterro.</p></li>
 </ul>
 <p>Sempre que o sinal algébrico da  <span class="math notranslate nohighlight">\(\mathrm{CV}\)</span>  mudar entre estacas, haverá um
-PP. Na Tabela <code class="xref eq docutils literal notranslate"><span class="pre">tab:ngc_greideCV</span></code> é apresentado um exemplo de
-uma caderneta de campo para um NGC com: as estacas de 20 m em 20 m;
+PP. Na Tabela abaixo é apresentado um exemplo de
+uma caderneta de campo para um NGC com: as estacas de <span class="math notranslate nohighlight">\(20\,\mathrm{m}\)</span> em <span class="math notranslate nohighlight">\(20\,\mathrm{m}\)</span>;
 as <span class="math notranslate nohighlight">\(\mathrm{cotas}\)</span> do terreno calculadas; um greide arbitrário; e as respectivas
-CV’s. Na <code class="xref std std-numref docutils literal notranslate"><span class="pre">fig:perfil</span></code> é apresentada a representação gráfica
+<span class="math notranslate nohighlight">\(\mathrm{CV's}\)</span>. Na <a class="reference internal" href="#cap-niv-perfil-2"><span class="std std-numref">Figura 89</span></a> é apresentada a representação gráfica
 destes dados, inclusive com a posição dos PPs. O perfil do terreno
 apresentado começa na estaca <span class="math notranslate nohighlight">\(5+13,5\,\text{m}\)</span> de cota de <span class="math notranslate nohighlight">\(200,00\,\text{m}\)</span> e
 termina na estaca <span class="math notranslate nohighlight">\(10+15,1\,\text{m}\)</span> de cota <span class="math notranslate nohighlight">\(202,1\,\text{m}\)</span>,
-ou seja, uma DNtotal de <span class="math notranslate nohighlight">\(2,11\,\text{m}\)</span>, com o terreno em
+ou seja, uma DN total de <span class="math notranslate nohighlight">\(2,11\,\text{m}\)</span>, com o terreno em
 aclive entre a primeira estaca e a última.</p>
 <table class="colwidths-given styled-table docutils align-default" id="id52">
-<caption><span class="caption-number">Table 16 </span><span class="caption-text">Apresentação da {rm{CV}} em uma caderneta de campo.}label{tab:ngc_greideCV}</span><a class="headerlink" href="#id52" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-number">Table 16 </span><span class="caption-text">Apresentação da <span class="math notranslate nohighlight">\(\mathrm{CV}\)</span> em uma caderneta de campo.</span><a class="headerlink" href="#id52" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 13%" />
 <col style="width: 13%" />
@@ -1171,286 +1171,451 @@ e <em>ii</em>) o segundo número, caso ocorra, é a fração que a estaca
 se encontra em relação a estaca anterior. Então, a estaca inicial
 <span class="math notranslate nohighlight">\(5+13,5\,\text{m}\)</span> está <span class="math notranslate nohighlight">\(13,5\,\text{m}\)</span> à frente da estaca número
 <span class="math notranslate nohighlight">\(5\)</span>, e <span class="math notranslate nohighlight">\(6,5\,\text{m}\)</span> atrás
-da estaca <span class="math notranslate nohighlight">\(6\)</span> <span class="math notranslate nohighlight">\((20\,{\text{m}-13,5\,{\text{m})\)</span>. Segundo esta mesma linha
+da estaca <span class="math notranslate nohighlight">\(6\)</span> <span class="math notranslate nohighlight">\((20\,\text{m}-13,5\,\text{m})\)</span>. Segundo esta mesma linha
 de raciocínio, somando as distâncias entre as estacas, tem-se que
-a <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> entre as estacas inicial e final é de <span class="math notranslate nohighlight">\(101,6\,\text{m}\)</span> {<span class="math notranslate nohighlight">\((6,5+20\cdot4+15,1\)</span>)}.</p>
-<p>begin{figure}[H] includegraphics[trim = 0mm 0mm 0mm 0mm,scale=1]{Cap_altimetria/cap_niv_perfil_2}
-caption{Perfil topográfico, greide e  <span class="math notranslate nohighlight">\(\mathrm{CV}\)</span>  dos dados apresentados na Tabela :eq:<a href="#id32"><span class="problematic" id="id33">`</span></a>tab:ngc_greideCV}.}</p>
-<p>label{fig:perfil} end{figure}</p>
-<p>begin{mybox}[breakable,enhanced,pad at break=0mm,label={exe:cap_alt_PP}]{}
-Com os dados da Tabela <code class="xref eq docutils literal notranslate"><span class="pre">tab:ngc_greideCV}</span> <span class="pre">,</span> <span class="pre">pergunta-se:</span> <span class="pre">a)</span>
-<span class="pre">qual</span> <span class="pre">é</span> <span class="pre">a</span> <span class="pre">declividade</span> <span class="pre">do</span> <span class="pre">greide</span> <span class="pre">(%);</span> <span class="pre">b)</span> <span class="pre">qual</span> <span class="pre">a</span> <span class="pre">:math:</span></code>mathrm{cota}` do greide na estaca
-8; e, c) a estaca a <span class="math notranslate nohighlight">\(\mathrm{cota}\)</span> do segundo PP.</p>
-<p>soluca</p>
-<p>noindent Questão (a): considerando as <span class="math notranslate nohighlight">\(\mathrm{cotas}\)</span> do greide nas estacas
-<span class="math notranslate nohighlight">\(5+13,5\text{ m}\)</span> e <span class="math notranslate nohighlight">\({10+15,1\text{ m}}\)</span> e a <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> entre estas estacas
-de 101,6 m:</p>
-<p>[
-begin{split}d(%)  =frac{mathrm{DN}}{mathrm{DH}}100\</p>
-<blockquote>
-<div><p>=frac{201,481-200,465}{101,6}100\
-=1%.</p>
-</div></blockquote>
-<p>end{split}
-]</p>
-<p>noindent Questão (b): as <span class="math notranslate nohighlight">\(\mathrm{cotas}\)</span> do greide, que na Tabela <code class="xref eq docutils literal notranslate"><span class="pre">tab:ngc_greideCV}</span>
-<span class="pre">são</span> <span class="pre">apenas</span> <span class="pre">apresentadas,</span> <span class="pre">são</span> <span class="pre">calculadas</span> <span class="pre">conhecendo-se:</span> <span class="pre">i)</span> <span class="pre">a</span> <span class="pre">declividade</span>
-<span class="pre">do</span> <span class="pre">greide,</span> <span class="pre">neste</span> <span class="pre">caso</span> <span class="pre">de</span> <span class="pre">:math:`1</span></code>% e, ii) as DHs entre a primeira estaca
-às estacas de interesse, para o exercício, a 8. A <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> é de <span class="math notranslate nohighlight">\(46,5\,\text{m}\)</span>
+a <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> entre as estacas inicial e final é de
+<span class="math notranslate nohighlight">\(101,6\,\text{m}\)</span> <span class="math notranslate nohighlight">\((6,5+20\cdot4+15,1\)</span>).</p>
+<figure class="align-center" id="id53">
+<span id="cap-niv-perfil-2"></span><a class="reference internal image-reference" href="../_images/cap_niv_perfil_2.png"><img alt="cap_niv_perfil_2.png" src="../_images/cap_niv_perfil_2.png" style="width: 432.59999999999997px; height: 292.25px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 89 </span><span class="caption-text">Perfil topográfico, greide e  <span class="math notranslate nohighlight">\(\mathrm{CV}\)</span>  dos dados apresentados na Tabela acima.</span><a class="headerlink" href="#id53" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<hr class="docutils" />
+<p><span class="exem">Exemplo 12</span> Com os dados da Tabela acima, pergunta-se:</p>
+<ol class="loweralpha simple">
+<li><p>qual é a declividade do greide (%);</p></li>
+<li><p>qual a <span class="math notranslate nohighlight">\(\mathrm{cota}\)</span> do greide na estaca <span class="math notranslate nohighlight">\(8\)</span>;</p></li>
+<li><p>a estaca a <span class="math notranslate nohighlight">\(\mathrm{cota}\)</span> do segundo <span class="math notranslate nohighlight">\(\mathrm{PP}\)</span>.</p></li>
+</ol>
+<p><span class="solucao">Solução:</span>  Questão (a): considerando as <span class="math notranslate nohighlight">\(\mathrm{cotas}\)</span>
+do greide nas estacas <span class="math notranslate nohighlight">\(5+13,5\,\text{m}\)</span> e
+<span class="math notranslate nohighlight">\(10+15,1\,\text{m}\)</span> e a <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> entre estas estacas
+de <span class="math notranslate nohighlight">\(101,6\,\text{m}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}d(\%) &amp;=100\frac{\mathrm{DN}}{\mathrm{DH}}\\
+&amp;=\frac{201,481-200,465}{101,6}100\\
+&amp;=1\%.\end{split}\]</div>
+<p>Questão (b): as <span class="math notranslate nohighlight">\(\mathrm{cotas}\)</span> do greide, que na Tabela acima
+são apenas apresentadas, são calculadas conhecendo-se: <strong>i</strong>) a declividade
+do greide, neste caso de <span class="math notranslate nohighlight">\(1\%\)</span> e, <strong>ii</strong>) as
+<span class="math notranslate nohighlight">\(\mathrm{DH's}\)</span> entre a primeira estaca
+às estacas de interesse, para o exercício, a 8.
+A <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> é de <span class="math notranslate nohighlight">\(46,5\,\text{m}\)</span>
 <span class="math notranslate nohighlight">\({(6,5+20\cdot2)}\)</span>. Como a declividade do greide é de <span class="math notranslate nohighlight">\(1\)</span>%, tem-se
 que para uma <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> de <span class="math notranslate nohighlight">\(100\,\text{m}\)</span> neste greide, há uma <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> de <span class="math notranslate nohighlight">\(1\,\text{m}\)</span>, então,
-para uma <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> de <span class="math notranslate nohighlight">\(46,5\,\text{m}\)</span>, tem-se uma <span class="math notranslate nohighlight">\(\text{DN}_{\text{greide\,(}8,\text{ 5\,+\,13,5\,\ m)}}\)</span>
-de 0,465 m <span class="math notranslate nohighlight">\({\left(\frac{46,5}{100}1\right)}\)</span>, logo:</p>
-<p>[
-begin{split}mathrm{cota}_{text{greide,,}8}  =mathrm{cota}_{text{greide,,}5+13,5text{ m}}+mathrm{DN}_{text{greide,(}8,text{ 5,+,13,5,m)}}\</p>
-<blockquote>
-<div><p>=200,465+0,465\
-=200,930text{ m}.</p>
-</div></blockquote>
-<p>end{split}
-]</p>
-<p>noindent Questão (c): o segundo PP encontra-se entre as estacas 9
-e 10. A figura a seguir apresenta uma ampliação do perfil
+para uma <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> de <span class="math notranslate nohighlight">\(46,5\,\text{m}\)</span>,
+tem-se uma <span class="math notranslate nohighlight">\(\text{DN}_{\mathrm{greide(8,5+13,5 m)}}\)</span>
+de <span class="math notranslate nohighlight">\(0,465\,\mathrm{m}\)</span> <span class="math notranslate nohighlight">\({\left(\frac{46,5}{100}1\right)}\)</span>, logo:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathrm{cota}_{\mathrm{greide, 8}}&amp;=\mathrm{cota}_{\mathrm{greide,\,[5+13,5\,m]}}+\mathrm{DN}_{\mathrm{greide,\,([8],\,[5+13,5 m])}}\\
+&amp;=200,465+0,465\\
+&amp;=200,930\,\text{ m}.\end{split}\]</div>
+<p>Questão (c): o segundo <span class="math notranslate nohighlight">\(\mathrm{PP}\)</span> encontra-se entre as estacas
+<span class="math notranslate nohighlight">\(9\)</span> e <span class="math notranslate nohighlight">\(10\)</span>. A figura a seguir apresenta uma ampliação do perfil
 do terreno e do greide entre esras estacas. As  <span class="math notranslate nohighlight">\(\mathrm{CV}\)</span> s são apresentadas
 em valores absolutos, uma vez que se vai avaliar as distância que
-separam o greide do terreno em valores absolutos. Seja   x }a
-DH da estaca 9 ao PP. Como a <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> entre as estacas é de <span class="math notranslate nohighlight">\(20\,\text{m}\)</span>, a DH
+separam o greide do terreno em valores absolutos. Seja   <span class="math notranslate nohighlight">\(x\)</span> a
+DH da estaca <span class="math notranslate nohighlight">\(9\)</span> ao <span class="math notranslate nohighlight">\(\mathrm{PP}\)</span>.
+Como a <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> entre as estacas é de <span class="math notranslate nohighlight">\(20\,\text{m}\)</span>, a DH
 de PP à estaca 10 será de <span class="math notranslate nohighlight">\(20-x\)</span>. Por semelhança de triângulos:</p>
-<p>[
-begin{split}frac{x}{0,51}  =frac{20-x}{0,49}\
-x  =frac{20cdot0,51}{0,49+0,51}\
-x  =10,2text{ m}.
-end{split}
-]</p>
-<p>noindent Desta forma, a estaca no ponto de passagem é {<span class="math notranslate nohighlight">\(9+10,2\text{ m}\)</span>}.</p>
-<p>includegraphics[trim = 0mm 0mm 0mm 0mm,scale=1]{Cap_altimetria/cap_niv_perfil_ex}</p>
-<p>noindent Para calcular o valor da <span class="math notranslate nohighlight">\(\mathrm{cota}\)</span> no PP, a <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> entre a estaca
-<span class="math notranslate nohighlight">\({5+13,5\text{ m}}\)</span> e a estaca no PP, {<span class="math notranslate nohighlight">\(9+10,2\text{ m}\)</span>}, é de
-76,7 m {<span class="math notranslate nohighlight">\((6,5+20\cdot3+10,2)\)</span>}. Sendo a declividade do greide de
-1%, a <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> entre estas estacas é de 0,767 m {<span class="math notranslate nohighlight">\(\left(\frac{76,7}{100}1\right)\)</span>}.
-Desta forma:</p>
-<p>[
-begin{split}mathrm{cota}_{9+10,2text{ m}}  =mathrm{cota}_{5+13,5text{ m}}+mathrm{DN}\</p>
-<blockquote>
-<div><p>=200,465+0,767\
-=201,232text{ m}.</p>
-</div></blockquote>
-<p>end{split}
-]
-end{mybox}</p>
-<p>section*{Exercícios}</p>
-<p>begin{exercicio}Qual o erro que resultará se, a correção dos efeitos
+<div class="math notranslate nohighlight">
+\[\begin{split}\frac{x}{0,51} &amp;=\frac{20-x}{0,49}\\
+x&amp;=\frac{20\cdot0,51}{0,49+0,51}\\
+x&amp;=10,2\,\text{ m}.\end{split}\]</div>
+<p>Desta forma, a estaca no ponto de passagem é <span class="math notranslate nohighlight">\(9+10,2\,\text{m}\)</span>}.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/cap_niv_perfil_ex.png"><img alt="cap_niv_perfil_ex.png" src="../_images/cap_niv_perfil_ex.png" style="width: 439.25px; height: 207.89999999999998px;" /></a>
+</figure>
+<p>Para calcular o valor da <span class="math notranslate nohighlight">\(\mathrm{cota}\)</span> no <span class="math notranslate nohighlight">\(\mathrm{PP}\)</span>,
+a <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> entre a estaca
+<span class="math notranslate nohighlight">\({5+13,5\,\text{ m}}\)</span> e a estaca no <span class="math notranslate nohighlight">\(\mathrm{PP}\)</span>,
+<span class="math notranslate nohighlight">\(9+10,2\,\text{ m}\)</span>, é de
+<span class="math notranslate nohighlight">\(76,7\,\text{ m}\,(6,5+20\cdot3+10,2)\)</span>. Sendo a declividade do greide de
+<span class="math notranslate nohighlight">\(1\%\)</span>, a <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> entre estas estacas é de <span class="math notranslate nohighlight">\(0,767\,\text{ m}\)</span>
+<span class="math notranslate nohighlight">\(\left(\frac{76,7}{100}1\right)\)</span>}. Desta forma:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathrm{cota}_{9+10,2\,\text{m}}&amp;=\mathrm{cota}_{5+13,5\,\text{m}}+\mathrm{DN}\\
+&amp;=200,465+0,767\\
+&amp;=201,232\,\text{m}.\end{split}\]</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="exercicios">
+<h2>Exercícios<a class="headerlink" href="#exercicios" title="Link permanente para este título">¶</a></h2>
+<p><span class="exem">1)</span> Qual o erro que resultará se, a correção dos efeitos
 da curvatura da terra e de refração, for negligenciado em nivelamentos
 trigonométricos para pontos separados em:</p>
-<p>begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
-- <span class="math notranslate nohighlight">\(100\,\text{m}\)</span> ;
-- <span class="math notranslate nohighlight">\(500\,\text{m}\)</span> ;
-- <span class="math notranslate nohighlight">\(1\,500\,\text{m}\)</span> ;
-- <span class="math notranslate nohighlight">\(4\,000\,\text{m}\)</span> ;
-end{enumerate}</p>
-<p>end{exercicio}</p>
-<p>resp a) <span class="math notranslate nohighlight">\(0,000\,7\,\text{m}\)</span> ; b) <span class="math notranslate nohighlight">\(0,016\,9\,\text{m}\)</span> ; c) <span class="math notranslate nohighlight">\(0,151\,9\,\text{m}\)</span> ; d) <span class="math notranslate nohighlight">\(1,080\,4\,\text{m}\)</span> .</p>
-<p>begin{exercicio}Qual o princípio de funcionamento dos barômetros?end{exercicio}</p>
-<p>resp ver texto e referências.</p>
-<p>begin{exercicio}Com uma estação total no ponto A, de altitude <span class="math notranslate nohighlight">\(1.392,869\,\text{m}\)</span>,
-visou-se um prisma sobre o ponto P, registrando-se os seguintes valores:
-<span class="math notranslate nohighlight">\(z=81^{\circ}2'45''\)</span>; <span class="math notranslate nohighlight">\(\mathrm{DI_{AP}}=792,298\text{ m}\)</span>; <span class="math notranslate nohighlight">\(\textit{ai}=1,521\text{ m}\)</span>;
-<span class="math notranslate nohighlight">\(\textit{ap}=1,775\text{ m}\)</span>. Considerando o erro da curvatura da
-terra e o de refração, qual a altitude em   P}?end{exercicio}</p>
-<p>resp Altitude em P = <span class="math notranslate nohighlight">\(1.515,972\,\text{m}\)</span> .</p>
-<p>begin{exercicio}Um nivelamento foi realizado da estação A para B,
-sendo a altitude de   B} de <span class="math notranslate nohighlight">\(409,56\,\text{m}\)</span>. Obteve-se os seguintes
-dados: <span class="math notranslate nohighlight">\(z_{\mathrm{AB}}=86^{\circ}8'47''\)</span>; <span class="math notranslate nohighlight">\(\mathrm{DI_{AB}}=3\,524,68\text{ m}\)</span>;
-<span class="math notranslate nohighlight">\(ai_{\mathrm{A}}=1,440\text{ m}\)</span>; altura do centro do refletor (<span class="math notranslate nohighlight">\(ap\)</span>)
-no ponto   B} de <span class="math notranslate nohighlight">\(2,510\,\text{m}\)</span>. Calcular a altitude do ponto   A}.
-Considere o efeito de curvatura e o de refração terrestre.end{exercicio}</p>
-<p>resp Altitude em   A} = <span class="math notranslate nohighlight">\(172,911\,\text{m}\)</span> .</p>
-<p>begin{exercicio}A distância inclinada e o ângulo zenital foram medidos
-de   X }para   Y}, sendo <span class="math notranslate nohighlight">\(\mathrm{DI}=474,3\,\text{m}\)</span> e <span class="math notranslate nohighlight">\(z=93^{\circ}13'46''\)</span>,
+<ol class="loweralpha simple">
+<li><p><span class="math notranslate nohighlight">\(100\,\text{m}\)</span>;</p></li>
+<li><p><span class="math notranslate nohighlight">\(500\,\text{m}\)</span>;</p></li>
+<li><p><span class="math notranslate nohighlight">\(1\,500\,\text{m}\)</span>;</p></li>
+<li><p><span class="math notranslate nohighlight">\(4\,000\,\text{m}\)</span>;</p></li>
+</ol>
+<p><span class="exem">Resp.:</span> a) <span class="math notranslate nohighlight">\(0,000\,7\,\text{m}\)</span> ; b) <span class="math notranslate nohighlight">\(0,016\,9\,\text{m}\)</span> ; c) <span class="math notranslate nohighlight">\(0,151\,9\,\text{m}\)</span> ; d) <span class="math notranslate nohighlight">\(1,080\,4\,\text{m}\)</span> .</p>
+<hr class="docutils" />
+<p><span class="exem">2)</span> Qual o princípio de funcionamento dos barômetros?</p>
+<p><span class="exem">Resp.:</span> ver texto e referências.</p>
+<hr class="docutils" />
+<p><span class="exem">3)</span> Com uma estação total no ponto <span class="math notranslate nohighlight">\(A\)</span>, de altitude <span class="math notranslate nohighlight">\(1.392,869\,\text{m}\)</span>,
+visou-se um prisma sobre o ponto <span class="math notranslate nohighlight">\(P\)</span>, registrando-se os seguintes valores:
+<span class="math notranslate nohighlight">\(z=81^{\circ}2'45''\)</span>; <span class="math notranslate nohighlight">\(\mathrm{DI_{AP}}=792,298\,\text{m}\)</span>; <span class="math notranslate nohighlight">\(\textit{ai}=1,521\,\text{m}\)</span>;
+<span class="math notranslate nohighlight">\(\textit{ap}=1,775\,\text{m}\)</span>. Considerando o erro da curvatura da
+terra e o de refração, qual a altitude em <span class="math notranslate nohighlight">\(P\)</span>?</p>
+<p><span class="exem">Resp.:</span> Altitude em <span class="math notranslate nohighlight">\(P=1.515,972\,\text{m}\)</span> .</p>
+<hr class="docutils" />
+<p><span class="exem">4)</span> Um nivelamento foi realizado da estação <span class="math notranslate nohighlight">\(A\)</span> para <span class="math notranslate nohighlight">\(B\)</span>,
+sendo a altitude de <span class="math notranslate nohighlight">\(B\)</span> de <span class="math notranslate nohighlight">\(409,56\,\text{m}\)</span>. Obteve-se os seguintes
+dados: <span class="math notranslate nohighlight">\(z_{\mathrm{AB}}=86^{\circ}8'47''\)</span>; <span class="math notranslate nohighlight">\(\mathrm{DI_{AB}}=3\,524,68\,\text{m}\)</span>;
+<span class="math notranslate nohighlight">\(ai_{A}=1,440\,\text{m}\)</span> (altura do instrumento em <span class="math notranslate nohighlight">\(A\)</span>); altura do centro do refletor <span class="math notranslate nohighlight">\((ap)\)</span>
+no ponto <span class="math notranslate nohighlight">\(B\)</span> de <span class="math notranslate nohighlight">\(2,510\,\text{m}\)</span>. Calcular a altitude do ponto <span class="math notranslate nohighlight">\(A\)</span>.
+Considere o efeito de curvatura e o de refração terrestre.</p>
+<p><span class="exem">Resp.:</span> Altitude em   A} = <span class="math notranslate nohighlight">\(172,911\,\text{m}\)</span> .</p>
+<hr class="docutils" />
+<p><span class="exem">5)</span> A distância inclinada e o ângulo zenital foram medidos
+de   <span class="math notranslate nohighlight">\(X\)</span> para <span class="math notranslate nohighlight">\(Y\)</span>, sendo
+<span class="math notranslate nohighlight">\(\mathrm{DI}=474,3\,\text{m}\)</span> e <span class="math notranslate nohighlight">\(z=93^{\circ}13'46''\)</span>,
 respectivamente. A altura do prisma e a altura do equipamento foi
-a mesma. Se a elevação de   X }foi de 837,5 m acima do Datum,
-qual a elevação de   Y}?end{exercicio}</p>
-<p>resp Elevação   }de   Y} = <span class="math notranslate nohighlight">\(810,781\,\text{m}\)</span>.</p>
-<p>begin{exercicio}De um teodolito estacionado no ponto 13, de altitude
-492,7 m, foi visada a mira no ponto 14, realizando as seguintes medidas:
-<span class="math notranslate nohighlight">\(z=92^{\circ}27'\)</span>; <span class="math notranslate nohighlight">\(\textit{ri}=1,000\text{ m}\)</span>; <span class="math notranslate nohighlight">\(\textit{rm}=1,598\text{ m}\)</span>;
-<span class="math notranslate nohighlight">\(\textit{rs}=2,196\text{ m}\)</span>; <span class="math notranslate nohighlight">\(\textit{ai}=1,7\text{ m}\)</span>. Pergunta-se:</p>
-<p>begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
-- qual a <span class="math notranslate nohighlight">\(DN\)</span> entre os pontos 13 e 14?
-- qual a altitude do ponto 14?
-end{enumerate}</p>
-<p>end{exercicio}</p>
-<p>resp  <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> = }textendash <span class="math notranslate nohighlight">\(5,006\,\text{m}\)</span>; altitude do ponto 14 é de
+a mesma. Se a elevação de <span class="math notranslate nohighlight">\(X\)</span> foi de <span class="math notranslate nohighlight">\(837,5\,\text{m}\)</span> acima do Datum,
+qual a elevação de <span class="math notranslate nohighlight">\(Y\)</span>?</p>
+<p><span class="exem">Resp.:</span> Elevação de <span class="math notranslate nohighlight">\(Y=810,781\,\text{m}\)</span>.</p>
+<hr class="docutils" />
+<p><span class="exem">6)</span> De um teodolito estacionado no ponto <span class="math notranslate nohighlight">\(13\)</span>, de altitude
+<span class="math notranslate nohighlight">\(492,7\,\text{m}\)</span>, foi visada a mira no ponto <span class="math notranslate nohighlight">\(14\)</span>,
+realizando as seguintes medidas: <span class="math notranslate nohighlight">\(z=92^{\circ}27'\)</span>;
+<span class="math notranslate nohighlight">\(\textit{ri}=1,000\,\text{m}\)</span>; <span class="math notranslate nohighlight">\(\textit{rm}=1,598\,\text{m}\)</span>;
+<span class="math notranslate nohighlight">\(\textit{rs}=2,196\,\text{m}\)</span>; <span class="math notranslate nohighlight">\(\textit{ai}=1,7\,\text{m}\)</span>. Pergunta-se:</p>
+<ul class="simple">
+<li><p>qual a <span class="math notranslate nohighlight">\(DN\)</span> entre os pontos 13 e 14?</p></li>
+<li><p>qual a altitude do ponto 14?</p></li>
+</ul>
+<p><span class="exem">Resp.:</span>  <span class="math notranslate nohighlight">\(\mathrm{DN}=5,006\,\text{m}\)</span>; altitude do ponto <span class="math notranslate nohighlight">\(14\)</span> é de
 <span class="math notranslate nohighlight">\(487,694\,\text{m}\)</span>.</p>
-<dl class="simple">
-<dt>begin{exercicio} Em nivelamento taqueométrico do ponto   X }para</dt><dd><p>Y}, foram realizadas as seguinte leituras: <span class="math notranslate nohighlight">\(z=86^{\circ}10'\)</span>;</p>
-</dd>
-</dl>
-<p><span class="math notranslate nohighlight">\(\textit{ri}=1,700\text{ m}\)</span>; <span class="math notranslate nohighlight">\(\textit{rs}=2,300\text{ m}\)</span>. Sabendo-se
+<hr class="docutils" />
+<p><span class="exem">7)</span>  Em nivelamento taqueométrico do ponto <span class="math notranslate nohighlight">\(X\)</span> para
+<span class="math notranslate nohighlight">\(Y\)</span>, foram realizadas as seguinte leituras: <span class="math notranslate nohighlight">\(z=86^{\circ}10'\)</span>;
+<span class="math notranslate nohighlight">\(\textit{ri}=1,700\,\text{m}\)</span>; <span class="math notranslate nohighlight">\(\textit{rs}=2,300\,\text{m}\)</span>. Sabendo-se
 que a altura do instrumento foi igual a leitura do retículo médio.
-Pergunta-se qual a  <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> }entre os pontos   X} e   Y}?</p>
-<p>end{exercicio}</p>
-<p>resp  <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> = }:math:<cite>4,002,text{m}</cite></p>
-<p>begin{exercicio}Com o objetivo de determinar a altitude do ponto
-inacessível,   P}, foram realizadas as seguintes medidas: comprimento
-de uma base   AB} de <span class="math notranslate nohighlight">\(50\,\text{m}\)</span>; ângulos horizontais <span class="math notranslate nohighlight">\(\widehat{PAB}\)</span>
-(<span class="math notranslate nohighlight">\(\alpha=67^{\circ}37'49''\)</span>) e <span class="math notranslate nohighlight">\(\widehat{ABP}\)</span> (<span class="math notranslate nohighlight">\(\beta=52^{\circ}25'38''\)</span>),
-conforme Figura <code class="xref eq docutils literal notranslate"><span class="pre">fig:cap_alt_perfil_exercicio}</span> <span class="pre">(plano</span> <span class="pre">topográfico);</span>
-<span class="pre">:math:</span></code>textit{ai}_{textit{A}}=1,745text{ m}`; e ângulo zenital da luneta
-em   A} visando   P} de <span class="math notranslate nohighlight">\(57^{\circ}27'31''\)</span>. Sabe-se que
-a altitude em   A} é de <span class="math notranslate nohighlight">\(564,693\,\text{m}\)</span>. Pede-se:</p>
-<p>begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
-- a  <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> de it A rm a it Prm;
-- a altitude de it Prm.
-end{enumerate}</p>
-<p>begin{SCfigure}[][htb]
-begin{tikzpicture} [scale=.7]
-tikzset{compass style/.append style={&lt;-&gt;}}
-tkzDefPoint(0,4){A};
-tkzDefPoint(1,0){B};
-tkzDefPoint(6,2.4){C};
-tkzDefMidPoint(A,B)
-tkzGetPoint{a}
-tkzDefMidPoint(B,C)
-tkzGetPoint{b}
-tkzDefMidPoint(C,A)
-tkzGetPoint{c}</p>
-<p>draw (100:1.9) node{base};
-draw (55:5) node{Vista no plano};</p>
-<p>tkzMarkAngle[size=.7,thick](B,A,C)
-tkzLabelAngle[pos = 1](B,A,C){<span class="math notranslate nohighlight">\(\alpha\)</span>}
-tkzLabelAngle[pos = -.3](B,A,C){<span class="math notranslate nohighlight">\(A\)</span>}
-tkzMarkAngle[size=.7,thick](C,B,A)
-tkzLabelAngle[pos = 1](C,B,A){<span class="math notranslate nohighlight">\(\beta\)</span>}
-tkzLabelAngle[pos = -.3](C,B,A){<span class="math notranslate nohighlight">\(B\)</span>}
-%tkzMarkAngle[size=.7,thick](A,C,B)
-tkzLabelAngle[pos = 0.3](A,C,B){<span class="math notranslate nohighlight">\(P\)</span>}
-%tkzLabelAngle[pos = -1](A,C,B){<span class="math notranslate nohighlight">\(\gamma\)</span>}</p>
-<p>tkzDrawSegment[thick, style=dashed](A,B)
-tkzDrawSegment[thick](B,C)
-tkzDrawSegment[thick](C,A)
-end{tikzpicture}caption{}label{fig:cap_alt_perfil_exercicio}
-end{SCfigure}
-end{exercicio}</p>
-<p>%begin{SCfigure}[][htb] includegraphics[trim = 0mm 0mm 0mm 0mm,scale=1]{Cap_altimetria/triangle}
-%caption{}
-%label{fig:cap_alt_perfil_exercicio} end{SCfigure}end{exercicio}</p>
-<p>resp <span class="math notranslate nohighlight">\(\mathrm{DH}_{AP}=45,786\text{ m}\)</span>; Altitude   P} = <span class="math notranslate nohighlight">\(595,654\)</span>
+Pergunta-se qual a <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> entre os pontos <span class="math notranslate nohighlight">\(X\)</span> e <span class="math notranslate nohighlight">\(Y\)</span>?</p>
+<p><span class="exem">Resp.:</span>  <span class="math notranslate nohighlight">\(\mathrm{DN}=4,002\,\text{m}\)</span></p>
+<hr class="docutils" />
+<p><span class="exem">8)</span> Com o objetivo de determinar a altitude do ponto
+inacessível, <span class="math notranslate nohighlight">\(P\)</span>, foram realizadas as seguintes medidas: comprimento
+de uma base <span class="math notranslate nohighlight">\(AB\)</span> de <span class="math notranslate nohighlight">\(50\,\text{m}\)</span>;
+ângulos horizontais <span class="math notranslate nohighlight">\(\widehat{PAB}\)</span>
+<span class="math notranslate nohighlight">\((\alpha=67^{\circ}37'49'')\)</span> e <span class="math notranslate nohighlight">\(\widehat{ABP}\)</span>
+<span class="math notranslate nohighlight">\((\beta=52^{\circ}25'38'')\)</span>,
+conforme <a class="reference internal" href="#triangle"><span class="std std-numref">Figura 90</span></a>
+(plano topográfico);
+<span class="math notranslate nohighlight">\(\textit{ai}_{\textit{A}}=1,745\,\text{m}\)</span>; e ângulo zenital da luneta
+em   <span class="math notranslate nohighlight">\(A\)</span> visando <span class="math notranslate nohighlight">\(P\)</span> de <span class="math notranslate nohighlight">\(57^{\circ}27'31''\)</span>. Sabe-se que
+a altitude em   <span class="math notranslate nohighlight">\(A\)</span> é de <span class="math notranslate nohighlight">\(564,693\,\text{m}\)</span>. Pede-se:</p>
+<ul class="simple">
+<li><p>a  <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> entre <span class="math notranslate nohighlight">\(A\)</span> e <span class="math notranslate nohighlight">\(P\)</span>;</p></li>
+<li><p>a altitude de <span class="math notranslate nohighlight">\(P\)</span>.</p></li>
+</ul>
+<figure class="align-center" id="id54">
+<span id="triangle"></span><a class="reference internal image-reference" href="../_images/triangle.png"><img alt="triangle.png" src="../_images/triangle.png" style="width: 273.7px; height: 201.6px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 90 </span><span class="caption-text">Ponto inacessível.</span><a class="headerlink" href="#id54" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p><span class="exem">Resp.:</span> <span class="math notranslate nohighlight">\(\mathrm{DH}_{AP}=45,786\,\text{m}\)</span>; Altitude   P} = <span class="math notranslate nohighlight">\(595,654\)</span>
 m.</p>
-<p>begin{exercicio}Calcule a altitude ortométrica <span class="math notranslate nohighlight">\((H)\)</span> para uma estação
+<hr class="docutils" />
+<p><span class="exem">9)</span> Calcule a altitude ortométrica <span class="math notranslate nohighlight">\((H)\)</span> para uma estação
 em que a altitude geométrica <span class="math notranslate nohighlight">\((h)\)</span>, cuja a medida com receptor GPS foi de
-<span class="math notranslate nohighlight">\(59,1\,\text{m}\)</span>. Sabe-se que a ondulação geoidal <span class="math notranslate nohighlight">\((N)\)</span> para a estação é de
-textendash <span class="math notranslate nohighlight">\(21,3\,\text{m}\)</span>.end{exercicio}</p>
-<p>resp <span class="math notranslate nohighlight">\(H=80,4\text{ m}\)</span>.</p>
-<p>begin{exercicio}Sobre um marco do IBGE foi estacionado um receptor
+<span class="math notranslate nohighlight">\(59,1\,\text{m}\)</span>. Sabe-se que a ondulação geoidal <span class="math notranslate nohighlight">\((N)\)</span>
+para a estação é de <span class="math notranslate nohighlight">\(-21,3\,\text{m}\)</span>.</p>
+<p><span class="exem">Resp.:</span> <span class="math notranslate nohighlight">\(H=80,4\,\text{m}\)</span>.</p>
+<hr class="docutils" />
+<p><span class="exem">10)</span> Sobre uma referência de nivel (RN) do IBGE foi estacionado um receptor
 GNSS, utilizando como método de cálculo da posição, a diferença de
 fase. Foi obtida com este receptor a altitude de <span class="math notranslate nohighlight">\(329,673\,\text{m}\)</span> (geométrica).
-Consultando o programa MAPGEO2010, foi verificado que a altitude ortométrica
-deste marco é de <span class="math notranslate nohighlight">\(335,958\,\text{m}\)</span>. Qual é a ondulação geoidal deste ponto?end{exercicio}</p>
-<p>resp <span class="math notranslate nohighlight">\(N=-6,285\text{ m}\)</span>.</p>
-<p>begin{exercicio}Utilizando-se um receptor GNSS, configurado para
-trabalhar com o Datum SIRGAS2000, obteve-se os seguintes dados de
+Consultando o <em>site</em> <a class="reference external" href="https://www.ibge.gov.br/geociencias/informacoes-sobre-posicionamento-geodesico/servicos-para-posicionamento-geodesico/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?edicao=31284&amp;t=processar-os-dados">HgeoHNOR2020</a>,
+foi verificado que a altitude ortométrica
+deste marco é de <span class="math notranslate nohighlight">\(335,958\,\text{m}\)</span>. Qual é a ondulação geoidal deste ponto?</p>
+<p><span class="exem">Resp.:</span> <span class="math notranslate nohighlight">\(N=-6,285\,\text{m}\)</span>.</p>
+<hr class="docutils" />
+<p><span class="exem">11)</span> Utilizando-se um receptor GNSS, configurado para
+trabalhar com o Datum <a class="reference external" href="https://geoftp.ibge.gov.br/informacoes_sobre_posicionamento_geodesico/rede_planialtimetrica/relatorio/rel_sirgas2000.pdf">SIRGAS2000</a>, obteve-se os seguintes dados de
 um determinado ponto: coordenadas <span class="math notranslate nohighlight">\(20,7615^{\circ}\)</span> de Latitude Sul
-e 41,5354:math:<cite>^{circ}</cite> de Longitude Oeste e, altitude geométrica de
+e <span class="math notranslate nohighlight">\(41,5354^{\circ}\)</span> de Longitude Oeste e, altitude geométrica de
 272,13 m. Calcule a altitude em relação ao geóide (altitude ortométrica).
-Utilizar o programa MAPGEO2010. end{exercicio}</p>
-<p>noindent textsl{Resp.}: <span class="math notranslate nohighlight">\(278,48\,\text{m}\)</span> .</p>
-<p>begin{exercicio}Em um perfil topográfico, a estaca <span class="math notranslate nohighlight">\(5+14\,\text{m}\)</span> tem
-<span class="math notranslate nohighlight">\(\mathrm{cota}\)</span> <span class="math notranslate nohighlight">\(200\)</span>,5 m e a estaca <span class="math notranslate nohighlight">\(10+2\,\text{m}\)</span> tem cota <span class="math notranslate nohighlight">\(204,7\,\text{m}\)</span>. O terreno entre
+Utilizar o programa <a class="reference external" href="https://www.ibge.gov.br/geociencias/informacoes-sobre-posicionamento-geodesico/servicos-para-posicionamento-geodesico/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?edicao=31284&amp;t=processar-os-dados">HgeoHNOR2020</a>.</p>
+<p>textsl{Resp.}: <span class="math notranslate nohighlight">\(278,59\,\text{m}\)</span> .</p>
+<hr class="docutils" />
+<p><span class="exem">12)</span> Em um perfil topográfico, a estaca <span class="math notranslate nohighlight">\(5+14\,\text{m}\)</span> tem
+<span class="math notranslate nohighlight">\(\mathrm{cota}\)</span> <span class="math notranslate nohighlight">\(200,5\,\text{m}\)</span> e a estaca <span class="math notranslate nohighlight">\(10+2\,\text{m}\)</span> tem cota <span class="math notranslate nohighlight">\(204,7\,\text{m}\)</span>. O terreno entre
 essas estacas é aproximadamente plano. Com estas informações calcular:</p>
-<p>begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
-- a declividade <span class="math notranslate nohighlight">\((\%)\)</span> de um greide que passaria pelas referidas estacas, se na estaca <span class="math notranslate nohighlight">\(5+14\,\text{m}\)</span> fosse feito um aterro de <span class="math notranslate nohighlight">\(1,7\,\text{m}\)</span>  de altura e um corte da mesma altura na estaca  <span class="math notranslate nohighlight">\(10+2\,\text{m}\)</span>;
-- a <span class="math notranslate nohighlight">\(\mathrm{cota}\)</span> do ponto de passagem e sua distância com relação à estaca <span class="math notranslate nohighlight">\(5+14\,\text{m}\)</span>;
-- a <span class="math notranslate nohighlight">\(\mathrm{cota}\)</span> no terreno e no greide na estaca 7.
-end{enumerate}</p>
-<p>end{exercicio}</p>
-<p>resp Declividade de 0,91%; <span class="math notranslate nohighlight">\(\mathrm{cota_{PP}}=202,6\text{ m}\)</span>
-e distância de PP à estaca <span class="math notranslate nohighlight">\(5+14\,\text{m}\)</span> é de <span class="math notranslate nohighlight">\(44\,\text{m}\)</span>; <span class="math notranslate nohighlight">\(\mathrm{cota_{greide(7)}}=202,436\text{ m}\)</span>
-e <span class="math notranslate nohighlight">\(\mathrm{cota_{terreno(7)}}=201,741\text{ m}\)</span>.</p>
-<p>begin{exercicio}Foi realizado um nivelamento e um contra-nivelamento
-entre os pontos   A }e   B}, obtendo-se a <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> de, respectivamente,
-<span class="math notranslate nohighlight">\(3,837\,\text{m}\)</span> e <span class="math notranslate nohighlight">\(3,842\,\text{m}\)</span>. Sabendo-se que o trecho   AB }tem uma extensão
+<ol class="loweralpha simple">
+<li><p>a declividade <span class="math notranslate nohighlight">\((\%)\)</span> de um greide que passaria pelas referidas estacas, se na estaca <span class="math notranslate nohighlight">\(5+14\,\text{m}\)</span> fosse feito um aterro de <span class="math notranslate nohighlight">\(1,7\,\text{m}\)</span>  de altura e um corte da mesma altura na estaca  <span class="math notranslate nohighlight">\(10+2\,\text{m}\)</span>;</p></li>
+<li><p>a <span class="math notranslate nohighlight">\(\mathrm{cota}\)</span> do ponto de passagem e sua distância com relação à estaca <span class="math notranslate nohighlight">\(5+14\,\text{m}\)</span>;</p></li>
+<li><p>a <span class="math notranslate nohighlight">\(\mathrm{cota}\)</span> no terreno e no greide na estaca <span class="math notranslate nohighlight">\(7\)</span>.</p></li>
+</ol>
+<p><span class="exem">Resp.:</span> <span class="math notranslate nohighlight">\(d=0,91\%\)</span>; <span class="math notranslate nohighlight">\(\mathrm{cota_{PP}}=202,6\,\text{m}\)</span>
+e distância de PP à estaca <span class="math notranslate nohighlight">\(5+14\,\text{m}\)</span> é de <span class="math notranslate nohighlight">\(44\,\text{m}\)</span>; <span class="math notranslate nohighlight">\(\mathrm{cota_{greide[7]}}=202,436\,\text{m}\)</span>
+e <span class="math notranslate nohighlight">\(\mathrm{cota_{terreno[7]}}=201,741\,\text{m}\)</span>.</p>
+<hr class="docutils" />
+<p><span class="exem">13)</span> Foi realizado um nivelamento e um contra-nivelamento
+entre os pontos   <span class="math notranslate nohighlight">\(A\)</span> e   <span class="math notranslate nohighlight">\(B\)</span>, obtendo-se
+a <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> de, respectivamente,
+<span class="math notranslate nohighlight">\(3,837\,\text{m}\)</span> e <span class="math notranslate nohighlight">\(3,842\,\text{m}\)</span>. Sabendo-se que o
+trecho   AB }tem uma extensão
 de <span class="math notranslate nohighlight">\(580\,\text{m}\)</span>. Pede-se:</p>
-<p>begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
-- o erro cometido no trecho;
-- considerando um levantamento da classe IIN da NBR13133, este levantamento está dentro do limite tolerado?
-end{enumerate}</p>
-<p>end{exercicio}</p>
-<p>resp erro = 0,005 m; está de acordo com a Norma.</p>
-<p>begin{exercicio}Com os dados das cadernetas de nivelamento e contra-nivelamento
-(Tabela :eq:<a href="#id34"><span class="problematic" id="id35">`</span></a>tab:exer_erro_nivelamento}), e sabendo-se que as estacas
-estão espaçadas de 20 m, calcular:</p>
-<p>begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
-- o erro cometido no trecho;
-- considerando um levantamento da classe IIN da NBR13133, este levantamento está dentro do limite tolerado?
-end{enumerate}</p>
-<p>end{exercicio}
-{renewcommand{arraystretch}{.7}
-begin{SCtable}[][htb]
-caption{Nivelamento e conta-nivelamento.}
-setlength{extrarowheight}{4pt} %
-begin{tabular}{cm{1.2cm}m{1.2cm}m{1.2cm}m{1.2cm}m{1.2cm}}
-bf Nivelamento</p>
-<dl class="simple">
-<dt>Estaca   <span class="math notranslate nohighlight">\(\mathrm{ré}\)</span>    AI    <span class="math notranslate nohighlight">\(\mathrm{PI}\)</span>   <span class="math notranslate nohighlight">\(\mathrm{PM}\)</span>   <span class="math notranslate nohighlight">\(\mathrm{cota}\)</span></dt><dd><p><span class="math notranslate nohighlight">\(4\)</span>      <span class="math notranslate nohighlight">\(3,321\)</span>                                  <span class="math notranslate nohighlight">\(100,000\)</span></p>
-</dd>
-</dl>
-<p><span class="math notranslate nohighlight">\(5\)</span>                               <span class="math notranslate nohighlight">\(1,325\)</span>
-<span class="math notranslate nohighlight">\(6\)</span>                               <span class="math notranslate nohighlight">\(3,793\)</span>
-<span class="math notranslate nohighlight">\(7\)</span>       <span class="math notranslate nohighlight">\(2,650\)</span>                           <span class="math notranslate nohighlight">\(1,467\)</span>
-<span class="math notranslate nohighlight">\(8\)</span>                               <span class="math notranslate nohighlight">\(3,820\)</span>
-<span class="math notranslate nohighlight">\(9\)</span>                                       <span class="math notranslate nohighlight">\(2,100\)</span></p>
-<p>bf Contra-Nive.</p>
-<p>Estaca   <span class="math notranslate nohighlight">\(\mathrm{ré}\)</span>   AI   <span class="math notranslate nohighlight">\(\mathrm{PI}\)</span>    <span class="math notranslate nohighlight">\(\mathrm{PM}\)</span>   <span class="math notranslate nohighlight">\(\mathrm{cota}\)</span></p>
-<p>9       <span class="math notranslate nohighlight">\(1,200\)</span>
-8                       <span class="math notranslate nohighlight">\(2,923\)</span>
-7       <span class="math notranslate nohighlight">\(0,621\)</span>                   <span class="math notranslate nohighlight">\(1,756\)</span>
-6                       <span class="math notranslate nohighlight">\(2,947\)</span>
-5       <span class="math notranslate nohighlight">\(0,710\)</span>                   <span class="math notranslate nohighlight">\(0,479\)</span>
-4                               <span class="math notranslate nohighlight">\(2,706\)</span></p>
-<p>end{tabular}
-label{tab:exer_erro_nivelamento}
-end{SCtable}</p>
-<p>resp erro do nivelamento <span class="math notranslate nohighlight">\(0,006\,\text{m}\)</span>; está de acordo com a Norma.</p>
-<p>begin{exercicio}Com os dados de um NGC apresentados na caderneta
-de campo da Tabela :eq:<a href="#id36"><span class="problematic" id="id37">`</span></a>tab:exer_NGC_2}, calcule:</p>
-<p>begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
-- a declividade, em %, de um plano inclinado que passa pelas estacas <span class="math notranslate nohighlight">\(7+12\,\text{m}\)</span> e <span class="math notranslate nohighlight">\(12+5\,\text{m}\)</span>, considerando-se que o espaçamento entre as estacas é de <span class="math notranslate nohighlight">\(20,0\,\text{m}\)</span> ;
-- as  <span class="math notranslate nohighlight">\(\mathrm{CV}\)</span>  para todos as estacas;
-- em que estaca(s) se encontra(m) o(s) ponto(s) de passagem.
-end{enumerate}</p>
-<p>end{exercicio}
-begin{SCtable}[][htb]
-centering
-caption{Tabela de nivelamento.}
-setlength{extrarowheight}{4pt} %
-begin{tabular}{cccccccm{1.2cm}}</p>
-<p>Estaca    <span class="math notranslate nohighlight">\(\mathrm{ré}\)</span>    AI   <span class="math notranslate nohighlight">\(\mathrm{PI}\)</span>   <span class="math notranslate nohighlight">\(\mathrm{PM}\)</span>   <span class="math notranslate nohighlight">\(\mathrm{cota}\)</span>   greide   <span class="math notranslate nohighlight">\(\mathrm{CV}\)</span></p>
-<blockquote>
-<div><p><span class="math notranslate nohighlight">\(7+12\,\text{m}\)</span>    <span class="math notranslate nohighlight">\(1,316\)</span>                       <span class="math notranslate nohighlight">\(200,0\)</span></p>
-</div></blockquote>
-<p><span class="math notranslate nohighlight">\(8\)</span>                      <span class="math notranslate nohighlight">\(2,725\)</span>
-<span class="math notranslate nohighlight">\(9\)</span>        <span class="math notranslate nohighlight">\(2,321\)</span>                <span class="math notranslate nohighlight">\(0,214\)</span>
-<span class="math notranslate nohighlight">\(10 \)</span>                <span class="math notranslate nohighlight">\(2,500\)</span>
-<span class="math notranslate nohighlight">\(11\)</span>                     <span class="math notranslate nohighlight">\(1,470\)</span>
-<span class="math notranslate nohighlight">\(12\)</span>                     <span class="math notranslate nohighlight">\(3,218\)</span>
-<span class="math notranslate nohighlight">\(12+5\,\text{m}\)</span>                                <span class="math notranslate nohighlight">\(2,200\)</span></p>
-<p>end{tabular}label{tab:exer_NGC_2}end{SCtable}</p>
-<p>resp a)   d} = <span class="math notranslate nohighlight">\(-1,008\)</span>%; b) <span class="math notranslate nohighlight">\(\mathrm{CV}{}_{7+12{\rm \ m}}\)</span>
-= 0 m, <span class="math notranslate nohighlight">\(\mathrm{CV}_{8}=1,328\,\text{m}\)</span>, <span class="math notranslate nohighlight">\(\mathrm{CV}_{9}=-1,384\,\text{m}\)</span>,
+<ol class="loweralpha simple">
+<li><p>o erro cometido no trecho;</p></li>
+<li><p>considerando um levantamento da classe IIN da NBR13133, este levantamento está dentro do limite tolerado?</p></li>
+</ol>
+<p><span class="exem">Resp.:</span> a) <span class="math notranslate nohighlight">\(\mathrm{erro=0,005\,m}\)</span>; b) está de acordo com a Norma.</p>
+<hr class="docutils" />
+<p><span class="exem">14)</span> Com os dados das cadernetas de nivelamento e contra-nivelamento
+(Tabelas abaixo), e sabendo-se que as estacas
+estão espaçadas de <span class="math notranslate nohighlight">\(20\,\text{m}\)</span>, calcular:</p>
+<ol class="loweralpha simple">
+<li><p>o erro cometido no trecho;</p></li>
+<li><p>considerando um levantamento da classe IIN da NBR13133, este levantamento está dentro do limite tolerado?</p></li>
+</ol>
+<table class="styled-table docutils align-default" id="id55">
+<caption><span class="caption-number">Table 17 </span><span class="caption-text">Nivelamento.</span><a class="headerlink" href="#id55" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="center-align no-left-divider single-right-divider head"><p>Estaca</p></th>
+<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{ré}\)</span></p></th>
+<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{AI}\)</span></p></th>
+<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{PI}\)</span></p></th>
+<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{PM}\)</span></p></th>
+<th class="center-align single-left-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{cota}\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(4\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(3,321\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider"><p><span class="math notranslate nohighlight">\(100,000\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(5\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(1,325\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider"></td>
+</tr>
+<tr class="row-even"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(6\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(3,793\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider"></td>
+</tr>
+<tr class="row-odd"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(7\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(2,650\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(1,467\)</span></p></td>
+<td class="center-align single-left-divider"></td>
+</tr>
+<tr class="row-even"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(8\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(3,820\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider"></td>
+</tr>
+<tr class="row-odd"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(9\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(2,100\)</span></p></td>
+<td class="center-align single-left-divider"></td>
+</tr>
+</tbody>
+</table>
+<table class="styled-table docutils align-default" id="id56">
+<caption><span class="caption-number">Table 18 </span><span class="caption-text">Contra-nivelamento.</span><a class="headerlink" href="#id56" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="center-align no-left-divider single-right-divider head"><p>Estaca</p></th>
+<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{ré}\)</span></p></th>
+<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{AI}\)</span></p></th>
+<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{PI}\)</span></p></th>
+<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{PM}\)</span></p></th>
+<th class="center-align single-left-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{cota}\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(9\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(1,200\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider"></td>
+</tr>
+<tr class="row-odd"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(8\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(2,923\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider"></td>
+</tr>
+<tr class="row-even"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(7\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(0,621\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(1,756\)</span></p></td>
+<td class="center-align single-left-divider"></td>
+</tr>
+<tr class="row-odd"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(6\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(2,947\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider"></td>
+</tr>
+<tr class="row-even"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(5\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(0,710\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(0,479\)</span></p></td>
+<td class="center-align single-left-divider"></td>
+</tr>
+<tr class="row-odd"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(4\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(2,706\)</span></p></td>
+<td class="center-align single-left-divider"></td>
+</tr>
+</tbody>
+</table>
+<p><span class="exem">Resp.:</span> erro do nivelamento <span class="math notranslate nohighlight">\(0,006\,\text{m}\)</span>; está de acordo com a Norma.</p>
+<hr class="docutils" />
+<p><span class="exem">15)</span> Com os dados de um NGC apresentados na caderneta
+de campo da Tabela abaixo, calcule:</p>
+<ol class="loweralpha simple">
+<li><p>a declividade, em %, de um plano inclinado que passa pelas estacas <span class="math notranslate nohighlight">\(7+12\,\text{m}\)</span> e <span class="math notranslate nohighlight">\(12+5\,\text{m}\)</span>, considerando-se que o espaçamento entre as estacas é de <span class="math notranslate nohighlight">\(20,0\,\text{m}\)</span> ;</p></li>
+<li><p>as <span class="math notranslate nohighlight">\(\mathrm{CV}\)</span>  para todos as estacas;</p></li>
+<li><p>em que estaca(s) se encontra(m) o(s) ponto(s) de passagem.</p></li>
+</ol>
+<table class="colwidths-given styled-table docutils align-default" id="id57">
+<caption><span class="caption-number">Table 19 </span><span class="caption-text">Tabela de nivelamento.</span><a class="headerlink" href="#id57" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="center-align no-left-divider single-right-divider head"><p>Estaca</p></th>
+<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{ré}\)</span></p></th>
+<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{AI}\)</span></p></th>
+<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{PI}\)</span></p></th>
+<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{PM}\)</span></p></th>
+<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{cota}\)</span></p></th>
+<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{greide}\)</span></p></th>
+<th class="center-align single-left-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{CV}\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(7+12\,\text{m}\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(1,316\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(200,0\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider"></td>
+</tr>
+<tr class="row-odd"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(8\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(2,725\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider"></td>
+</tr>
+<tr class="row-even"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(9\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(2,321\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(0,214\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider"></td>
+</tr>
+<tr class="row-odd"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(10\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(0,340\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(2,500\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider"></td>
+</tr>
+<tr class="row-even"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(11\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(1,470\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider"></td>
+</tr>
+<tr class="row-odd"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(12\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(3,218\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider"></td>
+</tr>
+<tr class="row-even"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(12+5\,\text{m}\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(2,200\)</span></p></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider single-right-divider"></td>
+<td class="center-align single-left-divider"></td>
+</tr>
+</tbody>
+</table>
+<p><span class="exem">Resp.:</span> a) <span class="math notranslate nohighlight">\(d=-1,008\%\)</span>; b) <span class="math notranslate nohighlight">\(\mathrm{CV}_{7+12{\rm \ m}}=0\,\text{m}\)</span>,
+<span class="math notranslate nohighlight">\(\mathrm{CV}_{8}=1,328\,\text{m}\)</span>, <span class="math notranslate nohighlight">\(\mathrm{CV}_{9}=-1,384\,\text{m}\)</span>,
 <span class="math notranslate nohighlight">\(\mathrm{CV}_{10}=-1,407\,\text{m}\)</span>, <span class="math notranslate nohighlight">\(\mathrm{CV}_{11}=-0,478\,\text{m}\)</span>, <span class="math notranslate nohighlight">\(\mathrm{CV}_{12}=1,068\,\text{m}\)</span>,
 <span class="math notranslate nohighlight">\(\mathrm{CV}_{12+5\,{\rm m}}=0\,\text{m}\)</span>; c) <span class="math notranslate nohighlight">\(\mathrm{PP_{1}}=8+9.795\,\text{m}\)</span>,
-<span class="math notranslate nohighlight">\(\mathrm{PP_{2}}=11+6.183:math:\,\text{m}\)</span> .</p>
+<span class="math notranslate nohighlight">\(\mathrm{PP_{2}}=11+6.183\,\text{m}\)</span> .</p>
 <p class="rubric">Footnotes</p>
 <dl class="footnote brackets">
-<dt class="label" id="f1"><span class="brackets"><a class="fn-backref" href="#id27">1</a></span></dt>
+<dt class="label" id="f1"><span class="brackets"><a class="fn-backref" href="#id30">1</a></span></dt>
 <dd><p>Neste nivelamento: o nível é da classe 2, com precisão média, desvio-padrão
 <span class="math notranslate nohighlight">\(\leq\pm10\text{ mm/km}\)</span>; as miras dobráveis, centimétricas e devidamente
 aferidas, providas de prumo esférico; pode ser realizado em circuito
 fechado NBR13133, páginas 6 e 17</p>
 </dd>
 </dl>
-</section>
 </section>
 </section>
 
@@ -1488,6 +1653,7 @@ fechado NBR13133, páginas 6 e 17</p>
 <li><a class="reference internal" href="#greide">Greide</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#exercicios">Exercícios</a></li>
 </ul>
 </li>
 </ul>
@@ -1500,8 +1666,8 @@ fechado NBR13133, páginas 6 e 17</p>
   </div>
   <div class="sphinxnext">
     <h4>Next page</h4>
-    <p class="topless"><a href="referencias.html"
-                          title="Next page">&rarr; Referências</a></p>
+    <p class="topless"><a href="capitulo10.html"
+                          title="Next page">&rarr; Capitulo 10: Curva de nível e cáculo de volume</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>Esta Página</h3>
@@ -1550,7 +1716,7 @@ fechado NBR13133, páginas 6 e 17</p>
           <a href="../genindex.html" title="Índice Geral"
              >índice</a></li>
         <li class="right" >
-          <a href="referencias.html" title="Referências"
+          <a href="capitulo10.html" title="Capitulo 10: Curva de nível e cáculo de volume"
              >próximo</a> &nbsp; &nbsp;</li>
         <li class="right" >
           <a href="capitulo8.html" title="Capitulo 8: Poligonal"
