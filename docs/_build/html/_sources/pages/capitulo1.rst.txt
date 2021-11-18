@@ -49,7 +49,7 @@ estes pontos serão relembrados.
 Duas semirretas, quando não coincidentes e com ponto de origem em comum, ponto este
 dito vértice, tem um plano que as contêm e demarcam duas regiões deste. Os equipamentos topográficos
 medem os ângulos no plano horizontal
-e vertical, onde veremos maiores detalhes no :any:`RST Capitulo7`. A noção de ângulo é estabelecida pela medida da abertura entre estas
+e vertical, onde veremos maiores detalhes no :any:`RST Capitulo 7`. A noção de ângulo é estabelecida pela medida da abertura entre estas
 semirretas, neste caso, dois ângulos. Do mesmo modo, dois segmentos
 de reta, não sobrepostos, com origem comum, definem dois ângulos,
 se estendermos em duas semirretas a partir da origem dos segmentos.
@@ -579,7 +579,7 @@ tipo de coordenada polar, em que o ângulo é denominado de Azimute,
 e o raio o comprimento do alinhamento. Porém o ângulo de Azimute é
 medido a partir do eixo-:math:`y` positivo, e o sentido de contagem angular
 é o horário. Mais detalhes serão vistos posteriormente, no
-:any:`RST Capitulo7`.
+:any:`RST Capitulo 7`.
 
 .. _figCoordPolar:
 
