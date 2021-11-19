@@ -81,7 +81,7 @@ elementos da altimetria, em que:
 
    Elementos básicos da altimetria (adaptado de :cite:`WOLF`).
 
-Pode-se ainda recordar da Secção :any:`Datum Vertical`,
+Pode-se ainda recordar da seção :any:`Datum Vertical`,
 que a altitude ortométrica corresponde à distância vertical entre
 um ponto ao Datum Altimétrico utilizado, no caso do Brasil Datum de
 Imbituba ou o de Santana.
@@ -338,7 +338,7 @@ Em topografia, chama-se de nivelamento, aos métodos utilizados para
 medir a :math:`\mathrm{DN}`, a altitude ou a cota. Vários são os métodos que podem
 ser empregados para o nivelamento. A utilização de um ou outro método
 dependerá dos objetivos do nivelamento (ver :cite:t:`NBR13133`).
-Nesta secção serão apresentados os métodos: *i*) :ref:`Nivelamento barométrico`;
+Nesta seção serão apresentados os métodos: *i*) :ref:`Nivelamento barométrico`;
 *ii*) :ref:`Nivelamento trigonométrico`; *iii*) :ref:`Nivelamento trigonométrico`;
 *iv*) :ref:`Nivelamento GNSS`; e *v*) :ref:`nivelamento geométrico`.
 
@@ -415,7 +415,7 @@ clinômetros. Na :numref:`cap_niv_trig` é apresentado um esquema do
 nivelamento trigonométrico para medidas de :math:`\mathrm{DN}` entre os pontos :math:`\mathrm{A}` e
 :math:`\mathrm{B}`, materializados por piquetes. No ponto :math:`\mathrm{A}` é estacionada a
 estação total, e em :math:`\mathrm{B}`, o prisma. O centro da estação total corresponde
-a :math:`\mathrm{C}`, e a intersecção da linha horizontal que passa por C com a linha
+a :math:`\mathrm{C}`, e a interseção da linha horizontal que passa por C com a linha
 vertical que passa por :math:`\mathrm{B}`, corresponde à :math:`\mathrm{E}`. A distância vertical entre
 :math:`\mathrm{E}` e :math:`\mathrm{D}` denominaremos por :math:`V`. Considerando o triângulo retângulo
 :math:`\mathrm{CED}` e que foi medida a :math:`\mathrm{DI}`, tem-se :math:`V`:
@@ -923,7 +923,7 @@ medido no NGC é sempre denominado de :math:`\mathrm{PM}`.
 Os cálculos do NGC podem ser verificados de acordo com a Equação :eq:`eq:verificacaongc`.
 Nesta verificação, não é observado se o trabalho foi bem realizado
 ou não. Ela apenas informa se os cálculos foram feitos corretamente.
-A avaliação da qualidade do levantamento será avaliada na Secção
+A avaliação da qualidade do levantamento será avaliada na seção
 :eq:`eq:tolerancia_nivelamento`.
 
 .. math::
@@ -985,7 +985,7 @@ resultados no NG. Podendo-se citar, por exemplo :cite:`NBR13133`:
 - sejam estabelecidos pontos materializados para o controle do nivelamento;
 - realização do nivelamento e o contra-nivelamente em horários destintos.
   Assim, pode-se calcular a diferença entre o desnível nas duas medições,
-  e compará-lo com a tolerância do nivelamento (Secção :ref:`tolerancia_nivelamento`);
+  e compará-lo com a tolerância do nivelamento (seção :ref:`tolerancia_nivelamento`);
 - os comprimentos das visadas de :math:`\mathrm{ré}` e de :math:`\mathrm{vante}` devem ser de no máximo
   :math:`80\,\text{m}`, minimizando os erros de refração e curvatura da terra, além
   de facilitar as leituras na mira. As distâncias podem ser medidas

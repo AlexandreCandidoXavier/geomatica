@@ -105,27 +105,27 @@ logicamente, atribuir a sua cota. Para se calcular a distância vertical
 entre duas curvas na sequência, toma-se, por exemplo, as curvas mestras
 <span class="math notranslate nohighlight">\(400\,\text{m}\)</span> e <span class="math notranslate nohighlight">\(200\,\text{m}\)</span>, então:</p>
 <div class="math notranslate nohighlight" id="equation-eq-equi-vertical">
-<span class="eqno">(104)<a class="headerlink" href="#equation-eq-equi-vertical" title="Permalink to this equation">¶</a></span>\[\frac{400\,\mathrm{m}-100\,\mathrm{m}}{5}=10\,\mathrm{m},\]</div>
+<span class="eqno">(104)<a class="headerlink" href="#equation-eq-equi-vertical" title="Permalink to this equation">¶</a></span>\[\frac{400\,\mathrm{m}-200\,\mathrm{m}}{5}=40\,\mathrm{m},\]</div>
 <p>isto é, as curvas de nível terão cotas de <span class="math notranslate nohighlight">\(40\,\text{m}\)</span> em
 <span class="math notranslate nohighlight">\(40\,\text{m}\)</span>. Entende-se por <strong>equidistância vertical</strong>
 de curvas de nível, a distância vertical entre uma curva e a sua sequente,
 sendo este valor constante no mapa. Logo, neste nosso exemplo, a
 equidistância vertical do mapa apresentado na <a class="reference internal" href="#curva-nivel1"><span class="std std-numref">Figura 91</span></a> é de
 <span class="math notranslate nohighlight">\(40\,\text{m}\)</span>.</p>
-<figure class="align-center" id="id28">
+<figure class="align-center" id="id31">
 <span id="curva-nivel1"></span><a class="reference internal image-reference" href="../_images/topo-plot_3d_script_name_curvas_de_nivel.py.png"><img alt="cap_altimetria_definicoes.png" src="../_images/topo-plot_3d_script_name_curvas_de_nivel.py.png" style="width: 536.4px; height: 271.2px;" /></a>
 <figcaption>
 <p><span class="caption-number">Figura 91 </span><span class="caption-text">Representação do relevo em 3D, de uma área do município de Florianopopis-SC,
 juntamente com aas curvas de nível,
-com equidistância vertical de <span class="math notranslate nohighlight">\(40\,\text{m}\)</span>.</span><a class="headerlink" href="#id28" title="Permalink to this image">¶</a></p>
+com equidistância vertical de <span class="math notranslate nohighlight">\(40\,\text{m}\)</span>.</span><a class="headerlink" href="#id31" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id29">
+<figure class="align-center" id="id32">
 <span id="curva-nivel2"></span><a class="reference internal image-reference" href="../_images/topo-plot_2d_script_name_curvas_de_nivel.py.png"><img alt="cap_altimetria_definicoes.png" src="../_images/topo-plot_2d_script_name_curvas_de_nivel.py.png" style="width: 423.75px; height: 421.05px;" /></a>
 <figcaption>
 <p><span class="caption-number">Figura 92 </span><span class="caption-text">Cuscas de nível no plano referente à <a class="reference internal" href="#curva-nivel1"><span class="std std-numref">Figura 91</span></a>.
 Curvas de nível com equidistância vertical de <span class="math notranslate nohighlight">\(40\,\text{m}\)</span>, com mestras
-mais com equidistância vertical de <span class="math notranslate nohighlight">\(40\,\text{m}\)</span>.</span><a class="headerlink" href="#id29" title="Permalink to this image">¶</a></p>
+mais com equidistância vertical de <span class="math notranslate nohighlight">\(40\,\text{m}\)</span>.</span><a class="headerlink" href="#id32" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>A equidistância vertical que será utilizada no mapeamento vai depender do
@@ -171,23 +171,42 @@ pontos de destaque são cotados, podendo ser, por exemplo, picos, depressões
 locais e pontos onde as curvas de nível são muito espaçadas (terrenos planos).
 Para apresentar a posição destes pontos cotados, usa-se, normalmente, o
 símbolo <span class="math notranslate nohighlight">\(\times\)</span>, acompanhado do valor da cota ou da altitude.</p>
-<figure class="align-center" id="id30">
-<span id="curva-nivel"></span><a class="reference internal image-reference" href="../_images/curva_nivel1.png"><img alt="cap_altimetria_definicoes.png" src="../_images/curva_nivel1.png" style="width: 525.35px; height: 599.55px;" /></a>
+<figure class="align-center" id="id33">
+<span id="curva-nivel"></span><a class="reference internal image-reference" href="../_images/curva_nivel1.png"><img alt="cap_altimetria_definicoes.png" src="../_images/curva_nivel1.png" style="width: 375.25px; height: 428.25px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 93 </span><span class="caption-text">Cuvas de nível com equidistância vertical de <span class="math notranslate nohighlight">\(10\,\text{m}\)</span>.
+<p><span class="caption-number">Figura 93 </span><span class="caption-text">Considerações do relevo a partir da leitura das curvas de nível
+com equidistância vertical de <span class="math notranslate nohighlight">\(10\,\text{m}\)</span>.
 Linhas tracejadas na cor azul, são cursos de água, e as marcas <span class="math notranslate nohighlight">\(\times\)</span>
-são pontos cotados.</span><a class="headerlink" href="#id30" title="Permalink to this image">¶</a></p>
+são pontos cotados.</span><a class="headerlink" href="#id33" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
-<p>subsection{Determinação das curvas de nível}</p>
-<p>Existem vários métodos para se determinar as curvas de nível. Para todos os métodos, há necessidade de se conhecer, na área a ser levantada, as coordenadas de pontos, juntamente com os seus respectivos valores da altitude ou cota. As coordenadas e cotas dos pontos, em levantamentos convencionais, são obtidas com o auxílio da estação total, pelo método da irradiação. Em levantamentos que requerem maior precisão na determinação das cotas, é preferível o nivelamento do tipo geométrico, ou seja, emprega-se o nível como equipamento. Quanto à distribuição espacial dos pontos cotados, estes podem estar uniformementes distribuídos ou não. Quando os pontos são uniformemente distribuídos, denominamos de index{grade regular}grade regular, sendo utilizada em terrenos de topografia mais uniforme. Já uma grade irregular, é aquela em que os pontos cotados não são uniformemente distribuídos no terreno, podendo ser utilizada para todos os tipos de terreno.</p>
-<p>Nesta secção será apresentada um método de determinação de curvas de nível para quando os pontos estão distribuídos em grade regular. Para a geração das curvas de nível de grade irregular, pode-se consultar  citeonline{comastri}, citeonline{WOLF} e citeonline{cole2009surveyor}.</p>
-<p>Saliente-se também que no dia a dia de um técnico em topografia, mapas com curvas de nível são geradas rapidamente por meio de programas de computador, podendo-se destacar os programas QGIS footnote{Disponível em: url{<a class="reference external" href="https://www.qgis.org/pt_BR/site/">https://www.qgis.org/pt_BR/site/</a>}}, que é gratuito e o Autocad. Resumidamente, para se obter as curvas em computador, deve-se importar ou inserir os dados de posição e de altitude dos pontos <span class="math notranslate nohighlight">\((x,\,y,\,z)\)</span> no programa utilizado, sendo que as posições podem estar em grade regular ou irregular; e, para finalizar a operação, defini-se alguns parâmetros, como a equidistância vertical desejada. Para descrição detalhada dos procedimentos necessários, consultar os manuais dos respectivos programas e, para estudar a teoria por trás da geração, pode-se consultar citeonline{WOLF}.</p>
-<p>subsubsection*{Curva de nível em grade regular}index{curva de nível!grade regular}
-parpic[r]{begin{minipage}{100mm}includegraphics[trim ={4mm 0mm 0mm 0mm},clip,scale=0.7]{curva_nivel3}captionof{figure}{Método da determinação das curvas de nível por meio de dados em grade regular.}label{fig:curva_nivel3}end{minipage}}
+<section id="determinacao-das-curvas-de-nivel">
+<h3>Determinação das curvas de nível<a class="headerlink" href="#determinacao-das-curvas-de-nivel" title="Link permanente para este título">¶</a></h3>
+<p>Existem vários métodos para se determinar as curvas de nível. Para todos os métodos,
+há necessidade de se conhecer, na área a ser levantada, as coordenadas de pontos,
+juntamente com os seus respectivos valores da altitude ou cota. As coordenadas e
+cotas dos pontos, em levantamentos convencionais, são obtidas com o auxílio da
+estação total, pelo método da irradiação. Em levantamentos que requerem maior
+precisão na determinação das cotas, é preferível o nivelamento do tipo geométrico,
+ou seja, emprega-se o nível como equipamento. Quanto à distribuição espacial dos
+pontos cotados, estes podem estar uniformementes distribuídos ou não. Quando os
+pontos são uniformemente distribuídos, denominamos de index{grade regular}grade
+regular, sendo utilizada em terrenos de topografia mais uniforme. Já uma grade
+irregular, é aquela em que os pontos cotados não são uniformemente distribuídos no
+terreno, podendo ser utilizada para todos os tipos de terreno.</p>
+<p>Nesta secção será apresentada um método de determinação de curvas de nível para
+quando os pontos estão distribuídos em grade regular. Para a geração das curvas
+de nível de grade irregular, pode-se consultar
+<span id="id8">[<a class="reference internal" href="referencias.html#id8" title="J. A. Comastri and J. C. Tuler. Topografia: Altimetria. Editora UFV, Viçosa, MG, 3 edition, 2003.">CT03</a>]</span>, <span id="id9">[<a class="reference internal" href="referencias.html#id18" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span> e <span id="id10">[<a class="reference internal" href="referencias.html#id2" title="G.M. Cole and A.L. Harbin. Surveyor Reference Manual. Professional Publications, 2009. ISBN 9781591261742. URL: http://books.google.com.br/books?id=bFun4fjl4P0C.">CH09</a>]</span>.</p>
+<p>Saliente-se também que no dia a dia de um técnico em topografia, mapas com
+curvas de nível são geradas rapidamente por meio de programas de computador,
+podendo-se destacar os programas QGIS footnote{Disponível em: url{<a class="reference external" href="https://www.qgis.org/pt_BR/site/">https://www.qgis.org/pt_BR/site/</a>}}, que é gratuito e o Autocad. Resumidamente, para se obter as curvas em computador, deve-se importar ou inserir os dados de posição e de altitude dos pontos <span class="math notranslate nohighlight">\((x,\,y,\,z)\)</span> no programa utilizado, sendo que as posições podem estar em grade regular ou irregular; e, para finalizar a operação, defini-se alguns parâmetros, como a equidistância vertical desejada. Para descrição detalhada dos procedimentos necessários, consultar os manuais dos respectivos programas e, para estudar a teoria por trás da geração, pode-se consultar citeonline{WOLF}.</p>
+<section id="curva-de-nivel-em-grade-regular">
+<h4>Curva de nível em grade regular<a class="headerlink" href="#curva-de-nivel-em-grade-regular" title="Link permanente para este título">¶</a></h4>
+<p>parpic[r]{begin{minipage}{100mm}includegraphics[trim ={4mm 0mm 0mm 0mm},clip,scale=0.7]{curva_nivel3}captionof{figure}{Método da determinação das curvas de nível por meio de dados em grade regular.}label{fig:curva_nivel3}end{minipage}}
 Nesta secção veremos a metodologia para determinação de curvas de nível quando o terreno é nivelado por meio de uma grade regular. O nivelamento por grade regular é utilizado em terreno  de declividade uniforme e em área pequenas.</p>
 <p>No terreno, é realizada a index{quadriculação}quadriculação (área dividida em quadrados), com estacas materializando os vértices, formando uma grade. As math:<cite>text{DH}`s entre as estacas são, normalmente, de :math:`10,text{m}</cite> ou de <span class="math notranslate nohighlight">\(20\,\text{m}\)</span>, a depender do relevo a ser levantado. Os pontos são cotados pelo método do nivelamento geométrico ou pelo nivelamento trigonométrico com teodolitos ou estações totais. As linhas e colunas da grade são nomeadas para se localizar as estacas no terreno.</p>
-<p>Para exemplificar a metodologia da determinação das curvas de nível, vamos utilizar a Figura ref{fig:curva_nivel3}. Na Figura ref{fig:curva_nivel3}a é apresentada a grade, com as respectivas cotas das estacas, em metros. As linhas foram nominadas pelas letras <a href="#id8"><span class="problematic" id="id9">``</span></a>A», <a href="#id10"><span class="problematic" id="id11">``</span></a>B» e <a href="#id12"><span class="problematic" id="id13">``</span></a>C», enquanto as colunas, pelos números <a href="#id14"><span class="problematic" id="id15">``</span></a>1», <a href="#id16"><span class="problematic" id="id17">``</span></a>2» e <a href="#id18"><span class="problematic" id="id19">``</span></a>3». Desta forma, pode-se verificar facilmente as cotas das estacas,  por exemplo, a estaca B2 tem cota de <span class="math notranslate nohighlight">\(102,5\,\text{m}\)</span>.  Para esta grade, vamos considerar que a math:<cite>text{DH}</cite> entre as estaca é de <span class="math notranslate nohighlight">\(20\,\text{m}\)</span>.</p>
+<p>Para exemplificar a metodologia da determinação das curvas de nível, vamos utilizar a Figura ref{fig:curva_nivel3}. Na Figura ref{fig:curva_nivel3}a é apresentada a grade, com as respectivas cotas das estacas, em metros. As linhas foram nominadas pelas letras <a href="#id11"><span class="problematic" id="id12">``</span></a>A», <a href="#id13"><span class="problematic" id="id14">``</span></a>B» e <a href="#id15"><span class="problematic" id="id16">``</span></a>C», enquanto as colunas, pelos números <a href="#id17"><span class="problematic" id="id18">``</span></a>1», <a href="#id19"><span class="problematic" id="id20">``</span></a>2» e <a href="#id21"><span class="problematic" id="id22">``</span></a>3». Desta forma, pode-se verificar facilmente as cotas das estacas,  por exemplo, a estaca B2 tem cota de <span class="math notranslate nohighlight">\(102,5\,\text{m}\)</span>.  Para esta grade, vamos considerar que a math:<cite>text{DH}</cite> entre as estaca é de <span class="math notranslate nohighlight">\(20\,\text{m}\)</span>.</p>
 <p>A grade tem a menor e a maior cota nas estacas C3 e A1, <span class="math notranslate nohighlight">\(100,0\,\text{m}\)</span> e <span class="math notranslate nohighlight">\(104,5\,\text{m}\)</span>, respectivamente, ou seja, há uma DN total de <span class="math notranslate nohighlight">\(4,5\,\text{m}\)</span> no terreno. Pode-se considerar razoável, que uma equidistância vertical de <span class="math notranslate nohighlight">\(1\,\text{m}\)</span> seja adequada para representar o relevo deste terreno. Considerando esta equidistância vertical, teremos que desenhar as curvas de nível <span class="math notranslate nohighlight">\(101\,\text{m}\)</span>, <span class="math notranslate nohighlight">\(102\,\text{m}\)</span>, <span class="math notranslate nohighlight">\(103\,\text{m}\)</span> e <span class="math notranslate nohighlight">\(104\,\text{m}\)</span>.</p>
 <p>Para cada curva de nível deve ser verificado em quais pares de estacas ela passa. Por exemplo, considere a curva de nível <span class="math notranslate nohighlight">\(101\,\text{m}\)</span>, em algum ponto entre a estaca C1 e C2 ela ira passar, uma vez que as suas respectivas cotas são de <span class="math notranslate nohighlight">\(101,1\,\text{m}\)</span> e <span class="math notranslate nohighlight">\(100,8\,\text{m}\)</span>. Seja o perfil do terreno uniforme entre estas (sem grandes variações), pode-se, por interpolação, determinar a math:<cite>text{DH}</cite> que a curva de nível <span class="math notranslate nohighlight">\(101\,\text{m}\)</span> estará em relação a estaca C1 ou C2, mas como? Entre estas estacas, há uma DN de <span class="math notranslate nohighlight">\(0,3\,\text{m}\)</span> e uma math:<cite>text{DH}</cite> de <span class="math notranslate nohighlight">\(20\,\text{m}\)</span>. Da estaca C1, cota <span class="math notranslate nohighlight">\(101,1\,\text{m}\)</span>, ao ponto de cota <span class="math notranslate nohighlight">\(101\,\text{m}\)</span>, onde passa a curva de nível <span class="math notranslate nohighlight">\(101\,\text{m}\)</span>, há uma DN de <span class="math notranslate nohighlight">\(0,1\)</span>. Por regra de três, a curva de nível <span class="math notranslate nohighlight">\(101\,\text{m}\)</span> estará a <span class="math notranslate nohighlight">\(\approx6,7\,\text{m}\)</span> da estaca C1 <span class="math notranslate nohighlight">\(\left(0,1\frac{20}{0,3}\right)\)</span>. Desta forma, entre C1 e C2, no ponto a <span class="math notranslate nohighlight">\(6,7\,\text{m}\)</span> da estaca C1 é feito um pequeno risco. Tal procedimento é repetido para todos os pares de estacas onde a curva de nível <span class="math notranslate nohighlight">\(101\)</span> os cruzam. Para curva de nível <span class="math notranslate nohighlight">\(101\)</span>, os pares a serem verificados são C2-B2, B2-B3 e B3-A3. Para estes pares encontra-se o ponto de cota <span class="math notranslate nohighlight">\(101\,\text{m}\)</span> e marca-se a posição, sempre com um risco, ou seja a posição onde a curva de nível <span class="math notranslate nohighlight">\(101\)</span> cruza as estacas.</p>
 <p>As marcas onde as curvas de nível cruzam os quadrados da quadrícula são apresentadas na Figura ref{fig:curva_nivel3}b. Após tal procedimento, é realizada a conexão das marcas de cada uma das curvas de nível por linhas retas ou suavizadas. No nosso exemplo, as marcas foram conectadas por linhas retas (Figura ref{fig:curva_nivel3}b). Caso contenha linhas mestras, utilizar linha mais grossa para destacá-la. Para finalizar, as curvas de nível são cotadas com as respectivas cotas (Figura ref{fig:curva_nivel3}d).</p>
@@ -360,7 +379,7 @@ V_{mathrm{quadCorte}} =&amp;frac{10times10}{4}(-2,776times1-3,176times2-2,376tim
 V_{mathrm{quadCorte}} =&amp;mathbf{-1,466,m^3}
 end{align*}
 begin{itemize}
--  emph{Volume <a href="#id20"><span class="problematic" id="id21">``</span></a>1c», prisma com base em forma de trapézio:}</p>
+-  emph{Volume <a href="#id23"><span class="problematic" id="id24">``</span></a>1c», prisma com base em forma de trapézio:}</p>
 <p>begin{align*}
 V_{mathrm{1c}} =&amp;
 left(frac{(4,48+4,44)10}{2}right)left(frac{-1,076-0,976+0+0}{4}right) \
@@ -368,7 +387,7 @@ left(frac{(4,48+4,44)10}{2}right)left(frac{-1,076-0,976+0+0}{4}right) \
 V_{mathrm{1c}} =&amp; mathbf{-23,m^3}
 end{align*}
 begin{itemize}
--  emph{Volume <a href="#id22"><span class="problematic" id="id23">``</span></a>2c», prisma com base em forma de triângulo:}</p>
+-  emph{Volume <a href="#id25"><span class="problematic" id="id26">``</span></a>2c», prisma com base em forma de triângulo:}</p>
 <p>begin{align*}
 V_{mathrm{2c}} =&amp;
 left(frac{4,44times6,1}{2}right)left(frac{-0,976+0+0}{3}right)\
@@ -376,7 +395,7 @@ left(frac{4,44times6,1}{2}right)left(frac{-0,976+0+0}{3}right)\
 V_{mathrm{2c}} =&amp;mathbf{-4,m^3}
 end{align*}
 begin{itemize}
--  emph{Volume <a href="#id24"><span class="problematic" id="id25">``</span></a>3c», prisma com base em forma de retângulo mais trapézio:}</p>
+-  emph{Volume <a href="#id27"><span class="problematic" id="id28">``</span></a>3c», prisma com base em forma de retângulo mais trapézio:}</p>
 <p>begin{align*}
 V_{mathrm{3c}} =&amp;
 left(10times6,1 +frac{(10+7)times3,9}{2}right)left(frac{-2,876-0,976+0+0-1,476}{5}right) \
@@ -385,7 +404,7 @@ V_{mathrm{3c}} =&amp; mathbf{-100,m^3}
 end{align*}
 begin{itemize}</p>
 <ul class="simple">
-<li><p>emph{Volume <a href="#id26"><span class="problematic" id="id27">``</span></a>4c», prisma com base em forma triângulo:}</p></li>
+<li><p>emph{Volume <a href="#id29"><span class="problematic" id="id30">``</span></a>4c», prisma com base em forma triângulo:}</p></li>
 </ul>
 <p>begin{align*}
 V_{mathrm{4c}} =&amp;
@@ -589,6 +608,8 @@ label{fig:cap_alt_exer_grid2_rep}
 end{figure}</p>
 </section>
 </section>
+</section>
+</section>
 
 
             <div class="clearer"></div>
@@ -600,7 +621,13 @@ end{figure}</p>
     <h3><a href="../index.html">Page contents</a></h3>
     <ul>
 <li><a class="reference internal" href="#">Capitulo 10: Curva de nível e cáculo de volume</a><ul>
-<li><a class="reference internal" href="#curva-de-nivel">Curva de nível</a></li>
+<li><a class="reference internal" href="#curva-de-nivel">Curva de nível</a><ul>
+<li><a class="reference internal" href="#determinacao-das-curvas-de-nivel">Determinação das curvas de nível</a><ul>
+<li><a class="reference internal" href="#curva-de-nivel-em-grade-regular">Curva de nível em grade regular</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

@@ -60,7 +60,7 @@ entre duas curvas na sequência, toma-se, por exemplo, as curvas mestras
 :math:`400\,\text{m}` e :math:`200\,\text{m}`, então:
 
 .. math::
-   \frac{400\,\mathrm{m}-100\,\mathrm{m}}{5}=10\,\mathrm{m},
+   \frac{400\,\mathrm{m}-200\,\mathrm{m}}{5}=40\,\mathrm{m},
    :label: eq:equi_vertical
 
 
@@ -144,7 +144,7 @@ símbolo :math:`\times`, acompanhado do valor da cota ou da altitude.
 .. _curva_nivel:
 
 .. figure:: /images/capitulo10/curva_nivel1.png
-   :scale: 35 %
+   :scale: 25 %
    :alt: cap_altimetria_definicoes.png
    :align: center
 
@@ -153,17 +153,36 @@ símbolo :math:`\times`, acompanhado do valor da cota ou da altitude.
    Linhas tracejadas na cor azul, são cursos de água, e as marcas :math:`\times`
    são pontos cotados.
 
-\subsection{Determinação das curvas de nível}
+Determinação das curvas de nível
+--------------------------------
 
-Existem vários métodos para se determinar as curvas de nível. Para todos os métodos, há necessidade de se conhecer, na área a ser levantada, as coordenadas de pontos, juntamente com os seus respectivos valores da altitude ou cota. As coordenadas e cotas dos pontos, em levantamentos convencionais, são obtidas com o auxílio da estação total, pelo método da irradiação. Em levantamentos que requerem maior precisão na determinação das cotas, é preferível o nivelamento do tipo geométrico, ou seja, emprega-se o nível como equipamento. Quanto à distribuição espacial dos pontos cotados, estes podem estar uniformementes distribuídos ou não. Quando os pontos são uniformemente distribuídos, denominamos de \index{grade regular}grade regular, sendo utilizada em terrenos de topografia mais uniforme. Já uma grade irregular, é aquela em que os pontos cotados não são uniformemente distribuídos no terreno, podendo ser utilizada para todos os tipos de terreno.
+Existem vários métodos para se determinar as curvas de nível. Para todos os métodos,
+há necessidade de se conhecer, na área a ser levantada, as coordenadas de pontos,
+juntamente com os seus respectivos valores da altitude ou cota. As coordenadas e
+cotas dos pontos, em levantamentos convencionais, são obtidas com o auxílio da
+estação total, pelo método da irradiação. Em levantamentos que requerem maior
+precisão na determinação das cotas, é preferível o nivelamento do tipo geométrico,
+ou seja, emprega-se o nível como equipamento. Quanto à distribuição espacial dos
+pontos cotados, estes podem estar uniformementes distribuídos ou não. Quando os
+pontos são uniformemente distribuídos, denominamos de \index{grade regular}grade
+regular, sendo utilizada em terrenos de topografia mais uniforme. Já uma grade
+irregular, é aquela em que os pontos cotados não são uniformemente distribuídos no
+terreno, podendo ser utilizada para todos os tipos de terreno.
 
-Nesta secção será apresentada um método de determinação de curvas de nível para quando os pontos estão distribuídos em grade regular. Para a geração das curvas de nível de grade irregular, pode-se consultar  \citeonline{comastri}, \citeonline{WOLF} e \citeonline{cole2009surveyor}.
+Nesta seção será apresentada um método de determinação de curvas de nível para
+quando os pontos estão distribuídos em grade regular. Para a geração das curvas
+de nível de grade irregular, pode-se consultar
+:cite:`comastri`, :cite:`WOLF` e :cite:`cole2009surveyor`.
 
-Saliente-se também que no dia a dia de um técnico em topografia, mapas com curvas de nível são geradas rapidamente por meio de programas de computador, podendo-se destacar os programas QGIS \footnote{Disponível em: \url{https://www.qgis.org/pt_BR/site/}}, que é gratuito e o Autocad. Resumidamente, para se obter as curvas em computador, deve-se importar ou inserir os dados de posição e de altitude dos pontos :math:`(x,\,y,\,z)` no programa utilizado, sendo que as posições podem estar em grade regular ou irregular; e, para finalizar a operação, defini-se alguns parâmetros, como a equidistância vertical desejada. Para descrição detalhada dos procedimentos necessários, consultar os manuais dos respectivos programas e, para estudar a teoria por trás da geração, pode-se consultar \citeonline{WOLF}. 
+Saliente-se também que no dia a dia de um técnico em topografia, mapas com
+curvas de nível são geradas rapidamente por meio de programas de computador,
+podendo-se destacar os programas QGIS \footnote{Disponível em: \url{https://www.qgis.org/pt_BR/site/}}, que é gratuito e o Autocad. Resumidamente, para se obter as curvas em computador, deve-se importar ou inserir os dados de posição e de altitude dos pontos :math:`(x,\,y,\,z)` no programa utilizado, sendo que as posições podem estar em grade regular ou irregular; e, para finalizar a operação, defini-se alguns parâmetros, como a equidistância vertical desejada. Para descrição detalhada dos procedimentos necessários, consultar os manuais dos respectivos programas e, para estudar a teoria por trás da geração, pode-se consultar \citeonline{WOLF}.
 
-\subsubsection*{Curva de nível em grade regular}\index{curva de nível!grade regular}
+Curva de nível em grade regular
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 \parpic[r]{\begin{minipage}{100mm}\includegraphics[trim ={4mm 0mm 0mm 0mm},clip,scale=0.7]{curva_nivel3}\captionof{figure}{Método da determinação das curvas de nível por meio de dados em grade regular.}\label{fig:curva_nivel3}\end{minipage}}
-Nesta secção veremos a metodologia para determinação de curvas de nível quando o terreno é nivelado por meio de uma grade regular. O nivelamento por grade regular é utilizado em terreno  de declividade uniforme e em área pequenas. 
+Nesta seção veremos a metodologia para determinação de curvas de nível quando o terreno é nivelado por meio de uma grade regular. O nivelamento por grade regular é utilizado em terreno  de declividade uniforme e em área pequenas. 
 
 No terreno, é realizada a \index{quadriculação}quadriculação (área dividida em quadrados), com estacas materializando os vértices, formando uma grade. As math:`\text{DH}`s entre as estacas são, normalmente, de :math:`10\,\text{m}` ou de :math:`20\,\text{m}`, a depender do relevo a ser levantado. Os pontos são cotados pelo método do nivelamento geométrico ou pelo nivelamento trigonométrico com teodolitos ou estações totais. As linhas e colunas da grade são nomeadas para se localizar as estacas no terreno.
 
@@ -238,7 +257,7 @@ O volume de um sólido que tem duas secções paralelas onde se conhecem suas re
 V=\frac{A_1+A_2}{2}\times L
 
 
-em que :math:`A_1` e :math:`A_2`, são as áreas das secções paralelas analisadas e :math:`L`, a distância horizontal que separa as secções. Considerando que as medidas das áreas das secção são em m:math:`^2` e a distância horizontal em metros, teremos o volume na unidade de m:math:`^3`.
+em que :math:`A_1` e :math:`A_2`, são as áreas das secções paralelas analisadas e :math:`L`, a distância horizontal que separa as secções. Considerando que as medidas das áreas das seção são em m:math:`^2` e a distância horizontal em metros, teremos o volume na unidade de m:math:`^3`.
 
 \begin{mybox}[breakable,enhanced,pad at break=0mm,label={exemp:volume_media_seccoes1}]{}Considere  as áreas entre as secções da estaca :math:`10+0\,\text{m}` e :math:`11+0\,\text{m}` de, respectivamente :math:`61\,\text{m}`:math:`^2` e :math:`37\,\text{m}`:math:`^2`. Qual o volume entre estas duas estacas?
 
@@ -258,7 +277,7 @@ V=\frac{61+46}{2}10=535\,\mathrm{m^3}
 \] 
 \end{mybox}
 
-O método de cálculo do volume pela área média das secções se aplica em áreas longitudinais, como em trechos de estradas. Para  exemplificar aplicação deste método, considere a Figura \ref{fig:exemplo_area_de_secoes}, na qual são apresentados os cálculos de volume do terreno da Figura \ref{fig:curva_nivel3} (pg. \pageref{fig:curva_nivel2}), quando o mesmo é sistematizado para ter cota de :math:`102,5\,\text{m}` em toda a sua extensão. Primeiramente calcula-se as CVs das estacas, em que valores negativos e positivos são pontos de corte e aterro, respectivamente. Neste exemplo escolheu fazer os cálculos das áreas de corte e de aterro utilizando-se como secções as colunas 1, 2 e 3. Para cada secção e desenhado o perfil do terreno e a sua distância vertical para cota a ser sistematizado. Por meio desta representação, pode-se verificar as áreas de cortes e aterros onde suas áreas são calculadas por meio de aproximação destas à figuras geométricas elementares, com triângulo e trapézio. Com os dados das áreas de corte e aterro tabulados, para cada par de secção é calculado o seu respectivo volume por meio da Equação \ref{eq:volume_area_media}.
+O método de cálculo do volume pela área média das secções se aplica em áreas longitudinais, como em trechos de estradas. Para  exemplificar aplicação deste método, considere a Figura \ref{fig:exemplo_area_de_secoes}, na qual são apresentados os cálculos de volume do terreno da Figura \ref{fig:curva_nivel3} (pg. \pageref{fig:curva_nivel2}), quando o mesmo é sistematizado para ter cota de :math:`102,5\,\text{m}` em toda a sua extensão. Primeiramente calcula-se as CVs das estacas, em que valores negativos e positivos são pontos de corte e aterro, respectivamente. Neste exemplo escolheu fazer os cálculos das áreas de corte e de aterro utilizando-se como secções as colunas 1, 2 e 3. Para cada seção e desenhado o perfil do terreno e a sua distância vertical para cota a ser sistematizado. Por meio desta representação, pode-se verificar as áreas de cortes e aterros onde suas áreas são calculadas por meio de aproximação destas à figuras geométricas elementares, com triângulo e trapézio. Com os dados das áreas de corte e aterro tabulados, para cada par de seção é calculado o seu respectivo volume por meio da Equação \ref{eq:volume_area_media}.
 \begin{figure}[H]
 \includegraphics[trim ={0mm 0mm 0mm 0mm},clip,scale=0.85]{volume_media_seccoes.pdf}
 \caption{Procedimentos para medição de volume pela área média das secções. Distância entre as estacas é de :math:`20\,\text{m}` e sistematização do terreno para cota de :math:`102,5`.}\label{fig:exemplo_area_de_secoes}
@@ -587,7 +606,7 @@ Com os dados acima pede-se:
 -  a altitude em X; 
 -  a altitude nas estacas da quadrícula;
 -  calcular a altura média do plano que resultará em :math:`V_c=V_a`;
--  projetar um plano inclinado de :math:`1\%` de declividade no sentido A para C e de :math:`-2\%` na direção da secção de 1 para 2.
+-  projetar um plano inclinado de :math:`1\%` de declividade no sentido A para C e de :math:`-2\%` na direção da seção de 1 para 2.
 
 
 

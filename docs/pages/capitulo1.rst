@@ -519,7 +519,7 @@ retangulares são apresentados na :numref:`figcoordretangular`.
 Estas coordenadas podem estar em qualquer unidade de comprimento,
 sendo que em geomática a mais comum é a de metro (m). Logicamente,
 caso a unidade fosse de metro, esta figura estaria reduzida a determinada
-escala (ver Secção :any:`escala`).
+escala (ver seção :any:`escala`).
 
 .. _figcoordretangular:
 
