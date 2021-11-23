@@ -22,4 +22,5 @@ Livro de Geomática
    pages/capitulo8
    pages/capitulo9
    pages/capitulo10
+   pages/para_test
    pages/referencias

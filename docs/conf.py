@@ -20,7 +20,7 @@ import os
 import sys
 import cloud_sptheme as csp
 import bokeh
-
+print('Python %s on %s' % (sys.version, sys.platform))
 sys.path.insert(0, os.path.abspath('..'))
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
