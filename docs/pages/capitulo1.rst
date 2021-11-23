@@ -37,6 +37,15 @@ funções trigonométricas e conhecimentos básicos de geometria analítica.
 Neste capítulo será realizada uma breve revisão de trigonometria e
 de geometria analítica.
 
+.. raw:: html
+
+    <div style="position: center; padding-bottom=75%; height:0; overflow: hidden; max-width: 100%; height:auto">
+        <iframe class="center-block" width="854" height="480" src="https://www.youtube.com/embed/50kc3F0aE6Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+.. bokeh-plot:: plotting_scatter_square.py
+    :source-position: none
 
 Noções básicas de trigonometria
 ===============================
@@ -866,7 +875,7 @@ Conhecendo-se o diâmetro temos:
 .. math::
    A & =\frac{\pi}{4}D^{2} \\
    &=\frac{\pi}{4}1,2^{2} \\
-   =1,13 \,\text{m}^{2}.
+   &=1,13 \,\text{m}^{2}.
 
 ----
 
@@ -913,7 +922,7 @@ a :math:`3` m.
    Como roteiro:
 
    - apresentação dos operadores matemáticos: soma :math:`(+)`, subtração :math:`(-)`, multiplicação :math:`(*)`, divisão :math:`(\backslash)` e potência :math:`(\wedge)`;
-   - apresentação das funções seno, cosseno, tangente, arccossenom, etc
+   - apresentação das funções seno, cosseno, tangente, arco cosseno, etc
 
 Exercícios
 ==========
@@ -1157,5 +1166,3 @@ internos.
 
 :exem:`Resp.:`  Hipotenusa = :math:`5,920\,\text{m}`; :math:`\hat{a}=37,450^\circ`;
 :math:`\hat{b}=52,549^\circ`; :math:`\hat{c}=90^\circ`.
-
-----

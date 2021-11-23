@@ -252,7 +252,7 @@ por exemplo, conhecer a área que se pode cultivar, ou em caso de construções,
 as áreas disponíveis para locação de obras de engenharia; ou *ii*)
 no plano vertical, quando se deseja realizar cálculos de volumes de
 corte e de aterro. O cálculo de áreas de figuras elementares foi apresentado
-na secção :any:`secAreasdefiguras`.
+na seção :any:`secAreasdefiguras`.
 Neste capítulo veremos algumas metodologias para medição de áreas
 em topografia.
 
@@ -262,7 +262,7 @@ Decomposição de figuras elementares
 Uma maneira grosseira de realizar medidas de uma área :math:`(A)`, seja
 diretamente em uma planta topográfica ou mesmo em levantamento de
 campo, é na decomposição de sua área em figuras geométricas simples,
-como triângulos, trapézios e retângulos (ver secção :any:`secAreasdefiguras`).
+como triângulos, trapézios e retângulos (ver seção :any:`secAreasdefiguras`).
 Na :numref:`fig_figuraselementares` é apresentada um limite de
 uma propriedade onde se pretende medir a área. Ela é delimitada a
 sua esquerda por um rio e a sua direita pela poligonal :math:`ABCDEFG`.

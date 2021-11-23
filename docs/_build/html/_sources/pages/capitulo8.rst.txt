@@ -69,7 +69,7 @@ apoiada. Na poligonal aberta e apoiada (:numref:`ExemploPoligonalAbertaApoiada` 
 ela começa e termina em alinhamentos conhecidos, onde as suas coordenadas
 foram previamente estabelecidas. Esta poligonal é dita geometricamente
 aberta e matematicamente fechada, sendo possível realizar uma avaliação
-do erro angular de fechamento (ver secção :ref:`eaf`) e do erro linear.
+do erro angular de fechamento (ver seção :ref:`eaf`) e do erro linear.
 Já a poligonal aberta e sem apoio (:numref:`ExemploPoligonalAbertaApoiada` b), não é possível a avaliação dos
 erros angulares e lineares, logo, deve-se evitá-la. Contudo, caso
 ela não possa ser evitada, faz-se necessário realizar as medidas de
@@ -475,7 +475,7 @@ do mapeamento logo, o cálculo das suas coordenadas retangulares se
 faz necessário. A partir das coordenadas retangulares, por exemplo,
 podem-se calcular as distâncias horizontais e os azimutes finais dos
 alinhamentos. Também, a partir das coordenadas retângulares, pode-se
-calcular a área da poligonal pelo método de Gauss (Secção :any:`areaGauss`).
+calcular a área da poligonal pelo método de Gauss (seção :any:`areaGauss`).
 
 Para o cálculo das coordenadas retângulares, há a necessidade de se
 conhecer pelo menos a coordenada de um ponto. Em uma situação ideal,
@@ -754,7 +754,7 @@ fechada, caso estejam dentro da tolerância estabelecida pela :cite:t:`NBR13133`
 Na avaliação dos erros, se a poligonal aberta e apoiada tem desenvolvimento
 curvo, deve-se calcular o erro de fechamento angular e linear da mesma
 forma que na poligonal fechada em um ponto, conforme apresentado na
-Secção :ref:`Cálculo de uma poligonal fechada`, e comparar com a tolerância
+seção :ref:`Cálculo de uma poligonal fechada`, e comparar com a tolerância
 máxima para este tipo de poligonal. Já, se o desenvolvimento da poligonal
 for retilíneo, devem-se calcular os erros de fechamento longitudinal
 :math:`(\mathit{efl})` e o transversal :math:`(\mathit{eft})`,
@@ -777,7 +777,7 @@ Seja :math:`\mathrm{AE}` o alinhamento entre os pontos das estações de apoio, 
 chegada, do levantamento da poligonal :math:`\mathrm{ABCDE}`. Como o levantamento está
 sujeito aos erros angulares e lineares, quando calculada a posição
 do ponto de chegada, ao invés de encontrarmos a coordenada de :math:`\mathrm{E}`, será
-outra, denominaremos de :math:`\mathrm{E}'` . A intersecção da projeção perpendicular
+outra, denominaremos de :math:`\mathrm{E}'` . A interseção da projeção perpendicular
 de :math:`\mathrm{E}'`  ao alinhamento :math:`\mathrm{AB}`, será denominado
 de :math:`\mathrm{H}`. Desta forma, o :math:`\mathit{efl}`
 será comprimento entre o ponto :math:`\mathrm{H}` e :math:`\mathrm{E}`,

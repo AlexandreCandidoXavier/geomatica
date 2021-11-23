@@ -27,8 +27,8 @@ Introdução
 Para a determinação das coordenadas de pontos topográficos, uma vez
 na área do levantamento, e com o auxílio de teodolitos/estações totais,
 medem-se os ângulos e as distâncias entre alinhamentos. Neste capítulo
-analisaremos os ângulos medidos, que podem ser, horizontais (secção
-:ref:`Ângulo horizontal`) ou verticais (secção :ref:`Ângulo vertical`),
+analisaremos os ângulos medidos, que podem ser, horizontais (seção
+:ref:`Ângulo horizontal`) ou verticais (seção :ref:`Ângulo vertical`),
 que são medidos em relação ao plano horizontal e vertical, respectivamente.
 Para os cálculos das coordenadas dos pontos, há a necessidade de conhecer
 (calcular) a direção dos alinhamentos em relação ao meridiano utilizado,
@@ -61,7 +61,7 @@ nossos equipamentos, os ângulos são medidos na unidade de graus, de
 horizontal, pode ser fixo em qualquer direção, ficando independente
 do movimento da luneta. Com o círculo horizontal, o ângulo horizontal
 entre dois pontos qualquer pode ser medido :math:`(\alpha)`, onde os procedimentos
-para a sua medição são apresentados na Secção :ref:`Método das direções`.
+para a sua medição são apresentados na seção :ref:`Método das direções`.
 
 
 .. _fig_esquemateodo.png:
@@ -78,7 +78,7 @@ Com relação ao ângulo vertical, quando o equipamento está nivelado,
 o :math:`0^\circ` do círculo vertical tem direção do zênite ou do plano
 horizontal que passa pelo centro ótico da luneta, respectivamente, ângulo zenital e de inclinação
 :math:`(z)`. Maiores informações sobre os ângulos verticais podem ser encontrados
-na secção :ref:`Ângulo vertical`.
+na seção :ref:`Ângulo vertical`.
 
 .. _Ângulo horizontal:
 
@@ -116,7 +116,7 @@ Existem várias formas de medição dos ângulos horizontais, a mais simples
 é determinado de apenas uma leitura no ponto de ré e no de vante.
 Todavia, devido aos erros instrumentais, deve-se considerar a média
 de várias medidas de :math:`\alpha`, com a luneta na posição direta e inversa
-(ver secção :ref:`Ângulo vertical`).
+(ver seção :ref:`Ângulo vertical`).
 Neste texto será apresentado o método das direções, que é o previsto
 para ser utilizado pela :cite:t:`NBR13133` na medição de ângulos.
 Para outros métodos, pode-se consultar, :cite:t:`loch`, :cite:t:`golcalves` e :cite:t:`WOLF`.
@@ -183,7 +183,7 @@ que para medir os ângulos internos horizontais à direita da poligonal
 fechada :math:`\mathrm{ABCDE}`, tem-se que fazer um caminhamento no sentido anti-horário.
 No alinhamento :math:`\mathrm{AB}` é apresentado o seu azimute, ou seja a sua direção
 em relação ao meridiano. Ela é necessária para o cálculo dos azimutes
-dos demais alinhamentos, como será visto na Secção :ref:`Cálculodoazimute`.
+dos demais alinhamentos, como será visto na seção :ref:`Cálculodoazimute`.
 
 Ângulos de deflexão
 ^^^^^^^^^^^^^^^^^^^
@@ -223,16 +223,16 @@ de meridiano que se vai utilizar, podendo ser:
 - o **meridiano astronômico**: é a linha que passa pelos pólos geográficos da terra,
   é determinado usualmente por medidas astronômicas;
 - o **meridiano geodésico**: é a linha
-  gerada pela intersecção do elipsóide de revolução com o plano que
+  gerada pela interseção do elipsóide de revolução com o plano que
   passa pelos seus pólos.  Atualmente com o GNSS,  a sua definição em campo tornou-se de fácil obtenção;
 - o **meridiano magnético**: é o plano
   vertical que passa pelo eixo da agulha magnetizada livre, com apoio
   apenas no seu centro. Por exemplo, a direção norte-sul dada por uma
-  bússola, é a direção do meridiano local (Secção :ref:`Declinação magnética`);
+  bússola, é a direção do meridiano local (seção :ref:`Declinação magnética`);
 - o **meridiano da quadrícula**:
   corresponde a direção do eixo-:math:`y` do sistema cartesiano da quadrícula,
   da projeção cartográfica. Nas coordenas UTM, corresponde ao eixo Norte
-  (Secção :any:`UTM`).
+  (seção :any:`UTM`).
   Também é de fácil determinação com uso do GNSS;
 - o **meridiano hipotético**: é aquele
   estabelecido em campo, sem relação com os apresentados acima. Deve
@@ -249,7 +249,7 @@ Azimute
 O **azimute** (Az) de um alinhamento é o ângulo horizontal entre
 o meridiano e o alinhamento, medido no sentido horário. As medidas
 de azimute iniciam no norte do meridiano, variando de :math:`0^{\circ}` a :math:`360^{\circ}`.
-O meridiano pode ser quaisquer dos apresentados na secção :ref:`Meridiano`.
+O meridiano pode ser quaisquer dos apresentados na seção :ref:`Meridiano`.
 
 O azimute quando medido do começo para o final do alinhamento é denominado
 **azimute de vante**. Na :numref:`fig_Azimutevantere.png` a
@@ -608,10 +608,10 @@ o levantamento a partir de pontos de coordenadas UTM. Se o azimute
 for calculado das coordenadas UTM, os azimutes serão aqueles em relação
 ao norte da quadrícula. O cálculo do azimute
 é similar à conversão de coordenadas retangulares para polares (ver
-secção :any:`Coordenada retangular para polar`,
+seção :any:`Coordenada retangular para polar`,
 todavia com a contagem dos ângulos no eixo-:math:`y` (N), e o sentido da
 medição dos ângulos, o horário. Uma vez definido o azimute, o rumo
-pode ser determinado como apresentado na Secção :ref:`Conversão de azimutes em rumos`.
+pode ser determinado como apresentado na seção :ref:`Conversão de azimutes em rumos`.
 
 ----
 

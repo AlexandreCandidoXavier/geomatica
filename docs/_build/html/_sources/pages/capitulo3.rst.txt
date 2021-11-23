@@ -65,7 +65,7 @@ o geóide resulta em uma forma ondulada. Uma forma de apresentar o
 geóide é por meio da ondulação geoidal :math:`(N)`. Na Figura ao lado é
 apresentado a ondulação geoidal da terra dado pelo EGM96 (*Earth
 Gravitational Model* 1996 [#f1]_ :cite:p:`lemoine1998development`. A ondulação geoidal apresenta
-a distância vertical entre o geóide e o elipsóide (ver Secção \ref{subsec:Nivelamento-GNSS}),
+a distância vertical entre o geóide e o elipsóide (ver seção \ref{subsec:Nivelamento-GNSS}),
 figura matemática que se aproxima a forma da terra, neste caso o WGS84.
 Valores positivos indicam que o geóide está acima do elipóide WGS84,
 e negativos, abaixo. Percebe-se que a variação da altura geoidal é
@@ -193,7 +193,7 @@ de um ponto :math:`P` qualquer, é considerada a normal :math:`P` ao elipsóide
   denominada de geométrica).
 
 O plano do Equador é o plano perpendicular ao semieixo menor, encontram-se
-no centro do elipsóide. Um meridiano é uma secção elíptica gerada
+no centro do elipsóide. Um meridiano é uma seção elíptica gerada
 no elipsóide pelo plano definido pelo semieixo menor e o ponto em
 questão no elipsóide. A latitude geodésica de :math:`P` é o ângulo
 entre a normal e o plano do equador :math:`(\phi_{p})`. A longitude geodésica
@@ -241,7 +241,7 @@ são utilizadas para efetuar transformação de coordenadas entre elipsoides.
 Definiremos primeiro a origem do sistema e os eixos-:math:`x`, -:math:`y` e
 -:math:`z`, sendo: a origem, o centro do elipsóide; o eixo-:math:`z` é aquele
 que coincide com o semieixo menor do elipsóide, eixo de rotação; o
-eixo-:math:`x` é aquele dado pela intersecção do plano do Equador com o
+eixo-:math:`x` é aquele dado pela interseção do plano do Equador com o
 meridiano de Grw; e o eixo-:math:`y` formando um diedro com os outros eixos
 (:numref:`fig_coordenadasretangulares`). Quando as coordenadas
 Geodésicas são conhecidas, utilizam-se Equações :eq:`eq_cart_x` a :eq:`eq_grande_normal`
@@ -896,9 +896,9 @@ está a distância :math:`500.000` m do MC do fuso. Nas coordenadas sobre MC
 fator vai aumentando, na medida em que se afasta do MC, sendo :math:`k=1`
 a aproximadamente :math:`180` km do MC. A partir dos :math:`180` km, a escala aumentada
 :math:`(k>1)`.
-Para o hemisfério Norte, a intersecção do do eixo-:math:`x` com MC, tem
+Para o hemisfério Norte, a interseção do do eixo-:math:`x` com MC, tem
 coordenada :math:`y=0\,\text{m}` e :math:`x=500.000\,\text{m}`. Já, para o hemisfério
-Sul, a intersecção do do eixo-:math:`x` com MC tem coordenada :math:`x=500.000\,\text{m}`,
+Sul, a interseção do do eixo-:math:`x` com MC tem coordenada :math:`x=500.000\,\text{m}`,
 todavia, a fim de evitar coordenada negativas, :math:`y=10.000.000\,\text{m}`.
 Em ambos os hemisférios, as coordenadas :math:`x` e :math:`y` crescem na direção,
 respectivamente, oeste-leste e sul-norte. Quando se trata de descrever

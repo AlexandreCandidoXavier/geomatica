@@ -88,7 +88,7 @@ Na :numref:`fig_errodistancia` são apresentados os pontos :math:`A` e
 Suponha, para fins de simplificação, que: estes dois pontos estão
 sobre o geóide (:math:`\approx`\,nível médio dos mares), ou seja, têm as mesmas
 altitudes, iguais a 0 m; o geóide tem uma forma de uma esfera de raio
-6.367 km (:math:`R`), média dos raios do elipsóide WGS84 (ver Secção :any:`Elipsóide`).
+6.367 km (:math:`R`), média dos raios do elipsóide WGS84 (ver seção :any:`Elipsóide`).
 Se :math:`s` é a distância entre
 os dois pontos na superfície do geóide, aqui, um arco de circunferência
 de um ângulo :math:`\alpha`, temos :math:`s`:
@@ -448,7 +448,7 @@ e somando estas área individuais, obter a área total.
 
 Conhecendo-se as DH's da poligonal e os ângulos internos dos vértices,
 é possível calcular as coordenadas dos vértices, sendo este procedimento
-apresentado na Secção :any:`poligonal_fechada`.
+apresentado na seção :any:`poligonal_fechada`.
 Os ângulos internos de cada vértice podem ser calculados com o auxílio
 da lei dos cossenos (Equação :eq:`eqleicos1`).
 Por exemplo, no vértice :math:`B`, o ângulo interno, :math:`88,35^{\circ}`,
@@ -528,7 +528,7 @@ são estimados.
    Esquema ilustrativo dos retículos de um teodolito (a) e de uma mira (b).
 
 Nas medições taqueométricas, o ângulo vertical pode ser o zenital e o de inclinação (maiores informações
-na Secção :any:`Ângulo vertical`.
+na seção :any:`Ângulo vertical`.
 Se o teodolito for eletrônico o ângulo vertical será apresentado no visor, mas se o teodolito for do tipo ótico mecânico, deverá ser realizado uma leitura
 em uma luneta no equipamento, e o ângulo anotado. Na :numref:`fig_visadataqueometica.png`
 é apresentada um esquema de uma medição da DH e DN entre os pontos A e B utilizando
@@ -809,7 +809,7 @@ A é o mais elevado. Logicamente, se a altitude de A for igual a de
 B, eles estão em uma mesma elevação, desta forma, a DN entre A e B
 é zero. Considerações a respeito da influência da curvatura da terra
 e do efeito da refração serão tratados no :any:`RST Capitulo9`,
-Secção \ref{sec:Erro-de-esfericidade}.
+seção \ref{sec:Erro-de-esfericidade}.
 
 :exem:`Exemplo 8`  De uma estação total estacionada no ponto 30, fez
 uma visada no ponto 31, onde se encontrava o prisma. Sendo a :math:`ai=1,60\,\mathrm{m}`,

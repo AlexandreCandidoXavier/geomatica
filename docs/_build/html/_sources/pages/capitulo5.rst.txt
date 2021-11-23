@@ -37,7 +37,7 @@ também o Manual Técnico de Posicionamento: georreferenciamento de imóveis rur
 (`disponível aqui <https://sigef.incra.gov.br/static/documentos/manual_tecnico_posicionamento_1ed.pdf>`_) :cite:`manual_georre2013`
 e o Manual Técnico de Limites e Confrontações, publicado pelo INCRA
 (`disponível aqui  <https://sigef.incra.gov.br/static/documentos/manual_tecnico_limites_confrontacoes_1ed.pdf>`_) :cite:`limitantes_georre2013`.
-Nesta secção será realizada uma breve apresentação do georreferenciamento.
+Nesta seção será realizada uma breve apresentação do georreferenciamento.
 
 Objetivo e prazos
 -----------------
@@ -169,7 +169,7 @@ código do vértice já existente e não gerar um novo.
 
 
 Para a Norma, medidas de distância, área e azimute, são aqueles calculados
-considerando o plano de projeção UTM (ver secção :any:`UTM`),
+considerando o plano de projeção UTM (ver seção :any:`UTM`),
 no Sistema Geodésico Brasileiro, SIRGAR2000 (ver :any:`Datum horizontal`).
 A Norma para georreferenciamento de imóveis rurais prevê padrões de
 precisão para as coordenadas, dependente do tipo de finalidade do

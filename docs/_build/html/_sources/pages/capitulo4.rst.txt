@@ -120,7 +120,7 @@ Maiores detalhes destes sistemas serão apresentados em :ref:`Exemplos de GNSS.
 Posicionamento por satélite
 ===========================
 
-Nesta secção será apresentado o princípio básico do posicionamento
+Nesta seção será apresentado o princípio básico do posicionamento
 por satélite conforme explicação de :cite:t:`Hofmann2008`. Como
 já foi dito, o GNSS fornece informação da posição de um lugar, por
 exemplo, a latitude, longitude e altitude geométrica. Para tanto,
@@ -142,7 +142,7 @@ e o receptor pode ser calculada pela medida de tempo que o sinal (código)
 demorou entre a emissão do satélite até a chegada no receptor. Cada
 satélite definirá uma superfície de esfera, em que o seu centro é
 a posição do satélite. Desta forma, determinada as distâncias entre
-três satélites e o receptor, torna-se suficiente para que a intersecção
+três satélites e o receptor, torna-se suficiente para que a interseção
 das três esferas resulte na determinação das três incógnitas da posição
 do receptor, por exemplo, a latitude, a longitude a altitude geométrica.
 A equação da distância entre cada satélite e receptor é determinada
@@ -641,7 +641,7 @@ A distância calculada tem várias fontes de erro, por exemplo, a falta
 de sincronismo de tempo entre o relógio do receptor e do satélite,
 resultando distâncias que não correspondem à distância geométrica
 do satélite ao receptor. Desta maneira as distâncias calculadas pelos
-receptores são denominadas de pseudodistâncias como já visto na secção :ref:`posicionamento_satelite`.
+receptores são denominadas de pseudodistâncias como já visto na seção :ref:`posicionamento_satelite`.
 
 .. _Pseudodistância por código:
 
@@ -847,7 +847,7 @@ Não há um concenso quanto terminologia utilizada às diferentes técnicas
 de posicionamento GNSS. Aqui será utilizada a terminologia adotada
 por :cite:t:`Hofmann2008`. No posicionamento, as medidas de pseudodistância
 podem ser obtidas de duas formas, por meio dos **códigos** (ver
-secção :ref:`Posicionamento por ponto`) ou da medida
+seção :ref:`Posicionamento por ponto`) ou da medida
 de **fase da onda portadora** (ver ver :ref:`Pseudodistância por fase da onda portadora`).
 As medidas por código tem precisão em nível de metros, enquanto pela
 medida da onda portadora tem precisão de milímetros. A desvantagem
