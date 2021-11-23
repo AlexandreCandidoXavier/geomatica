@@ -47,6 +47,8 @@ de geometria analítica.
 .. bokeh-plot:: plotting_scatter_square.py
     :source-position: none
 
+a
+
 Noções básicas de trigonometria
 ===============================
 
