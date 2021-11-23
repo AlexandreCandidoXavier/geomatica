@@ -43,6 +43,10 @@ de geometria analítica.
         <iframe class="center-block" width="854" height="480" src="https://www.youtube.com/embed/50kc3F0aE6Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
+.. bokeh-plot:: codes_py/plotting_scatter_square.py
+    :source-position: none
+
+ajhhg
 
 Noções básicas de trigonometria
 ===============================
