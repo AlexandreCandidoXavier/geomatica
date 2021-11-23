@@ -27,7 +27,7 @@
 Capitulo 1: Matemática fundamental
 **********************************
 
-Na maioria dos problemas que serão vistos ao longo dos próximos capítulos
+Na maioria dos problemas que serão vistos ao longo dos próximo capítulos
 haverá a necessidade de aplicação de cálculos simples. Por exemplo,
 em levantamentos topográficos convencionais são medidos em campo,
 entre os pontos de interesse, ângulos e distâncias, que posteriormente
