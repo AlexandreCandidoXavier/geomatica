@@ -7,6 +7,7 @@ from bokeh.sampledata.us_counties import data as counties
 
 palette = tuple(reversed(palette))
 
+
 counties = {
     code: county for code, county in counties.items() if county["state"] == "tx"
 }
