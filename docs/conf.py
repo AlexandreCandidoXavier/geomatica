@@ -59,11 +59,9 @@ release = '0.1'
 # 'sphinxcontrib.stuffcounter'
 extensions = ['sphinx.ext.todo', 'sphinx.ext.mathjax', 'sphinxcontrib.bibtex', 'cloud_sptheme.ext.table_styling',
 'bokeh.sphinxext.bokeh_plot',]
-# imgmath_image_format = 'png'
-# imgmath_dvipng_args = ['-gamma', '1.5', '-D', '400', '-bg', 'Transparent']
 
-# imgmath_image_format = 'svg'
-# imgmath_font_size = 10
+
+bokeh_plot_pyfile_include_dirs = ['docs']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
