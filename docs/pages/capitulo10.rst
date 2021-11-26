@@ -89,9 +89,8 @@ equidistância vertical do mapa apresentado na :numref:`curva_nivel1` é de
    :alt: cap_altimetria_definicoes.png
    :align: center
 
-   Cuscas de nível no plano referente à :numref:`curva_nivel1`.
-   Curvas de nível com equidistância vertical de :math:`40\,\text{m}`, com mestras
-   mais com equidistância vertical de :math:`40\,\text{m}`.
+   Curvas de nível no plano, referente à :numref:`curva_nivel1`.
+   Equidistância vertical de :math:`40\,\text{m}`.
 
 A equidistância vertical que será utilizada no mapeamento vai depender do
 relevo e da escala do mapa. Considere duas regiões distintas, uma de
