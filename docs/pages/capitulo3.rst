@@ -585,6 +585,14 @@ Podem-se classificar as projeções cartográficas de acordo com:
    Projeções tipo secantes.
 
 
+.. admonition:: Entendendo as projeções.
+
+    .. raw:: html
+
+        <div style="position: center; padding-bottom=75%; height:0; overflow: hidden; max-width: 100%; height:auto">
+            <iframe class="center-block" width="854" height="480" src="https://www.youtube.com/watch?v=kIID5FDi2JQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
 Projeções plana, cilíndrica e cônica secantes
 ---------------------------------------------
 
