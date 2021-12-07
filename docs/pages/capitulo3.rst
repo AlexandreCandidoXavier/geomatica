@@ -65,7 +65,7 @@ o geóide resulta em uma forma ondulada. Uma forma de apresentar o
 geóide é por meio da ondulação geoidal :math:`(N)`. Na Figura ao lado é
 apresentado a ondulação geoidal da terra dado pelo EGM96 (*Earth
 Gravitational Model* 1996 [#f1]_ :cite:p:`lemoine1998development`. A ondulação geoidal apresenta
-a distância vertical entre o geóide e o elipsóide (ver seção \ref{subsec:Nivelamento-GNSS}),
+a distância vertical entre o geóide e o elipsóide (ver seção :any:`Nivelamento GNSS`),
 figura matemática que se aproxima a forma da terra, neste caso o WGS84.
 Valores positivos indicam que o geóide está acima do elipóide WGS84,
 e negativos, abaixo. Percebe-se que a variação da altura geoidal é
@@ -590,7 +590,7 @@ Podem-se classificar as projeções cartográficas de acordo com:
     .. raw:: html
 
         <div style="position: center; padding-bottom=75%; height:0; overflow: hidden; max-width: 100%; height:auto">
-            <iframe class="center-block" width="854" height="480" src="https://www.youtube.com/watch?v=kIID5FDi2JQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           <iframe width="735" height="480" src="https://www.youtube.com/embed/kIID5FDi2JQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
 Projeções plana, cilíndrica e cônica secantes
@@ -1057,7 +1057,7 @@ Desta forma, a coordenada do ponto é: :math:`\text{E}=292.110,784\,\text{m}` e
 ----
 
 Para a solução do problema inverso, transformação de coordenada UTM
-(E, N) em geodésica $(\phi,\,\lambda)$, consultar :cite:p:`snyder1987map`, :cite:p:`TM8358:1989` e :cite:p:`wiki:UTM_coordinate_system`.
+(E, N) em geodésica :math:`(\phi,\,\lambda)`, consultar :cite:p:`snyder1987map`, :cite:p:`TM8358:1989` e :cite:p:`wiki:UTM_coordinate_system`.
 
 .. admonition:: Sugestão de aula prática
 
