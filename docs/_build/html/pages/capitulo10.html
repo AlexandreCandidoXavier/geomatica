@@ -116,8 +116,8 @@ equidistância vertical do mapa apresentado na <a class="reference internal" hre
 <span id="curva-nivel1"></span><a class="reference internal image-reference" href="../_images/topo-plot_3d_script_name_curvas_de_nivel.py.png"><img alt="cap_altimetria_definicoes.png" src="../_images/topo-plot_3d_script_name_curvas_de_nivel.py.png" style="width: 536.4px; height: 271.2px;" /></a>
 <figcaption>
 <p><span class="caption-number">Figura 91 </span><span class="caption-text">Representação do relevo em 3D, de uma área do município de Florianopopis-SC,
-juntamente com aas curvas de nível,
-com equidistância vertical de <span class="math notranslate nohighlight">\(40\,\text{m}\)</span>.</span><a class="headerlink" href="#id31" title="Permalink to this image">¶</a></p>
+juntamente com as curvas de nível
+com uma equidistância vertical de <span class="math notranslate nohighlight">\(40\,\text{m}\)</span>.</span><a class="headerlink" href="#id31" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id32">
@@ -134,17 +134,32 @@ mesma escala. Nestas condições, espera-se a utilização de um valor de equidi
 vertical, maior no terreno de montanha do que no plano. Pois, se no mapeamento do
 terreno montanhoso a equidistância vertical for pequena, pode-se ter um
 sobrecarregamento de curvas de nível, o mesmo não acontecendo em região mais plana.
-Tais observações podem ser observadas na Figuraref{fig:curva_nivel2}b e d, que
-representam uma região plana e outra de montanha, nos estados de SP e ES,
-respetivamente. As duas regiões tem a mesma área
-<span class="math notranslate nohighlight">\((\approx 1\,700\,\text{km}^2)\)</span> e escala. Para permitir uma leitura adequada
+Tais observações podem ser observadas na Figura <a class="reference internal" href="#curva-nivelsp"><span class="std std-numref">Figura 93</span></a>, que
+representam uma região plana no Oeste do estado de São Paulo e,
+outra de montanha, no Espírito Santo, Figura <a class="reference internal" href="#curva-niveles"><span class="std std-numref">Figura 94</span></a>.
+As duas regiões tem aproximadamente a mesma área
+<span class="math notranslate nohighlight">\((\approx 105\,\text{km}^2)\)</span> e são apresentadas na mesma escala.
+Para permitir uma leitura adequada
 das curvas de nível, enquanto na região de SP se permitiu uma equidistância
-vertical de <span class="math notranslate nohighlight">\(40\,\text{m}\)</span> (Figuraref{fig:curva_nivel2}b), a região de
-montanha do ES, a equidistância vertical ficou em <span class="math notranslate nohighlight">\(100\,\text{m}\)</span>.
-Para a região do ES, ao se tentar reduzir a equidistância vertical para
-<span class="math notranslate nohighlight">\(50\,\text{m}\)</span>, na mesma escala, verifica-se um carregamento de curvas de
-nível, que em nada ajudam na leitura adequada do
-relevo (Figuraref{fig:curva_nivel2}c).</p>
+vertical de <span class="math notranslate nohighlight">\(10\,\text{m}\)</span> (Figura <a class="reference internal" href="#curva-nivelsp"><span class="std std-numref">Figura 93</span></a> b), a região de
+montanha do ES, a equidistância vertical ficou em <span class="math notranslate nohighlight">\(80\,\text{m}\)</span>
+(Figura <a class="reference internal" href="#curva-niveles"><span class="std std-numref">Figura 94</span></a> b).</p>
+<figure class="align-center" id="id33">
+<span id="curva-nivelsp"></span><a class="reference internal image-reference" href="../_images/topo_curvas_de_nivel_script_name_curvas_de_nivel.py.png"><img alt="topo_curvas_de_nivel_script_name_curvas_de_nivel.py.png" src="../_images/topo_curvas_de_nivel_script_name_curvas_de_nivel.py.png" style="width: 456.75px; height: 866.6999999999999px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 93 </span><span class="caption-text">Área na região Oste de São Paulo, ponto cinza (a). Curvas de nível
+com equidistância vertical de <span class="math notranslate nohighlight">\(10\,\text{m}\)</span> (b) e representação do
+relevo (c), com as curvas de nível.</span><a class="headerlink" href="#id33" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id34">
+<span id="curva-niveles"></span><a class="reference internal image-reference" href="../_images/topo_curvas_de_nivel_script_name_ES_curvas_de_nivel.py.png"><img alt="topo_curvas_de_nivel_script_name_ES_curvas_de_nivel.png" src="../_images/topo_curvas_de_nivel_script_name_ES_curvas_de_nivel.py.png" style="width: 489.29999999999995px; height: 877.8px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figura 94 </span><span class="caption-text">Área na região Sul de ES, ponto na cor laranja (a). Curvas de nível
+com equidistância vertical de <span class="math notranslate nohighlight">\(80\,\text{m}\)</span> (b) e representação do
+relevo (c), com as curvas de nível.</span><a class="headerlink" href="#id34" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
 <p>A seguir, é apresentada a forma de se realizar a leitura/interpretação das curvas
 de nível, assim como suas características <span id="id1">[<a class="reference internal" href="referencias.html#id2" title="G.M. Cole and A.L. Harbin. Surveyor Reference Manual. Professional Publications, 2009. ISBN 9781591261742. URL: http://books.google.com.br/books?id=bFun4fjl4P0C.">CH09</a>]</span>:</p>
 <ul class="simple">
@@ -170,13 +185,13 @@ pontos de destaque são cotados, podendo ser, por exemplo, picos, depressões
 locais e pontos onde as curvas de nível são muito espaçadas (terrenos planos).
 Para apresentar a posição destes pontos cotados, usa-se, normalmente, o
 símbolo <span class="math notranslate nohighlight">\(\times\)</span>, acompanhado do valor da cota ou da altitude.</p>
-<figure class="align-center" id="id33">
+<figure class="align-center" id="id35">
 <span id="curva-nivel"></span><a class="reference internal image-reference" href="../_images/curva_nivel1.png"><img alt="cap_altimetria_definicoes.png" src="../_images/curva_nivel1.png" style="width: 525.0px; height: 600.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 93 </span><span class="caption-text">Considerações do relevo a partir da leitura das curvas de nível
+<p><span class="caption-number">Figura 95 </span><span class="caption-text">Considerações do relevo a partir da leitura das curvas de nível
 com equidistância vertical de <span class="math notranslate nohighlight">\(10\,\text{m}\)</span>.
 Linhas tracejadas na cor azul, são cursos de água, e as marcas <span class="math notranslate nohighlight">\(\times\)</span>
-são pontos cotados.</span><a class="headerlink" href="#id33" title="Permalink to this image">¶</a></p>
+são pontos cotados.</span><a class="headerlink" href="#id35" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <section id="determinacao-das-curvas-de-nivel">

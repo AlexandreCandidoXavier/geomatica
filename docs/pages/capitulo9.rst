@@ -620,11 +620,11 @@ Na América do sul, os maiores valores se encontram nas Cordilheira
 dos Andes, com :math:`N\approx50\,\mathrm{m}`.
 
 Valores de :math:`N`  com relação aos Data utilizados no Brasil, o
-`SIRGAS2000 <https://geoftp.ibge.gov.br/informacoes_sobre_posicionamento_geodesico/rede_planialtimetrica/relatorio/rel_sirgas2000.pdf>`_, podem ser obtidos por meio do programa `HgeoHNOR2020 <https://www.ibge.gov.br/geociencias/informacoes-sobre-posicionamento-geodesico/servicos-para-posicionamento-geodesico/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?edicao=31284&t=processar-os-dados>`_.
-No HgeoHNOR2020, tem que informar para obter a estimativa
+`SIRGAS2000 <https://geoftp.ibge.gov.br/informacoes_sobre_posicionamento_geodesico/rede_planialtimetrica/relatorio/rel_sirgas2000.pdf>`_,
+podem ser obtidos por meio do programa `HgeoHNOR2020 <https://www.ibge.gov.br/geociencias/informacoes-sobre-posicionamento-geodesico/servicos-para-posicionamento-geodesico/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?edicao=31284&t=processar-os-dados>`_.
+No **HgeoHNOR2020**, tem que informar para obter a estimativa
 de :math:`N`, o Datum utilizado na coleta dos dados de :math:`h`  com  receptor
-GNSS, SIRGASS2000,
-e, as coordenadas do ponto, em latitude e longitude. Uma vez conhecidos
+GNSS, SIRGASS2000, e, as coordenadas do ponto, em latitude e longitude. Uma vez conhecidos
 os valores de :math:`h`  (receptor GNSS) e :math:`N`  (HgeoHNOR2020), pode-se calcular
 :math:`H`  pela Equação :eq:`eq:geoide`.
 
@@ -639,6 +639,17 @@ os valores de :math:`h`  (receptor GNSS) e :math:`N`  (HgeoHNOR2020), pode-se ca
    Relação entre altura ortométrica :math:`(H)`, altura geométrica :math:`(h)`
    e ondulação geoidal :math:`(N)` em (a). Ondulação geoidal segundo EGM96
    :cite:`lemoine1998development`, tendo :math:`h`  em relação ao WGS84 (b).
+
+
+.. admonition:: Sobre HgeoHNOR2020.
+
+    .. raw:: html
+
+        <div style="position: center; padding-bottom=75%; height:0; overflow: hidden; max-width: 100%; height:auto">
+            <iframe width="930" height="530" src="https://www.youtube.com/embed/mPAYGAT_5OU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+
 
 
 A precisão na determinação de :math:`H`, dependerá: *i*) da precisão
@@ -694,6 +705,8 @@ Calcule a altitude ortométrica.
    &=244,447\,\rm{m.}
 
 ----
+
+
 
 .. admonition:: Sugestão de aula prática
 

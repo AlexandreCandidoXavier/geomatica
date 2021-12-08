@@ -79,8 +79,8 @@ equidistância vertical do mapa apresentado na :numref:`curva_nivel1` é de
    :align: center
 
    Representação do relevo em 3D, de uma área do município de Florianopopis-SC,
-   juntamente com aas curvas de nível,
-   com equidistância vertical de :math:`40\,\text{m}`.
+   juntamente com as curvas de nível
+   com uma equidistância vertical de :math:`40\,\text{m}`.
 
 .. _curva_nivel2:
 
@@ -99,19 +99,38 @@ mesma escala. Nestas condições, espera-se a utilização de um valor de equidi
 vertical, maior no terreno de montanha do que no plano. Pois, se no mapeamento do
 terreno montanhoso a equidistância vertical for pequena, pode-se ter um
 sobrecarregamento de curvas de nível, o mesmo não acontecendo em região mais plana.
-Tais observações podem ser observadas na Figura\ref{fig:curva_nivel2}b e d, que
-representam uma região plana e outra de montanha, nos estados de SP e ES,
-respetivamente. As duas regiões tem a mesma área
-:math:`(\approx 1\,700\,\text{km}^2)` e escala. Para permitir uma leitura adequada
+Tais observações podem ser observadas na Figura :numref:`curva_nivelSP`, que
+representam uma região plana no Oeste do estado de São Paulo e,
+outra de montanha, no Espírito Santo, Figura :numref:`curva_nivelES`.
+As duas regiões tem aproximadamente a mesma área
+:math:`(\approx 105\,\text{km}^2)` e são apresentadas na mesma escala.
+Para permitir uma leitura adequada
 das curvas de nível, enquanto na região de SP se permitiu uma equidistância
-vertical de :math:`40\,\text{m}` (Figura\ref{fig:curva_nivel2}b), a região de
-montanha do ES, a equidistância vertical ficou em :math:`100\,\text{m}`.
-Para a região do ES, ao se tentar reduzir a equidistância vertical para
-:math:`50\,\text{m}`, na mesma escala, verifica-se um carregamento de curvas de
-nível, que em nada ajudam na leitura adequada do
-relevo (Figura\ref{fig:curva_nivel2}c).
+vertical de :math:`10\,\text{m}` (Figura :numref:`curva_nivelSP` b), a região de
+montanha do ES, a equidistância vertical ficou em :math:`80\,\text{m}`
+(Figura :numref:`curva_nivelES` b).
 
+.. _curva_nivelSP:
 
+.. figure:: /images/capitulo10/topo_curvas_de_nivel_script_name_curvas_de_nivel.py.png
+   :scale: 15 %
+   :alt: topo_curvas_de_nivel_script_name_curvas_de_nivel.py.png
+   :align: center
+
+   Área na região Oste de São Paulo, ponto cinza (a). Curvas de nível
+   com equidistância vertical de :math:`10\,\text{m}` (b) e representação do
+   relevo (c), com as curvas de nível.
+
+.. _curva_nivelES:
+
+.. figure:: /images/capitulo10/topo_curvas_de_nivel_script_name_ES_curvas_de_nivel.py.png
+   :scale: 15 %
+   :alt: topo_curvas_de_nivel_script_name_ES_curvas_de_nivel.png
+   :align: center
+
+   Área na região Sul de ES, ponto na cor laranja (a). Curvas de nível
+   com equidistância vertical de :math:`80\,\text{m}` (b) e representação do
+   relevo (c), com as curvas de nível.
 
 A seguir, é apresentada a forma de se realizar a leitura/interpretação das curvas
 de nível, assim como suas características :cite:`cole2009surveyor`:

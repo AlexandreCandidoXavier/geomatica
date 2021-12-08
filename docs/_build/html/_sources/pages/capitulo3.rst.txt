@@ -481,7 +481,11 @@ Para o Datum SAD69:
 
 em que: 'G' e 'A' referem-se, respectivamente, às medidas geodésicas
 e astronômicas; :math:`N` é denominado de ondulação geoidal, diferença
-entre altura do elipsóide e do geóide na posição analisada.
+entre altura do elipsóide e do geóide na posição analisada. A :math:`N`
+pode ser obtido por meio do
+programa `HgeoHNOR2020 <https://www.ibge.gov.br/geociencias/informacoes-sobre-posicionamento-geodesico/servicos-para-posicionamento-geodesico/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?edicao=31284&t=processar-os-dados>`_
+, conhecendo as coordenadas do ponto em questão. Utilização do **HgeoHNOR2020**
+para fins de altimetria serão apresentadas na seção :any:`Nivelamento GNSS`.
 
 Para o SIRGAS2000:
 
@@ -593,6 +597,7 @@ Podem-se classificar as projeções cartográficas de acordo com:
            <iframe width="735" height="480" src="https://www.youtube.com/embed/kIID5FDi2JQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
+
 Projeções plana, cilíndrica e cônica secantes
 ---------------------------------------------
 
@@ -619,6 +624,14 @@ seu tamanho vai variar ao longo do mapa; se as elipses aparentam ter
 a mesma área, variando a sua forma, temos uma projeção igual área;
 se os semieixos da indicatriz de Tissot são distintos, demonstra a
 distorção em escala e a deformação angular.
+
+.. admonition:: Projeções e indicatriz de Tissot.
+
+    ver páginas:
+
+    - https://www.jasondavies.com/maps/transition/
+    - https://mangomap.com/mango-chris/maps/58854/distance-on-a-map#
+    - https://observablehq.com/@toja/tissots-indicatrix
 
 
 **Projeção cônica de Albers (igual área)**
