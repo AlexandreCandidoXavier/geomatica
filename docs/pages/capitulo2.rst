@@ -61,37 +61,37 @@ unidades de comprimento e área podem ser encontradas em :cite:p:`comastri2`.
 
 ----
 
-:exem:`Exemplo 1` Converta :math:`1\,\text{km}^2` para: :math:`\text{m}^2`, ha, alqueire
-geométrico e paulista?
+.. admonition:: :exem:`Exemplo 1` Converta :math:`1\,\text{km}^2` para: :math:`\text{m}^2`, ha, alqueire
+    geométrico e paulista?
 
-:solucao:`Solução:`
-Para :math:`\text{m}^2`: como :math:`1\,\text{km}=1\,000\,\text{m}`, então, elevando ao
-quadrado ambos os lados, :math:`(1\,\text{km})^2=(1\,000\,\text{m})^2`, vai resultar
-em :math:`1\,\text{km}^2=10^6\,\text{m}^2=1\,000\,000\,\text{m}^2`;
+    :solucao:`Solução:`
+    Para :math:`\text{m}^2`: como :math:`1\,\text{km}=1\,000\,\text{m}`, então, elevando ao
+    quadrado ambos os lados, :math:`(1\,\text{km})^2=(1\,000\,\text{m})^2`, vai resultar
+    em :math:`1\,\text{km}^2=10^6\,\text{m}^2=1\,000\,000\,\text{m}^2`;
 
-Para ha: sabe-se agora que a área é de :math:`10^6\,\text{m}^2`,
-como :math:`1\,\text{ha}=10\,000\,\text{m}^2`, então a área em ha :math:`(x_{\text{ha}})`:
+    Para ha: sabe-se agora que a área é de :math:`10^6\,\text{m}^2`,
+    como :math:`1\,\text{ha}=10\,000\,\text{m}^2`, então a área em ha :math:`(x_{\text{ha}})`:
 
-.. math::
-   \frac{x_{\text{ha}}}{10^{6}\,\text{m}^{2}} & =\frac{1\,\text{ha}}{10\,000\,\text{m}^{2}}\\
-   x_{\text{ha}} & =\frac{1\,\text{ha}\cdot10^{6}\,\text{m}^{2}}{10\,000\,\text{m}^{2}}\\
-   x_{\text{ha}} & =100\,\text{ha};
+    .. math::
+       \frac{x_{\text{ha}}}{10^{6}\,\text{m}^{2}} & =\frac{1\,\text{ha}}{10\,000\,\text{m}^{2}}\\
+       x_{\text{ha}} & =\frac{1\,\text{ha}\cdot10^{6}\,\text{m}^{2}}{10\,000\,\text{m}^{2}}\\
+       x_{\text{ha}} & =100\,\text{ha};
 
-Para alqueire geométrico: como :math:`1\,\text{alqueire}=48\,400\,\text{m}^2`,
-então a área em alqueire geométrico :math:`(x_{\text{alqGeo}})`:
+    Para alqueire geométrico: como :math:`1\,\text{alqueire}=48\,400\,\text{m}^2`,
+    então a área em alqueire geométrico :math:`(x_{\text{alqGeo}})`:
 
-.. math::
-   \frac{x_{\text{alqGeo}}}{10^{6}\,\text{m}^{2}} & =\frac{1\,\text{ha}}{48\,400\,\text{m}^{2}}\\
-   x_{\text{alqGeo}} & =\frac{1\,\text{alqueiro}\cdot10^{6}\,\text{m}^{2}}{48\,400\,\text{m}^{2}}\\
-   x_{\text{alqGeo}} & =20,6612\,\text{alqueiro geométrico};
+    .. math::
+       \frac{x_{\text{alqGeo}}}{10^{6}\,\text{m}^{2}} & =\frac{1\,\text{ha}}{48\,400\,\text{m}^{2}}\\
+       x_{\text{alqGeo}} & =\frac{1\,\text{alqueiro}\cdot10^{6}\,\text{m}^{2}}{48\,400\,\text{m}^{2}}\\
+       x_{\text{alqGeo}} & =20,6612\,\text{alqueiro geométrico};
 
-Para alqueire paulista: como :math:`1\,\text{alqueire}=24\,200\,\text{m}^2`,
-então a área em alqueire paulista :math:`(x_{\text{alqPau}})`:
+    Para alqueire paulista: como :math:`1\,\text{alqueire}=24\,200\,\text{m}^2`,
+    então a área em alqueire paulista :math:`(x_{\text{alqPau}})`:
 
-.. math::
-   \frac{x_{\text{alqPau}}}{10^{6}\,\text{m}^{2}} & =\frac{1\,\text{ha}}{24\,200\,\text{m}^{2}}\\
-   x_{\text{alqPau}} & =\frac{1\,\text{alqueiro}\cdot10^{6}\,\text{m}^{2}}{24\,200\,\text{m}^{2}}\\
-   x_{\text{alqPau}} & =41,3223\,\text{alqueiro paulista}.
+    .. math::
+       \frac{x_{\text{alqPau}}}{10^{6}\,\text{m}^{2}} & =\frac{1\,\text{ha}}{24\,200\,\text{m}^{2}}\\
+       x_{\text{alqPau}} & =\frac{1\,\text{alqueiro}\cdot10^{6}\,\text{m}^{2}}{24\,200\,\text{m}^{2}}\\
+       x_{\text{alqPau}} & =41,3223\,\text{alqueiro paulista}.
 
 ----
 
@@ -142,52 +142,52 @@ proporção (p.\,ex., :math:`E=1:3\,500`); ou equação (p.\,ex., :math:`1\,\tex
 
 ----
 
-:exem:`Exemplo 2` A distância entre dois postes
-em uma rua equivale a :math:`33,4\,\text{m}`. Quando representados em papel, estes
-postes estavam distantes :math:`3\,\text{cm}` entre si. Qual a escala do desenho?
+.. admonition:: :exem:`Exemplo 2` A distância entre dois postes
+    em uma rua equivale a :math:`33,4\,\text{m}`. Quando representados em papel, estes
+    postes estavam distantes :math:`3\,\text{cm}` entre si. Qual a escala do desenho?
 
-:solucao:`Solução:`
-Utilizando a Equação :eq:`eq:escala2`, e sabendo que :math:`l=3\,\text{cm}=0,03\,\text{m}`,
-e :math:`L` igual a :math:`33,4\,\text{m}`, o módulo da escala será:
+    :solucao:`Solução:`
+    Utilizando a Equação :eq:`eq:escala2`, e sabendo que :math:`l=3\,\text{cm}=0,03\,\text{m}`,
+    e :math:`L` igual a :math:`33,4\,\text{m}`, o módulo da escala será:
 
-.. math::
-   M & =\frac{L}{l}\\
-   & =\frac{33,4}{0,03}\\
-   & =1\,113
+    .. math::
+       M & =\frac{L}{l}\\
+       & =\frac{33,4}{0,03}\\
+       & =1\,113
 
-O resultado exato de :math:`M` é :math:`1\,113,3333333\ldots`, todavia,
-na apresentação da :math:`E`, utiliza-se, geralmente, apenas o número inteiro.
-Desta forma, :math:`E=1/1\,113`.
+    O resultado exato de :math:`M` é :math:`1\,113,3333333\ldots`, todavia,
+    na apresentação da :math:`E`, utiliza-se, geralmente, apenas o número inteiro.
+    Desta forma, :math:`E=1/1\,113`.
 
 ----
 
-:exem:`Exemplo 3` Em uma planta topográfica mediu-se um talhão na forma de um retângulo,
-obtendo-se como comprimentos dos lados os valores de :math:`2,3\,\text{cm}` e de
-:math:`0,9\,\text{cm}`. Sabendo-se que a escala do desenho era de :math:`1:6\,000`, calcule
-a área do talhão em :math:`\,\text{m}^2`?
+.. admonition:: :exem:`Exemplo 3` Em uma planta topográfica mediu-se um talhão na forma de um retângulo,
+    obtendo-se como comprimentos dos lados os valores de :math:`2,3\,\text{cm}` e de
+    :math:`0,9\,\text{cm}`. Sabendo-se que a escala do desenho era de :math:`1:6\,000`, calcule
+    a área do talhão em :math:`\,\text{m}^2`?
 
-:solucao:`Solução:`
-Este problema será resolvido de duas formas. A primeira
-é calculando os comprimentos dos lados em metros e depois calculando
-a área. Da escala temos, :math:`1\,\text{m}=6\,000\,\text{m}`, que é o mesmo que :math:`1\,\text{cm}=60\,\text{m}`.
-Utilizando esta última relação, aplica-se uma regra de três, obtendo-se
-para os lados de :math:`2,3\,\text{cm}` e de :math:`0,9\,\text{cm}`, respectivamente, os comprimentos
-dos lados de :math:`138\,\text{m}` e :math:`54\,\text{m}`. Desta forma, a área seria de :math:`7\,452\,\text{m}^2`
-:math:`(138\,\text{m}\times54\,\text{m})`.
+    :solucao:`Solução:`
+    Este problema será resolvido de duas formas. A primeira
+    é calculando os comprimentos dos lados em metros e depois calculando
+    a área. Da escala temos, :math:`1\,\text{m}=6\,000\,\text{m}`, que é o mesmo que :math:`1\,\text{cm}=60\,\text{m}`.
+    Utilizando esta última relação, aplica-se uma regra de três, obtendo-se
+    para os lados de :math:`2,3\,\text{cm}` e de :math:`0,9\,\text{cm}`, respectivamente, os comprimentos
+    dos lados de :math:`138\,\text{m}` e :math:`54\,\text{m}`. Desta forma, a área seria de :math:`7\,452\,\text{m}^2`
+    :math:`(138\,\text{m}\times54\,\text{m})`.
 
-\noindent Uma outra maneira de calcular a área do talhão é, calculá-la
-em :math:`\text{cm}^2` e, posteriormente, convertê-la para :math:`\,\text{m}^2`. Assim,
-a área no papel é de :math:`2,07\,\text{cm}^2` :math:`(2,3\,\text{cm}\times0,9\,\text{cm})`.
-A escala, como já foi dito, é utilizada para medidas de comprimento.
-Todavia, elevando ambos os lados da escala ao quadrados, teremos uma
-relação entre área de desenho e área na natureza. Para a nossa escala
-:math:`(1\,\text{cm}=60\,\text{m})`, elevando ambos os lados ao quadrado tem-se:
+    Uma outra maneira de calcular a área do talhão é, calculá-la
+    em :math:`\text{cm}^2` e, posteriormente, convertê-la para :math:`\,\text{m}^2`. Assim,
+    a área no papel é de :math:`2,07\,\text{cm}^2` :math:`(2,3\,\text{cm}\times0,9\,\text{cm})`.
+    A escala, como já foi dito, é utilizada para medidas de comprimento.
+    Todavia, elevando ambos os lados da escala ao quadrados, teremos uma
+    relação entre área de desenho e área na natureza. Para a nossa escala
+    :math:`(1\,\text{cm}=60\,\text{m})`, elevando ambos os lados ao quadrado tem-se:
 
-.. math::
-   \left(1\,\text{cm}\right)^2 & =\left(60\,\text{m}\right)^2\\
-   1\text{cm}^2 & =3\,600\,\text{m}^2.
+    .. math::
+       \left(1\,\text{cm}\right)^2 & =\left(60\,\text{m}\right)^2\\
+       1\text{cm}^2 & =3\,600\,\text{m}^2.
 
-Logo, a área do talhão será :math:`2,07\times3\,600=7\,452\,\text{m}^2`.
+    Logo, a área do talhão será :math:`2,07\times3\,600=7\,452\,\text{m}^2`.
 
 ----
 
@@ -229,16 +229,16 @@ de uma escala gráfica.
 
 ----
 
-:exem:`Exemplo 4` Um levantamento de uma propriedade
-será apresentado em papel A4, onde foi estabelecida a :math:`E=1:1\,500`,
-desenhe uma escala gráfica com :math:`6\,\text{cm}` de comprimento.
+.. admonition:: :exem:`Exemplo 4` Um levantamento de uma propriedade
+    será apresentado em papel A4, onde foi estabelecida a :math:`E=1:1\,500`,
+    desenhe uma escala gráfica com :math:`6\,\text{cm}` de comprimento.
 
-:solucao:`Solução:`
+    :solucao:`Solução:`
 
-.. figure:: /images/capitulo2/fig_exemp_escala_grafica.png
-   :scale: 55 %
-   :alt: fig_exemp_escala_grafica.png
-   :align: center
+    .. figure:: /images/capitulo2/fig_exemp_escala_grafica.png
+       :scale: 55 %
+       :alt: fig_exemp_escala_grafica.png
+       :align: center
 
 ----
 
@@ -338,15 +338,15 @@ do valor real. A área poderá ser calculada como:
 
 -----
 
-:exem:`Exemplo 5` Calcular a área do transecto mostrada na :numref:`transectrapezio`.
+.. admonition:: :exem:`Exemplo 5` Calcular a área do transecto mostrada na :numref:`transectrapezio`.
 
-:solucao:`Solução:`
-Considerando a Equação :eq:`eq:areatrapezio`, com as perpendiculares
-sendo as bases e :math:`h=20\,\text{m}`, temos:
+    :solucao:`Solução:`
+    Considerando a Equação :eq:`eq:areatrapezio`, com as perpendiculares
+    sendo as bases e :math:`h=20\,\text{m}`, temos:
 
-.. math::
-   A & =20\left(\frac{0}{2}+25,8+27,4+26,1+25,6+\frac{12,5}{2}\right).\\
-   & =2\,223~\mathrm{m}^2.
+    .. math::
+       A & =20\left(\frac{0}{2}+25,8+27,4+26,1+25,6+\frac{12,5}{2}\right).\\
+       & =2\,223~\mathrm{m}^2.
 
 ----
 
@@ -380,20 +380,19 @@ considerando as alturas distintas dos trapézios.
 
 ----
 
-:exem:`Exemplo 6` Calcular a área do transecto mostrada na :numref:`transectrapezio2`.
+.. admonition:: :exem:`Exemplo 6` Calcular a área do transecto mostrada na :numref:`transectrapezio2`.
 
+    :solucao:`Solução:` Considerando a Equação :eq:`eqareatrapezio2`, para perpendiculares
+    que não tem espaçamento constante e utilizando os dados da :numref:`transectrapezio2`,
+    temos:
 
-:solucao:`Solução:` Considerando a Equação :eq:`eqareatrapezio2`, para perpendiculares
-que não tem espaçamento constante e utilizando os dados da :numref:`transectrapezio2`,
-temos:
+    .. math::
+       A=\frac{1}{2}((14,7+12,2)(15,8-0)+(12,2+49,4)(30,1-15,8)+\\
+       (49,4+14,9)(65,0-30,1)+(14,9+59,1)(85,4-65)+\\
+       (59,1+21,5)(114,1-85,4))\\
 
-.. math::
-   A=\frac{1}{2}((14,7+12,2)(15,8-0)+(12,2+49,4)(30,1-15,8)+\\
-   (49,4+14,9)(65,0-30,1)+(14,9+59,1)(85,4-65)+\\
-   (59,1+21,5)(114,1-85,4))\\
-
-.. math::
-   A=3\,686,4\,\text{m}^2.
+    .. math::
+       A=3\,686,4\,\text{m}^2.
 
 .. _areaGauss:
 
@@ -474,27 +473,27 @@ com uma divisão e produto das coordenadas.
 
 ----
 
-:exem:`Exemplo 7` A partir das coordenadas retangulares, em metros, do levantamento da
-poligonal apresentada abaixo, calcular a sua área.
+.. admonition:: :exem:`Exemplo 7` A partir das coordenadas retangulares, em metros, do levantamento da
+    poligonal apresentada abaixo, calcular a sua área.
 
-.. figure:: /images/capitulo2/exemplo_area_gauss.png
-   :scale: 35 %
-   :alt: exemplo_area_gauss.png
-   :align: center
+    .. figure:: /images/capitulo2/exemplo_area_gauss.png
+       :scale: 35 %
+       :alt: exemplo_area_gauss.png
+       :align: center
 
-Organizando os dados e realizando os cálculos conforme metodologia
-apresentada na :numref:`fig_areagauss2`, temos:
+    Organizando os dados e realizando os cálculos conforme metodologia
+    apresentada na :numref:`fig_areagauss2`, temos:
 
-.. math::
-   2\cdot A  =\frac{26,2}{7,5}\,\frac{9,8}{22,9}\,\frac{24,5}{67,1}\,\frac{58,9}{46,3}\,\frac{40,7}{14,2}\,\frac{26,2}{7,5} \\
+    .. math::
+       2\cdot A  =\frac{26,2}{7,5}\,\frac{9,8}{22,9}\,\frac{24,5}{67,1}\,\frac{58,9}{46,3}\,\frac{40,7}{14,2}\,\frac{26,2}{7,5} \\
 
-.. math::
-   2\cdot A  =& (7,5\cdot 9,8+22,9\cdot 24,5+ \cdots+14,2\cdot 26,2)-\\
-   &(26,2\cdot22,9+9,8\cdot67,1+\cdots +40,7\cdot7,5)
+    .. math::
+       2\cdot A  =& (7,5\cdot 9,8+22,9\cdot 24,5+ \cdots+14,2\cdot 26,2)-\\
+       &(26,2\cdot22,9+9,8\cdot67,1+\cdots +40,7\cdot7,5)
 
-.. math::
-   A & =\frac{1}{2}\left|6\,843,2 - 3\,533,5 \right|\\
-   A & = 1\,654,8\,\text{m}^2
+    .. math::
+       A & =\frac{1}{2}\left|6\,843,2 - 3\,533,5 \right|\\
+       A & = 1\,654,8\,\text{m}^2
 
 ----
 

@@ -127,23 +127,23 @@ trabalhando em pequenas escalas, pode-se considerar a terra um esferoide
 
 ----
 
-:exem:`Exemplo 1` O elipsóide de referência utilizado pelo sistema norte-americano de posicionamento por satélite,
-o GPS, é denominado de WGS84, tendo como raios dos semieixos: :math:`a=6.378.137,0\,\text{m}`
-e :math:`b=6.356.752,31424\,\text{m}`. Calcule
-o achatamento deste elipsóide.
+.. admonition:: :exem:`Exemplo 1` O elipsóide de referência utilizado pelo sistema norte-americano de posicionamento por satélite,
+    o GPS, é denominado de WGS84, tendo como raios dos semieixos: :math:`a=6.378.137,0\,\text{m}`
+    e :math:`b=6.356.752,31424\,\text{m}`. Calcule
+    o achatamento deste elipsóide.
 
-:solucao:`Solução:`
-Por meio da Equação :eq:`eq:achatamento`, tem-se:
+    :solucao:`Solução:`
+    Por meio da Equação :eq:`eq:achatamento`, tem-se:
 
-.. math::
-   f & =1-\frac{b}{a}\\
-   & =1-\frac{6.356.752,31424}{6.378.137,0}\\
-   & =0,003\,3528\,106\,647\\
-   & =\frac{1}{298,257\,223\,563}.
+    .. math::
+       f & =1-\frac{b}{a}\\
+       & =1-\frac{6.356.752,31424}{6.378.137,0}\\
+       & =0,003\,3528\,106\,647\\
+       & =\frac{1}{298,257\,223\,563}.
 
-Então, :math:`f=0,003\,3528\,106\,647=\frac{1}{298,257\,223\,563}`,
-sendo a segunda forma, :math:`f=\frac{1}{298,257}`, com
-arredondamento, a mais utilizada.
+    Então, :math:`f=0,003\,3528\,106\,647=\frac{1}{298,257\,223\,563}`,
+    sendo a segunda forma, :math:`f=\frac{1}{298,257}`, com
+    arredondamento, a mais utilizada.
 
 ----
 
@@ -270,32 +270,32 @@ dado por:
 
 ----
 
-:exem:`Exemplo 2` A latitude, longitude
-e altitude geodésica de um ponto :math:`P` valem: :math:`\phi=-22^\circ13'21,1337''`,
-:math:`\lambda=-41^\circ47'29,8921''` e
-:math:`h=272,32\,\mathrm{m}`. Considerando elipsóide WGS84, tendo como
-raios dos semieixos: :math:`a=6.378.137,0\,\text{m}` e :math:`b=6.356.752,3\,\text{m}`,
-calcule as coordenadas retangulares.
+.. admonition:: :exem:`Exemplo 2` A latitude, longitude
+    e altitude geodésica de um ponto :math:`P` valem: :math:`\phi=-22^\circ13'21,1337''`,
+    :math:`\lambda=-41^\circ47'29,8921''` e
+    :math:`h=272,32\,\mathrm{m}`. Considerando elipsóide WGS84, tendo como
+    raios dos semieixos: :math:`a=6.378.137,0\,\text{m}` e :math:`b=6.356.752,3\,\text{m}`,
+    calcule as coordenadas retangulares.
 
-:solucao:`Solução:`
-Substituindo os valores nas Equações :eq:`eq_cart_x`
-a :eq:`eq_grande_normal`, tem-se:
+    :solucao:`Solução:`
+    Substituindo os valores nas Equações :eq:`eq_cart_x`
+    a :eq:`eq_grande_normal`, tem-se:
 
-.. math::
-   N & =\frac{6.378.137^2}{\sqrt{6.378.137^2\cos^2\left(-22^\circ13'21,1337''\right)+6.356.752,3^2\sin^2\left(-22^\circ13'21,1337''\right)}}\\
-   N & =6.381.192,9127\,\text{m}
+    .. math::
+       N & =\frac{6.378.137^2}{\sqrt{6.378.137^2\cos^2\left(-22^\circ13'21,1337''\right)+6.356.752,3^2\sin^2\left(-22^\circ13'21,1337''\right)}}\\
+       N & =6.381.192,9127\,\text{m}
 
-.. math::
-   x & =(6.381.192,9127+272,32\cos\left(-22^\circ13'21,1337''\right)\cos\left(-41^\circ47'29,8921''\right)\\
-   x & =4.404.445,8857\,\text{m}
+    .. math::
+       x & =(6.381.192,9127+272,32\cos\left(-22^\circ13'21,1337''\right)\cos\left(-41^\circ47'29,8921''\right)\\
+       x & =4.404.445,8857\,\text{m}
 
-.. math::
-   y & =(6.381.192,9127+272,32)\cos\left(-22^\circ13'21,1337''\right)\sin\left(-41^\circ47'29,8921''\right)\\
-   y & =-3.936.872,4167\,\text{m}
+    .. math::
+       y & =(6.381.192,9127+272,32)\cos\left(-22^\circ13'21,1337''\right)\sin\left(-41^\circ47'29,8921''\right)\\
+       y & =-3.936.872,4167\,\text{m}
 
-.. math::
-   z & =\left(\frac{6.356.752,3^2}{6.378.137^2}6.381.192,9127+272,32\right)\sin(-22^\circ13'21,1337'')\\
-   z & =2.397.345,4965\,\text{m}.
+    .. math::
+       z & =\left(\frac{6.356.752,3^2}{6.378.137^2}6.381.192,9127+272,32\right)\sin(-22^\circ13'21,1337'')\\
+       z & =2.397.345,4965\,\text{m}.
 
 ----
 
@@ -320,7 +320,6 @@ ou seja, é simples, uma vez que, com a aplicação das equações, o resultado
    h  ={\displaystyle \frac{p}{\cos\phi}-N}
    :label: eq:cart_to_geo_h
 
-
 em que:
 
 .. math::
@@ -339,41 +338,40 @@ em que:
    \theta ={\displaystyle \arctan\frac{z\cdot a}{p\cdot b}}
    :label: eq:cart_to_geo_aux
 
-
 Os termos :math:`e^{2}\text{ e }e'^{2}` são denominados, respectivamente
 de primeira e segunda excentricidade. O valor de :math:`p` corresponde
 ao raio no paralelo analisado.
 
 ----
 
-:exem:`Exemplo 3` A partir das coordenadas
-retangulares do Exemplo 2, referentes
-ao sistema WGS84, encontrar as coordenadas geodésicas :math:`\phi,\text{ }\lambda\text{ e }h`.
+.. admonition:: :exem:`Exemplo 3` A partir das coordenadas
+    retangulares do Exemplo 2, referentes
+    ao sistema WGS84, encontrar as coordenadas geodésicas :math:`\phi,\text{ }\lambda\text{ e }h`.
 
-:solucao:`Solução:` Sabendo-se que :math:`a=6.378.137,0\,\text{m}` e :math:`b=6.356.752,3\,\text{m}`
-e substituindo :math:`{x=4.404.445,8857\text{ m}}`, :math:`{y=-3.936.872,4167\,\text{m}}`
-e :math:`{z=-2.397.345,4965\,\text{m}}` nas Equações :eq:`eq:ecentricidade_primeira`
-a :eq:`eq:cart_to_geo_aux` para o cálculo das variáveis auxiliares:
+    :solucao:`Solução:` Sabendo-se que :math:`a=6.378.137,0\,\text{m}` e :math:`b=6.356.752,3\,\text{m}`
+    e substituindo :math:`{x=4.404.445,8857\text{ m}}`, :math:`{y=-3.936.872,4167\,\text{m}}`
+    e :math:`{z=-2.397.345,4965\,\text{m}}` nas Equações :eq:`eq:ecentricidade_primeira`
+    a :eq:`eq:cart_to_geo_aux` para o cálculo das variáveis auxiliares:
 
-.. math::
-   e^{2} & ={\displaystyle \frac{6.378.137^2-6.356.752,3^2}{6.378.137^2}=0,006\,694\,384\,442}\\
-   e'^{2} & ={\displaystyle \frac{6.378.137,0^2-6.356.752,3^2}{6.356.752,3^2}=0,006\,739\,501\,254}\\
-   p & =\sqrt{4.404.445,8857^2+-3.936.872,4167^2}=5.907.462,05962\\
-   \theta & ={\displaystyle \arctan\frac{-2.397.345,4965\cdot6.378.137,0}{5.907.462,059620\cdot6.356.752,3}=-22^{\circ}9'18,9119''}
+    .. math::
+       e^{2} & ={\displaystyle \frac{6.378.137^2-6.356.752,3^2}{6.378.137^2}=0,006\,694\,384\,442}\\
+       e'^{2} & ={\displaystyle \frac{6.378.137,0^2-6.356.752,3^2}{6.356.752,3^2}=0,006\,739\,501\,254}\\
+       p & =\sqrt{4.404.445,8857^2+-3.936.872,4167^2}=5.907.462,05962\\
+       \theta & ={\displaystyle \arctan\frac{-2.397.345,4965\cdot6.378.137,0}{5.907.462,059620\cdot6.356.752,3}=-22^{\circ}9'18,9119''}
 
 
-Agora, aplicando as Equações :eq:`eq:cart_to_geo_lat`
-a :eq:`eq:cart_to_geo_h` e utilizando o valor de :math:`N` já calculado
-no Exemplo 2 tem-se:
+    Agora, aplicando as Equações :eq:`eq:cart_to_geo_lat`
+    a :eq:`eq:cart_to_geo_h` e utilizando o valor de :math:`N` já calculado
+    no Exemplo 2 tem-se:
 
-.. math::
-   \phi & ={\displaystyle \arctan\frac{-2.397.345,4965+0,006\,739\,501\,254\cdot6.356.752,3\sin^3\left(-22^\circ9'18,9119''\right)}{5.907.462,059620-0,006\,694\,384\,442\cdot6.378.137\cos^3\left(-22^\circ9'18,9119''\right)}}\\
-   \phi & =-22^\circ13'21,1337''\\
-   \lambda & ={\displaystyle \arctan\frac{-3.936.872,4167}{4.404.445,8857}}=-41^\circ47'29,8921''\\
-   h & ={\displaystyle \frac{5.907.462,05962}{\cos\left(-22^\circ13'21,1337''\right)}-6.381.192,9127=272,32\text{ m }}
+    .. math::
+       \phi & ={\displaystyle \arctan\frac{-2.397.345,4965+0,006\,739\,501\,254\cdot6.356.752,3\sin^3\left(-22^\circ9'18,9119''\right)}{5.907.462,059620-0,006\,694\,384\,442\cdot6.378.137\cos^3\left(-22^\circ9'18,9119''\right)}}\\
+       \phi & =-22^\circ13'21,1337''\\
+       \lambda & ={\displaystyle \arctan\frac{-3.936.872,4167}{4.404.445,8857}}=-41^\circ47'29,8921''\\
+       h & ={\displaystyle \frac{5.907.462,05962}{\cos\left(-22^\circ13'21,1337''\right)}-6.381.192,9127=272,32\text{ m }}
 
-Como era esperado, o resultado é o mesmo de :math:`\phi`, :math:`\lambda`
-e :math:`h` do Exemplo 2.
+    Como era esperado, o resultado é o mesmo de :math:`\phi`, :math:`\lambda`
+    e :math:`h` do Exemplo 2.
 
 -----
 
@@ -740,21 +738,21 @@ da projeção sinusoidal são:
 
 ----
 
-:exem:`Exemplo 4` Qual é a coordenada retângular
-de um ponto de latitude :math:`-21,4324^\circ` e longitude
-de :math:`-42,7912^\circ` considerando a projeção sendo sinusoidal
-com :math:`\lambda_{0}=0^\circ`.
+.. admonition:: :exem:`Exemplo 4` Qual é a coordenada retângular
+    de um ponto de latitude :math:`-21,4324^\circ` e longitude
+    de :math:`-42,7912^\circ` considerando a projeção sendo sinusoidal
+    com :math:`\lambda_{0}=0^\circ`.
 
-:solucao:`Solução:`  Considerando as Equações :eq:`eq:proj_sinu_equi` e :eq:`eq:proj_sinu_equi_2`,
-e observando que os ângulos devem estar em radianos tem-se:
+    :solucao:`Solução:`  Considerando as Equações :eq:`eq:proj_sinu_equi` e :eq:`eq:proj_sinu_equi_2`,
+    e observando que os ângulos devem estar em radianos tem-se:
 
-.. math::
-   x & =(\lambda-\lambda_{0})\cos\phi\\
-   x & =(-42,7912\cdot\pi/180)\cos(-21,4324\cdot\pi/180)\\
-   x & =-\text{0,6952}.\\
-   y & =\phi\\
-   y & =-21,4324\cdot\pi/180\\
-   y & =-0,3741.
+    .. math::
+       x & =(\lambda-\lambda_{0})\cos\phi\\
+       x & =(-42,7912\cdot\pi/180)\cos(-21,4324\cdot\pi/180)\\
+       x & =-\text{0,6952}.\\
+       y & =\phi\\
+       y & =-21,4324\cdot\pi/180\\
+       y & =-0,3741.
 
 ----
 
@@ -808,7 +806,6 @@ são:
 .. math::
    y =k'\left(\cos\phi_{1}\sin(\phi)-\sin\phi_{1}\cos\phi\cos(\lambda-\lambda_{0})\right)
 
-
 em que:
 
 .. math::
@@ -830,7 +827,6 @@ As funções inversas são:
 .. math::
    \displaystyle \phi=\arcsin\left(\cos c\sin\phi_{1}+\left(\frac{y\sin c\cos\phi_{1}}{c}\right)\right),
    :label: eq:proj_azi_equidis_inv_lat
-
 
 .. math::
    {\displaystyle \lambda=\lambda_{0}+\begin{cases}
@@ -926,7 +922,6 @@ respectivamente, oeste-leste e sul-norte. Quando se trata de descrever
 as coordenadas UTM, normatizou-se em designar as coordenadas :math:`x`,
 por 'E', de Este, e :math:`y`, de 'N', de Norte.
 
-
 .. _utmonezone.png:
 
 .. figure:: /images/capitulo3/utmonezone.png
@@ -1004,7 +999,6 @@ auxiliares:
    A =(\lambda-\lambda_{0})\cos\phi
    :label: eq:utm_A
 
-
 .. math::
    M=a((1-e^{2}/4-3e^{4}/64-5e^{6}/256-...)\phi-\\
    (3e^{2}/8+3e^{4}/32+45e^{6}/1024+...)\sin2\phi+\\
@@ -1020,52 +1014,52 @@ deve ser transformado para ângulos em radianos, ou seja, :math:`A=\frac{\pi}{18
 
 ----
 
-:exem:`Exemplo 4` Calcule a coordenada UTM
-de um ponto de latitude :math:`-21^{\circ}` e longitude de :math:`-41^{\circ}`.
-Considere como modelo da terra o sistema WGS84.
+.. admonition:: :exem:`Exemplo 4` Calcule a coordenada UTM
+    de um ponto de latitude :math:`-21^{\circ}` e longitude de :math:`-41^{\circ}`.
+    Considere como modelo da terra o sistema WGS84.
 
-:solucao:`Solução:`  Verifica-se que para o valor da longitude do ponto, :math:`-41^\circ`, o fuso é o 24, que tem MC de
-:math:`-39^\circ` :math:`(\lambda_{0})`). Do Exemplo 3 temos:
-:math:`e^2=0,006\,694\,384\,442`, logo :math:`e=0,081\,819`; e a segunda excentricidade,
-:math:`e'^2=0,006\,739\,501`. Para as outras variáveis auxiliares, considerando
-as Equações :eq:`eq_grande_normal`, :eq:`eq:utm_T` a :eq:`eq:utm_A`,
-temos:
+    :solucao:`Solução:`  Verifica-se que para o valor da longitude do ponto, :math:`-41^\circ`, o fuso é o 24, que tem MC de
+    :math:`-39^\circ` :math:`(\lambda_{0})`). Do Exemplo 3 temos:
+    :math:`e^2=0,006\,694\,384\,442`, logo :math:`e=0,081\,819`; e a segunda excentricidade,
+    :math:`e'^2=0,006\,739\,501`. Para as outras variáveis auxiliares, considerando
+    as Equações :eq:`eq_grande_normal`, :eq:`eq:utm_T` a :eq:`eq:utm_A`,
+    temos:
 
-.. math::
-   N & =\frac{6\,378\,137^2}{\sqrt{6.378.137^2\cos^2\left(-21^\circ\right)+6.356.752,3^2\sin^2\left(-21^\circ\right)}}=6.380.880,55\text{ m}\\
-   T & =\tan^2(-21^\circ)=0,147\,351\,597\,390\\
-   C & =0,006\,739\,501\cos^2(-21^\circ)=0,005\,873\,963\,368\\
-   A & =\frac{\pi}{180^\circ}(-41^\circ--29^\circ)\cos(-21^\circ)=-0,0325\,881\,045\,490
+    .. math::
+       N & =\frac{6\,378\,137^2}{\sqrt{6.378.137^2\cos^2\left(-21^\circ\right)+6.356.752,3^2\sin^2\left(-21^\circ\right)}}=6.380.880,55\text{ m}\\
+       T & =\tan^2(-21^\circ)=0,147\,351\,597\,390\\
+       C & =0,006\,739\,501\cos^2(-21^\circ)=0,005\,873\,963\,368\\
+       A & =\frac{\pi}{180^\circ}(-41^\circ--29^\circ)\cos(-21^\circ)=-0,0325\,881\,045\,490
 
-Substituindo os valores na Equação :eq:`eq:utm_M`:
+    Substituindo os valores na Equação :eq:`eq:utm_M`:
 
-.. math::
-   M= & 6\,378\,137((1-0,081\,819^{2}/4-3\cdot0,081\,819^4/64-5\cdot0,081\,819^6/256)\cdot-21^\circ\cdot\pi/180\\
-   & -(3\cdot0,081\,819^2/8+3\cdot0,081\,819^4/32+45\cdot0,081\,819^6/1024)\cdot\sin(2\cdot-21^\circ)\\
-   & +(15\cdot0,081\,819/256+45\cdot0,081\,819/1024)\cdot\sin(4\cdot-21^\circ)\\
-   & -(35\cdot0,081\,819^6/3072)\cdot\sin(6\cdot-21^\circ))\\
-   M= & -2.323.076,859\,370\,594\,\text{m}
+    .. math::
+       M= & 6\,378\,137((1-0,081\,819^{2}/4-3\cdot0,081\,819^4/64-5\cdot0,081\,819^6/256)\cdot-21^\circ\cdot\pi/180\\
+       & -(3\cdot0,081\,819^2/8+3\cdot0,081\,819^4/32+45\cdot0,081\,819^6/1024)\cdot\sin(2\cdot-21^\circ)\\
+       & +(15\cdot0,081\,819/256+45\cdot0,081\,819/1024)\cdot\sin(4\cdot-21^\circ)\\
+       & -(35\cdot0,081\,819^6/3072)\cdot\sin(6\cdot-21^\circ))\\
+       M= & -2.323.076,859\,370\,594\,\text{m}
 
 
-Aplicando os resultados nas Equações :eq:`eq:utmx`
-e :eq:`eq:utmy`:
+    Aplicando os resultados nas Equações :eq:`eq:utmx`
+    e :eq:`eq:utmy`:
 
-.. math::
-   x= & 0,999\,6\cdot6.380.880,55(-0,032\,588\,104\,549+(1-0,147\,351\,597\,390+0,005\,873\,963\,368)\\
-   & -0,032\,588\,104\,549^3/6+(5-18\cdot 0,147\,351\,597\,390+0,147\,351\,597\,390^2+72\cdot0,005873963368\\
-   & -58\cdot0,006\,739\,501)-0,032\,588\,104\,549^5/120\\
-   & -(35\cdot0,081819^6/3072)\cdot\sin(6\cdot-21^\circ))\\
-   x= & -\text{207.889,216 m }\\
-   y= & 0,999\,6(-2.323.076,859\,370\,594+6.380.880,55\tan\phi\text(-0,0325\,881\,045\,490^2/2+\\
-   & (5-0,14735159739+9\cdot0,005\,873\,963\,368+4\cdot0,005\,873\,963\,368^2)-0,0325\,881\,045\,490^4/24\\
-   & +(61-58\cdot0,147\,351\,597\,390+0,147\,351\,597\,390^2+600\cdot0,005\,873\,963\,368-330\cdot0,006\,694\,384\,442)\\
-   & -0,032\,588\,104\,549^6/720))\\
-  y= & -2.323.448,280\text{ m}
+    .. math::
+       x= & 0,999\,6\cdot6.380.880,55(-0,032\,588\,104\,549+(1-0,147\,351\,597\,390+0,005\,873\,963\,368)\\
+       & -0,032\,588\,104\,549^3/6+(5-18\cdot 0,147\,351\,597\,390+0,147\,351\,597\,390^2+72\cdot0,005873963368\\
+       & -58\cdot0,006\,739\,501)-0,032\,588\,104\,549^5/120\\
+       & -(35\cdot0,081819^6/3072)\cdot\sin(6\cdot-21^\circ))\\
+       x= & -\text{207.889,216 m }\\
+       y= & 0,999\,6(-2.323.076,859\,370\,594+6.380.880,55\tan\phi\text(-0,0325\,881\,045\,490^2/2+\\
+       & (5-0,14735159739+9\cdot0,005\,873\,963\,368+4\cdot0,005\,873\,963\,368^2)-0,0325\,881\,045\,490^4/24\\
+       & +(61-58\cdot0,147\,351\,597\,390+0,147\,351\,597\,390^2+600\cdot0,005\,873\,963\,368-330\cdot0,006\,694\,384\,442)\\
+       & -0,032\,588\,104\,549^6/720))\\
+       y= & -2.323.448,280\text{ m}
 
-Para obtermos a coordenada Este, tem que se somar :math:`500.000\,\text{m}`
-m à :math:`x` e, para a coordenada Norte, somar :math:`10.000.000\,\text{m}` à :math:`y`.
-Desta forma, a coordenada do ponto é: :math:`\text{E}=292.110,784\,\text{m}` e
-:math:`\text{N}=7.676.551,720\,\text{m}`.
+    Para obtermos a coordenada Este, tem que se somar :math:`500.000\,\text{m}`
+    m à :math:`x` e, para a coordenada Norte, somar :math:`10.000.000\,\text{m}` à :math:`y`.
+    Desta forma, a coordenada do ponto é: :math:`\text{E}=292.110,784\,\text{m}` e
+    :math:`\text{N}=7.676.551,720\,\text{m}`.
 
 ----
 

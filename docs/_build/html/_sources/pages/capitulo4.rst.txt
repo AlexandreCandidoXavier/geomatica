@@ -176,84 +176,84 @@ entre o envio do sinal pelos satélites e a sua chegada ao receptor.
 
 ----
 
-:exem:`Exemplo 1` Os dados das posições e distâncias que serão apresentados neste exemplo têm magnitude
-muito inferiores das usuais nos GNSS, uma vez que, geralmente, são
-dadas em milhares de metros, vistas as altitudes dos satélites (a altitude da órbita dos satélites GPS é de 20.200 km)
-e o sistema de referência utilizado. Desta forma, busca-se apenas
-ilustrar a estratégia utilizada no GNSS para cálculo da posição do
-receptor. Vamos supor que desejamos encontrar as coordenadas bidimensionais
-de um ponto onde uma pessoa possua um receptor (:math:`r`). Este receptor
-recebe e processa os sinais, de uma determinada época, emitidos de
-dois satélites, denominados aqui por satélites 1 e 2. Nestes sinais
-são enviadas as efemérides dos satélites, sendo então calculadas suas
-posições: para o satélite 1 e 2, respectivamente, :math:`\boldsymbol{\varrho}^1=(3,\,5)`
-e :math:`\boldsymbol{\varrho}^2=(6,\,4)`. Os receptores GNSS, também
-por meio dos sinais (código), conseguem realizar uma estimativa do
-intervalo de tempo entre o envio do sinal e a chegada ao receptor
-:math:`(\Delta t)`. Como se conhece a velocidade de propagação do sinal,
-velocidade da luz :math:`(c=299.792,458\,\text{km s}^{-1})`,
-pode-se calcular a distância entre eles :math:`(\varrho=c\cdot\Delta t)`,
-sendo de :math:`\varrho_{1r}=\text{4,123}` e de :math:`\varrho_{2r}=\text{3,606}`.
-Calcule as coordenadas do receptor (:math:`\boldsymbol{\delta}_{r}`).
+.. admonition:: :exem:`Exemplo 1` Os dados das posições e distâncias que serão apresentados neste exemplo têm magnitude
+    muito inferiores das usuais nos GNSS, uma vez que, geralmente, são
+    dadas em milhares de metros, vistas as altitudes dos satélites (a altitude da órbita dos satélites GPS é de 20.200 km)
+    e o sistema de referência utilizado. Desta forma, busca-se apenas
+    ilustrar a estratégia utilizada no GNSS para cálculo da posição do
+    receptor. Vamos supor que desejamos encontrar as coordenadas bidimensionais
+    de um ponto onde uma pessoa possua um receptor (:math:`r`). Este receptor
+    recebe e processa os sinais, de uma determinada época, emitidos de
+    dois satélites, denominados aqui por satélites 1 e 2. Nestes sinais
+    são enviadas as efemérides dos satélites, sendo então calculadas suas
+    posições: para o satélite 1 e 2, respectivamente, :math:`\boldsymbol{\varrho}^1=(3,\,5)`
+    e :math:`\boldsymbol{\varrho}^2=(6,\,4)`. Os receptores GNSS, também
+    por meio dos sinais (código), conseguem realizar uma estimativa do
+    intervalo de tempo entre o envio do sinal e a chegada ao receptor
+    :math:`(\Delta t)`. Como se conhece a velocidade de propagação do sinal,
+    velocidade da luz :math:`(c=299.792,458\,\text{km s}^{-1})`,
+    pode-se calcular a distância entre eles :math:`(\varrho=c\cdot\Delta t)`,
+    sendo de :math:`\varrho_{1r}=\text{4,123}` e de :math:`\varrho_{2r}=\text{3,606}`.
+    Calcule as coordenadas do receptor (:math:`\boldsymbol{\delta}_{r}`).
 
-:solucao:`Solução:` Com os dados apresentados na figura a seguir, pode-se desenhar
-a configuração geométrica dos satélites e, por circunferências, as
-distâncias entre eles e o receptor. As circunferências se interceptam
-em dois pontos, sendo estas as possíveis posições para o receptor.
-Considerando que o receptor não pode estar localizado acima dos satélites,
-temos apenas uma posição possível, a do receptor.
-
-
-.. _GNSSPosicExemplo:
-
-.. figure:: /images/capitulo4/GNSSPosicExemplo.png
-   :scale: 35 %
-   :alt: GNSSPosicExemplo.png
-   :align: center
-
-Para encontrar a posição do receptor, utiliza-se a Equação :eq:`eq:GNSSdistanciasatelitereceptor`,
-sendo, para o receptor e o satélite 1:
-
-.. math::
-   4,123^2=\sqrt{(x_r-3)^2+(y_r-5)^2}
-
-.. math::
-   -17,001=x_r^2-6x_r+y_r^2-10y_r
-   :label: exem_a
+    :solucao:`Solução:` Com os dados apresentados na figura a seguir, pode-se desenhar
+    a configuração geométrica dos satélites e, por circunferências, as
+    distâncias entre eles e o receptor. As circunferências se interceptam
+    em dois pontos, sendo estas as possíveis posições para o receptor.
+    Considerando que o receptor não pode estar localizado acima dos satélites,
+    temos apenas uma posição possível, a do receptor.
 
 
-Para o satélite 2 e o receptor:
+    .. _GNSSPosicExemplo:
 
-.. math::
-   3,606^2=\sqrt{(x_r-6)^2+(y_r-4)^2}
+    .. figure:: /images/capitulo4/GNSSPosicExemplo.png
+       :scale: 35 %
+       :alt: GNSSPosicExemplo.png
+       :align: center
 
-.. math::
-   -38,997 = x_r^2-12x_r+y_r^2-8y_r
-   :label: exem_b
+    Para encontrar a posição do receptor, utiliza-se a Equação :eq:`eq:GNSSdistanciasatelitereceptor`,
+    sendo, para o receptor e o satélite 1:
+
+    .. math::
+       4,123^2=\sqrt{(x_r-3)^2+(y_r-5)^2}
+
+    .. math::
+       -17,001=x_r^2-6x_r+y_r^2-10y_r
+       :label: exem_a
 
 
-Subtraindo a Equação :eq:`exem_a` da :eq:`exem_b` e isolando :math:`y`:
+    Para o satélite 2 e o receptor:
 
-.. math::
-   y_r = -10,998+3x_r
-   :label: exem_c
+    .. math::
+       3,606^2=\sqrt{(x_r-6)^2+(y_r-4)^2}
 
-Substituindo :eq:`exem_c`  em :eq:`exem_a` :
+    .. math::
+       -38,997 = x_r^2-12x_r+y_r^2-8y_r
+       :label: exem_b
 
-.. math::
-   x_r^2-6x_r+(-10,998+3x_r)^2-10(-10,998+3x_r) = -17,001
 
-.. math::
-   10x_r^2-101,988x_r+247,935=0
-   :label: exem_d
+    Subtraindo a Equação :eq:`exem_a` da :eq:`exem_b` e isolando :math:`y`:
 
-A Equação :eq:`exem_d` é do tipo polinomial do segundo grau, sendo
-suas raízes. A equação do segundo grau, :math:`ax^{2}+bx+x=0`, tem raízes: :math:`\displaystyle {x=\frac{-b\pm\sqrt{b^{2}-4ac}}{2a}}`
-. Logo, :math:`x_{r1}=4` e :math:`x_{r2}=6,2`. Por fim, substituindo as raízes na Equação
-(a) ou (b) encontram-se, :math:`y_{r1}=1` e :math:`y_{r2}=7,6`. Ou seja, temos
-duas posições possíveis para o receptor, :math:`\boldsymbol{\varrho_{r}}=(4,\,1)`
-ou :math:`\boldsymbol{\varrho_{r}}=(6,2,\,7,6)`. Como o receptor não estará
-acima dos satélites, a posição do receptor seria :math:`\boldsymbol{\varrho_{r}}=(4,\,1)`.
+    .. math::
+       y_r = -10,998+3x_r
+       :label: exem_c
+
+    Substituindo :eq:`exem_c`  em :eq:`exem_a` :
+
+    .. math::
+       x_r^2-6x_r+(-10,998+3x_r)^2-10(-10,998+3x_r) = -17,001
+
+    .. math::
+       10x_r^2-101,988x_r+247,935=0
+       :label: exem_d
+
+    A Equação :eq:`exem_d` é do tipo polinomial do segundo grau, sendo
+    suas raízes. A equação do segundo grau, :math:`ax^{2}+bx+x=0`, tem raízes: :math:`\displaystyle {x=\frac{-b\pm\sqrt{b^{2}-4ac}}{2a}}`
+    . Logo, :math:`x_{r1}=4` e :math:`x_{r2}=6,2`. Por fim, substituindo as raízes na Equação
+    (a) ou (b) encontram-se, :math:`y_{r1}=1` e :math:`y_{r2}=7,6`. Ou seja, temos
+    duas posições possíveis para o receptor, :math:`\boldsymbol{\varrho_{r}}=(4,\,1)`
+    ou :math:`\boldsymbol{\varrho_{r}}=(6,2,\,7,6)`. Como o receptor não estará
+    acima dos satélites, a posição do receptor seria :math:`\boldsymbol{\varrho_{r}}=(4,\,1)`.
 
 ----
 

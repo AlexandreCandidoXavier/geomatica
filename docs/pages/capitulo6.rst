@@ -296,19 +296,19 @@ e :math:`\alpha` é o coeficiente de dilatação da trena :math:`(^\circ\mathrm{
 
 ----
 
-:exem:`Exemplo 1` Considere uma trena que
-foi aferida para trabalho na temperatura de :math:`20^{\circ}\mathrm{C}`.
-Ela apresenta coeficiente de dilatação de :math:`0,0000116^{\circ}\mathrm{C}^{-1}`.
-Se foi medido em campo :math:`54,3\,\text{m}` sob uma temperatura de :math:`40^{\circ}\mathrm{C}`,
-calcular a distância com a correção devido a temperatura ser distinta
-do padrão da trena.
+.. admonition:: :exem:`Exemplo 1` Considere uma trena que
+    foi aferida para trabalho na temperatura de :math:`20^{\circ}\mathrm{C}`.
+    Ela apresenta coeficiente de dilatação de :math:`0,0000116^{\circ}\mathrm{C}^{-1}`.
+    Se foi medido em campo :math:`54,3\,\text{m}` sob uma temperatura de :math:`40^{\circ}\mathrm{C}`,
+    calcular a distância com a correção devido a temperatura ser distinta
+    do padrão da trena.
 
-:solucao:`Solução:`
-De acordo com a Equação :eq:`eq:trenatemperatura`, temos:
+    :solucao:`Solução:`
+    De acordo com a Equação :eq:`eq:trenatemperatura`, temos:
 
-:math:`C_{t}=S(t-t_{0})\alpha=54,3(40^{\circ}-20^{\circ})0,0000116=0,013\,\mathrm{m}`
+    :math:`C_{t}=S(t-t_{0})\alpha=54,3(40^{\circ}-20^{\circ})0,0000116=0,013\,\mathrm{m}`
 
-Logo, aplicando a correção, :math:`54,3\,\mathrm{m}+0,013\,\mathrm{m}=54,313\,\mathrm{m}`. 
+    Logo, aplicando a correção, :math:`54,3\,\mathrm{m}+0,013\,\mathrm{m}=54,313\,\mathrm{m}`.
 
 ----
 
@@ -333,20 +333,20 @@ em que: :math:`q` é a área da seção transversal da trena :math:`(\text{mm}^{
 de elasticidade por tração, normalmente :math:`20\,000\,\mathrm{kg mm}^{-2}`.
 A tensão pode ser medida por meio de um tensiômetro.
 
-:exem:`Exemplo 2`  Considere uma trena que foi
-aferida para trabalho na tensão de :math:`10` kg. Todavia, quando no campo
-aplicou-se uma tensão de :math:`5` kg. Se foi medido em campo :math:`54,3` m nesta
-condição, calcular a distância com a correção devido à tensão ser
-distinta do padrão da trena. Considere a área da seção da trena
-:math:`q=0,4\,\mathrm{mm}\cdot12\,\mathrm{mm=4,8\,\mathrm{mm^{2}}}`.
+.. admonition:: :exem:`Exemplo 2`  Considere uma trena que foi
+    aferida para trabalho na tensão de :math:`10` kg. Todavia, quando no campo
+    aplicou-se uma tensão de :math:`5` kg. Se foi medido em campo :math:`54,3` m nesta
+    condição, calcular a distância com a correção devido à tensão ser
+    distinta do padrão da trena. Considere a área da seção da trena
+    :math:`q=0,4\,\mathrm{mm}\cdot12\,\mathrm{mm=4,8\,\mathrm{mm^{2}}}`.
 
-:solucao:`Solução:`
-De acordo com a Equação :eq:`eq:trenatensao` e considerando :math:`E=20.000\,\mathrm{kg\,mm^{-2}}`
-temos:
+    :solucao:`Solução:`
+    De acordo com a Equação :eq:`eq:trenatensao` e considerando :math:`E=20.000\,\mathrm{kg\,mm^{-2}}`
+    temos:
 
-:math:`\displaystyle C_{T}=S\frac{(T-T_{0})}{qE},=54,3\frac{(5-10)}{4,8\cdot20\,000}=-0,003\,\mathrm{m}`
+    :math:`\displaystyle C_{T}=S\frac{(T-T_{0})}{qE},=54,3\frac{(5-10)}{4,8\cdot20\,000}=-0,003\,\mathrm{m}`
 
-Logo, aplicando a correção para o erro de tensão, :math:`54,3\,\mathrm{m}-0,003\,\mathrm{m}=54,297\,\mathrm{m}`. 
+    Logo, aplicando a correção para o erro de tensão, :math:`54,3\,\mathrm{m}-0,003\,\mathrm{m}=54,297\,\mathrm{m}`.
 
 ----
 
@@ -377,23 +377,23 @@ está suspensa, é sempre menor do que a real.
 
    Demonstração do erro devido à catenária.
 
-:exem:`Exemplo 3` A distância de :math:`54,3` m foi
-medida em duas trenadas, uma de 30 m e outra de :math:`24,3` m. Considerando
-o peso da trena de :math:`0,03967` kg/m, qual o erro devido à catenária e
-qual seria a medida real quando este erro for compensando? 
+.. admonition:: :exem:`Exemplo 3` A distância de :math:`54,3` m foi
+    medida em duas trenadas, uma de 30 m e outra de :math:`24,3` m. Considerando
+    o peso da trena de :math:`0,03967` kg/m, qual o erro devido à catenária e
+    qual seria a medida real quando este erro for compensando?
 
-:solucao:`Solução:`
-De acordo com a Equação :eq:`eq:catenaria`, para a primeira trenada,
-:math:`S=30` m:
+    :solucao:`Solução:`
+    De acordo com a Equação :eq:`eq:catenaria`, para a primeira trenada,
+    :math:`S=30` m:
 
-:math:`\displaystyle C_{C}=-\frac{P^{2}S^{3}}{24T^{2}}=-\frac{0,03967^{2}\cdot30^{3}}{24\cdot5^{2}}=-0,071\,\mathrm{m}`,
+    :math:`\displaystyle C_{C}=-\frac{P^{2}S^{3}}{24T^{2}}=-\frac{0,03967^{2}\cdot30^{3}}{24\cdot5^{2}}=-0,071\,\mathrm{m}`,
 
-Para os :math:`24,3\,\text{m}` finais:
+    Para os :math:`24,3\,\text{m}` finais:
 
-:math:`\displaystyle C_{C}=-\frac{P^{2}S^{3}}{24T^{2}}=-\frac{0,03967^{2}\cdot24,3^{3}}{24\cdot5^{2}}=-0,038\,\mathrm{m}`,
+    :math:`\displaystyle C_{C}=-\frac{P^{2}S^{3}}{24T^{2}}=-\frac{0,03967^{2}\cdot24,3^{3}}{24\cdot5^{2}}=-0,038\,\mathrm{m}`,
 
-Logo, o erro total é :math:`-0,109\,\text{m}` :math:`(-0,071+-0,038)`. A medida correta
-da trena considerando e erro da catenária é :math:`54,3-0,109=54,191\,\text{m}`.
+    Logo, o erro total é :math:`-0,109\,\text{m}` :math:`(-0,071+-0,038)`. A medida correta
+    da trena considerando e erro da catenária é :math:`54,3-0,109=54,191\,\text{m}`.
 
 ----
 
@@ -409,7 +409,6 @@ o comprimento corrigido devido a estes três erros :math:`(S_{\mathrm{corrigido}
    S_{\mathrm{corrigido}}=S+C_{t}+C_{T}+C_{C},
    :label: eq:TrenaErroTotal
 
-
 em que: :math:`S_{\mathrm{corrigido}}` é o comprimento do alinhamento
 corrigido (m); :math:`S` é o comprimento do alinhamento medido com a trena
 (m); :math:`C_{t}` é a compensação devido à temperatura (m); :math:`C_{T}` é
@@ -418,15 +417,15 @@ a compensação devido à tensão (m); e :math:`C_{C}` é a compensação devido
 
 ----
 
-:exem:`Exemplo 4` Considerando os erros encontrados
-na medição devido à temperatura, à tensão e à catenária dos Exemplos
-1, 2 e 3, respectivamente, qual seria o comprimento real, quando o nominal foi
-de :math:`54,3\,\text{m}`?
+.. admonition:: :exem:`Exemplo 4` Considerando os erros encontrados
+    na medição devido à temperatura, à tensão e à catenária dos Exemplos
+    1, 2 e 3, respectivamente, qual seria o comprimento real, quando o nominal foi
+    de :math:`54,3\,\text{m}`?
 
-:solucao:`Solução:`
-De acordo com a Equação :eq:`eq:TrenaErroTotal`:
+    :solucao:`Solução:`
+    De acordo com a Equação :eq:`eq:TrenaErroTotal`:
 
-:math:`S_{\mathrm{corrigido}}=S+C_{t}+C_{T}+C_{C}=54,3+0,013+-0,003+-0,109=54,201\,\text{m}`.
+    :math:`S_{\mathrm{corrigido}}=S+C_{t}+C_{T}+C_{C}=54,3+0,013+-0,003+-0,109=54,201\,\text{m}`.
 
 ----
 
@@ -516,8 +515,6 @@ em metros, com três casas decimais, referentes aos decímetros, centímetros
 e por final, os milímetros, que na mira apresentada na Figura :numref:`fig_luneta_mira.png` b,
 são estimados.
 
-
-
 .. _fig_luneta_mira.png:
 
 .. figure:: /images/capitulo6/fig_luneta_mira.png
@@ -580,25 +577,24 @@ mesmas, :math:`h`, logo:
 
 ----
 
-:exem:`Exemplo 5` Utilizando um teodolito estacionado no ponto A,
-de altitude de :math:`456,785\,\text{m}`  e :math:`ai=1,65\,\text{m}`, fez-se uma visada ao ponto
-B, anotando as seguintes medidas: :math:`z=84^{\circ}12'00''`;
-:math:`ri=0,900\,\text{m}`; :math:`rm=1,732\,\text{m}`; :math:`rs=2,564\,\text{m}`.
-Qual é :math:`\mathrm{DH_{AB}}` e a altitude de B?
+.. admonition:: :exem:`Exemplo 5` Utilizando um teodolito estacionado no ponto A,
+    de altitude de :math:`456,785\,\text{m}`  e :math:`ai=1,65\,\text{m}`, fez-se uma visada ao ponto
+    B, anotando as seguintes medidas: :math:`z=84^{\circ}12'00''`;
+    :math:`ri=0,900\,\text{m}`; :math:`rm=1,732\,\text{m}`; :math:`rs=2,564\,\text{m}`.
+    Qual é :math:`\mathrm{DH_{AB}}` e a altitude de B?
 
-:solucao:`Solução:`
-Da Equação :eq:`eq:taqueometria_DH`:
+    :solucao:`Solução:`
+    Da Equação :eq:`eq:taqueometria_DH`:
 
-:math:`\mathrm{DH_{AB}=100(2,564-0,900)\sin^{2}84^{\circ}12'00'=164,701}\,\text{m}`.
+    :math:`\mathrm{DH_{AB}=100(2,564-0,900)\sin^{2}84^{\circ}12'00'=164,701}\,\text{m}`.
 
-Da equação :eq:`eq:taqueometria_DN`:
+    Da equação :eq:`eq:taqueometria_DN`:
 
-:math:`{\displaystyle {\displaystyle \mathrm{DN_{AB}}=\frac{100(2,564-0,900)\sin2\cdot84^{\circ}12'00''}{2}+1,65-1,732=16,648}\,\text{m}}`.
+    :math:`{\displaystyle {\displaystyle \mathrm{DN_{AB}}=\frac{100(2,564-0,900)\sin2\cdot84^{\circ}12'00''}{2}+1,65-1,732=16,648}\,\text{m}}`.
 
-Logo a altitude de B será de :math:`473,433\,\text{m}` :math:`(456,785+16,648)`.
+    Logo a altitude de B será de :math:`473,433\,\text{m}` :math:`(456,785+16,648)`.
 
 ----
-
 
 Medidor Eletrônico de Distância (MED)
 =====================================
@@ -645,17 +641,17 @@ comuns: :math:`\mathrm{k}=10^{3}` (kHz, quilo-hertz); :math:`\mathrm{M}=10^{6}`
 
 ----
 
-:exem:`Exemplo 6` Considere que um feixe de REM, emitida por um MED de uma
-estação total, foi modulada na frequência de :math:`{149,84\mathrm{~kHz}}`
-e :math:`\eta=1,0003`. Qual é o valor do comprimento de onda?
+.. admonition:: :exem:`Exemplo 6` Considere que um feixe de REM, emitida por um MED de uma
+    estação total, foi modulada na frequência de :math:`{149,84\mathrm{~kHz}}`
+    e :math:`\eta=1,0003`. Qual é o valor do comprimento de onda?
 
-:solucao:`Solução:`
-Das Equações :eq:`eq:velocidadeluzvacuo` e :eq:`eq:velocidadedaluzatmosfera`:
+    :solucao:`Solução:`
+    Das Equações :eq:`eq:velocidadeluzvacuo` e :eq:`eq:velocidadedaluzatmosfera`:
 
-.. math::
-   \lambda&=\frac{V}{f}=\frac{c}{\eta\cdot f} \\
-   \lambda&=\frac{299\,792\,458}{1,0003\cdot149,84\cdot10^{3}}\\
-   \lambda&=2\,000,2\,\text{m}
+    .. math::
+       \lambda&=\frac{V}{f}=\frac{c}{\eta\cdot f} \\
+       \lambda&=\frac{299\,792\,458}{1,0003\cdot149,84\cdot10^{3}}\\
+       \lambda&=2\,000,2\,\text{m}
 
 ----
 
@@ -715,39 +711,38 @@ distância com precisão milimétrica.
 
    Determinação da :math:`\mathrm{DH}` e da :math:`\mathrm{DN}` por meio do MED.
 
-
 ----
 
-:exem:`Exemplo 7` Trabalhando com um medidor eletrônico de distância
-(MED) de frequência :math:`1,4984\,\text{MHz}` estacionado em um ponto e fazendo uma
-mira no prisma sobre outro ponto, foram obtidos os seguintes dados:
-um total de número de comprimento de onda inteiro de 20 :math:`(n)`; e
-um ângulo de fase de :math:`15^{\circ}` :math:`(\varphi)`. Considerando :math:`\eta=1,0003`,
-calcule: a) o comprimento de onda :math:`(\lambda)` para a frequência modulada
-emitida; b) a distância entre o MED e o prisma.
+.. admonition:: :exem:`Exemplo 7` Trabalhando com um medidor eletrônico de distância
+    (MED) de frequência :math:`1,4984\,\text{MHz}` estacionado em um ponto e fazendo uma
+    mira no prisma sobre outro ponto, foram obtidos os seguintes dados:
+    um total de número de comprimento de onda inteiro de 20 :math:`(n)`; e
+    um ângulo de fase de :math:`15^{\circ}` :math:`(\varphi)`. Considerando :math:`\eta=1,0003`,
+    calcule: a) o comprimento de onda :math:`(\lambda)` para a frequência modulada
+    emitida; b) a distância entre o MED e o prisma.
 
-:solucao:`Solução:`
-Das Equações :eq:`eq:velocidadeluzvacuo` e :eq:`eq:velocidadedaluzatmosfera`:
+    :solucao:`Solução:`
+    Das Equações :eq:`eq:velocidadeluzvacuo` e :eq:`eq:velocidadedaluzatmosfera`:
 
-.. math::
-   \lambda&=\frac{V}{f}\\
-   \lambda&=\frac{c}{\eta\cdot f}\\
-   \lambda&=\frac{299\,792\,458}{1,0003\cdot1,4984\cdot10^{6}}\\
-   \lambda&=200,02\,\text{m}.
+    .. math::
+       \lambda&=\frac{V}{f}\\
+       \lambda&=\frac{c}{\eta\cdot f}\\
+       \lambda&=\frac{299\,792\,458}{1,0003\cdot1,4984\cdot10^{6}}\\
+       \lambda&=200,02\,\text{m}.
 
-De acordo com Equação :eq:`eq:diferencadefaseAnguloRad`:
+    De acordo com Equação :eq:`eq:diferencadefaseAnguloRad`:
 
-.. math::
-   \Delta\lambda&=\frac{\varphi}{360^{\circ}}\lambda\\
-   \Delta\lambda&=\frac{15^{\circ}}{360^{\circ}}200,02\\
-   \Delta\lambda&=8,334\mathrm{\,m}.
+    .. math::
+       \Delta\lambda&=\frac{\varphi}{360^{\circ}}\lambda\\
+       \Delta\lambda&=\frac{15^{\circ}}{360^{\circ}}200,02\\
+       \Delta\lambda&=8,334\mathrm{\,m}.
 
-De acordo com Equação :eq:`eq:distanciaMED`:
+    De acordo com Equação :eq:`eq:distanciaMED`:
 
-.. math::
-   d&=\frac{n\lambda+\Delta\lambda}{2}\\
-   d&= \frac{20\cdot200,02+8,334}{2}\\
-   d&=2\,004,367\mathrm{\,m.}
+    .. math::
+       d&=\frac{n\lambda+\Delta\lambda}{2}\\
+       d&= \frac{20\cdot200,02+8,334}{2}\\
+       d&=2\,004,367\mathrm{\,m.}
 
 ----
 
@@ -811,26 +806,26 @@ B, eles estão em uma mesma elevação, desta forma, a DN entre A e B
 e do efeito da refração serão tratados no :any:`RST Capitulo9`,
 seção \ref{sec:Erro-de-esfericidade}.
 
-:exem:`Exemplo 8`  De uma estação total estacionada no ponto 30, fez
-uma visada no ponto 31, onde se encontrava o prisma. Sendo a :math:`ai=1,60\,\mathrm{m}`,
-:math:`ap=2,000\,\mathrm{m}`. As leituras obtidas no visor da estação foram:
-:math:`z=95^{\circ}41'10''`; :math:`d=329,715\,\mathrm{m}`. Calcular
-a DH e a DN entre os pontos 30 e 31.
+.. admonition:: :exem:`Exemplo 8`  De uma estação total estacionada no ponto 30, fez
+    uma visada no ponto 31, onde se encontrava o prisma. Sendo a :math:`ai=1,60\,\mathrm{m}`,
+    :math:`ap=2,000\,\mathrm{m}`. As leituras obtidas no visor da estação foram:
+    :math:`z=95^{\circ}41'10''`; :math:`d=329,715\,\mathrm{m}`. Calcular
+    a DH e a DN entre os pontos 30 e 31.
 
-:solucao:`Solução:`
-Da Equação :eq:`eq:MEDDHZ`:
+    :solucao:`Solução:`
+    Da Equação :eq:`eq:MEDDHZ`:
 
-.. math::
-   \mathrm{DH}&=d\sin z\\
-   \mathrm{DH}&=329,715\sin95^{\circ}41'10''\\
-   \mathrm{DH}&=328,093\,\text{m}.
+    .. math::
+       \mathrm{DH}&=d\sin z\\
+       \mathrm{DH}&=329,715\sin95^{\circ}41'10''\\
+       \mathrm{DH}&=328,093\,\text{m}.
 
-Da Equação :eq:`eq:MEDDNZ` e :eq:`eq:MEDVZ`:
+    Da Equação :eq:`eq:MEDDNZ` e :eq:`eq:MEDVZ`:
 
-.. math::
-   \mathrm{DN}&=d\cos z-ai+ap\\
-   \mathrm{DN}&=329,715\cos95^{\circ}41'10''+1,60-2,000\\
-   \mathrm{DN}&=-33,068\mathrm{\,m}.
+    .. math::
+       \mathrm{DN}&=d\cos z-ai+ap\\
+       \mathrm{DN}&=329,715\cos95^{\circ}41'10''+1,60-2,000\\
+       \mathrm{DN}&=-33,068\mathrm{\,m}.
 
 ----
 
