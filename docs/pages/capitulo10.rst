@@ -141,9 +141,9 @@ de nível, assim como suas características :cite:`cole2009surveyor`:
    são saliências em penhasco ou cachoeiras;
 -  sequências de curvas de nível fechadas na planta, tanto podem ser a representação
    de um morro como uma depressão. Será um morro se, na leitura das cotas das curvas de nível, seus valores aumentam à medida que as curvas se tornam menores. Por outro lado, se as cotas das curvas de nível diminuem à medida que as curvas se tornam menores, esta área representará uma depressão.
--  curvas de nível cortando rios tem forma de ``V", indicando rio acima;
--  antes de junção de cursos de água, as curvas de nível tem forma de ``M";
--  curvas de nível cortando um cume tem forma de ``U";
+-  curvas de nível cortando rios tem forma de 'V', indicando rio acima;
+-  antes de junção de cursos de água, as curvas de nível tem forma de 'M';
+-  curvas de nível cortando um cume tem forma de 'U';
 -  curvas de nível são espaçadas uniformidade em terrenos com uniforme declividade;
 -  curvas de nível espaçadas de forma irregular, representa terreno acidentado;
 -  a distância horizontal entre curvas de nível indicam o grau de declividade.
@@ -182,8 +182,8 @@ estação total, pelo método da irradiação. Em levantamentos que requerem mai
 precisão na determinação das cotas, é preferível o nivelamento do tipo geométrico,
 ou seja, emprega-se o nível como equipamento. Quanto à distribuição espacial dos
 pontos cotados, estes podem estar uniformementes distribuídos ou não. Quando os
-pontos são uniformemente distribuídos, denominamos de \index{grade regular}grade
-regular, sendo utilizada em terrenos de topografia mais uniforme. Já uma grade
+pontos são uniformemente distribuídos, denominamos de **grade
+regular**, sendo utilizada em terrenos de topografia mais uniforme. Já uma grade
 irregular, é aquela em que os pontos cotados não são uniformemente distribuídos no
 terreno, podendo ser utilizada para todos os tipos de terreno.
 
@@ -194,42 +194,159 @@ de nível de grade irregular, pode-se consultar
 
 Saliente-se também que no dia a dia de um técnico em topografia, mapas com
 curvas de nível são geradas rapidamente por meio de programas de computador,
-podendo-se destacar os programas QGIS \footnote{Disponível em: \url{https://www.qgis.org/pt_BR/site/}}, que é gratuito e o Autocad. Resumidamente, para se obter as curvas em computador, deve-se importar ou inserir os dados de posição e de altitude dos pontos :math:`(x,\,y,\,z)` no programa utilizado, sendo que as posições podem estar em grade regular ou irregular; e, para finalizar a operação, defini-se alguns parâmetros, como a equidistância vertical desejada. Para descrição detalhada dos procedimentos necessários, consultar os manuais dos respectivos programas e, para estudar a teoria por trás da geração, pode-se consultar \citeonline{WOLF}.
+podendo-se destacar os programas `QGIS <https://www.qgis.org/pt_BR/site/>`_,
+que é gratuito e o Autocad. Resumidamente, para se obter as curvas em computador,
+deve-se importar ou inserir os dados de posição e de altitude dos pontos
+:math:`(x,\,y,\,z)` no programa utilizado, sendo que as posições podem estar em
+grade regular ou irregular; e, para finalizar a operação, defini-se alguns parâmetros,
+como a equidistância vertical desejada. Para descrição detalhada dos procedimentos
+necessários, consultar os manuais dos respectivos programas e, para estudar a teoria
+por trás da geração, pode-se consultar :cite:`WOLF`.
 
-Curva de nível em grade regular
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. admonition:: Exemplo de geração de curvas de nível com dados de altitude do *Google Earth* e do **QGIS**.
 
-\parpic[r]{\begin{minipage}{100mm}\includegraphics[trim ={4mm 0mm 0mm 0mm},clip,scale=0.7]{curva_nivel3}\captionof{figure}{Método da determinação das curvas de nível por meio de dados em grade regular.}\label{fig:curva_nivel3}\end{minipage}}
-Nesta seção veremos a metodologia para determinação de curvas de nível quando o terreno é nivelado por meio de uma grade regular. O nivelamento por grade regular é utilizado em terreno  de declividade uniforme e em área pequenas. 
+    .. raw:: html
 
-No terreno, é realizada a \index{quadriculação}quadriculação (área dividida em quadrados), com estacas materializando os vértices, formando uma grade. As math:`\text{DH}`s entre as estacas são, normalmente, de :math:`10\,\text{m}` ou de :math:`20\,\text{m}`, a depender do relevo a ser levantado. Os pontos são cotados pelo método do nivelamento geométrico ou pelo nivelamento trigonométrico com teodolitos ou estações totais. As linhas e colunas da grade são nomeadas para se localizar as estacas no terreno.
+        <div style="position: center; padding-bottom=75%; height:0; overflow: hidden; max-width: 100%; height:auto">
+           <iframe width="608" height="360" src="https://www.youtube.com/embed/xekwB3d6e6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
-Para exemplificar a metodologia da determinação das curvas de nível, vamos utilizar a Figura \ref{fig:curva_nivel3}. Na Figura \ref{fig:curva_nivel3}a é apresentada a grade, com as respectivas cotas das estacas, em metros. As linhas foram nominadas pelas letras ``A", ``B" e ``C", enquanto as colunas, pelos números ``1", ``2" e ``3". Desta forma, pode-se verificar facilmente as cotas das estacas,  por exemplo, a estaca B2 tem cota de :math:`102,5\,\text{m}`.  Para esta grade, vamos considerar que a math:`\text{DH}` entre as estaca é de :math:`20\,\text{m}`.
+Determinação de curva de nível em grade regular
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A grade tem a menor e a maior cota nas estacas C3 e A1, :math:`100,0\,\text{m}` e :math:`104,5\,\text{m}`, respectivamente, ou seja, há uma DN total de :math:`4,5\,\text{m}` no terreno. Pode-se considerar razoável, que uma equidistância vertical de :math:`1\,\text{m}` seja adequada para representar o relevo deste terreno. Considerando esta equidistância vertical, teremos que desenhar as curvas de nível :math:`101\,\text{m}`, :math:`102\,\text{m}`, :math:`103\,\text{m}` e :math:`104\,\text{m}`. 
+Nesta seção veremos a metodologia para determinação de curvas de nível quando o
+terreno é nivelado por meio de uma grade regular. O nivelamento por grade regular é
+utilizado em terreno  de declividade uniforme e em área pequenas.
 
-Para cada curva de nível deve ser verificado em quais pares de estacas ela passa. Por exemplo, considere a curva de nível :math:`101\,\text{m}`, em algum ponto entre a estaca C1 e C2 ela ira passar, uma vez que as suas respectivas cotas são de :math:`101,1\,\text{m}` e :math:`100,8\,\text{m}`. Seja o perfil do terreno uniforme entre estas (sem grandes variações), pode-se, por interpolação, determinar a math:`\text{DH}` que a curva de nível :math:`101\,\text{m}` estará em relação a estaca C1 ou C2, mas como? Entre estas estacas, há uma DN de :math:`0,3\,\text{m}` e uma math:`\text{DH}` de :math:`20\,\text{m}`. Da estaca C1, cota :math:`101,1\,\text{m}`, ao ponto de cota :math:`101\,\text{m}`, onde passa a curva de nível :math:`101\,\text{m}`, há uma DN de :math:`0,1`. Por regra de três, a curva de nível :math:`101\,\text{m}` estará a :math:`\approx6,7\,\text{m}` da estaca C1 :math:`\left(0,1\frac{20}{0,3}\right)`. Desta forma, entre C1 e C2, no ponto a :math:`6,7\,\text{m}` da estaca C1 é feito um pequeno risco. Tal procedimento é repetido para todos os pares de estacas onde a curva de nível :math:`101` os cruzam. Para curva de nível :math:`101`, os pares a serem verificados são C2-B2, B2-B3 e B3-A3. Para estes pares encontra-se o ponto de cota :math:`101\,\text{m}` e marca-se a posição, sempre com um risco, ou seja a posição onde a curva de nível :math:`101` cruza as estacas.
+No terreno, é realizada a quadriculação (área dividida em quadrados),
+com estacas materializando os vértices, formando uma grade. As :math:`\text{DH}` s
+entre as estacas são, normalmente, de :math:`10\,\text{m}` ou de :math:`20\,\text{m}`,
+a depender do relevo a ser levantado. Os pontos são cotados pelo método do nivelamento
+geométrico ou pelo nivelamento trigonométrico com teodolitos ou estações totais. As
+linhas e colunas da grade são nomeadas para se localizar as estacas no terreno.
 
-As marcas onde as curvas de nível cruzam os quadrados da quadrícula são apresentadas na Figura \ref{fig:curva_nivel3}b. Após tal procedimento, é realizada a conexão das marcas de cada uma das curvas de nível por linhas retas ou suavizadas. No nosso exemplo, as marcas foram conectadas por linhas retas (Figura \ref{fig:curva_nivel3}b). Caso contenha linhas mestras, utilizar linha mais grossa para destacá-la. Para finalizar, as curvas de nível são cotadas com as respectivas cotas (Figura \ref{fig:curva_nivel3}d).
+Para exemplificar a metodologia da determinação das curvas de nível, vamos utilizar a
+:numref:`curva_nivel3`. Na :numref:`curva_nivel3` a é apresentada a grade,
+com as respectivas cotas das estacas, em metros. As linhas foram nominadas pelas
+letras :math:`\text{A}`, :math:`\text{B}` e :math:`\text{C}`, enquanto as colunas, pelos números
+:math:`1`, :math:`2` e :math:`3`. Desta forma, pode-se verificar facilmente as
+cotas das estacas,  por exemplo, a estaca :math:`\text{B2}` tem cota de
+:math:`102,5\,\text{m}`.  Para esta grade, vamos considerar que a
+:math:`\text{DH}` entre as estaca é de :math:`20\,\text{m}`.
 
-\subsubsection*{Obtenção das curvas de nível em campo}
+A grade tem a menor e a maior cota nas estacas :math:`\text{C3}` e :math:`\text{A1}`,
+:math:`100,0\,\text{m}` e :math:`104,5\,\text{m}`, respectivamente, ou seja, há uma
+:math:`\text{DN}` total de :math:`4,5\,\text{m}` no terreno. Pode-se considerar razoável, que
+uma equidistância vertical de :math:`1\,\text{m}` seja adequada para representar o
+relevo deste terreno. Considerando esta equidistância vertical, teremos que desenhar
+as curvas de nível :math:`101\,\text{m}`, :math:`102\,\text{m}`, :math:`103\,\text{m}`
+e :math:`104\,\text{m}`.
 
-A obtenção de curvas de nível em campo pode ser necessária na locação de linhas de plantio de culturas agrícolas e florestais, na construção de terraços, visando a prevenção e contenção da erosão do solo, etc. Para a locação das mesmas, podem ser utilizados como equipamentos os níveis, os teodolitos  ou as estações totais, sempre realizando visadas horizontais.
+Para cada curva de nível deve ser verificado em quais pares de estacas ela passa. Por
+exemplo, considere a curva de nível :math:`101\,\text{m}`, em algum ponto entre a
+estaca :math:`\text{C1}` e :math:`\text{C2}` ela ira passar, uma vez que as suas respectivas cotas são de
+:math:`101,1\,\text{m}` e :math:`100,8\,\text{m}`. Seja o perfil do terreno uniforme
+entre estas (sem grandes variações), pode-se, por interpolação, determinar a
+:math:`\text{DH}` que a curva de nível :math:`101\,\text{m}` estará em relação a
+estaca :math:`\text{C1}` ou :math:`\text{C2}`, mas como? Entre estas estacas, há uma :math:`\text{DN}` de
+:math:`0,3\,\text{m}` e uma math:`\text{DH}` de :math:`20\,\text{m}`.
+Da estaca :math:`\text{C1}`, cota :math:`101,1\,\text{m}`, ao ponto de
+cota :math:`101\,\text{m}`, onde passa a curva de nível :math:`101\,\text{m}`,
+há uma DN de :math:`0,1`. Por regra de três, a curva de nível :math:`101\,\text{m}`
+estará a :math:`\approx6,7\,\text{m}` da estaca :math:`\text{C1}`
+:math:`\left(0,1\frac{20}{0,3}\right)`. Desta forma, entre :math:`\text{C1}` e
+:math:`\text{C2}`, no ponto a :math:`6,7\,\text{m}` da estaca :math:`\text{C1}`
+é feito um pequeno risco. Tal procedimento é repetido para todos os pares
+de estacas onde a curva de nível :math:`101` os cruzam. Para curva de nível
+:math:`101`, os pares a serem verificados são :math:`\text{C2-B2}`,
+:math:`\text{B2-B3}` e :math:`\text{B3-A3}`. Para estes pares encontra-se
+o ponto de cota :math:`101\,\text{m}` e marca-se a posição, sempre com um risco,
+ou seja a posição onde a curva de nível :math:`101` cruza as estacas.
 
-Vamos considerar que o equipamento que será utilizado é uma estação total com o prisma. O técnico na estação fará visadas horizontais, ou seja, o ângulo zenital :math:`(z)` deverá sempre marcar :math:`90^\circ`. Suponha que a estação esteja em um ponto de cota :math:`100\,\text{m}`, com a altura do instrumento (ai) de :math:`1,7\,\text{m}` (medida com uma trena) então, a altura do instrumento (AI) seria de :math:`101,7\,\text{m}`. Para se obter pontos onde passa a curva de nível de :math:`100\,\text{m}`, por exemplo, deve-se fixar a altura do prisma em :math:`1,7\,\text{m}`. Desta forma, toda vez que, da estação, o centro do prisma for corretamente observado, a cota naquela posição do prisma será de :math:`100\,\text{m}`. O técnico com o prisma é orientado pelo o da estação total, que o indica, se o prisma deve ser posto em posição mais ou menos elevada, de tal forma que o centro do prisma esteja na visada correta. Quando houver concordância, o ponto é materializado por uma estaca, sabendo-se que nela, passa a curva de nível de :math:`100\,\text{m}`. O técnico com o prisma desloca-se para uma nova posição, e novamente procura-se fazer a visada no centro do prisma. 
+As marcas onde as curvas de nível cruzam os quadrados da quadrícula são
+apresentadas na Figura :numref:`curva_nivel3` b. Após tal procedimento, é realizada a
+conexão das marcas de cada uma das curvas de nível por linhas retas ou suavizadas. No
+nosso exemplo, as marcas foram conectadas por linhas retas
+(Figura :numref:`curva_nivel3` b). Caso contenha linhas mestras, utilizar linha mais
+grossa para destacá-la. Para finalizar, as curvas de nível são cotadas com as
+respectivas cotas (Figura :numref:`curva_nivel3` d).
 
-Se no levantamento há também o objetivo de desenho em planta, para fins de determinação das coordenadas, deve-se anotar as DH's e o Hz's, para posterior cálculo das coordenadas.
+.. _curva_nivel3:
 
-Outros métodos para locação de curvas de nível em campo podem ser encontradas em \cite{godoy}.
+.. figure:: /images/capitulo10/curva_nivel3.png
+   :scale: 45 %
+   :alt: curva_nivel3.png
+   :align: center
 
-\section{Sistematização e cálculo de volume}
-Um dos serviços importantes de técnicos em topografia é o de sistematização\index{sistematização} de terrenos, ou seja, modificar a sua forma, tornando-o plano, para fins de execução de projetos de engenharia na área de interesse. Podem-se citar como projetos que demandam sistematização de um determinado terreno: os residenciais e prediais; os de irrigação por gravidade; construção de quadras e campos de futebol, etc.
+   Método da determinação das curvas de nível por meio de dados em grade regular.
 
-Na execução da sistematização de um terreno, geralmente acorrerá as seguintes etapas: \emph{i}) escavação de rochas, terras e cascalhos, ou mistura destes, sendo esta etapa denominada de (\emph{corte})\index{sistematização!corte}; \emph{ii}) o transporte de material e; \emph{iii}) a sua deposição, normalmente com compactação do material, denominada de \emph{aterro}\index{sistematização!aterro}. Certos projetos podem ter mais ênfase no corte do terreno, como em projetos de estradas. Outros, terão mais trabalho de aterro, como na construção de barragens. Na sistematização, se busca quantificar o volume de material a ser trabalhado, assim como analisar a forma de quantificar este material em escritório. Se busca também diminuir custos da operação. Por exemplo, sabendo-se que o custo de transporte de material é elevado, buscar-se-á minimizar o volume desta operação. 
+Obtenção das curvas de nível em campo
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-O volume de material a ser movimentado, seja no corte ou no aterro, é mensurado na unidade de m:math:`^3`. Um fato importante na hora de quantificar o volume de material, é que o mesmo vai variar seu volume com a mudança da sua condição inicial para uma outra condição, por exemplo: \emph{i}) um volume na condição natural no terreno, após ser escavado, sofrerá expansão, pois o mesmo será desagregado; \emph{ii}) o volume transportado de material que será utilizado em aterro, vai ser compactado, diminuindo o seu volume.
+A obtenção de curvas de nível em campo pode ser necessária na locação de linhas de
+plantio de culturas agrícolas e florestais, na construção de terraços, visando a
+prevenção e contenção da erosão do solo, etc. Para a locação das mesmas, podem ser
+utilizados como equipamentos os níveis, os teodolitos  ou as estações totais, sempre
+realizando visadas horizontais.
 
-Suponha o volume de :math:`1\,\text{m}`:math:`^3` de terra ainda no terreno natural, após a sua escavação, será desagregado, e terá o seu volume aumentado em aproximadamente :math:`20\%`, o que resultará em um volume :math:`\approx1,2\,\text{m}`:math:`^3` para ser transportado. Por outro lado, um volume de :math:`1\,\text{m}`:math:`^3`, após submetido à compactação, terá o volume reduzido em aproximadamente :math:`15\%`, logo, o :math:`1\,\text{m}`:math:`^3` de material, após processo de compactação, resultará em um volume de :math:`\approx0,85\,\text{m}`:math:`^3` \cite{cole2009surveyor}. 
+Vamos considerar que o equipamento que será utilizado é uma estação total com o prisma.
+O técnico na estação fará visadas horizontais, ou seja, o ângulo zenital :math:`(z)`
+deverá sempre marcar :math:`90^\circ`. Suponha que a estação esteja em um ponto de
+cota :math:`100\,\text{m}`, com a altura do instrumento (*ai*) de :math:`1,7\,\text{m}`
+(medida com uma trena) então, a altura do instrumento (*AI*) seria de
+:math:`101,7\,\text{m}`. Para se obter pontos onde passa a curva de nível de
+:math:`100\,\text{m}`, por exemplo, deve-se fixar a altura do prisma em
+:math:`1,7\,\text{m}`. Desta forma, toda vez que, da estação, o centro do prisma
+for corretamente observado, a cota naquela posição do prisma será de
+:math:`100\,\text{m}`. O técnico com o prisma é orientado pelo o da estação total,
+que o indica, se o prisma deve ser posto em posição mais ou menos elevada, de tal
+forma que o centro do prisma esteja na visada correta. Quando houver concordância,
+o ponto é materializado por uma estaca, sabendo-se que nela, passa a curva de nível
+de :math:`100\,\text{m}`. O técnico com o prisma desloca-se para uma nova posição, e
+novamente procura-se fazer a visada no centro do prisma.
+
+Se no levantamento há também o objetivo de desenho em planta, para fins de determinação
+das coordenadas, deve-se anotar as :math:`\text{DH's}` e o :math:`\text{Hz's}`,
+para posterior cálculo das coordenadas.
+
+Outros métodos para locação de curvas de nível em campo podem ser encontradas
+em :cite:`godoy`.
+
+Sistematização e cálculo de volume
+----------------------------------
+
+Um dos serviços importantes de técnicos em topografia é o de sistematização
+de terrenos, ou seja, modificar a sua forma, tornando-o plano, para fins de execução
+de projetos de engenharia na área de interesse. Podem-se citar como projetos que
+demandam sistematização de um determinado terreno: os residenciais e prediais; os de
+irrigação por gravidade; construção de quadras e campos de futebol, etc.
+
+Na execução da sistematização de um terreno, geralmente acorrerá as seguintes etapas:
+*i*) escavação de rochas, terras e cascalhos, ou mistura destes, sendo esta etapa
+denominada de (**corte**); *ii*) o transporte de material e; *iii*) a sua deposição,
+normalmente com compactação do material, denominada de **aterro**. Certos projetos
+podem ter mais ênfase no corte do terreno, como em projetos de estradas. Outros, terão
+mais trabalho de aterro, como na construção de barragens. Na sistematização, se busca
+quantificar o volume de material a ser trabalhado, assim como analisar a forma de
+quantificar este material em escritório. Se busca também diminuir custos da operação.
+Por exemplo, sabendo-se que o custo de transporte de material é elevado, buscar-se-á
+minimizar o volume desta operação.
+
+O volume de material a ser movimentado, seja no corte ou no aterro, é mensurado na
+unidade de :math:`\text{m}^3`. Um fato importante na hora de quantificar o volume de
+material, é que o mesmo vai variar seu volume com a mudança da sua condição inicial
+para uma outra condição, por exemplo: *i*) um volume na condição natural no terreno,
+após ser escavado, sofrerá expansão, pois o mesmo será desagregado; *ii*) o volume
+transportado de material que será utilizado em aterro, vai ser compactado, diminuindo o
+seu volume.
+
+Suponha o volume de :math:`1\,\text{m}^3` de terra ainda no terreno natural, após a
+sua escavação, será desagregado, e terá o seu volume aumentado em aproximadamente
+:math:`20\%`, o que resultará em um volume :math:`\approx1,2\,\text{m}^3` para ser
+transportado. Por outro lado, um volume de :math:`1\,\text{m}^3`, após submetido à
+compactação, terá o volume reduzido em aproximadamente :math:`15\%`, logo, o
+:math:`1\,\text{m}^3` de material, após processo de compactação, resultará em um
+volume de :math:`\approx0,85\,\text{m}`:math:`^3` :cite:`cole2009surveyor`.
 
 \begin{mybox}[breakable,enhanced,pad at break=0mm,label={exemp:volume}]{}Considere a escavação para fins de construção de uma piscina, cuja dimensão é de :math:`50\,\text{m}` de comprimento, :math:`20\,\text{m}` de largura e :math:`2\,\text{m}` de profundidade. Qual o número de viagens que um caminhão vai realizar para transporte deste material? Sabe-se que, o caminhão a ser utilizado tem capacidade de transporte de :math:`10\,\text{m}`:math:`^3` por viagem e, que a terra a ser escavada vai expandir em :math:`20\%`.
 

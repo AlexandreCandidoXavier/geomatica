@@ -149,15 +149,15 @@ transformados em graus, como apresentado no `Exemplo 1`_.
 
 .. _exemplo 1:
 
-:exem:`Exemplo 1` Converta o ângulo sexagesimal :math:`116^\circ33'54,18''` para grau decimal.
+.. admonition:: :exem:`Exemplo 1` Converta o ângulo sexagesimal :math:`116^\circ33'54,18''` para grau decimal.
 
-:solucao:`Solução:`
-Sabendo-se que :math:`1^\circ=60'` e :math:`1^\circ=3\,600''`, temos:
+    :solucao:`Solução:`
+    Sabendo-se que :math:`1^\circ=60'` e :math:`1^\circ=3\,600''`, temos:
 
-.. math::
+    .. math::
 
-   116^\circ33'54,18'' &=116^\circ+\left(\frac{33'}{60'}\right)^\circ+\left(\frac{54,18''}{3\,600''}\right)^\circ\\
-                       &=116,5650511^\circ.
+       116^\circ33'54,18'' &=116^\circ+\left(\frac{33'}{60'}\right)^\circ+\left(\frac{54,18''}{3\,600''}\right)^\circ\\
+                           &=116,5650511^\circ.
 
 ----
 
@@ -176,24 +176,24 @@ e o auxílio da tecla :degree2sex:`shift`.
 
 .. _exemplo 2:
 
-:exem:`Exemplo 2` Transforme o ângulo decimal do `Exemplo 1`_ para o sistema sexagesimal.
+.. admonition:: :exem:`Exemplo 2` Transforme o ângulo decimal do `Exemplo 1`_ para o sistema sexagesimal.
 
-:solucao:`Solução:`
-O ângulo é :math:`116,5650511^\circ`, logo :math:`116^\circ`. A decimal :math:`0,5650511^\circ` em minutos:
+    :solucao:`Solução:`
+    O ângulo é :math:`116,5650511^\circ`, logo :math:`116^\circ`. A decimal :math:`0,5650511^\circ` em minutos:
 
-.. math::
+    .. math::
 
-   \text{minutos} & =0,5650511\cdot60'\\
-                  & =33,903\\  & =33'.
+       \text{minutos} & =0,5650511\cdot60'\\
+                      & =33,903\\  & =33'.
 
-Agora decimal dos minutos, :math:`0,903'`, em graus:
+    Agora decimal dos minutos, :math:`0,903'`, em graus:
 
-.. math::
+    .. math::
 
-   \text{segundos} & =0,903\cdot60''\\
-                   & =54,18''.
+       \text{segundos} & =0,903\cdot60''\\
+                       & =54,18''.
 
-Desta forma, temos o ângulo na forma sexagesimal, :math:`116^\circ33'54,18''`.
+    Desta forma, temos o ângulo na forma sexagesimal, :math:`116^\circ33'54,18''`.
 
 ----
 
@@ -230,26 +230,26 @@ se considerar apenas meio círculo, têm-se: :math:`\pi\text{ rad}=180^\circ=200
 
 ----
 
-:exem:`Exemplo 3` Quanto vale :math:`116^\circ33'54,18''` em radiano e grado?
+.. admonition:: :exem:`Exemplo 3` Quanto vale :math:`116^\circ33'54,18''` em radiano e grado?
 
-:solucao:`Solução:`
-Primeiramente, este ângulo deve ser transformado para grau decimal, o que foi realizado no
-`exemplo 1`_. Por meio da relação entre as unidades de graus e radianos, mostradas acima,
-tem-se, para transformá-lo em radianos :math:`(x_{\text{rad}})`:
+    :solucao:`Solução:`
+    Primeiramente, este ângulo deve ser transformado para grau decimal, o que foi realizado no
+    `exemplo 1`_. Por meio da relação entre as unidades de graus e radianos, mostradas acima,
+    tem-se, para transformá-lo em radianos :math:`(x_{\text{rad}})`:
 
-.. math::
-   \frac{x_{\text{rad}}}{116,5650511^\circ} & =\frac{\pi}{180^\circ}\\
-   x_{\text{rad}} & =\frac{116,5650511^\circ\cdot\pi}{180^\circ}\\
-   x_{\text{rad}} & =2,0344\,\text{rad}
+    .. math::
+       \frac{x_{\text{rad}}}{116,5650511^\circ} & =\frac{\pi}{180^\circ}\\
+       x_{\text{rad}} & =\frac{116,5650511^\circ\cdot\pi}{180^\circ}\\
+       x_{\text{rad}} & =2,0344\,\text{rad}
 
-Aplica-se agora a relação entre grau e grado para encontrar o valor angular em
-grado :math:`(x_{\text{grado}})`, como:
+    Aplica-se agora a relação entre grau e grado para encontrar o valor angular em
+    grado :math:`(x_{\text{grado}})`, como:
 
-.. math::
+    .. math::
 
-   \frac{x_{\text{grado}}}{116,5650511^\circ} & =\frac{200^{\text{g}}}{180^\circ}\\
-   x_{\text{grado}} & =\frac{116,5650511^\circ\cdot200^\text{g}}{180^\circ}\\
-   x_{\text{grado}} & =129,5167^{\text{g}}.
+       \frac{x_{\text{grado}}}{116,5650511^\circ} & =\frac{200^{\text{g}}}{180^\circ}\\
+       x_{\text{grado}} & =\frac{116,5650511^\circ\cdot200^\text{g}}{180^\circ}\\
+       x_{\text{grado}} & =129,5167^{\text{g}}.
 
 ----
 
@@ -341,54 +341,53 @@ domínios, para maiores detalhes ver :cite:authors:`Stewart`.
 
 ----
 
-:exem:`Exemplo 4` Para o triângulo retângulo da Figura abaixo, determinar :math:`\theta`, :math:`\alpha`, e o seno, o cosseno e a tangente destes ângulos?
+.. admonition:: :exem:`Exemplo 4` Para o triângulo retângulo da Figura abaixo, determinar :math:`\theta`, :math:`\alpha`, e o seno, o cosseno e a tangente destes ângulos?
 
-.. figure:: /images/capitulo1/fig_trian_retangulo_exemplo.png
-   :scale: 35 %
-   :alt: fig_trian_retangulo_exemplo
-   :align: center
+    .. figure:: /images/capitulo1/fig_trian_retangulo_exemplo.png
+       :scale: 35 %
+       :alt: fig_trian_retangulo_exemplo
+       :align: center
 
-:solucao:`Solução:`
-A hipotenusa vale :math:`6,4` m. Para o ângulo :math:`\theta`, o lado de :math:`5:math:` m é o seu cateto oposto. Desta forma, pode-se utilizar a função arco seno para determinar :math:`\theta`:
+    :solucao:`Solução:`
+    A hipotenusa vale :math:`6,4` m. Para o ângulo :math:`\theta`, o lado de :math:`5:math:` m é o seu cateto oposto. Desta forma, pode-se utilizar a função arco seno para determinar :math:`\theta`:
 
-.. math::
+    .. math::
 
-   \theta & =\arcsin\left(\frac{\text{cateto oposto}}{\text{hipotenusa}}\right)\\
-   & =\arcsin\left(\frac{5}{6,4}\right)\\  & =51,3752{}^\circ.
+       \theta & =\arcsin\left(\frac{\text{cateto oposto}}{\text{hipotenusa}}\right)\\
+       & =\arcsin\left(\frac{5}{6,4}\right)\\  & =51,3752{}^\circ.
 
-Para calcular :math:`\alpha`, sabe-se que a soma dos ângulos internos de um triângulo é :math:`180^\circ`, logo :math:`\alpha=180^\circ-(51,3752^\circ+90^\circ)=38,6248^\circ`. As funções trigonométricas para :math:`\theta` e :math:`\alpha`:
+    Para calcular :math:`\alpha`, sabe-se que a soma dos ângulos internos de um triângulo é :math:`180^\circ`, logo :math:`\alpha=180^\circ-(51,3752^\circ+90^\circ)=38,6248^\circ`. As funções trigonométricas para :math:`\theta` e :math:`\alpha`:
 
-.. math::
+    .. math::
 
-   \sin\theta & =0,7813; & \cos\theta & =0,6242; & \tan\theta & =1,2515\\
-   \sin\alpha & =0,6242; &\, \cos\alpha & =0,7813; &\, \tan\alpha & =0,7990
+       \sin\theta & =0,7813; & \cos\theta & =0,6242; & \tan\theta & =1,2515\\
+       \sin\alpha & =0,6242; &\, \cos\alpha & =0,7813; &\, \tan\alpha & =0,7990
 
 ----
 
-:exem:`Exemplo 5` Com o objetivo de se estimar o raio da terra :math:`(R)`, um topógrafo subiu em uma montanha de
-:math:`5` km de altura, tendo vista para o oceano. Com o auxílio dos seus equipamentos, mediu-se o ângulo formado entre
-a linha horizontal que passa pelo equipamento e a reta tangente a superfície do oceano no ponto :math:`H`,
-obtendo :math:`2,26^\circ`. Por meio destas informações, determinar o raio aproximado da terra :math:`(R)`.
+.. admonition:: :exem:`Exemplo 5` Com o objetivo de se estimar o raio da terra :math:`(R)`, um topógrafo subiu em uma montanha de
+    :math:`5` km de altura, tendo vista para o oceano. Com o auxílio dos seus equipamentos, mediu-se o ângulo formado entre
+    a linha horizontal que passa pelo equipamento e a reta tangente a superfície do oceano no ponto :math:`H`,
+    obtendo :math:`2,26^\circ`. Por meio destas informações, determinar o raio aproximado da terra :math:`(R)`.
 
+    .. figure:: /images/capitulo1/fig_raio_terra_exemplo.png
+       :scale: 35 %
+       :alt: fig_raio_terra_exemplo
+       :align: center
 
-.. figure:: /images/capitulo1/fig_raio_terra_exemplo.png
-   :scale: 35 %
-   :alt: fig_raio_terra_exemplo
-   :align: center
+    :solucao:`Solução:`
+    A visada :math:`AH` é tangente à terra em :math:`H`. :math:`AH` é perpendicular à :math:`OH`, logo em :math:`H`, o ângulo
+    é reto :math:`(90^\circ)` para o triângulo :math:`AOH`. O lado deste triângulo oposto a :math:`H` :math:`(R\mathrm{+5\:km})`
+    é a hipotenusa. Percebe-se também que, o ângulo entre a linha do horizonte que passa em :math:`A` e a linha :math:`AO` é
+    de :math:`90^\circ`, então o ângulo :math:`\theta` é de :math:`87,74^\circ` :math:`(90^\circ-2,26^\circ)`. Considerando
+    :math:`\sin\theta` temos:
 
-:solucao:`Solução:`
-A visada :math:`AH` é tangente à terra em :math:`H`. :math:`AH` é perpendicular à :math:`OH`, logo em :math:`H`, o ângulo
-é reto :math:`(90^\circ)` para o triângulo :math:`AOH`. O lado deste triângulo oposto a :math:`H` :math:`(R\mathrm{+5\:km})`
-é a hipotenusa. Percebe-se também que, o ângulo entre a linha do horizonte que passa em :math:`A` e a linha :math:`AO` é
-de :math:`90^\circ`, então o ângulo :math:`\theta` é de :math:`87,74^\circ` :math:`(90^\circ-2,26^\circ)`. Considerando
-:math:`\sin\theta` temos:
-
-.. math::
-   \sin\theta & =\frac{R}{R+5}\\
-   R & =(R+5)\sin87,74\\
-   R-R\sin87,74 & =5\cdot\sin87,74\\
-   R & =\frac{5\cdot\sin87,74}{1-\sin87,74}\\
-   R & =6\,423,1\mathrm{\,km.}
+    .. math::
+       \sin\theta & =\frac{R}{R+5}\\
+       R & =(R+5)\sin87,74\\
+       R-R\sin87,74 & =5\cdot\sin87,74\\
+       R & =\frac{5\cdot\sin87,74}{1-\sin87,74}\\
+       R & =6\,423,1\mathrm{\,km.}
 
 ----
 
@@ -428,36 +427,36 @@ apresentado no Exemplo 6.
 
 ----
 
-:exem:`Exemplo 6` Considere o esquema apresentado na Figura a seguir. Um levantamento topográfico foi realizado do lado
-esquerdo do rio, e não se tem acesso ao lado direito, onde encontra-se o ponto P. Todavia deseja-se obter a distância AP.
-Para tanto, mediu-se: com uma trena, a distância de A ao ponto B, resultando em :math:`50` m; por meio de um teodolito
-estacionado em A, visando-se sucessivamente P e B, o ângulo :math:`\alpha=37^\circ51'`; e por fim, também com o teodolito,
-agora estacionado em B, visando-se A e P, o ângulo :math:`\beta=75^\circ47'`. Por meio destas medidas, calcule a distância AP.
+.. admonition:: :exem:`Exemplo 6` Considere o esquema apresentado na Figura a seguir. Um levantamento topográfico foi realizado do lado
+    esquerdo do rio, e não se tem acesso ao lado direito, onde encontra-se o ponto P. Todavia deseja-se obter a distância AP.
+    Para tanto, mediu-se: com uma trena, a distância de A ao ponto B, resultando em :math:`50` m; por meio de um teodolito
+    estacionado em A, visando-se sucessivamente P e B, o ângulo :math:`\alpha=37^\circ51'`; e por fim, também com o teodolito,
+    agora estacionado em B, visando-se A e P, o ângulo :math:`\beta=75^\circ47'`. Por meio destas medidas, calcule a distância AP.
 
-.. figure:: /images/capitulo1/fig_exemp_lei_senos.png
-   :scale: 35 %
-   :alt: fig_exemp_lei_senos
-   :align: center
+    .. figure:: /images/capitulo1/fig_exemp_lei_senos.png
+       :scale: 35 %
+       :alt: fig_exemp_lei_senos
+       :align: center
 
-:solucao:`Solução:`
-A lei dos senos pode ser utilizada para determinar a distância do ponto inacessível P. Como dois ângulos do triângulo
-foram medidos, pode-se calcular o outro, ao qual denominaremos de :math:`\gamma`, sendo:
+    :solucao:`Solução:`
+    A lei dos senos pode ser utilizada para determinar a distância do ponto inacessível P. Como dois ângulos do triângulo
+    foram medidos, pode-se calcular o outro, ao qual denominaremos de :math:`\gamma`, sendo:
 
-.. math::
+    .. math::
 
-   \gamma & =180-\left(\alpha+\beta\right)\\
-   & =180-\left(37^\circ51'+75^\circ47'\right)\\
-   & =66^\circ22'
+       \gamma & =180-\left(\alpha+\beta\right)\\
+       & =180-\left(37^\circ51'+75^\circ47'\right)\\
+       & =66^\circ22'
 
-Uma vez que conhecemos o lado AB=50 m, o seu ângulo oposto, :math:`\gamma=66^\circ22'`, e o ângulo
-:math:`\alpha=75^\circ47'`, oposto ao lado que queremos determinar, AP, pode-se aplicar a lei dos senos, como segue abaixo:
+    Uma vez que conhecemos o lado AB=50 m, o seu ângulo oposto, :math:`\gamma=66^\circ22'`, e o ângulo
+    :math:`\alpha=75^\circ47'`, oposto ao lado que queremos determinar, AP, pode-se aplicar a lei dos senos, como segue abaixo:
 
-.. math::
+    .. math::
 
-   \frac{\text{AB}}{\sin\gamma} & =\frac{\text{AP}}{\sin\beta}\\
-   \frac{50\,\text{m}}{\sin66^\circ22'} & =\frac{AP}{\sin75^\circ47'}\\
-   \text{AP} & =\frac{50\,\text{m}\cdot\sin75^\circ47'}{\sin66^\circ22'}\\
-   \text{AP} & =52,906\,\text{m}.
+       \frac{\text{AB}}{\sin\gamma} & =\frac{\text{AP}}{\sin\beta}\\
+       \frac{50\,\text{m}}{\sin66^\circ22'} & =\frac{AP}{\sin75^\circ47'}\\
+       \text{AP} & =\frac{50\,\text{m}\cdot\sin75^\circ47'}{\sin66^\circ22'}\\
+       \text{AP} & =52,906\,\text{m}.
 
 ----
 
@@ -476,26 +475,26 @@ como será apresentado no Exemplo 7.
 .. math:: c^{2}=a^{2}+b^{2}-2ab\cos\widehat{C} \,\,\,\text{então:}\,\, \widehat{C} =\arccos\left(\frac{c^{2}-\left(a^{2}+b^{2}\right)}{-2ab}\right)
    :label: eqleicos2
 
-:exem:`Exemplo 7` Considerando que os comprimentos dos lados de um triângulo são: :math:`a=32` m, :math:`b=28` m e
-:math:`c=23` m. Determine os ângulos internos.
+.. admonition:: :exem:`Exemplo 7` Considerando que os comprimentos dos lados de um triângulo são: :math:`a=32` m, :math:`b=28` m e
+    :math:`c=23` m. Determine os ângulos internos.
 
-:solucao:`Solução:`
-A partir da lei dos cossenos, temos para :math:`\widehat{A}`:
+    :solucao:`Solução:`
+    A partir da lei dos cossenos, temos para :math:`\widehat{A}`:
 
-.. math::
-   \cos\widehat{A} & =\left(\frac{a^{2}-\left(b^{2}+c^{2}\right)}{-2bc}\right)\\
-   \widehat{A} & =\arccos\left(\frac{a^{2}-\left(b^{2}+c^{2}\right)}{-2bc}\right)\\
-   \widehat{A} & =\arccos\left(\frac{32^{2}-\left(28^{2}+23^{2}\right)}{-2\cdot28\cdot23}\right)=77,0336^\circ
+    .. math::
+       \cos\widehat{A} & =\left(\frac{a^{2}-\left(b^{2}+c^{2}\right)}{-2bc}\right)\\
+       \widehat{A} & =\arccos\left(\frac{a^{2}-\left(b^{2}+c^{2}\right)}{-2bc}\right)\\
+       \widehat{A} & =\arccos\left(\frac{32^{2}-\left(28^{2}+23^{2}\right)}{-2\cdot28\cdot23}\right)=77,0336^\circ
 
-Para :math:`\widehat{B}`:
+    Para :math:`\widehat{B}`:
 
-.. math::
-   \cos\widehat{B} & =\left(\frac{b^{2}-\left(a^{2}+c^{2}\right)}{-2ac}\right)\\
-   \widehat{B} & =\arccos\left(\frac{b^{2}-\left(a^{2}+c^{2}\right)}{-2ac}\right)\\
-   \widehat{B} & =\arccos\left(\frac{28^{2}-\left(32^{2}+23^{2}\right)}{-2\cdot32\cdot23}\right)=58,5054^\circ
+    .. math::
+       \cos\widehat{B} & =\left(\frac{b^{2}-\left(a^{2}+c^{2}\right)}{-2ac}\right)\\
+       \widehat{B} & =\arccos\left(\frac{b^{2}-\left(a^{2}+c^{2}\right)}{-2ac}\right)\\
+       \widehat{B} & =\arccos\left(\frac{28^{2}-\left(32^{2}+23^{2}\right)}{-2\cdot32\cdot23}\right)=58,5054^\circ
 
-Uma vez que conhecemos dois ângulos internos do triângulo,
-então :math:`\widehat{C}=180-(\widehat{A}+\widehat{B})=44,4610^\circ`.
+    Uma vez que conhecemos dois ângulos internos do triângulo,
+    então :math:`\widehat{C}=180-(\widehat{A}+\widehat{B})=44,4610^\circ`.
 
 ----
 
@@ -550,18 +549,18 @@ Pelo teorema de Pitágoras, :math:`d_{\mathrm{12}}`:
 
 ----
 
-:exem:`Exemplo 8` Qual a distância entre os pontos A e C apresentados na :numref:`figcoordretangular`?
-Considere que a unidade é o metro.
+.. admonition:: :exem:`Exemplo 8` Qual a distância entre os pontos A e C apresentados na :numref:`figcoordretangular`?
+    Considere que a unidade é o metro.
 
-:solucao:`Solução:`
-As coordenadas de A e C são :math:`(4,5\,\mathrm{m};\,2,1\,\mathrm{m})` e :math:`(-4,9\,\mathrm{m};\,-3,2\,\mathrm{m})`,
-respectivamente. Aplicando a Equação :eq:`distanciaeuclidiana`:
+    :solucao:`Solução:`
+    As coordenadas de A e C são :math:`(4,5\,\mathrm{m};\,2,1\,\mathrm{m})` e :math:`(-4,9\,\mathrm{m};\,-3,2\,\mathrm{m})`,
+    respectivamente. Aplicando a Equação :eq:`distanciaeuclidiana`:
 
-.. math::
-   d & =\sqrt{\left(x_{\text{A}}-x_{\text{C}}\right)^{2}+\left(y_{\text{A}}-y_{\text{C}}\right)^{2}}\\
-   & =\sqrt{\left(4,5--4,9\right)^{2}+\left(2,1--3,2\right)^{2}}\\
-   & =\sqrt{\left(4,5+4,9\right)^{2}+\left(2,1+3,2\right)^{2}}\\
-   & =10,791\,\text{m}.
+    .. math::
+       d & =\sqrt{\left(x_{\text{A}}-x_{\text{C}}\right)^{2}+\left(y_{\text{A}}-y_{\text{C}}\right)^{2}}\\
+       & =\sqrt{\left(4,5--4,9\right)^{2}+\left(2,1--3,2\right)^{2}}\\
+       & =\sqrt{\left(4,5+4,9\right)^{2}+\left(2,1+3,2\right)^{2}}\\
+       & =10,791\,\text{m}.
 
 ----
 
@@ -630,17 +629,17 @@ quadrante.
 
 ----
 
-:exem:`Exemplo 9` Considere a coordenada polar do ponto C da :numref:`figCoordPolar`.
-Qual a sua coordenada retangular? A unidade de comprimento é o metro.
+.. admonition:: :exem:`Exemplo 9` Considere a coordenada polar do ponto C da :numref:`figCoordPolar`.
+    Qual a sua coordenada retangular? A unidade de comprimento é o metro.
 
-:solucao:`Solução:`
-A coordenada polar de C é :math:`(213,147^\circ, 5,85)`. Então:
+    :solucao:`Solução:`
+    A coordenada polar de C é :math:`(213,147^\circ, 5,85)`. Então:
 
-:math:`x_{\mathrm{C}} =r_{\mathrm{C}}\cos\theta_{\mathrm{C}}=5,85\cos 213,147^\circ=-4,9\,\mathrm{m}`.
+    :math:`x_{\mathrm{C}} =r_{\mathrm{C}}\cos\theta_{\mathrm{C}}=5,85\cos 213,147^\circ=-4,9\,\mathrm{m}`.
 
-:math:`y_{\mathrm{C}} =r_{\mathrm{C}}\sin\theta_{\mathrm{C}}=5,85\sin 213,147^\circ=-3,2\,\mathrm{m}`.
+    :math:`y_{\mathrm{C}} =r_{\mathrm{C}}\sin\theta_{\mathrm{C}}=5,85\sin 213,147^\circ=-3,2\,\mathrm{m}`.
 
-Como era esperado, a coordenada retangular de C é a mesma apresentada na :numref:`figcoordretangular`.
+    Como era esperado, a coordenada retangular de C é a mesma apresentada na :numref:`figcoordretangular`.
 
 ----
 
@@ -677,33 +676,33 @@ Se :math:`x_{\mathrm{P}}` não for nulo:
 
 ----
 
-:exem:`Exemplo 10` Considere a coordenada retangular do ponto D da :numref:`figcoordretangular`.
-Qual a sua coordenada polar? Considere que a unidade seja de metro.
+.. admonition:: :exem:`Exemplo 10` Considere a coordenada retangular do ponto D da :numref:`figcoordretangular`.
+    Qual a sua coordenada polar? Considere que a unidade seja de metro.
 
-:solucao:`Solução:`
-A coordenada retangular de D é :math:`(4,9\,\mathrm{m};\,-1,3\,\mathrm{m})`. Ela é novamente
-mostrada na Figura ao abaixo.
+    :solucao:`Solução:`
+    A coordenada retangular de D é :math:`(4,9\,\mathrm{m};\,-1,3\,\mathrm{m})`. Ela é novamente
+    mostrada na Figura ao abaixo.
 
-.. figure:: /images/capitulo1/figExemReta2Poloar.png
-   :scale: 35 %
-   :alt: figExemReta2Poloar
-   :align: center
+    .. figure:: /images/capitulo1/figExemReta2Poloar.png
+       :scale: 35 %
+       :alt: figExemReta2Poloar
+       :align: center
 
-Observe que a projeção da coordenada e
-o raio de D, :math:`r_{\text{D}}`, resultam em um triângulo retângulo,
-em que, :math:`4,9` m é o cateto adjacente a :math:`\alpha`, e :math:`1,3` m é o cateto
-oposto, podendo-se calcular :math:`\alpha`:
+    Observe que a projeção da coordenada e
+    o raio de D, :math:`r_{\text{D}}`, resultam em um triângulo retângulo,
+    em que, :math:`4,9` m é o cateto adjacente a :math:`\alpha`, e :math:`1,3` m é o cateto
+    oposto, podendo-se calcular :math:`\alpha`:
 
-.. math::
-   \tan\alpha & =\frac{y_{\text{D}}}{x_{\text{D}}}\\
-   \alpha & =\arctan\left(\frac{y_{\text{D}}}{x_{\text{D}}}\right)=\arctan\left(\frac{1,3}{4,9}\right)=14,8586^\circ.
+    .. math::
+       \tan\alpha & =\frac{y_{\text{D}}}{x_{\text{D}}}\\
+       \alpha & =\arctan\left(\frac{y_{\text{D}}}{x_{\text{D}}}\right)=\arctan\left(\frac{1,3}{4,9}\right)=14,8586^\circ.
 
-Agora pode-se calcular :math:`\theta_{\mathrm{D}}`, pois, :math:`\theta_{\mathrm{D}}=360^\circ-\alpha=345,1414^\circ`.
-Para se calcular :math:`r_{\text{D}}`, temos:
+    Agora pode-se calcular :math:`\theta_{\mathrm{D}}`, pois, :math:`\theta_{\mathrm{D}}=360^\circ-\alpha=345,1414^\circ`.
+    Para se calcular :math:`r_{\text{D}}`, temos:
 
-:math:`r_\text{D}=\sqrt{x_{\text{D}}^{2}+y_{\text{D}}^2}=\sqrt{4,9^2+1,3^2}=5,07\,\text{m}.`
+    :math:`r_\text{D}=\sqrt{x_{\text{D}}^{2}+y_{\text{D}}^2}=\sqrt{4,9^2+1,3^2}=5,07\,\text{m}.`
 
-Desta forma, a coordenada polar de D é :math:`(345,1414^\circ;\,5,07\,\mathrm{m})`.
+    Desta forma, a coordenada polar de D é :math:`(345,1414^\circ;\,5,07\,\mathrm{m})`.
 
 ----
 
@@ -722,15 +721,15 @@ pelo produto dos seus lados:
 
 ----
 
-:exem:`Exemplo 11`  Qual a área de um sala retangular, onde os lados medem :math:`5,3` m e :math:`7,9` m.
+.. admonition:: :exem:`Exemplo 11`  Qual a área de um sala retangular, onde os lados medem :math:`5,3` m e :math:`7,9` m.
 
-:solucao:`Solução:`
+    :solucao:`Solução:`
 
-.. math::
+    .. math::
 
-   A & =ab \\
-   & =5,3\cdot7,9 \\
-   & =41,87\,\text{m}^{2}.
+       A & =ab \\
+       & =5,3\cdot7,9 \\
+       & =41,87\,\text{m}^{2}.
 
 ----
 
@@ -751,14 +750,14 @@ lados e/ou ângulos internos. Considere o triângulo da Figura ao lado. Caso sej
 
 ----
 
-:exem:`Exemplo 12` Qual aárea de triângulo onde a base mede :math:`15,9` m e a altura :math:`9` m.
+.. admonition:: :exem:`Exemplo 12` Qual aárea de triângulo onde a base mede :math:`15,9` m e a altura :math:`9` m.
 
-:solucao:`Solução:`
+    :solucao:`Solução:`
 
-.. math::
-   A & =\frac{bh}{2} \\
-   & =\frac{15,9\cdot9}{2} \\
-   & =71,55\,\text{m}^{2}
+    .. math::
+       A & =\frac{bh}{2} \\
+       & =\frac{15,9\cdot9}{2} \\
+       & =71,55\,\text{m}^{2}
 
 ----
 
@@ -769,15 +768,15 @@ lados e/ou ângulos internos. Considere o triângulo da Figura ao lado. Caso sej
 
 ----
 
-:exem:`Exemplo 13` Qual a área de triângulo em que dois lados medem :math:`3,1\,\text{m}` e
-:math:`6,8\,\text{m}`, e o ângulo entre eles é de :math:`34^\circ`.
+.. admonition:: :exem:`Exemplo 13` Qual a área de triângulo em que dois lados medem :math:`3,1\,\text{m}` e
+    :math:`6,8\,\text{m}`, e o ângulo entre eles é de :math:`34^\circ`.
 
-:solucao:`Solução:`
+    :solucao:`Solução:`
 
-.. math::
-   A & =\frac{1}{2}ab\sin\alpha \\
-   &=\frac{1}{2}3,1\cdot6,8\sin34^\circ \\
-   &=5,89\,\text{m}^2.
+    .. math::
+       A & =\frac{1}{2}ab\sin\alpha \\
+       &=\frac{1}{2}3,1\cdot6,8\sin34^\circ \\
+       &=5,89\,\text{m}^2.
 
 -----
 
@@ -794,22 +793,22 @@ em que :math:`p` é semiperímetro:
 
 ----
 
-:exem:`Exemplo 14` Qual a área de um triângulo de lados medem :math:`10,3` m, :math:`5,4` m e :math:`6,0` m.
+.. admonition:: :exem:`Exemplo 14` Qual a área de um triângulo de lados medem :math:`10,3` m, :math:`5,4` m e :math:`6,0` m.
 
-:solucao:`Solução:`
-O semiperímetro:
+    :solucao:`Solução:`
+    O semiperímetro:
 
-.. math::
-   p & =\frac{a+b+c}{2} \\
-   &=\frac{10,3+5,4+6,0}{2} \\
-   &=10,85\,\textrm{m}.
+    .. math::
+       p & =\frac{a+b+c}{2} \\
+       &=\frac{10,3+5,4+6,0}{2} \\
+       &=10,85\,\textrm{m}.
 
-A área será:
+    A área será:
 
-.. math::
-   A & =\sqrt{p\left(p-a\right)\left(p-b\right)\left(p-c\right)} \\
-   &=\sqrt{10,85\left(10,85-10,3\right)\left(10,85-5,4\right)\left(10,85-6\right)}\\
-   &=12,56\,\text{m}^{2}.
+    .. math::
+       A & =\sqrt{p\left(p-a\right)\left(p-b\right)\left(p-c\right)} \\
+       &=\sqrt{10,85\left(10,85-10,3\right)\left(10,85-5,4\right)\left(10,85-6\right)}\\
+       &=12,56\,\text{m}^{2}.
 
 ----
 
@@ -829,16 +828,16 @@ a distância que separa estes dois lados. A área de um trapézio é calculada p
 
 ----
 
-:exem:`Exemplo 15` Uma praça pública tem a forma de um trapézio, sendo medidos os lados paralelos
-de :math:`50,7` m e :math:`80,4` m e a distância entre eles de :math:`12` m, calcular á área
-da praça.
+.. admonition:: :exem:`Exemplo 15` Uma praça pública tem a forma de um trapézio, sendo medidos os lados paralelos
+    de :math:`50,7` m e :math:`80,4` m e a distância entre eles de :math:`12` m, calcular á área
+    da praça.
 
-:solucao:`Solução:`
+    :solucao:`Solução:`
 
-.. math::
-   A & =\frac{1}{2}(b_{1}+b_{2})h \\
-   &=\frac{1}{2}(50,7+80,4)12 \\
-   &=786,6\,\text{m}^{2}.
+    .. math::
+       A & =\frac{1}{2}(b_{1}+b_{2})h \\
+       &=\frac{1}{2}(50,7+80,4)12 \\
+       &=786,6\,\text{m}^{2}.
 
 ----
 
@@ -857,15 +856,15 @@ Caso seja conhecido o diâmetro :math:`(D)`:
 
 ----
 
-:exem:`Exemplo 16`  Uma caixa de água tem diâmetro de :math:`1,2` m. Qual a área de superfície que ela ocupa.
+.. admonition:: :exem:`Exemplo 16`  Uma caixa de água tem diâmetro de :math:`1,2` m. Qual a área de superfície que ela ocupa.
 
-:solucao:`Solução:`
-Conhecendo-se o diâmetro temos:
+    :solucao:`Solução:`
+    Conhecendo-se o diâmetro temos:
 
-.. math::
-   A & =\frac{\pi}{4}D^{2} \\
-   &=\frac{\pi}{4}1,2^{2} \\
-   &=1,13 \,\text{m}^{2}.
+    .. math::
+       A & =\frac{\pi}{4}D^{2} \\
+       &=\frac{\pi}{4}1,2^{2} \\
+       &=1,13 \,\text{m}^{2}.
 
 ----
 
@@ -889,15 +888,15 @@ Caso o diâmetro :math:`(D)` seja conhecido:
 
 ----
 
-:exem:`Exemplo 17` Calcule a área de um setor de :math:`5^\circ` de uma circunferência de :math:`R` igual
-a :math:`3` m.
+.. admonition:: :exem:`Exemplo 17` Calcule a área de um setor de :math:`5^\circ` de uma circunferência de :math:`R` igual
+    a :math:`3` m.
 
-:solucao:`Solução:`
+    :solucao:`Solução:`
 
-.. math::
-   A & =\left(\frac{\alpha}{360^\circ}\right)\pi R^{2} \\
-   &=\left(\frac{5^\circ}{360^\circ}\right)\pi3^{2}  \\
-   &=0,393\,\text{m}^2.
+    .. math::
+       A & =\left(\frac{\alpha}{360^\circ}\right)\pi R^{2} \\
+       &=\left(\frac{5^\circ}{360^\circ}\right)\pi3^{2}  \\
+       &=0,393\,\text{m}^2.
 
 ----
 
