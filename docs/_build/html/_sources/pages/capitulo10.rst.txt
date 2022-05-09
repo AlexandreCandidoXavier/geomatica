@@ -18,8 +18,8 @@
 
 .. _RST Capitulo 10:
 
-Capitulo 10: Curva de nível e cáculo de volume
-**********************************************
+Capitulo 10: Curva de nível e cálculo de volume
+***********************************************
 
 Uma das maneiras de avaliar o relevo de uma região é por meio de
 curvas de nível. Neste capítulo será apresentado sua importância,
