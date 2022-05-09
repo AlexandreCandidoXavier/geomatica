@@ -348,7 +348,12 @@ compactação, terá o volume reduzido em aproximadamente :math:`15\%`, logo, o
 :math:`1\,\text{m}^3` de material, após processo de compactação, resultará em um
 volume de :math:`\approx0,85\,\text{m}`:math:`^3` :cite:`cole2009surveyor`.
 
-#############################
+##################################
+
+----------------------------------
+
+
+
 
 \begin{mybox}[breakable,enhanced,pad at break=0mm,label={exemp:volume}]{}Considere a escavação para fins de construção de uma piscina, cuja dimensão é de :math:`50\,\text{m}` de comprimento, :math:`20\,\text{m}` de largura e :math:`2\,\text{m}` de profundidade. Qual o número de viagens que um caminhão vai realizar para transporte deste material? Sabe-se que, o caminhão a ser utilizado tem capacidade de transporte de :math:`10\,\text{m}`:math:`^3` por viagem e, que a terra a ser escavada vai expandir em :math:`20\%`.
 
