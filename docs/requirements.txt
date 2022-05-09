@@ -2,4 +2,3 @@ sphinxcontrib-bibtex
 cloud_sptheme
 bokeh
 jinja2==3.0.0
-mkdocs==1.2.3
