@@ -556,22 +556,22 @@ Represente graficamente.
 
 :exem:`Resp.:` área = :math:`1\,925\,\text{m}^2`; área = :math:`0,1925\,\text{ha}`.
 
-.. figure:: /images/capitulo2/exe_calculodearea26.png
-   :scale: 35 %
-   :alt: exe_calculodearea26.png
-   :align: center
-
 ----
 
 :exem:`6)` Seguem as coordenadas em metros dos vértices de uma área levantada: **A**:math:`(0,\,0)`,
 **B**:math:`(5,\,-19)`, **C**:math:`(23,\,-10)`, **D**:math:`(29,\,4)`,
-**E**:math:`(13,\,11)`, com a representação gráfica na Figura ao lado.
+**E**:math:`(13,\,11)`, com a representação gráfica na Figura abaixo.
 
 a) Calcule a área pela fórmula de Gauss nas unidade de :math:`\text{m}^2` e ha. Represente graficamente.
 
 b) Qual a distância entre os pontos **B** e **C**?
 
 c) Qual a distância entre os pontos **C** e **D**?
+
+.. figure:: /images/capitulo2/exe_calculodearea26.png
+   :scale: 35 %
+   :alt: exe_calculodearea26.png
+   :align: center
 
 :exem:`Resp.:`  a) :math:`518` :math:`\text{m}^2` e :math:`0,0518\,\text{ha}`;
 b) :math:`20,125\,\text{m}`; c) :math:`15,232\,\text{m}`.
