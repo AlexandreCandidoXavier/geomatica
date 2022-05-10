@@ -498,9 +498,10 @@ como será apresentado no Exemplo 7.
 
 ----
 
+.. _Coordenada retangular e polar no plano:
 
 Coordenada retangular e polar no plano
---------------------------------------
+======================================
 
 Para a apresentação gráfica de dados bidimensionais, é utilizado o
 plano cartesiano, formado por dois eixos ortogonais entre si, denominados
@@ -563,6 +564,8 @@ Pelo teorema de Pitágoras, :math:`d_{\mathrm{12}}`:
        & =10,791\,\text{m}.
 
 ----
+
+.. _Coordenada polar:
 
 Coordenada polar
 ^^^^^^^^^^^^^^^^
@@ -641,9 +644,8 @@ quadrante.
 
     Como era esperado, a coordenada retangular de C é a mesma apresentada na :numref:`figcoordretangular`.
 
-----
 
-.. _Coordenada retangular para polar:
+.. _Coordenadaretangular2polar:
 
 Coordenada retangular para polar
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -709,7 +711,7 @@ Se :math:`x_{\mathrm{P}}` não for nulo:
 .. _secAreasdefiguras:
 
 Áreas de figuras elementares no plano
--------------------------------------
+=====================================
 
 **Área de um retângulo**
 

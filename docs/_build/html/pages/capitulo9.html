@@ -39,7 +39,7 @@
 
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Pesquisar" href="../search.html" />
-    <link rel="next" title="Capitulo 10: Curva de nível e cáculo de volume" href="capitulo10.html" />
+    <link rel="next" title="Capitulo 10: Curva de nível e cálculo de volume" href="capitulo10.html" />
     <link rel="prev" title="Capitulo 8: Poligonal" href="capitulo8.html" /> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
   </head><body>
@@ -52,7 +52,7 @@
           <a href="../genindex.html" title="Índice Geral"
              accesskey="I">índice</a></li>
         <li class="right" >
-          <a href="capitulo10.html" title="Capitulo 10: Curva de nível e cáculo de volume"
+          <a href="capitulo10.html" title="Capitulo 10: Curva de nível e cálculo de volume"
              accesskey="N">próximo</a> &nbsp; &nbsp;</li>
         <li class="right" >
           <a href="capitulo8.html" title="Capitulo 8: Poligonal"
@@ -158,7 +158,8 @@ para cálculo das altitudes dos demais pontos levantados.</p>
 <div class="math notranslate nohighlight" id="equation-eq-cota">
 <span class="eqno">(86)<a class="headerlink" href="#equation-eq-cota" title="Permalink to this equation">¶</a></span>\[\mathrm{cota_{B}} =\mathrm{cota_{A}+DN_{AB}}\]</div>
 <hr class="docutils" />
-<p><span class="exem">Exemplo 1</span> De uma marco do IBGE de altitude
+<div class="admonition-exem-exemplo-1-de-uma-marco-do-ibge-de-altitude-math-691-421-text-m-ao-ponto-math-mathbf-x-mediu-se-uma-math-mathrm-dn-de-math-39-697-text-m-qual-a-altitude-de-math-mathbf-x admonition">
+<p class="admonition-title"><span class="exem">Exemplo 1</span> De uma marco do IBGE de altitude
 <span class="math notranslate nohighlight">\(691,421\,\text{m}\)</span> ao ponto <span class="math notranslate nohighlight">\(\mathbf{X}\)</span>, mediu-se uma <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> de
 <span class="math notranslate nohighlight">\(-39,697\,\text{m}\)</span>. Qual a altitude de <span class="math notranslate nohighlight">\(\mathbf{X}\)</span>?</p>
 <p><span class="solucao">Solução:</span></p>
@@ -166,6 +167,7 @@ para cálculo das altitudes dos demais pontos levantados.</p>
 \[\begin{split}\mathrm{alt_{\mathbf{X}}}&amp;=\mathrm{alt_{IBGE}+DN_{IBGE,\,\mathbf{X}}}\\
 \mathrm{alt_{\mathbf{X}}}&amp;=691,421-39,697\\
 \mathrm{alt_{\mathbf{X}}}&amp;=651,724\,\text{m}\end{split}\]</div>
+</div>
 </section>
 <hr class="docutils" />
 <section id="erro-de-esfericidade-e-refracao">
@@ -196,12 +198,12 @@ do WGS84footnote{Raios do Datum WGS84: <span class="math notranslate nohighlight
 de grandeza de <span class="math notranslate nohighlight">\(2R\)</span>, tem-se, para <span class="math notranslate nohighlight">\(C_{c}\)</span>  em metros e <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> em km a
 Equação:</p>
 <div class="math notranslate nohighlight" id="equation-eq-cc2">
-<span class="eqno">(88)<a class="headerlink" href="#equation-eq-cc2" title="Permalink to this equation">¶</a></span>\[\begin{split}C_{c}&amp;=1\,000\cdot\frac{\mathrm{DH^{2}}}{2R}\\
-C_{c}&amp;=0,078\,53\mathrm{DH^{2}}.\end{split}\]</div>
+<span class="eqno">(88)<a class="headerlink" href="#equation-eq-cc2" title="Permalink to this equation">¶</a></span>\[\begin{split}C_{c}&amp;=1\,000\frac{\mathrm{DH^{2}}}{2R}\\
+C_{c}&amp;=0,07853\mathrm{DH^{2}}.\end{split}\]</div>
 <p>Com a finalidade de ilustrar o efeito de <span class="math notranslate nohighlight">\(C_{c}\)</span>, imagine uma embarcação,
 que em <span class="math notranslate nohighlight">\(A\)</span>  é verificado que a sua altura é de <span class="math notranslate nohighlight">\(4\,\text{m}\)</span>. Se ela parte ao
 mar, quando estiver a uma distância de aproximadamente <span class="math notranslate nohighlight">\(7,14\,\text{km}\)</span> de
-<span class="math notranslate nohighlight">\(A\)</span>  <span class="math notranslate nohighlight">\((\mathrm{DH}=(4/0,078\,53)^{0,5})\)</span>, Equação <a class="reference internal" href="#equation-eq-cc2">(88)</a>, não
+<span class="math notranslate nohighlight">\(A\)</span>  <span class="math notranslate nohighlight">\((\mathrm{DH}=(4/0,07853)^{0,5})\)</span>, Equação <a class="reference internal" href="#equation-eq-cc2">(88)</a>, não
 será mais possível observá-la. É lógico que a embarcação não ficou
 <span class="math notranslate nohighlight">\(4\,\text{m}\)</span>  menor, é apenas o efeito de <span class="math notranslate nohighlight">\(C_{c}\)</span>  que, estando a embarcação
 a <span class="math notranslate nohighlight">\(7,14\,\text{km}\)</span> de <span class="math notranslate nohighlight">\(A\)</span>, faz com que ela não seja mais visível. Daí pode-se
@@ -237,22 +239,25 @@ pontos distantes entre si em mais de <span class="math notranslate nohighlight">
 em alturas menores e <span class="math notranslate nohighlight">\(C_{r}\)</span>  os pontos parecem ser mais altos, a
 compensação, <span class="math notranslate nohighlight">\(C_{cr}\)</span> é:</p>
 <div class="math notranslate nohighlight" id="equation-eq-ccr">
-<span class="eqno">(90)<a class="headerlink" href="#equation-eq-ccr" title="Permalink to this equation">¶</a></span>\[\begin{split}C_{cr}&amp;=0,078\,53\mathrm{DH}^2-0,011\mathrm{DH}^2\nonumber \\
-C_{cr}&amp;=0,067\,53\mathrm{DH}^2\end{split}\]</div>
+<span class="eqno">(90)<a class="headerlink" href="#equation-eq-ccr" title="Permalink to this equation">¶</a></span>\[\begin{split}C_{cr}&amp;=0,07853\mathrm{DH}^2-0,011\mathrm{DH}^2\nonumber \\
+C_{cr}&amp;=0,06753\mathrm{DH}^2\end{split}\]</div>
 <p>Mais uma vez, a unidade de <span class="math notranslate nohighlight">\(C_{cr}\)</span> é metro e a <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> em quilômetro.</p>
 <hr class="docutils" />
-<p><span class="exem">Exemplo 2</span>  Qual será o erro cometido em um nivelamento se
+<div class="admonition-exem-exemplo-2-qual-sera-o-erro-cometido-em-um-nivelamento-se-nao-for-considerado-o-efeito-da-curvatura-da-terra-e-da-refracao-atmosferica-na-medida-de-math-mathrm-dn-entre-pontos-distantes-entre-si-em-math-1-398-text-m admonition">
+<p class="admonition-title"><span class="exem">Exemplo 2</span>  Qual será o erro cometido em um nivelamento se
 não for considerado o efeito da curvatura da terra e da refração atmosférica
 na medida de <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> entre pontos distantes entre si em <span class="math notranslate nohighlight">\(1\,398\,\text{m}\)</span>?</p>
 <p><span class="solucao">Solução:</span>
 Considerando a <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> em km e de acordo com a Equação <a class="reference internal" href="#equation-eq-ccr">(90)</a>:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}C_{cr}&amp;=0,067\,53\cdot1,398^2\\
+\[\begin{split}C_{cr}&amp;=0,06753\cdot1,398^2\\
 &amp;=0,132\,\text{m}\end{split}\]</div>
 <p>O erro cometido corresponderia a <span class="math notranslate nohighlight">\(0,132\,\text{m}\)</span> para menos na
 <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> entre os pontos.</p>
+</div>
 <hr class="docutils" />
-<p><span class="exem">Exemplo 3</span> No exemplo 1, considere que na
+<div class="admonition-exem-exemplo-3-no-exemplo-1-considere-que-na-math-mathrm-dn-de-math-39-697-text-m-entre-o-marco-do-ibge-ao-ponto-math-mathrm-x-nao-foi-considerado-o-erro-de-curvatura-e-de-refracao-math-c-cr-calcule-novamente-a-altitude-de-math-mathbf-x-aplicando-a-correcao-para-math-c-cr-considere-a-distancia-entre-os-pontos-de-math-753-982-text-m admonition">
+<p class="admonition-title"><span class="exem">Exemplo 3</span> No exemplo 1, considere que na
 <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> de <span class="math notranslate nohighlight">\(-39,697\,\text{m}\)</span>, entre o marco
 do IBGE ao ponto <span class="math notranslate nohighlight">\(\mathrm{X}\)</span>, não foi
 considerado o erro de curvatura e de refração <span class="math notranslate nohighlight">\((C_{cr})\)</span>. Calcule
@@ -263,9 +268,10 @@ Uma vez que se queira realizar a compensação, basta aplicar
 à <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> a <span class="math notranslate nohighlight">\(C_{cr}\)</span>, desta forma:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\mathrm{\mathrm{alt_{\mathbf{X}}}}&amp;=\mathrm{alt_{IBGE}+DN_{IBGE,\,\mathbf{X}}+}C_{cr}\\
-&amp;=\mathrm{alt_{IBGE}+DN_{\mathbf{X}IBGE}}+0,067\,53\mathrm{DH^{2}}\\
-&amp;=691,421-39,697+0,067\,53\cdot0,753\,982^{2}\\
+&amp;=\mathrm{alt_{IBGE}+DN_{\mathbf{X}IBGE}}+0,06753\mathrm{DH^{2}}\\
+&amp;=691,421-39,697+0,06753\cdot0,753\,982^{2}\\
 &amp;=651,762{\rm \,m.}\end{split}\]</div>
+</div>
 </section>
 </section>
 <hr class="docutils" />
@@ -293,7 +299,8 @@ distância horizontal e o eixo-<span class="math notranslate nohighlight">\(y\)<
 </figcaption>
 </figure>
 <hr class="docutils" />
-<p><span class="exem">Exemplo 4</span> Calcule a declividade em percentagem
+<div class="admonition-exem-exemplo-4-calcule-a-declividade-em-percentagem-e-graus-para-uma-math-mathrm-dn-e-math-mathrm-dh-entre-dois-pontos-de-math-27-9-text-m-e-math-162-2-text-m-respectivamente admonition">
+<p class="admonition-title"><span class="exem">Exemplo 4</span> Calcule a declividade em percentagem
 e graus para uma <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> e <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> entre dois pontos de <span class="math notranslate nohighlight">\(-27,9\,\text{m}\)</span>
 e <span class="math notranslate nohighlight">\(162,2\,\text{m}\)</span>, respectivamente?</p>
 <p><span class="solucao">Solução:</span>
@@ -314,6 +321,7 @@ isto é, ponto inicial tem cota/altitude maior do que o ponto final.</p>
 \[\begin{split}d(^{\circ})&amp;=\arctan\frac{\mathrm{DN}}{\mathrm{DH}}\\
 &amp;=\arctan\frac{-27,9}{162,2}\\
 &amp;=-9^\circ45'36''.\end{split}\]</div>
+</div>
 <hr class="docutils" />
 <p>Uma maneira de interpretar o valor da declividade em percentagem
 é, por exemplo, de acordo com o Exemplo 4, se o
@@ -422,7 +430,8 @@ a cota ou altitude de <span class="math notranslate nohighlight">\(\mathrm{B}\)<
 </figcaption>
 </figure>
 <hr class="docutils" />
-<p><span class="exem">Exemplo 5</span> Em um levantamento para determinar a <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> entre os
+<div class="admonition-exem-exemplo-5-em-um-levantamento-para-determinar-a-math-mathrm-dn-entre-os-pontos-math-mathrm-a-e-math-mathrm-b-estacionou-se-a-estacao-total-em-math-mathrm-a-e-em-math-mathrm-b-o-prisma-da-estacao-total-mirou-se-o-prisma-resultando-na-di-de-math-322-567-text-m-anotou-se-tambem-o-angulo-zenital-de-math-85-circ24-a-altura-do-instrumento-de-math-1-769-text-m-e-a-altura-do-prisma-de-math-2-000-text-m-pergunta-se-qual-a-math-mathrm-dn-entre-math-mathrm-a-e-math-mathrm-b-sem-e-com-os-efeitos-da-curvatura-da-terra-e-da-refracao-atmosferica-sendo-considerado admonition">
+<p class="admonition-title"><span class="exem">Exemplo 5</span> Em um levantamento para determinar a <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> entre os
 pontos <span class="math notranslate nohighlight">\(\mathrm{A}\)</span> e <span class="math notranslate nohighlight">\(\mathrm{B}\)</span>, estacionou-se a estação total em <span class="math notranslate nohighlight">\(\mathrm{A}\)</span> e, em <span class="math notranslate nohighlight">\(\mathrm{B}\)</span>, o prisma.
 Da estação total mirou-se o prisma, resultando na DI de <span class="math notranslate nohighlight">\(322,567\,\text{m}\)</span>.
 Anotou-se também: o ângulo zenital de <span class="math notranslate nohighlight">\(85^\circ24'\)</span>; a altura do
@@ -448,9 +457,10 @@ a Equação <a class="reference internal" href="#equation-eq-cap-alt-tri-2">(96)
 tem-se:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\mathrm{DN_{AB}}&amp;=\mathrm{DI_{AB}}\cos z+ai-ap+C_{cr}\\
-&amp;=\mathrm{DI}\cos z+ai-ap+0,067\,53\mathrm{DH^{2}}\\
-&amp;=322,567\cos85^{\circ}24'+1,769-2,000+0,067\,53\cdot0,321\,5^{2}\\
+&amp;=\mathrm{DI}\cos z+ai-ap+0,06753\mathrm{DH^{2}}\\
+&amp;=322,567\cos85^{\circ}24'+1,769-2,000+0,06753\cdot0,3215^{2}\\
 &amp;=25,646\,{\rm m.}\end{split}\]</div>
+</div>
 <hr class="docutils" />
 </section>
 <section id="nivelamento-taqueometrico">
@@ -480,7 +490,8 @@ topográficos, não será apresentado a determinação Equação <a class="refer
 Aos interessados, consultar <span id="id12">[<a class="reference internal" href="referencias.html#id9" title="R. Godoy. Topografia básica. FEALQ, Piracicaba, SP, 2 edition, 1988.">God88</a>]</span>, <span id="id13">[<a class="reference internal" href="referencias.html#id8" title="J. A. Comastri and J. C. Tuler. Topografia: Altimetria. Editora UFV, Viçosa, MG, 3 edition, 2003.">CT03</a>]</span> e <span id="id14">[<a class="reference internal" href="referencias.html#id7" title="J. M. Casaca, J. L. Matos, and J. M. B. Dias. Topografia geral. LCT, Rio de Janeiro, RJ, 4 edition, 2007.">CMD07</a>]</span>,
 entre outros.</p>
 <hr class="docutils" />
-<p><span class="exem">Exemplo 6</span> Com um teodolito no ponto 9 de cota <span class="math notranslate nohighlight">\(100,0\,{\rm m}\)</span>, visou-se
+<div class="admonition-exem-exemplo-6-com-um-teodolito-no-ponto-9-de-cota-math-100-0-rm-m-visou-se-o-ponto-10-onde-foram-medidos-a-altura-do-instrumento-de-math-1-532-rm-m-visando-se-a-mira-em-10-as-leitura-do-math-rs-2-984-rm-m-e-do-math-ri-0-200-rm-m-e-angulo-zenital-de-math-97-circ-determine-a-diferenca-de-nivel-entre-os-pontos-math-9-e-math-10-e-a-cota-em-math-10 admonition">
+<p class="admonition-title"><span class="exem">Exemplo 6</span> Com um teodolito no ponto 9 de cota <span class="math notranslate nohighlight">\(100,0\,{\rm m}\)</span>, visou-se
 o ponto 10, onde foram medidos: a altura do instrumento de <span class="math notranslate nohighlight">\(1,532\,{\rm m}\)</span>;
 visando-se a mira em 10, as leitura do <span class="math notranslate nohighlight">\(rs=2,984\,{\rm m}\)</span>  e do <span class="math notranslate nohighlight">\(ri=0,200\,{\rm m}\)</span>;
 e ângulo zenital de <span class="math notranslate nohighlight">\(97^{\circ}\)</span>. Determine a diferença de nível
@@ -510,6 +521,7 @@ para <span class="math notranslate nohighlight">\(V\)</span>:</p>
 \[\begin{split}\mathrm{cota_{10}}&amp;=\mathrm{cota_{9}+DN_{9,10}}\\
 &amp;=100-33,736\\
 &amp;=66,264\,{\rm m.}\end{split}\]</div>
+</div>
 <hr class="docutils" />
 </section>
 <section id="nivelamento-gnss">
@@ -570,7 +582,8 @@ a sua calibração local. Esta calibração não será apresentada, por
 este texto ser apenas introdutório à esta disciplina. Maiores detalhes
 podem ser encontrados em <span id="id19">[<a class="reference internal" href="referencias.html#id18" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>.</p>
 <hr class="docutils" />
-<p><span class="exem">Exemplo 7</span> Encontre, por meio do programa <a class="reference external" href="https://www.ibge.gov.br/geociencias/informacoes-sobre-posicionamento-geodesico/servicos-para-posicionamento-geodesico/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?edicao=31284&amp;t=processar-os-dados">HgeoHNOR2020</a>,
+<div class="admonition-exem-exemplo-7-encontre-por-meio-do-programa-hgeohnor2020-https-www-ibge-gov-br-geociencias-informacoes-sobre-posicionamento-geodesico-servicos-para-posicionamento-geodesico-31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb-html-edicao-31284-t-processar-os-dados-a-ondulacao-geoidal-para-um-ponto-de-coordenadas-math-22-circ-6-41-de-latitude-e-math-41-circ-54-8-de-longitude-no-datum-sirgas2000-https-geoftp-ibge-gov-br-informacoes-sobre-posicionamento-geodesico-rede-planialtimetrica-relatorio-rel-sirgas2000-pdf-sabendo-se-que-a-altura-geometrica-calculada-pelo-receptor-gnss-nesta-coordenada-foi-de-math-562-672-text-m-qual-a-altitude-ortometrica admonition">
+<p class="admonition-title"><span class="exem">Exemplo 7</span> Encontre, por meio do programa <a class="reference external" href="https://www.ibge.gov.br/geociencias/informacoes-sobre-posicionamento-geodesico/servicos-para-posicionamento-geodesico/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?edicao=31284&amp;t=processar-os-dados">HgeoHNOR2020</a>,
 a ondulação geoidal para um ponto de coordenadas <span class="math notranslate nohighlight">\(-22^{\circ}6'41''\)</span>  de latitude
 e <span class="math notranslate nohighlight">\(-41^{\circ}54'8''\)</span>  de longitude, no Datum
 <a class="reference external" href="https://geoftp.ibge.gov.br/informacoes_sobre_posicionamento_geodesico/rede_planialtimetrica/relatorio/rel_sirgas2000.pdf">SIRGAS2000</a>. Sabendo-se que a altura geométrica calculada pelo receptor
@@ -585,18 +598,22 @@ calcular a altitude ortométrica <span class="math notranslate nohighlight">\((H
 \[\begin{split}H&amp;=h-N\\
 &amp;=562,672--6,54\\
 &amp;=569,112\,\rm{m.}\end{split}\]</div>
+</div>
 <hr class="docutils" />
-<p><span class="exem">Exemplo 8</span> Trabalhando com receptores GNSS com a técnica de
+<div class="admonition-exem-exemplo-8-trabalhando-com-receptores-gnss-com-a-tecnica-de-medida-relativa-por-diferenca-de-fase-obteve-se-para-um-ponto-a-altitude-geometrica-de-math-231-849-text-m-no-datum-sirgas2000-https-geoftp-ibge-gov-br-informacoes-sobre-posicionamento-geodesico-rede-planialtimetrica-relatorio-rel-sirgas2000-pdf-utilizando-o-programa-hgeohnor2020-https-www-ibge-gov-br-geociencias-informacoes-sobre-posicionamento-geodesico-servicos-para-posicionamento-geodesico-31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb-html-edicao-31284-t-processar-os-dados-foi-encontrado-a-ondulacao-geoidal-de-math-12-598-text-m-calcule-a-altitude-ortometrica admonition">
+<p class="admonition-title"><span class="exem">Exemplo 8</span> Trabalhando com receptores GNSS com a técnica de
 medida relativa por diferença de fase, obteve-se para um ponto a altitude
 geométrica de <span class="math notranslate nohighlight">\(231,849\,\text{m}\)</span> no Datum <a class="reference external" href="https://geoftp.ibge.gov.br/informacoes_sobre_posicionamento_geodesico/rede_planialtimetrica/relatorio/rel_sirgas2000.pdf">SIRGAS2000</a>. Utilizando o programa
 <a class="reference external" href="https://www.ibge.gov.br/geociencias/informacoes-sobre-posicionamento-geodesico/servicos-para-posicionamento-geodesico/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?edicao=31284&amp;t=processar-os-dados">HgeoHNOR2020</a>,
 foi encontrado a ondulação geoidal de <span class="math notranslate nohighlight">\(-12,598\,\text{m}\)</span>.
 Calcule a altitude ortométrica.</p>
-<p><span class="solucao">Solução:</span> Da Equação <a class="reference internal" href="#equation-eq-geoide">(98)</a>, e com os dados apresentados acima, temos:</p>
+<p><span class="solucao">Solução:</span>
+Da Equação <a class="reference internal" href="#equation-eq-geoide">(98)</a>, e com os dados apresentados acima, temos:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}H&amp;=h-N\\
 &amp;=231,849--12,598\\
 &amp;=244,447\,\rm{m.}\end{split}\]</div>
+</div>
 <hr class="docutils" />
 <div class="admonition-sugestao-de-aula-pratica admonition">
 <p class="admonition-title">Sugestão de aula prática</p>
@@ -722,7 +739,8 @@ aos dados da <a class="reference internal" href="#tab-tabelangs"><span class="st
 </figcaption>
 </figure>
 <hr class="docutils" />
-<p><span class="exem">Exemplo 9</span> Com os dados da caderneta de campo de um NGS, figura
+<div class="admonition-exem-exemplo-9-com-os-dados-da-caderneta-de-campo-de-um-ngs-figura-a-seguir-calcule-as-math-mathrm-cotas-dos-pontos-math-1-2-3-4-e-math-5-considere-o-ponto-math-0-como-sendo-a-math-mathrm-rn-com-math-mathrm-cota-atribuida-de-math-100-text-m admonition">
+<p class="admonition-title"><span class="exem">Exemplo 9</span> Com os dados da caderneta de campo de um NGS, figura
 a seguir, calcule as <span class="math notranslate nohighlight">\(\mathrm{cotas}\)</span> dos pontos
 <span class="math notranslate nohighlight">\(1,\,2,\,3,\,4\)</span> e <span class="math notranslate nohighlight">\(5\)</span>. Considere o
 ponto <span class="math notranslate nohighlight">\(0\)</span> como sendo a <span class="math notranslate nohighlight">\(\mathrm{RN}\)</span>,
@@ -790,6 +808,7 @@ as respostas e, em parenteses, os cálculos realizados.</p>
 </tr>
 </tbody>
 </table>
+</div>
 </section>
 <hr class="docutils" />
 <section id="nivelamento-geometrico-composto-ngc">
@@ -822,7 +841,8 @@ A avaliação da qualidade do levantamento será avaliada na seção
 <div class="math notranslate nohighlight" id="equation-eq-verificacaongc">
 <span class="eqno">(101)<a class="headerlink" href="#equation-eq-verificacaongc" title="Permalink to this equation">¶</a></span>\[\Sigma\mathrm{{r\acute{e}}}-\Sigma\mathrm{PM}=\mathrm{\text{cota}_{final}}-\mathrm{\text{cota}_{inicial}}.\]</div>
 <hr class="docutils" />
-<p><span class="exem">Exemplo 10</span> Com os dados de um NGC coletados
+<div class="admonition-exem-exemplo-10-com-os-dados-de-um-ngc-coletados-em-campo-conforme-o-esquema-grafico-a-seguir-calcule-as-math-mathrm-cotas-das-estacas-pontos-materializados-em-campo-por-estacas admonition">
+<p class="admonition-title"><span class="exem">Exemplo 10</span> Com os dados de um NGC coletados
 em campo conforme o esquema gráfico a seguir, calcule as <span class="math notranslate nohighlight">\(\mathrm{cotas}\)</span> das estacas
 (pontos materializados em campo por estacas).</p>
 <figure class="align-center">
@@ -907,6 +927,7 @@ são  os valores calculados e, entre parenteses, os cálculos realizados.</p>
 \[\begin{split}\Sigma\mathrm{{r\acute{e}}}-\Sigma\mathrm{PM}&amp;=\mathrm{\text{cota}_{final}}-\mathrm{\text{cota}_{inicial}}\\
 2,378-14,553&amp;=187,825-200,000\\
 -12,175&amp;=-12,175\,\text{(OK!)}\end{split}\]</div>
+</div>
 </section>
 </section>
 <hr class="docutils" />
@@ -978,7 +999,8 @@ de ajuste para nivelamento podem ser encontrados em:
 <span id="id31">[<a class="reference internal" href="referencias.html#id8" title="J. A. Comastri and J. C. Tuler. Topografia: Altimetria. Editora UFV, Viçosa, MG, 3 edition, 2003.">CT03</a>]</span> [pg. 84-89], <span id="id32">[<a class="reference internal" href="referencias.html#id3" title="J. C. McCormac. Topografia. LCT, Rio de Janeiro, RJ, 5 edition, 2007.">McC07</a>]</span> [pg. 122-125] e
 <span id="id33">[<a class="reference internal" href="referencias.html#id18" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span> [pg. 406-411].</p>
 <hr class="docutils" />
-<p><span class="exem">Exemplo 11</span> Foram realizados um nivelamento e um contra-nivelamento de 800 m
+<div class="admonition-exem-exemplo-11-foram-realizados-um-nivelamento-e-um-contra-nivelamento-de-800-m-de-extensao-a-math-mathrm-dn-entre-o-ponto-inicial-e-final-do-nivelamento-e-do-contra-nivelamento-foram-de-math-8-581-text-m-e-math-8-603-text-m-respectivamente-este-nivelamento-e-da-classe-iin-de-acordo-com-a-nbr13133-pergunta-se-o-levantamento-e-aceitavel admonition">
+<p class="admonition-title"><span class="exem">Exemplo 11</span> Foram realizados um nivelamento e um contra-nivelamento de 800 m
 de extensão. A <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span>, entre o ponto inicial e final do nivelamento e
 do contra-nivelamento, foram de <span class="math notranslate nohighlight">\(8,581\,\text{m}\)</span> e <span class="math notranslate nohighlight">\(-8,603\,\text{m}\)</span>, respectivamente.
 Este nivelamento é da classe IIN, de acordo com a NBR13133. Pergunta-se:
@@ -997,6 +1019,7 @@ o erro máximo a ser tolerado:</p>
 <p>Como <span class="math notranslate nohighlight">\(\textit{erro}_{\textit{nivelamento}}&gt;\textit{T}_{\textit{nivelamento}}\)</span>,
 o levantamento não é aceitável, novo levantamento deve ser realizado
 e, posterioremente, verificada se está de acordo com a tolerância.</p>
+</div>
 </section>
 <hr class="docutils" />
 <section id="perfil-topografico">
@@ -1187,12 +1210,11 @@ a <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> entre as est
 </figcaption>
 </figure>
 <hr class="docutils" />
-<p><span class="exem">Exemplo 12</span> Com os dados da Tabela acima, pergunta-se:</p>
-<ol class="loweralpha simple">
-<li><p>qual é a declividade do greide (%);</p></li>
-<li><p>qual a <span class="math notranslate nohighlight">\(\mathrm{cota}\)</span> do greide na estaca <span class="math notranslate nohighlight">\(8\)</span>;</p></li>
-<li><p>a estaca a <span class="math notranslate nohighlight">\(\mathrm{cota}\)</span> do segundo <span class="math notranslate nohighlight">\(\mathrm{PP}\)</span>.</p></li>
-</ol>
+<div class="admonition-exem-exemplo-12-com-os-dados-da-tabela-acima-pergunta-se-a-qual-e-a-declividade-do-greide-b-qual-a-math-mathrm-cota-do-greide-na-estaca-math-8-c-a-estaca-a-math-mathrm-cota-do-segundo-math-mathrm-pp admonition">
+<p class="admonition-title"><span class="exem">Exemplo 12</span> Com os dados da Tabela acima, pergunta-se:
+(a) qual é a declividade do greide (%);
+(b) qual a <span class="math notranslate nohighlight">\(\mathrm{cota}\)</span> do greide na estaca <span class="math notranslate nohighlight">\(8\)</span>;
+(c) a estaca a <span class="math notranslate nohighlight">\(\mathrm{cota}\)</span> do segundo <span class="math notranslate nohighlight">\(\mathrm{PP}\)</span>.</p>
 <p><span class="solucao">Solução:</span>  Questão (a): considerando as <span class="math notranslate nohighlight">\(\mathrm{cotas}\)</span>
 do greide nas estacas <span class="math notranslate nohighlight">\(5+13,5\,\text{m}\)</span> e
 <span class="math notranslate nohighlight">\(10+15,1\,\text{m}\)</span> e a <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> entre estas estacas
@@ -1243,6 +1265,7 @@ a <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> entre a esta
 \[\begin{split}\mathrm{cota}_{9+10,2\,\text{m}}&amp;=\mathrm{cota}_{5+13,5\,\text{m}}+\mathrm{DN}\\
 &amp;=200,465+0,767\\
 &amp;=201,232\,\text{m}.\end{split}\]</div>
+</div>
 </section>
 </section>
 <hr class="docutils" />
@@ -1672,7 +1695,7 @@ fechado NBR13133, páginas 6 e 17</p>
   <div class="sphinxnext">
     <h4>Next page</h4>
     <p class="topless"><a href="capitulo10.html"
-                          title="Next page">&rarr; Capitulo 10: Curva de nível e cáculo de volume</a></p>
+                          title="Next page">&rarr; Capitulo 10: Curva de nível e cálculo de volume</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>Esta Página</h3>
@@ -1721,7 +1744,7 @@ fechado NBR13133, páginas 6 e 17</p>
           <a href="../genindex.html" title="Índice Geral"
              >índice</a></li>
         <li class="right" >
-          <a href="capitulo10.html" title="Capitulo 10: Curva de nível e cáculo de volume"
+          <a href="capitulo10.html" title="Capitulo 10: Curva de nível e cálculo de volume"
              >próximo</a> &nbsp; &nbsp;</li>
         <li class="right" >
           <a href="capitulo8.html" title="Capitulo 8: Poligonal"

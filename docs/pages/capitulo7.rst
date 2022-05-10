@@ -332,20 +332,19 @@ o alinhamento.
 
 ----
 
-:exem:`Exemplo 1` Dados os azimutes dos alinhamentos: :math:`12=37^\circ40'`,
-:math:`23=122^\circ15'`, :math:`34=257^\circ30'` e :math:`45=290^\circ10'`. Calcular o rumo.
+.. admonition:: :exem:`Exemplo 1` Dados os azimutes dos alinhamentos: :math:`12=37^\circ40'`,
+   :math:`23=122^\circ15'`, :math:`34=257^\circ30'` e :math:`45=290^\circ10'`. Calcular o rumo.
 
-:solucao:`Solução:`
-Na Figura abaixo é apresentada a solução.
+   :solucao:`Solução:`
+   Na Figura abaixo é apresentada a solução.
 
-.. _fig_exrumoazimute.png:
+   .. _fig_exrumoazimute.png:
 
-.. figure:: /images/capitulo7/fig_exrumoazimute.png
-   :scale: 45 %
-   :alt: fig_exrumoazimute.png
-   :align: center
+   .. figure:: /images/capitulo7/fig_exrumoazimute.png
+      :scale: 45 %
+      :alt: fig_exrumoazimute.png
+      :align: center
 
-----
 
 Erro angular de fechamento
 --------------------------
@@ -355,7 +354,7 @@ a verificação se os erros nas medições de ângulos e distâncias estão
 de acordo com a tolerância definida pela :cite:t:`NBR13133`, para
 depois compensá-los, se estiver dentro do máximo tolerado. Tal procedimento
 só é possível se a poligonal for do tipo fechada ou quando aberta
-e apoiada (ver :any:`RST Capitulo8`). Por exemplo, se for
+e apoiada (ver :any:`RST Capitulo 8`). Por exemplo, se for
 uma poligonal fechada em um ponto e os ângulos internos medidos, o
 erro angular de fechamento é a diferença do somatório do ângulos internos
 medidos com o somatório
@@ -382,30 +381,30 @@ do erro angular de fechamento nos ângulos medidos.
 
 ----
 
-:exem:`Exemplo 2` Calcular o erro angular de fechamento da poligonal fechada da
-:numref:`fig_ExemploAnguloDexaoInterno.png` a. Se o levantamento foi realizado
-para estudos de viabilidade em projetos de engenharia,
-pergunta-se, o erro angular de fechamento estaria dentro da tolerância estabelecida pela NBR13133?
+.. admonition:: :exem:`Exemplo 2` Calcular o erro angular de fechamento da poligonal fechada da
+   :numref:`fig_ExemploAnguloDexaoInterno.png` a. Se o levantamento foi realizado
+   para estudos de viabilidade em projetos de engenharia,
+   pergunta-se, o erro angular de fechamento estaria dentro da tolerância estabelecida pela NBR13133?
 
-:solucao:`Solução:`
-Para a poligonal em questão, temos 5 lados, :math:`n=5`, então somatório de ângulos internos
-teórico é :math:`540^\circ`, :math:`(5-2)180^\circ`. O somatório dos ângulos internos medidos é:
+   :solucao:`Solução:`
+   Para a poligonal em questão, temos 5 lados, :math:`n=5`, então somatório de ângulos internos
+   teórico é :math:`540^\circ`, :math:`(5-2)180^\circ`. O somatório dos ângulos internos medidos é:
 
-.. table::
-    :widths: 1 2
-    :header-alignment: lc
-    :column-alignment: lr
+   .. table::
+      :widths: 1 2
+      :header-alignment: lc
+      :column-alignment: lr
 
-    =========== =======================================================
-    Vértice     :math:`\sphericalangle`  medido
-    =========== =======================================================
-    :math:`A`   :math:`99^\circ48'54''`
-    :math:`B`   :math:`95^\circ55'15''`
-    :math:`C`   :math:`118^\circ37'50''`
-    :math:`D`   :math:`82^\circ47'2''`
-    :math:`E`   :math:`\underline{142^\circ50'14''}`
-    :math:`\,`  :math:`\Sigma=539^\circ59'15''`
-    =========== =======================================================
+      =================== =======================================================
+      Vértice             :math:`\sphericalangle`  medido
+      =================== =======================================================
+      :math:`\mathrm{A}`  :math:`99^\circ48'54''`
+      :math:`\mathrm{B}`  :math:`95^\circ55'15''`
+      :math:`\mathrm{C}`  :math:`118^\circ37'50''`
+      :math:`\mathrm{D}`  :math:`82^\circ47'2''`
+      :math:`\mathrm{E}`  :math:`\underline{142^\circ50'14''}`
+      :math:`\,`          :math:`\Sigma=539^\circ59'15''`
+      =================== =======================================================
 
 Desta forma, o erro angular de fechamento é de :math:`-45''` :math:`(539^\circ59'15''-540^\circ)`.
 Se o levantamento fosse para  estudos de viabilidade em projetos de engenharia,
@@ -433,34 +432,34 @@ Este método deve ser utilizado quando os comprimentos dos alinhamentos
 forem aproximadamente iguais. Outros métodos de compensação podem
 ser encontrados, por exemplo, em :cite:t:`loch`.
 
-:exem:`Exemplo 3`
-Distribuir o erro angular de fechamento da poligonal fechada
-da :numref:`fig_ExemploAnguloDexaoInterno.png` pelo método linear.
+.. admonition:: :exem:`Exemplo 3`
+   Distribuir o erro angular de fechamento da poligonal fechada
+   da :numref:`fig_ExemploAnguloDexaoInterno.png` pelo método linear.
 
-:solucao:`Solução:`
-Na tabela a seguir, é apresentado o resultado da compensação. Na coluna **I**
-estão os ângulos horizontais medidos em cada um dos vértices; na **II**
-o erro médio e na **III**, o ângulo interno compensado (**I** + **II**).
-Com o erro angular de fechamento de :math:`-45''` (ver exemplo 2), e sendo a poligonal
-de cinco lados, temos o erro médio de :math:`9''` :math:`(45''/5)`. Note que,
-como o somatório dos ângulos medidos foi menor do que o teórico, então deve-se
-somar :math:`9''` a cada um dos vértices. Caso contrário, o somatório das medidas
-angulares maiores que o teórico, deve-se subtrair.
+   :solucao:`Solução:`
+   Na tabela a seguir, é apresentado o resultado da compensação. Na coluna **I**
+   estão os ângulos horizontais medidos em cada um dos vértices; na **II**
+   o erro médio e na **III**, o ângulo interno compensado (**I** + **II**).
+   Com o erro angular de fechamento de :math:`-45''` (ver exemplo 2), e sendo a poligonal
+   de cinco lados, temos o erro médio de :math:`9''` :math:`(45''/5)`. Note que,
+   como o somatório dos ângulos medidos foi menor do que o teórico, então deve-se
+   somar :math:`9''` a cada um dos vértices. Caso contrário, o somatório das medidas
+   angulares maiores que o teórico, deve-se subtrair.
 
-.. table::
-    :header-alignment: cccc
-    :column-alignment: crrr
+   .. table::
+      :header-alignment: cccc
+      :column-alignment: crrr
 
-    =========== =========================================== =========================== ================================================
-    Vértice     :math:`\sphericalangle` medido **(I)**)     erro médio **(II)**         :math:`\sphericalangle` compensado **(I+II)**
-    =========== =========================================== =========================== ================================================
-    :math:`A`   :math:`99^\circ48'54''`                     :math:`+9`                  :math:`99^\circ49'3''`
-    :math:`B`   :math:`95^\circ55'15''`                     :math:`+9`                  :math:`95^\circ55'24''`
-    :math:`C`   :math:`118^\circ37'50''`                    :math:`+9`                  :math:`118^\circ37'59''`
-    :math:`D`   :math:`82^\circ47'2''`                      :math:`+9`                  :math:`82^\circ47'11''`
-    :math:`E`   :math:`\underline{142^\circ50'14''}`        :math:`\underline{+9}`      :math:`\underline{142^\circ50'23''}`
-    :math:`\,`  :math:`\Sigma=539^\circ59'15''`             :math:`\Sigma=45''`         :math:`\Sigma=540^\circ00'00''`
-    =========== =========================================== =========================== ================================================
+      ================== =========================================== =========================== ================================================
+      Vértice            :math:`\sphericalangle` medido **(I)**)     erro médio **(II)**         :math:`\sphericalangle` compensado **(I+II)**
+      ================== =========================================== =========================== ================================================
+      :math:`\mathrm{A}` :math:`99^\circ48'54''`                     :math:`+9`                  :math:`99^\circ49'3''`
+      :math:`\mathrm{B}` :math:`95^\circ55'15''`                     :math:`+9`                  :math:`95^\circ55'24''`
+      :math:`\mathrm{C}` :math:`118^\circ37'50''`                    :math:`+9`                  :math:`118^\circ37'59''`
+      :math:`\mathrm{D}` :math:`82^\circ47'2''`                      :math:`+9`                  :math:`82^\circ47'11''`
+      :math:`\mathrm{E}` :math:`\underline{142^\circ50'14''}`        :math:`\underline{+9}`      :math:`\underline{142^\circ50'23''}`
+      :math:`\,`         :math:`\Sigma=539^\circ59'15''`             :math:`\Sigma=45''`         :math:`\Sigma=540^\circ00'00''`
+      ================== =========================================== =========================== ================================================
 
 ----
 
@@ -552,51 +551,48 @@ juntamente com o cálculo do erro de fechamento angular e sua compensação.
 
 ----
 
-:exem:`Exemplo 4` A poligonal aberta da Figura a seguir foi medida por meio das deflexões,
-sendo que os azimutes inicial e final, respectivamente, O1 e 5P, são conhecidos.
-Calcular o erro angular de fechamento e compensar os azimutes pelo método linear.
+.. admonition:: :exem:`Exemplo 4` A poligonal aberta da Figura a seguir foi medida por meio das deflexões,
+   sendo que os azimutes inicial e final, respectivamente, O1 e 5P, são conhecidos.
+   Calcular o erro angular de fechamento e compensar os azimutes pelo método linear.
+
+   .. figure:: /images/capitulo7/fig_angulodeflexaoExErroAngu.png
+      :scale: 35 %
+      :alt: fig_angulodeflexaoExErroAngu.png
+      :align: center
+
+   :solucao:`Solução:`
+   O erro angular de fechamento será determinado comparando o azimute final do alinhamento 5P
+   calculado com o conhecido. As deflexões são apresentadas na coluna **I**. Os azimutes
+   são calculados somando ou subtraindo do azimute anterior a deflexão à direita ou à esquerda,
+   respectivamente (**II**). O primeiro azimute O1 que é conhecido não é calculado no início,
+   só no final, para avaliação do erro angular. O erro encontrado, depois de calculados os
+   azimutes com os ângulos de deflexões medidos, é de :math:`35''` a mais no azimute final
+   calculado (ver três últimas linhas da Tabela). Desta forma, a compensação linear a ser aplicada
+   em cada deflexão é de :math:`-7''`, média do erro angular. Para evitar de se fazer novamente
+   os cálculos dos azimutes com as deflexões compensadas, aplica-se diretamento nos azimutes
+   calculados a compensação do erro médio acumulado (**III**). Observe que depois da compensação
+   aplicada, o valor de azimute calculado do alinhamento final (5P) deve ser igual ao
+   valor conhecido (**IV**).
 
 
-.. figure:: /images/capitulo7/fig_angulodeflexaoExErroAngu.png
-   :scale: 35 %
-   :alt: fig_angulodeflexaoExErroAngu.png
-   :align: center
+   .. table::
+      :widths: 1 1 3 1 1
+      :header-alignment: ccccc
+      :column-alignment: crrrr
 
-:solucao:`Solução:`
-O erro angular de fechamento será determinado comparando o azimute final do alinhamento 5P
-calculado com o conhecido. As deflexões são apresentadas na coluna **I**. Os azimutes
-são calculados somando ou subtraindo do azimute anterior a deflexão à direita ou à esquerda,
-respectivamente (**II**). O primeiro azimute O1 que é conhecido não é calculado no início,
-só no final, para avaliação do erro angular. O erro encontrado, depois de calculados os
-azimutes com os ângulos de deflexões medidos, é de :math:`35''` a mais no azimute final
-calculado (ver três últimas linhas da Tabela). Desta forma, a compensação linear a ser aplicada
-em cada deflexão é de :math:`-7''`, média do erro angular. Para evitar de se fazer novamente
-os cálculos dos azimutes com as deflexões compensadas, aplica-se diretamento nos azimutes
-calculados a compensação do erro médio acumulado (**III**). Observe que depois da compensação
-aplicada, o valor de azimute calculado do alinhamento final (5P) deve ser igual ao
-valor conhecido (**IV**).
-
-
-.. table::
-    :widths: 1 1 3 1 1
-    :header-alignment: ccccc
-    :column-alignment: crrrr
-
-    =========== ====================================== ===================================================================================================== ========================== ================================================
-    Alin.        **(I)** Deflexão medida               **(II)** Cálculo do Az                                                                                **(III)** Compensação      **(IV)** Az comp
-    =========== ====================================== ===================================================================================================== ========================== ================================================
-    :math:`O1`  :math:`\,`                             Azimute conhecido :math:`20^\circ51'16''`                                                             :math:`\,`                 :math:`\,`
-    :math:`12`  :math:`123^\circ21'52''\,\text{(DD)}`  :math:`20^\circ51'16''+123^\circ21'52''=144^\circ13'8''`                                              :math:`-7''\cdot1=-7''`    :math:`144^\circ13'1''`
-    :math:`23`  :math:`71^\circ47'25''\,\text{(DE)}`   :math:`144^\circ13'8''-71^\circ47'25''=72^\circ25'43''`                                               :math:`-7''\cdot2=-14''`   :math:`72^\circ25'29''`
-    :math:`34`  :math:`49^\circ34'36''\,\text{(DD)}`   :math:`72^\circ25'43''+49^\circ34'36''= 122^\circ0'19''`                                              :math:`-7''\cdot3=-21''`   :math:`121^\circ59'58''`
-    :math:`45`  :math:`76^\circ38'42''\,\text{(DE)}`   :math:`122^\circ0'19''-76^\circ38'42''=45^\circ21'37''`                                               :math:`-7''\cdot4=-28''`   :math:`45^\circ21'9''`
-    :math:`5P`  :math:`99^\circ23'11''\,\text{(DD)}`   :math:`45^\circ21'37''+99^\circ23'11''=144^\circ44'48''`                                              :math:`-7''\cdot5=-35''`   :math:`\color{blue}\mathbf{144^\circ44'13''}`
-    :math:`\,`  :math:`\,`                             :math:`\text{Az}_\mathrm{5P}` calculado :math:`=144^\circ44'48''`                                     :math:`\,`                 :math:`\,`
-    :math:`\,`  :math:`\,`                             :math:`\text{Az}_\mathrm{5P}` conhecido :math:`=\color{blue}\underline{\mathbf{-144^\circ44'13''}}`   :math:`\,`                 :math:`\,`
-    :math:`\,`  :math:`\,`                             :math:`\text{erro}=35''`                                                                              :math:`\,`                 :math:`\,`
-    =========== ====================================== ===================================================================================================== ========================== ================================================
-
-----
+      =========== ====================================== ===================================================================================================== ========================== ================================================
+      Alin.        **(I)** Deflexão medida               **(II)** Cálculo do Az                                                                                **(III)** Compensação      **(IV)** Az comp
+      =========== ====================================== ===================================================================================================== ========================== ================================================
+      :math:`O1`  :math:`\,`                             Azimute conhecido :math:`20^\circ51'16''`                                                             :math:`\,`                 :math:`\,`
+      :math:`12`  :math:`123^\circ21'52''\,\text{(DD)}`  :math:`20^\circ51'16''+123^\circ21'52''=144^\circ13'8''`                                              :math:`-7''\cdot1=-7''`    :math:`144^\circ13'1''`
+      :math:`23`  :math:`71^\circ47'25''\,\text{(DE)}`   :math:`144^\circ13'8''-71^\circ47'25''=72^\circ25'43''`                                               :math:`-7''\cdot2=-14''`   :math:`72^\circ25'29''`
+      :math:`34`  :math:`49^\circ34'36''\,\text{(DD)}`   :math:`72^\circ25'43''+49^\circ34'36''= 122^\circ0'19''`                                              :math:`-7''\cdot3=-21''`   :math:`121^\circ59'58''`
+      :math:`45`  :math:`76^\circ38'42''\,\text{(DE)}`   :math:`122^\circ0'19''-76^\circ38'42''=45^\circ21'37''`                                               :math:`-7''\cdot4=-28''`   :math:`45^\circ21'9''`
+      :math:`5P`  :math:`99^\circ23'11''\,\text{(DD)}`   :math:`45^\circ21'37''+99^\circ23'11''=144^\circ44'48''`                                              :math:`-7''\cdot5=-35''`   :math:`\color{blue}\mathbf{144^\circ44'13''}`
+      :math:`\,`  :math:`\,`                             :math:`\text{Az}_\mathrm{5P}` calculado :math:`=144^\circ44'48''`                                     :math:`\,`                 :math:`\,`
+      :math:`\,`  :math:`\,`                             :math:`\text{Az}_\mathrm{5P}` conhecido :math:`=\color{blue}\underline{\mathbf{-144^\circ44'13''}}`   :math:`\,`                 :math:`\,`
+      :math:`\,`  :math:`\,`                             :math:`\text{erro}=35''`                                                                              :math:`\,`                 :math:`\,`
+      =========== ====================================== ===================================================================================================== ========================== ================================================
 
 Cálculo do azimute a partir das coordenadas retangulares
 --------------------------------------------------------
@@ -608,37 +604,32 @@ o levantamento a partir de pontos de coordenadas UTM. Se o azimute
 for calculado das coordenadas UTM, os azimutes serão aqueles em relação
 ao norte da quadrícula. O cálculo do azimute
 é similar à conversão de coordenadas retangulares para polares (ver
-seção :any:`Coordenada retangular para polar`,
+seção :any:`Coordenada retangular e polar no plano`,
 todavia com a contagem dos ângulos no eixo-:math:`y` (N), e o sentido da
 medição dos ângulos, o horário. Uma vez definido o azimute, o rumo
 pode ser determinado como apresentado na seção :ref:`Conversão de azimutes em rumos`.
 
-----
+.. admonition:: :exem:`Exemplo 5` Dadas as coordenadas UTM, levantados com receptor GNSS, dos pontos
+   :math:`\mathrm{A}`, :math:`\mathrm{B}`, :math:`\mathrm{E}` e :math:`\mathrm{F}`, calcular
+   os azimutes e rumos dos alinhamentos :math:`\mathrm{AB}` e :math:`\mathrm{EF}`.
 
-:exem:`Exemplo 5` Dadas as coordenadas UTM, levantados com receptor GNSS, dos pontos
-:math:`\mathrm{A}`, :math:`\mathrm{B}`, :math:`\mathrm{E}` e :math:`\mathrm{F}`, calcular
-os azimutes e rumos dos alinhamentos :math:`\mathrm{AB}` e :math:`\mathrm{EF}`.
+   - :math:`\mathrm{A\,(E} = 485\,631\mathrm{~m;~N} = 7\,702\,079\mathrm{~m})`;
+   - :math:`\mathrm{B\,(E}=485\,701\mathrm{~m;~N}=7\,701\,980\mathrm{~m})`;
+   - :math:`\mathrm{E\,(E} = 485\,191\mathrm{~m;~N} = 7\,702\,043 \mathrm{~m})`;
+   - :math:`\mathrm{F\,(E}= 485\,231\mathrm{~m;~N}= 7\,702\,148\mathrm{~m})`.
 
-- :math:`\mathrm{A\,(E} = 485\,631\mathrm{~m;~N} = 7\,702\,079\mathrm{~m})`;
-- :math:`\mathrm{B\,(E}=485\,701\mathrm{~m;~N}=7\,701\,980\mathrm{~m})`;
-- :math:`\mathrm{E\,(E} = 485\,191\mathrm{~m;~N} = 7\,702\,043 \mathrm{~m})`;
-- :math:`\mathrm{F\,(E}= 485\,231\mathrm{~m;~N}= 7\,702\,148\mathrm{~m})`.
+   :solucao:`Solução:`
 
-:solucao:`Solução:`
+   .. figure:: /images/capitulo7/examplor5a.png
+      :scale: 40 %
+      :alt: examplor5a.png
+      :align: center
 
-.. figure:: /images/capitulo7/examplor5a.png
-   :scale: 40 %
-   :alt: examplor5a.png
-   :align: center
+   .. figure:: /images/capitulo7/examplor5b.png
+      :scale: 40 %
+      :alt: examplor5b.png
+      :align: center
 
-
-
-.. figure:: /images/capitulo7/examplor5b.png
-   :scale: 40 %
-   :alt: examplor5b.png
-   :align: center
-
-----
 
 Medidas de azimute em campo
 ---------------------------
@@ -718,19 +709,18 @@ posição próxima a Brasília.
 
 ----
 
-:exem:`Exemplo 6` O azimute magnético do alinhamento AB é de :math:`230^\circ 23'`. Sabendo-se que
-a declinação magnética local é :math:`-21^\circ 9'`, calcular o azimute verdadeiro deste alinhamento.
+.. admonition:: :exem:`Exemplo 6` O azimute magnético do alinhamento AB é de :math:`230^\circ 23'`. Sabendo-se que
+   a declinação magnética local é :math:`-21^\circ 9'`, calcular o azimute verdadeiro deste alinhamento.
 
-:solucao:`Solução:`
+   :solucao:`Solução:`
 
-.. _fig_declinacaomagneticaex.png:
+   .. _fig_declinacaomagneticaex.png:
 
-.. figure:: /images/capitulo7/fig_declinacaomagneticaex.png
-   :scale: 45 %
-   :alt: fig_declinacaomagneticaex.png
-   :align: center
+   .. figure:: /images/capitulo7/fig_declinacaomagneticaex.png
+      :scale: 45 %
+      :alt: fig_declinacaomagneticaex.png
+      :align: center
 
-----
 
 A variação temporal da declinação magnética, denomina-se de **variação secular**. Um exemplo
 da variação secular da declinação magnética, logo, também, da variação
@@ -839,19 +829,17 @@ e épocas.
 
 ----
 
-:exem:`Exemplo 7` Na página da `NOAA <\href{https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml?useFullSite=true>`_
-é possível encontrar os valores da declinação magnética do modelo IGRF.
-Por meio dela, calcular a variação da declinação magnética para a cidade de Vitória,
-Espírito Santo :math:`(\phi=-20^\circ19'10'',~\lambda=-40^\circ20'16'')`, entre o período de 1/Jan/1960 e 1/Jan/2014.
+.. admonition:: :exem:`Exemplo 7` Na página da `NOAA <\href{https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml?useFullSite=true>`_
+   é possível encontrar os valores da declinação magnética do modelo IGRF.
+   Por meio dela, calcular a variação da declinação magnética para a cidade de Vitória,
+   Espírito Santo :math:`(\phi=-20^\circ19'10'',~\lambda=-40^\circ20'16'')`, entre o período de 1/Jan/1960 e 1/Jan/2014.
 
-:solucao:`Solução:`
+   :solucao:`Solução:`
 
-.. figure:: /images/capitulo7/fig_declividavariacao.png
-   :scale: 35 %
-   :alt: fig_declividavariacao.png
-   :align: center
-
-----
+   .. figure:: /images/capitulo7/fig_declividavariacao.png
+      :scale: 35 %
+      :alt: fig_declividavariacao.png
+      :align: center
 
 Uma vez que um alinhamento teve a sua direção determinada com referência
 ao norte o magnético, o seu azimute ou rumo é dito como sendo magnético.
@@ -874,17 +862,15 @@ a seguir).
 
 ----
 
-:exem:`Exemplo 8` Na região de Umuarama, PR, o alinhamento BC teve o seu azimute magnético medido de :math:`153^\circ41'30'':math:` em
-10/12/1967. Qual é o azimute magnético deste alinhamento se você estivesse locando em campo este mesmo alinhamento em 4/5/2014?
+.. admonition:: :exem:`Exemplo 8` Na região de Umuarama, PR, o alinhamento BC teve o seu azimute magnético medido de :math:`153^\circ41'30'':math:` em
+   10/12/1967. Qual é o azimute magnético deste alinhamento se você estivesse locando em campo este mesmo alinhamento em 4/5/2014?
 
-:solucao:`Solução:`
+   :solucao:`Solução:`
 
-.. figure:: /images/capitulo7/DeclinacaoMagneticaUmuaramaShareLatex.png
-   :scale: 35 %
-   :alt: DeclinacaoMagneticaUmuaramaShareLatex.png
-   :align: center
-
-----
+   .. figure:: /images/capitulo7/DeclinacaoMagneticaUmuaramaShareLatex.png
+      :scale: 35 %
+      :alt: DeclinacaoMagneticaUmuaramaShareLatex.png
+      :align: center
 
 .. _Ângulo vertical:
 
@@ -968,42 +954,38 @@ em que: :math:`\Sigma z_d` é o somatório das medidas de :math:`z`
 na posição direta; :math:`\Sigma z_i` é o somatório das medidas de :math:`z`
 na posição indireta; :math:`n` é o número de pares de medidas de :math:`z_d` e :math:`z_i`.
 
-----
+.. admonition:: :exem:`Exemplo 9` Calcule o ângulo zenital médio a partir dos quatro pares de medidas de ângulo zenital,
+   respectivamente, na posição direta e inversa da luneta:
 
-:exem:`Exemplo 9` Calcule o ângulo zenital médio a partir dos quatro pares de medidas de ângulo zenital,
-respectivamente, na posição direta e inversa da luneta:
+   1) :math:`111^\circ32'44''` e :math:`248^\circ27'5''`;
+   2) :math:`111^\circ32'40''` e :math:`248^\circ27'11''`;
+   3) :math:`111^\circ32'37''` e :math:`248^\circ27'11''` e;
+   4) :math:`111^\circ32'39''` e :math:`248^\circ27'13''`.
 
-1) :math:`111^\circ32'44''` e :math:`248^\circ27'5''`;
-2) :math:`111^\circ32'40''` e :math:`248^\circ27'11''`;
-3) :math:`111^\circ32'37''` e :math:`248^\circ27'11''` e;
-4) :math:`111^\circ32'39''` e :math:`248^\circ27'13''`.
+   :solucao:`Solução:` Os dados podem ser organizados conforme a tabela abaixo. Nela são apresentados
+   os somatórios dos ângulos zenitais nas posições direta e inversa.
 
-:solucao:`Solução:` Os dados podem ser organizados conforme a tabela abaixo. Nela são apresentados
-os somatórios dos ângulos zenitais nas posições direta e inversa.
+   .. table::
+      :header-alignment: ccc
+      :column-alignment: crr
 
-.. table::
-    :header-alignment: ccc
-    :column-alignment: crr
+      ============ ======================================= =============================================
+      Medida       :math:`z_d`                             :math:`z_i`
+      ============ ======================================= =============================================
+      1            :math:`111^\circ32'44''`                :math:`248^\circ27'5''`
+      2            :math:`111^\circ32'40''`                :math:`248^\circ27'11''`
+      3            :math:`111^\circ32'37''`                :math:`248^\circ27'11''`
+      4            :math:`\underline{111^\circ32'39''}`    :math:`\underline{248^\circ27'13''}`
+      :math:`\,`   :math:`\Sigma z_d=446^\circ10'40''`     :math:`\Sigma z_i=993^\circ48'40''`
+      ============ ======================================= =============================================
 
-    ============ ======================================= =============================================
-    Medida       :math:`z_d`                             :math:`z_i`
-    ============ ======================================= =============================================
-    1            :math:`111^\circ32'44''`                :math:`248^\circ27'5''`
-    2            :math:`111^\circ32'40''`                :math:`248^\circ27'11''`
-    3            :math:`111^\circ32'37''`                :math:`248^\circ27'11''`
-    4            :math:`\underline{111^\circ32'39''}`    :math:`\underline{248^\circ27'13''}`
-    :math:`\,`   :math:`\Sigma z_d=446^\circ10'40''`     :math:`\Sigma z_i=993^\circ48'40''`
-    ============ ======================================= =============================================
+   De acordo com a Equação :eq:`eq:mediaangulozenital`:
 
-De acordo com a Equação :eq:`eq:mediaangulozenital`:
-
-.. math::
-   \bar{z}_{d}&=\frac{446^\circ10'40''}{4}+\frac{4\cdot360^\circ-(446^\circ10'40''+993^\circ48'40'')}{2\cdot4}\\
-   \bar{z}_{d}&=111^\circ32'40''+\frac{1440^\circ-(1439^\circ59'20'')}{8}\\
-   \bar{z}_{d}&=111^\circ32'40''+0^\circ0'5''\\
-   \bar{z}_{d}&=111^\circ32'45''.
-
-----
+   .. math::
+      \bar{z}_{d}&=\frac{446^\circ10'40''}{4}+\frac{4\cdot360^\circ-(446^\circ10'40''+993^\circ48'40'')}{2\cdot4}\\
+      \bar{z}_{d}&=111^\circ32'40''+\frac{1440^\circ-(1439^\circ59'20'')}{8}\\
+      \bar{z}_{d}&=111^\circ32'40''+0^\circ0'5''\\
+      \bar{z}_{d}&=111^\circ32'45''.
 
 .. admonition:: Sugestão de aula prática
 
@@ -1217,5 +1199,3 @@ os seguintes valores de ângulos zenitais: na posição direta :math:`95^\circ49
 e, na posição inversa :math:`264^\circ10'40''` e :math:`264^\circ10'36''`. 
 
 :exem:`Resp.:` :math:`\bar{z}_{d}=95^\circ49'19''`.
-
-----

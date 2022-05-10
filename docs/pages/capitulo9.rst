@@ -123,16 +123,16 @@ para cálculo das altitudes dos demais pontos levantados.
 
 ----
 
-:exem:`Exemplo 1` De uma marco do IBGE de altitude
-:math:`691,421\,\text{m}` ao ponto :math:`\mathbf{X}`, mediu-se uma :math:`\mathrm{DN}` de
-:math:`-39,697\,\text{m}`. Qual a altitude de :math:`\mathbf{X}`?
+.. admonition:: :exem:`Exemplo 1` De uma marco do IBGE de altitude
+   :math:`691,421\,\text{m}` ao ponto :math:`\mathbf{X}`, mediu-se uma :math:`\mathrm{DN}` de
+   :math:`-39,697\,\text{m}`. Qual a altitude de :math:`\mathbf{X}`?
 
-:solucao:`Solução:`
+   :solucao:`Solução:`
 
-.. math::
-   \mathrm{alt_{\mathbf{X}}}&=\mathrm{alt_{IBGE}+DN_{IBGE,\,\mathbf{X}}}\\
-   \mathrm{alt_{\mathbf{X}}}&=691,421-39,697\\
-   \mathrm{alt_{\mathbf{X}}}&=651,724\,\text{m}
+   .. math::
+      \mathrm{alt_{\mathbf{X}}}&=\mathrm{alt_{IBGE}+DN_{IBGE,\,\mathbf{X}}}\\
+      \mathrm{alt_{\mathbf{X}}}&=691,421-39,697\\
+      \mathrm{alt_{\mathbf{X}}}&=651,724\,\text{m}
 
 ----
 
@@ -172,14 +172,14 @@ de grandeza de :math:`2R`, tem-se, para :math:`C_{c}`  em metros e :math:`\mathr
 Equação:
 
 .. math::
-   C_{c}&=1\,000\cdot\frac{\mathrm{DH^{2}}}{2R}\\
-   C_{c}&=0,078\,53\mathrm{DH^{2}}.
+   C_{c}&=1\,000\frac{\mathrm{DH^{2}}}{2R}\\
+   C_{c}&=0,07853\mathrm{DH^{2}}.
    :label: eq:Cc2
 
 Com a finalidade de ilustrar o efeito de :math:`C_{c}`, imagine uma embarcação,
 que em :math:`A`  é verificado que a sua altura é de :math:`4\,\text{m}`. Se ela parte ao
 mar, quando estiver a uma distância de aproximadamente :math:`7,14\,\text{km}` de
-:math:`A`  :math:`(\mathrm{DH}=(4/0,078\,53)^{0,5})`, Equação :eq:`eq:Cc2`, não
+:math:`A`  :math:`(\mathrm{DH}=(4/0,07853)^{0,5})`, Equação :eq:`eq:Cc2`, não
 será mais possível observá-la. É lógico que a embarcação não ficou
 :math:`4\,\text{m}`  menor, é apenas o efeito de :math:`C_{c}`  que, estando a embarcação
 a :math:`7,14\,\text{km}` de :math:`A`, faz com que ela não seja mais visível. Daí pode-se
@@ -223,46 +223,46 @@ em alturas menores e :math:`C_{r}`  os pontos parecem ser mais altos, a
 compensação, :math:`C_{cr}` é:
 
 .. math::
-   C_{cr}&=0,078\,53\mathrm{DH}^2-0,011\mathrm{DH}^2\nonumber \\
-   C_{cr}&=0,067\,53\mathrm{DH}^2
+   C_{cr}&=0,07853\mathrm{DH}^2-0,011\mathrm{DH}^2\nonumber \\
+   C_{cr}&=0,06753\mathrm{DH}^2
    :label: eq:Ccr
 
 Mais uma vez, a unidade de :math:`C_{cr}` é metro e a :math:`\mathrm{DH}` em quilômetro.
 
 ----
 
-:exem:`Exemplo 2`  Qual será o erro cometido em um nivelamento se
-não for considerado o efeito da curvatura da terra e da refração atmosférica
-na medida de :math:`\mathrm{DN}` entre pontos distantes entre si em :math:`1\,398\,\text{m}`?
+.. admonition:: :exem:`Exemplo 2`  Qual será o erro cometido em um nivelamento se
+   não for considerado o efeito da curvatura da terra e da refração atmosférica
+   na medida de :math:`\mathrm{DN}` entre pontos distantes entre si em :math:`1\,398\,\text{m}`?
 
-:solucao:`Solução:`
-Considerando a :math:`\mathrm{DH}` em km e de acordo com a Equação :eq:`eq:Ccr`:
+   :solucao:`Solução:`
+   Considerando a :math:`\mathrm{DH}` em km e de acordo com a Equação :eq:`eq:Ccr`:
 
-.. math::
-   C_{cr}&=0,067\,53\cdot1,398^2\\
-   &=0,132\,\text{m}
+   .. math::
+      C_{cr}&=0,06753\cdot1,398^2\\
+      &=0,132\,\text{m}
 
-O erro cometido corresponderia a :math:`0,132\,\text{m}` para menos na
-:math:`\mathrm{DN}` entre os pontos.
+   O erro cometido corresponderia a :math:`0,132\,\text{m}` para menos na
+   :math:`\mathrm{DN}` entre os pontos.
 
 ----
 
-:exem:`Exemplo 3` No exemplo 1, considere que na
-:math:`\mathrm{DN}` de :math:`-39,697\,\text{m}`, entre o marco
-do IBGE ao ponto :math:`\mathrm{X}`, não foi
-considerado o erro de curvatura e de refração :math:`(C_{cr})`. Calcule
-novamente a altitude de :math:`\mathbf{X}` aplicando a correção para :math:`C_{cr}`.
-Considere a distância entre os pontos de :math:`753,982\,\text{m}`.
+.. admonition:: :exem:`Exemplo 3` No exemplo 1, considere que na
+   :math:`\mathrm{DN}` de :math:`-39,697\,\text{m}`, entre o marco
+   do IBGE ao ponto :math:`\mathrm{X}`, não foi
+   considerado o erro de curvatura e de refração :math:`(C_{cr})`. Calcule
+   novamente a altitude de :math:`\mathbf{X}` aplicando a correção para :math:`C_{cr}`.
+   Considere a distância entre os pontos de :math:`753,982\,\text{m}`.
 
-:solucao:`Solução:`
-Uma vez que se queira realizar a compensação, basta aplicar
-à :math:`\mathrm{DN}` a :math:`C_{cr}`, desta forma:
+   :solucao:`Solução:`
+   Uma vez que se queira realizar a compensação, basta aplicar
+   à :math:`\mathrm{DN}` a :math:`C_{cr}`, desta forma:
 
-.. math::
-   \mathrm{\mathrm{alt_{\mathbf{X}}}}&=\mathrm{alt_{IBGE}+DN_{IBGE,\,\mathbf{X}}+}C_{cr}\\
-   &=\mathrm{alt_{IBGE}+DN_{\mathbf{X}IBGE}}+0,067\,53\mathrm{DH^{2}}\\
-   &=691,421-39,697+0,067\,53\cdot0,753\,982^{2}\\
-   &=651,762{\rm \,m.}
+   .. math::
+      \mathrm{\mathrm{alt_{\mathbf{X}}}}&=\mathrm{alt_{IBGE}+DN_{IBGE,\,\mathbf{X}}+}C_{cr}\\
+      &=\mathrm{alt_{IBGE}+DN_{\mathbf{X}IBGE}}+0,06753\mathrm{DH^{2}}\\
+      &=691,421-39,697+0,06753\cdot0,753\,982^{2}\\
+      &=651,762{\rm \,m.}
 
 ----
 
@@ -301,28 +301,28 @@ respectivamente, o terreno aclive e declive (ver :numref:`declividade`).
 
 ----
 
-:exem:`Exemplo 4` Calcule a declividade em percentagem
-e graus para uma :math:`\mathrm{DN}` e :math:`\mathrm{DH}` entre dois pontos de :math:`-27,9\,\text{m}`
-e :math:`162,2\,\text{m}`, respectivamente?
+.. admonition:: :exem:`Exemplo 4` Calcule a declividade em percentagem
+   e graus para uma :math:`\mathrm{DN}` e :math:`\mathrm{DH}` entre dois pontos de :math:`-27,9\,\text{m}`
+   e :math:`162,2\,\text{m}`, respectivamente?
 
-:solucao:`Solução:`
-A :math:`\mathrm{DN}` negativa tem como significado que o terreno onde foi
-realizada a medição se apresenta em declive do ponto inicial ao final,
-isto é, ponto inicial tem cota/altitude maior do que o ponto final.
+   :solucao:`Solução:`
+   A :math:`\mathrm{DN}` negativa tem como significado que o terreno onde foi
+   realizada a medição se apresenta em declive do ponto inicial ao final,
+   isto é, ponto inicial tem cota/altitude maior do que o ponto final.
 
-- A declividade em percentagem:
+   - A declividade em percentagem:
 
-.. math::
-   d(\%)&=\frac{\mathrm{DN}}{\mathrm{DH}}100\\
-   &=\frac{-27,9}{162,2}100\\
-   &=-17,201\%.
+   .. math::
+      d(\%)&=\frac{\mathrm{DN}}{\mathrm{DH}}100\\
+      &=\frac{-27,9}{162,2}100\\
+      &=-17,201\%.
 
-- Em graus:
+   - Em graus:
 
-.. math::
-   d(^{\circ})&=\arctan\frac{\mathrm{DN}}{\mathrm{DH}}\\
-   &=\arctan\frac{-27,9}{162,2}\\
-   &=-9^\circ45'36''.
+   .. math::
+      d(^{\circ})&=\arctan\frac{\mathrm{DN}}{\mathrm{DH}}\\
+      &=\arctan\frac{-27,9}{162,2}\\
+      &=-9^\circ45'36''.
 
 ----
 
@@ -405,7 +405,6 @@ resulta em desvio padrão da :math:`\mathrm{DN}` entre pontos de :math:`\pm0,8\,
 Nivelamento trigonométrico
 --------------------------
 
-
 Nivelamento trigonométrico é aquele em que a :math:`\mathrm{DN}` é avaliada com o auxílio
 das funções trigonométricas. Em campo são medidos: o ângulo vertical
 e a :math:`\mathrm{DI}` ou a :math:`\mathrm{DH}` entre os pontos de interesse. As medidas de distâncias
@@ -469,41 +468,41 @@ a cota ou altitude de :math:`\mathrm{B}` é maior que em :math:`\mathrm{A}`.
 
 ----
 
-:exem:`Exemplo 5` Em um levantamento para determinar a :math:`\mathrm{DN}` entre os
-pontos :math:`\mathrm{A}` e :math:`\mathrm{B}`, estacionou-se a estação total em :math:`\mathrm{A}` e, em :math:`\mathrm{B}`, o prisma.
-Da estação total mirou-se o prisma, resultando na DI de :math:`322,567\,\text{m}`.
-Anotou-se também: o ângulo zenital de :math:`85^\circ24'`; a altura do
-instrumento de :math:`1,769\,\text{m}`; e a altura do prisma de :math:`2,000\,\text{m}`. Pergunta-se,
-qual a :math:`\mathrm{DN}` entre :math:`\mathrm{A}` e :math:`\mathrm{B}`, sem e com os efeitos da curvatura da terra
-e da refração atmosférica sendo considerado? 
+.. admonition:: :exem:`Exemplo 5` Em um levantamento para determinar a :math:`\mathrm{DN}` entre os
+   pontos :math:`\mathrm{A}` e :math:`\mathrm{B}`, estacionou-se a estação total em :math:`\mathrm{A}` e, em :math:`\mathrm{B}`, o prisma.
+   Da estação total mirou-se o prisma, resultando na DI de :math:`322,567\,\text{m}`.
+   Anotou-se também: o ângulo zenital de :math:`85^\circ24'`; a altura do
+   instrumento de :math:`1,769\,\text{m}`; e a altura do prisma de :math:`2,000\,\text{m}`. Pergunta-se,
+   qual a :math:`\mathrm{DN}` entre :math:`\mathrm{A}` e :math:`\mathrm{B}`, sem e com os efeitos da curvatura da terra
+   e da refração atmosférica sendo considerado?
 
-:solucao:`Solução:`
-Sem :math:`C_{cr}`, considerando a Equação :eq:`eq:cap_alt_tri`
-com o valor de :math:`V` dado pela Equação :eq:`eq:cap_alt_V_di_z`,
-pois os dados disponíveis são DI e :math:`z`, tem-se:
+   :solucao:`Solução:`
+   Sem :math:`C_{cr}`, considerando a Equação :eq:`eq:cap_alt_tri`
+   com o valor de :math:`V` dado pela Equação :eq:`eq:cap_alt_V_di_z`,
+   pois os dados disponíveis são DI e :math:`z`, tem-se:
 
-.. math::
-   \mathrm{DN_{AB}}&=\mathrm{DI_{AB}}\cos z+ai-ap\\
-   &=322,567\cos85^{\circ}24'+1,769-2,000\\
-   &=25,638\,{\rm m.}
+   .. math::
+      \mathrm{DN_{AB}}&=\mathrm{DI_{AB}}\cos z+ai-ap\\
+      &=322,567\cos85^{\circ}24'+1,769-2,000\\
+      &=25,638\,{\rm m.}
 
-No cálculo de :math:`\mathrm{DN}` considerando :math:`C_{cr}`, utiliza-se
-a Equação :eq:`eq:cap_alt_tri_2`. Para :math:`C_{cr}`  (Equação :eq:`eq:Ccr`)
-:math:`\mathrm{DH}` é na unidade de :math:`\mathrm{km}`, então por trigonometria:
+   No cálculo de :math:`\mathrm{DN}` considerando :math:`C_{cr}`, utiliza-se
+   a Equação :eq:`eq:cap_alt_tri_2`. Para :math:`C_{cr}`  (Equação :eq:`eq:Ccr`)
+   :math:`\mathrm{DH}` é na unidade de :math:`\mathrm{km}`, então por trigonometria:
 
-.. math::
-   \mathrm{DH_{AB}}&=\frac{\mathrm{\mathrm{DI}}\sin z}{1000}\\
-   &=\frac{322,567\sin85^{\circ}24'}{1000}\\
-   &=0,3215{\rm \,km.}
+   .. math::
+      \mathrm{DH_{AB}}&=\frac{\mathrm{\mathrm{DI}}\sin z}{1000}\\
+      &=\frac{322,567\sin85^{\circ}24'}{1000}\\
+      &=0,3215{\rm \,km.}
 
-Por fim, aplicando-se a Equação :eq:`eq:cap_alt_tri_2`,
-tem-se:
+   Por fim, aplicando-se a Equação :eq:`eq:cap_alt_tri_2`,
+   tem-se:
 
-.. math::
-   \mathrm{DN_{AB}}&=\mathrm{DI_{AB}}\cos z+ai-ap+C_{cr}\\
-   &=\mathrm{DI}\cos z+ai-ap+0,067\,53\mathrm{DH^{2}}\\
-   &=322,567\cos85^{\circ}24'+1,769-2,000+0,067\,53\cdot0,321\,5^{2}\\
-   &=25,646\,{\rm m.}
+   .. math::
+      \mathrm{DN_{AB}}&=\mathrm{DI_{AB}}\cos z+ai-ap+C_{cr}\\
+      &=\mathrm{DI}\cos z+ai-ap+0,06753\mathrm{DH^{2}}\\
+      &=322,567\cos85^{\circ}24'+1,769-2,000+0,06753\cdot0,3215^{2}\\
+      &=25,646\,{\rm m.}
 
 ----
 
@@ -547,45 +546,44 @@ entre outros.
 
 ----
 
-:exem:`Exemplo 6` Com um teodolito no ponto 9 de cota :math:`100,0\,{\rm m}`, visou-se
-o ponto 10, onde foram medidos: a altura do instrumento de :math:`1,532\,{\rm m}`;
-visando-se a mira em 10, as leitura do :math:`rs=2,984\,{\rm m}`  e do :math:`ri=0,200\,{\rm m}`;
-e ângulo zenital de :math:`97^{\circ}`. Determine a diferença de nível
-entre os pontos :math:`9` e :math:`10` e a cota em :math:`10`.
+.. admonition:: :exem:`Exemplo 6` Com um teodolito no ponto 9 de cota :math:`100,0\,{\rm m}`, visou-se
+   o ponto 10, onde foram medidos: a altura do instrumento de :math:`1,532\,{\rm m}`;
+   visando-se a mira em 10, as leitura do :math:`rs=2,984\,{\rm m}`  e do :math:`ri=0,200\,{\rm m}`;
+   e ângulo zenital de :math:`97^{\circ}`. Determine a diferença de nível
+   entre os pontos :math:`9` e :math:`10` e a cota em :math:`10`.
 
-:solucao:`Solução:`
-Da Equação :eq:`eq:taque`, verifica-se que temos que determinar
-:math:`rm`. Em taqueometria, :math:`rs-rm`  é igual a :math:`rm-ri`, desta forma:
+   :solucao:`Solução:`
+   Da Equação :eq:`eq:taque`, verifica-se que temos que determinar
+   :math:`rm`. Em taqueometria, :math:`rs-rm`  é igual a :math:`rm-ri`, desta forma:
 
-.. math::
-   rs-rm&=rm-ri\\
-   2rm&=rs+ri\\
-   rm&=\frac{rs+ri}{2}\\
-   rm&=\frac{2,984+0,200}{2}\\
-   rm&=1,592\,{\rm m.}
+   .. math::
+      rs-rm&=rm-ri\\
+      2rm&=rs+ri\\
+      rm&=\frac{rs+ri}{2}\\
+      rm&=\frac{2,984+0,200}{2}\\
+      rm&=1,592\,{\rm m.}
 
+   Substituindo as medidas na Equação :eq:`eq:taque` tem-se
+   para :math:`V`:
 
-Substituindo as medidas na Equação :eq:`eq:taque` tem-se
-para :math:`V`:
+   .. math::
+      V&=\frac{100H\sin2z}{2}\\
+      &=\frac{100(2,984-0,200)\sin(2\cdot97^{\circ})}{2}\\
+      &=-33,676\,{\rm m.}
 
-.. math::
-   V&=\frac{100H\sin2z}{2}\\
-   &=\frac{100(2,984-0,200)\sin(2\cdot97^{\circ})}{2}\\
-   &=-33,676\,{\rm m.}
+   Aplicando a Equação :eq:`eq:cap_alt_tri` com :math:`ap` igual a :math:`rm`:
 
-Aplicando a Equação :eq:`eq:cap_alt_tri` com :math:`ap` igual a :math:`rm`:
+   .. math::
+      \mathrm{DN_{9,10}}&=V+ai-rm\\
+      &=-33,676+1,532-1,592\\
+      &=-33,736\,{\rm m.}
 
-.. math::
-   \mathrm{DN_{9,10}}&=V+ai-rm\\
-   &=-33,676+1,532-1,592\\
-   &=-33,736\,{\rm m.}
+   Para o transporte da cota em :math:`9` para o ponto :math:`10`:
 
-Para o transporte da cota em :math:`9` para o ponto :math:`10`:
-
-.. math::
-   \mathrm{cota_{10}}&=\mathrm{cota_{9}+DN_{9,10}}\\
-   &=100-33,736\\
-   &=66,264\,{\rm m.}
+   .. math::
+      \mathrm{cota_{10}}&=\mathrm{cota_{9}+DN_{9,10}}\\
+      &=100-33,736\\
+      &=66,264\,{\rm m.}
 
 ----
 
@@ -669,40 +667,40 @@ podem ser encontrados em :cite:`WOLF`.
 
 ----
 
-:exem:`Exemplo 7` Encontre, por meio do programa `HgeoHNOR2020 <https://www.ibge.gov.br/geociencias/informacoes-sobre-posicionamento-geodesico/servicos-para-posicionamento-geodesico/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?edicao=31284&t=processar-os-dados>`_,
-a ondulação geoidal para um ponto de coordenadas :math:`-22^{\circ}6'41''`  de latitude
-e :math:`-41^{\circ}54'8''`  de longitude, no Datum
-`SIRGAS2000 <https://geoftp.ibge.gov.br/informacoes_sobre_posicionamento_geodesico/rede_planialtimetrica/relatorio/rel_sirgas2000.pdf>`_. Sabendo-se que a altura geométrica calculada pelo receptor
-GNSS nesta coordenada foi de :math:`562,672\,\text{m}`, qual a altitude
-ortométrica.
+.. admonition:: :exem:`Exemplo 7` Encontre, por meio do programa `HgeoHNOR2020 <https://www.ibge.gov.br/geociencias/informacoes-sobre-posicionamento-geodesico/servicos-para-posicionamento-geodesico/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?edicao=31284&t=processar-os-dados>`_,
+   a ondulação geoidal para um ponto de coordenadas :math:`-22^{\circ}6'41''`  de latitude
+   e :math:`-41^{\circ}54'8''`  de longitude, no Datum
+   `SIRGAS2000 <https://geoftp.ibge.gov.br/informacoes_sobre_posicionamento_geodesico/rede_planialtimetrica/relatorio/rel_sirgas2000.pdf>`_. Sabendo-se que a altura geométrica calculada pelo receptor
+   GNSS nesta coordenada foi de :math:`562,672\,\text{m}`, qual a altitude
+   ortométrica.
 
-:solucao:`Solução:`
-Com as coordenadas e o Datum apresentados acima, obteve-se por meio do
-`HgeoHNOR2020 <https://www.ibge.gov.br/geociencias/informacoes-sobre-posicionamento-geodesico/servicos-para-posicionamento-geodesico/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?edicao=31284&t=processar-os-dados>`_
-o valor de :math:`N` de :math:`-6,54\,\text{m}`. Para
-calcular a altitude ortométrica :math:`(H)`, aplica-se a Equação :eq:`eq:geoide`:
+   :solucao:`Solução:`
+   Com as coordenadas e o Datum apresentados acima, obteve-se por meio do
+   `HgeoHNOR2020 <https://www.ibge.gov.br/geociencias/informacoes-sobre-posicionamento-geodesico/servicos-para-posicionamento-geodesico/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?edicao=31284&t=processar-os-dados>`_
+   o valor de :math:`N` de :math:`-6,54\,\text{m}`. Para
+   calcular a altitude ortométrica :math:`(H)`, aplica-se a Equação :eq:`eq:geoide`:
 
-.. math::
-   H&=h-N\\
-   &=562,672--6,54\\
-   &=569,112\,\rm{m.}
+   .. math::
+      H&=h-N\\
+      &=562,672--6,54\\
+      &=569,112\,\rm{m.}
 
 ----
 
-:exem:`Exemplo 8` Trabalhando com receptores GNSS com a técnica de
-medida relativa por diferença de fase, obteve-se para um ponto a altitude
-geométrica de :math:`231,849\,\text{m}` no Datum `SIRGAS2000 <https://geoftp.ibge.gov.br/informacoes_sobre_posicionamento_geodesico/rede_planialtimetrica/relatorio/rel_sirgas2000.pdf>`_. Utilizando o programa
-`HgeoHNOR2020 <https://www.ibge.gov.br/geociencias/informacoes-sobre-posicionamento-geodesico/servicos-para-posicionamento-geodesico/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?edicao=31284&t=processar-os-dados>`_,
-foi encontrado a ondulação geoidal de :math:`-12,598\,\text{m}`.
-Calcule a altitude ortométrica.
+.. admonition:: :exem:`Exemplo 8` Trabalhando com receptores GNSS com a técnica de
+   medida relativa por diferença de fase, obteve-se para um ponto a altitude
+   geométrica de :math:`231,849\,\text{m}` no Datum `SIRGAS2000 <https://geoftp.ibge.gov.br/informacoes_sobre_posicionamento_geodesico/rede_planialtimetrica/relatorio/rel_sirgas2000.pdf>`_. Utilizando o programa
+   `HgeoHNOR2020 <https://www.ibge.gov.br/geociencias/informacoes-sobre-posicionamento-geodesico/servicos-para-posicionamento-geodesico/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?edicao=31284&t=processar-os-dados>`_,
+   foi encontrado a ondulação geoidal de :math:`-12,598\,\text{m}`.
+   Calcule a altitude ortométrica.
 
-:solucao:`Solução:` Da Equação :eq:`eq:geoide`, e com os dados apresentados acima, temos:
+   :solucao:`Solução:`
+   Da Equação :eq:`eq:geoide`, e com os dados apresentados acima, temos:
 
-
-.. math::
-   H&=h-N\\
-   &=231,849--12,598\\
-   &=244,447\,\rm{m.}
+   .. math::
+      H&=h-N\\
+      &=231,849--12,598\\
+      &=244,447\,\rm{m.}
 
 ----
 
@@ -872,38 +870,38 @@ aos dados da :numref:`tab_tabelaNGS` em uma superfície topográfica.
 
 ----
 
-:exem:`Exemplo 9` Com os dados da caderneta de campo de um NGS, figura
-a seguir, calcule as :math:`\mathrm{cotas}` dos pontos
-:math:`1,\,2,\,3,\,4` e :math:`5`. Considere o
-ponto :math:`0` como sendo a :math:`\mathrm{RN}`,
-com :math:`\mathrm{cota}` atribuída de :math:`100\,\text{m}`.
+.. admonition:: :exem:`Exemplo 9` Com os dados da caderneta de campo de um NGS, figura
+   a seguir, calcule as :math:`\mathrm{cotas}` dos pontos
+   :math:`1,\,2,\,3,\,4` e :math:`5`. Considere o
+   ponto :math:`0` como sendo a :math:`\mathrm{RN}`,
+   com :math:`\mathrm{cota}` atribuída de :math:`100\,\text{m}`.
 
-.. figure:: /images/capitulo9/cap_niv_intr_NG_exe1.png
-   :scale: 35 %
-   :alt: cap_niv_intr_NG_exe1.png
-   :align: center
+   .. figure:: /images/capitulo9/cap_niv_intr_NG_exe1.png
+      :scale: 35 %
+      :alt: cap_niv_intr_NG_exe1.png
+      :align: center
 
-:solucao:`Solução:` 
-De acordo com as Equações :eq:`eq:AI` e :eq:`eq:cotaNG`,
-a solução é apresentada na Tabela que segue, onde, em negrito são
-as respostas e, em parenteses, os cálculos realizados.
+   :solucao:`Solução:`
+   De acordo com as Equações :eq:`eq:AI` e :eq:`eq:cotaNG`,
+   a solução é apresentada na Tabela que segue, onde, em negrito são
+   as respostas e, em parenteses, os cálculos realizados.
 
-.. table:: Compensação do erro angular pelo método linear
-    :widths: 1 1 2 1 2
-    :header-alignment: ccccc
-    :column-alignment: ccrcr
-    :column-dividers:  none single single single single none
+   .. table:: Compensação do erro angular pelo método linear
+       :widths: 1 1 2 1 2
+       :header-alignment: ccccc
+       :column-alignment: ccrcr
+       :column-dividers:  none single single single single none
 
-    ============= ==================== ========================================= ========================= ==========================================
-    Ponto         :math:`\mathbf{ré}`  :math:`\mathbf{AI}`                       :math:`\mathbf{vante}`    :math:`\mathbf{cota}`
-    ============= ==================== ========================================= ========================= ==========================================
-    :math:`0`     :math:`1,937`        :math:`\mathbf{101,937}\,(100+1,937)`                               :math:`100`
-    :math:`1`                                                                    :math:`2,189`             :math:`\mathbf{99,748}\,(101,937-2,189)`
-    :math:`2`                                                                    :math:`3,105`             :math:`\mathbf{98,832}\,(101,937-3,105)`
-    :math:`3`                                                                    :math:`0,825`             :math:`\mathbf{101,112}\,(101,937-0,825)`
-    :math:`4`                                                                    :math:`0,194`             :math:`\mathbf{101,743}\,(101,937-0,194)`
-    :math:`5`                                                                    :math:`0,491`             :math:`\mathbf{101,446}\,(101,937-0,491)`
-    ============= ==================== ========================================= ========================= ==========================================
+       ============= ==================== ========================================= ========================= ==========================================
+       Ponto         :math:`\mathbf{ré}`  :math:`\mathbf{AI}`                       :math:`\mathbf{vante}`    :math:`\mathbf{cota}`
+       ============= ==================== ========================================= ========================= ==========================================
+       :math:`0`     :math:`1,937`        :math:`\mathbf{101,937}\,(100+1,937)`                               :math:`100`
+       :math:`1`                                                                    :math:`2,189`             :math:`\mathbf{99,748}\,(101,937-2,189)`
+       :math:`2`                                                                    :math:`3,105`             :math:`\mathbf{98,832}\,(101,937-3,105)`
+       :math:`3`                                                                    :math:`0,825`             :math:`\mathbf{101,112}\,(101,937-0,825)`
+       :math:`4`                                                                    :math:`0,194`             :math:`\mathbf{101,743}\,(101,937-0,194)`
+       :math:`5`                                                                    :math:`0,491`             :math:`\mathbf{101,446}\,(101,937-0,491)`
+       ============= ==================== ========================================= ========================= ==========================================
 
 ----
 
@@ -945,44 +943,43 @@ A avaliação da qualidade do levantamento será avaliada na seção
 
 ----
 
-:exem:`Exemplo 10` Com os dados de um NGC coletados
-em campo conforme o esquema gráfico a seguir, calcule as :math:`\mathrm{cotas}` das estacas
-(pontos materializados em campo por estacas). 
+.. admonition:: :exem:`Exemplo 10` Com os dados de um NGC coletados
+   em campo conforme o esquema gráfico a seguir, calcule as :math:`\mathrm{cotas}` das estacas
+   (pontos materializados em campo por estacas).
 
-.. figure:: /images/capitulo9/cap_niv_intr_NGC_exe1.png
-   :scale: 35 %
-   :alt: cap_niv_intr_NGC_exe1.png
-   :align: center
+   .. figure:: /images/capitulo9/cap_niv_intr_NGC_exe1.png
+      :scale: 35 %
+      :alt: cap_niv_intr_NGC_exe1.png
+      :align: center
 
-:solucao:`Solução:` 
-Solução na Tabela abaixo, sendo que em negrito
-são  os valores calculados e, entre parenteses, os cálculos realizados.
+   :solucao:`Solução:`
+   Solução na Tabela abaixo, sendo que em negrito
+   são  os valores calculados e, entre parenteses, os cálculos realizados.
 
-.. table:: Compensação do erro angular pelo método linear
-    :widths: 1 1 2 1 2
-    :header-alignment: cccccc
-    :column-alignment: ccrccr
-    :column-dividers:  none single single single single single none
+   .. table:: Compensação do erro angular pelo método linear
+       :widths: 1 1 2 1 2
+       :header-alignment: cccccc
+       :column-alignment: ccrccr
+       :column-dividers:  none single single single single single none
 
-    ========== ===================== =========================================== ===================== ====================== =========================================
-    Estaca     :math:`\mathbf{ré}`   :math:`\mathbf{AI (cota+ré)}`               :math:`\mathbf{PI}`   :math:`\mathbf{PM}`    :math:`\mathbf{cota (AI-vante)}`
-    ========== ===================== =========================================== ===================== ====================== =========================================
-    :math:`0`  :math:`0,796`         :math:`\mathbf{200,796}(200,000+0,796)`                                                  200,000
-    :math:`1`                                                                    :math:`1,491`                                :math:`\mathbf{199,305}(200,796-1,491)`
-    :math:`2`  :math:`0,264`         :math:`\mathbf{197,359}(197,095+0,264)`                           :math:`3,701`          :math:`\mathbf{197,095}(200,796-3,701)`
-    :math:`3`  :math:`0,450`         :math:`\mathbf{193,920}(193,470+0,450)`                           :math:`3,889`          :math:`\mathbf{193,470}197,359-3,889)`
-    :math:`4`                                                                    :math:`1.982`                                :math:`\mathbf{191,938}(193,920-1,982)`
-    :math:`5`  :math:`0,868`         :math:`\mathbf{191,142}(190,274+0,868)`                           :math:`3,646`          :math:`\mathbf{190,274}(193,920-3,646)`
-    :math:`6`                                                                                          :math:`3,317`          :math:`\mathbf{187,825}(191,142 -3,317)`
-    ========== ===================== =========================================== ===================== ====================== =========================================
+       ========== ===================== =========================================== ===================== ====================== =========================================
+       Estaca     :math:`\mathbf{ré}`   :math:`\mathbf{AI (cota+ré)}`               :math:`\mathbf{PI}`   :math:`\mathbf{PM}`    :math:`\mathbf{cota (AI-vante)}`
+       ========== ===================== =========================================== ===================== ====================== =========================================
+       :math:`0`  :math:`0,796`         :math:`\mathbf{200,796}(200,000+0,796)`                                                  200,000
+       :math:`1`                                                                    :math:`1,491`                                :math:`\mathbf{199,305}(200,796-1,491)`
+       :math:`2`  :math:`0,264`         :math:`\mathbf{197,359}(197,095+0,264)`                           :math:`3,701`          :math:`\mathbf{197,095}(200,796-3,701)`
+       :math:`3`  :math:`0,450`         :math:`\mathbf{193,920}(193,470+0,450)`                           :math:`3,889`          :math:`\mathbf{193,470}197,359-3,889)`
+       :math:`4`                                                                    :math:`1.982`                                :math:`\mathbf{191,938}(193,920-1,982)`
+       :math:`5`  :math:`0,868`         :math:`\mathbf{191,142}(190,274+0,868)`                           :math:`3,646`          :math:`\mathbf{190,274}(193,920-3,646)`
+       :math:`6`                                                                                          :math:`3,317`          :math:`\mathbf{187,825}(191,142 -3,317)`
+       ========== ===================== =========================================== ===================== ====================== =========================================
 
-Verificando os calculos conforme :eq:`eq:verificacaongc`:
+   Verificando os calculos conforme :eq:`eq:verificacaongc`:
 
-
-.. math::
-   \Sigma\mathrm{{r\acute{e}}}-\Sigma\mathrm{PM}&=\mathrm{\text{cota}_{final}}-\mathrm{\text{cota}_{inicial}}\\
-   2,378-14,553&=187,825-200,000\\
-   -12,175&=-12,175\,\text{(OK!)}
+   .. math::
+      \Sigma\mathrm{{r\acute{e}}}-\Sigma\mathrm{PM}&=\mathrm{\text{cota}_{final}}-\mathrm{\text{cota}_{inicial}}\\
+      2,378-14,553&=187,825-200,000\\
+      -12,175&=-12,175\,\text{(OK!)}
 
 ----
 
@@ -1012,7 +1009,6 @@ resultados no NG. Podendo-se citar, por exemplo :cite:`NBR13133`:
 - a mira deve ser de madeira e dobrável, não de encaixe, devendo ser
   apoiada sobre sapatas. A sapara é um equipamento que é colocado no solo,
   e permite que a mira, sobre ele, gire sem se deslocar no ponto.
-
 
 .. _tolerancia_nivelamento:
 
@@ -1066,31 +1062,30 @@ de ajuste para nivelamento podem ser encontrados em:
 
 ----
 
-:exem:`Exemplo 11` Foram realizados um nivelamento e um contra-nivelamento de 800 m
-de extensão. A :math:`\mathrm{DN}`, entre o ponto inicial e final do nivelamento e
-do contra-nivelamento, foram de :math:`8,581\,\text{m}` e :math:`-8,603\,\text{m}`, respectivamente.
-Este nivelamento é da classe IIN, de acordo com a NBR13133. Pergunta-se:
-o levantamento é aceitável?
+.. admonition:: :exem:`Exemplo 11` Foram realizados um nivelamento e um contra-nivelamento de 800 m
+   de extensão. A :math:`\mathrm{DN}`, entre o ponto inicial e final do nivelamento e
+   do contra-nivelamento, foram de :math:`8,581\,\text{m}` e :math:`-8,603\,\text{m}`, respectivamente.
+   Este nivelamento é da classe IIN, de acordo com a NBR13133. Pergunta-se:
+   o levantamento é aceitável?
 
-:solucao:`Solução:` Como se têm as medidas de :math:`\mathrm{DN}` do nivelamento e do contra-nivelamento,
-pode-se obter o erro do nivelamento :math:`(\textit{erro}_{\textit{nivelamento}})`,
-dada pelas diferenças das DNs em valores absolutos:
+   :solucao:`Solução:` Como se têm as medidas de :math:`\mathrm{DN}` do nivelamento e do contra-nivelamento,
+   pode-se obter o erro do nivelamento :math:`(\textit{erro}_{\textit{nivelamento}})`,
+   dada pelas diferenças das DNs em valores absolutos:
 
-.. math::
-   \textit{erro}_{\textit{nivelamento}}&=\left|-8,603\right|-\left|8,581\right|\\
-   &=0,022\text{ m.}
+   .. math::
+      \textit{erro}_{\textit{nivelamento}}&=\left|-8,603\right|-\left|8,581\right|\\
+      &=0,022\text{ m.}
 
+   Para a classe de IIN, o parâmentro  :math:`a` da Equação :eq:`eq:tolerancia_nivelamento`
+   é de :math:`20\,\text{mm}`. Com :math:`K` de :math:`0,8\,\text{km}`,
+   o erro máximo a ser tolerado:
 
-Para a classe de IIN, o parâmentro  :math:`a` da Equação :eq:`eq:tolerancia_nivelamento`
-é de :math:`20\,\text{mm}`. Com :math:`K` de :math:`0,8\,\text{km}`,
-o erro máximo a ser tolerado:
+   .. math::
+      \textit{T}_{\mathit{nivelamento}}=20\,\text{mm}\sqrt{0,8}=17,9\,\text{mm}.
 
-.. math::
-   \textit{T}_{\mathit{nivelamento}}=20\,\text{mm}\sqrt{0,8}=17,9\,\text{mm}.
-
-Como :math:`\textit{erro}_{\textit{nivelamento}}>\textit{T}_{\textit{nivelamento}}`,
-o levantamento não é aceitável, novo levantamento deve ser realizado
-e, posterioremente, verificada se está de acordo com a tolerância.
+   Como :math:`\textit{erro}_{\textit{nivelamento}}>\textit{T}_{\textit{nivelamento}}`,
+   o levantamento não é aceitável, novo levantamento deve ser realizado
+   e, posterioremente, verificada se está de acordo com a tolerância.
 
 ----
 
@@ -1230,72 +1225,71 @@ a :math:`\mathrm{DH}` entre as estacas inicial e final é de
 
 ----
 
-:exem:`Exemplo 12` Com os dados da Tabela acima, pergunta-se:
+.. admonition:: :exem:`Exemplo 12` Com os dados da Tabela acima, pergunta-se:
+   (a) qual é a declividade do greide (\%);
+   (b) qual a :math:`\mathrm{cota}` do greide na estaca :math:`8`;
+   (c) a estaca a :math:`\mathrm{cota}` do segundo :math:`\mathrm{PP}`.
 
-a. qual é a declividade do greide (\%);
-b. qual a :math:`\mathrm{cota}` do greide na estaca :math:`8`;
-c. a estaca a :math:`\mathrm{cota}` do segundo :math:`\mathrm{PP}`.
+   :solucao:`Solução:`  Questão (a): considerando as :math:`\mathrm{cotas}`
+   do greide nas estacas :math:`5+13,5\,\text{m}` e
+   :math:`10+15,1\,\text{m}` e a :math:`\mathrm{DH}` entre estas estacas
+   de :math:`101,6\,\text{m}`:
 
-:solucao:`Solução:`  Questão (a): considerando as :math:`\mathrm{cotas}`
-do greide nas estacas :math:`5+13,5\,\text{m}` e
-:math:`10+15,1\,\text{m}` e a :math:`\mathrm{DH}` entre estas estacas
-de :math:`101,6\,\text{m}`:
+   .. math::
+      d(\%) &=100\frac{\mathrm{DN}}{\mathrm{DH}}\\
+      &=\frac{201,481-200,465}{101,6}100\\
+      &=1\%.
 
-.. math::
-   d(\%) &=100\frac{\mathrm{DN}}{\mathrm{DH}}\\
-   &=\frac{201,481-200,465}{101,6}100\\
-   &=1\%.
+   Questão (b): as :math:`\mathrm{cotas}` do greide, que na Tabela acima
+   são apenas apresentadas, são calculadas conhecendo-se: **i**) a declividade
+   do greide, neste caso de :math:`1\%` e, **ii**) as
+   :math:`\mathrm{DH's}` entre a primeira estaca
+   às estacas de interesse, para o exercício, a 8.
+   A :math:`\mathrm{DH}` é de :math:`46,5\,\text{m}`
+   :math:`{(6,5+20\cdot2)}`. Como a declividade do greide é de :math:`1`\%, tem-se
+   que para uma :math:`\mathrm{DH}` de :math:`100\,\text{m}` neste greide, há uma :math:`\mathrm{DN}` de :math:`1\,\text{m}`, então,
+   para uma :math:`\mathrm{DH}` de :math:`46,5\,\text{m}`,
+   tem-se uma :math:`\text{DN}_{\mathrm{greide(8,5+13,5 m)}}`
+   de :math:`0,465\,\mathrm{m}` :math:`{\left(\frac{46,5}{100}1\right)}`, logo:
 
-Questão (b): as :math:`\mathrm{cotas}` do greide, que na Tabela acima
-são apenas apresentadas, são calculadas conhecendo-se: **i**) a declividade
-do greide, neste caso de :math:`1\%` e, **ii**) as
-:math:`\mathrm{DH's}` entre a primeira estaca
-às estacas de interesse, para o exercício, a 8.
-A :math:`\mathrm{DH}` é de :math:`46,5\,\text{m}`
-:math:`{(6,5+20\cdot2)}`. Como a declividade do greide é de :math:`1`\%, tem-se
-que para uma :math:`\mathrm{DH}` de :math:`100\,\text{m}` neste greide, há uma :math:`\mathrm{DN}` de :math:`1\,\text{m}`, então,
-para uma :math:`\mathrm{DH}` de :math:`46,5\,\text{m}`,
-tem-se uma :math:`\text{DN}_{\mathrm{greide(8,5+13,5 m)}}`
-de :math:`0,465\,\mathrm{m}` :math:`{\left(\frac{46,5}{100}1\right)}`, logo:
+   .. math::
+      \mathrm{cota}_{\mathrm{greide, 8}}&=\mathrm{cota}_{\mathrm{greide,\,[5+13,5\,m]}}+\mathrm{DN}_{\mathrm{greide,\,([8],\,[5+13,5 m])}}\\
+      &=200,465+0,465\\
+      &=200,930\,\text{ m}.
 
-.. math::
-   \mathrm{cota}_{\mathrm{greide, 8}}&=\mathrm{cota}_{\mathrm{greide,\,[5+13,5\,m]}}+\mathrm{DN}_{\mathrm{greide,\,([8],\,[5+13,5 m])}}\\
-   &=200,465+0,465\\
-   &=200,930\,\text{ m}.
+   Questão (c): o segundo :math:`\mathrm{PP}` encontra-se entre as estacas
+   :math:`9` e :math:`10`. A figura a seguir apresenta uma ampliação do perfil
+   do terreno e do greide entre esras estacas. As  :math:`\mathrm{CV}` s são apresentadas
+   em valores absolutos, uma vez que se vai avaliar as distância que
+   separam o greide do terreno em valores absolutos. Seja   :math:`x` a
+   DH da estaca :math:`9` ao :math:`\mathrm{PP}`.
+   Como a :math:`\mathrm{DH}` entre as estacas é de :math:`20\,\text{m}`, a DH
+   de PP à estaca 10 será de :math:`20-x`. Por semelhança de triângulos:
 
-Questão (c): o segundo :math:`\mathrm{PP}` encontra-se entre as estacas
-:math:`9` e :math:`10`. A figura a seguir apresenta uma ampliação do perfil
-do terreno e do greide entre esras estacas. As  :math:`\mathrm{CV}` s são apresentadas
-em valores absolutos, uma vez que se vai avaliar as distância que
-separam o greide do terreno em valores absolutos. Seja   :math:`x` a
-DH da estaca :math:`9` ao :math:`\mathrm{PP}`.
-Como a :math:`\mathrm{DH}` entre as estacas é de :math:`20\,\text{m}`, a DH
-de PP à estaca 10 será de :math:`20-x`. Por semelhança de triângulos:
+   .. math::
+      \frac{x}{0,51} &=\frac{20-x}{0,49}\\
+      x&=\frac{20\cdot0,51}{0,49+0,51}\\
+      x&=10,2\,\text{ m}.
 
-.. math::
-   \frac{x}{0,51} &=\frac{20-x}{0,49}\\
-   x&=\frac{20\cdot0,51}{0,49+0,51}\\
-   x&=10,2\,\text{ m}.
+   Desta forma, a estaca no ponto de passagem é :math:`9+10,2\,\text{m}`}.
 
-Desta forma, a estaca no ponto de passagem é :math:`9+10,2\,\text{m}`}.
+   .. figure:: /images/capitulo9/cap_niv_perfil_ex.png
+      :scale: 35 %
+      :alt: cap_niv_perfil_ex.png
+      :align: center
 
-.. figure:: /images/capitulo9/cap_niv_perfil_ex.png
-   :scale: 35 %
-   :alt: cap_niv_perfil_ex.png
-   :align: center
+   Para calcular o valor da :math:`\mathrm{cota}` no :math:`\mathrm{PP}`,
+   a :math:`\mathrm{DH}` entre a estaca
+   :math:`{5+13,5\,\text{ m}}` e a estaca no :math:`\mathrm{PP}`,
+   :math:`9+10,2\,\text{ m}`, é de
+   :math:`76,7\,\text{ m}\,(6,5+20\cdot3+10,2)`. Sendo a declividade do greide de
+   :math:`1\%`, a :math:`\mathrm{DN}` entre estas estacas é de :math:`0,767\,\text{ m}`
+   :math:`\left(\frac{76,7}{100}1\right)`}. Desta forma:
 
-Para calcular o valor da :math:`\mathrm{cota}` no :math:`\mathrm{PP}`,
-a :math:`\mathrm{DH}` entre a estaca
-:math:`{5+13,5\,\text{ m}}` e a estaca no :math:`\mathrm{PP}`,
-:math:`9+10,2\,\text{ m}`, é de
-:math:`76,7\,\text{ m}\,(6,5+20\cdot3+10,2)`. Sendo a declividade do greide de
-:math:`1\%`, a :math:`\mathrm{DN}` entre estas estacas é de :math:`0,767\,\text{ m}`
-:math:`\left(\frac{76,7}{100}1\right)`}. Desta forma:
-
-.. math::
-   \mathrm{cota}_{9+10,2\,\text{m}}&=\mathrm{cota}_{5+13,5\,\text{m}}+\mathrm{DN}\\
-   &=200,465+0,767\\
-   &=201,232\,\text{m}.
+   .. math::
+      \mathrm{cota}_{9+10,2\,\text{m}}&=\mathrm{cota}_{5+13,5\,\text{m}}+\mathrm{DN}\\
+      &=200,465+0,767\\
+      &=201,232\,\text{m}.
 
 ----
 

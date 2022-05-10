@@ -348,21 +348,31 @@ compactação, terá o volume reduzido em aproximadamente :math:`15\%`, logo, o
 :math:`1\,\text{m}^3` de material, após processo de compactação, resultará em um
 volume de :math:`\approx0,85\,\text{m}`:math:`^3` :cite:`cole2009surveyor`.
 
-\begin{mybox}[breakable,enhanced,pad at break=0mm,label={exemp:volume}]{}Considere a escavação para fins de construção de uma piscina, cuja dimensão é de :math:`50\,\text{m}` de comprimento, :math:`20\,\text{m}` de largura e :math:`2\,\text{m}` de profundidade. Qual o número de viagens que um caminhão vai realizar para transporte deste material? Sabe-se que, o caminhão a ser utilizado tem capacidade de transporte de :math:`10\,\text{m}`:math:`^3` por viagem e, que a terra a ser escavada vai expandir em :math:`20\%`.
+##################################
 
-\soluca 
-Volume de terra a ser retirado do terreno será:
+----------------------------------
 
-\[
-V=50\times20\times2=2\,000\,\mathrm{m^3}
-\]
 
-Considerando o fator de expansão de :math:`20\%` e o volume de :math:`10\,\text{m}`:math:`^3` por viagem, temos um total de viagens:
 
-\[
-\frac{2\,000\times1,2}{10}=240.
-\] 
-\end{mybox}
+.. admonition:: :exem:`Exemplo 1` Considere a escavação para fins de construção de uma piscina, cuja
+   dimensão é de :math:`50\,\text{m}` de comprimento, :math:`20\,\text{m}` de largura e
+   :math:`2\,\text{m}` de profundidade. Qual o número de viagens que um caminhão vai
+   realizar para transporte deste material? Sabe-se que, o caminhão a ser utilizado tem
+   capacidade de transporte de :math:`10\,\text{m}`:math:`^3` por viagem e, que a terra a
+   ser escavada vai expandir em :math:`20\%`.
+
+   :solucao:`Solução:`
+   Volume de terra a ser retirado do terreno será:
+
+   .. math::
+      V=50\times20\times2=2\,000\,\mathrm{m^3}
+
+   Considerando o fator de expansão de :math:`20\%` e o volume de :math:`10\,\text{m}`:math:`^3` por viagem, temos um total de viagens:
+
+   .. math::
+      \frac{2\,000\times1,2}{10}=240.
+
+----
 
 Os métodos para se medir o volume de material dependem do tipo de projeto executado e dos dados disponíveis, sendo os mais usuais, o por secções e o por área unitária.
 
@@ -396,7 +406,7 @@ em que :math:`A_1` e :math:`A_2`, são as áreas das secções paralelas analisa
 
 \begin{mybox}[breakable,enhanced,pad at break=0mm,label={exemp:volume_media_seccoes1}]{}Considere  as áreas entre as secções da estaca :math:`10+0\,\text{m}` e :math:`11+0\,\text{m}` de, respectivamente :math:`61\,\text{m}`:math:`^2` e :math:`37\,\text{m}`:math:`^2`. Qual o volume entre estas duas estacas?
 
-\soluca 
+:solucao:`Solução:`
 Considerando que a distância entre as estacas é de :math:`20\,\text{m}`:
 \[
 V=\frac{61+37}{2}20=980\,\mathrm{m^3}
@@ -405,7 +415,7 @@ V=\frac{61+37}{2}20=980\,\mathrm{m^3}
 
 \begin{mybox}[breakable,enhanced,pad at break=0mm,label={exemp:volume_media_seccoes2}]{}Considere  as áreas entre as secções da estaca :math:`10+0\,\text{m}` e a intermediária :math:`10+10\,\text{m}` de, respectivamente :math:`61\,\text{m}`:math:`^2` e :math:`46\,\text{m}`:math:`^2`. Qual o volume entre estas duas estacas?
 
-\soluca 
+:solucao:`Solução:`
 Considerando que a distância entre as estacas é de :math:`20\,\text{m}`, a distância entre as secções medidas é de :math:`10\,\text{m}`, logo:
 \[
 V=\frac{61+46}{2}10=535\,\mathrm{m^3}

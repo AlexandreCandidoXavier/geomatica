@@ -175,16 +175,16 @@ erros nas suas medidas (ver :cite:`loch` e :cite:`WOLF`).
     :header-alignment: cccc
     :column-alignment: cccr
 
-    ============ ======================================= ================================= ========================================
-    Estação      :math:`\sphericalangle` medido          erro médio                        :math:`\sphericalangle` compensado
-    ============ ======================================= ================================= ========================================
-    :math:`A`    :math:`49^\circ  7'44''`                :math:`+7`                        :math:`49^\circ 7'51''`
-    :math:`B`    :math:`100^\circ  4' 4''`               :math:`+7`                        :math:`100^\circ 4'11''`
-    :math:`C`    :math:`114^\circ 34'23''`               :math:`+7`                        :math:`114^\circ34'30''`
-    :math:`D`    :math:`59^\circ55' 7''`                 :math:`+7`                        :math:`59^\circ55'14''`
-    :math:`E`    :math:`\underline{216^\circ18' 7''}`    :math:`\underline{+7}`            :math:`\underline{216^\circ18'14''}`
-    :math:`\,`   :math:`\Sigma=539^\circ59'25''`         :math:`\Sigma=35''`               :math:`\Sigma=540^\circ0'0''`
-    ============ ======================================= ================================= ========================================
+    =================== ======================================= ================================= ========================================
+    Estação             :math:`\sphericalangle` medido          erro médio                        :math:`\sphericalangle` compensado
+    =================== ======================================= ================================= ========================================
+    :math:`\mathrm{A}`  :math:`49^\circ  7'44''`                :math:`+7`                        :math:`49^\circ 7'51''`
+    :math:`\mathrm{B}`  :math:`100^\circ  4' 4''`               :math:`+7`                        :math:`100^\circ 4'11''`
+    :math:`\mathrm{C}`  :math:`114^\circ 34'23''`               :math:`+7`                        :math:`114^\circ34'30''`
+    :math:`\mathrm{D}`  :math:`59^\circ55' 7''`                 :math:`+7`                        :math:`59^\circ55'14''`
+    :math:`\mathrm{E}`  :math:`\underline{216^\circ18' 7''}`    :math:`\underline{+7}`            :math:`\underline{216^\circ18'14''}`
+    :math:`\,`          :math:`\Sigma=539^\circ59'25''`         :math:`\Sigma=35''`               :math:`\Sigma=540^\circ0'0''`
+    =================== ======================================= ================================= ========================================
 
 
 Cálculo dos azimutes provisórios
@@ -208,26 +208,26 @@ abaixo.
 
 ----
 
-:exem:`Exemplo 1` Calcular o azimute :math:`\mathrm{AB}` da
-poligonal fechada apresentada na :numref:`fig_PoligonalFechadaSolucao.png`,
-onde se conhecem as coordenadas UTM dos pontos :math:`\mathrm{O}` e :math:`\mathrm{A}`,
-e o ângulo :math:`\mathrm{OAB}`.
+.. admonition:: :exem:`Exemplo 1` Calcular o azimute :math:`\mathrm{AB}` da
+   poligonal fechada apresentada na :numref:`fig_PoligonalFechadaSolucao.png`,
+   onde se conhecem as coordenadas UTM dos pontos :math:`\mathrm{O}` e :math:`\mathrm{A}`,
+   e o ângulo :math:`\mathrm{OAB}`.
 
-:solucao:`Solução:`
-Cálculo do azimute :math:`\mathrm{OA}` por meio das coordenadas UTM:
+   :solucao:`Solução:`
+   Cálculo do azimute :math:`\mathrm{OA}` por meio das coordenadas UTM:
 
-.. figure:: /images/capitulo8/exem_Calcularoazimutepoligonalfechadasolucaoa.png
-   :scale: 55 %
-   :alt: exem_Calcularoazimutepoligonalfechadasolucaoa.png
-   :align: center
+   .. figure:: /images/capitulo8/exem_Calcularoazimutepoligonalfechadasolucaoa.png
+      :scale: 55 %
+      :alt: exem_Calcularoazimutepoligonalfechadasolucaoa.png
+      :align: center
 
-Cálculo do azimute :math:`\mathrm{AB}` utilizando o azimute :math:`\mathrm{OA}` e
-o ângulo horizontal :math:`\mathrm{OAB}':
+   Cálculo do azimute :math:`\mathrm{AB}` utilizando o azimute :math:`\mathrm{OA}` e
+   o ângulo horizontal :math:`\mathrm{OAB}`:
 
-.. figure:: /images/capitulo8/exem_Calcularoazimutepoligonalfechadasolucaob.png
-   :scale: 55 %
-   :alt: exem_Calcularoazimutepoligonalfechadasolucaob.png
-   :align: center
+   .. figure:: /images/capitulo8/exem_Calcularoazimutepoligonalfechadasolucaob.png
+      :scale: 55 %
+      :alt: exem_Calcularoazimutepoligonalfechadasolucaob.png
+      :align: center
 
 ----
 
@@ -244,18 +244,18 @@ para a verificação dos cálculos.
     :header-alignment: ccc
     :column-alignment: ccl
 
-    ============= ==================================== ===========================================================================================
-    Estação       :math:`\sphericalangle` compensado   Az
-    ============= ==================================== ===========================================================================================
-    :math:`A`     :math:`49^\circ 7'51''`              :math:`\color{blue}{\mathrm{\mathbf{Az_{AB}}}\mathbf{=286^\circ22'25''}}` **(conhecido)**
-    :math:`B`     :math:`100^\circ 4'11''`             :math:`\mathrm{Az_{BC}}=286^\circ22'25''-180^\circ+100^\circ 4'11''=206^\circ26'36''`
-    :math:`C`     :math:`114^\circ33'22''`             :math:`\mathrm{Az_{CD}}=206^\circ26'36''-180^\circ+114^\circ34'30''=141^\circ 1' 6''`
-    :math:`D`     :math:`59^\circ55'14''`              :math:`\mathrm{Az_{DE}}=141^\circ 1' 6''-180^\circ+59^\circ55'14'' = 20^\circ56'20''`
-    :math:`E`     :math:`216^\circ18' 14''`            :math:`\mathrm{Az_{EA}}=20^\circ56'20'' -180^\circ+216^\circ18'14''= 57^\circ14'34''`
+    ==================== ==================================== =============================================================================================================================
+    Estação              :math:`\sphericalangle` compensado   Az
+    ==================== ==================================== =============================================================================================================================
+    :math:`\mathrm{A}`   :math:`49^\circ 7'51''`              :math:`\color{blue}{\mathrm{\mathbf{Az_{AB}}}\mathbf{=286^\circ22'25''}}` **(conhecido)**
+    :math:`\mathrm{B}`   :math:`100^\circ 4'11''`             :math:`\mathrm{Az_{BC}}=286^\circ22'25''-180^\circ+100^\circ 4'11''=206^\circ26'36''`
+    :math:`\mathrm{C}`   :math:`114^\circ33'22''`             :math:`\mathrm{Az_{CD}}=206^\circ26'36''-180^\circ+114^\circ34'30''=141^\circ 1' 6''`
+    :math:`\mathrm{D}`   :math:`59^\circ55'14''`              :math:`\mathrm{Az_{DE}}=141^\circ 1' 6''-180^\circ+59^\circ55'14'' = 20^\circ56'20''`
+    :math:`\mathrm{E}`   :math:`216^\circ18' 14''`            :math:`\mathrm{Az_{EA}}=20^\circ56'20'' -180^\circ+216^\circ18'14''= 57^\circ14'34''`
     **Verificação**
-    ----------------------------------------------------------------------------------------------------------------------------------------------
-    :math:`A`     :math:`49^\circ 7'51''`              :math:`\mathrm{Az_{AB}}=57^\circ14'34'' -180^\circ+49^\circ 7'51''=-73^\circ37'35''=\color{blue}\mathbf{286^\circ22'25''}`
-    ============= ==================================== ===========================================================================================
+    ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    :math:`\mathrm{A}`   :math:`49^\circ 7'51''`              :math:`\mathrm{Az_{AB}}=57^\circ14'34'' -180^\circ+49^\circ 7'51''=-73^\circ37'35''=\color{blue}\mathbf{286^\circ22'25''}`
+    ==================== ==================================== =============================================================================================================================
 
 Cálculo das coordenadas parciais
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -348,27 +348,27 @@ e refazer as medidas de ângulos e de distância da poligonal.
 
 ----
 
-:exem:`Exemplo 2` Para a nossa poligonal
-de exemplo, calcular o erro de fechamento linear :math:`(E)` e, verificar
-se o mesmo se encontra dentro do limite de tolerância para o erro
-de fechamento linear.
+.. admonition:: :exem:`Exemplo 2` Para a nossa poligonal
+   de exemplo, calcular o erro de fechamento linear :math:`(E)` e, verificar
+   se o mesmo se encontra dentro do limite de tolerância para o erro
+   de fechamento linear.
 
-:solucao:`Solução:` De acordo com a Equação :eq:`erro_linear` e, os valores
-de :math:`\Sigma\Delta x` e :math:`\Sigma\Delta y` apresentados na
-:numref:`fig_coordenadaspar`,
-temos:
+   :solucao:`Solução:` De acordo com a Equação :eq:`erro_linear` e, os valores
+   de :math:`\Sigma\Delta x` e :math:`\Sigma\Delta y` apresentados na
+   :numref:`fig_coordenadaspar`,
+   temos:
 
-.. math::
-   E = \sqrt{(0,301)^2+(-0,424)^2} =0,520\,\text{m}.
+   .. math::
+      E=\sqrt{(0,301)^2+(-0,424)^2} =0,520\,\text{m}.
 
-O valor do perímetro da poligonal é de :math:`911,307\,\text{m}\,(0,911307\,\text{km})`
-(:numref:`fig_coordenadaspar`, logo :math:`\mathrm{T}_p`:
+   O valor do perímetro da poligonal é de :math:`911,307\,\text{m}\,(0,911307\,\text{km})`
+   (:numref:`fig_coordenadaspar`, logo :math:`\mathrm{T}_p`:
 
-:math:`\mathrm{T}_p=0,56\sqrt{0,911307)}=0,535\,\text{m}`.
+   :math:`\mathrm{T}_p=0,56\sqrt{0,911307)}=0,535\,\text{m}`.
 
-Uma vez que o :math:`E\leq\mathrm{T}_{p}`, pode-se concluir que a poligonal
-está dentro do limite máximo de erro de tolerância para o erro linear
-de fechamento, podendo-se aplicar a distribuição do erro linear.
+   Uma vez que o :math:`E\leq\mathrm{T}_{p}`, pode-se concluir que a poligonal
+   está dentro do limite máximo de erro de tolerância para o erro linear
+   de fechamento, podendo-se aplicar a distribuição do erro linear.
 
 ----
 
@@ -424,46 +424,46 @@ exemplo o AB, pelo método proporcional ao comprimento do lado será:
 
 ----
 
-:exem:`Exemplo 3`  Considerando as coordenadas parciais apresentada na :numref:`fig_coordenadaspar`,
-referente a poligonal do nosso exemplo, calcular as coordenadas parciais
-compensadas por meio do método proporcional ao comprimento dos lados.
+.. admonition:: :exem:`Exemplo 3`  Considerando as coordenadas parciais apresentada na :numref:`fig_coordenadaspar`,
+   referente a poligonal do nosso exemplo, calcular as coordenadas parciais
+   compensadas por meio do método proporcional ao comprimento dos lados.
 
-:solucao:`Solução:` De acordo com a Equação :eq:`eq:compensacaoerrolinearx`
-e :eq:`eq:compensacaoerrolineary`, para o alinhamento AB, temos:
+   :solucao:`Solução:` De acordo com a Equação :eq:`eq:compensacaoerrolinearx`
+   e :eq:`eq:compensacaoerrolineary`, para o alinhamento :math:`\mathrm{AB}`, temos:
 
-:math:`{\displaystyle C_{\Delta x_{\mathrm{AB}}}=-\frac{0,301}{911,307}\times201,737=-0,067}\,\text{m}`,
+   :math:`{\displaystyle C_{\Delta x_{\mathrm{AB}}}=-\frac{0,301}{911,307}\times201,737=-0,067}\,\text{m}`,
 
-:math:`{\displaystyle C_{\Delta y_{\mathrm{AB}}}=-\frac{-0,424}{911,307}\times201,737=0,094}\,\text{m}`.
+   :math:`{\displaystyle C_{\Delta y_{\mathrm{AB}}}=-\frac{-0,424}{911,307}\times201,737=0,094}\,\text{m}`.
 
-Desta forma, :math:`\Delta x` e :math:`\Delta y` compensados
-:math:`(\Delta x_C` e :math:`\Delta y_C)`,
-do alinhamento AB serão:
+   Desta forma, :math:`\Delta x` e :math:`\Delta y` compensados
+   :math:`(\Delta x_C` e :math:`\Delta y_C)`,
+   do alinhamento :math:`\mathrm{AB}` serão:
 
-:math:`{\displaystyle \Delta x_{C_{\mathrm{AB}}}=\Delta x_{\mathrm{AB}}+C_{\Delta x_{\mathrm{AB}}}=-193,555+-0,067=-193.622\,\text{m}}`,
+   :math:`{\displaystyle \Delta x_{C_{\mathrm{AB}}}=\Delta x_{\mathrm{AB}}+C_{\Delta x_{\mathrm{AB}}}=-193,555+-0,067=-193.622\,\text{m}}`,
 
-:math:`{\displaystyle \Delta y_{C_{\mathrm{AB}}}=\Delta y_{\mathrm{AB}}+C_{\Delta y_{\mathrm{AB}}}=56,870+0,094=56,964\,\text{m}}`.
+   :math:`{\displaystyle \Delta y_{C_{\mathrm{AB}}}=\Delta y_{\mathrm{AB}}+C_{\Delta y_{\mathrm{AB}}}=56,870+0,094=56,964\,\text{m}}`.
 
-As compensações dos demais alinhamentos são apresentadas na Tabela
-a seguir. Note que ao final da tabela é realizado o somatório das
-compensações e das coordenadas parciais compensadas. O somatório das
-compensações tem que ser de mesmo valor do somatório das coordenadas
-parciais, com sinal contrário. Já o somatório das coordenadas parciais
-compensadas, tem que resultar em zero.
+   As compensações dos demais alinhamentos são apresentadas na Tabela
+   a seguir. Note que ao final da tabela é realizado o somatório das
+   compensações e das coordenadas parciais compensadas. O somatório das
+   compensações tem que ser de mesmo valor do somatório das coordenadas
+   parciais, com sinal contrário. Já o somatório das coordenadas parciais
+   compensadas, tem que resultar em zero.
 
-.. table::
-    :header-alignment: cccccccc
-    :column-alignment: crrrrrrr
+   .. table::
+      :header-alignment: cccccccc
+      :column-alignment: crrrrrrr
 
-    =========== ===================================== ================================== ================================== ================================ ================================= ================================= ==================================
-    Estação     DH                                    :math:`\Delta x`                   :math:`\Delta y`                   :math:`C_{\Delta x}`             :math:`C_{\Delta y}`              :math:`\Delta x_C`                :math:`\Delta y_C`
-    =========== ===================================== ================================== ================================== ================================ ================================= ================================= ==================================
-    :math:`A`   :math:`201,737`                       :math:`-193,555`                   :math:`56,870`                     :math:`-0,067`                   :math:`0,094`                     :math:`-193,622`                  :math:`56,964`
-    :math:`B`   :math:`224,863`                       :math:`-100,134`                   :math:`-201,337`                   :math:`-0,074`                   :math:`0,105`                     :math:`-100,208`                  :math:`-201,232`
-    :math:`C`   :math:`141,247`                       :math:`88,854`                     :math:`-109,798`                   :math:`-0,047`                   :math:`0,066`                     :math:`88,807`                    :math:`-109,732`
-    :math:`D`   :math:`173,084`                       :math:`61,855`                     :math:`161,654`                    :math:`-0,057`                   :math:`0,081`                     :math:`61,798`                    :math:`161,735`
-    :math:`E`   :math:`\underline{170,376 }`          :math:`\underline{143,281}`        :math:`\underline{92,187}`         :math:`\underline{-0,056}`       :math:`\underline{0,078}`         :math:`\underline{143,225}`       :math:`\underline{92,265}`
-    :math:`\,`  :math:`\Sigma=911,307`                :math:`\Sigma=0,301`               :math:`\Sigma=-0,424`              :math:`\Sigma=-0,301`            :math:`\Sigma=0,424`              :math:`\Sigma=0`                  :math:`\Sigma=0`
-    =========== ===================================== ================================== ================================== ================================ ================================= ================================= ==================================
+      =================== ===================================== ================================== ================================== ================================ ================================= ================================= ==================================
+      Estação             DH                                    :math:`\Delta x`                   :math:`\Delta y`                   :math:`C_{\Delta x}`             :math:`C_{\Delta y}`              :math:`\Delta x_C`                :math:`\Delta y_C`
+      =================== ===================================== ================================== ================================== ================================ ================================= ================================= ==================================
+      :math:`\mathrm{A}`  :math:`201,737`                       :math:`-193,555`                   :math:`56,870`                     :math:`-0,067`                   :math:`0,094`                     :math:`-193,622`                  :math:`56,964`
+      :math:`\mathrm{B}`  :math:`224,863`                       :math:`-100,134`                   :math:`-201,337`                   :math:`-0,074`                   :math:`0,105`                     :math:`-100,208`                  :math:`-201,232`
+      :math:`\mathrm{C}`  :math:`141,247`                       :math:`88,854`                     :math:`-109,798`                   :math:`-0,047`                   :math:`0,066`                     :math:`88,807`                    :math:`-109,732`
+      :math:`\mathrm{D}`  :math:`173,084`                       :math:`61,855`                     :math:`161,654`                    :math:`-0,057`                   :math:`0,081`                     :math:`61,798`                    :math:`161,735`
+      :math:`\mathrm{E}`  :math:`\underline{170,376 }`          :math:`\underline{143,281}`        :math:`\underline{92,187}`         :math:`\underline{-0,056}`       :math:`\underline{0,078}`         :math:`\underline{143,225}`       :math:`\underline{92,265}`
+      :math:`\,`          :math:`\Sigma=911,307`                :math:`\Sigma=0,301`               :math:`\Sigma=-0,424`              :math:`\Sigma=-0,301`            :math:`\Sigma=0,424`              :math:`\Sigma=0`                  :math:`\Sigma=0`
+      =================== ===================================== ================================== ================================== ================================ ================================= ================================= ==================================
 
 ----
 
@@ -503,45 +503,45 @@ então a coordenada de B será:
 
 ----
 
-:exem:`Exemplo 4`  Calcular as coordenadas retangulares da poligonal
-da :numref:`fig_PoligonalFechadaSolucao.png`, considerando conhecida
-a coordenada UTM da estação A
-:math:`(\text{E}=268\,011,610\,\text{m};\,\text{N}=7\,370\,836,303\,\text{m})`.
+.. admonition:: :exem:`Exemplo 4`  Calcular as coordenadas retangulares da poligonal
+   da :numref:`fig_PoligonalFechadaSolucao.png`, considerando conhecida
+   a coordenada UTM da estação
+   :math:`\mathrm{A}`(\text{E}=268\,011,610\,\text{m};\,\text{N}=7\,370\,836,303\,\text{m})`.
 
-:solucao:`Solução:` A coordenada UTM, E e N, da estação A é em relação ao
-eixo-:math:`x` e :math:`y` da quadrícula logo, :math:`x_{\mathrm{A}} = 268\,011,610\,\text{m}` e
-:math:`y_{\mathrm{A}}=7\,370\,836,303\,\text{m}`.
-De acordo com a Equação :eq:`eq:coordenadatoalx` e :eq:`eq:coordenadatoaly`,
-e as coordenadas parciais AB compensada, temos:
+   :solucao:`Solução:` A coordenada UTM, E e N, da estação :math:`\mathrm{A}` é em relação ao
+   eixo-:math:`x` e :math:`y` da quadrícula logo, :math:`x_{\mathrm{A}} = 268\,011,610\,\text{m}` e
+   :math:`y_{\mathrm{A}}=7\,370\,836,303\,\text{m}`.
+   De acordo com a Equação :eq:`eq:coordenadatoalx` e :eq:`eq:coordenadatoaly`,
+   e as coordenadas parciais AB compensada, temos:
 
-:math:`{\displaystyle x_{\mathrm{B}}=268\,011,610+-193,622=267\,817,988}\,\text{m}`,
+   :math:`{\displaystyle x_{\mathrm{B}}=268\,011,610+-193,622=267\,817,988}\,\text{m}`,
 
-:math:`{\displaystyle y_{\mathrm{B}}=7\,370\,836,303+56,964=7\,370\,893,267}\,\text{m}`.
+   :math:`{\displaystyle y_{\mathrm{B}}=7\,370\,836,303+56,964=7\,370\,893,267}\,\text{m}`.
 
-Para os demais alinhamentos, os resultados são apresentados na Tabela
-a seguir. Note que a coordenada da estação conhecida
-é colocada na sua respectiva linha, assim, na linha da estação A,
-é colocado o valor da coordenada UTM obtida por GNSS. Para as demais
-estações a coordenada é calculada, somando a coordenada da linha acima
-(anterior) com a parcial, também da linha acima na Tabela. Com o objetivo
-de verificção dos cálculos, ao final, a coordenada do ponto inicial
-é calculada, em que deve-se obter o mesmo valor da coordenada de saída,
-neste exemplo, a obtida por GNSS.
+   Para os demais alinhamentos, os resultados são apresentados na Tabela
+   a seguir. Note que a coordenada da estação conhecida
+   é colocada na sua respectiva linha, assim, na linha da estação :math:`\mathrm{A}`,
+   é colocado o valor da coordenada UTM obtida por GNSS. Para as demais
+   estações a coordenada é calculada, somando a coordenada da linha acima
+   (anterior) com a parcial, também da linha acima na Tabela. Com o objetivo
+   de verificção dos cálculos, ao final, a coordenada do ponto inicial
+   é calculada, em que deve-se obter o mesmo valor da coordenada de saída,
+   neste exemplo, a obtida por GNSS.
 
-.. table::
-    :header-alignment: ccccc
-    :column-alignment: crrrr
+   .. table::
+      :header-alignment: ccccc
+      :column-alignment: crrrr
 
-    =========== ==================== ========================================= ================================================= =========================================================
-    Estação     :math:`\Delta x_C`   :math:`\Delta y_C`                        :math:`x` (E)                                     :math:`y` (N)
-    =========== ==================== ========================================= ================================================= =========================================================
-    :math:`A`   :math:`-193,622`     :math:`56,964`                            :math:`\textcolor{blue}{\mathbf{268\,011,610}}`   :math:`\textcolor{blue}{\mathbf{7\,370\,836,303}}`
-    :math:`B`   :math:`-100,208`     :math:`-201,232`                          :math:`267\,817,988`                              :math:`7\,370\,893,267`
-    :math:`C`   :math:`88,807`       :math:`-109,732`                          :math:`267\,717,780`                              :math:`7\,370\,692,035`
-    :math:`D`   :math:`61,798`       :math:`161,735`                           :math:`267\,806,587`                              :math:`7\,370\,582,303`
-    :math:`E`   :math:`143,225`      :math:`92,265`                            :math:`267\,868,385`                              :math:`7\,370\,744,038`
-    :math:`\,`  :math:`\,`           **Verificação**                           :math:`\textcolor{blue}{\mathbf{268\,011,610}}`   :math:`\textcolor{blue}{\mathbf{7\,370\,836,303}}`
-    =========== ==================== ========================================= ================================================= =========================================================
+      =================== ==================== ========================================= ================================================= =========================================================
+      Estação             :math:`\Delta x_C`   :math:`\Delta y_C`                        :math:`x` (E)                                     :math:`y` (N)
+      =================== ==================== ========================================= ================================================= =========================================================
+      :math:`\mathrm{A}`  :math:`-193,622`     :math:`56,964`                            :math:`\textcolor{blue}{\mathbf{268\,011,610}}`   :math:`\textcolor{blue}{\mathbf{7\,370\,836,303}}`
+      :math:`\mathrm{B}`  :math:`-100,208`     :math:`-201,232`                          :math:`267\,817,988`                              :math:`7\,370\,893,267`
+      :math:`\mathrm{C}`  :math:`88,807`       :math:`-109,732`                          :math:`267\,717,780`                              :math:`7\,370\,692,035`
+      :math:`\mathrm{D}`  :math:`61,798`       :math:`161,735`                           :math:`267\,806,587`                              :math:`7\,370\,582,303`
+      :math:`\mathrm{E}`  :math:`143,225`      :math:`92,265`                            :math:`267\,868,385`                              :math:`7\,370\,744,038`
+      :math:`\,`          :math:`\,`           **Verificação**                           :math:`\textcolor{blue}{\mathbf{268\,011,610}}`   :math:`\textcolor{blue}{\mathbf{7\,370\,836,303}}`
+      =================== ==================== ========================================= ================================================= =========================================================
 
 ----
 
@@ -603,49 +603,49 @@ Desta forma, comsiderar:
   o módulo de :math:`\Delta x`.
 
 
-:exem:`Exemplo 5` Calcular os azimutes e as distâncias horizontais
-finais dos alinhamentos do nosso exemplo.
+.. admonition:: :exem:`Exemplo 5` Calcular os azimutes e as distâncias horizontais
+   finais dos alinhamentos do nosso exemplo.
 
-:solucao:`Solução:` A partir das  coordenadas parciais compensadas do Exemplo
-2 e, por meio da Equação :eq:`eq:calculoAzimutefinal`, o azimute
-AB será:
+   :solucao:`Solução:` A partir das  coordenadas parciais compensadas do Exemplo
+   2 e, por meio da Equação :eq:`eq:calculoAzimutefinal`, o azimute
+   :math:`\mathrm{AB}` será:
 
-.. math::
-   \tan\mathrm{Az}_{\mathrm{AB}} &=\frac{-193,622}{56,964}\\
-   \tan\mathrm{Az}_{\mathrm{AB}} &=-3,3990\\
-   Az_{AB} &=\arctan(-3,3990)\\
-   Az_{AB} &=-73^{\circ}36'22'',
+   .. math::
+      \tan\mathrm{Az}_{\mathrm{AB}} &=\frac{-193,622}{56,964}\\
+      \tan\mathrm{Az}_{\mathrm{AB}} &=-3,3990\\
+      Az_{AB} &=\arctan(-3,3990)\\
+      Az_{AB} &=-73^{\circ}36'22'',
 
-Como o alinhamento está no quadrante NW:
+   Como o alinhamento está no quadrante NW:
 
-:math:`{\displaystyle \mathrm{Az}_{\mathrm{AB}}=360^{\circ}-73^{\circ}36'22''=286^{\circ}23'38''}`.
+   :math:`{\displaystyle \mathrm{Az}_{\mathrm{AB}}=360^{\circ}-73^{\circ}36'22''=286^{\circ}23'38''}`.
 
-Já a :math:`\mathrm{DH}_{\mathrm{AB}}`, considerando a Equação :eq:`eq:calculoDHfinal`:
+   Já a :math:`\mathrm{DH}_{\mathrm{AB}}`, considerando a Equação :eq:`eq:calculoDHfinal`:
 
-:math:`\mathrm{DH}_{\mathrm{AB}}=\sqrt{-193,622^2+56,964^2} = 201,828\,\text{m}`.
+   :math:`\mathrm{DH}_{\mathrm{AB}}=\sqrt{-193,622^2+56,964^2} = 201,828\,\text{m}`.
 
-Para os demais alinhamentos, o procedimento é equivalente, sendo o
-resultado apresentado na Tabela a seguir.
+   Para os demais alinhamentos, o procedimento é equivalente, sendo o
+   resultado apresentado na Tabela a seguir.
 
-.. table::
-    :header-alignment: ccccc
-    :column-alignment: crrrr
+   .. table::
+      :header-alignment: ccccc
+      :column-alignment: crrrr
 
-    ============= ===================== ===================== =============== ===============================
-    Alinhamento   :math:`\Delta x_C`    :math:`\Delta y_C`    DH               Az
-    ============= ===================== ===================== =============== ===============================
-    :math:`AB`    :math:`-193,622`      :math:`56,964`        :math:`201,828`  :math:`286^\circ23'38''`
-    :math:`BC`    :math:`-100,208`      :math:`-201,232`      :math:`224,802`  :math:`206^\circ28'19''`
-    :math:`CD`    :math:`88,807`        :math:`-109,732`      :math:`141,166`  :math:`141^\circ 0'59''`
-    :math:`DE`    :math:`61,798`        :math:`161,735`       :math:`173,139`  :math:`20^\circ54'42''`
-    :math:`EA`    :math:`143,225`       :math:`92,265`        :math:`170,371`  :math:`57^\circ12'38''`
-    ============= ===================== ===================== =============== ===============================
+      ==================== ===================== ===================== ================ ===============================
+      Alin                 :math:`\Delta x_C`    :math:`\Delta y_C`    DH               Az
+      ==================== ===================== ===================== ================ ===============================
+      :math:`\mathrm{AB}`  :math:`-193,622`      :math:`56,964`        :math:`201,828`  :math:`286^\circ23'38''`
+      :math:`\mathrm{BC}`  :math:`-100,208`      :math:`-201,232`      :math:`224,802`  :math:`206^\circ28'19''`
+      :math:`\mathrm{CD}`  :math:`88,807`        :math:`-109,732`      :math:`141,166`  :math:`141^\circ 0'59''`
+      :math:`\mathrm{DE}`  :math:`61,798`        :math:`161,735`       :math:`173,139`  :math:`20^\circ54'42''`
+      :math:`\mathrm{EA}`  :math:`143,225`       :math:`92,265`        :math:`170,371`  :math:`57^\circ12'38''`
+      ==================== ===================== ===================== ================ ===============================
 
-Observe que as distâncias horizontais e azimutes não correspondem
-aqueles medidos em campos e calculados, respectivamente (ver :numref:`fig_coordenadaspar`). Isto ocorre pois, ao longo
-dos cálculos da poligonal fechada, os erros angulares e lineares foram
-compensados, modificando as posições dos pontos, logo a distância
-horizontal entre eles os seus sentidos.
+   Observe que as distâncias horizontais e azimutes não correspondem
+   aqueles medidos em campos e calculados, respectivamente (ver :numref:`fig_coordenadaspar`). Isto ocorre pois, ao longo
+   dos cálculos da poligonal fechada, os erros angulares e lineares foram
+   compensados, modificando as posições dos pontos, logo a distância
+   horizontal entre eles os seus sentidos.
 
 ----
 
@@ -674,76 +674,76 @@ a coordenada do ponto obstruído pode ser calculada, uma vez que ele
 está apoiado em um ponto de coordenada conhecida e se conhecem as
 suas coordenadas parciais.
 
-:exem:`Exemplo 6`  Considere que no nosso exemplo, ao invés da poligonal
-de interesse ser a :math:`\mathrm{ABCDEA}`, passe a ser a :math:`\mathrm{ABPDEA}`, de acordo com a Figura
-que segue. A distância horizontal :math:`\mathrm{CP}` e o ângulo à direita :math:`\mathrm{BCP}` foram
-medidos, sendo, respectivamente, de :math:`7,85\,\text{m}` e  :math:`253^\circ22'` . Calcular
-o azimute e a distância horizontal do alinhamento :math:`\mathrm{BP}`.
+.. admonition:: :exem:`Exemplo 6`  Considere que no nosso exemplo, ao invés da poligonal
+   de interesse ser a :math:`\mathrm{ABCDEA}`, passe a ser a :math:`\mathrm{ABPDEA}`, de acordo com a Figura
+   que segue. A distância horizontal :math:`\mathrm{CP}` e o ângulo à direita :math:`\mathrm{BCP}` foram
+   medidos, sendo, respectivamente, de :math:`7,85\,\text{m}` e  :math:`253^\circ22'` . Calcular
+   o azimute e a distância horizontal do alinhamento :math:`\mathrm{BP}`.
 
 
-.. figure:: /images/capitulo8/fig_pontoobstruido.png
-   :scale: 35 %
-   :alt: fig_pontoobstruido.png
-   :align: center
+   .. figure:: /images/capitulo8/fig_pontoobstruido.png
+      :scale: 35 %
+      :alt: fig_pontoobstruido.png
+      :align: center
 
-:solucao:`Solução:` Primeiramente, deve-se calcular a coordenada do ponto :math:`\mathrm{P}`. Para tanto,
-temos que determinar o  :math:`\mathrm{Az}_{\mathrm{CP}}`  e as suas coordenadas
-parciais do alinhamento :math:`\mathrm{CP}`. O  :math:`\mathrm{Az}_{\mathrm{CP}}`  é:
+   :solucao:`Solução:`
+   Primeiramente, deve-se calcular a coordenada do ponto :math:`\mathrm{P}`. Para tanto,
+   temos que determinar o  :math:`\mathrm{Az}_{\mathrm{CP}}`  e as suas coordenadas
+   parciais do alinhamento :math:`\mathrm{CP}`. O  :math:`\mathrm{Az}_{\mathrm{CP}}`  é:
 
-.. math::
-   \mathrm{Az}_{\mathrm{CP}} &=\mathrm{Az}_{\mathrm{BC}}-180^{\circ}+\mathrm{BCP}\\
-   \mathrm{Az}_{\mathrm{CP}} &=206^{\circ}26'36''-180^{\circ}+253^{\circ}22'\\
-   \mathrm{Az}_{\mathrm{CP}} &=279^{\circ}48'36''.
+   .. math::
+      \mathrm{Az}_{\mathrm{CP}} &=\mathrm{Az}_{\mathrm{BC}}-180^{\circ}+\mathrm{BCP}\\
+      \mathrm{Az}_{\mathrm{CP}} &=206^{\circ}26'36''-180^{\circ}+253^{\circ}22'\\
+      \mathrm{Az}_{\mathrm{CP}} &=279^{\circ}48'36''.
 
-As coordenadas parciais do alinhamento :math:`\mathrm{CP}`:
+   As coordenadas parciais do alinhamento :math:`\mathrm{CP}`:
 
-.. math::
-   \Delta x_{{\mathrm{CP}}}  &=\mathrm{DH}_{\mathrm{CP}}\sin\mathrm{Az}_{\mathrm{CP}}\\
-   &=7,85\sin279^{\circ}48'36''\\
-   &=-7,735\,\text{m},
+   .. math::
+      \Delta x_{{\mathrm{CP}}}  &=\mathrm{DH}_{\mathrm{CP}}\sin\mathrm{Az}_{\mathrm{CP}}\\
+      &=7,85\sin279^{\circ}48'36''\\
+      &=-7,735\,\text{m},
 
-.. math::
-   \Delta y_{{\mathrm{CP}}} &=\mathrm{DH}_{\mathrm{CP}}\cos\mathrm{Az}_{\mathrm{CP}}\\
-   &=7,85\cos279^{\circ}48'36''\\
-   &=1,338\,\text{m}.
+   .. math::
+      \Delta y_{{\mathrm{CP}}} &=\mathrm{DH}_{\mathrm{CP}}\cos\mathrm{Az}_{\mathrm{CP}}\\
+      &=7,85\cos279^{\circ}48'36''\\
+      &=1,338\,\text{m}.
 
-Uma vez que a coordenada do ponto :math:`\mathrm{C}` foi calculada (Exemplo 4),
-:math:`x_\mathrm{C}=267.717,780\,\text{m}`  e  :math:`y_\mathrm{C}=7.370.692,035\,\text{m}`, a
-coordenada de :math:`\mathrm{C}` será (Equações :eq:`eq:coordenadatoalx` e :eq:`eq:coordenadatoaly`):
+   Uma vez que a coordenada do ponto :math:`\mathrm{C}` foi calculada (Exemplo 4),
+   :math:`x_\mathrm{C}=267.717,780\,\text{m}`  e  :math:`y_\mathrm{C}=7.370.692,035\,\text{m}`, a
+   coordenada de :math:`\mathrm{C}` será (Equações :eq:`eq:coordenadatoalx` e :eq:`eq:coordenadatoaly`):
 
-.. math::
-   x_{\mathrm{P}} &=x_{\mathrm{C}}+\Delta x_{{\mathrm{CP}}}\\
-   &=267.717,780+-7,735\\
-   &=267.710,045\,\text{m},
+   .. math::
+      x_{\mathrm{P}} &=x_{\mathrm{C}}+\Delta x_{{\mathrm{CP}}}\\
+      &=267.717,780+-7,735\\
+      &=267.710,045\,\text{m},
 
-.. math::
-   y_{\mathrm{P}} &=y_{\mathrm{C}}+\Delta y_{{\mathrm{CP}}}\\
-   &=7.370.692,035+1,337\\
-   &=7.370.693,372\,\text{m}.
+   .. math::
+      y_{\mathrm{P}} &=y_{\mathrm{C}}+\Delta y_{{\mathrm{CP}}}\\
+      &=7.370.692,035+1,337\\
+      &=7.370.693,372\,\text{m}.
 
-Com a coordenada do ponto :math:`\mathrm{B}` conhecida (Exemplo 5)
-e utilizando as Equação :eq:`eq:calculoAzimutefinal`, temos o azimute
-:math:`\mathrm{BP}`:
+   Com a coordenada do ponto :math:`\mathrm{B}` conhecida (Exemplo 5)
+   e utilizando as Equação :eq:`eq:calculoAzimutefinal`, temos o azimute
+   :math:`\mathrm{BP}`:
 
-.. math::
-   \tan\mathrm{Az}_{\mathrm{BP}}&=\frac{x_{\mathrm{B}}-x_{\mathrm{P}}}{y_{\mathrm{B}}-y_{\mathrm{P}}}\\
-   &=\frac{267.817,988-267.710,045}{7.370.893,267-7.370.693,372}\\
-   &=\frac{107,943}{199,895}
+   .. math::
+      \tan\mathrm{Az}_{\mathrm{BP}}&=\frac{x_{\mathrm{B}}-x_{\mathrm{P}}}{y_{\mathrm{B}}-y_{\mathrm{P}}}\\
+      &=\frac{267.817,988-267.710,045}{7.370.893,267-7.370.693,372}\\
+      &=\frac{107,943}{199,895}
 
-Como o alinhamento :math:`\mathrm{BP}` está no quadrante SW:
+   Como o alinhamento :math:`\mathrm{BP}` está no quadrante SW:
 
-.. math::
-   \mathrm{Az}_{\mathrm{BP}}&=\arctan\frac{107,943}{199,895}+180^{\circ}\\
-   \mathrm{Az}_{\mathrm{BP}}&=208^{\circ}22'8''.
+   .. math::
+      \mathrm{Az}_{\mathrm{BP}}&=\arctan\frac{107,943}{199,895}+180^{\circ}\\
+      \mathrm{Az}_{\mathrm{BP}}&=208^{\circ}22'8''.
 
-A distância horizontal :math:`\mathrm{BP}` (Equação :eq:`eq:calculoDHfinal`):
+   A distância horizontal :math:`\mathrm{BP}` (Equação :eq:`eq:calculoDHfinal`):
 
-.. math::
-   \mathrm{Az}_{\mathrm{BP}} &=\sqrt{(x_{\mathrm{B}}-x_{\mathrm{P}})^{2}+(y_{\mathrm{B}}-y_{\mathrm{P}})^{2}}\\
-   \mathrm{Az}_{\mathrm{BP}} &=\sqrt{(267.817,988-267.710,045)^{2}+(7.370.893,267-7.370.693,372)^{2}}\\
-   \mathrm{Az}_{\mathrm{BP}} &=227,178\,\text{m}.
+   .. math::
+      \mathrm{Az}_{\mathrm{BP}} &=\sqrt{(x_{\mathrm{B}}-x_{\mathrm{P}})^{2}+(y_{\mathrm{B}}-y_{\mathrm{P}})^{2}}\\
+      \mathrm{Az}_{\mathrm{BP}} &=\sqrt{(267.817,988-267.710,045)^{2}+(7.370.893,267-7.370.693,372)^{2}}\\
+      \mathrm{Az}_{\mathrm{BP}} &=227,178\,\text{m}.
 
-----
 
 Cálculo de uma poligonal aberta e apoiada
 -----------------------------------------
@@ -792,22 +792,22 @@ antes da compensação angular. Um exemplo de procedimento de cálculo
 
 ----
 
-:exem:`Exemplo 7` De acordo com a :numref:`AbertaApoiadaErro.png`, seja: a coordenada da estação de controle
-:math:`\mathrm{E}` igual a :math:`x_{\mathrm E}=1\,420,118\,\text{m}` e
-:math:`y_{\mathrm E}=1\,159,889\,\text{m}`; a
-coordenada :math:`\mathrm{E}'` , calculada a partir das medidas de campo, sem a correção
-angular e linear igual a :math:`x_{\mathrm{E}'}=1\,419,080\,\text{m}`
-e :math:`y_{\mathrm{E}'}=1\,160,235\,\text{m}`;
-o azimute entre as estações de controle :math:`\mathrm{AE}` de :math:`230^\circ28'40''`.
-Pergunta-se, qual o :math:`\mathit{eft}` e o :math:`\mathit{efl}` desta poligonal aberta
-e apoiada.
+.. admonition:: :exem:`Exemplo 7` De acordo com a :numref:`AbertaApoiadaErro.png`, seja: a coordenada da estação de controle
+   :math:`\mathrm{E}` igual a :math:`x_{\mathrm E}=1\,420,118\,\text{m}` e
+   :math:`y_{\mathrm E}=1\,159,889\,\text{m}`; a
+   coordenada :math:`\mathrm{E}'` , calculada a partir das medidas de campo, sem a correção
+   angular e linear igual a :math:`x_{\mathrm{E}'}=1\,419,080\,\text{m}`
+   e :math:`y_{\mathrm{E}'}=1\,160,235\,\text{m}`;
+   o azimute entre as estações de controle :math:`\mathrm{AE}` de :math:`230^\circ28'40''`.
+   Pergunta-se, qual o :math:`\mathit{eft}` e o :math:`\mathit{efl}` desta poligonal aberta
+   e apoiada.
 
-:solucao:`Solução:`
+   :solucao:`Solução:`
 
-.. figure:: /images/capitulo8/ExemploAbertaApoiadaErro.png
-   :scale: 35 %
-   :alt: ExemploAbertaApoiadaErro.png
-   :align: center
+   .. figure:: /images/capitulo8/ExemploAbertaApoiadaErro.png
+      :scale: 35 %
+      :alt: ExemploAbertaApoiadaErro.png
+      :align: center
 
 ----
 
@@ -988,5 +988,3 @@ d) na Tabela abaixo.
     :math:`\mathrm{CD}`   :math:`45^\circ57'10''`    :math:`1\,160,489`
     :math:`\mathrm{DE}`   :math:`282^\circ20'53''`    :math:`1\,476,432`
     ===================== ========================== =====================
-
-----
