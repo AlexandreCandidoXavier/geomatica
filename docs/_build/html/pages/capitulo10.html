@@ -629,141 +629,221 @@ ser calculado desprezível, tomemos a CV em <span class="math notranslate nohigh
 </section>
 <section id="exercicios">
 <h2>Exercícios<a class="headerlink" href="#exercicios" title="Link permanente para este título">¶</a></h2>
-<p>begin{exercicio} Para fins de uma obra de engenharia, será escavado um volume de <span class="math notranslate nohighlight">\(6\,000\,\text{m}\)</span><span class="math notranslate nohighlight">\(^3\)</span>. Sabendo-se que o material a ser escavado vai sofrer expansão de <span class="math notranslate nohighlight">\(15\%\)</span> de seu volume e, que o caminhão, tipo basculante, que será empregado no transporte tem capacidade de <span class="math notranslate nohighlight">\(12\,\text{m}\)</span><span class="math notranslate nohighlight">\(^3\)</span>, qual será o número de viagens necessárias para transportar todo o material?
-resp 575 viagens.</p>
-<p>begin{exercicio} Deseja-se aterrar um volume de <span class="math notranslate nohighlight">\(400\,\text{m}\)</span><span class="math notranslate nohighlight">\(^3\)</span> com terra. Qual será o volume de terra necessário para este aterro, sabendo-se que o material a ser utilizado terá seu volume reduzido em <span class="math notranslate nohighlight">\(25\%\)</span> no processo de compactação?
-resp <span class="math notranslate nohighlight">\(500\,\text{m}\)</span><span class="math notranslate nohighlight">\(^3\)</span>.</p>
-<p>begin{exercicio} Considere  as áreas entre as secções da estaca <span class="math notranslate nohighlight">\(5+0\,\text{m}\)</span> e a intermediária <span class="math notranslate nohighlight">\(6+0\,\text{m}\)</span> de, respectivamente <span class="math notranslate nohighlight">\(31\,\text{m}\)</span><span class="math notranslate nohighlight">\(^2\)</span> e <span class="math notranslate nohighlight">\(24\,\text{m}\)</span><span class="math notranslate nohighlight">\(^2\)</span>. Qual o volume entre as secções das duas estacas. Considere a distância horizontal de <span class="math notranslate nohighlight">\(20\,\text{m}\)</span> entre as estacas inteiras.
-resp <span class="math notranslate nohighlight">\(550\,\text{m}\)</span><span class="math notranslate nohighlight">\(^3\)</span>.</p>
-<p>begin{exercicio} Considere as áreas entre as secções da estaca <span class="math notranslate nohighlight">\(31+5\,\text{m}\)</span> e a intermediária <span class="math notranslate nohighlight">\(32+0\,\text{m}\)</span> de, respectivamente <span class="math notranslate nohighlight">\(11\,\text{m}\)</span><span class="math notranslate nohighlight">\(^2\)</span> e <span class="math notranslate nohighlight">\(16\,\text{m}\)</span><span class="math notranslate nohighlight">\(^2\)</span>. Qual o volume entre as secções das duas estacas? Considere a distância horizontal de <span class="math notranslate nohighlight">\(20\,\text{m}\)</span> entre as estacas inteiras.
-resp <span class="math notranslate nohighlight">\(202,5\,\text{m}\)</span><span class="math notranslate nohighlight">\(^3\)</span>.</p>
-<p>begin{exercicio}Para os dados das áreas a serem escavadas de secções apresentadas na tabela a seguir, calcular o volume de material a ser escavado. Considere a distância entre as secções de <span class="math notranslate nohighlight">\(20\,\text{m}\)</span>
-begin{table}[h!]label{tab:exercicio_area_secao_media}
-defarraystretch{1.0}
-begin{tabular}{rc}
-hline
-multirow{2}{*}{cellcolor{white}Estaca} &amp; Área de\</p>
-<blockquote>
-<div><p>&amp; corte (m:math:<cite>^2)</cite> \ cline{1-2}</p>
-</div></blockquote>
-<p><span class="math notranslate nohighlight">\(8+0\,\text{m}\)</span> &amp; 151 \
-<span class="math notranslate nohighlight">\(9+0\,\text{m}\)</span> &amp; 191 \
-<span class="math notranslate nohighlight">\(10+0\,\text{m}\)</span> &amp; 133 \
-<span class="math notranslate nohighlight">\(11+0\,\text{m}\)</span> &amp; 49 \
-<span class="math notranslate nohighlight">\(12+0\,\text{m}\)</span> &amp; 70 \ hline
-end{tabular}
-end{table}
-resp <span class="math notranslate nohighlight">\(9\,670\,\text{m}\)</span><span class="math notranslate nohighlight">\(^3\)</span></p>
-<p>begin{exercicio} Utilizando os dados do Exemplo ref{exemp:area_unitaria2} da página pageref{exemp:area_unitaria2}, calcular o volume de aterro.
-resp <span class="math notranslate nohighlight">\(1\,617\,\text{m}\)</span><span class="math notranslate nohighlight">\(^3\)</span>.</p>
-<p>begin{exercicio} Um terreno foi estaqueado conforme a Figura~ref{fig:cap_alt_grid_exer}
-para fins de trabalho de terraplenagem. O espaçamento entre as estacas
+<p><span class="exem">1)</span> Para fins de uma obra de engenharia, será escavado um volume
+de <span class="math notranslate nohighlight">\(6\,000\,\text{m}\)</span><span class="math notranslate nohighlight">\(^3\)</span>. Sabendo-se que o material a ser escavado vai sofrer
+expansão de <span class="math notranslate nohighlight">\(15\%\)</span> de seu volume e, que o caminhão, tipo basculante, que será
+empregado no transporte tem capacidade de <span class="math notranslate nohighlight">\(12\,\text{m}^3\)</span>, qual será o
+número de viagens necessárias para transportar todo o material?</p>
+<p><span class="exem">Resp.:</span> 575 viagens.</p>
+<hr class="docutils" />
+<p><span class="exem">2)</span> Deseja-se aterrar um volume de <span class="math notranslate nohighlight">\(400\,\text{m}^3\)</span> com terra. Qual será o
+volume de terra necessário para este aterro, sabendo-se que o material a ser utilizado
+terá seu volume reduzido em <span class="math notranslate nohighlight">\(25\%\)</span> no processo de compactação?</p>
+<p><span class="exem">Resp.:</span> <span class="math notranslate nohighlight">\(500\,\text{m}^3\)</span>.</p>
+<hr class="docutils" />
+<p><span class="exem">3)</span> Considere  as áreas entre as secções da estaca <span class="math notranslate nohighlight">\(5+0\,\text{m}\)</span> e
+a intermediária <span class="math notranslate nohighlight">\(6+0\,\text{m}\)</span> de, respectivamente <span class="math notranslate nohighlight">\(31\,\text{m}^2\)</span>
+e <span class="math notranslate nohighlight">\(24\,\text{m}\)</span><span class="math notranslate nohighlight">\(^2\)</span>. Qual o volume entre as secções das duas estacas.
+Considere a distância horizontal de <span class="math notranslate nohighlight">\(20\,\text{m}\)</span> entre as estacas inteiras.</p>
+<p><span class="exem">Resp.:</span> <span class="math notranslate nohighlight">\(550\,\text{m}^3\)</span>.</p>
+<hr class="docutils" />
+<p><span class="exem">4)</span> Considere as áreas entre as secções da estaca <span class="math notranslate nohighlight">\(31+5\,\text{m}\)</span> e a
+intermediária <span class="math notranslate nohighlight">\(32+0\,\text{m}\)</span> de, respectivamente <span class="math notranslate nohighlight">\(11\,\text{m}^2\)</span>
+e <span class="math notranslate nohighlight">\(16\,\text{m}^2\)</span>. Qual o volume entre as secções das duas estacas? Considere a
+distância horizontal de <span class="math notranslate nohighlight">\(20\,\text{m}\)</span> entre as estacas inteiras.</p>
+<p><span class="exem">Resp.:</span> <span class="math notranslate nohighlight">\(202,5\,\text{m}\)</span><span class="math notranslate nohighlight">\(^3\)</span>.</p>
+<hr class="docutils" />
+<p><span class="exem">5)</span> Para os dados das áreas a serem escavadas de secções apresentadas na tabela a
+seguir, calcular o volume de material a ser escavado. Considere a distância entre as secções
+de <span class="math notranslate nohighlight">\(20\,\text{m}\)</span></p>
+<table class="colwidths-given styled-table docutils align-default" id="id19">
+<caption><span class="caption-number">Table 20 </span><span class="caption-text">Apresentação da <span class="math notranslate nohighlight">\(\mathrm{CV}\)</span> em uma caderneta de campo.</span><a class="headerlink" href="#id19" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="center-align no-left-divider single-right-divider head"><p>Estaca</p></th>
+<th class="center-align single-left-divider head"><p>Área de corte <span class="math notranslate nohighlight">\((\mathrm{m}^2)\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(8+0\,\text{m}\)</span></p></td>
+<td class="center-align single-left-divider"><p><span class="math notranslate nohighlight">\(151\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(9+0\,\text{m}\)</span></p></td>
+<td class="center-align single-left-divider"><p><span class="math notranslate nohighlight">\(191\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(10+0\,\text{m}\)</span></p></td>
+<td class="center-align single-left-divider"><p><span class="math notranslate nohighlight">\(133\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(11+0\,\text{m}\)</span></p></td>
+<td class="center-align single-left-divider"><p><span class="math notranslate nohighlight">\(49\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(12+0\,\text{m}\)</span></p></td>
+<td class="center-align single-left-divider"><p><span class="math notranslate nohighlight">\(70\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p><span class="exem">Resp.:</span> <span class="math notranslate nohighlight">\(9\,670\,\text{m}\)</span><span class="math notranslate nohighlight">\(^3\)</span></p>
+<hr class="docutils" />
+<p><span class="exem">6)</span> Utilizando os dados do Exemplo 5, calcular o volume de aterro.</p>
+<p><span class="exem">Resp.:</span> <span class="math notranslate nohighlight">\(1\,617\,\text{m}^3\)</span>.</p>
+<hr class="docutils" />
+<p><span class="exem">7)</span> Um terreno foi estaqueado, conforme a Figura abaixo, para
+fins de trabalho de terraplenagem. O espaçamento entre as estacas
 foi de <span class="math notranslate nohighlight">\(20,0\,\text{m}\)</span>. A declividade do terreno na direção das linhas é de
-textendash <span class="math notranslate nohighlight">\(3\)</span>% e na direção das colunas é de textendash <span class="math notranslate nohighlight">\(2\)</span>%. A cota
+<span class="math notranslate nohighlight">\(3\)</span>% e na direção das colunas é de textendash <span class="math notranslate nohighlight">\(2\)</span>%. A cota
 do terreno para estaca A1 de <span class="math notranslate nohighlight">\(100,00\,\text{m}\)</span>. Pedem-se:</p>
-<ul class="simple">
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/cap_alt_exe_grid.png"><img alt="cap_alt_exe_grid.png" src="../_images/cap_alt_exe_grid.png" style="width: 340.65000000000003px; height: 287.1px;" /></a>
+</figure>
+<ol class="loweralpha simple">
 <li><p>Calcular as cotas para todas as estacas;</p></li>
 <li><p>Traçar as curvas de nível da área, com equidistância vertical de <span class="math notranslate nohighlight">\(1,00\,\text{m}\)</span>;</p></li>
 <li><p>Calcular a cota (hm) de um plano horizontal que, na terraplenagem, resulte em volumes de corte e aterro iguais;</p></li>
 <li><p>Traçar a linha de passagem, indicando as áreas de corte e aterro;</p></li>
 <li><p>Calcular a cota vermelha para todas as estacas.</p></li>
-</ul>
-<p>begin{SCfigure}[][!h] includegraphics[trim = 0mm 0mm 20mm 60mm,scale=1]{Cap_altimetria/cap_alt_exe_grid}
-caption{}</p>
-<p>label{fig:cap_alt_grid_exer}</p>
-<p>end{SCfigure}</p>
-<p>resp a) e e) nas Tabelas abaixo; c) emph{hm} = <span class="math notranslate nohighlight">\(98,5\,\text{m}\)</span>.</p>
-<p>begin{SCtable}[][!h] includegraphics[trim = 0mm 0mm 0mm 0mm,scale=1]{Cap_altimetria/ExUmTerreno}
-caption{}</p>
-<p>label{tab:exe_solocao} end{SCtable}</p>
-<p>begin{exercicio}Num trabalho de sistematização, transferiu-se a altitude
+</ol>
+<p><span class="exem">Resp.:</span> (a) e (e) nas Tabelas abaixo; (c) <span class="math notranslate nohighlight">\(hm=98,5\,\text{m}\)</span>.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/ExUmTerreno.png"><img alt="ExUmTerreno.png" src="../_images/ExUmTerreno.png" style="width: 653.85px; height: 184.05px;" /></a>
+</figure>
+<hr class="docutils" />
+<p><span class="exem">8)</span> Num trabalho de sistematização, transferiu-se a altitude
 de um marco para um ponto próximo a área de trabalho, pelo método
 de nivelamento trigonométrico. Posteriormente, conhecendo-se esta
 nova altitude, determinaram-se as altitudes das estacas que serviram
-de sistematização. Dados:
-begin{itemize}
--  transferência de altitude: na estação A, cuja altitude é de <span class="math notranslate nohighlight">\(305,3\,\text{m}\)</span>
-instalou-se uma estação total ficando o eixo da luneta a <span class="math notranslate nohighlight">\(1,74\,\text{m}\)</span> de
-altura (emph{ai}), em seguida visou-se o prisma, cuja a altura era
-de <span class="math notranslate nohighlight">\(1,0\,\text{m}\)</span> (emph{ap}), em X, anotando-se o ângulo zenital <span class="math notranslate nohighlight">\(96^{\circ}20'\)</span>
-e a emph{DI} de <span class="math notranslate nohighlight">\(926,0\,\text{m}\)</span>;
--  altitudes das estacas que serviram à sistematização, com o nível de
-precisão fez-se uma irradiação geométrica obtendo-se os seguintes
-dados, visada de emph{ré} na mira colocada sobre X igual a <span class="math notranslate nohighlight">\(0,12\,\text{m}\)</span>;
-leitura da mira, em metros, nas estacas da quadrícula <span class="math notranslate nohighlight">\((20\,\text{m}\)</span> por</p>
-<blockquote>
-<div><p><span class="math notranslate nohighlight">\(20\,\text{m})\)</span> na Tabela~ref{tab:cap_alt_transf_alt}.</p>
-</div></blockquote>
-<p>Com os dados acima pede-se:</p>
+de sistematização. Dados:</p>
 <ul class="simple">
-<li><p>a altitude em X;</p></li>
+<li><p>transferência de altitude: na estação <span class="math notranslate nohighlight">\(A\)</span>, cuja altitude é de <span class="math notranslate nohighlight">\(305,3\,\text{m}\)</span>
+instalou-se uma estação total ficando o eixo da
+luneta a <span class="math notranslate nohighlight">\(1,74\,\text{m}\)</span> de altura <span class="math notranslate nohighlight">\((ai)\)</span> , em seguida visou-se o prisma, cuja a altura era
+de <span class="math notranslate nohighlight">\(1,0\,\text{m}\)</span> (emph{ap}), em <span class="math notranslate nohighlight">\(X\)</span>, anotando-se o ângulo zenital <span class="math notranslate nohighlight">\(96^{\circ}20'\)</span>
+e a <span class="math notranslate nohighlight">\(DI\)</span> de <span class="math notranslate nohighlight">\(926,0\,\text{m}\)</span>;</p></li>
+<li><p>altitudes das estacas que serviram à sistematização, com o nível de
+precisão fez-se uma irradiação geométrica obtendo-se os seguintes
+dados, visada de emph{ré} na mira colocada sobre <span class="math notranslate nohighlight">\(X\)</span> igual a <span class="math notranslate nohighlight">\(0,12\,\text{m}\)</span>;
+leitura da mira, em metros, nas estacas da quadrícula <span class="math notranslate nohighlight">\((20\,\text{m}\)</span> por
+<span class="math notranslate nohighlight">\(20\,\text{m})\)</span> na Tabela abaixo.</p></li>
+</ul>
+<p>Com os dados acima pede-se:</p>
+<ol class="loweralpha simple">
+<li><p>a altitude em <span class="math notranslate nohighlight">\(X\)</span>;</p></li>
 <li><p>a altitude nas estacas da quadrícula;</p></li>
 <li><p>calcular a altura média do plano que resultará em <span class="math notranslate nohighlight">\(V_c=V_a\)</span>;</p></li>
-<li><p>projetar um plano inclinado de <span class="math notranslate nohighlight">\(1\%\)</span> de declividade no sentido A para C e de <span class="math notranslate nohighlight">\(-2\%\)</span> na direção da seção de 1 para 2.</p></li>
-</ul>
-<p>begin{SCtable}[][htb]
-centering
-caption{Valores das medidas de it vante.}
-setlength{extrarowheight}{4pt} %
-begin{tabular}{cccc} hline rowcolor[gray]{1}
-Estaca    &amp; A     &amp; B    &amp; C
-tabularnewline hline</p>
-<blockquote>
-<div><p>1          &amp; <span class="math notranslate nohighlight">\(1,86\)</span>  &amp; <span class="math notranslate nohighlight">\(2,20\)</span> &amp; <span class="math notranslate nohighlight">\(1,30\)</span>     tabularnewline  rowcolor[gray]{.95}</p>
-</div></blockquote>
-<dl class="simple">
-<dt>2       &amp; <span class="math notranslate nohighlight">\(2,50\)</span> &amp; <span class="math notranslate nohighlight">\(2,40\)</span>  &amp; <span class="math notranslate nohighlight">\(2,30\)</span>     tabularnewline</dt><dd><p>hline</p>
-</dd>
-</dl>
-<p>end{tabular}label{tab:cap_alt_transf_alt}end{SCtable}</p>
-<p>resp a) altitude X = <span class="math notranslate nohighlight">\(203,891\,\text{m}\)</span>; b) na Tabela~ref{tab:cap_alt_transf_alt_resp1};
-c) emph{hm}~=~:math:<cite>201,866,text{m}</cite>; d) na Tabela~ref{tab:cap_alt_transf_alt_resp2}.</p>
-<p>begin{SCtable}[][htb]
-centering
-caption{Altitude das estacas rm{(m)}.}
-setlength{extrarowheight}{4pt} %
-begin{tabular}{cccc} hline
-Estaca    &amp; A     &amp; B    &amp; C
-tabularnewline hline
-1            &amp; <span class="math notranslate nohighlight">\(202,151\)</span> &amp; <span class="math notranslate nohighlight">\(201,811\)</span> &amp; <span class="math notranslate nohighlight">\(202,711\)</span>    tabularnewline  rowcolor[gray]{.95}
-2       &amp;:math:` 201,511` &amp; <span class="math notranslate nohighlight">\(201,611\)</span> &amp; <span class="math notranslate nohighlight">\(201,711\)</span>   tabularnewline</p>
-<blockquote>
-<div><p>hline</p>
-</div></blockquote>
-<p>end{tabular}label{tab:cap_alt_transf_alt_resp1}
-end{SCtable}
-begin{SCtable}[][htb]
-centering
-caption{Cotas do plano inclinado.}
-setlength{extrarowheight}{4pt} %
-begin{tabular}{cccc} hline
-Estaca    &amp; A     &amp; B    &amp; C
-tabularnewline hline
-1         &amp; <span class="math notranslate nohighlight">\(201,866\)</span> &amp; <span class="math notranslate nohighlight">\(202,066\)</span> &amp; <span class="math notranslate nohighlight">\(202,266\)</span>   tabularnewline  rowcolor[gray]{.95}
-2       &amp; <span class="math notranslate nohighlight">\(201,466\)</span> &amp; <span class="math notranslate nohighlight">\(201,666\)</span> &amp; <span class="math notranslate nohighlight">\(201,866\)</span>   tabularnewline</p>
-<blockquote>
-<div><p>hline</p>
-</div></blockquote>
-<p>end{tabular}label{tab:cap_alt_transf_alt_resp2}end{SCtable}</p>
-<p>begin{exercicio}Um terreno de <span class="math notranslate nohighlight">\(40,0\,\text{m}\)</span> por <span class="math notranslate nohighlight">\(40,0\,\text{m}\)</span>, foi estaqueado
-em quadrículas de <span class="math notranslate nohighlight">\(20,0\,\text{m}\)</span>. As cotas obtidas para cada
-vértice estão na Figura~ref{fig:cap_alt_exer_grid2}.</p>
-<p>begin{figure}[H] includegraphics[trim = 0mm 0mm 0mm 0mm,scale=1]{Cap_altimetria/cap_alt_exer_grid2}
-caption{Cotas no terreno rm{(m)}.}
-label{fig:cap_alt_exer_grid2}
-end{figure}</p>
+<li><p>projetar um plano inclinado de <span class="math notranslate nohighlight">\(1\%\)</span> de declividade no sentido
+A para C e de <span class="math notranslate nohighlight">\(-2\%\)</span> na direção da seção de <span class="math notranslate nohighlight">\(1\)</span> para <span class="math notranslate nohighlight">\(2\)</span>.</p></li>
+</ol>
+<table class="colwidths-given styled-table docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="center-align head"><p>Estaca</p></th>
+<th class="center-align head"><p><span class="math notranslate nohighlight">\(A\)</span></p></th>
+<th class="center-align head"><p><span class="math notranslate nohighlight">\(B\)</span></p></th>
+<th class="center-align head"><p><span class="math notranslate nohighlight">\(C\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="center-align"><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td class="center-align"><p><span class="math notranslate nohighlight">\(1,86\)</span></p></td>
+<td class="center-align"><p><span class="math notranslate nohighlight">\(2,20\)</span></p></td>
+<td class="center-align"><p><span class="math notranslate nohighlight">\(1,30\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p><span class="math notranslate nohighlight">\(2\)</span></p></td>
+<td class="center-align"><p><span class="math notranslate nohighlight">\(2,50\)</span></p></td>
+<td class="center-align"><p><span class="math notranslate nohighlight">\(2,40\)</span></p></td>
+<td class="center-align"><p><span class="math notranslate nohighlight">\(2,30\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p><span class="exem">Resp.:</span> (a) altitude <span class="math notranslate nohighlight">\(X=203,891\,\text{m}\)</span>; (b) na Tabela abaixo:</p>
+<table class="colwidths-given styled-table docutils align-default" id="id20">
+<caption><span class="caption-number">Table 21 </span><span class="caption-text">resposta (b) Altitude das estacas (m).</span><a class="headerlink" href="#id20" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="center-align head"><p>Estaca</p></th>
+<th class="center-align head"><p><span class="math notranslate nohighlight">\(A\)</span></p></th>
+<th class="center-align head"><p><span class="math notranslate nohighlight">\(B\)</span></p></th>
+<th class="center-align head"><p><span class="math notranslate nohighlight">\(C\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="center-align"><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td class="center-align"><p><span class="math notranslate nohighlight">\(202,151\)</span></p></td>
+<td class="center-align"><p><span class="math notranslate nohighlight">\(201,811\)</span></p></td>
+<td class="center-align"><p><span class="math notranslate nohighlight">\(202,711\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p><span class="math notranslate nohighlight">\(2\)</span></p></td>
+<td class="center-align"><p><span class="math notranslate nohighlight">\(201,511\)</span></p></td>
+<td class="center-align"><p><span class="math notranslate nohighlight">\(201,611\)</span></p></td>
+<td class="center-align"><p><span class="math notranslate nohighlight">\(201,711\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<ol class="loweralpha simple" start="3">
+<li><p><span class="math notranslate nohighlight">\(\mathrm{hm}=201,866\,\text{m}\)</span>; (d) na Tabela abaixo.</p></li>
+</ol>
+<table class="colwidths-given styled-table docutils align-default" id="id21">
+<caption><span class="caption-number">Table 22 </span><span class="caption-text">resposta (d) Cotas do plano inclinado.</span><a class="headerlink" href="#id21" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="center-align head"><p>Estaca</p></th>
+<th class="center-align head"><p><span class="math notranslate nohighlight">\(A\)</span></p></th>
+<th class="center-align head"><p><span class="math notranslate nohighlight">\(B\)</span></p></th>
+<th class="center-align head"><p><span class="math notranslate nohighlight">\(C\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="center-align"><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td class="center-align"><p><span class="math notranslate nohighlight">\(201,866\)</span></p></td>
+<td class="center-align"><p><span class="math notranslate nohighlight">\(202,066\)</span></p></td>
+<td class="center-align"><p><span class="math notranslate nohighlight">\(202,266\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="center-align"><p><span class="math notranslate nohighlight">\(2\)</span></p></td>
+<td class="center-align"><p><span class="math notranslate nohighlight">\(201,466\)</span></p></td>
+<td class="center-align"><p><span class="math notranslate nohighlight">\(201,666\)</span></p></td>
+<td class="center-align"><p><span class="math notranslate nohighlight">\(201,866\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<p><span class="exem">8)</span> Um terreno de <span class="math notranslate nohighlight">\(40,0\,\text{m}\)</span> por <span class="math notranslate nohighlight">\(40,0\,\text{m}\)</span>, foi
+estaqueado em quadrículas de <span class="math notranslate nohighlight">\(20,0\,\text{m}\)</span> por <span class="math notranslate nohighlight">\(20,0\,\text{m}\)</span>.
+As cotas obtidas para cada vértice estão na Figura~ref{fig:cap_alt_exer_grid2}.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/cap_alt_exer_grid2.png"><img alt="cap_alt_exer_grid2.png" src="../_images/cap_alt_exer_grid2.png" style="width: 418.95px; height: 262.35px;" /></a>
+</figure>
 <p>Pede-se:</p>
-<ul class="simple">
-<li><p>desenhar o terreno na escala <span class="math notranslate nohighlight">\(1:500\)</span> e locar as curvas de nível inteiras, pelo método de interpolação por cálculo com <span class="math notranslate nohighlight">\(EV = 1,0\,\text{m}\)</span>;</p></li>
-<li><p>projetar um plano inclinado de <span class="math notranslate nohighlight">\(+2\%\)</span> na direção e sentido de A para C que resultará em <span class="math notranslate nohighlight">\(V_c=V_a\)</span>. Fazer desenho na escala 1:500;</p></li>
-<li><p>calcular os volumes de corte e aterro para o plano inclinado (não considere talude de corte e saia de aterro), utilize fórmula da área média das secções.</p></li>
-</ul>
-<p>resp b) Figura~ref{fig:cap_alt_exer_grid2_rep}; c) <span class="math notranslate nohighlight">\(V_{\textit{c}}=557,90\text{\,\ m}^{3}\)</span>;
-<span class="math notranslate nohighlight">\(V_{\textit{a}}=562,89\text{\,\ m}^{3}:math:\)</span>.
-begin{figure}[H] includegraphics[trim = 0mm 0mm 0mm 0mm,scale=1]{Cap_altimetria/cap_alt_exer_grid2_resp}
-caption{Plano inclinado rm{(m)}.}
-label{fig:cap_alt_exer_grid2_rep}
-end{figure}</p>
+<ol class="loweralpha simple">
+<li><p>desenhar o terreno na escala <span class="math notranslate nohighlight">\(1:500\)</span> e locar as curvas de
+nível inteiras, pelo método de interpolação por cálculo
+com <span class="math notranslate nohighlight">\(EV = 1,0\,\text{m}\)</span>;</p></li>
+<li><p>projetar um plano inclinado de <span class="math notranslate nohighlight">\(+2\%\)</span> na direção e sentido de <span class="math notranslate nohighlight">\(A\)</span> para
+<span class="math notranslate nohighlight">\(C\)</span> que resultará em <span class="math notranslate nohighlight">\(V_c=V_a\)</span>. Fazer desenho na escala <span class="math notranslate nohighlight">\(1:500\)</span>;</p></li>
+<li><p>calcular os volumes de corte e aterro para o plano inclinado (não considere
+talude de corte e saia de aterro), utilize fórmula da área média das secções.</p></li>
+</ol>
+<p><span class="exem">Resp.:</span> (b) Figura abaixo; (c) <span class="math notranslate nohighlight">\(V_{\textit{c}}=557,90\mathrm{m}^3\)</span>;
+<span class="math notranslate nohighlight">\(V_{\textit{a}}=562,89\,\mathrm{m}^3\)</span>.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/cap_alt_exer_grid2_rep.png"><img alt="cap_alt_exer_grid2_rep.png" src="../_images/cap_alt_exer_grid2_rep.png" style="width: 338.40000000000003px; height: 285.75px;" /></a>
+</figure>
 </section>
 </section>
 

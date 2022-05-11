@@ -539,10 +539,10 @@ denominador da média calculada de CV para as 4 estacas de cada quadrado} e, est
 resultado, multiplicado pela soma do produto da CVs de cada estaca pelo número
 de quadrados que a mesma é comum (ver Exemplo abaixo). Matematicamente:
 
-.. math:: 
+.. math::
    V=\frac{A}{4}\sum\mathrm{CV}_{i,\,j}\times w_{i,\,j}
    :label: eq_somas_unitarios
- 
+
 
 em que: :math:`V` é o volume (:math:`\mathrm{m}^3)`; :math:`A` é a
 área do quadrado (:math:`\mathrm{m}^2)`; :math:`i` e :math:`j` são os índices
@@ -705,156 +705,190 @@ estaca :math:`i,\,j`;
 Exercícios
 ==========
 
-\begin{exercicio} Para fins de uma obra de engenharia, será escavado um volume de :math:`6\,000\,\text{m}`:math:`^3`. Sabendo-se que o material a ser escavado vai sofrer expansão de :math:`15\%` de seu volume e, que o caminhão, tipo basculante, que será empregado no transporte tem capacidade de :math:`12\,\text{m}`:math:`^3`, qual será o número de viagens necessárias para transportar todo o material? 
-\resp 575 viagens.
+:exem:`1)` Para fins de uma obra de engenharia, será escavado um volume
+de :math:`6\,000\,\text{m}`:math:`^3`. Sabendo-se que o material a ser escavado vai sofrer
+expansão de :math:`15\%` de seu volume e, que o caminhão, tipo basculante, que será
+empregado no transporte tem capacidade de :math:`12\,\text{m}^3`, qual será o
+número de viagens necessárias para transportar todo o material?
 
-\begin{exercicio} Deseja-se aterrar um volume de :math:`400\,\text{m}`:math:`^3` com terra. Qual será o volume de terra necessário para este aterro, sabendo-se que o material a ser utilizado terá seu volume reduzido em :math:`25\%` no processo de compactação? 
-\resp :math:`500\,\text{m}`:math:`^3`.
+:exem:`Resp.:` 575 viagens.
 
-\begin{exercicio} Considere  as áreas entre as secções da estaca :math:`5+0\,\text{m}` e a intermediária :math:`6+0\,\text{m}` de, respectivamente :math:`31\,\text{m}`:math:`^2` e :math:`24\,\text{m}`:math:`^2`. Qual o volume entre as secções das duas estacas. Considere a distância horizontal de :math:`20\,\text{m}` entre as estacas inteiras. 
-\resp :math:`550\,\text{m}`:math:`^3`.
+----
 
-\begin{exercicio} Considere as áreas entre as secções da estaca :math:`31+5\,\text{m}` e a intermediária :math:`32+0\,\text{m}` de, respectivamente :math:`11\,\text{m}`:math:`^2` e :math:`16\,\text{m}`:math:`^2`. Qual o volume entre as secções das duas estacas? Considere a distância horizontal de :math:`20\,\text{m}` entre as estacas inteiras. 
-\resp :math:`202,5\,\text{m}`:math:`^3`.
+:exem:`2)` Deseja-se aterrar um volume de :math:`400\,\text{m}^3` com terra. Qual será o
+volume de terra necessário para este aterro, sabendo-se que o material a ser utilizado
+terá seu volume reduzido em :math:`25\%` no processo de compactação?
 
-\begin{exercicio}Para os dados das áreas a serem escavadas de secções apresentadas na tabela a seguir, calcular o volume de material a ser escavado. Considere a distância entre as secções de :math:`20\,\text{m}`
-\begin{table}[h!]\label{tab:exercicio_area_secao_media}
-\def\arraystretch{1.0}
-\begin{tabular}{rc}
-\hline
-\multirow{2}{*}{\cellcolor{white}Estaca} & Área de\\ 
-                        & corte (m:math:`^2)` \\ \cline{1-2}
-:math:`8+0\,\text{m}` & 151 \\
-:math:`9+0\,\text{m}` & 191 \\
-:math:`10+0\,\text{m}` & 133 \\
-:math:`11+0\,\text{m}` & 49 \\
-:math:`12+0\,\text{m}` & 70 \\ \hline
-\end{tabular}
-\end{table}
-\resp :math:`9\,670\,\text{m}`:math:`^3`
+:exem:`Resp.:` :math:`500\,\text{m}^3`.
 
-\begin{exercicio} Utilizando os dados do Exemplo \ref{exemp:area_unitaria2} da página \pageref{exemp:area_unitaria2}, calcular o volume de aterro.
-\resp :math:`1\,617\,\text{m}`:math:`^3`.
+-----
 
+:exem:`3)` Considere  as áreas entre as secções da estaca :math:`5+0\,\text{m}` e
+a intermediária :math:`6+0\,\text{m}` de, respectivamente :math:`31\,\text{m}^2`
+e :math:`24\,\text{m}`:math:`^2`. Qual o volume entre as secções das duas estacas.
+Considere a distância horizontal de :math:`20\,\text{m}` entre as estacas inteiras.
 
-\begin{exercicio} Um terreno foi estaqueado conforme a Figura~\ref{fig:cap_alt_grid_exer}
-para fins de trabalho de terraplenagem. O espaçamento entre as estacas
+:exem:`Resp.:` :math:`550\,\text{m}^3`.
+
+-----
+
+:exem:`4)` Considere as áreas entre as secções da estaca :math:`31+5\,\text{m}` e a
+intermediária :math:`32+0\,\text{m}` de, respectivamente :math:`11\,\text{m}^2`
+e :math:`16\,\text{m}^2`. Qual o volume entre as secções das duas estacas? Considere a
+distância horizontal de :math:`20\,\text{m}` entre as estacas inteiras.
+
+:exem:`Resp.:` :math:`202,5\,\text{m}`:math:`^3`.
+
+-----
+
+:exem:`5)` Para os dados das áreas a serem escavadas de secções apresentadas na tabela a
+seguir, calcular o volume de material a ser escavado. Considere a distância entre as secções
+de :math:`20\,\text{m}`
+
+.. table:: Apresentação da :math:`\mathrm{CV}` em uma caderneta de campo.
+   :widths: 1 1
+   :header-alignment: cc
+   :column-alignment: cc
+   :column-dividers:  none single
+
+   ======================= ======================================
+   Estaca                  Área de corte :math:`(\mathrm{m}^2)`
+   ======================= ======================================
+   :math:`8+0\,\text{m}`   :math:`151`
+   :math:`9+0\,\text{m}`   :math:`191`
+   :math:`10+0\,\text{m}`  :math:`133`
+   :math:`11+0\,\text{m}`  :math:`49`
+   :math:`12+0\,\text{m}`  :math:`70`
+   ======================= ======================================
+
+:exem:`Resp.:` :math:`9\,670\,\text{m}`:math:`^3`
+
+-----
+
+:exem:`6)` Utilizando os dados do Exemplo 5, calcular o volume de aterro.
+
+:exem:`Resp.:` :math:`1\,617\,\text{m}^3`.
+
+-----
+
+:exem:`7)` Um terreno foi estaqueado, conforme a Figura abaixo, para
+fins de trabalho de terraplenagem. O espaçamento entre as estacas
 foi de :math:`20,0\,\text{m}`. A declividade do terreno na direção das linhas é de
-\textendash :math:`3`\% e na direção das colunas é de \textendash :math:`2`\%. A cota
-do terreno para estaca A1 de :math:`100,00\,\text{m}`. Pedem-se: 
+:math:`3`\% e na direção das colunas é de \textendash :math:`2`\%. A cota
+do terreno para estaca A1 de :math:`100,00\,\text{m}`. Pedem-se:
 
+.. figure:: /images/capitulo10/cap_alt_exe_grid.png
+  :scale: 45 %
+  :alt: cap_alt_exe_grid.png
+  :align: center
 
--  Calcular as cotas para todas as estacas; 
--  Traçar as curvas de nível da área, com equidistância vertical de :math:`1,00\,\text{m}`;
--  Calcular a cota (hm) de um plano horizontal que, na terraplenagem, resulte em volumes de corte e aterro iguais;
--  Traçar a linha de passagem, indicando as áreas de corte e aterro;
--  Calcular a cota vermelha para todas as estacas. 
+a. Calcular as cotas para todas as estacas;
+b. Traçar as curvas de nível da área, com equidistância vertical de :math:`1,00\,\text{m}`;
+c. Calcular a cota (hm) de um plano horizontal que, na terraplenagem, resulte em volumes de corte e aterro iguais;
+d. Traçar a linha de passagem, indicando as áreas de corte e aterro;
+e. Calcular a cota vermelha para todas as estacas.
 
+:exem:`Resp.:` (a) e (e) nas Tabelas abaixo; (c) :math:`hm=98,5\,\text{m}`.
 
-\begin{SCfigure}[][!h] \includegraphics[trim = 0mm 0mm 20mm 60mm,scale=1]{Cap_altimetria/cap_alt_exe_grid}
-\caption{}
+.. figure:: /images/capitulo10/ExUmTerreno.png
+  :scale: 45 %
+  :alt: ExUmTerreno.png
+  :align: center
 
-\label{fig:cap_alt_grid_exer} 
+-----
 
-\end{SCfigure}
-
-\resp a) e e) nas Tabelas abaixo; c) \emph{hm} = :math:`98,5\,\text{m}`.
-
-\begin{SCtable}[][!h] \includegraphics[trim = 0mm 0mm 0mm 0mm,scale=1]{Cap_altimetria/ExUmTerreno}
-\caption{}
-
-\label{tab:exe_solocao} \end{SCtable}
-
-\begin{exercicio}Num trabalho de sistematização, transferiu-se a altitude
+:exem:`8)` Num trabalho de sistematização, transferiu-se a altitude
 de um marco para um ponto próximo a área de trabalho, pelo método
 de nivelamento trigonométrico. Posteriormente, conhecendo-se esta
 nova altitude, determinaram-se as altitudes das estacas que serviram
 de sistematização. Dados:
-\begin{itemize}
--  transferência de altitude: na estação A, cuja altitude é de :math:`305,3\,\text{m}`
-instalou-se uma estação total ficando o eixo da luneta a :math:`1,74\,\text{m}` de
-altura (\emph{ai}), em seguida visou-se o prisma, cuja a altura era
-de :math:`1,0\,\text{m}` (\emph{ap}), em X, anotando-se o ângulo zenital :math:`96^{\circ}20'`
-e a \emph{DI} de :math:`926,0\,\text{m}`;
--  altitudes das estacas que serviram à sistematização, com o nível de
-precisão fez-se uma irradiação geométrica obtendo-se os seguintes
-dados, visada de \emph{ré} na mira colocada sobre X igual a :math:`0,12\,\text{m}`;
-leitura da mira, em metros, nas estacas da quadrícula :math:`(20\,\text{m}` por
- :math:`20\,\text{m})` na Tabela~\ref{tab:cap_alt_transf_alt}.
+
+- transferência de altitude: na estação :math:`A`, cuja altitude é de :math:`305,3\,\text{m}`
+  instalou-se uma estação total ficando o eixo da
+  luneta a :math:`1,74\,\text{m}` de altura :math:`(ai)` , em seguida visou-se o prisma, cuja a altura era
+  de :math:`1,0\,\text{m}` (\emph{ap}), em :math:`X`, anotando-se o ângulo zenital :math:`96^{\circ}20'`
+  e a :math:`DI` de :math:`926,0\,\text{m}`;
+- altitudes das estacas que serviram à sistematização, com o nível de
+  precisão fez-se uma irradiação geométrica obtendo-se os seguintes
+  dados, visada de \emph{ré} na mira colocada sobre :math:`X` igual a :math:`0,12\,\text{m}`;
+  leitura da mira, em metros, nas estacas da quadrícula :math:`(20\,\text{m}` por
+  :math:`20\,\text{m})` na Tabela abaixo.
 
 Com os dados acima pede-se:
 
-
--  a altitude em X; 
--  a altitude nas estacas da quadrícula;
--  calcular a altura média do plano que resultará em :math:`V_c=V_a`;
--  projetar um plano inclinado de :math:`1\%` de declividade no sentido A para C e de :math:`-2\%` na direção da seção de 1 para 2.
-
-
+a. a altitude em :math:`X`;
+b. a altitude nas estacas da quadrícula;
+c. calcular a altura média do plano que resultará em :math:`V_c=V_a`;
+d. projetar um plano inclinado de :math:`1\%` de declividade no sentido
+   A para C e de :math:`-2\%` na direção da seção de :math:`1` para :math:`2`.
 
 
-\begin{SCtable}[][htb] 
-\centering 
-\caption{Valores das medidas de \it vante.}
-\setlength{\extrarowheight}{4pt} % 
-\begin{tabular}{cccc} \hline \rowcolor[gray]{1}  
-Estaca    & A     & B	 & C		
-\tabularnewline \hline
- 1	    & :math:`1,86`  & :math:`2,20` & :math:`1,30`     \tabularnewline  \rowcolor[gray]{.95}     
-2    	& :math:`2,50` & :math:`2,40`  & :math:`2,30`     \tabularnewline      
- \hline 
-\end{tabular}\label{tab:cap_alt_transf_alt}\end{SCtable}
+.. table::
+   :widths: 1 1 1 1
+   :header-alignment: cccc
+   :column-alignment: cccc
 
-\resp a) altitude X = :math:`203,891\,\text{m}`; b) na Tabela~\ref{tab:cap_alt_transf_alt_resp1};
-c) \emph{hm}~=~:math:`201,866\,\text{m}`; d) na Tabela~\ref{tab:cap_alt_transf_alt_resp2}.
+   ========== ============= ============= =============
+   Estaca     :math:`A`     :math:`B`     :math:`C`
+   ========== ============= ============= =============
+   :math:`1`  :math:`1,86`  :math:`2,20`  :math:`1,30`
+   :math:`2`  :math:`2,50`  :math:`2,40`  :math:`2,30`
+   ========== ============= ============= =============
 
-\begin{SCtable}[][htb] 
-\centering 
-\caption{Altitude das estacas \rm{(m)}.}
-\setlength{\extrarowheight}{4pt} % 
-\begin{tabular}{cccc} \hline  
-Estaca    & A     & B	 & C		
-\tabularnewline \hline
-1	     & :math:`202,151` & :math:`201,811` & :math:`202,711`    \tabularnewline  \rowcolor[gray]{.95}     
-2     	&:math:` 201,511` & :math:`201,611` & :math:`201,711`   \tabularnewline      
- \hline 
-\end{tabular}\label{tab:cap_alt_transf_alt_resp1}
-\end{SCtable}
-\begin{SCtable}[][htb] 
-\centering 
-\caption{Cotas do plano inclinado.}
-\setlength{\extrarowheight}{4pt} % 
-\begin{tabular}{cccc} \hline  
-Estaca    & A     & B	 & C		
-\tabularnewline \hline
-1	  & :math:`201,866` & :math:`202,066` & :math:`202,266`   \tabularnewline  \rowcolor[gray]{.95}     
-2       & :math:`201,466` & :math:`201,666` & :math:`201,866`   \tabularnewline      
- \hline 
-\end{tabular}\label{tab:cap_alt_transf_alt_resp2}\end{SCtable}
 
-\begin{exercicio}Um terreno de :math:`40,0\,\text{m}` por :math:`40,0\,\text{m}`, foi estaqueado
-em quadrículas de :math:`20,0\,\text{m}`~por~:math:`20,0\,\text{m}`. As cotas obtidas para cada
-vértice estão na Figura~\ref{fig:cap_alt_exer_grid2}. 
+:exem:`Resp.:` (a) altitude :math:`X=203,891\,\text{m}`; (b) na Tabela abaixo:
 
-\begin{figure}[H] \includegraphics[trim = 0mm 0mm 0mm 0mm,scale=1]{Cap_altimetria/cap_alt_exer_grid2}
-\caption{Cotas no terreno \rm{(m)}.}
-\label{fig:cap_alt_exer_grid2} 
-\end{figure}
+.. table:: resposta (b) Altitude das estacas (m).
+   :widths: 1 1 1 1
+   :header-alignment: cccc
+   :column-alignment: cccc
+
+   ========== ================ ================ ================
+   Estaca     :math:`A`        :math:`B`        :math:`C`
+   ========== ================ ================ ================
+   :math:`1`  :math:`202,151`  :math:`201,811`  :math:`202,711`
+   :math:`2`  :math:`201,511`  :math:`201,611`  :math:`201,711`
+   ========== ================ ================ ================
+
+(c) :math:`\mathrm{hm}=201,866\,\text{m}`; (d) na Tabela abaixo.
+
+.. table:: resposta (d) Cotas do plano inclinado.
+   :widths: 1 1 1 1
+   :header-alignment: cccc
+   :column-alignment: cccc
+
+   ========== ================ ================ ================
+   Estaca     :math:`A`        :math:`B`        :math:`C`
+   ========== ================ ================ ================
+   :math:`1`  :math:`201,866`  :math:`202,066`  :math:`202,266`
+   :math:`2`  :math:`201,466`  :math:`201,666`  :math:`201,866`
+   ========== ================ ================ ================
+
+-----
+
+:exem:`8)` Um terreno de :math:`40,0\,\text{m}` por :math:`40,0\,\text{m}`, foi
+estaqueado em quadrículas de :math:`20,0\,\text{m}` por :math:`20,0\,\text{m}`.
+As cotas obtidas para cada vértice estão na Figura~\ref{fig:cap_alt_exer_grid2}.
+
+.. figure:: /images/capitulo10/cap_alt_exer_grid2.png
+  :scale: 45 %
+  :alt: cap_alt_exer_grid2.png
+  :align: center
 
 Pede-se: 
 
+a. desenhar o terreno na escala :math:`1:500` e locar as curvas de
+   nível inteiras, pelo método de interpolação por cálculo
+   com :math:`EV = 1,0\,\text{m}`;
+b. projetar um plano inclinado de :math:`+2\%` na direção e sentido de :math:`A` para
+   :math:`C` que resultará em :math:`V_c=V_a`. Fazer desenho na escala :math:`1:500`;
+c. calcular os volumes de corte e aterro para o plano inclinado (não considere
+   talude de corte e saia de aterro), utilize fórmula da área média das secções.
 
--  desenhar o terreno na escala :math:`1:500` e locar as curvas de nível inteiras, pelo método de interpolação por cálculo com :math:`EV = 1,0\,\text{m}`;
--  projetar um plano inclinado de :math:`+2\%` na direção e sentido de A para C que resultará em :math:`V_c=V_a`. Fazer desenho na escala 1:500;
--  calcular os volumes de corte e aterro para o plano inclinado (não considere talude de corte e saia de aterro), utilize fórmula da área média das secções.
+:exem:`Resp.:` (b) Figura abaixo; (c) :math:`V_{\textit{c}}=557,90\mathrm{m}^3`;
+:math:`V_{\textit{a}}=562,89\,\mathrm{m}^3`.
 
-
-
-
-\resp b) Figura~\ref{fig:cap_alt_exer_grid2_rep}; c) :math:`V_{\textit{c}}=557,90\text{\,\ m}^{3}`;
-:math:`V_{\textit{a}}=562,89\text{\,\ m}^{3}:math:`.
-\begin{figure}[H] \includegraphics[trim = 0mm 0mm 0mm 0mm,scale=1]{Cap_altimetria/cap_alt_exer_grid2_resp}
-\caption{Plano inclinado \rm{(m)}.}
-\label{fig:cap_alt_exer_grid2_rep} 
-\end{figure}
-
+.. figure:: /images/capitulo10/cap_alt_exer_grid2_rep.png
+  :scale: 45 %
+  :alt: cap_alt_exer_grid2_rep.png
+  :align: center
