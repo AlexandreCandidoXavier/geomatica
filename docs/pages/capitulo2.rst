@@ -38,9 +38,9 @@ o metro (m). Ele é definido como o comprimento do caminho viajado
 pela luz durante o intervalo de :math:`1/299\,792\,458` segundo.
 Seguem alguns exemplos de subdivisões do metro:
 
-- o milímetro :math:`(\text{mm},\,1\,\text{mm}=10^{-3}\text{m}=0,001\,\text{m})`;
+- o decímetro :math:`(\text{dm},\,1\,\text{dm}=10^{-1}\,\text{m}=0,1\,\text{m})`;
 - o centímetro :math:`(\text{cm},\,1\,\text{cm}=10^{-2}\,\text{m}=0,01\,\text{m})` e;
-- o decímetro :math:`(\text{dm},\,1\,\text{dm}=10^{-1}\,\text{m}=0,1\,\text{m})`.
+- o milímetro :math:`(\text{mm},\,1\,\text{mm}=10^{-3}\text{m}=0,001\,\text{m})`.
 
 Como múltiplo de metro pode-se citar o quilômetro :math:`(\text{km,}\,1\,\text{km}=1\,000\,\text{m})`, geralmente utilizado em medidas sobre mapas
 ou cartas de pequenas escala.
@@ -59,10 +59,8 @@ Na apresentação de grandes extensões de área, como as presentes em
 mapas ou cartas topográficas, utiliza-se a unidade de :math:`\text{km}^2`. Outras
 unidades de comprimento e área podem ser encontradas em :cite:p:`comastri2`.
 
-----
-
 .. admonition:: :exem:`Exemplo 1` Converta :math:`1\,\text{km}^2` para: :math:`\text{m}^2`, ha, alqueire
-    geométrico e paulista?
+    mineiro (geométrico) e paulista?
 
     :solucao:`Solução:`
     Para :math:`\text{m}^2`: como :math:`1\,\text{km}=1\,000\,\text{m}`, então, elevando ao
@@ -92,8 +90,6 @@ unidades de comprimento e área podem ser encontradas em :cite:p:`comastri2`.
        \frac{x_{\text{alqPau}}}{10^{6}\,\text{m}^{2}} & =\frac{1\,\text{ha}}{24\,200\,\text{m}^{2}}\\
        x_{\text{alqPau}} & =\frac{1\,\text{alqueiro}\cdot10^{6}\,\text{m}^{2}}{24\,200\,\text{m}^{2}}\\
        x_{\text{alqPau}} & =41,3223\,\text{alqueiro paulista}.
-
-----
 
 .. _escala:
 
@@ -140,8 +136,6 @@ no papel, corresponde a :math:`35\,\text{m}` em campo (Como :math:`1\,\text{m}=1
 dividindo-se ambas as partes por :math:`100`, temos :math:`1\,\text{cm}=35\,\text{m}`. A escala numérica pode estar na forma de fração (p. ex., :math:`E=1/3\,500`);
 proporção (p.\,ex., :math:`E=1:3\,500`); ou equação (p.\,ex., :math:`1\,\text{cm}=35\,\text{m}`).
 
-----
-
 .. admonition:: :exem:`Exemplo 2` A distância entre dois postes
     em uma rua equivale a :math:`33,4\,\text{m}`. Quando representados em papel, estes
     postes estavam distantes :math:`3\,\text{cm}` entre si. Qual a escala do desenho?
@@ -158,8 +152,6 @@ proporção (p.\,ex., :math:`E=1:3\,500`); ou equação (p.\,ex., :math:`1\,\tex
     O resultado exato de :math:`M` é :math:`1\,113,3333333\ldots`, todavia,
     na apresentação da :math:`E`, utiliza-se, geralmente, apenas o número inteiro.
     Desta forma, :math:`E=1/1\,113`.
-
-----
 
 .. admonition:: :exem:`Exemplo 3` Em uma planta topográfica mediu-se um talhão na forma de um retângulo,
     obtendo-se como comprimentos dos lados os valores de :math:`2,3\,\text{cm}` e de
@@ -188,9 +180,6 @@ proporção (p.\,ex., :math:`E=1:3\,500`); ou equação (p.\,ex., :math:`1\,\tex
        1\text{cm}^2 & =3\,600\,\text{m}^2.
 
     Logo, a área do talhão será :math:`2,07\times3\,600=7\,452\,\text{m}^2`.
-
-----
-
 
 Escala gráfica
 --------------
@@ -227,8 +216,6 @@ Para desenhar uma escala gráfica aplicam-se as seguinte etapas:
 No Exemplo abaixo é apresentado passo a passo a construção
 de uma escala gráfica.
 
-----
-
 .. admonition:: :exem:`Exemplo 4` Um levantamento de uma propriedade
     será apresentado em papel A4, onde foi estabelecida a :math:`E=1:1\,500`,
     desenhe uma escala gráfica com :math:`6\,\text{cm}` de comprimento.
@@ -239,8 +226,6 @@ de uma escala gráfica.
        :scale: 55 %
        :alt: fig_exemp_escala_grafica.png
        :align: center
-
-----
 
 Determinação de áreas
 =====================
@@ -336,8 +321,6 @@ do valor real. A área poderá ser calculada como:
 
    Exemplo de um transecto uniforme e a aproximação a figuras de trapézios.
 
------
-
 .. admonition:: :exem:`Exemplo 5` Calcular a área do transecto mostrada na :numref:`transectrapezio`.
 
     :solucao:`Solução:`
@@ -348,7 +331,6 @@ do valor real. A área poderá ser calculada como:
        A & =20\left(\frac{0}{2}+25,8+27,4+26,1+25,6+\frac{12,5}{2}\right).\\
        & =2\,223~\mathrm{m}^2.
 
-----
 
 Considera-se agora a parte limitante do transecto não uniforme, conforme
 :numref:`transectrapezio2`. Para calcular a área com espaçamento
@@ -378,7 +360,6 @@ considerando as alturas distintas dos trapézios.
 .. math::
    A  =\frac{1}{2}\left((b_{0}+b_{1})h_{1}+(b_{1}+b_{2})h_{2}+\ldots+(b_{n-1}+b_{n})h_{n}\right).
 
-----
 
 .. admonition:: :exem:`Exemplo 6` Calcular a área do transecto mostrada na :numref:`transectrapezio2`.
 
@@ -471,8 +452,6 @@ com uma divisão e produto das coordenadas.
 
    Organização dos dados para cálculo da área por Gauss.
 
-----
-
 .. admonition:: :exem:`Exemplo 7` A partir das coordenadas retangulares, em metros, do levantamento da
     poligonal apresentada abaixo, calcular a sua área.
 
@@ -495,7 +474,6 @@ com uma divisão e produto das coordenadas.
        A & =\frac{1}{2}\left|6\,843,2 - 3\,533,5 \right|\\
        A & = 1\,654,8\,\text{m}^2
 
-----
 
 .. admonition:: Sugestão de aula prática
 
@@ -528,7 +506,7 @@ estão separadas por :math:`4,2\,\text{cm}`. Qual a escala da planta?
 bases de :math:`30\,\text{cm}` e :math:`25\,\text{cm}` e, altura de :math:`27\,\text{cm}`.
 Sabendo que a escala é de :math:`1:200`, qual a área do galpão em :math:`\,\text{m}^2`?
 
-:exem:`Resp.:`  Área de :math:`2\,970\,{m}^2`.
+:exem:`Resp.:`  Área de :math:`2\,970\,\mathrm{m}^2`.
 
 ----
 
@@ -626,5 +604,3 @@ com :math:`10\,\text{cm}` de tamanho.
 
 :exem:`11)` Desenhar uma escala gráfica de :math:`1:500`, com :math:`8\,\text{cm}` de
 tamanho.
-
-----

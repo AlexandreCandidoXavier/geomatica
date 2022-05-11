@@ -257,5 +257,3 @@ de imóveis rurais?
 :exem:`3)` Quais são os tipos de vértices que podemos
 ter no georreferenciamento de imóveis rurais? Como é realizada a sua
 codificação?
-
-----

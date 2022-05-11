@@ -145,8 +145,6 @@ se for o caso. A conversão de ângulos em graus sexagesimais para decimais
 é simples, basta somar ao valor dos graus, aos minutos e aos segundos
 transformados em graus, como apresentado no `Exemplo 1`_.
 
-----
-
 .. _exemplo 1:
 
 .. admonition:: :exem:`Exemplo 1` Converta o ângulo sexagesimal :math:`116^\circ33'54,18''` para grau decimal.
@@ -159,8 +157,6 @@ transformados em graus, como apresentado no `Exemplo 1`_.
        116^\circ33'54,18'' &=116^\circ+\left(\frac{33'}{60'}\right)^\circ+\left(\frac{54,18''}{3\,600''}\right)^\circ\\
                            &=116,5650511^\circ.
 
-----
-
 Por outro lado, para converter um ângulo na forma grau decimal para
 sexagesimal observamos, primeiramente, que a parte inteira corresponde
 aos graus. Em seguida multiplica-se por :math:`60` a parte decimal do ângulo
@@ -171,8 +167,6 @@ no `Exemplo 2`_. A transformação de ângulos decimais
 para sexagesimais e vice-versa é realizada automaticamente, pela maioria
 das calculadoras científicas, por meio da tecla :degree2sex:`° \' ”` ,
 e o auxílio da tecla :degree2sex:`shift`.
-
-----
 
 .. _exemplo 2:
 
@@ -194,8 +188,6 @@ e o auxílio da tecla :degree2sex:`shift`.
                        & =54,18''.
 
     Desta forma, temos o ângulo na forma sexagesimal, :math:`116^\circ33'54,18''`.
-
-----
 
 Radianos
 ^^^^^^^^
@@ -228,8 +220,6 @@ Portugal.
 A conversão entre unidades angulares é bastante simples. Por exemplo,
 se considerar apenas meio círculo, têm-se: :math:`\pi\text{ rad}=180^\circ=200^{\text{g}}`.
 
-----
-
 .. admonition:: :exem:`Exemplo 3` Quanto vale :math:`116^\circ33'54,18''` em radiano e grado?
 
     :solucao:`Solução:`
@@ -250,8 +240,6 @@ se considerar apenas meio círculo, têm-se: :math:`\pi\text{ rad}=180^\circ=200
        \frac{x_{\text{grado}}}{116,5650511^\circ} & =\frac{200^{\text{g}}}{180^\circ}\\
        x_{\text{grado}} & =\frac{116,5650511^\circ\cdot200^\text{g}}{180^\circ}\\
        x_{\text{grado}} & =129,5167^{\text{g}}.
-
-----
 
 Observações sobre ângulos: goniômetros; calculadora e a constante :math:`k` (Equação :eq:`definicaoangulo`)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -339,8 +327,6 @@ domínios, para maiores detalhes ver :cite:authors:`Stewart`.
 
 .. math:: \theta=\arctan\left(\frac{\text{cateto oposto}}{\text{cateto adjacente}}\right)
 
-----
-
 .. admonition:: :exem:`Exemplo 4` Para o triângulo retângulo da Figura abaixo, determinar :math:`\theta`, :math:`\alpha`, e o seno, o cosseno e a tangente destes ângulos?
 
     .. figure:: /images/capitulo1/fig_trian_retangulo_exemplo.png
@@ -362,8 +348,6 @@ domínios, para maiores detalhes ver :cite:authors:`Stewart`.
 
        \sin\theta & =0,7813; & \cos\theta & =0,6242; & \tan\theta & =1,2515\\
        \sin\alpha & =0,6242; &\, \cos\alpha & =0,7813; &\, \tan\alpha & =0,7990
-
-----
 
 .. admonition:: :exem:`Exemplo 5` Com o objetivo de se estimar o raio da terra :math:`(R)`, um topógrafo subiu em uma montanha de
     :math:`5` km de altura, tendo vista para o oceano. Com o auxílio dos seus equipamentos, mediu-se o ângulo formado entre
@@ -388,8 +372,6 @@ domínios, para maiores detalhes ver :cite:authors:`Stewart`.
        R-R\sin87,74 & =5\cdot\sin87,74\\
        R & =\frac{5\cdot\sin87,74}{1-\sin87,74}\\
        R & =6\,423,1\mathrm{\,km.}
-
-----
 
 Para as definições das funções trigonométricas em função apenas de um ângulo qualquer, utiliza-se a figura de um círculo
 unitário no plano cartesiano, ou seja, de raio 1 conforme :numref:`figcirculounitario`. Os valores de :math:`\cos\theta`
@@ -425,8 +407,6 @@ apresentado no Exemplo 6.
 .. math:: \frac{a}{\sin\widehat{A}}=\frac{b}{\sin\widehat{B}}=\frac{c}{\sin\widehat{C}}.
    :label: figleidossenoscosenos
 
-----
-
 .. admonition:: :exem:`Exemplo 6` Considere o esquema apresentado na Figura a seguir. Um levantamento topográfico foi realizado do lado
     esquerdo do rio, e não se tem acesso ao lado direito, onde encontra-se o ponto P. Todavia deseja-se obter a distância AP.
     Para tanto, mediu-se: com uma trena, a distância de A ao ponto B, resultando em :math:`50` m; por meio de um teodolito
@@ -457,8 +437,6 @@ apresentado no Exemplo 6.
        \frac{50\,\text{m}}{\sin66^\circ22'} & =\frac{AP}{\sin75^\circ47'}\\
        \text{AP} & =\frac{50\,\text{m}\cdot\sin75^\circ47'}{\sin66^\circ22'}\\
        \text{AP} & =52,906\,\text{m}.
-
-----
 
 **Lei dos cossenos**
 
@@ -496,8 +474,6 @@ como será apresentado no Exemplo 7.
     Uma vez que conhecemos dois ângulos internos do triângulo,
     então :math:`\widehat{C}=180-(\widehat{A}+\widehat{B})=44,4610^\circ`.
 
-----
-
 .. _Coordenada retangular e polar no plano:
 
 Coordenada retangular e polar no plano
@@ -509,7 +485,7 @@ de eixo-:math:`x` e eixo-:math:`y`. A posição de pontos neste sistema dar-se-�
 por meio de coordenadas retangulares ou polares.
 
 Coordenada retangular
-^^^^^^^^^^^^^^^^^^^^^
+---------------------
 
 A coordenada retangular de um ponto é dada por sua posição horizontal
 e vertical, coordenada :math:`x` e coordenada :math:`y`, respectivamente. Exemplo
@@ -548,8 +524,6 @@ Pelo teorema de Pitágoras, :math:`d_{\mathrm{12}}`:
    d_{\mathrm{12}} & =\sqrt{\left(x_{2}-x_{1}\right)^{2}+\left(y_{2}-y_{1}\right)^{2}}
    :label: distanciaeuclidiana
 
-----
-
 .. admonition:: :exem:`Exemplo 8` Qual a distância entre os pontos A e C apresentados na :numref:`figcoordretangular`?
     Considere que a unidade é o metro.
 
@@ -563,12 +537,10 @@ Pelo teorema de Pitágoras, :math:`d_{\mathrm{12}}`:
        & =\sqrt{\left(4,5+4,9\right)^{2}+\left(2,1+3,2\right)^{2}}\\
        & =10,791\,\text{m}.
 
-----
-
 .. _Coordenada polar:
 
 Coordenada polar
-^^^^^^^^^^^^^^^^
+----------------
 
 A coordenada polar de um ponto é dada pelo seu raio :math:`(r)`, distância entre a origem
 do sistema cartesiano ao ponto, e seu ângulo :math:`(\theta)`, medido a
@@ -591,9 +563,8 @@ medido a partir do eixo-:math:`y` positivo, e o sentido de contagem angular
 
    Coordenadas polares para os pontos A e C da :numref:`figcoordretangular`.
 
-
 Coordenada polar para retangular
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------------
 
 A transformação de coordenada polar para retangular pode ser deduzida
 a partir da :numref:`figPolar2Retangular`. Considere
@@ -630,8 +601,6 @@ quadrante.
    y_{\text{P}} =r_{\text{P}}\sin\theta_{\text{P}}
    :label: eqcoordenaday
 
-----
-
 .. admonition:: :exem:`Exemplo 9` Considere a coordenada polar do ponto C da :numref:`figCoordPolar`.
     Qual a sua coordenada retangular? A unidade de comprimento é o metro.
 
@@ -648,7 +617,7 @@ quadrante.
 .. _Coordenadaretangular2polar:
 
 Coordenada retangular para polar
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------------
 
 Agora será apresentada a transformação de coordenada retangular para
 polar. Para tanto utilizaremos mais uma vez o esquema da :numref:`figPolar2Retangular`.
@@ -675,8 +644,6 @@ Se :math:`x_{\mathrm{P}}` não for nulo:
    \tan\theta_{\text{P}} & =\frac{y_{\text{P}}}{x_{\text{P}}}\\
    \theta_{\text{P}} & =\arctan\left(\frac{y_{\text{P}}}{x_{\text{P}}}\right)
    :label: coordenadateta
-
-----
 
 .. admonition:: :exem:`Exemplo 10` Considere a coordenada retangular do ponto D da :numref:`figcoordretangular`.
     Qual a sua coordenada polar? Considere que a unidade seja de metro.
@@ -706,8 +673,6 @@ Se :math:`x_{\mathrm{P}}` não for nulo:
 
     Desta forma, a coordenada polar de D é :math:`(345,1414^\circ;\,5,07\,\mathrm{m})`.
 
-----
-
 .. _secAreasdefiguras:
 
 Áreas de figuras elementares no plano
@@ -721,8 +686,6 @@ pelo produto dos seus lados:
 .. math::
    A=ab.
 
-----
-
 .. admonition:: :exem:`Exemplo 11`  Qual a área de um sala retangular, onde os lados medem :math:`5,3` m e :math:`7,9` m.
 
     :solucao:`Solução:`
@@ -732,8 +695,6 @@ pelo produto dos seus lados:
        A & =ab \\
        & =5,3\cdot7,9 \\
        & =41,87\,\text{m}^{2}.
-
-----
 
 **Área de triângulo**
 
@@ -750,8 +711,6 @@ lados e/ou ângulos internos. Considere o triângulo da Figura ao lado. Caso sej
 .. math::
    A=\frac{bh}{2}.
 
-----
-
 .. admonition:: :exem:`Exemplo 12` Qual aárea de triângulo onde a base mede :math:`15,9` m e a altura :math:`9` m.
 
     :solucao:`Solução:`
@@ -761,14 +720,10 @@ lados e/ou ângulos internos. Considere o triângulo da Figura ao lado. Caso sej
        & =\frac{15,9\cdot9}{2} \\
        & =71,55\,\text{m}^{2}
 
-----
-
 - dois lados, :math:`a` e :math:`b`, e o ângulo formado entre eles, :math:`\alpha`, a área será:
 
 .. math::
    A=\frac{1}{2}ab\sin\alpha;
-
-----
 
 .. admonition:: :exem:`Exemplo 13` Qual a área de triângulo em que dois lados medem :math:`3,1\,\text{m}` e
     :math:`6,8\,\text{m}`, e o ângulo entre eles é de :math:`34^\circ`.
@@ -780,8 +735,6 @@ lados e/ou ângulos internos. Considere o triângulo da Figura ao lado. Caso sej
        &=\frac{1}{2}3,1\cdot6,8\sin34^\circ \\
        &=5,89\,\text{m}^2.
 
------
-
 - os comprimentos dos três lados do triângulo, :math:`a,\,b,\,\mathrm{e}\:c`, usa-se a fórmula de Heron, também conhecida como a fórmula do semiperímetro, em que a área é:
 
 .. math::
@@ -792,8 +745,6 @@ em que :math:`p` é semiperímetro:
 
 .. math::
    p=\frac{a+b+c}{2}.
-
-----
 
 .. admonition:: :exem:`Exemplo 14` Qual a área de um triângulo de lados medem :math:`10,3` m, :math:`5,4` m e :math:`6,0` m.
 
@@ -812,8 +763,6 @@ em que :math:`p` é semiperímetro:
        &=\sqrt{10,85\left(10,85-10,3\right)\left(10,85-5,4\right)\left(10,85-6\right)}\\
        &=12,56\,\text{m}^{2}.
 
-----
-
 **Área de trapézio**
 
 Chamam-se de bases de um trapézio os seus lados paralelos e, sua altura,
@@ -828,8 +777,6 @@ a distância que separa estes dois lados. A área de um trapézio é calculada p
 .. math::
    A=\frac{1}{2}(b_{1}+b_{2})h.
 
-----
-
 .. admonition:: :exem:`Exemplo 15` Uma praça pública tem a forma de um trapézio, sendo medidos os lados paralelos
     de :math:`50,7` m e :math:`80,4` m e a distância entre eles de :math:`12` m, calcular á área
     da praça.
@@ -840,8 +787,6 @@ a distância que separa estes dois lados. A área de um trapézio é calculada p
        A & =\frac{1}{2}(b_{1}+b_{2})h \\
        &=\frac{1}{2}(50,7+80,4)12 \\
        &=786,6\,\text{m}^{2}.
-
-----
 
 **Área de um círculo**
 
@@ -856,8 +801,6 @@ Caso seja conhecido o diâmetro :math:`(D)`:
 .. math::
    A=\frac{\pi}{4}D^{2}.
 
-----
-
 .. admonition:: :exem:`Exemplo 16`  Uma caixa de água tem diâmetro de :math:`1,2` m. Qual a área de superfície que ela ocupa.
 
     :solucao:`Solução:`
@@ -867,8 +810,6 @@ Caso seja conhecido o diâmetro :math:`(D)`:
        A & =\frac{\pi}{4}D^{2} \\
        &=\frac{\pi}{4}1,2^{2} \\
        &=1,13 \,\text{m}^{2}.
-
-----
 
 **Área de um setor de círculo**
 
@@ -888,8 +829,6 @@ Caso o diâmetro :math:`(D)` seja conhecido:
 .. math::
    A=\left(\frac{\alpha}{360^\circ}\right)\frac{\pi}{4}D^{2}.
 
-----
-
 .. admonition:: :exem:`Exemplo 17` Calcule a área de um setor de :math:`5^\circ` de uma circunferência de :math:`R` igual
     a :math:`3` m.
 
@@ -899,8 +838,6 @@ Caso o diâmetro :math:`(D)` seja conhecido:
        A & =\left(\frac{\alpha}{360^\circ}\right)\pi R^{2} \\
        &=\left(\frac{5^\circ}{360^\circ}\right)\pi3^{2}  \\
        &=0,393\,\text{m}^2.
-
-----
 
 .. admonition:: Sugestão de aula prática
 
@@ -939,7 +876,7 @@ destes ângulos.
 
 ----
 
-:exem:`3)` Expressar :math:`2,32` rad e :math:`1,25` rad em graus decimais.
+:exem:`3)` Expressar :math:`2,32\,\mathrm{rad}` e :math:`1,25\,\mathrm{rad}` em graus decimais.
 
 :exem:`Resp.:` :math:`132,926^\circ`; :math:`71,619^\circ`.
 

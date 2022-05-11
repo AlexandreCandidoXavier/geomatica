@@ -294,8 +294,6 @@ em que: :math:`t` é a temperatura de trabalho :math:`(^\circ\text{C})`;
 :math:`t_{0}` é a temperatura na qual a trena foi aferida :math:`(^\circ\text{C})`;
 e :math:`\alpha` é o coeficiente de dilatação da trena :math:`(^\circ\mathrm{C}^{-1})`.
 
-----
-
 .. admonition:: :exem:`Exemplo 1` Considere uma trena que
     foi aferida para trabalho na temperatura de :math:`20^{\circ}\mathrm{C}`.
     Ela apresenta coeficiente de dilatação de :math:`0,0000116^{\circ}\mathrm{C}^{-1}`.
@@ -306,7 +304,10 @@ e :math:`\alpha` é o coeficiente de dilatação da trena :math:`(^\circ\mathrm{
     :solucao:`Solução:`
     De acordo com a Equação :eq:`eq:trenatemperatura`, temos:
 
-    :math:`C_{t}=S(t-t_{0})\alpha=54,3(40^{\circ}-20^{\circ})0,0000116=0,013\,\mathrm{m}`
+    .. math::
+       C_{t}&=S(t-t_{0})\alpha \\
+       &=54,3(40^{\circ}-20^{\circ})0,0000116\\
+       &=0,013\,\mathrm{m}
 
     Logo, aplicando a correção, :math:`54,3\,\mathrm{m}+0,013\,\mathrm{m}=54,313\,\mathrm{m}`.
 
@@ -334,21 +335,24 @@ de elasticidade por tração, normalmente :math:`20\,000\,\mathrm{kg mm}^{-2}`.
 A tensão pode ser medida por meio de um tensiômetro.
 
 .. admonition:: :exem:`Exemplo 2`  Considere uma trena que foi
-    aferida para trabalho na tensão de :math:`10` kg. Todavia, quando no campo
-    aplicou-se uma tensão de :math:`5` kg. Se foi medido em campo :math:`54,3` m nesta
-    condição, calcular a distância com a correção devido à tensão ser
-    distinta do padrão da trena. Considere a área da seção da trena
-    :math:`q=0,4\,\mathrm{mm}\cdot12\,\mathrm{mm=4,8\,\mathrm{mm^{2}}}`.
+   aferida para trabalho na tensão de :math:`10` kg. Todavia, quando no campo
+   aplicou-se uma tensão de :math:`5` kg. Se foi medido em campo :math:`54,3` m nesta
+   condição, calcular a distância com a correção devido à tensão ser
+   distinta do padrão da trena. Considere a área da seção da trena
+   :math:`q=0,4\,\mathrm{mm}\cdot12\,\mathrm{mm=4,8\,\mathrm{mm^{2}}}`.
 
-    :solucao:`Solução:`
-    De acordo com a Equação :eq:`eq:trenatensao` e considerando :math:`E=20.000\,\mathrm{kg\,mm^{-2}}`
-    temos:
+   :solucao:`Solução:`
+   De acordo com a Equação :eq:`eq:trenatensao` e considerando :math:`E=20.000\,\mathrm{kg\,mm^{-2}}`
+   temos:
 
-    :math:`\displaystyle C_{T}=S\frac{(T-T_{0})}{qE},=54,3\frac{(5-10)}{4,8\cdot20\,000}=-0,003\,\mathrm{m}`
+   .. math::
+      C_{T}&=S\frac{(T-T_{0})}{qE} \\
+      &=54,3\frac{(5-10)}{4,8\cdot20\,000}\\
+      &=-0,003\,\mathrm{m}
 
-    Logo, aplicando a correção para o erro de tensão, :math:`54,3\,\mathrm{m}-0,003\,\mathrm{m}=54,297\,\mathrm{m}`.
+   Logo, aplicando a correção para o erro de tensão, :math:`54,3\,\mathrm{m}-0,003\,\mathrm{m}=54,297\,\mathrm{m}`.
 
-----
+
 
 Erro devido à catenária
 
@@ -377,25 +381,30 @@ está suspensa, é sempre menor do que a real.
 
    Demonstração do erro devido à catenária.
 
-.. admonition:: :exem:`Exemplo 3` A distância de :math:`54,3` m foi
-    medida em duas trenadas, uma de 30 m e outra de :math:`24,3` m. Considerando
-    o peso da trena de :math:`0,03967` kg/m, qual o erro devido à catenária e
+.. admonition:: :exem:`Exemplo 3` A distância de :math:`54,3\,\mathrm{m}` foi
+    medida em duas trenadas, uma de :math:`30\,\mathrm{m}` e outra de :math:`24,3\mathrm{m}`. Considerando
+    o peso da trena de :math:`0,03967\,\mathrm{kg\,m^{-1}}`, qual o erro devido à catenária e
     qual seria a medida real quando este erro for compensando?
 
     :solucao:`Solução:`
     De acordo com a Equação :eq:`eq:catenaria`, para a primeira trenada,
-    :math:`S=30` m:
+    :math:`S=30\,\mathrm{m}`:
 
-    :math:`\displaystyle C_{C}=-\frac{P^{2}S^{3}}{24T^{2}}=-\frac{0,03967^{2}\cdot30^{3}}{24\cdot5^{2}}=-0,071\,\mathrm{m}`,
+    .. math::
+       C_{C}&=-\frac{P^{2}S^{3}}{24T^{2}}\\
+       &=-\frac{0,03967^{2}\cdot30^{3}}{24\cdot5^{2}}\\
+       &=-0,071\,\mathrm{m},
 
     Para os :math:`24,3\,\text{m}` finais:
 
-    :math:`\displaystyle C_{C}=-\frac{P^{2}S^{3}}{24T^{2}}=-\frac{0,03967^{2}\cdot24,3^{3}}{24\cdot5^{2}}=-0,038\,\mathrm{m}`,
+    .. math::
+       C_{C}&=-\frac{P^{2}S^{3}}{24T^{2}}\\
+       &=-\frac{0,03967^{2}\cdot24,3^{3}}{24\cdot5^{2}}\\
+       &=-0,038\,\mathrm{m},
 
     Logo, o erro total é :math:`-0,109\,\text{m}` :math:`(-0,071+-0,038)`. A medida correta
     da trena considerando e erro da catenária é :math:`54,3-0,109=54,191\,\text{m}`.
 
-----
 
 Correção do efeito combinado da temperatura, tensão e catenária
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -415,8 +424,6 @@ corrigido (m); :math:`S` é o comprimento do alinhamento medido com a trena
 a compensação devido à tensão (m); e :math:`C_{C}` é a compensação devido
 à catenária (m).
 
-----
-
 .. admonition:: :exem:`Exemplo 4` Considerando os erros encontrados
     na medição devido à temperatura, à tensão e à catenária dos Exemplos
     1, 2 e 3, respectivamente, qual seria o comprimento real, quando o nominal foi
@@ -425,9 +432,10 @@ a compensação devido à tensão (m); e :math:`C_{C}` é a compensação devido
     :solucao:`Solução:`
     De acordo com a Equação :eq:`eq:TrenaErroTotal`:
 
-    :math:`S_{\mathrm{corrigido}}=S+C_{t}+C_{T}+C_{C}=54,3+0,013+-0,003+-0,109=54,201\,\text{m}`.
-
-----
+    .. math::
+       S_{\mathrm{corrigido}}&=S+C_{t}+C_{T}+C_{C}\\
+       &=54,3+0,013+-0,003+-0,109\\
+       &=54,201\,\text{m}.
 
 Procedimento em campo para medidas à trena
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -575,8 +583,6 @@ mesmas, :math:`h`, logo:
    2\mathit{rm}=\mathit{rs}+\mathit{ri}.
    :label: eq:taqueometria_reticulos
 
-----
-
 .. admonition:: :exem:`Exemplo 5` Utilizando um teodolito estacionado no ponto A,
     de altitude de :math:`456,785\,\text{m}`  e :math:`ai=1,65\,\text{m}`, fez-se uma visada ao ponto
     B, anotando as seguintes medidas: :math:`z=84^{\circ}12'00''`;
@@ -586,11 +592,15 @@ mesmas, :math:`h`, logo:
     :solucao:`Solução:`
     Da Equação :eq:`eq:taqueometria_DH`:
 
-    :math:`\mathrm{DH_{AB}=100(2,564-0,900)\sin^{2}84^{\circ}12'00'=164,701}\,\text{m}`.
+    .. math::
+       \mathrm{DH_{AB}}&=100(2,564-0,900)\sin^{2}84^\circ 12'00'\\
+       &=164,701\,\text{m}.
 
     Da equação :eq:`eq:taqueometria_DN`:
 
-    :math:`{\displaystyle {\displaystyle \mathrm{DN_{AB}}=\frac{100(2,564-0,900)\sin2\cdot84^{\circ}12'00''}{2}+1,65-1,732=16,648}\,\text{m}}`.
+    .. math::
+       \mathrm{DN_{AB}}&=\frac{100(2,564-0,900)\sin(2\cdot84^{\circ}12'00'')}{2}+1,65-1,732\\
+       &=16,648\,\text{m}.
 
     Logo a altitude de B será de :math:`473,433\,\text{m}` :math:`(456,785+16,648)`.
 
@@ -649,11 +659,10 @@ comuns: :math:`\mathrm{k}=10^{3}` (kHz, quilo-hertz); :math:`\mathrm{M}=10^{6}`
     Das Equações :eq:`eq:velocidadeluzvacuo` e :eq:`eq:velocidadedaluzatmosfera`:
 
     .. math::
-       \lambda&=\frac{V}{f}=\frac{c}{\eta\cdot f} \\
+       \lambda&=\frac{V}{f}\\
+       \lambda&=\frac{c}{\eta\cdot f} \\
        \lambda&=\frac{299\,792\,458}{1,0003\cdot149,84\cdot10^{3}}\\
        \lambda&=2\,000,2\,\text{m}
-
-----
 
 Princípio de funcionamento do MED
 ---------------------------------
@@ -803,8 +812,8 @@ o ponto A, posição da estação. Caso contrário, DN negativa, o ponto
 A é o mais elevado. Logicamente, se a altitude de A for igual a de
 B, eles estão em uma mesma elevação, desta forma, a DN entre A e B
 é zero. Considerações a respeito da influência da curvatura da terra
-e do efeito da refração serão tratados no :any:`RST Capitulo9`,
-seção \ref{sec:Erro-de-esfericidade}.
+e do efeito da refração serão tratados no :any:`RST Capitulo 9`,
+seção :any:`Erro de esfericidade e refração`.
 
 .. admonition:: :exem:`Exemplo 8`  De uma estação total estacionada no ponto 30, fez
     uma visada no ponto 31, onde se encontrava o prisma. Sendo a :math:`ai=1,60\,\mathrm{m}`,
@@ -949,4 +958,4 @@ Q e R.
 .. rubric:: Footnotes
 
 .. [1] Segundo a :cite:t:`NBR13133` a dimensão máxima de um levantamento topográfico está limitado a 80 km.
-.. [2] Abreviação de polegada é *in* onde, :math:`1\,\mathrm{in}=0,0254\,\mathrm{m}=2,54\,\mathrm{cm}`.
+.. [2] Abreviação de polegada é **in** onde, :math:`1\,\mathrm{in}=0,0254\,\mathrm{m}=2,54\,\mathrm{cm}`.

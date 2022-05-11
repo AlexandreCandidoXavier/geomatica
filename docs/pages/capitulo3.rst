@@ -113,7 +113,8 @@ trabalhando em pequenas escalas, pode-se considerar a terra um esferoide
 :math:`a=b` ou :math:`f=0`.
 
 .. math::
-   f=\frac{a-b}{a}=1-\frac{b}{a}
+   f&=\frac{a-b}{a}\\
+   f=1-\frac{b}{a}
    :label: eq:achatamento
 
 .. _figelipsoide:
@@ -137,7 +138,7 @@ trabalhando em pequenas escalas, pode-se considerar a terra um esferoide
 
     .. math::
        f & =1-\frac{b}{a}\\
-       & =1-\frac{6.356.752,31424}{6.378.137,0}\\
+       & =1-\frac{6\,356\,752,31424}{6\,378\,137,0}\\
        & =0,003\,3528\,106\,647\\
        & =\frac{1}{298,257\,223\,563}.
 
@@ -170,12 +171,12 @@ de elipsoides e o local em que ele é ou foi utilizado
     ======================================= ======================= ========================= ========================
     Elipsóide                               :math:`a` (m)           :math:`f^{-1}`            Local de utilização
     ======================================= ======================= ========================= ========================
-    Everest 1830                            :math:`6.377.276,345`   :math:`300,8017`          Índia, Pakistão
-    Hayford 1924                            :math:`6.378.388`       :math:`297`               Europa e Brasil
-    Krassovskiy 1942                        :math:`6.378.245`       :math:`298,3`             USSR
-    Elip. Inter. de 1967                    :math:`6.378.160`       :math:`298,25`            América do Sul
-    *Geodetic Reference System* (GRS 1980)  :math:`6.378.137`       :math:`298,257\,222\,101` Mundial
-    *World Geodetic System*       (WGS84)   :math:`6.378.137`       :math:`298,257\,223\,563` Mundial
+    Everest 1830                            :math:`6\,377\,276,345` :math:`300,8017`          Índia, Pakistão
+    Hayford 1924                            :math:`6\,378\,388`     :math:`297`               Europa e Brasil
+    Krassovskiy 1942                        :math:`6\,378\,245`     :math:`298,3`             USSR
+    Elip. Inter. de 1967                    :math:`6\,378\,160`     :math:`298,25`            América do Sul
+    *Geodetic Reference System* (GRS 1980)  :math:`6\,378\,137`     :math:`298,257\,222\,101` Mundial
+    *World Geodetic System*       (WGS84)   :math:`6\,378\,137`     :math:`298,257\,223\,563` Mundial
     ======================================= ======================= ========================= ========================
 
 .. _Coordenada geodésica:
@@ -274,7 +275,7 @@ dado por:
     e altitude geodésica de um ponto :math:`P` valem: :math:`\phi=-22^\circ13'21,1337''`,
     :math:`\lambda=-41^\circ47'29,8921''` e
     :math:`h=272,32\,\mathrm{m}`. Considerando elipsóide WGS84, tendo como
-    raios dos semieixos: :math:`a=6.378.137,0\,\text{m}` e :math:`b=6.356.752,3\,\text{m}`,
+    raios dos semieixos: :math:`a=6\,378\,137,0\,\text{m}` e :math:`b=6\,356\,752,3\,\text{m}`,
     calcule as coordenadas retangulares.
 
     :solucao:`Solução:`
@@ -282,22 +283,20 @@ dado por:
     a :eq:`eq_grande_normal`, tem-se:
 
     .. math::
-       N & =\frac{6.378.137^2}{\sqrt{6.378.137^2\cos^2\left(-22^\circ13'21,1337''\right)+6.356.752,3^2\sin^2\left(-22^\circ13'21,1337''\right)}}\\
-       N & =6.381.192,9127\,\text{m}
+       N & =\frac{6\,378\,137^2}{\sqrt{6\,378\,137^2\cos^2\left(-22^\circ13'21,1337''\right)+6\,356\,752,3^2\sin^2\left(-22^\circ13'21,1337''\right)}}\\
+       N & =6\,381\,192,9127\,\text{m}
 
     .. math::
-       x & =(6.381.192,9127+272,32\cos\left(-22^\circ13'21,1337''\right)\cos\left(-41^\circ47'29,8921''\right)\\
-       x & =4.404.445,8857\,\text{m}
+       x & =(6\,381\,192,9127+272,32\cos\left(-22^\circ13'21,1337''\right)\cos\left(-41^\circ47'29,8921''\right)\\
+       x & =4\,404\,445,8857\,\text{m}
 
     .. math::
-       y & =(6.381.192,9127+272,32)\cos\left(-22^\circ13'21,1337''\right)\sin\left(-41^\circ47'29,8921''\right)\\
-       y & =-3.936.872,4167\,\text{m}
+       y & =(6\,381\,192,9127+272,32)\cos\left(-22^\circ13'21,1337''\right)\sin\left(-41^\circ47'29,8921''\right)\\
+       y & =-3\,936\,872,4167\,\text{m}
 
     .. math::
-       z & =\left(\frac{6.356.752,3^2}{6.378.137^2}6.381.192,9127+272,32\right)\sin(-22^\circ13'21,1337'')\\
-       z & =2.397.345,4965\,\text{m}.
-
-----
+       z & =\left(\frac{6\,356\,752,3^2}{6\,378\,137^2}6\,381\,192,9127+272,32\right)\sin(-22^\circ13'21,1337'')\\
+       z & =2\,397\,345,4965\,\text{m}.
 
 Para a solução inversa, a partir das coordenadas geodésicas retangulares,
 calcular as coordenadas geodésicas :math:`\left(\phi,\,\lambda,\,h\right)`,
@@ -342,22 +341,30 @@ Os termos :math:`e^{2}\text{ e }e'^{2}` são denominados, respectivamente
 de primeira e segunda excentricidade. O valor de :math:`p` corresponde
 ao raio no paralelo analisado.
 
-----
-
 .. admonition:: :exem:`Exemplo 3` A partir das coordenadas
     retangulares do Exemplo 2, referentes
     ao sistema WGS84, encontrar as coordenadas geodésicas :math:`\phi,\text{ }\lambda\text{ e }h`.
 
-    :solucao:`Solução:` Sabendo-se que :math:`a=6.378.137,0\,\text{m}` e :math:`b=6.356.752,3\,\text{m}`
-    e substituindo :math:`{x=4.404.445,8857\text{ m}}`, :math:`{y=-3.936.872,4167\,\text{m}}`
-    e :math:`{z=-2.397.345,4965\,\text{m}}` nas Equações :eq:`eq:ecentricidade_primeira`
+    :solucao:`Solução:` Sabendo-se que :math:`a=6\,378\,137,0\,\text{m}` e :math:`b=6\,356\,752,3\,\text{m}`
+    e substituindo :math:`{x=4\,404\,445,8857\text{ m}}`, :math:`{y=-3\,936\,872,4167\,\text{m}}`
+    e :math:`{z=-2\,397\,345,4965\,\text{m}}` nas Equações :eq:`eq:ecentricidade_primeira`
     a :eq:`eq:cart_to_geo_aux` para o cálculo das variáveis auxiliares:
 
     .. math::
-       e^{2} & ={\displaystyle \frac{6.378.137^2-6.356.752,3^2}{6.378.137^2}=0,006\,694\,384\,442}\\
-       e'^{2} & ={\displaystyle \frac{6.378.137,0^2-6.356.752,3^2}{6.356.752,3^2}=0,006\,739\,501\,254}\\
-       p & =\sqrt{4.404.445,8857^2+-3.936.872,4167^2}=5.907.462,05962\\
-       \theta & ={\displaystyle \arctan\frac{-2.397.345,4965\cdot6.378.137,0}{5.907.462,059620\cdot6.356.752,3}=-22^{\circ}9'18,9119''}
+       e^{2} & =\frac{6\,378\,137^2-6\,356\,752,3^2}{6\,378\,137^2}\\
+       e^{2} &=0,006\,694\,384\,442.
+
+    .. math::
+       e'^{2} & =\frac{6\,378\,137,0^2-6\,356\,752,3^2}{6\,356\,752,3^2}\\
+       e'^{2} &=0,006\,739\,501\,254.
+
+    .. math::
+       p & =\sqrt{4\,404\,445,8857^2+-3\,936\,872,4167^2}\\
+       p &=5\,907\,462,05962.
+
+    .. math::
+       \theta & =\arctan\frac{-2\,397\,345,4965\cdot6\,378\,137,0}{5\,907\,462,059620\cdot6\,356\,752,3}\\
+       \theta &=-22^{\circ}9'18,9119''.
 
 
     Agora, aplicando as Equações :eq:`eq:cart_to_geo_lat`
@@ -365,10 +372,10 @@ ao raio no paralelo analisado.
     no Exemplo 2 tem-se:
 
     .. math::
-       \phi & ={\displaystyle \arctan\frac{-2.397.345,4965+0,006\,739\,501\,254\cdot6.356.752,3\sin^3\left(-22^\circ9'18,9119''\right)}{5.907.462,059620-0,006\,694\,384\,442\cdot6.378.137\cos^3\left(-22^\circ9'18,9119''\right)}}\\
+       \phi & ={\displaystyle \arctan\frac{-2\,397\,345,4965+0,006\,739\,501\,254\cdot6\,356\,752,3\sin^3\left(-22^\circ9'18,9119''\right)}{5\,907\,462,059620-0,006\,694\,384\,442\cdot6\,378\,137\cos^3\left(-22^\circ9'18,9119''\right)}}\\
        \phi & =-22^\circ13'21,1337''\\
-       \lambda & ={\displaystyle \arctan\frac{-3.936.872,4167}{4.404.445,8857}}=-41^\circ47'29,8921''\\
-       h & ={\displaystyle \frac{5.907.462,05962}{\cos\left(-22^\circ13'21,1337''\right)}-6.381.192,9127=272,32\text{ m }}
+       \lambda & ={\displaystyle \arctan\frac{-3\,936\,872,4167}{4\,404\,445,8857}}=-41^\circ47'29,8921''\\
+       h & ={\displaystyle \frac{5\,907\,462,05962}{\cos\left(-22^\circ13'21,1337''\right)}-6\,381\,192,9127=272,32\text{ m }}
 
     Como era esperado, o resultado é o mesmo de :math:`\phi`, :math:`\lambda`
     e :math:`h` do Exemplo 2.
@@ -1026,7 +1033,7 @@ deve ser transformado para ângulos em radianos, ou seja, :math:`A=\frac{\pi}{18
     temos:
 
     .. math::
-       N & =\frac{6\,378\,137^2}{\sqrt{6.378.137^2\cos^2\left(-21^\circ\right)+6.356.752,3^2\sin^2\left(-21^\circ\right)}}=6.380.880,55\text{ m}\\
+       N & =\frac{6\,378\,137^2}{\sqrt{6\,378\,137^2\cos^2\left(-21^\circ\right)+6\,356\,752,3^2\sin^2\left(-21^\circ\right)}}=6\,380\,880,55\text{ m}\\
        T & =\tan^2(-21^\circ)=0,147\,351\,597\,390\\
        C & =0,006\,739\,501\cos^2(-21^\circ)=0,005\,873\,963\,368\\
        A & =\frac{\pi}{180^\circ}(-41^\circ--29^\circ)\cos(-21^\circ)=-0,0325\,881\,045\,490
@@ -1038,28 +1045,28 @@ deve ser transformado para ângulos em radianos, ou seja, :math:`A=\frac{\pi}{18
        & -(3\cdot0,081\,819^2/8+3\cdot0,081\,819^4/32+45\cdot0,081\,819^6/1024)\cdot\sin(2\cdot-21^\circ)\\
        & +(15\cdot0,081\,819/256+45\cdot0,081\,819/1024)\cdot\sin(4\cdot-21^\circ)\\
        & -(35\cdot0,081\,819^6/3072)\cdot\sin(6\cdot-21^\circ))\\
-       M= & -2.323.076,859\,370\,594\,\text{m}
+       M= & -2\,323\,076,859\,370\,594\,\text{m}
 
 
     Aplicando os resultados nas Equações :eq:`eq:utmx`
     e :eq:`eq:utmy`:
 
     .. math::
-       x= & 0,999\,6\cdot6.380.880,55(-0,032\,588\,104\,549+(1-0,147\,351\,597\,390+0,005\,873\,963\,368)\\
+       x= & 0,999\,6\cdot6\,380\,880,55(-0,032\,588\,104\,549+(1-0,147\,351\,597\,390+0,005\,873\,963\,368)\\
        & -0,032\,588\,104\,549^3/6+(5-18\cdot 0,147\,351\,597\,390+0,147\,351\,597\,390^2+72\cdot0,005873963368\\
        & -58\cdot0,006\,739\,501)-0,032\,588\,104\,549^5/120\\
        & -(35\cdot0,081819^6/3072)\cdot\sin(6\cdot-21^\circ))\\
-       x= & -\text{207.889,216 m }\\
-       y= & 0,999\,6(-2.323.076,859\,370\,594+6.380.880,55\tan\phi\text(-0,0325\,881\,045\,490^2/2+\\
+       x= & -\text{207\,889,216 m }\\
+       y= & 0,999\,6(-2\,323\,076,859\,370\,594+6\,380\,880,55\tan\phi\text(-0,0325\,881\,045\,490^2/2+\\
        & (5-0,14735159739+9\cdot0,005\,873\,963\,368+4\cdot0,005\,873\,963\,368^2)-0,0325\,881\,045\,490^4/24\\
        & +(61-58\cdot0,147\,351\,597\,390+0,147\,351\,597\,390^2+600\cdot0,005\,873\,963\,368-330\cdot0,006\,694\,384\,442)\\
        & -0,032\,588\,104\,549^6/720))\\
-       y= & -2.323.448,280\text{ m}
+       y= & -2\,323\,448,280\text{ m}
 
-    Para obtermos a coordenada Este, tem que se somar :math:`500.000\,\text{m}`
-    m à :math:`x` e, para a coordenada Norte, somar :math:`10.000.000\,\text{m}` à :math:`y`.
-    Desta forma, a coordenada do ponto é: :math:`\text{E}=292.110,784\,\text{m}` e
-    :math:`\text{N}=7.676.551,720\,\text{m}`.
+    Para obtermos a coordenada Este, tem que se somar :math:`500\,000\,\text{m}`
+    m à :math:`x` e, para a coordenada Norte, somar :math:`10\,000\,000\,\text{m}` à :math:`y`.
+    Desta forma, a coordenada do ponto é: :math:`\text{E}=292\,110,784\,\text{m}` e
+    :math:`\text{N}=7\,676\,551,720\,\text{m}`.
 
 ----
 

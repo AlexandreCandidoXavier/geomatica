@@ -292,8 +292,8 @@ realizando visadas horizontais.
 Vamos considerar que o equipamento que será utilizado é uma estação total com o prisma.
 O técnico na estação fará visadas horizontais, ou seja, o ângulo zenital :math:`(z)`
 deverá sempre marcar :math:`90^\circ`. Suponha que a estação esteja em um ponto de
-cota :math:`100\,\text{m}`, com a altura do instrumento (*ai*) de :math:`1,7\,\text{m}`
-(medida com uma trena) então, a altura do instrumento (*AI*) seria de
+cota :math:`100\,\text{m}`, com a altura do instrumento :math:`(ai)` de :math:`1,7\,\text{m}`
+(medida com uma trena) então, a altura do instrumento :math:`(AI)` seria de
 :math:`101,7\,\text{m}`. Para se obter pontos onde passa a curva de nível de
 :math:`100\,\text{m}`, por exemplo, deve-se fixar a altura do prisma em
 :math:`1,7\,\text{m}`. Desta forma, toda vez que, da estação, o centro do prisma
@@ -313,7 +313,7 @@ Outros métodos para locação de curvas de nível em campo podem ser encontrada
 em :cite:`godoy`.
 
 Sistematização e cálculo de volume
-----------------------------------
+==================================
 
 Um dos serviços importantes de técnicos em topografia é o de sistematização
 de terrenos, ou seja, modificar a sua forma, tornando-o plano, para fins de execução
@@ -348,12 +348,6 @@ compactação, terá o volume reduzido em aproximadamente :math:`15\%`, logo, o
 :math:`1\,\text{m}^3` de material, após processo de compactação, resultará em um
 volume de :math:`\approx0,85\,\text{m}`:math:`^3` :cite:`cole2009surveyor`.
 
-##################################
-
-----------------------------------
-
-
-
 .. admonition:: :exem:`Exemplo 1` Considere a escavação para fins de construção de uma piscina, cuja
    dimensão é de :math:`50\,\text{m}` de comprimento, :math:`20\,\text{m}` de largura e
    :math:`2\,\text{m}` de profundidade. Qual o número de viagens que um caminhão vai
@@ -372,302 +366,345 @@ volume de :math:`\approx0,85\,\text{m}`:math:`^3` :cite:`cole2009surveyor`.
    .. math::
       \frac{2\,000\times1,2}{10}=240.
 
-----
-
-Os métodos para se medir o volume de material dependem do tipo de projeto executado e dos dados disponíveis, sendo os mais usuais, o por secções e o por área unitária.
-
-\subsection{Volume por meio da área média de secções}
-\parpic[r]{\begin{minipage}{70mm}\begin{tikzpicture}
-% desenho arquivo volumeDeSolidos.tex
-\path (0,0) coordinate (A) (1,1.6) coordinate (B) (3,1.6) coordinate (C) (3.5,.1)
-coordinate (D);
-\path (1.7,2) coordinate (E) (1.9,2.8) coordinate (F) (3.7,2.8) coordinate (G) (4.2,2)
-coordinate (H);
-\fill [red!20] (A)--(E)--(F)--(B);
-\fill [red!20] (A)--(E)--(H)--(D);
-\fill [opacity=1,blue!20] (A)--(B)--(C)--(D);
-\draw (A)--(B)--(C)--(D)--(A);
-\fill [opacity=1,blue!20] (E)--(F)--(G)--(H);
-\draw (E)--(F)--(G)--(H)--(E);
-\draw[<->] ([xshift =-0.35cm]B)-- node[fill=white]{`L`}([xshift =-0.35cm]F);
-\draw [dashed, thick,red!50] (A)--(E) (B)--(F) (C)--(G) (D)--(H);
-\path (A)-- node[above,sloped]{`A_1`} (D);
-\path (E)-- node[above,sloped]{`A_2`} (H);
-\end{tikzpicture}
-\captionof{figure}{Volume pela método da área média das secções.}\label{fig:volume_area_media_metodo}
-\end{minipage}}
-O volume de um sólido que tem duas secções paralelas onde se conhecem suas respectivas áreas e a distância que as separam, conforme Figura \ref{fig:volume_area_media_metodo}, é calculado como a média da área das secções multiplicada pela distância entre elas:
-
-.. math:: \label{eq:volume_area_media}
-V=\frac{A_1+A_2}{2}\times L
 
 
-em que :math:`A_1` e :math:`A_2`, são as áreas das secções paralelas analisadas e :math:`L`, a distância horizontal que separa as secções. Considerando que as medidas das áreas das seção são em m:math:`^2` e a distância horizontal em metros, teremos o volume na unidade de m:math:`^3`.
+Os métodos para se medir o volume de material dependem do tipo de projeto executado e dos dados
+disponíveis, sendo os mais usuais, o por secções e o por área unitária.
 
-\begin{mybox}[breakable,enhanced,pad at break=0mm,label={exemp:volume_media_seccoes1}]{}Considere  as áreas entre as secções da estaca :math:`10+0\,\text{m}` e :math:`11+0\,\text{m}` de, respectivamente :math:`61\,\text{m}`:math:`^2` e :math:`37\,\text{m}`:math:`^2`. Qual o volume entre estas duas estacas?
+Volume por meio da área média de secções
+----------------------------------------
 
-:solucao:`Solução:`
-Considerando que a distância entre as estacas é de :math:`20\,\text{m}`:
-\[
-V=\frac{61+37}{2}20=980\,\mathrm{m^3}
-\] 
-\end{mybox}
+O volume de um sólido que tem duas secções paralelas onde se conhecem suas respectivas áreas e a distância que as
+separam, conforme :numref:`volume_area_media_metodo`, é calculado como a média da área das
+secções multiplicada pela distância entre elas:
 
-\begin{mybox}[breakable,enhanced,pad at break=0mm,label={exemp:volume_media_seccoes2}]{}Considere  as áreas entre as secções da estaca :math:`10+0\,\text{m}` e a intermediária :math:`10+10\,\text{m}` de, respectivamente :math:`61\,\text{m}`:math:`^2` e :math:`46\,\text{m}`:math:`^2`. Qual o volume entre estas duas estacas?
+.. _volume_area_media_metodo:
 
-:solucao:`Solução:`
-Considerando que a distância entre as estacas é de :math:`20\,\text{m}`, a distância entre as secções medidas é de :math:`10\,\text{m}`, logo:
-\[
-V=\frac{61+46}{2}10=535\,\mathrm{m^3}
-\] 
-\end{mybox}
+.. figure:: /images/capitulo10/volume_area_media_metodo.png
+   :scale: 45 %
+   :alt: volume_area_media_metodo.png
+   :align: center
 
-O método de cálculo do volume pela área média das secções se aplica em áreas longitudinais, como em trechos de estradas. Para  exemplificar aplicação deste método, considere a Figura \ref{fig:exemplo_area_de_secoes}, na qual são apresentados os cálculos de volume do terreno da Figura \ref{fig:curva_nivel3} (pg. \pageref{fig:curva_nivel2}), quando o mesmo é sistematizado para ter cota de :math:`102,5\,\text{m}` em toda a sua extensão. Primeiramente calcula-se as CVs das estacas, em que valores negativos e positivos são pontos de corte e aterro, respectivamente. Neste exemplo escolheu fazer os cálculos das áreas de corte e de aterro utilizando-se como secções as colunas 1, 2 e 3. Para cada seção e desenhado o perfil do terreno e a sua distância vertical para cota a ser sistematizado. Por meio desta representação, pode-se verificar as áreas de cortes e aterros onde suas áreas são calculadas por meio de aproximação destas à figuras geométricas elementares, com triângulo e trapézio. Com os dados das áreas de corte e aterro tabulados, para cada par de seção é calculado o seu respectivo volume por meio da Equação \ref{eq:volume_area_media}.
-\begin{figure}[H]
-\includegraphics[trim ={0mm 0mm 0mm 0mm},clip,scale=0.85]{volume_media_seccoes.pdf}
-\caption{Procedimentos para medição de volume pela área média das secções. Distância entre as estacas é de :math:`20\,\text{m}` e sistematização do terreno para cota de :math:`102,5`.}\label{fig:exemplo_area_de_secoes}
-\end{figure}
+   Volume pela método da área média das secções
 
 
-\subsection{Volume por meio da área unitária}
+.. math::
+   V=\frac{A_1+A_2}{2}\times L
+   :label: eq:volume_area_media
 
 
-\parpic[r]{\begin{minipage}{110mm}\includegraphics[trim ={0mm 10mm 0mm 5mm},clip,scale=0.75]{curva_nivel4}\captionof{figure}{Exemplo de terreno nivelado para fins de sistematização pelo método da área unitária. É apresenta a cota de cada estaca, seguido do seu peso, entre parênteses, para ser utilizado no calculo do volume.}\label{fig:volume_area_unitaria}\end{minipage}%D:\Dropbox\PythonCodes\ExemplosPython\exemplo_curvas_de_nivel.py
-}
-O método por área unitária pode ser aplicado para a maioria dos casos de sistematização, exceção em casos de levantamento longitudinal, como em projetos de estradas, que é preferível o método da área média das secções. No método da área unitária, para a estimativa do volume de material a ser escavado ou depositado na área de interesse, primeiramente, a área é estaqueada em quadrados. As estacas têm a sua cota determinada por nivelamento, seja o trigonométrico, com estação total ou, por meio do nivelamento geométrico, com o nível. As linhas e colunas são identificadas por letras ou números. Na Figura \ref{fig:volume_area_unitaria}a é apresentada uma área a ser sistematizada, constando, para cada estaca, os valores das cotas. As colunas e linhas da grade são identificadas por letras e números, sendo, por exemplo, a estaca \textit{A1} a cota de :math:`302,4\,\text{m}`.
+em que :math:`A_1` e :math:`A_2`, são as áreas das secções paralelas analisadas e
+:math:`L`, a distância horizontal que separa as secções. Considerando que as medidas das áreas das seção são
+em :math:`\mathrm{m}^2` e a distância horizontal em metros, teremos o volume na unidade de :math:`\mathrm{m}^3`.
 
-Suponha que o projeto de engenharia definiu que, após a sistematização, o terreno terá cota de :math:`301,0\,\text{m}` na sua extensão, logo, todas estacas terão também ao final cota de :math:`301,0\,\text{m}`. Para apresentar o procedimento do método área unitária, vamos considerar inicialmente, o primeiro quadrado da grade, \textit{A1-A2-B1-B2} (Figura \ref{fig:volume_area_unitaria}b), onde pode-se notar que em todas as suas estacas haverá corte para se ter cota final de :math:`301,0\,\text{m}`. Uma maneira de verificar se em determinada estaca haverá corte ou aterro e de quanto será, é por meio da cota vermelha :math:`(\mathrm{CV}=\mathrm{cota}_{\mathrm{greide}}-\mathrm{cota}_{\mathrm{terreno}})`. Por exemplo, suponha que estejamos calculando a CV na estaca \textit{A1}. Esta seria de :math:`-1,4\,\text{m}` :math:`(301,0-302,4)`, o que significa um corte de :math:`1,4\,\text{m}` nesta estaca. O mesmo pode ser aplicado para as demais estacas deste quadrado. Agora temos um sólido geométrico de base quadrada em que se pode calcular o seu volume, como apresentado a seguir.
+.. admonition:: :exem:`Exemplo 2` Considere  as áreas entre as secções da estaca :math:`10+0\,\text{m}`
+   e :math:`11+0\,\text{m}` de, respectivamente :math:`61\,\text{m}`:math:`^2` e :math:`37\,\text{m}`:math:`^2`.
+   Qual o volume entre estas duas estacas?
 
-\parpic[r]{\begin{minipage}{60mm}
-\begin{tikzpicture}
-\draw[dashed,thick] (-1,0) -- (0,0.5) edge (0,2.5) -- (1,0);
-\draw[thick] (-1,0) rectangle (1,2) -- (0,2.5) -- (-1,2);
-\draw (1,0)-- node[below,sloped]{`h`}  (1,2); 
-\draw (-1,0)-- node[above]{`A`} (1,0);
-\fill [opacity=0.2,blue] (-1,0) -- (0,0.5) -- (1,0);
-\fill [opacity=0.2,blue] (-1,2) -- (0,2.5) -- (1,2);
-\pgfmathsetmacro{\x}{3}
-\pgfmathsetmacro{\xo}{2}
-\pgfmathsetmacro{\y}{-1}
-\pgfmathsetmacro{\yo}{2}
-\pgfmathsetmacro{\z}{2}
-\path (\xo,0,\y) coordinate (A) (\x,0,\y) coordinate (B) (\x,0,0) coordinate (C) (\xo,0,0)
-coordinate (D) (\xo,\z,\y) coordinate (E) (\x,\z,\y) coordinate (F) (\x,\z,0) coordinate (G)
-(\xo,\z,0) coordinate (H);
-\draw[thick] (B)--(C)--(G)--(F)--(B) (E)--(F)--(G)--(H)--(E) (D)--(C) (D)--(H);
-%\draw [dashed,black] (A)--(D)--(C) (D)--(H);
-\draw [dashed, thick] (A)--(D) (A)--(B) (A)--(E);
-\draw (B)-- node[below,sloped]{`h`} (F);
-\path (2,-0.2)-- node[above]{`A`} (3,0);
-\fill [opacity=0.2,blue] (A)--(B)--(C)--(D);
-\fill [opacity=0.2,blue] (E)--(F)--(G)--(H);
-\end{tikzpicture}
-\captionof{figure}{Volume de um prima.}\label{fig:volume_prisma_metodo}
-\end{minipage}}
-Um \emph{prisma reto}\index{volume!prisma reto} é um sólido geométrico que tem como base um polígono e lados  verticais perpendiculares a base. A base e o topo de um prisma reto tem mesma área e forma. A título de ilustração, na figura ao lado são apresentados dois prismas retos, um com base triangular e, o outro, com base quadrangular. O volume de um prisma reto é calculado como:
+   :solucao:`Solução:`
+   Considerando que a distância entre as estacas é de :math:`20\,\text{m}`:
 
-.. math:: \label{eq:volume_prisma_reto}
-\mathrm{V}=Ah,
+   .. math::
+      V&=\frac{61+37}{2}20\\
+      V&=980\,\mathrm{m^3}.
 
 
-em que: :math:`\mathrm{V}` é o volume em unidades cúbicas; :math:`A` é a área da base e, :math:`h`, a altura. Como normalmente trabalhamos com unidade de comprimento em metros, teremos :math:`\mathrm{V}`  em m:math:`^3`.
+.. admonition:: :exem:`Exemplo 3` Considere  as áreas entre as secções da estaca
+   :math:`10+0\,\text{m}` e a intermediária :math:`10+10\,\text{m}` de, respectivamente
+   :math:`61\,\text{m}`:math:`^2` e :math:`46\,\text{m}`:math:`^2`.
+   Qual o volume entre estas duas estacas?
 
-Retornemos ao nosso sólido da a Figura \ref{fig:volume_area_unitaria}b. Podemos considerar que o mesmo se aproxima a um prisma reto. Só não é porque o terreno é irregular. Todavia, pode-se considerar que a sua altura, :math:`h`, será a média das alturas das CV deste quadrado, sendo então:
-\[
-\left(\frac{-1,4-2,3-1,3-2,4}{4}\right)= -1,85\,\mathrm{m},
-\]
+   :solucao:`Solução:`
+   Considerando que a distância entre as estacas é de :math:`20\,\text{m}`, a distância entre as
+   secções medidas é de :math:`10\,\text{m}`, logo:
 
-Agora pode-se calcular o volume referente ao quadrado analisado (\textit{A1-A2-B1-B2}) por meio da Equação \ref{eq:volume_prisma_reto}:
+   .. math::
+      V&=\frac{61+46}{2}10\\
+      V&=535\,\mathrm{m^3}.
 
-\[
-\mathrm{V}=10\times10\times-1,85=-185\,\mathrm{m}^3.
-\]
+O método de cálculo do volume pela área média das secções se aplica em áreas longitudinais, como
+em trechos de estradas. Para  exemplificar aplicação deste método, considere a
+:numref:`exemplo_area_de_secoes`, na qual são apresentados os cálculos de volume do terreno da
+:numref:`curva_nivel3`, quando o mesmo é sistematizado para ter cota de :math:`102,5\,\text{m}`
+em toda a sua extensão. Primeiramente calcula-se as CVs das estacas, em que valores negativos e
+positivos são pontos de corte e aterro, respectivamente. Neste exemplo escolheu fazer os cálculos
+das áreas de corte e de aterro utilizando-se como secções as colunas 1, 2 e 3.
+Para cada seção e desenhado o perfil do terreno e a sua distância vertical para cota a ser sistematizado.
+Por meio desta representação, pode-se verificar as áreas de cortes e aterros onde suas áreas são calculadas
+por meio de aproximação destas à figuras geométricas elementares, com triângulo e trapézio. Com os dados das
+áreas de corte e aterro tabulados, para cada par de seção é calculado o seu respectivo volume por meio
+da Equação :eq:`eq:volume_area_media`.
 
-O sinal negativo do volume calculado significa que neste quadrado o volume de :math:`185\,\text{m}`:math:`^3` será escavado.  Por outro lado, caso fosse positivo, seria o volume a ser aterrado.
 
-Para se calcular o volume de material de toda área, ao invés de calcular os volumes dos quadrados individuais e depois somar, se usa o seguinte método, a área de quadrado é dividida por quatro\footnote{O número quatro é referente ao denominador da média calculada de CV para as 4 estacas de cada quadrado} e, este resultado, multiplicado pela soma do produto da CVs de cada estaca pelo número de quadrados que a mesma é comum (ver Exemplo \ref{exem:volume_area_unitaria}). Matematicamente:
+.. _exemplo_area_de_secoes:
+
+.. figure:: /images/capitulo10/volume_media_seccoes.png
+   :scale: 45 %
+   :alt: volume_media_seccoes.png
+   :align: center
+
+   Procedimentos para medição de volume pela área média das secções. Distância entre as estacas é de
+   :math:`20\,\text{m}` e sistematização do terreno para cota de :math:`102,5`.
+
+
+
+Volume por meio da área unitária
+--------------------------------
+
+O método por área unitária pode ser aplicado para a maioria dos casos de sistematização, exceção em
+casos de levantamento longitudinal, como em projetos de estradas, que é preferível o método da área
+média das secções. No método da área unitária, para a estimativa do volume de material a ser escavado
+ou depositado na área de interesse, primeiramente, a área é estaqueada em quadrados. As estacas têm a
+sua cota determinada por nivelamento, seja o trigonométrico, com estação total ou, por meio do
+nivelamento geométrico, com o nível. As linhas e colunas são identificadas por letras ou números.
+Na Figura \ref{fig:volume_area_unitaria}a é apresentada uma área a ser sistematizada, constando,
+para cada estaca, os valores das cotas. As colunas e linhas da grade são identificadas por letras e
+números, sendo, por exemplo, a estaca \textit{A1} a cota de :math:`302,4\,\text{m}`.
+
+.. _volume_area_unitaria:
+
+.. figure:: /images/capitulo10/curva_nivel4.png
+   :scale: 45 %
+   :alt: curva_nivel4.png
+   :align: center
+
+   Exemplo de terreno nivelado para fins de sistematização pelo método da área unitária. É apresenta a cota de cada estaca, seguido
+   do seu peso, entre parênteses, para ser utilizado no calculo do volume
+
+Suponha que o projeto de engenharia definiu que, após a sistematização, o terreno terá cota de
+:math:`301,0\,\text{m}` na sua extensão, logo, todas estacas terão também ao final cota de
+:math:`301,0\,\text{m}`. Para apresentar o procedimento do método área unitária, vamos considerar
+inicialmente, o primeiro quadrado da grade, :math:`\mathrm{A1-A2-B1-B2}` (:numref:`volume_area_unitaria` b),
+onde pode-se notar que em todas as suas estacas haverá corte para se ter cota final de
+:math:`301,0\,\text{m}`. Uma maneira de verificar se em determinada estaca haverá corte ou aterro e de
+quanto será, é por meio da cota vermelha
+:math:`(\mathrm{CV}=\mathrm{cota}_{\mathrm{greide}}-\mathrm{cota}_{\mathrm{terreno}})`.
+Por exemplo, suponha que estejamos calculando a CV na estaca :math:`A1`. Esta seria de
+:math:`-1,4\,\text{m}` :math:`(301,0-302,4)`, o que significa um corte de :math:`1,4\,\text{m}`
+nesta estaca. O mesmo pode ser aplicado para as demais estacas deste quadrado. Agora temos um sólido
+geométrico de base quadrada em que se pode calcular o seu volume, como apresentado a seguir.
+
+Um **prisma reto** é um sólido geométrico (três dimensões) que tem
+como base um polígono e lados  verticais perpendiculares a base. A base e o topo
+de um prisma reto tem mesma área e forma (p.ex: triângulo, quadrado, retângulo, etc).
+A título de ilustração, na figura ao lado
+são apresentados dois prismas retos, um com base triangular e, o outro, com base
+quadrangular. O volume de um prisma reto é calculado como:
+
+.. _volume_prisma_metodo:
+
+.. figure:: /images/capitulo10/fig:volume_prisma_metodo.png
+   :scale: 45 %
+   :alt: fig:volume_prisma_metodo.png
+   :align: center
+
+   Volume de um prima
+
+
+.. math::
+   \mathrm{V}=Ah
+   :label: eq:volume_prisma_reto
+
+
+em que: :math:`\mathrm{V}` é o volume em unidades cúbicas; :math:`A` é a
+área da base e, :math:`h`, a altura. Como normalmente trabalhamos com unidade
+de comprimento em metros, teremos :math:`\mathrm{V}`  em :math:`\mathrm{m}^3`.
+
+Retornemos ao nosso sólido da a :numref:`volume_area_unitaria` b. Podemos considerar
+que o mesmo se aproxima a um prisma reto. Só não é porque o terreno é irregular.
+Todavia, pode-se considerar que a sua altura, :math:`h`,
+será a média das alturas das CV deste quadrado, sendo então:
+
+.. math::
+   h&=\left(\frac{-1,4-2,3-1,3-2,4}{4}\right)\\
+   h&= -1,85\,\mathrm{m}.
+
+
+Agora pode-se calcular o volume referente ao quadrado analisado :math:`\mathrm{A1-A2-B1-B2}`
+por meio da Equação :eq:`eq:volume_prisma_reto`:
+
+.. math::
+   \mathrm{V}&=10\times10\times-1,85\\
+   \mathrm{V}&=-185\,\mathrm{m}^3.
+
+
+O sinal negativo do volume calculado significa que neste quadrado o volume
+de :math:`185\,\text{m}`:math:`^3` será escavado.  Por outro lado, caso fosse
+positivo, seria o volume a ser aterrado.
+
+Para se calcular o volume de material de toda área, ao invés de calcular
+os volumes dos quadrados individuais e depois somar, se usa o seguinte método,
+a área de quadrado é dividida por quatro\footnote{O número quatro é referente ao
+denominador da média calculada de CV para as 4 estacas de cada quadrado} e, este
+resultado, multiplicado pela soma do produto da CVs de cada estaca pelo número
+de quadrados que a mesma é comum (ver Exemplo abaixo). Matematicamente:
 
 .. math:: 
-V=\frac{A}{4}\sum\mathrm{CV}_{i,\,j}\times w_{i,\,j}
+   V=\frac{A}{4}\sum\mathrm{CV}_{i,\,j}\times w_{i,\,j}
+   :label: eq_somas_unitarios
  
 
-em que: :math:`V` é o volume (m:math:`^3)`; :math:`A` é a área do quadrado (m:math:`^2)`; :math:`i` e :math:`j` são os índices das linhas e colunas, respectivamente, :math:`i=1, 2,\dotsc\,, ` índice das linhas e :math:`j=1, 2, \dotsc\,, ` índice de colunas; :math:`w_{i,\,j}` é o peso, sendo igual ao número de quadrados em comum na estaca :math:`i,\,j`;   
+em que: :math:`V` é o volume (:math:`\mathrm{m}^3)`; :math:`A` é a
+área do quadrado (:math:`\mathrm{m}^2)`; :math:`i` e :math:`j` são os índices
+das linhas e colunas, respectivamente, :math:`i=1, 2,\dotsc\,,`
+índice das linhas e :math:`j=1, 2, \dotsc\,, ` índice de colunas;
+:math:`w_{i,\,j}` é o peso, sendo igual ao número de quadrados em comum na
+estaca :math:`i,\,j`;
 
-\begin{mybox}[breakable,enhanced,pad at break=0mm,label={exemp:area_unitaria}]{}\label{exem:volume_area_unitaria}Considere sistematizar o terreno da Figura \ref{fig:volume_area_unitaria}a para ter cota final de :math:`301\,\text{m}` em toda a sua extensão. Qual será o volume de material a ser cortado ou aterrado?
+.. admonition:: :exem:`Exemplo 4` Considere sistematizar o terreno da
+   :numref:`volume_area_unitaria` a para ter cota final de :math:`301\,\text{m}`
+   em toda a sua extensão. Qual será o volume de material a ser cortado ou aterrado?
 
-\soluca
-\parpic[r]{\begin{minipage}{90mm}\includegraphics[trim ={0mm 10mm 5mm 10mm},clip,scale=0.75]{curva_nivelExempo1}\captionof{figure}{}\label{fig:volume_area_unitaria_exemplo}\end{minipage}%D:\Dropbox\PythonCodes\ExemplosPython\exemplo_curvas_de_nivel.py
-}
-Para verificar se as estacas que terão corte ou aterro, quando a cota final do terreno será de :math:`301\,\text{m}`, basta calcular as CVs das estacas, por exemplo, a CV na estaca A1 é:
-\[
-\mathrm{CV}_{\mathrm{A1}}=301-302,4=-1,4\,\mathrm{m}.
-\]
+   :solucao:`Solução:`
 
-Repetindo-se para as demais estacas, temos os resultados apresentados na Figura \ref{fig:volume_area_unitaria_exemplo}. Como todos os sinais das CVs são negativos, conclui-se que no terreno só haverá corte, logo, apenas o volume de corte será calculado.
+   .. _volume_area_unitaria_exemplo:
 
-Agora temos que determinar o número de quadrados em que cada estaca está presente, por exemplo, as estacas \textit{A1}, \textit{A2}, \textit{B2} e \textit{D3} pertencem, respetivamente a um, dois, três e quatro quadrados. Esta contagem também é apresentada na Figura \ref{fig:volume_area_unitaria_exemplo}, correspondendo aos números que se encontram entre parênteses. Fazendo-se a multiplicação da área de cada quadrado pelo somatório do produto das CVs com o número de quadrados para o qual pertence, temos:\picskip{0}
+   .. figure:: /images/capitulo10/volume_area_unitaria_exemplo.png
+      :scale: 45 %
+      :alt: volume_area_unitaria_exemplo.png
+      :align: center
 
-\begin{align*}
-\mathrm{V}_{\mathrm{total}} =& \frac{10\times10}{4}(-6,4\times1-6,8\times2-6,0\times2-4,7\times2-2,3\times2-1,4\times1\\
-&-5,9\times2-6,6\times4-6,5\times4-4,6\times4-2,4\times4-1,3\times2-6,3\times1-6,7\times3\\
-&-5,1\times4-3,0\times4-2,0\times4-0,7\times2-6,4\times1-3,5\times2-2,0\times3\\
-&-1,1\times4-0,7\times2-2,9\times1-1,4\times3-1,0\times2-1,2\times1-0,5\times1)\\
-=&\frac{10\times10}{4}(-246,4)\\
-\mathrm{V}_{\mathrm{total}}=&\mathbf{-6\,160\,m^3}
-\end{align*}
+      Cotas vermelhas, entre parenteses, peso da estaca a ser utilizado
+      na Equação :eq:`eq_somas_unitarios`, :math:`w_{i,\,j}`
 
-O sinal do volume calculado representa que o terreno será escavado. Logo,  para que o terreno analisado seja sistematizado para a cota de :math:`301\,\text{m}`, o volume total a ser escavado será de :math:`6\,160\,\mathrm{m}^3`.
-\end{mybox}
+   Para verificar se as estacas que terão corte ou aterro, quando a cota final do terreno
+   será de :math:`301\,\text{m}`, basta calcular as CVs das estacas, por exemplo,
+   a CV na estaca :math:`A1` é:
 
-\begin{mybox}[breakable,enhanced,pad at break=0mm,label={exemp:area_unitaria2}]{}No problema anterior, verificou-se que haverá a necessidade de transporte de uma grande quantidade de material. Sabendo-se que os custos com o transporte para a área de aterro é alto, pode-se estudar a possibilidade de se trabalhar com uma cota a ser sistematizado o terreno, tal qual, o volume escavado dentro da área seja igual ao volume a ser depositado nela mesma. 
-Com a finalidade de minimizar os custos de transporte de material do terreno apresentado na Figura \ref{fig:volume_area_unitaria}a, calcular:
-\begin{enumerate}
--  a cota que o terreno deve ter para que volume de corte seja igual ao volume a ser de aterrado na área;
--  o volume de corte.
+   .. math::
+      \mathrm{CV}_{\mathrm{A1}}&=301-302,4\\
+      \mathrm{CV}_{\mathrm{A1}}&=-1,4\,\mathrm{m}.
 
+   Repetindo-se para as demais estacas, temos os resultados apresentados
+   na :numref:`volume_area_unitaria_exemplo`. Como todos os sinais das CVs são negativos,
+   conclui-se que no terreno só haverá corte, logo, apenas o volume de corte será calculado.
 
-\soluca
-Esta solução é aproximada, pois não serão considerados os fatores de expansão do solo ao ser escavado, assim como o fator de compactação do solo ao ser aterrado. Considerando que o :math:`1\,\text{m}`:math:`^3` de solo escavado vai ser igual ao :math:`1\,\text{m}`:math:`^3` aterrado, a cota que resultará no volume de material a ser a escavado igual ao volume depositado dentro da mesma área, corresponderá a média ponderada das cotas das estacas. A ponderação a ser utilizada em determinada estaca corresponderá ao número de quadrados que a mesma tem em comum na grade, desta forma:
+   Agora temos que determinar o número de quadrados em que cada estaca está presente,
+   por exemplo, as estacas :math:`A1`, :math:`A2`, :math:`B2` e :math:`D3`
+   pertencem, respetivamente a um, dois, três e quatro quadrados. Esta contagem também
+   é apresentada na :numref:`volume_area_unitaria_exemplo`, correspondendo aos
+   números que se encontram entre parênteses. Fazendo-se a multiplicação da área de cada
+   quadrado pelo somatório do produto das CVs com o número de quadrados para o qual
+   pertence, temos:
 
+   .. math::
+      \mathrm{V}_{\mathrm{total}} =& \frac{10\times10}{4}(-6,4\times1-6,8\times2-6,0\times2-4,7\times2-2,3\times2-1,4\times1\\
+      &-5,9\times2-6,6\times4-6,5\times4-4,6\times4-2,4\times4-1,3\times2-6,3\times1-6,7\times3\\
+      &-5,1\times4-3,0\times4-2,0\times4-0,7\times2-6,4\times1-3,5\times2-2,0\times3\\
+      &-1,1\times4-0,7\times2-2,9\times1-1,4\times3-1,0\times2-1,2\times1-0,5\times1)\\
+      =&\frac{10\times10}{4}(-246,4)\\
+      \mathrm{V}_{\mathrm{total}}=&\mathbf{-6\,160\,m^3}
 
-\begin{align*}
-\mathrm{cota}_{\mathrm{media}} =&(307,4\times1+307,8\times2+307,0\times2+305,7\times2+303,3\times2+302,4\times1+ \\
-&306,9\times2+307,6\times4+307,5\times4+305,6\times4+303,4\times4+ \\
-&302,3\times2+307,3\times1+307,7\times3+306,1\times4+304,0\times4+ \\
-&303,0\times4+301,7\times2+307,4\times1+304,5\times2+303,0\times3+ \\
-&302,1\times4+301,7\times2+303,9\times1+302,4\times3+ \\
-&302,0\times2+302,2\times1+301,5\times1)/68 \\
-=&\frac{20\,714,4}{68} \\
-\mathrm{cota}_{\mathrm{media}}=&\mathbf{304,624\,m}
-\end{align*}
+   O sinal do volume calculado representa que o terreno será escavado. Logo,  para
+   que o terreno analisado seja sistematizado para a cota de :math:`301\,\text{m}`,
+   o volume total a ser escavado será de :math:`6\,160\,\mathrm{m}^3`.
 
-Logo, a cota que resultará em volume de corte igual ao volume a ser aterrado é de :math:`304,624\,\text{m}`. 
-\\
-Para cálculo dos volumes de corte, primeiramente deve-se traçar a curva de nível com a valor da cota que resultará no volume de corte igual ao volume de aterro, no nosso caso, a de :math:`304,624\,\text{m}`. Ela determinará na planta o que denominamos de \emph{pontos de passagem}\index{pontos de passagem}. Na curva de nível dos pontos de passagem, não haverá nem corte ou aterro, todavia, ela é importante pois separa as regiões onde serão realizados os trabalhos de escavação daquelas de deposição de material.
+.. admonition:: :exem:`Exemplo 5` No problema anterior, verificou-se que haverá a necessidade
+   de transporte de uma grande quantidade de material. Sabendo-se que os custos com o
+   transporte para a área de aterro é alto, pode-se estudar a possibilidade de se trabalhar
+   com uma cota a ser sistematizado o terreno, tal qual, o volume escavado dentro da área seja
+   igual ao volume a ser depositado nela mesma.
+   Com a finalidade de minimizar os custos de transporte de material do terreno
+   apresentado na :numref:`volume_area_unitaria` a, calcular: (a) a cota que o terreno deve
+   ter para que volume de corte seja igual ao volume a ser de aterrado na área e, (b) o volume de corte.
 
-Nota-se, na figura a seguir, que o terreno com a linha dos pontos de passagem, divide o terreno em duas áreas uma na porção inferior e outra na porção superior representando, respectivamente, área de corte e de aterro.
+   :solucao:`Solução:`
 
-\includegraphics[trim ={0mm 10mm 0mm 10mm},clip,scale=0.75]{curva_nivelExemplo2}
+   **Cálculo da altura que resultará no volume de corte igual ao volume de aterro**
 
-Para calcular o volume de corte tem-se que considerar apenas as estacas com CVs negativa com limite da curva de nível :math:`304,624\,\text{m}`. Será necessário computar os volumes da região que têm os quadrados inteiros, e somar com os volumes das áreas que têm apenas parte do quadrado indicando como corte, com limite dado pela curva de nível :math:`304,624\,\text{m}`. Para fins de simplificação e por representar volume a ser calculado desprezível, tomemos a CV em \emph{D4} igual a zero metros. 
+   Esta solução é aproximada, pois não serão considerados os fatores
+   de expansão do solo ao ser escavado, assim como o fator de compactação do solo ao ser aterrado.
+   Considerando que o :math:`1\,\text{m}`:math:`^3` de solo escavado vai ser igual ao :math:`1\,\text{m}`:math:`^3` aterrado, a cota que resultará no volume de material a ser a escavado igual ao volume depositado dentro da mesma área, corresponderá a média ponderada das cotas das estacas. A ponderação a ser utilizada em determinada estaca corresponderá ao número de quadrados que a mesma tem em comum na grade, desta forma:
 
-\begin{itemize}
--  \emph{volume dos prismas com área da base em forma de quadrado:}
+   .. math::
+      \mathrm{cota}_{\mathrm{media}} =&(307,4\times1+307,8\times2+307,0\times2+305,7\times2+303,3\times2+302,4\times1+ \\
+      &306,9\times2+307,6\times4+307,5\times4+305,6\times4+303,4\times4+ \\
+      &302,3\times2+307,3\times1+307,7\times3+306,1\times4+304,0\times4+ \\
+      &303,0\times4+301,7\times2+307,4\times1+304,5\times2+303,0\times3+ \\
+      &302,1\times4+301,7\times2+303,9\times1+302,4\times3+ \\
+      &302,0\times2+302,2\times1+301,5\times1)/68 \\
+      =&\frac{20\,714,4}{68} \\
+      \mathrm{cota}_{\mathrm{media}}=&\mathbf{304,624\,m}
 
+   Logo, a cota que resultará em volume de corte igual ao volume a ser aterrado é
+   de :math:`304,624\,\text{m}`.
 
-\begin{align*}
-V_{\mathrm{quadCorte}} =&\frac{10\times10}{4}(-2,776\times1-3,176\times2-2,376\times2-1,076\times1 \\
-&-2,276\times2-2,976\times4-2,876\times3-0,976\times1-2,676\times1\\
-&-3,076\times3-1.476\times2-2,776\times1)\\
-=&\frac{10\times10}{4}58,647\\
-V_{\mathrm{quadCorte}} =&\mathbf{-1\,466\,m^3}
-\end{align*}
-\begin{itemize}
--  \emph{Volume ``1c", prisma com base em forma de trapézio:}
+   **Càlculo do volume de corte**
 
+   Para cálculo dos volumes de corte, primeiramente deve-se traçar a curva de nível com a
+   valor da cota que resultará no volume de corte igual ao volume de aterro, no nosso caso,
+   a de :math:`304,624\,\text{m}`. Ela determinará na planta o que denominamos de **pontos de passagem**.
+   Na curva de nível dos pontos de passagem, não haverá nem corte ou aterro, todavia, ela é
+   importante pois separa as regiões onde serão realizados os trabalhos de escavação daquelas
+   de deposição de material.
 
-\begin{align*}
-V_{\mathrm{1c}} =&
-\left(\frac{(4,48+4,44)10}{2}\right)\left(\frac{-1,076-0,976+0+0}{4}\right) \\
-=& 44,6\times-0,513 \\
-V_{\mathrm{1c}} =& \mathbf{-23\,m^3}
-\end{align*}
-\begin{itemize}
--  \emph{Volume ``2c", prisma com base em forma de triângulo:}
+   Nota-se, na figura a seguir, que o terreno com a linha dos pontos de passagem,
+   divide o terreno em duas áreas uma na porção inferior e outra na porção superior representando,
+   respectivamente, área de corte e de aterro.
 
+   .. figure:: /images/capitulo10/curva_nivelExemplo2.png
+      :scale: 45 %
+      :alt: curva_nivelExemplo2.png
+      :align: center
 
-\begin{align*}
-V_{\mathrm{2c}} =&
-\left(\frac{4,44\times6,1}{2}\right)\left(\frac{-0,976+0+0}{3}\right)\\
-=&13,542\times-0,325 \\
-V_{\mathrm{2c}} =&\mathbf{-4\,m^3}
-\end{align*}
-\begin{itemize}
--  \emph{Volume ``3c", prisma com base em forma de retângulo mais trapézio:}
-
-
-\begin{align*}
-V_{\mathrm{3c}} =&
-\left(10\times6,1 +\frac{(10+7)\times3,9}{2}\right)\left(\frac{-2,876-0,976+0+0-1,476}{5}\right) \\
-=&94,15\times-1,066\\
-V_{\mathrm{3c}} =& \mathbf{-100\,m^3}
-\end{align*}
-\begin{itemize}
-
--  \emph{Volume ``4c", prisma com base em forma triângulo:}
-
-
-\begin{align*}
-V_{\mathrm{4c}} =&
-\left(\frac{7\times9,92}{2}\right)\left(\frac{-1,476+0+0}{3}\right) \\
-=&34,72\times-0,492 \\
-V_{\mathrm{4c}} =&\mathbf{-17\,m^3}
-\end{align*}
-
-\begin{itemize}
-- 
-O volume total a ser escavado, considerando os volumes dos quadrados inteiros e os parciais.
+   Para calcular o volume de corte tem-se que considerar apenas as estacas com CVs
+   negativa com limite da curva de nível :math:`304,624\,\text{m}`. Será necessário
+   computar os volumes da região que têm os quadrados inteiros, e somar com os volumes das
+   áreas que têm apenas parte do quadrado indicando como corte, com limite dado pela curva de
+   nível :math:`304,624\,\text{m}`. Para fins de simplificação e por representar volume a
+   ser calculado desprezível, tomemos a CV em :math:`D4` igual a :math:`0` metros.
 
 
-\begin{align*}
-V_{\mathrm{totalCorte}}=&V_{\mathrm{quadCorte}}+V_{\mathrm{1c}}+V_{\mathrm{2c}}+V_{\mathrm{3c}}+V_{\mathrm{4c}}\\
-=&-1\,466-23-4-100-17\\
-V_{\mathrm{totalCorte}}=&\mathbf{-1\,610\,m^3}
-\end{align*}
+   - volume dos prismas com área da base em forma de quadrado:
 
-Mais uma vez, o sinal apenas indica que será um volume de :math:`1\,610\,\text{m}`:math:`^3` a ser escavado.
-%\begin{itemize}
-%-  \textbf{Volume de aterro}
-%
-%
-%O procedimento é o mesmo anterior.
-%
-%\begin{align*}
-%V_{\mathrm{quadrados}} =&
-%\frac{10\times10}{4}(2,224\times1+2,324\times2+2,924\times2+2,924\times2+2,624\times2+\\
-%&3,124\times1+1,324\times1+1,224\times2+1,624\times3+2,524\times4\\
-%&2,224\times3+2,424\times1+0,624\times1+1,624\times2+0,724\times1\\
-%=&\frac{10\times10}{4} 59,372\\
-%V_{\mathrm{quadrados}} =&\mathbf{1\,484\,m^3}
-%\end{align*}
-%
-%\begin{align*}
-%V_{\mathrm{1A}} =&
-%\left(100-\frac{(4,48+4,44)10}{2}\right)\left(\frac{1,324+1,224+0+0}{4}\right) \\
-%=& 55,4\times0,637 \\
-%V_{\mathrm{1A}} =& \mathbf{35\,m^3}
-%\end{align*}
-%
-%\begin{align*}
-%V_{\mathrm{2A}} =&
-%\left(100-\frac{4,44\times6,1}{2}\right)\left(\frac{1,224+1,624+0,624+0+0}{5}\right)\\
-%=&86,458\times0,694 \\
-%V_{\mathrm{2A}} =&\mathbf{60\,m^3}
-%\end{align*}
-%
-%\begin{align*}
-%V_{\mathrm{3A}} =&
-%\left(100-\left(10\times6,1 +\frac{(10+7)\times3,9}{2}\right))\right)\left(\frac{0,624+0+0}{3}\right) \\
-%=&5,850\times0,208\\
-%V_{\mathrm{3A}} =& \mathbf{1\,m^3}
-%\end{align*}
-%
-%\begin{align*}
-%V_{\mathrm{4A}} =&
-%\left(100-\frac{7\times9,92}{2}\right)\left(\frac{0+0,642+1,624+0}{4}\right) \\
-%=&65,28\times0.567 \\
-%V_{\mathrm{4A}} =&\mathbf{37\,m^3}
-%\end{align*}
-%
-%\begin{align*}
-%V_{\mathrm{totalAterro}}=&V_{\mathrm{quadrados}}+V_{\mathrm{1A}}+V_{\mathrm{2A}}+V_{\mathrm{3A}}+V_{\mathrm{4A}}\\
-%=&1\,484+35+60+1+37\\
-%V_{\mathrm{totalAterro}}=&\mathbf{1\,617\,m^3}
-%\end{align*}
+   .. math::
+      V_{\mathrm{quadCorte}} =&\frac{10\times10}{4}(-2,776\times1-3,176\times2-2,376\times2-1,076\times1 \\
+      &-2,276\times2-2,976\times4-2,876\times3-0,976\times1-2,676\times1\\
+      &-3,076\times3-1.476\times2-2,776\times1)\\
+      =&\frac{10\times10}{4}58,647\\
+      =&\mathbf{-1\,466\,m^3}
 
-\end{mybox}
+   -  Volume referente a área **A1c**, prisma com base em forma de trapézio:
 
-\section*{Exercícios}
+   .. math::
+      V_{\mathrm{1c}} =&\left(\frac{(4,48+4,44)10}{2}\right)\left(\frac{-1,076-0,976+0+0}{4}\right) \\
+      =& 44,6\times-0,513 \\
+      =& \mathbf{-23\,m^3}
+
+   -  Volume referente a área **A2c**, prisma com base em forma de triângulo:
+
+   .. math::
+      V_{\mathrm{2c}} =&\left(\frac{4,44\times6,1}{2}\right)\left(\frac{-0,976+0+0}{3}\right)\\
+      =&13,542\times-0,325 \\
+      =&\mathbf{-4\,m^3}
+
+   -  Volume referente a área **A3c**, prisma com base em forma de retângulo mais trapézio:}
+
+   .. math::
+      V_{\mathrm{3c}} =&\left(10\times6,1 +\frac{(10+7)\times3,9}{2}\right)\left(\frac{-2,876-0,976+0+0-1,476}{5}\right) \\
+      =&94,15\times-1,066\\
+      =& \mathbf{-100\,m^3}
+
+   - Volume referente a área **A4c**, prisma com base em forma triângulo:
+
+   .. math::
+      V_{\mathrm{4c}} =&\left(\frac{7\times9,92}{2}\right)\left(\frac{-1,476+0+0}{3}\right) \\
+      =&34,72\times-0,492 \\
+      =&\mathbf{-17\,m^3}
+
+
+   O volume total a ser escavado, considerando os volumes dos quadrados inteiros e os parciais.
+
+   .. math::
+      V_{\mathrm{totalCorte}}=&V_{\mathrm{quadCorte}}+V_{\mathrm{1c}}+V_{\mathrm{2c}}+V_{\mathrm{3c}}+V_{\mathrm{4c}}\\
+      =&-1\,466-23-4-100-17\\
+      =&\mathbf{-1\,610\,m^3}
+
+   Mais uma vez, o sinal apenas indica que será um volume de :math:`1\,610\,\text{m}^3` a ser escavado.
+
+Exercícios
+==========
+
 \begin{exercicio} Para fins de uma obra de engenharia, será escavado um volume de :math:`6\,000\,\text{m}`:math:`^3`. Sabendo-se que o material a ser escavado vai sofrer expansão de :math:`15\%` de seu volume e, que o caminhão, tipo basculante, que será empregado no transporte tem capacidade de :math:`12\,\text{m}`:math:`^3`, qual será o número de viagens necessárias para transportar todo o material? 
 \resp 575 viagens.
 

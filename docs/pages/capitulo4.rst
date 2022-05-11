@@ -33,7 +33,6 @@ de imóveis rurais. Neste capítulo será realizada uma apresentação
 do princípio de seu funcionamento, dos sistemas existentes, das fontes
 de erros, e dos tipos de posicionamento GNSS.
 
-
 Introdução
 ==========
 
@@ -113,7 +112,7 @@ houve o desenvolvimento do Sistema de Posicionamento Global (:math:`\bf{GPS}`,
 forças armadas, o Sistema de Navegação Global por Satélite (:math:`\bf{GLONASS}\text{,}\,`
 :math:`\bf{GL}\it{Obal'naya}` :math:`\bf{NA}\it{vigatsionnaya}` :math:`\bf{S}\it{putnikovaya}` :math:`\bf{S}\it{istema}`);
 e, na Europa, sendo construído pela União Europeia, o sistema :math:`\bf{Galileu}`.
-Maiores detalhes destes sistemas serão apresentados em :ref:`Exemplos de GNSS.
+Maiores detalhes destes sistemas serão apresentados em :ref:`Exemplos de GNSS`.
 
 .. _posicionamento_satelite:
 
@@ -173,8 +172,6 @@ No Exemplo 1 é apresentado a obtenção
 da posição de um ponto, em um sistema de coordenadas bidimensional,
 conhecendo-se as posições dos satélites e dos intervalos de tempo
 entre o envio do sinal pelos satélites e a sua chegada ao receptor.
-
-----
 
 .. admonition:: :exem:`Exemplo 1` Os dados das posições e distâncias que serão apresentados neste exemplo têm magnitude
     muito inferiores das usuais nos GNSS, uma vez que, geralmente, são
@@ -255,10 +252,7 @@ entre o envio do sinal pelos satélites e a sua chegada ao receptor.
     ou :math:`\boldsymbol{\varrho_{r}}=(6,2,\,7,6)`. Como o receptor não estará
     acima dos satélites, a posição do receptor seria :math:`\boldsymbol{\varrho_{r}}=(4,\,1)`.
 
-----
-
-
-Como foi apresentado no Exemplo :ref`GNSSPosicExemplo`,
+Como foi apresentado no Exemplo acima,
 há a necessidade de se conhecer a distância geométrica entre o receptor
 e os satélites. Isto é realizado medindo-se o lapso de tempo entre
 o envio e a chegada ao receptor multiplicado pela velocidade da luz.
@@ -297,7 +291,6 @@ pelo método iterativo, baseando-se na sua linearização :cite:`GNSS:kaplan2006
 
 Segmentos GNSS
 ==============
-
 
 Para que o GNSS seja capaz de calcular a posição, o tempo e a velocidade, em qualquer
 posição e hora na terra, são necessários três segmentos, denominados
@@ -741,7 +734,7 @@ Erro devido ao satélite
    este erro. Dependendo do nível de precisão das órbitas que se deseja,
    pode-se levar até duas semanas para estarem disponíveis :cite:`WOLF`.
    Outra forma de anular este erro é por meio do posicionamento relativo
-   (ver :ref:`Posicionamento relativo:`).
+   (ver :ref:`Posicionamento relativo`).
 
 
 Erro devido à propagação do sinal
@@ -848,7 +841,7 @@ de posicionamento GNSS. Aqui será utilizada a terminologia adotada
 por :cite:t:`Hofmann2008`. No posicionamento, as medidas de pseudodistância
 podem ser obtidas de duas formas, por meio dos **códigos** (ver
 seção :ref:`Posicionamento por ponto`) ou da medida
-de **fase da onda portadora** (ver ver :ref:`Pseudodistância por fase da onda portadora`).
+de **fase da onda portadora** (ver :ref:`Pseudodistância por fase da onda portadora`).
 As medidas por código tem precisão em nível de metros, enquanto pela
 medida da onda portadora tem precisão de milímetros. A desvantagem
 das medidas de fase da onda portadora é a solução da ambiguidade :math:`(N)`.
@@ -963,14 +956,14 @@ Quando se utiliza as medidas de fase da onda portadora, este posicionamento
 
 .. table:: Precisão DGNSS.
     :header-alignment: lcc
-    :column-alignment: lrr
+    :column-alignment: lcc
 
-    =============== ======================= =====================
-    Observável      Separação das estações  Precisão horizontal
-    =============== ======================= =====================
-    Código          :math:`1.000` km        :math:`<10` m
-    Onda portadora  :math:`\sim 10` km      :math:`<0,1` m
-    =============== ======================= =====================
+    =============== ============================== ========================
+    Observável      Separação das estações         Precisão horizontal
+    =============== ============================== ========================
+    Código          :math:`1.000\,\mathrm{km}`     :math:`<10\,\mathrm{m}`
+    Onda portadora  :math:`\sim 10\,\mathrm{km}`   :math:`<0,1\,\mathrm{m}`
+    =============== ============================== ========================
 
 .. _Posicionamento relativo:
 
@@ -1013,13 +1006,13 @@ Segundo :cite:`WOLF` [p. 361], a precisão deste tipo de posicionamento
 
 .. table:: Tempo para aquisição da posição pelo método relativo estático.
     :header-alignment: lcc
-    :column-alignment: lrr
+    :column-alignment: lcc
 
     =================== ======================================== =========================================
     Receptor (# fases)  Estático (m)                             Estático rápido
     =================== ======================================== =========================================
-    Simples frequência  30 min + 3 min :math:`\,\text{km}^{-1}`  20 min + 2 min :math:`\,\text{km}^{-1}`
-    Dupla frequência    20 min + 2 min :math:`\,\text{km}^{-1}`  10 min + 1 min :math:`\,\text{km}^{-1}`
+    Simples frequência  :math:`\text{30 min + 3 min km}^{-1}`    :math:`\text{20 min + 2 min  km}^{-1}`
+    Dupla frequência    :math:`\text{20 min + 2 min km}^{-1}`    :math:`\text{10 min + 1 min km}^{-1}`
     =================== ======================================== =========================================
 
 .. _Posicionamento relativo pseudo-cinemático:
@@ -1135,6 +1128,3 @@ um receptor GNSS, e este mostrou a coordenada :math:`E= 595.650,0\,\text{m}` e
 SW ou NW com relação à coordenada do marco? Explique. 
 
 :exem:`Resp.`: SW.
-
-----
-

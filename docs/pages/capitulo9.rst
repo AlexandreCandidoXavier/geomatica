@@ -134,7 +134,7 @@ para cálculo das altitudes dos demais pontos levantados.
       \mathrm{alt_{\mathbf{X}}}&=691,421-39,697\\
       \mathrm{alt_{\mathbf{X}}}&=651,724\,\text{m}
 
-----
+.. _Erro de esfericidade e refração:
 
 Erro de esfericidade e refração
 ===============================
@@ -503,8 +503,6 @@ a cota ou altitude de :math:`\mathrm{B}` é maior que em :math:`\mathrm{A}`.
       &=\mathrm{DI}\cos z+ai-ap+0,06753\mathrm{DH^{2}}\\
       &=322,567\cos85^{\circ}24'+1,769-2,000+0,06753\cdot0,3215^{2}\\
       &=25,646\,{\rm m.}
-
-----
 
 .. _Nivelamento taqueométrico:
 
