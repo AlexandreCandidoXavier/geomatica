@@ -885,7 +885,7 @@ b. projetar um plano inclinado de :math:`+2\%` na direção e sentido de :math:`
 c. calcular os volumes de corte e aterro para o plano inclinado (não considere
    talude de corte e saia de aterro), utilize fórmula da área média das secções.
 
-:exem:`Resp.:` (b) Figura abaixo; (c) :math:`V_{\textit{c}}=557,90\mathrm{m}^3`;
+:exem:`Resp.:` (b) Figura abaixo; (c) :math:`V_{\textit{c}}=557,90\,\mathrm{m}^3`;
 :math:`V_{\textit{a}}=562,89\,\mathrm{m}^3`.
 
 .. figure:: /images/capitulo10/cap_alt_exer_grid2_rep.png

@@ -65,7 +65,8 @@ o geóide resulta em uma forma ondulada. Uma forma de apresentar o
 geóide é por meio da ondulação geoidal :math:`(N)`. Na Figura ao lado é
 apresentado a ondulação geoidal da terra dado pelo EGM96 (*Earth
 Gravitational Model* 1996 [#f1]_ :cite:p:`lemoine1998development`. A ondulação geoidal apresenta
-a distância vertical entre o geóide e o elipsóide (ver seção :any:`Nivelamento GNSS`),
+a distância vertical entre o geóide e o elipsóide (ver seção :any:`Nivelamento GNSS`,
+:any:`fig_geoide`),
 figura matemática que se aproxima a forma da terra, neste caso o WGS84.
 Valores positivos indicam que o geóide está acima do elipóide WGS84,
 e negativos, abaixo. Percebe-se que a variação da altura geoidal é
