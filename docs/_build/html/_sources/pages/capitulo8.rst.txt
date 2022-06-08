@@ -40,7 +40,7 @@ Uma poligonal fechada é aquela que começa e termina no mesmo ponto,
 dos erros angulares e lineares. Um exemplo deste tipo de poligonal
 é apresentado na :numref:`fig_ExemploPoligonalFechada.png`, onde
 os ângulos horizontais são medidos à direita. Os procedimentos para
-a medição dos ângulos horizontais são apresentados no :any:`RST Capitulo7`,
+a medição dos ângulos horizontais são apresentados no :any:`RST Capitulo 7`,
 sendo os medidores eletrônicos, presentes em estações totais, os equipamentos
 mais utilizados para esta finalidade. Já as medidas de distâncias
 horizontais (ver :any:`RST Capitulo 6`),

@@ -335,7 +335,8 @@ domínios, para maiores detalhes ver :cite:authors:`Stewart`.
        :align: center
 
     :solucao:`Solução:`
-    A hipotenusa vale :math:`6,4` m. Para o ângulo :math:`\theta`, o lado de :math:`5:math:` m é o seu cateto oposto. Desta forma, pode-se utilizar a função arco seno para determinar :math:`\theta`:
+    A hipotenusa vale :math:`6,4\,\mathrm{m}`. Para o ângulo :math:`\theta`, o lado de
+    :math:`5\,\mathrm{m}` é o seu cateto oposto. Desta forma, pode-se utilizar a função arco seno para determinar :math:`\theta`:
 
     .. math::
 

@@ -116,7 +116,7 @@ Considerando :math:`d` a distância no plano topográfico, para o triângulo
 
 Na :numref:`fig_errodistancia`, também é apresentada, para algumas
 medidas de distância no geóide :math:`(s)`, a sua correspondente distância
-no plano topográfico :math:(`d`). Verifica-se que, para distâncias curtas
+no plano topográfico :math:`(d)`. Verifica-se que, para distâncias curtas
 :math:`(s<5.000\,\text{m})`, a diferença entre as medidas, :math:`d-s`, é insignificante
 :math:`(<1\,\text{mm})`. Todavia, para medidas de :math:`s` maiores que 80 km, as diferenças
 com relação a :math:`d` se tornam significativas :math:`(>4,2\,\text{m})`. Se considerarmos
@@ -568,7 +568,7 @@ se trabalha com ângulos zenitais (:math:`z`), são dadas por:
    :label: eq:taqueometria_DN
 
 em que: :math:`ai` é a altura do instrumento (m); :math:`H=(rs-ri)`;
-:math:`rs`, \:math:`rm` e :math:`ri`, respectivamente, retículo
+:math:`rs`, :math:`rm` e :math:`ri`, respectivamente, retículo
 superior, médio e inferior (m); e :math:`z`, o ângulo zenital :math:`(^{\circ})`.
 Informações sobre como estas Equações foram determinadas, consultar
 :cite:t:`loch` e :cite:t:`borge1`.

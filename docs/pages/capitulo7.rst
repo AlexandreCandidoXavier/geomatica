@@ -862,8 +862,9 @@ a seguir).
 
 ----
 
-.. admonition:: :exem:`Exemplo 8` Na região de Umuarama, PR, o alinhamento BC teve o seu azimute magnético medido de :math:`153^\circ41'30'':math:` em
-   10/12/1967. Qual é o azimute magnético deste alinhamento se você estivesse locando em campo este mesmo alinhamento em 4/5/2014?
+.. admonition:: :exem:`Exemplo 8` Na região de Umuarama, PR, o alinhamento BC teve
+    o seu azimute magnético medido de :math:`153^\circ41'30''` em
+    10/12/1967. Qual é o azimute magnético deste alinhamento se você estivesse locando em campo este mesmo alinhamento em 4/5/2014?
 
    :solucao:`Solução:`
 
