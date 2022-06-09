@@ -38,4 +38,4 @@ N
 .. bokeh-plot:: codes_py/plotting_scatter_square.py
    :source-position: none
 
-ajhhgg
+aja
