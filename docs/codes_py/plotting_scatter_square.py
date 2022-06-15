@@ -28,5 +28,7 @@ p.yaxis.axis_label = 'N (m)'
 
 p.text(x[:-1], y[:-1], text=["  %s" % d for d in point[:-1]],
        text_baseline="middle", text_align="left")
+
+p.arc(x[0], y[0], radius=20, start_angle=0.4, end_angle=4.8, color="navy")
 # show the results
 show(p)
