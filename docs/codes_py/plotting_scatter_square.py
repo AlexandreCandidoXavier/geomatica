@@ -1,6 +1,7 @@
-from bokeh.models import HoverTool
 from bokeh.plotting import figure, show
 from bokeh.models import NumeralTickFormatter, Panel, Tabs, BoxZoomTool, ColumnDataSource, LabelSet
+import bokeh
+print(bokeh.__version__)
 
 BoxZoomTool(match_aspect = True)
 
