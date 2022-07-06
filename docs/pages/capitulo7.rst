@@ -346,8 +346,8 @@ o alinhamento.
       :align: center
 
 
-Erro angular de fechamento
---------------------------
+Erro angular de fechamento :math:`(eaf)`
+----------------------------------------
 
 Sempre que se realiza um levantamento topográfico é necessário fazer
 a verificação se os erros nas medições de ângulos e distâncias estão
@@ -362,15 +362,21 @@ dos ângulos internos teórico. Se aberta e apoiada, é a diferença do
 azimute calculado do alinhamento final com o azimute deste alinhamento
 previamente estabelecido.
 
-Para o somatório dos ângulos internos, considere, por exemplo, uma
+Para o somatório dos ângulos horizontais internos
+teórico :math:`(\Sigma\mathrm{Hz_{teórico}})`, considere, por exemplo, uma
 poligonal fechada fechada na forma de triângulo, em que foram medidos
 os ângulos internos, temos o número de lados desta poligonal, :math:`n`,
-de três. Logo soma dos ângulos internos teórico é de :math:`180^\circ`.
-Pode-se generalizar por :math:`(n-2)180^\circ` o
-somatório dos ângulos internos teórico de uma poligonal qualquer com
-:math:`n` vértices. 
+de três. Logo :math:`\Sigma\mathrm{Hz_{teórico}}` é de :math:`180^\circ`.
+Pode-se generalizar :math:`\Sigma\mathrm{Hz_{teórico}}=(n-2)180^\circ`
+para uma poligonal qualquer com :math:`n` vértices.
 
-A tolerância para o erro angular de fechamento :math:`(\mathrm{T}\alpha)`
+O :math:`(eaf)` é dados por:
+
+.. math::
+   eaf = \Sigma\mathrm{Hz_{medido}}-\Sigma\mathrm{Hz_{teórico}}
+   :label: erro_angular_fechamento0
+
+A tolerância para o :math:`eaf` :math:`(\mathrm{T}\alpha)`
 vária de acordo com finalidade levantamento a ser realizado. Para
 uma poligonal fechada de :math:`n` vértices e apoiada em um só ponto, cuja
 a finalidade é para estudos de viabilidade em projetos de engenharia,
@@ -423,9 +429,15 @@ e antes de se calcular os rumos ou os azimutes, é necessário que se
 faça a compensação do erro angular de fechamento, para que o somatório
 dos ângulos internos da poligonal levantada seja igual ao do valor
 teórico. Existem vários métodos de compensação, sendo que o mais comum
-é distribuir o erro angular de forma linear entre os ângulos medidos.
+é distribuir o erro angular de forma linear :math:`(C_{eaf})` entre os ângulos medidos.
 Ou seja, aplicar em cada um dos vértices o erro médio, dado pelo erro
-angular de fechamento dividido pelo número de lados. No Exemplo abaixo
+angular de fechamento dividido pelo número de lados:
+
+.. math::
+   C_{eaf} = -frac{eaf}{n}
+   :label: C_erro_angular_fechamento0
+
+No Exemplo abaixo
 é apresentada a distribuição do erro angular para o levantamento da
 :numref:`fig_ExemploAnguloDexaoInterno.png` a.
 Este método deve ser utilizado quando os comprimentos dos alinhamentos
@@ -439,9 +451,9 @@ ser encontrados, por exemplo, em :cite:t:`loch`.
    :solucao:`Solução:`
    Na tabela a seguir, é apresentado o resultado da compensação. Na coluna **I**
    estão os ângulos horizontais medidos em cada um dos vértices; na **II**
-   o erro médio e na **III**, o ângulo interno compensado (**I** + **II**).
+   a :math:`C_{eaf}` e; na **III**, o ângulo interno compensado (**I** + **II**).
    Com o erro angular de fechamento de :math:`-45''` (ver exemplo 2), e sendo a poligonal
-   de cinco lados, temos o erro médio de :math:`9''` :math:`(45''/5)`. Note que,
+   de cinco lados, temos o erro médio de :math:`9''` :math:`(-\frac{-45''}{5})`. Note que,
    como o somatório dos ângulos medidos foi menor do que o teórico, então deve-se
    somar :math:`9''` a cada um dos vértices. Caso contrário, o somatório das medidas
    angulares maiores que o teórico, deve-se subtrair.
@@ -451,7 +463,7 @@ ser encontrados, por exemplo, em :cite:t:`loch`.
       :column-alignment: crrr
 
       ================== =========================================== =========================== ================================================
-      Vértice            :math:`\sphericalangle` medido **(I)**)     erro médio **(II)**         :math:`\sphericalangle` compensado **(I+II)**
+      Vértice            :math:`\sphericalangle` medido **(I)**)     :math:`C_{eaf}` **(II)**    :math:`\sphericalangle` compensado **(I+II)**
       ================== =========================================== =========================== ================================================
       :math:`\mathrm{A}` :math:`99^\circ48'54''`                     :math:`+9`                  :math:`99^\circ49'3''`
       :math:`\mathrm{B}` :math:`95^\circ55'15''`                     :math:`+9`                  :math:`95^\circ55'24''`

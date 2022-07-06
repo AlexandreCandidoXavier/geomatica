@@ -149,18 +149,31 @@ sendo os seus valores anotados na tabela da caderneta de campo.
 
 .. _eaf:
 
-Avaliação do erro angular de fechamento
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Avaliação do erro angular de fechamento :math:`(eaf)`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A avaliação o erro angular de fechamento é realizada por meio da verificação
-do somatório dos ângulos internos medidos com o somatório dos ângulos
-internos teórico. Para o nosso exemplo, como o número de vértices
-é de :math:`5` :math:`(n=5)`, temos que o somatório teórico é de :math:`540^\circ`,
-:math:`(n-2)180^\circ`. Logo, erro angular de fechamento é de :math:`35''`.
+A avaliação o erro angular de fechamento :math:`(eaf)` é realizada por meio da verificação da
+diferença do somatório dos ângulos internos medidos com o somatório dos ângulos
+internos teórico:
+
+.. math::
+   eaf = \Sigma\mathrm{Hz_{medido}}-\Sigma\mathrm{Hz_{teórico}}
+   :label: erro_angular_fechamento
+
+Sendo :math:`\Sigma\mathrm{Hz_{teórico}}=(n-2)180^\circ` para ângulos internos,
+:math:`n` é o número de lados ou vértices da poligonal.
+
+Para o nosso exemplo, como o número de vértices
+é de :math:`5` :math:`(n=5)`, temos que o somatório teórico,
+:math:`\Sigma\mathrm{Hz_{teórico}}`, de :math:`540^\circ`,
+:math:`(n-2)180^\circ`. O :math:`\Sigma\mathrm{Hz_{medido}}`
+medidos é de :math:`539^\circ59'25''` (ver  :numref:`tabelaCeaf`).
+Logo, o :math:`(eaf)` é de :math:`-35''`.
 Considerando a tolerância máxima do erro angular de fechamento
 :math:`\text{T}\alpha\leq40''\sqrt{n} = 89''`,
 conclui-se que os ângulos internos foram medidos dentro dos limites
-admissível de erro, logo, os ângulos internos podem ser compensados.
+admissível de erro, em que se considera para comparação o
+:math:`(eaf)` em módulo. Logo, os ângulos internos podem ser compensados.
 A compensação que será aplicada é a linear, conforme apresentada na
 Tabela abaixo. Note que o método linear
 é indicado quando o comprimento do alinhamentos forem aproximadamente
@@ -169,6 +182,8 @@ melhor ponderar as compensações pelos comprimentos dos alinhamentos
 em que o ângulo foi medido onde, as maiores compensações são aplicadas
 para os comprimentos mais curtos, pois estes estão sujeitos aos maiores
 erros nas suas medidas (ver :cite:`loch` e :cite:`WOLF`).
+
+.. _tabelaCeaf:
 
 .. table:: Compensação do erro angular pelo método linear
     :widths: 1 1 1 1
