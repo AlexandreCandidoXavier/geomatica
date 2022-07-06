@@ -76,10 +76,10 @@ for n in range(len(Az_d)):
     arc = p1.arc(x[n+1], y[n+1], radius=20, start_angle=450-Az_d[n], end_angle=450-Hz_re[n], color="orange",
           end_angle_units="deg", start_angle_units="deg",line_width=2,)
     # arc.add_decoration(TeeHead(size=10), "start")
-labels = LabelSet(x='x', y='y', text='Hz',
-              x_offset=[5, 10], y_offset=5, source=source, render_mode='canvas')
+#labels = LabelSet(x='x', y='y', text='Hz',
+#              x_offset=[5, 10], y_offset=5, source=source, render_mode='canvas')
 
-p1.add_layout(labels)
+#p1.add_layout(labels)
 tab1 = Panel(child=p1, title=tipo)
 
 tipo = "Poligonal"
