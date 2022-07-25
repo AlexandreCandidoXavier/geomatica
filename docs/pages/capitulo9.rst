@@ -681,7 +681,7 @@ podem ser encontrados em :cite:`WOLF`.
    .. math::
       H&=h-N\\
       &=562,672--6,54\\
-      &=569,112\,\rm{m.}
+      &=569,212\,\rm{m.}
 
 ----
 

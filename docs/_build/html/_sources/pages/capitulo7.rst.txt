@@ -414,8 +414,8 @@ do erro angular de fechamento nos ângulos medidos.
 
 Desta forma, o erro angular de fechamento é de :math:`-45''` :math:`(539^\circ59'15''-540^\circ)`.
 Se o levantamento fosse para  estudos de viabilidade em projetos de engenharia,
-:math:`\mathrm{T}\alpha\leq40''\sqrt{n}=89''`. Como o erro do levantamento é menor,
-considerando valor absoluto :math:`(|-45''|)`, pode-se concluir que o erro nas medições
+:math:`\mathrm{T}\alpha\leq40''\sqrt{n}=89''`. Como o :math:`eaf` é menor,
+considerando valor absoluto, :math:`(|-45''|)`, pode-se concluir que o erro nas medições
 dos ângulos da poligonal estão dentro do limite estabelecido pela NBR13133, podendo-se
 realizar a compensação.
 
