@@ -75,8 +75,44 @@
 <div style="position: center; padding-bottom=75%; height:0; overflow: hidden; max-width: 100%; height:auto">
     <iframe class="center-block" width="854" height="480" src="https://www.youtube.com/embed/50kc3F0aE6Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-<script src="bokeh-content-2f68747dfb274749ae86671dd1b6159b-pages-para_test.js" id="b65a0a92-18cf-4147-a1a9-85fea1b17116"></script><p>ajaa</p>
-</section>
+<script src="bokeh-content-34df9fc84709454bbb6bdd5e0a8fca2f-pages-para_test.js" id="79c48f3d-af14-4fb5-a262-4e0a38354871"></script><script type="text/javascript">
+     Bokeh.set_log_level("info");
+</script>
+<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+
+<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+</head>
+<body>
+<py-env>
+- bokeh
+- numpy
+</py-env>
+<h1>Bokeh Example</h1>
+<div id="myplot"></div>
+
+<py-script id="main">
+import json
+import pyodide
+
+from js import Bokeh, console, JSON
+
+from bokeh.embed import json_item
+from bokeh.plotting import figure
+from bokeh.resources import CDN
+
+# create a new plot with default tools, using figure
+p = figure(plot_width=400, plot_height=400)
+
+# add a circle renderer with x and y coordinates, size, color, and alpha
+p.circle([1, 2, 3, 4, 5], [6, 7, 2, 4, 5], size=15, line_color="navy", fill_color="orange", fill_alpha=0.5)
+p_json = json.dumps(json_item(p, "myplot"))
+
+Bokeh.embed.embed_item(JSON.parse(p_json))
+</py-script>
+
+</body>
+</html></section>
 
 
             <div class="clearer"></div>

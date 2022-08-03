@@ -1447,7 +1447,7 @@ e :math:`\mathrm{cota_{terreno[7]}}=201,741\,\text{m}`.
 entre os pontos   :math:`A` e   :math:`B`, obtendo-se
 a :math:`\mathrm{DN}` de, respectivamente,
 :math:`3,837\,\text{m}` e :math:`3,842\,\text{m}`. Sabendo-se que o
-trecho   AB }tem uma extensão
+trecho   :math:`AB` tem uma extensão
 de :math:`580\,\text{m}`. Pede-se:
 
 a. o erro cometido no trecho;
