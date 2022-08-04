@@ -457,7 +457,7 @@ média das secções. No método da área unitária, para a estimativa do volume
 ou depositado na área de interesse, primeiramente, a área é estaqueada em quadrados. As estacas têm a
 sua cota determinada por nivelamento, seja o trigonométrico, com estação total ou, por meio do
 nivelamento geométrico, com o nível. As linhas e colunas são identificadas por letras ou números.
-Na Figura \ref{fig:volume_area_unitaria}a é apresentada uma área a ser sistematizada, constando,
+Na Figura :numref:`volume_area_unitaria` a é apresentada uma área a ser sistematizada, constando,
 para cada estaca, os valores das cotas. As colunas e linhas da grade são identificadas por letras e
 números, sendo, por exemplo, a estaca \textit{A1} a cota de :math:`302,4\,\text{m}`.
 
