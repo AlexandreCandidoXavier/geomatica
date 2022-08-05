@@ -457,9 +457,9 @@ média das secções. No método da área unitária, para a estimativa do volume
 ou depositado na área de interesse, primeiramente, a área é estaqueada em quadrados. As estacas têm a
 sua cota determinada por nivelamento, seja o trigonométrico, com estação total ou, por meio do
 nivelamento geométrico, com o nível. As linhas e colunas são identificadas por letras ou números.
-Na Figura :numref:`volume_area_unitaria` a é apresentada uma área a ser sistematizada, constando,
+Na :numref:`volume_area_unitaria` a é apresentada uma área a ser sistematizada, constando,
 para cada estaca, os valores das cotas. As colunas e linhas da grade são identificadas por letras e
-números, sendo, por exemplo, a estaca \textit{A1} a cota de :math:`302,4\,\text{m}`.
+números, sendo, por exemplo, a estaca :math:`\mathrm{A1}` a cota de :math:`302,4\,\text{m}`.
 
 .. _volume_area_unitaria:
 
@@ -534,9 +534,9 @@ positivo, seria o volume a ser aterrado.
 
 Para se calcular o volume de material de toda área, ao invés de calcular
 os volumes dos quadrados individuais e depois somar, se usa o seguinte método,
-a área de quadrado é dividida por quatro\footnote{O número quatro é referente ao
-denominador da média calculada de CV para as 4 estacas de cada quadrado} e, este
-resultado, multiplicado pela soma do produto da CVs de cada estaca pelo número
+a área de quadrado é dividida por quatro, referente ao
+denominador da média calculada de CV para as 4 estacas de cada quadrado. Este
+resultado, é multiplicado pela soma do produto da CVs de cada estaca pelo número
 de quadrados que a mesma é comum (ver Exemplo abaixo). Matematicamente:
 
 .. math::
@@ -598,6 +598,8 @@ estaca :math:`i,\,j`;
    O sinal do volume calculado representa que o terreno será escavado. Logo,  para
    que o terreno analisado seja sistematizado para a cota de :math:`301\,\text{m}`,
    o volume total a ser escavado será de :math:`6\,160\,\mathrm{m}^3`.
+
+.. _exemplo 5:
 
 .. admonition:: :exem:`Exemplo 5` No problema anterior, verificou-se que haverá a necessidade
    de transporte de uma grande quantidade de material. Sabendo-se que os custos com o
@@ -717,7 +719,7 @@ número de viagens necessárias para transportar todo o material?
 
 :exem:`2)` Deseja-se aterrar um volume de :math:`400\,\text{m}^3` com terra. Qual será o
 volume de terra necessário para este aterro, sabendo-se que o material a ser utilizado
-terá seu volume reduzido em :math:`25\%` no processo de compactação?
+terá seu volume reduzido em :math:`20\%` no processo de compactação?
 
 :exem:`Resp.:` :math:`500\,\text{m}^3`.
 
@@ -765,7 +767,7 @@ de :math:`20\,\text{m}`
 
 -----
 
-:exem:`6)` Utilizando os dados do Exemplo 5, calcular o volume de aterro.
+:exem:`6)` Utilizando os dados do **Exemplo resolvido 5**, calcular o volume de aterro.
 
 :exem:`Resp.:` :math:`1\,617\,\text{m}^3`.
 
@@ -868,7 +870,7 @@ d. projetar um plano inclinado de :math:`1\%` de declividade no sentido
 
 :exem:`8)` Um terreno de :math:`40,0\,\text{m}` por :math:`40,0\,\text{m}`, foi
 estaqueado em quadrículas de :math:`20,0\,\text{m}` por :math:`20,0\,\text{m}`.
-As cotas obtidas para cada vértice estão na Figura~\ref{fig:cap_alt_exer_grid2}.
+As cotas obtidas para cada vértice estão na Figura abaixo.
 
 .. figure:: /images/capitulo10/cap_alt_exer_grid2.png
   :scale: 45 %
