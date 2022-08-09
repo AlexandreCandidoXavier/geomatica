@@ -1326,11 +1326,11 @@ terra e o de refração, qual a altitude em :math:`P`?
 :exem:`4)` Um nivelamento foi realizado da estação :math:`A` para :math:`B`,
 sendo a altitude de :math:`B` de :math:`409,56\,\text{m}`. Obteve-se os seguintes
 dados: :math:`z_{\mathrm{AB}}=86^{\circ}8'47''`; :math:`\mathrm{DI_{AB}}=3\,524,68\,\text{m}`;
-:math:`ai_{A}=1,440\,\text{m}` (altura do instrumento em :math:`A`); altura do centro do refletor :math:`(ap)`
+:math:`ai_{A}=1,440\,\text{m}`, altura do instrumento em :math:`A`; altura do centro do refletor :math:`(ap)`
 no ponto :math:`B` de :math:`2,510\,\text{m}`. Calcular a altitude do ponto :math:`A`.
 Considere o efeito de curvatura e o de refração terrestre.
 
-:exem:`Resp.:` Altitude em   A} = :math:`172,911\,\text{m}` .
+:exem:`Resp.:` Altitude de :math:`A=172,911\,\text{m}` .
 
 ----
 
@@ -1393,7 +1393,7 @@ a altitude em   :math:`A` é de :math:`564,693\,\text{m}`. Pede-se:
 
    Ponto inacessível.
 
-:exem:`Resp.:` :math:`\mathrm{DH}_{AP}=45,786\,\text{m}`; Altitude   P} = :math:`595,654`
+:exem:`Resp.:` :math:`\mathrm{DH}_{AP}=45,786\,\text{m}`; Altitude  de :math:`P=595,654`
 m.
 
 ----
@@ -1425,7 +1425,7 @@ e :math:`41,5354^{\circ}` de Longitude Oeste e, altitude geométrica de
 272,13 m. Calcule a altitude em relação ao geóide (altitude ortométrica).
 Utilizar o programa `HgeoHNOR2020 <https://www.ibge.gov.br/geociencias/informacoes-sobre-posicionamento-geodesico/servicos-para-posicionamento-geodesico/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?edicao=31284&t=processar-os-dados>`_.
 
-\textsl{Resp.}: :math:`278,59\,\text{m}` .
+:exem:`Resp.:`  :math:`278,59\,\text{m}` .
 
 ----
 
