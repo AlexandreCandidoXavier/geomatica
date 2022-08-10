@@ -776,8 +776,8 @@ de :math:`20\,\text{m}`
 :exem:`7)` Um terreno foi estaqueado, conforme a Figura abaixo, para
 fins de trabalho de terraplenagem. O espaçamento entre as estacas
 foi de :math:`20,0\,\text{m}`. A declividade do terreno na direção das linhas é de
-:math:`3`\% e na direção das colunas é de \textendash :math:`2`\%. A cota
-do terreno para estaca A1 de :math:`100,00\,\text{m}`. Pedem-se:
+:math:`-3`\% e na direção das colunas é de :math:`-2`\%. A cota
+do terreno para estaca :math:`A1` de :math:`100,00\,\text{m}`. Pedem-se:
 
 .. figure:: /images/capitulo10/cap_alt_exe_grid.png
   :scale: 45 %
