@@ -798,7 +798,8 @@ da declinação magnética, pode-se citar:
   à correntes elétricas na alta ionosfera (região acima dos 100 km)
   variar ao longo de 24 horas. A variação da declinação magnética ao
   longo de 24 horas é pequena, por exemplo, em Hartland, Reino Unido,
-  verificou-se variação de aproximadamente :math:`9'` (`ver aqui <http://www.geomag.bgs.ac.uk/education/earthmag.html>`_).
+  verificou-se variação de aproximadamente :math:`9'`
+  (`ver aqui <http://www.geomag.bgs.ac.uk/education/earthmag.html>`_).
   Já para os Estados Unidos, a variação é de aproximadamente :math:`8'` ao
   longo de 24 horas :cite:`WOLF`;
 - a **variação irregular**, é uma variação imprevisível. Pode ocorrer

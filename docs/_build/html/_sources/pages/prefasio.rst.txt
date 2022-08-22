@@ -86,26 +86,19 @@ conteúdos abordados em cada capítulo:
 - :ref:`RST Capitulo 9`: é apresentada a altimetria.
   Serão descritos diferentes métodos para determinar
   as altitudes, as cotas e as diferenças de nível de pontos. Aqui, estaremos
-  dando atenção às coordenadas $(y)$.
+  dando atenção às coordenadas :math:`(y)`.
 
 - :ref:`RST Capitulo 10`: trataremos da definição, leitura e construção de curvas de nível para uso em estudo que requerem conhecimento do relevo. São também apresentados duas metodologias básicas para cálculo de volume em trabalhos de sistematização de terreno, o método área média de secção e o pela área unitária.
 
 
-Este livro está sendo escrito em \LaTeX\footnote{\url{https://www.latex-project.org/}},
-distribuído por \emph{MiKTeX}\footnote{\url{https://miktex.org/}}, com o auxílio do
-editor \emph{Texmaker}\footnote{\url{http://www.xm1math.net/texmaker/}}.
-Para a geração do estilo bibliográfico alfabético é
-empregado o pacote \emph{abntex2cite}\footnote{\url{http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/abntex2/doc/abntex2cite-alf.pdf}}.
 As figuras foram geradas com o
-auxílio dos pacotes Ti\textit{k}Z \cite{tantau:2013a} e
-\emph{PSTricks}\footnote{\url{http://tug.org/PSTricks/main.cgi/}}. Destaco ainda
-o pacote \emph{Cartopy} \cite{Cartopy}, utilizado para gerar mapas
-de diferentes tipos projeções cartográficas (ver
-Secção \ref{sec:projecao_cartografica}, página \pageref{sec:projecao_cartografica}). Teria
+auxílio dos pacotes :math:`Ti\textit{k}Z` :cite:`tantau:2013a` e
+:math:`PSTricks` `<http://tug.org/PSTricks/main.cgi/>`_. Destaco ainda
+o pacote *Cartopy* :cite:`Cartopy` , utilizado para gerar mapas
+de diferentes tipos projeções cartográficas. Teria
 também muita mais dificuldade de produzir este material se não contasse com
-o Python\footnote{\url{https://www.python.org/}} e o
-Matlab\footnote{\url{http://www.mathworks.com/}}, linguagens em que
-foram escritos vários \emph{scripts} para, por exemplo, a geração e a solução
+o Python `<https://www.python.org/>`_, linguagem em que
+foram escritos vários *scripts* para, por exemplo, a geração e a solução
 dos problemas e exercícios propostos.
 
 Gostaria de encerrar agradecendo aos meus professores que me ensinaram a
