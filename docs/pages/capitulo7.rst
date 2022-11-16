@@ -819,6 +819,14 @@ faz necessário atualmente, devido à disponibilidade na internet de
 dados de declinação magnética para diferentes posições geográficas
 e épocas.
 
+.. admonition:: Sobre declinação magnética.
+
+   .. raw:: html
+
+       <div style="position: center; padding-bottom=75%; height:0; overflow: hidden; max-width: 100%; height:auto">
+        <iframe class="center-block" width="854" height="480" src="https://www.youtube.com/embed/WwIKx96q8lE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       </div>
+
 .. admonition:: Obtendo a declinação magnética
 
    `Clicando aqui <https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml?useFullSite=true>`_ você
@@ -842,7 +850,8 @@ e épocas.
 
 ----
 
-.. admonition:: :exem:`Exemplo 7` Na página da `NOAA <\href{https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml?useFullSite=true>`_
+.. admonition:: :exem:`Exemplo 7` Na página da
+   `NOAA <https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml?useFullSite=true>`_
    é possível encontrar os valores da declinação magnética do modelo IGRF.
    Por meio dela, calcular a variação da declinação magnética para a cidade de Vitória,
    Espírito Santo :math:`(\phi=-20^\circ19'10'',~\lambda=-40^\circ20'16'')`, entre o período de 1/Jan/1960 e 1/Jan/2014.
