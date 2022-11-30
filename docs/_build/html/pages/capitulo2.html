@@ -3,10 +3,10 @@
 
 <!DOCTYPE html>
 
-<html lang="pt_PT">
+<html lang="pt-PT">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>Capitulo 2: Unidades métricas, escala e determinação de áreas &#8212; Documentação Livro de Geomática 0.1</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
@@ -17,7 +17,9 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/translations.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -71,7 +73,7 @@
           <div class="body" role="main">
             
   <style> .exem {color:blue; font-weight: bold} </style><style> .solucao {font-weight: bold} </style><style> .blue {color:blue} </style><section id="capitulo-2-unidades-metricas-escala-e-determinacao-de-areas">
-<span id="rst-capitulo-2"></span><h1>Capitulo 2: Unidades métricas, escala e determinação de áreas<a class="headerlink" href="#capitulo-2-unidades-metricas-escala-e-determinacao-de-areas" title="Link permanente para este título">¶</a></h1>
+<span id="rst-capitulo-2"></span><h1>Capitulo 2: Unidades métricas, escala e determinação de áreas<a class="headerlink" href="#capitulo-2-unidades-metricas-escala-e-determinacao-de-areas" title="Permalink to this heading">¶</a></h1>
 <p>Este capítulo tem como objetivo central a determinação de áreas. Começaremos
 com a apresentação das unidades de comprimento e de área mais utilizadas
 em geomática. Como geralmente os desenhos topográficos estão reduzidos
@@ -79,7 +81,7 @@ em geomática. Como geralmente os desenhos topográficos estão reduzidos
 determinação de distância e área. Por fim, alguns métodos de cálculo
 de área serão apresentados.</p>
 <section id="unidades-de-comprimento-e-area">
-<span id="unidadesmetricas"></span><h2>Unidades de comprimento e área<a class="headerlink" href="#unidades-de-comprimento-e-area" title="Link permanente para este título">¶</a></h2>
+<span id="unidadesmetricas"></span><h2>Unidades de comprimento e área<a class="headerlink" href="#unidades-de-comprimento-e-area" title="Permalink to this heading">¶</a></h2>
 <p>O Sistema Internacional de Unidades (SI) tem como unidade de comprimento
 o metro (m). Ele é definido como o comprimento do caminho viajado
 pela luz durante o intervalo de <span class="math notranslate nohighlight">\(1/299\,792\,458\)</span> segundo.
@@ -102,7 +104,7 @@ um alqueiro geométrico, também conhecido por mineiro, mede <span class="math n
 enquanto o paulista mede <span class="math notranslate nohighlight">\(24\,200\,\text{m}^2\)</span>.
 Na apresentação de grandes extensões de área, como as presentes em
 mapas ou cartas topográficas, utiliza-se a unidade de <span class="math notranslate nohighlight">\(\text{km}^2\)</span>. Outras
-unidades de comprimento e área podem ser encontradas em <span id="id1">[<a class="reference internal" href="referencias.html#id14" title="J. A. Comastri and J. G. Junior. Topografia aplicada. Editora UFV, Viçosa, MG, 1 edition, 2004.">CJ04</a>]</span>.</p>
+unidades de comprimento e área podem ser encontradas em <span id="id1">[<a class="reference internal" href="referencias.html#id16" title="J. A. Comastri and J. G. Junior. Topografia aplicada. Editora UFV, Viçosa, MG, 1 edition, 2004.">CJ04</a>]</span>.</p>
 <div class="admonition-exem-exemplo-1-converta-math-1-text-km-2-para-math-text-m-2-ha-alqueire-mineiro-geometrico-e-paulista admonition">
 <p class="admonition-title"><span class="exem">Exemplo 1</span> Converta <span class="math notranslate nohighlight">\(1\,\text{km}^2\)</span> para: <span class="math notranslate nohighlight">\(\text{m}^2\)</span>, ha, alqueire
 mineiro (geométrico) e paulista?</p>
@@ -131,9 +133,9 @@ x_{\text{alqPau}} &amp; =41,3223\,\text{alqueiro paulista}.\end{split}\]</div>
 </div>
 </section>
 <section id="escala">
-<span id="id2"></span><h2>Escala<a class="headerlink" href="#escala" title="Link permanente para este título">¶</a></h2>
+<span id="id2"></span><h2>Escala<a class="headerlink" href="#escala" title="Permalink to this heading">¶</a></h2>
 <section id="escala-numerica">
-<h3>Escala numérica<a class="headerlink" href="#escala-numerica" title="Link permanente para este título">¶</a></h3>
+<h3>Escala numérica<a class="headerlink" href="#escala-numerica" title="Permalink to this heading">¶</a></h3>
 <p>Quando se realiza levantamento na superfície terrestre, obtêm-se as
 coordenadas dos pontos desejáveis, e posteriormente são apresentados
 em papel ou na tela do computador. Logicamente que as medidas de distância
@@ -206,7 +208,7 @@ relação entre área de desenho e área na natureza. Para a nossa escala
 </div>
 </section>
 <section id="escala-grafica">
-<h3>Escala gráfica<a class="headerlink" href="#escala-grafica" title="Link permanente para este título">¶</a></h3>
+<h3>Escala gráfica<a class="headerlink" href="#escala-grafica" title="Permalink to this heading">¶</a></h3>
 <p>Uma outra forma de representação da escala é a gráfica, que tem como
 vantagem, que, mesmo se o mapa/carta for reduzida ou ampliada, a escala
 gráfica se mostrará apropriada para análises, uma vez que ela é reduzida
@@ -242,7 +244,7 @@ desenhe uma escala gráfica com <span class="math notranslate nohighlight">\(6\,
 </section>
 </section>
 <section id="determinacao-de-areas">
-<h2>Determinação de áreas<a class="headerlink" href="#determinacao-de-areas" title="Link permanente para este título">¶</a></h2>
+<h2>Determinação de áreas<a class="headerlink" href="#determinacao-de-areas" title="Permalink to this heading">¶</a></h2>
 <p>Normalmente, em problemas topográficos, há a necessidade de se calcular
 áreas. As áreas podem ser: <em>i</em>) da superfície projetada do
 plano topográfico ou cartográfico (plano horizontal), quando se deseja,
@@ -254,7 +256,7 @@ na seção <a class="reference internal" href="capitulo1.html#secareasdefiguras"
 Neste capítulo veremos algumas metodologias para medição de áreas
 em topografia.</p>
 <section id="decomposicao-de-figuras-elementares">
-<h3>Decomposição de figuras elementares<a class="headerlink" href="#decomposicao-de-figuras-elementares" title="Link permanente para este título">¶</a></h3>
+<h3>Decomposição de figuras elementares<a class="headerlink" href="#decomposicao-de-figuras-elementares" title="Permalink to this heading">¶</a></h3>
 <p>Uma maneira grosseira de realizar medidas de uma área <span class="math notranslate nohighlight">\((A)\)</span>, seja
 diretamente em uma planta topográfica ou mesmo em levantamento de
 campo, é na decomposição de sua área em figuras geométricas simples,
@@ -287,7 +289,7 @@ a área total.</p>
 </figure>
 </section>
 <section id="area-ao-longo-de-um-transecto">
-<h3>Área ao longo de um transecto<a class="headerlink" href="#area-ao-longo-de-um-transecto" title="Link permanente para este título">¶</a></h3>
+<h3>Área ao longo de um transecto<a class="headerlink" href="#area-ao-longo-de-um-transecto" title="Permalink to this heading">¶</a></h3>
 <p>Quando a superfície a ser determinada apresenta-se com uma forma estreita,
 pode-se estabelecer um alinhamento na direção do maior comprimento
 com o auxílio de um teodolito ou estação total, e a partir deste alinhamento,
@@ -359,7 +361,7 @@ temos:</p>
 </div>
 </section>
 <section id="calculo-de-area-por-gauss">
-<span id="areagauss"></span><h3>Cálculo de área por Gauss<a class="headerlink" href="#calculo-de-area-por-gauss" title="Link permanente para este título">¶</a></h3>
+<span id="areagauss"></span><h3>Cálculo de área por Gauss<a class="headerlink" href="#calculo-de-area-por-gauss" title="Permalink to this heading">¶</a></h3>
 <p>Em levantamentos topográficos, as coordenadas retangulares dos pontos
 limitantes, são determinados por diversos métodos. A obtenção das
 coordenadas retangulares é de suma importância, uma vez, que a partir
@@ -453,7 +455,7 @@ cotar, determinar a área e o perímetro.</p>
 </section>
 </section>
 <section id="exercicios">
-<h2>Exercícios<a class="headerlink" href="#exercicios" title="Link permanente para este título">¶</a></h2>
+<h2>Exercícios<a class="headerlink" href="#exercicios" title="Permalink to this heading">¶</a></h2>
 <p><span class="exem">1)</span>  A distância entre duas paredes de um apartamento
 é de <span class="math notranslate nohighlight">\(12,32\,\text{m}\)</span>. No desenho da planta do apartamento, estas duas paredes
 estão separadas por <span class="math notranslate nohighlight">\(4,2\,\text{cm}\)</span>. Qual a escala da planta?</p>
@@ -583,7 +585,7 @@ tamanho.</p>
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
     
@@ -628,7 +630,7 @@ tamanho.</p>
 
     <div class="footer" role="contentinfo">
         &#169; Copyright 2021, Alexandre C Xavier.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.2.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
     </div>
     <!-- cloud_sptheme 1.4 -->
   </body>

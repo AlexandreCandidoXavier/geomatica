@@ -3,10 +3,10 @@
 
 <!DOCTYPE html>
 
-<html lang="pt_PT">
+<html lang="pt-PT">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>Capitulo 10: Curva de nível e cálculo de volume &#8212; Documentação Livro de Geomática 0.1</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
@@ -17,7 +17,9 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/translations.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -71,14 +73,14 @@
           <div class="body" role="main">
             
   <style> .exem {color:blue; font-weight: bold} </style><style> .solucao {font-weight: bold} </style><style> .blue {color:blue} </style><section id="capitulo-10-curva-de-nivel-e-calculo-de-volume">
-<span id="rst-capitulo-10"></span><h1>Capitulo 10: Curva de nível e cálculo de volume<a class="headerlink" href="#capitulo-10-curva-de-nivel-e-calculo-de-volume" title="Link permanente para este título">¶</a></h1>
+<span id="rst-capitulo-10"></span><h1>Capitulo 10: Curva de nível e cálculo de volume<a class="headerlink" href="#capitulo-10-curva-de-nivel-e-calculo-de-volume" title="Permalink to this heading">¶</a></h1>
 <p>Uma das maneiras de avaliar o relevo de uma região é por meio de
 curvas de nível. Neste capítulo será apresentado sua importância,
 como se fazer a sua leitura, e também, uma metodologia para desenhá-la.
 Outro tema que será abordado neste capítulo é o de cálculo de volume de
 material a ser escavado e/ou aterrado para obras de sistematização.</p>
 <section id="curva-de-nivel">
-<h2>Curva de nível<a class="headerlink" href="#curva-de-nivel" title="Link permanente para este título">¶</a></h2>
+<h2>Curva de nível<a class="headerlink" href="#curva-de-nivel" title="Permalink to this heading">¶</a></h2>
 <p>Entende-se por <strong>curva de nível</strong> a linha que liga pontos de igual cota ou altitude.
 Em uma curva de nível perfeita, todos os seus pontos teriam mesma altitude/cota no
 terreno, desta forma, se uma pessoa estivesse realizando uma caminhada ao longo desta,
@@ -161,7 +163,7 @@ relevo (c), com as curvas de nível.</span><a class="headerlink" href="#id11" ti
 </figcaption>
 </figure>
 <p>A seguir, é apresentada a forma de se realizar a leitura/interpretação das curvas
-de nível, assim como suas características <span id="id1">[<a class="reference internal" href="referencias.html#id2" title="G.M. Cole and A.L. Harbin. Surveyor Reference Manual. Professional Publications, 2009. ISBN 9781591261742. URL: http://books.google.com.br/books?id=bFun4fjl4P0C.">CH09</a>]</span>:</p>
+de nível, assim como suas características <span id="id1">[<a class="reference internal" href="referencias.html#id4" title="G.M. Cole and A.L. Harbin. Surveyor Reference Manual. Professional Publications, 2009. ISBN 9781591261742. URL: http://books.google.com.br/books?id=bFun4fjl4P0C.">CH09</a>]</span>:</p>
 <ul class="simple">
 <li><p>as curvas de nível são sempre fechadas dentro ou fora da borda do mapa.
 Desta forma, uma curva de nível nunca pode acabar abruptamente num mapa;</p></li>
@@ -195,7 +197,7 @@ são pontos cotados.</span><a class="headerlink" href="#id12" title="Permalink t
 </figcaption>
 </figure>
 <section id="determinacao-das-curvas-de-nivel">
-<h3>Determinação das curvas de nível<a class="headerlink" href="#determinacao-das-curvas-de-nivel" title="Link permanente para este título">¶</a></h3>
+<h3>Determinação das curvas de nível<a class="headerlink" href="#determinacao-das-curvas-de-nivel" title="Permalink to this heading">¶</a></h3>
 <p>Existem vários métodos para se determinar as curvas de nível. Para todos os métodos,
 há necessidade de se conhecer, na área a ser levantada, as coordenadas de pontos,
 juntamente com os seus respectivos valores da altitude ou cota. As coordenadas e
@@ -211,7 +213,7 @@ terreno, podendo ser utilizada para todos os tipos de terreno.</p>
 <p>Nesta seção será apresentada um método de determinação de curvas de nível para
 quando os pontos estão distribuídos em grade regular. Para a geração das curvas
 de nível de grade irregular, pode-se consultar
-<span id="id2">[<a class="reference internal" href="referencias.html#id8" title="J. A. Comastri and J. C. Tuler. Topografia: Altimetria. Editora UFV, Viçosa, MG, 3 edition, 2003.">CT03</a>]</span>, <span id="id3">[<a class="reference internal" href="referencias.html#id18" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span> e <span id="id4">[<a class="reference internal" href="referencias.html#id2" title="G.M. Cole and A.L. Harbin. Surveyor Reference Manual. Professional Publications, 2009. ISBN 9781591261742. URL: http://books.google.com.br/books?id=bFun4fjl4P0C.">CH09</a>]</span>.</p>
+<span id="id2">[<a class="reference internal" href="referencias.html#id10" title="J. A. Comastri and J. C. Tuler. Topografia: Altimetria. Editora UFV, Viçosa, MG, 3 edition, 2003.">CT03</a>]</span>, <span id="id3">[<a class="reference internal" href="referencias.html#id20" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span> e <span id="id4">[<a class="reference internal" href="referencias.html#id4" title="G.M. Cole and A.L. Harbin. Surveyor Reference Manual. Professional Publications, 2009. ISBN 9781591261742. URL: http://books.google.com.br/books?id=bFun4fjl4P0C.">CH09</a>]</span>.</p>
 <p>Saliente-se também que no dia a dia de um técnico em topografia, mapas com
 curvas de nível são geradas rapidamente por meio de programas de computador,
 podendo-se destacar os programas <a class="reference external" href="https://www.qgis.org/pt_BR/site/">QGIS</a>,
@@ -221,14 +223,14 @@ deve-se importar ou inserir os dados de posição e de altitude dos pontos
 grade regular ou irregular; e, para finalizar a operação, defini-se alguns parâmetros,
 como a equidistância vertical desejada. Para descrição detalhada dos procedimentos
 necessários, consultar os manuais dos respectivos programas e, para estudar a teoria
-por trás da geração, pode-se consultar <span id="id5">[<a class="reference internal" href="referencias.html#id18" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>.</p>
+por trás da geração, pode-se consultar <span id="id5">[<a class="reference internal" href="referencias.html#id20" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>.</p>
 <div class="admonition-exemplo-de-geracao-de-curvas-de-nivel-com-dados-de-altitude-do-google-earth-e-do-qgis admonition">
 <p class="admonition-title">Exemplo de geração de curvas de nível com dados de altitude do <em>Google Earth</em> e do <strong>QGIS</strong>.</p>
 <div style="position: center; padding-bottom=75%; height:0; overflow: hidden; max-width: 100%; height:auto">
    <iframe width="608" height="360" src="https://www.youtube.com/embed/xekwB3d6e6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div></div>
 <section id="determinacao-de-curva-de-nivel-em-grade-regular">
-<h4>Determinação de curva de nível em grade regular<a class="headerlink" href="#determinacao-de-curva-de-nivel-em-grade-regular" title="Link permanente para este título">¶</a></h4>
+<h4>Determinação de curva de nível em grade regular<a class="headerlink" href="#determinacao-de-curva-de-nivel-em-grade-regular" title="Permalink to this heading">¶</a></h4>
 <p>Nesta seção veremos a metodologia para determinação de curvas de nível quando o
 terreno é nivelado por meio de uma grade regular. O nivelamento por grade regular é
 utilizado em terreno  de declividade uniforme e em área pequenas.</p>
@@ -288,7 +290,7 @@ respectivas cotas (Figura <a class="reference internal" href="#curva-nivel3"><sp
 </figure>
 </section>
 <section id="obtencao-das-curvas-de-nivel-em-campo">
-<h4>Obtenção das curvas de nível em campo<a class="headerlink" href="#obtencao-das-curvas-de-nivel-em-campo" title="Link permanente para este título">¶</a></h4>
+<h4>Obtenção das curvas de nível em campo<a class="headerlink" href="#obtencao-das-curvas-de-nivel-em-campo" title="Permalink to this heading">¶</a></h4>
 <p>A obtenção de curvas de nível em campo pode ser necessária na locação de linhas de
 plantio de culturas agrícolas e florestais, na construção de terraços, visando a
 prevenção e contenção da erosão do solo, etc. Para a locação das mesmas, podem ser
@@ -313,12 +315,12 @@ novamente procura-se fazer a visada no centro do prisma.</p>
 das coordenadas, deve-se anotar as <span class="math notranslate nohighlight">\(\text{DH's}\)</span> e o <span class="math notranslate nohighlight">\(\text{Hz's}\)</span>,
 para posterior cálculo das coordenadas.</p>
 <p>Outros métodos para locação de curvas de nível em campo podem ser encontradas
-em <span id="id6">[<a class="reference internal" href="referencias.html#id9" title="R. Godoy. Topografia básica. FEALQ, Piracicaba, SP, 2 edition, 1988.">God88</a>]</span>.</p>
+em <span id="id6">[<a class="reference internal" href="referencias.html#id11" title="R. Godoy. Topografia básica. FEALQ, Piracicaba, SP, 2 edition, 1988.">God88</a>]</span>.</p>
 </section>
 </section>
 </section>
 <section id="sistematizacao-e-calculo-de-volume">
-<h2>Sistematização e cálculo de volume<a class="headerlink" href="#sistematizacao-e-calculo-de-volume" title="Link permanente para este título">¶</a></h2>
+<h2>Sistematização e cálculo de volume<a class="headerlink" href="#sistematizacao-e-calculo-de-volume" title="Permalink to this heading">¶</a></h2>
 <p>Um dos serviços importantes de técnicos em topografia é o de sistematização
 de terrenos, ou seja, modificar a sua forma, tornando-o plano, para fins de execução
 de projetos de engenharia na área de interesse. Podem-se citar como projetos que
@@ -347,7 +349,7 @@ sua escavação, será desagregado, e terá o seu volume aumentado em aproximada
 transportado. Por outro lado, um volume de <span class="math notranslate nohighlight">\(1\,\text{m}^3\)</span>, após submetido à
 compactação, terá o volume reduzido em aproximadamente <span class="math notranslate nohighlight">\(15\%\)</span>, logo, o
 <span class="math notranslate nohighlight">\(1\,\text{m}^3\)</span> de material, após processo de compactação, resultará em um
-volume de <span class="math notranslate nohighlight">\(\approx0,85\,\text{m}\)</span><span class="math notranslate nohighlight">\(^3\)</span> <span id="id7">[<a class="reference internal" href="referencias.html#id2" title="G.M. Cole and A.L. Harbin. Surveyor Reference Manual. Professional Publications, 2009. ISBN 9781591261742. URL: http://books.google.com.br/books?id=bFun4fjl4P0C.">CH09</a>]</span>.</p>
+volume de <span class="math notranslate nohighlight">\(\approx0,85\,\text{m}\)</span><span class="math notranslate nohighlight">\(^3\)</span> <span id="id7">[<a class="reference internal" href="referencias.html#id4" title="G.M. Cole and A.L. Harbin. Surveyor Reference Manual. Professional Publications, 2009. ISBN 9781591261742. URL: http://books.google.com.br/books?id=bFun4fjl4P0C.">CH09</a>]</span>.</p>
 <div class="admonition-exem-exemplo-1-considere-a-escavacao-para-fins-de-construcao-de-uma-piscina-cuja-dimensao-e-de-math-50-text-m-de-comprimento-math-20-text-m-de-largura-e-math-2-text-m-de-profundidade-qual-o-numero-de-viagens-que-um-caminhao-vai-realizar-para-transporte-deste-material-sabe-se-que-o-caminhao-a-ser-utilizado-tem-capacidade-de-transporte-de-math-10-text-m-math-3-por-viagem-e-que-a-terra-a-ser-escavada-vai-expandir-em-math-20 admonition">
 <p class="admonition-title"><span class="exem">Exemplo 1</span> Considere a escavação para fins de construção de uma piscina, cuja
 dimensão é de <span class="math notranslate nohighlight">\(50\,\text{m}\)</span> de comprimento, <span class="math notranslate nohighlight">\(20\,\text{m}\)</span> de largura e
@@ -366,7 +368,7 @@ Volume de terra a ser retirado do terreno será:</p>
 <p>Os métodos para se medir o volume de material dependem do tipo de projeto executado e dos dados
 disponíveis, sendo os mais usuais, o por secções e o por área unitária.</p>
 <section id="volume-por-meio-da-area-media-de-seccoes">
-<h3>Volume por meio da área média de secções<a class="headerlink" href="#volume-por-meio-da-area-media-de-seccoes" title="Link permanente para este título">¶</a></h3>
+<h3>Volume por meio da área média de secções<a class="headerlink" href="#volume-por-meio-da-area-media-de-seccoes" title="Permalink to this heading">¶</a></h3>
 <p>O volume de um sólido que tem duas secções paralelas onde se conhecem suas respectivas áreas e a distância que as
 separam, conforme <a class="reference internal" href="#volume-area-media-metodo"><span class="std std-numref">Figura 97</span></a>, é calculado como a média da área das
 secções multiplicada pela distância entre elas:</p>
@@ -424,7 +426,7 @@ da Equação <a class="reference internal" href="#equation-eq-volume-area-media"
 </figure>
 </section>
 <section id="volume-por-meio-da-area-unitaria">
-<h3>Volume por meio da área unitária<a class="headerlink" href="#volume-por-meio-da-area-unitaria" title="Link permanente para este título">¶</a></h3>
+<h3>Volume por meio da área unitária<a class="headerlink" href="#volume-por-meio-da-area-unitaria" title="Permalink to this heading">¶</a></h3>
 <p>O método por área unitária pode ser aplicado para a maioria dos casos de sistematização, exceção em
 casos de levantamento longitudinal, como em projetos de estradas, que é preferível o método da área
 média das secções. No método da área unitária, para a estimativa do volume de material a ser escavado
@@ -460,7 +462,7 @@ A título de ilustração, na figura ao lado
 são apresentados dois prismas retos, um com base triangular e, o outro, com base
 quadrangular. O volume de um prisma reto é calculado como:</p>
 <figure class="align-center" id="id17">
-<span id="volume-prisma-metodo"></span><a class="reference internal image-reference" href="../_images/fig:volume_prisma_metodo.png"><img alt="fig:volume_prisma_metodo.png" src="../_images/fig:volume_prisma_metodo.png" style="width: 330.75px; height: 182.70000000000002px;" /></a>
+<span id="volume-prisma-metodo"></span><a class="reference internal image-reference" href="../_images/fig:volume_prisma_metodo.png"><img alt="fig:volume_prisma_metodo.png" src="../_images/fig%3Avolume_prisma_metodo.png" style="width: 330.75px; height: 182.70000000000002px;" /></a>
 <figcaption>
 <p><span class="caption-number">Figura 100 </span><span class="caption-text">Volume de um prima</span><a class="headerlink" href="#id17" title="Permalink to this image">¶</a></p>
 </figcaption>
@@ -496,7 +498,8 @@ de quadrados que a mesma é comum (ver Exemplo abaixo). Matematicamente:</p>
 <p>em que: <span class="math notranslate nohighlight">\(V\)</span> é o volume (<span class="math notranslate nohighlight">\(\mathrm{m}^3)\)</span>; <span class="math notranslate nohighlight">\(A\)</span> é a
 área do quadrado (<span class="math notranslate nohighlight">\(\mathrm{m}^2)\)</span>; <span class="math notranslate nohighlight">\(i\)</span> e <span class="math notranslate nohighlight">\(j\)</span> são os índices
 das linhas e colunas, respectivamente, <span class="math notranslate nohighlight">\(i=1, 2,\dotsc\,,\)</span>
-índice das linhas e <span class="math notranslate nohighlight">\(j=1, 2, \dotsc\,, \)</span> é o peso, sendo igual ao número de quadrados em comum na
+índice das linhas e <span class="math notranslate nohighlight">\(j=1, 2, \dotsc\,, ` índice de colunas;
+:math:`w_{i,\,j}\)</span> é o peso, sendo igual ao número de quadrados em comum na
 estaca <span class="math notranslate nohighlight">\(i,\,j\)</span>;</p>
 <div class="admonition-exem-exemplo-4-considere-sistematizar-o-terreno-da-numref-volume-area-unitaria-a-para-ter-cota-final-de-math-301-text-m-em-toda-a-sua-extensao-qual-sera-o-volume-de-material-a-ser-cortado-ou-aterrado admonition">
 <p class="admonition-title"><span class="exem">Exemplo 4</span> Considere sistematizar o terreno da
@@ -628,7 +631,7 @@ ser calculado desprezível, tomemos a CV em <span class="math notranslate nohigh
 </section>
 </section>
 <section id="exercicios">
-<h2>Exercícios<a class="headerlink" href="#exercicios" title="Link permanente para este título">¶</a></h2>
+<h2>Exercícios<a class="headerlink" href="#exercicios" title="Permalink to this heading">¶</a></h2>
 <p><span class="exem">1)</span> Para fins de uma obra de engenharia, será escavado um volume
 de <span class="math notranslate nohighlight">\(6\,000\,\text{m}\)</span><span class="math notranslate nohighlight">\(^3\)</span>. Sabendo-se que o material a ser escavado vai sofrer
 expansão de <span class="math notranslate nohighlight">\(15\%\)</span> de seu volume e, que o caminhão, tipo basculante, que será
@@ -656,15 +659,15 @@ distância horizontal de <span class="math notranslate nohighlight">\(20\,\text{
 <p><span class="exem">5)</span> Para os dados das áreas a serem escavadas de secções apresentadas na tabela a
 seguir, calcular o volume de material a ser escavado. Considere a distância entre as secções
 de <span class="math notranslate nohighlight">\(20\,\text{m}\)</span></p>
-<table class="colwidths-given styled-table docutils align-default" id="id19">
-<caption><span class="caption-number">Table 20 </span><span class="caption-text">Apresentação da <span class="math notranslate nohighlight">\(\mathrm{CV}\)</span> em uma caderneta de campo.</span><a class="headerlink" href="#id19" title="Permalink to this table">¶</a></caption>
+<table class="styled-table docutils align-default" id="id19">
+<caption><span class="caption-number">Table 19 </span><span class="caption-text">Apresentação da <span class="math notranslate nohighlight">\(\mathrm{CV}\)</span> em uma caderneta de campo.</span><a class="headerlink" href="#id19" title="Permalink to this table">¶</a></caption>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="center-align no-left-divider single-right-divider head"><p>Estaca</p></th>
-<th class="center-align single-left-divider head"><p>Área de corte <span class="math notranslate nohighlight">\((\mathrm{m}^2)\)</span></p></th>
+<tr class="row-odd"><th class="head center-align no-left-divider single-right-divider"><p>Estaca</p></th>
+<th class="head center-align single-left-divider"><p>Área de corte <span class="math notranslate nohighlight">\((\mathrm{m}^2)\)</span></p></th>
 </tr>
 </thead>
 <tbody>
@@ -735,18 +738,18 @@ leitura da mira, em metros, nas estacas da quadrícula <span class="math notrans
 <li><p>projetar um plano inclinado de <span class="math notranslate nohighlight">\(1\%\)</span> de declividade no sentido
 A para C e de <span class="math notranslate nohighlight">\(-2\%\)</span> na direção da seção de <span class="math notranslate nohighlight">\(1\)</span> para <span class="math notranslate nohighlight">\(2\)</span>.</p></li>
 </ol>
-<table class="colwidths-given styled-table docutils align-default">
+<table class="styled-table docutils align-default">
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col style="width: 25.0%" />
+<col style="width: 25.0%" />
+<col style="width: 25.0%" />
+<col style="width: 25.0%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="center-align head"><p>Estaca</p></th>
-<th class="center-align head"><p><span class="math notranslate nohighlight">\(A\)</span></p></th>
-<th class="center-align head"><p><span class="math notranslate nohighlight">\(B\)</span></p></th>
-<th class="center-align head"><p><span class="math notranslate nohighlight">\(C\)</span></p></th>
+<tr class="row-odd"><th class="head center-align"><p>Estaca</p></th>
+<th class="head center-align"><p><span class="math notranslate nohighlight">\(A\)</span></p></th>
+<th class="head center-align"><p><span class="math notranslate nohighlight">\(B\)</span></p></th>
+<th class="head center-align"><p><span class="math notranslate nohighlight">\(C\)</span></p></th>
 </tr>
 </thead>
 <tbody>
@@ -763,19 +766,19 @@ A para C e de <span class="math notranslate nohighlight">\(-2\%\)</span> na dire
 </tbody>
 </table>
 <p><span class="exem">Resp.:</span> (a) altitude <span class="math notranslate nohighlight">\(X=203,891\,\text{m}\)</span>; (b) na Tabela abaixo:</p>
-<table class="colwidths-given styled-table docutils align-default" id="id20">
-<caption><span class="caption-number">Table 21 </span><span class="caption-text">resposta (b) Altitude das estacas (m).</span><a class="headerlink" href="#id20" title="Permalink to this table">¶</a></caption>
+<table class="styled-table docutils align-default" id="id20">
+<caption><span class="caption-number">Table 20 </span><span class="caption-text">resposta (b) Altitude das estacas (m).</span><a class="headerlink" href="#id20" title="Permalink to this table">¶</a></caption>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col style="width: 25.0%" />
+<col style="width: 25.0%" />
+<col style="width: 25.0%" />
+<col style="width: 25.0%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="center-align head"><p>Estaca</p></th>
-<th class="center-align head"><p><span class="math notranslate nohighlight">\(A\)</span></p></th>
-<th class="center-align head"><p><span class="math notranslate nohighlight">\(B\)</span></p></th>
-<th class="center-align head"><p><span class="math notranslate nohighlight">\(C\)</span></p></th>
+<tr class="row-odd"><th class="head center-align"><p>Estaca</p></th>
+<th class="head center-align"><p><span class="math notranslate nohighlight">\(A\)</span></p></th>
+<th class="head center-align"><p><span class="math notranslate nohighlight">\(B\)</span></p></th>
+<th class="head center-align"><p><span class="math notranslate nohighlight">\(C\)</span></p></th>
 </tr>
 </thead>
 <tbody>
@@ -794,19 +797,19 @@ A para C e de <span class="math notranslate nohighlight">\(-2\%\)</span> na dire
 <ol class="loweralpha simple" start="3">
 <li><p><span class="math notranslate nohighlight">\(\mathrm{hm}=201,866\,\text{m}\)</span>; (d) na Tabela abaixo.</p></li>
 </ol>
-<table class="colwidths-given styled-table docutils align-default" id="id21">
-<caption><span class="caption-number">Table 22 </span><span class="caption-text">resposta (d) Cotas do plano inclinado.</span><a class="headerlink" href="#id21" title="Permalink to this table">¶</a></caption>
+<table class="styled-table docutils align-default" id="id21">
+<caption><span class="caption-number">Table 21 </span><span class="caption-text">resposta (d) Cotas do plano inclinado.</span><a class="headerlink" href="#id21" title="Permalink to this table">¶</a></caption>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col style="width: 25.0%" />
+<col style="width: 25.0%" />
+<col style="width: 25.0%" />
+<col style="width: 25.0%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="center-align head"><p>Estaca</p></th>
-<th class="center-align head"><p><span class="math notranslate nohighlight">\(A\)</span></p></th>
-<th class="center-align head"><p><span class="math notranslate nohighlight">\(B\)</span></p></th>
-<th class="center-align head"><p><span class="math notranslate nohighlight">\(C\)</span></p></th>
+<tr class="row-odd"><th class="head center-align"><p>Estaca</p></th>
+<th class="head center-align"><p><span class="math notranslate nohighlight">\(A\)</span></p></th>
+<th class="head center-align"><p><span class="math notranslate nohighlight">\(B\)</span></p></th>
+<th class="head center-align"><p><span class="math notranslate nohighlight">\(C\)</span></p></th>
 </tr>
 </thead>
 <tbody>
@@ -902,7 +905,7 @@ talude de corte e saia de aterro), utilize fórmula da área média das secçõe
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
     
@@ -947,7 +950,7 @@ talude de corte e saia de aterro), utilize fórmula da área média das secçõe
 
     <div class="footer" role="contentinfo">
         &#169; Copyright 2021, Alexandre C Xavier.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.2.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
     </div>
     <!-- cloud_sptheme 1.4 -->
   </body>

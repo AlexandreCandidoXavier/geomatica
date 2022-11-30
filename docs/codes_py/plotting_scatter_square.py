@@ -1,6 +1,11 @@
+import bokeh
+print(bokeh.__version__)
 from bokeh.plotting import figure, show
 from bokeh.models import NumeralTickFormatter, Panel, Tabs, BoxZoomTool, ColumnDataSource, LabelSet
 import bokeh
+import yaml
+import numpy
+import PIL
 print(bokeh.__version__)
 
 BoxZoomTool(match_aspect = True)

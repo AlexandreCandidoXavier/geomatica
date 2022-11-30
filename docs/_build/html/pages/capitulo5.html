@@ -3,10 +3,10 @@
 
 <!DOCTYPE html>
 
-<html lang="pt_PT">
+<html lang="pt-PT">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>Capitulo 5: Georreferenciamento de imóveis rurais &#8212; Documentação Livro de Geomática 0.1</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
@@ -17,7 +17,9 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/translations.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -71,9 +73,9 @@
           <div class="body" role="main">
             
   <style> .exem {color:blue; font-weight: bold} </style><style> .solucao {font-weight: bold} </style><style> .blue {color:blue} </style><section id="capitulo-5-georreferenciamento-de-imoveis-rurais">
-<span id="rst-capitulo-5"></span><h1>Capitulo 5: Georreferenciamento de imóveis rurais<a class="headerlink" href="#capitulo-5-georreferenciamento-de-imoveis-rurais" title="Link permanente para este título">¶</a></h1>
+<span id="rst-capitulo-5"></span><h1>Capitulo 5: Georreferenciamento de imóveis rurais<a class="headerlink" href="#capitulo-5-georreferenciamento-de-imoveis-rurais" title="Permalink to this heading">¶</a></h1>
 <section id="introducao">
-<h2>Introdução<a class="headerlink" href="#introducao" title="Link permanente para este título">¶</a></h2>
+<h2>Introdução<a class="headerlink" href="#introducao" title="Permalink to this heading">¶</a></h2>
 <p>O georreferenciamento de imóveis rurais trata da identificação do
 imóvel, realizado por profissional habilitado onde, no memorial descritivo,
 deve conter as coordenadas dos vértices definidores dos limites. As
@@ -82,19 +84,19 @@ o Sistema de Referência Geocêntrico para as Américas, SIRGAS2000 (<a class="r
 Há uma norma para execução
 deste serviço, denominada Norma Técnica para Georreferenciamento de
 Imóveis Rurais (<a class="reference external" href="https://sigef.incra.gov.br/static/documentos/norma_tecnica_georreferenciamento_imoveis_rurais_3ed.pdf">Disponível aqui</a>)
-<span id="id1">[<a class="reference internal" href="referencias.html#id37" title="INCRA. Norma Técnica para Georreferenciamento de Imóveis Rurais. INCRA, 3 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/norma_tecnica_georreferenciamento_imoveis_rurais_3ed.pdf.">INCRA13c</a>]</span>. Para melhor entendimento do georreferenciamento, acompanha
+<span id="id1">[<a class="reference internal" href="referencias.html#id39" title="INCRA. Norma Técnica para Georreferenciamento de Imóveis Rurais. INCRA, 3 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/norma_tecnica_georreferenciamento_imoveis_rurais_3ed.pdf.">INCRA13c</a>]</span>. Para melhor entendimento do georreferenciamento, acompanha
 também o Manual Técnico de Posicionamento: georreferenciamento de imóveis rurais
-(<a class="reference external" href="https://sigef.incra.gov.br/static/documentos/manual_tecnico_posicionamento_1ed.pdf">disponível aqui</a>) <span id="id3">[<a class="reference internal" href="referencias.html#id38" title="INCRA. Manual Técnico de Posicionamento: georreferenciamento de imóveis rurais. INCRA, 1 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/manual_tecnico_posicionamento_1ed.pdf.">INCRA13b</a>]</span>
+(<a class="reference external" href="https://sigef.incra.gov.br/static/documentos/manual_tecnico_posicionamento_1ed.pdf">disponível aqui</a>) <span id="id3">[<a class="reference internal" href="referencias.html#id40" title="INCRA. Manual Técnico de Posicionamento: georreferenciamento de imóveis rurais. INCRA, 1 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/manual_tecnico_posicionamento_1ed.pdf.">INCRA13b</a>]</span>
 e o Manual Técnico de Limites e Confrontações, publicado pelo INCRA
-(<a class="reference external" href="https://sigef.incra.gov.br/static/documentos/manual_tecnico_limites_confrontacoes_1ed.pdf">disponível aqui</a>) <span id="id5">[<a class="reference internal" href="referencias.html#id39" title="INCRA. MANUAL TÉCNICO DE LIMITES E CONFRONTAÇÕES: georreferenciamento de imóveis rurais. INCRA, 1 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/manual_tecnico_limites_confrontacoes_1ed.pdf.">INCRA13a</a>]</span>.
+(<a class="reference external" href="https://sigef.incra.gov.br/static/documentos/manual_tecnico_limites_confrontacoes_1ed.pdf">disponível aqui</a>) <span id="id5">[<a class="reference internal" href="referencias.html#id41" title="INCRA. MANUAL TÉCNICO DE LIMITES E CONFRONTAÇÕES: georreferenciamento de imóveis rurais. INCRA, 1 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/manual_tecnico_limites_confrontacoes_1ed.pdf.">INCRA13a</a>]</span>.
 Nesta seção será realizada uma breve apresentação do georreferenciamento.</p>
 <section id="objetivo-e-prazos">
-<h3>Objetivo e prazos<a class="headerlink" href="#objetivo-e-prazos" title="Link permanente para este título">¶</a></h3>
+<h3>Objetivo e prazos<a class="headerlink" href="#objetivo-e-prazos" title="Permalink to this heading">¶</a></h3>
 <p>O objetivo do georreferenciamento de imóveis rurais é o de disponibilizar
 um Cadastro Nacional de Imóveis Rurais (CNIR), sistema único de registro
 de imóveis rurais para o país, tornando os limites das propriedades
 rurais precisas. Desta forma, evita-se que uma área tenha mais de
-uma matrícula. Segundo <span id="id6">INCRA [<a class="reference internal" href="referencias.html#id37" title="INCRA. Norma Técnica para Georreferenciamento de Imóveis Rurais. INCRA, 3 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/norma_tecnica_georreferenciamento_imoveis_rurais_3ed.pdf.">INCRA13c</a>]</span>, a matrícula é “ato cadastral
+uma matrícula. Segundo <span id="id6">INCRA [<a class="reference internal" href="referencias.html#id39" title="INCRA. Norma Técnica para Georreferenciamento de Imóveis Rurais. INCRA, 3 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/norma_tecnica_georreferenciamento_imoveis_rurais_3ed.pdf.">INCRA13c</a>]</span>, a matrícula é “ato cadastral
 realizado pelo registro de imóveis que visa à perfeita identificação
 do imóvel, caracterizando-o e confrontando-o, conferindo-lhe um número
 de ordem pelo qual será identificado, sem criar, conferir ou modificar
@@ -105,13 +107,9 @@ para o georreferenciamento variam de acordo com o tamanho da propriedade
 (Tabela abaixo).</p>
 <table class="styled-table docutils align-default" id="id16">
 <caption><span class="caption-number">Table 5 </span><span class="caption-text">Prazos para o georreferenciamento de imóveis rurais</span><a class="headerlink" href="#id16" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 47%" />
-<col style="width: 53%" />
-</colgroup>
 <thead>
-<tr class="row-odd"><th class="center-align head"><p>Área</p></th>
-<th class="center-align head"><p>Prazo</p></th>
+<tr class="row-odd"><th class="head center-align"><p>Área</p></th>
+<th class="head center-align"><p>Prazo</p></th>
 </tr>
 </thead>
 <tbody>
@@ -128,7 +126,7 @@ para o georreferenciamento variam de acordo com o tamanho da propriedade
 </table>
 </section>
 <section id="profissional-habilitado">
-<h3>Profissional habilitado<a class="headerlink" href="#profissional-habilitado" title="Link permanente para este título">¶</a></h3>
+<h3>Profissional habilitado<a class="headerlink" href="#profissional-habilitado" title="Permalink to this heading">¶</a></h3>
 <p>O georreferenciamento só pode ser realizado por profissional habilitado,
 com registro no Conselho Regional de Engenharia e Arquitetura
 (CREA, a entidade autárquica de fiscalização do exercício e das atividades
@@ -157,20 +155,16 @@ Engenheiro Civil; Engenheiro Florestal; Engenheiro Agrícola; Engenheiro
 de Minas e Geólogo.</p>
 </section>
 <section id="tipos-de-vertices-e-sua-identificacao">
-<h3>Tipos de vértices e sua identificação<a class="headerlink" href="#tipos-de-vertices-e-sua-identificacao" title="Link permanente para este título">¶</a></h3>
+<h3>Tipos de vértices e sua identificação<a class="headerlink" href="#tipos-de-vertices-e-sua-identificacao" title="Permalink to this heading">¶</a></h3>
 <p>Para a definição dos limites do imóvel rural são utilizados vértices
 (vértice é “<strong>É  o  ponto  onde  a  linha  limítrofe  do  imóvel  rural  muda  de  direção  ou  onde  existe
-interseção desta linha com qualquer outra linha limítrofe de imóvel contíguo</strong>” <span id="id7">[<a class="reference internal" href="referencias.html#id38" title="INCRA. Manual Técnico de Posicionamento: georreferenciamento de imóveis rurais. INCRA, 1 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/manual_tecnico_posicionamento_1ed.pdf.">INCRA13b</a>]</span>),
+interseção desta linha com qualquer outra linha limítrofe de imóvel contíguo</strong>” <span id="id7">[<a class="reference internal" href="referencias.html#id40" title="INCRA. Manual Técnico de Posicionamento: georreferenciamento de imóveis rurais. INCRA, 1 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/manual_tecnico_posicionamento_1ed.pdf.">INCRA13b</a>]</span>),
 sendo que estes podem ser de diferentes tipos, conforme Tabela abaixo.</p>
 <table class="styled-table docutils align-default" id="id17">
-<caption><span class="caption-number">Table 6 </span><span class="caption-text">Tipos de vértices no georreferenciamento de imóveis rurais (ver <span id="id8">INCRA [<a class="reference internal" href="referencias.html#id39" title="INCRA. MANUAL TÉCNICO DE LIMITES E CONFRONTAÇÕES: georreferenciamento de imóveis rurais. INCRA, 1 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/manual_tecnico_limites_confrontacoes_1ed.pdf.">INCRA13a</a>]</span>).</span><a class="headerlink" href="#id17" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 11%" />
-<col style="width: 89%" />
-</colgroup>
+<caption><span class="caption-number">Table 6 </span><span class="caption-text">Tipos de vértices no georreferenciamento de imóveis rurais (ver <span id="id8">INCRA [<a class="reference internal" href="referencias.html#id41" title="INCRA. MANUAL TÉCNICO DE LIMITES E CONFRONTAÇÕES: georreferenciamento de imóveis rurais. INCRA, 1 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/manual_tecnico_limites_confrontacoes_1ed.pdf.">INCRA13a</a>]</span>).</span><a class="headerlink" href="#id17" title="Permalink to this table">¶</a></caption>
 <thead>
-<tr class="row-odd"><th class="center-align head"><p>Tipo</p></th>
-<th class="center-align head"><p>Característica</p></th>
+<tr class="row-odd"><th class="head center-align"><p>Tipo</p></th>
+<th class="head center-align"><p>Característica</p></th>
 </tr>
 </thead>
 <tbody>
@@ -224,7 +218,7 @@ código do vértice já existente e não gerar um novo.</p>
 <figure class="align-center" id="id18">
 <span id="modelo-plaqueta-png"></span><a class="reference internal image-reference" href="../_images/Modelo_plaqueta.png"><img alt="Modelo_plaqueta.png" src="../_images/Modelo_plaqueta.png" style="width: 367.2px; height: 173.4px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 41 </span><span class="caption-text">Modelo da plaqueta retirado do <span id="id9">INCRA [<a class="reference internal" href="referencias.html#id38" title="INCRA. Manual Técnico de Posicionamento: georreferenciamento de imóveis rurais. INCRA, 1 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/manual_tecnico_posicionamento_1ed.pdf.">INCRA13b</a>]</span>.</span><a class="headerlink" href="#id18" title="Permalink to this image">¶</a></p>
+<p><span class="caption-number">Figura 41 </span><span class="caption-text">Modelo da plaqueta retirado do <span id="id9">INCRA [<a class="reference internal" href="referencias.html#id40" title="INCRA. Manual Técnico de Posicionamento: georreferenciamento de imóveis rurais. INCRA, 1 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/manual_tecnico_posicionamento_1ed.pdf.">INCRA13b</a>]</span>.</span><a class="headerlink" href="#id18" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Para a Norma, medidas de distância, área e azimute, são aqueles calculados
@@ -244,16 +238,12 @@ são realizadas medições de ângulos e distâncias por meio de estações
 totais. Os métodos a serem empregados e equipamentos
 que poderão ser utilizados, variam conforme o objetivo o tipo de poligonal,
 levantamento por irradiação ou triangulação. Para todos os metodos
-viáveis, ver tabela abaixo e o seu detalamento em <span id="id10">INCRA [<a class="reference internal" href="referencias.html#id38" title="INCRA. Manual Técnico de Posicionamento: georreferenciamento de imóveis rurais. INCRA, 1 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/manual_tecnico_posicionamento_1ed.pdf.">INCRA13b</a>]</span>.</p>
+viáveis, ver tabela abaixo e o seu detalamento em <span id="id10">INCRA [<a class="reference internal" href="referencias.html#id40" title="INCRA. Manual Técnico de Posicionamento: georreferenciamento de imóveis rurais. INCRA, 1 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/manual_tecnico_posicionamento_1ed.pdf.">INCRA13b</a>]</span>.</p>
 <table class="styled-table docutils align-default" id="id19">
 <caption><span class="caption-number">Table 7 </span><span class="caption-text">Tipos de posicionamentos que podem ser realizados no georreferenciamento.</span><a class="headerlink" href="#id19" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 83%" />
-</colgroup>
 <thead>
-<tr class="row-odd"><th class="center-align head"><p>Código</p></th>
-<th class="center-align head"><p>Método de Posicionamento</p></th>
+<tr class="row-odd"><th class="head center-align"><p>Código</p></th>
+<th class="head center-align"><p>Método de Posicionamento</p></th>
 </tr>
 </thead>
 <tbody>
@@ -287,16 +277,11 @@ viáveis, ver tabela abaixo e o seu detalamento em <span id="id10">INCRA [<a cla
 </tbody>
 </table>
 <table class="styled-table docutils align-default" id="id20">
-<caption><span class="caption-number">Table 8 </span><span class="caption-text">Métodos de posicionamento de acordo com a aplicação <span id="id11">[<a class="reference internal" href="referencias.html#id38" title="INCRA. Manual Técnico de Posicionamento: georreferenciamento de imóveis rurais. INCRA, 1 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/manual_tecnico_posicionamento_1ed.pdf.">INCRA13b</a>]</span>.</span><a class="headerlink" href="#id20" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 8%" />
-<col style="width: 39%" />
-<col style="width: 54%" />
-</colgroup>
+<caption><span class="caption-number">Table 8 </span><span class="caption-text">Métodos de posicionamento de acordo com a aplicação <span id="id11">[<a class="reference internal" href="referencias.html#id40" title="INCRA. Manual Técnico de Posicionamento: georreferenciamento de imóveis rurais. INCRA, 1 edition, 2013. URL: https://sigef.incra.gov.br/static/documentos/manual_tecnico_posicionamento_1ed.pdf.">INCRA13b</a>]</span>.</span><a class="headerlink" href="#id20" title="Permalink to this table">¶</a></caption>
 <thead>
-<tr class="row-odd"><th class="center-align head"><p>Código</p></th>
-<th class="center-align head"><p>Método de Posicionamento</p></th>
-<th class="center-align head"><p>Aplicação</p></th>
+<tr class="row-odd"><th class="head center-align"><p>Código</p></th>
+<th class="head center-align"><p>Método de Posicionamento</p></th>
+<th class="head center-align"><p>Aplicação</p></th>
 </tr>
 </thead>
 <tbody>
@@ -378,32 +363,34 @@ viáveis, ver tabela abaixo e o seu detalamento em <span id="id10">INCRA [<a cla
 </tr>
 <tr class="row-odd"><td class="center-align"><p>PS1</p></td>
 <td class="right-align"><p>Aerofotogrametria</p></td>
-<td class="right-align"><p>Limite Artificial <a class="footnote-reference brackets" href="#f1" id="id12">1</a>, Natural ou Inacessível</p></td>
+<td class="right-align"><p>Limite Artificial <a class="footnote-reference brackets" href="#f1" id="id12" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>, Natural ou Inacessível</p></td>
 </tr>
 <tr class="row-even"><td class="center-align"><p>PS2</p></td>
 <td class="right-align"><p>Radar aerotransportado</p></td>
-<td class="right-align"><p>Limite Artificial <a class="footnote-reference brackets" href="#f1" id="id13">1</a>, Natural ou Inacessível</p></td>
+<td class="right-align"><p>Limite Artificial <a class="footnote-reference brackets" href="#f1" id="id13" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>, Natural ou Inacessível</p></td>
 </tr>
 <tr class="row-odd"><td class="center-align"><p>PS3</p></td>
 <td class="right-align"><p>Laser scanner aerotransportado</p></td>
-<td class="right-align"><p>Limite Artificial <a class="footnote-reference brackets" href="#f1" id="id14">1</a>, Natural ou Inacessível</p></td>
+<td class="right-align"><p>Limite Artificial <a class="footnote-reference brackets" href="#f1" id="id14" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>, Natural ou Inacessível</p></td>
 </tr>
 <tr class="row-even"><td class="center-align"><p>PS4</p></td>
 <td class="right-align"><p>Sensores orbitais</p></td>
-<td class="right-align"><p>Limite Artificial <a class="footnote-reference brackets" href="#f1" id="id15">1</a>, Natural ou Inacessível</p></td>
+<td class="right-align"><p>Limite Artificial <a class="footnote-reference brackets" href="#f1" id="id15" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>, Natural ou Inacessível</p></td>
 </tr>
 </tbody>
 </table>
 <p class="rubric">Footnotes</p>
-<dl class="footnote brackets">
-<dt class="label" id="f1"><span class="brackets">1</span><span class="fn-backref">(<a href="#id12">1</a>,<a href="#id13">2</a>,<a href="#id14">3</a>,<a href="#id15">4</a>)</span></dt>
-<dd><p>Com exceção de vértices tipo M e limites por cerca.</p>
-</dd>
-</dl>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="f1" role="note">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id12">1</a>,<a role="doc-backlink" href="#id13">2</a>,<a role="doc-backlink" href="#id14">3</a>,<a role="doc-backlink" href="#id15">4</a>)</span>
+<p>Com exceção de vértices tipo M e limites por cerca.</p>
+</aside>
+</aside>
 </section>
 </section>
 <section id="exercicios">
-<h2>Exercícios<a class="headerlink" href="#exercicios" title="Link permanente para este título">¶</a></h2>
+<h2>Exercícios<a class="headerlink" href="#exercicios" title="Permalink to this heading">¶</a></h2>
 <p><span class="exem">1)</span> O que é o georreferenciamento de imóveis rurais?</p>
 <hr class="docutils" />
 <p><span class="exem">2)</span> Quais são os prazos para o georreferenciamento
@@ -463,7 +450,7 @@ codificação?</p>
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
     
@@ -508,7 +495,7 @@ codificação?</p>
 
     <div class="footer" role="contentinfo">
         &#169; Copyright 2021, Alexandre C Xavier.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.2.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
     </div>
     <!-- cloud_sptheme 1.4 -->
   </body>

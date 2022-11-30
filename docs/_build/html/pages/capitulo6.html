@@ -3,10 +3,10 @@
 
 <!DOCTYPE html>
 
-<html lang="pt_PT">
+<html lang="pt-PT">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>Capitulo 6: Medidas de distância &#8212; Documentação Livro de Geomática 0.1</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
@@ -17,7 +17,9 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/translations.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -71,9 +73,9 @@
           <div class="body" role="main">
             
   <style> .exem {color:blue; font-weight: bold} </style><style> .solucao {font-weight: bold} </style><style> .blue {color:blue} </style><section id="capitulo-6-medidas-de-distancia">
-<span id="rst-capitulo-6"></span><h1>Capitulo 6: Medidas de distância<a class="headerlink" href="#capitulo-6-medidas-de-distancia" title="Link permanente para este título">¶</a></h1>
+<span id="rst-capitulo-6"></span><h1>Capitulo 6: Medidas de distância<a class="headerlink" href="#capitulo-6-medidas-de-distancia" title="Permalink to this heading">¶</a></h1>
 <section id="introducao">
-<h2>Introdução<a class="headerlink" href="#introducao" title="Link permanente para este título">¶</a></h2>
+<h2>Introdução<a class="headerlink" href="#introducao" title="Permalink to this heading">¶</a></h2>
 <p>As distâncias horizontais entre pontos, juntamente com os ângulos,
 são os elementos básicos necessários para o cálculo das coordenadas
 dos pontos. Neste capítulo serão abordados os métodos mais utilizados
@@ -89,11 +91,11 @@ um obsoleto, principalmente devido a baixa precisão e baixa produtividade
 em campo.</p>
 </section>
 <section id="tipos-de-distancias">
-<h2>Tipos de distâncias<a class="headerlink" href="#tipos-de-distancias" title="Link permanente para este título">¶</a></h2>
+<h2>Tipos de distâncias<a class="headerlink" href="#tipos-de-distancias" title="Permalink to this heading">¶</a></h2>
 <p>Em geomática, temos vários tipos de distância, podendo-se citar, por
 exemplo, a distância no plano de projeção cartográfico e a distância
 no elipsóide. Quando realizando levantamentos topográficos, em pequenas
-áreas <a class="footnote-reference brackets" href="#id9" id="id1">1</a>  na superfície terrestre, onde o erro devido a curvatura da terra
+áreas <a class="footnote-reference brackets" href="#id9" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>  na superfície terrestre, onde o erro devido a curvatura da terra
 é desconsiderado, as distâncias entre os pontos podem ser:</p>
 <ul class="simple">
 <li><p>a <strong>distância horizontal</strong> (DH);</p></li>
@@ -124,7 +126,7 @@ distâncias que os medidores de distância eletrônicos, presentem
 nas estações total medem primeiramente, posteriormente, podendo-se tranformá-la
 para a DH e DN.</p>
 <section id="influencia-da-curvatura-da-terra-nas-medidas-de-distancia-horizontal">
-<h3>Influência da curvatura da terra nas medidas de distância horizontal<a class="headerlink" href="#influencia-da-curvatura-da-terra-nas-medidas-de-distancia-horizontal" title="Link permanente para este título">¶</a></h3>
+<h3>Influência da curvatura da terra nas medidas de distância horizontal<a class="headerlink" href="#influencia-da-curvatura-da-terra-nas-medidas-de-distancia-horizontal" title="Permalink to this heading">¶</a></h3>
 <p>Na <a class="reference internal" href="#fig-errodistancia"><span class="std std-numref">Figura 43</span></a> são apresentados os pontos <span class="math notranslate nohighlight">\(A\)</span> e
 <span class="math notranslate nohighlight">\(B\)</span>, respectivamente, a posição inicial e final de um levantamento.
 Suponha, para fins de simplificação, que: estes dois pontos estão
@@ -157,22 +159,22 @@ com relação a <span class="math notranslate nohighlight">\(d\)</span> se torna
 que as medidas topográficas são realizadas acima do nível médio dos
 mares, acima do geóide, as diferenças entre <span class="math notranslate nohighlight">\(s\)</span> e <span class="math notranslate nohighlight">\(d\)</span>, serão ainda
 maiores com relação as medidas de <span class="math notranslate nohighlight">\(s\)</span> no geóide. Para fins de levantamento
-topográfico, a <span id="id2"><em>NBR 13133</em> [<a class="reference internal" href="referencias.html#id40" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span> estabelece de <span class="math notranslate nohighlight">\(80\,\text{km}\)</span> a dimensão
+topográfico, a <span id="id2"><em>NBR 13133</em> [<a class="reference internal" href="referencias.html#id42" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span> estabelece de <span class="math notranslate nohighlight">\(80\,\text{km}\)</span> a dimensão
 máxima a ser medida.</p>
 <p>Considerações a respeito dos cálculos das medidas de distância horizontais
 para a distância geodésica, em relação ao elipsóide, ou para o plano
 de projeção cartográfica, como o UTM, não serão apresentados aqui.
-Contudo, para quem tiver interesse, pode consular, por exemplo, <span id="id3">Wolf and Ghilani [<a class="reference internal" href="referencias.html#id18" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>.</p>
+Contudo, para quem tiver interesse, pode consular, por exemplo, <span id="id3">Wolf and Ghilani [<a class="reference internal" href="referencias.html#id20" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>.</p>
 </section>
 </section>
 <section id="medicao-com-trena">
-<h2>Medição com trena<a class="headerlink" href="#medicao-com-trena" title="Link permanente para este título">¶</a></h2>
+<h2>Medição com trena<a class="headerlink" href="#medicao-com-trena" title="Permalink to this heading">¶</a></h2>
 <p>As trenas podem ser utilizadas para as medidas de distância entre
 pontos. Elas podem ter como material de fabricação, por exemplo, o
 aço, o invar (níquel e aço) ou a fibra de vidro. Normalmente apresentam
 as medidas de metros e centímetros nas duas faces, todavia, algumas
 podem apresentar em uma face a medida de metros e, na outra, a de
-polegadas <a class="footnote-reference brackets" href="#id11" id="id4">2</a>.
+polegadas <a class="footnote-reference brackets" href="#id11" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>.
 O comprimento nominal das trenas é bastante variado, encontrando comprimentos
 como de: 5 m, 10 m, 20 m, ou 50 m.</p>
 <figure class="align-center" id="id14">
@@ -255,7 +257,7 @@ uma catenária elevada (ver <a class="reference internal" href="#erro-tensao"><s
 </figcaption>
 </figure>
 <p>Além dos erros durante a realização das medidas com trena, podem-se
-citar <span id="id5">Wolf and Ghilani [<a class="reference internal" href="referencias.html#id18" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>: i) erros instrumentais: a trena tem comprimento
+citar <span id="id5">Wolf and Ghilani [<a class="reference internal" href="referencias.html#id20" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>: i) erros instrumentais: a trena tem comprimento
 diferente do comprimento nominal, devido à falha de fabricação ou
 resultado de alguma danificação; ii) erros naturais: devido ao efeito
 da temperatura, tensão e catenária e vento e; iii) erros de coleta:
@@ -263,7 +265,7 @@ quando os dados são anotados errados ou a leitura equivocada, alinhamentos
 incorretos, etc. Abaixo seguem uma descrição dos erros e maneiras
 de evitar e, se possível, corrigi-los.</p>
 <section id="erros-instrumentais">
-<h3>Erros instrumentais<a class="headerlink" href="#erros-instrumentais" title="Link permanente para este título">¶</a></h3>
+<h3>Erros instrumentais<a class="headerlink" href="#erros-instrumentais" title="Permalink to this heading">¶</a></h3>
 <p>Por falha de fabricação, envelhecimento ou defeito devido à, por exemplo,
 dobramento da mesma, a trena pode apresentar o comprimento atual diferente
 daquele mostrado nominalmente. A verificação e a correção deste tipo
@@ -271,7 +273,7 @@ de erro só é possível se estiver a disponibilidade de um comprimento
 padrão para comparação. Desta forma, pode-se aplicar a correção para
 as medidas de uma trena defeituosa.</p>
 <section id="erros-naturais">
-<h4>Erros naturais<a class="headerlink" href="#erros-naturais" title="Link permanente para este título">¶</a></h4>
+<h4>Erros naturais<a class="headerlink" href="#erros-naturais" title="Permalink to this heading">¶</a></h4>
 <p>A seguir são apresentado os erros naturais que podem ser corrigidos
 quando, nas medidas de distância com a trena. Um erro natural que
 pode ocorrer, mas não tem como realizar a correção, é o devido ao
@@ -279,7 +281,7 @@ efeito do vento. Logo, deve-se evitar fazer medidas em condições de
 vento desfavorável.</p>
 </section>
 <section id="erro-devido-a-temperatura-de-trabalho-distinta-da-do-padrao">
-<h4>Erro devido à temperatura de trabalho distinta da do padrão<a class="headerlink" href="#erro-devido-a-temperatura-de-trabalho-distinta-da-do-padrao" title="Link permanente para este título">¶</a></h4>
+<h4>Erro devido à temperatura de trabalho distinta da do padrão<a class="headerlink" href="#erro-devido-a-temperatura-de-trabalho-distinta-da-do-padrao" title="Permalink to this heading">¶</a></h4>
 <p>Normalmente as trenas são aferidas para uma determinada temperatura
 padrão. Ou seja, ela só vai apresentar o comprimento real de <span class="math notranslate nohighlight">\(20\)</span> m,
 por exemplo, se trabalhando naquela temperatura. Caso se esteja trabalhando
@@ -313,7 +315,7 @@ De acordo com a Equação <a class="reference internal" href="#equation-eq-trena
 <hr class="docutils" />
 </section>
 <section id="erro-devido-a-tensao-de-trabalho-distinta-da-do-padrao">
-<span id="erro-tensao"></span><h4>Erro devido à tensão de trabalho distinta da do padrão<a class="headerlink" href="#erro-devido-a-tensao-de-trabalho-distinta-da-do-padrao" title="Link permanente para este título">¶</a></h4>
+<span id="erro-tensao"></span><h4>Erro devido à tensão de trabalho distinta da do padrão<a class="headerlink" href="#erro-devido-a-tensao-de-trabalho-distinta-da-do-padrao" title="Permalink to this heading">¶</a></h4>
 <p>Assim como com a variável temperatura, a trena é aferida para determinada
 tensão padrão <span class="math notranslate nohighlight">\((T_{0})\)</span>, caso ela seja submetida a uma menor tensão,
 o seu comprimento real será menor que o mostrado nominalmente, e caso
@@ -383,7 +385,7 @@ da trena considerando e erro da catenária é <span class="math notranslate nohi
 </div>
 </section>
 <section id="correcao-do-efeito-combinado-da-temperatura-tensao-e-catenaria">
-<h4>Correção do efeito combinado da temperatura, tensão e catenária<a class="headerlink" href="#correcao-do-efeito-combinado-da-temperatura-tensao-e-catenaria" title="Link permanente para este título">¶</a></h4>
+<h4>Correção do efeito combinado da temperatura, tensão e catenária<a class="headerlink" href="#correcao-do-efeito-combinado-da-temperatura-tensao-e-catenaria" title="Permalink to this heading">¶</a></h4>
 <p>Os três erros mostrado anteriormente devido, à temperatura, à tensão
 e à catenária, devem ser considerados concomitantemente, desta forma,
 o comprimento corrigido devido a estes três erros <span class="math notranslate nohighlight">\((S_{\mathrm{corrigido}})\)</span>
@@ -409,7 +411,7 @@ De acordo com a Equação <a class="reference internal" href="#equation-eq-trena
 </div>
 </section>
 <section id="procedimento-em-campo-para-medidas-a-trena">
-<h4>Procedimento em campo para medidas à trena<a class="headerlink" href="#procedimento-em-campo-para-medidas-a-trena" title="Link permanente para este título">¶</a></h4>
+<h4>Procedimento em campo para medidas à trena<a class="headerlink" href="#procedimento-em-campo-para-medidas-a-trena" title="Permalink to this heading">¶</a></h4>
 <p>Se for para medição de área, mede-se a poligonal e as diagonais internar
 que subdividem a área em vários triângulos. A Figura <a class="reference internal" href="#fig-levantamentoatrena-png"><span class="std std-numref">Figura 49</span></a>
 apresenta a poligonal <span class="math notranslate nohighlight">\(ABCDEFA\)</span> a ser medida com a trena. A
@@ -455,7 +457,7 @@ as diagonais <span class="math notranslate nohighlight">\(h:\)</span> e <span cl
 </section>
 </section>
 <section id="medicao-taqueometrica">
-<h2>Medição taqueométrica<a class="headerlink" href="#medicao-taqueometrica" title="Link permanente para este título">¶</a></h2>
+<h2>Medição taqueométrica<a class="headerlink" href="#medicao-taqueometrica" title="Permalink to this heading">¶</a></h2>
 <p>Nos teodolitos (<a class="reference external" href="https://en.wikipedia.org/wiki/Theodolite">aqui para ver exemplares</a>),
 quando se observa a luneta, com
 o foco adequado, pode-se observar três retículos (fios) na horizontal
@@ -519,7 +521,7 @@ se trabalha com ângulos zenitais (<span class="math notranslate nohighlight">\(
 <span class="math notranslate nohighlight">\(rs\)</span>, <span class="math notranslate nohighlight">\(rm\)</span> e <span class="math notranslate nohighlight">\(ri\)</span>, respectivamente, retículo
 superior, médio e inferior (m); e <span class="math notranslate nohighlight">\(z\)</span>, o ângulo zenital <span class="math notranslate nohighlight">\((^{\circ})\)</span>.
 Informações sobre como estas Equações foram determinadas, consultar
-<span id="id6">Loch and Cordini [<a class="reference internal" href="referencias.html#id41" title="C. Loch and J. Cordini. Topografia contemporânea. Editora da UFSC, Florianópolis, SP, 3 edition, 1995.">LC95a</a>]</span> e <span id="id7">Borges [<a class="reference internal" href="referencias.html#id42" title="A. C. Borges. Topografia aplicada à engenharia civil: volume 1. Volume 1. Editora Edgard Bluncher LTDA, São Paulo, SP, 1 edition, 1999.">Bor99</a>]</span>.</p>
+<span id="id6">Loch and Cordini [<a class="reference internal" href="referencias.html#id43" title="C. Loch and J. Cordini. Topografia contemporânea. Editora da UFSC, Florianópolis, SP, 3 edition, 1995.">LC95a</a>]</span> e <span id="id7">Borges [<a class="reference internal" href="referencias.html#id44" title="A. C. Borges. Topografia aplicada à engenharia civil: volume 1. Volume 1. Editora Edgard Bluncher LTDA, São Paulo, SP, 1 edition, 1999.">Bor99</a>]</span>.</p>
 <p>Em algumas situações, em que não se tem a leitura de um
 dos retículos, pode-se empregar a <a class="reference internal" href="#equation-eq-taqueometria-reticulos">(63)</a>
 para o cálculo do retículo faltante. Na <a class="reference internal" href="#fig-luneta-mira-png"><span class="std std-numref">Figura 50</span></a> a
@@ -547,9 +549,9 @@ Da Equação <a class="reference internal" href="#equation-eq-taqueometria-dh">(
 </section>
 <hr class="docutils" />
 <section id="medidor-eletronico-de-distancia-med">
-<h2>Medidor Eletrônico de Distância (MED)<a class="headerlink" href="#medidor-eletronico-de-distancia-med" title="Link permanente para este título">¶</a></h2>
+<h2>Medidor Eletrônico de Distância (MED)<a class="headerlink" href="#medidor-eletronico-de-distancia-med" title="Permalink to this heading">¶</a></h2>
 <section id="radiacao-eletromagnetica">
-<h3>Radiação eletromagnética<a class="headerlink" href="#radiacao-eletromagnetica" title="Link permanente para este título">¶</a></h3>
+<h3>Radiação eletromagnética<a class="headerlink" href="#radiacao-eletromagnetica" title="Permalink to this heading">¶</a></h3>
 <p>Considerando a <strong>radiação eletromagnética</strong> (REM),
 com comportamento de onda, ela será composta de dois campos perpendiculares
 entre si, o campo magnético e o campo elétrico, que viajam na direção
@@ -592,7 +594,7 @@ Das Equações <a class="reference internal" href="#equation-eq-velocidadeluzvac
 </div>
 </section>
 <section id="principio-de-funcionamento-do-med">
-<h3>Princípio de funcionamento do MED<a class="headerlink" href="#principio-de-funcionamento-do-med" title="Link permanente para este título">¶</a></h3>
+<h3>Princípio de funcionamento do MED<a class="headerlink" href="#principio-de-funcionamento-do-med" title="Permalink to this heading">¶</a></h3>
 <p>O medidor eletrônico de distância (MED)
 é um equipamento que está presente nas estações totais. O MED emite
 a REM na direção de um refletor, sendo refletida de volta ao equipamento,
@@ -723,7 +725,7 @@ Da Equação <a class="reference internal" href="#equation-eq-meddhz">(69)</a>:<
 </section>
 <hr class="docutils" />
 <section id="fontes-de-erro">
-<h3>Fontes de erro<a class="headerlink" href="#fontes-de-erro" title="Link permanente para este título">¶</a></h3>
+<h3>Fontes de erro<a class="headerlink" href="#fontes-de-erro" title="Permalink to this heading">¶</a></h3>
 <p>Quando trabalhando de forma adequada com um MED, a precisão deste
 equipamento normalmente é muito alta, por exemplo, precisão de <span class="math notranslate nohighlight">\(\pm(5\mathrm{\,mm}+2\mathrm{\,ppm)}\)</span>,
 isto é, para uma medida, de <span class="math notranslate nohighlight">\(5.000\,\text{m}\)</span> de distância, o erro esperado
@@ -743,7 +745,7 @@ atmosféricas. Para a determinação do índice de refração, <span class="math
 deve-se conhecer: a frequência de trabalho, a temperatura, a pressão
 atmosférica e a umidade relativa. Nas estações totais, este erro é
 possível de ser corrigido, desde que as informações sejam conhecidas
-e inseridas no MED (estação total) <span id="id8">[<a class="reference internal" href="referencias.html#id18" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>;</p></li>
+e inseridas no MED (estação total) <span id="id8">[<a class="reference internal" href="referencias.html#id20" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>;</p></li>
 <li><p><strong>centro do refletor</strong>: o centro do refletor não coincide com
 a linha vertical ao ponto de interesse;</p></li>
 <li><p><strong>desvio da frequência</strong>: o equipamento pode mudar a frequência
@@ -754,7 +756,7 @@ forma, periodicamente, o equipamento deve ser checado. Este procedimento
 </section>
 </section>
 <section id="exercicios">
-<h2>Exercícios<a class="headerlink" href="#exercicios" title="Link permanente para este título">¶</a></h2>
+<h2>Exercícios<a class="headerlink" href="#exercicios" title="Permalink to this heading">¶</a></h2>
 <p><span class="exem">1)</span> A distância horizontal real do alinhamento AB é
 de <span class="math notranslate nohighlight">\(82,58\,\text{m}\)</span>; Este alinhamento, ao ser medido com uma trena de comprimento
 nominal de <span class="math notranslate nohighlight">\(20,00\,\text{m}\)</span>, resultou em <span class="math notranslate nohighlight">\(82,42\,\text{m}\)</span>. Determinar o comprimento real
@@ -821,14 +823,16 @@ Q e R.</p>
 <p><span class="exem">Resp.:</span>  <span class="math notranslate nohighlight">\(\mathrm{DH_{QR}}=128,144\,\text{m}\)</span> e <span class="math notranslate nohighlight">\(\mathrm{DN_{QR}}=18,724\,\text{m}\)</span>.</p>
 <hr class="docutils" />
 <p class="rubric">Footnotes</p>
-<dl class="footnote brackets">
-<dt class="label" id="id9"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
-<dd><p>Segundo a <span id="id10"><em>NBR 13133</em> [<a class="reference internal" href="referencias.html#id40" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span> a dimensão máxima de um levantamento topográfico está limitado a 80 km.</p>
-</dd>
-<dt class="label" id="id11"><span class="brackets"><a class="fn-backref" href="#id4">2</a></span></dt>
-<dd><p>Abreviação de polegada é <strong>in</strong> onde, <span class="math notranslate nohighlight">\(1\,\mathrm{in}=0,0254\,\mathrm{m}=2,54\,\mathrm{cm}\)</span>.</p>
-</dd>
-</dl>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id9" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Segundo a <span id="id10"><em>NBR 13133</em> [<a class="reference internal" href="referencias.html#id42" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span> a dimensão máxima de um levantamento topográfico está limitado a 80 km.</p>
+</aside>
+<aside class="footnote brackets" id="id11" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">2</a><span class="fn-bracket">]</span></span>
+<p>Abreviação de polegada é <strong>in</strong> onde, <span class="math notranslate nohighlight">\(1\,\mathrm{in}=0,0254\,\mathrm{m}=2,54\,\mathrm{cm}\)</span>.</p>
+</aside>
+</aside>
 </section>
 </section>
 
@@ -897,7 +901,7 @@ Q e R.</p>
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
     
@@ -942,7 +946,7 @@ Q e R.</p>
 
     <div class="footer" role="contentinfo">
         &#169; Copyright 2021, Alexandre C Xavier.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.2.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
     </div>
     <!-- cloud_sptheme 1.4 -->
   </body>

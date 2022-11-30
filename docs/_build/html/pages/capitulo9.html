@@ -3,10 +3,10 @@
 
 <!DOCTYPE html>
 
-<html lang="pt_PT">
+<html lang="pt-PT">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>Capitulo 9: Altimetria &#8212; Documentação Livro de Geomática 0.1</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
@@ -17,7 +17,9 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/translations.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -71,7 +73,7 @@
           <div class="body" role="main">
             
   <style> .exem {color:blue; font-weight: bold} </style><style> .solucao {font-weight: bold} </style><style> .blue {color:blue} </style><section id="capitulo-9-altimetria">
-<span id="rst-capitulo-9"></span><h1>Capitulo 9: Altimetria<a class="headerlink" href="#capitulo-9-altimetria" title="Link permanente para este título">¶</a></h1>
+<span id="rst-capitulo-9"></span><h1>Capitulo 9: Altimetria<a class="headerlink" href="#capitulo-9-altimetria" title="Permalink to this heading">¶</a></h1>
 <p>Um ponto na superfície da terra só estará completamente definido depois
 de estabelecida as suas coordenadas horizontal e vertical. Por exemplo,
 um ponto que tenha as suas coordenadas horizontais do tipo geográficas
@@ -86,7 +88,7 @@ a construção de uma elevatória; na construção de curvas de nível;
 na determinação de greides (rampas); e para cálculo de volume de corte
 ou aterro de uma área.</p>
 <section id="definicoes">
-<h2>Definições<a class="headerlink" href="#definicoes" title="Link permanente para este título">¶</a></h2>
+<h2>Definições<a class="headerlink" href="#definicoes" title="Permalink to this heading">¶</a></h2>
 <p>Na <a class="reference internal" href="#cap-altimetria-definicoes"><span class="std std-numref">Figura 77</span></a> são apresentados os
 elementos da altimetria, em que:</p>
 <ul class="simple">
@@ -122,7 +124,7 @@ ponto materializada em que sua altitude foi determinada.</p></li>
 <figure class="align-center" id="id39">
 <span id="cap-altimetria-definicoes"></span><a class="reference internal image-reference" href="../_images/cap_altimetria_definicoes.png"><img alt="cap_altimetria_definicoes.png" src="../_images/cap_altimetria_definicoes.png" style="width: 485.45px; height: 318.84999999999997px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 77 </span><span class="caption-text">Elementos básicos da altimetria (adaptado de <span id="id1">[<a class="reference internal" href="referencias.html#id18" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>).</span><a class="headerlink" href="#id39" title="Permalink to this image">¶</a></p>
+<p><span class="caption-number">Figura 77 </span><span class="caption-text">Elementos básicos da altimetria (adaptado de <span id="id1">[<a class="reference internal" href="referencias.html#id20" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>).</span><a class="headerlink" href="#id39" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Pode-se ainda recordar da seção <a class="reference internal" href="capitulo3.html#datum-vertical"><span class="std std-ref">Datum vertical</span></a>,
@@ -170,12 +172,12 @@ para cálculo das altitudes dos demais pontos levantados.</p>
 </div>
 </section>
 <section id="erro-de-esfericidade-e-refracao">
-<span id="id2"></span><h2>Erro de esfericidade e refração<a class="headerlink" href="#erro-de-esfericidade-e-refracao" title="Link permanente para este título">¶</a></h2>
+<span id="id2"></span><h2>Erro de esfericidade e refração<a class="headerlink" href="#erro-de-esfericidade-e-refracao" title="Permalink to this heading">¶</a></h2>
 <p>Quando o nivelamento é realizado entre pontos distantes em mais de
-<span class="math notranslate nohighlight">\(100\,\text{m}\)</span>, a <span id="id3"><em>NBR 13133</em> [<a class="reference internal" href="referencias.html#id40" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span> recomenda que o efeito da curvatura terrestre
+<span class="math notranslate nohighlight">\(100\,\text{m}\)</span>, a <span id="id3"><em>NBR 13133</em> [<a class="reference internal" href="referencias.html#id42" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span> recomenda que o efeito da curvatura terrestre
 <span class="math notranslate nohighlight">\((C_{c})\)</span> e o da refração atmosférica <span class="math notranslate nohighlight">\((C_{r})\)</span> sejam compensadas.</p>
 <section id="erro-de-esfericidade">
-<h3>Erro de esfericidade<a class="headerlink" href="#erro-de-esfericidade" title="Link permanente para este título">¶</a></h3>
+<h3>Erro de esfericidade<a class="headerlink" href="#erro-de-esfericidade" title="Permalink to this heading">¶</a></h3>
 <p>Na <a class="reference internal" href="#cap-ref-cur2"><span class="std std-numref">Figura 78</span></a> são apresentados dois pontos topográficos,
 <span class="math notranslate nohighlight">\(A\)</span>  e <span class="math notranslate nohighlight">\(B\)</span>, na mesma linha de nível. A partir de <span class="math notranslate nohighlight">\(A\)</span>  é realizada
 uma visada horizontal para medidas de elevação. A medida que um ponto
@@ -219,7 +221,7 @@ devido a esfericidade da terra.</p>
 </figure>
 </section>
 <section id="erro-de-refracao">
-<h3>Erro de refração<a class="headerlink" href="#erro-de-refracao" title="Link permanente para este título">¶</a></h3>
+<h3>Erro de refração<a class="headerlink" href="#erro-de-refracao" title="Permalink to this heading">¶</a></h3>
 <p>A luz, ao passar pela a atmosfera, é refratada para a Terra, assim
 os objetos parecem ser mais altos do que eles realmente são. Na Figura
 <a class="reference internal" href="#cap-ref-cur2"><span class="std std-numref">Figura 78</span></a> é apresentada como seria uma visada horizontal
@@ -231,7 +233,7 @@ em metros e a <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> 
 <span class="eqno">(92)<a class="headerlink" href="#equation-eq-cr" title="Permalink to this equation">¶</a></span>\[C_{r}=0,011\mathrm{DH^{2}}.\]</div>
 </section>
 <section id="erro-de-esfericidade-e-refracao-combinado">
-<h3>Erro de esfericidade e refração combinado<a class="headerlink" href="#erro-de-esfericidade-e-refracao-combinado" title="Link permanente para este título">¶</a></h3>
+<h3>Erro de esfericidade e refração combinado<a class="headerlink" href="#erro-de-esfericidade-e-refracao-combinado" title="Permalink to this heading">¶</a></h3>
 <p>A combinação dos <span class="math notranslate nohighlight">\(C_{c}\)</span>  e <span class="math notranslate nohighlight">\(C_{r}\)</span>  resulta em <span class="math notranslate nohighlight">\(C_{cr}\)</span>, ou seja,
 a compensação que deve ser aplicada nas medidas de altimétricas a
 pontos distantes entre si em mais de <span class="math notranslate nohighlight">\(100\,\text{m}\)</span>. Como <span class="math notranslate nohighlight">\(C_{c}\)</span>  resulta
@@ -275,7 +277,7 @@ Uma vez que se queira realizar a compensação, basta aplicar
 </section>
 <hr class="docutils" />
 <section id="declividade">
-<h2>Declividade<a class="headerlink" href="#declividade" title="Link permanente para este título">¶</a></h2>
+<h2>Declividade<a class="headerlink" href="#declividade" title="Permalink to this heading">¶</a></h2>
 <p>A declividade mede o grau de inclinação do terreno, podendo ser calculada
 em percentagem <span class="math notranslate nohighlight">\(d(\%)\)</span>  ou em graus <span class="math notranslate nohighlight">\(d(^{\circ})\)</span>, conforme, respectivamente,
 as Equações <a class="reference internal" href="#equation-eq-c1">(94)</a> e <a class="reference internal" href="#equation-eq-c2">(95)</a>:</p>
@@ -328,25 +330,25 @@ terreno fosse uniforme com <span class="math notranslate nohighlight">\(d(\%)=-1
 uma <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> de <span class="math notranslate nohighlight">\(100\,\text{m}\)</span>, a <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> seria de <span class="math notranslate nohighlight">\(-17,201\,\text{m}\)</span>.</p>
 </section>
 <section id="nivelamento">
-<h2>Nivelamento<a class="headerlink" href="#nivelamento" title="Link permanente para este título">¶</a></h2>
+<h2>Nivelamento<a class="headerlink" href="#nivelamento" title="Permalink to this heading">¶</a></h2>
 <p>Em topografia, chama-se de nivelamento, aos métodos utilizados para
 medir a <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span>, a altitude ou a cota. Vários são os métodos que podem
 ser empregados para o nivelamento. A utilização de um ou outro método
-dependerá dos objetivos do nivelamento (ver <span id="id5"><em>NBR 13133</em> [<a class="reference internal" href="referencias.html#id40" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span>).
+dependerá dos objetivos do nivelamento (ver <span id="id5"><em>NBR 13133</em> [<a class="reference internal" href="referencias.html#id42" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span>).
 Nesta seção serão apresentados os métodos: <em>i</em>) <a class="reference internal" href="#nivelamento-barometrico"><span class="std std-ref">Nivelamento barométrico</span></a>;
 <em>ii</em>) <a class="reference internal" href="#nivelamento-trigonometrico"><span class="std std-ref">Nivelamento trigonométrico</span></a>; <em>iii</em>) <a class="reference internal" href="#nivelamento-trigonometrico"><span class="std std-ref">Nivelamento trigonométrico</span></a>;
 <em>iv</em>) <a class="reference internal" href="#nivelamento-gnss"><span class="std std-ref">Nivelamento GNSS</span></a>; e <em>v</em>) <a class="reference internal" href="#nivelamento-geometrico"><span class="std std-ref">Nivelamento geométrico</span></a>.</p>
 <section id="nivelamento-barometrico">
-<span id="id6"></span><h3>Nivelamento barométrico<a class="headerlink" href="#nivelamento-barometrico" title="Link permanente para este título">¶</a></h3>
+<span id="id6"></span><h3>Nivelamento barométrico<a class="headerlink" href="#nivelamento-barometrico" title="Permalink to this heading">¶</a></h3>
 <p>Por meio de equipamentos que medem a pressão do ar, que denominam-se
 barômetros, é possível encontrar a <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> entre os pontos. A explicação
 é dada pela relação inversa que há entre pressão do ar e a altitude
 (<a class="reference internal" href="#baromehgvsaltitude"><span class="std std-numref">Figura 80</span></a>). Quanto mais alto um ponto, menor é a camada atmosférica
 atuando nele, logo, menor será a pressão devida à atmosfera. Por outro
 lado, um ponto em uma altitude menor, está sujeito a uma maior camada
-de ar, resultando numa maior pressão atmosférica <span id="id7">[<a class="reference internal" href="referencias.html#id4" title="L. Espartel. Curso de topografia. Editora Globo, Porto Alegre, RS, 1 edition, 1960.">Esp60</a>]</span>.
+de ar, resultando numa maior pressão atmosférica <span id="id7">[<a class="reference internal" href="referencias.html#id6" title="L. Espartel. Curso de topografia. Editora Globo, Porto Alegre, RS, 1 edition, 1960.">Esp60</a>]</span>.
 A pressão do ar depende também da temperatura do ar e em menor grau
-da umidade e da latitude do lugar (ver <span id="id8">[<a class="reference internal" href="referencias.html#id10" title="F. Deumlich and W. Faig. Surveying Instruments. De Gruyter, 1982. ISBN 9783110838916. URL: https://books.google.com.br/books?id=\_eGJVl8oSKsC.">DF82</a>]</span>, página 222).</p>
+da umidade e da latitude do lugar (ver <span id="id8">[<a class="reference internal" href="referencias.html#id12" title="F. Deumlich and W. Faig. Surveying Instruments. De Gruyter, 1982. ISBN 9783110838916. URL: https://books.google.com.br/books?id=\_eGJVl8oSKsC.">DF82</a>]</span>, página 222).</p>
 <figure class="align-center" id="id42">
 <span id="baromehgvsaltitude"></span><a class="reference internal image-reference" href="../_images/BaromeHGvsAltitude.png"><img alt="BaromeHGvsAltitude.png" src="../_images/BaromeHGvsAltitude.png" style="width: 461.29999999999995px; height: 236.24999999999997px;" /></a>
 <figcaption>
@@ -364,7 +366,7 @@ maior a força agindo sobre o reservatório, forçando a coluna de mercúrio
 a subir. Uma variação de <span class="math notranslate nohighlight">\(1\,\text{mm}\)</span>  na coluna de mercúrio corresponde a
 aproximadamente uma variação de <span class="math notranslate nohighlight">\(11\,\text{m}\)</span> de altitude. Estes equipamentos
 devem ser evitados por apresentarem pouca precisão, por exemplo, segundo
-<span id="id9">[<a class="reference internal" href="referencias.html#id10" title="F. Deumlich and W. Faig. Surveying Instruments. De Gruyter, 1982. ISBN 9783110838916. URL: https://books.google.com.br/books?id=\_eGJVl8oSKsC.">DF82</a>]</span>, um erro de <span class="math notranslate nohighlight">\(\pm2\,\text{m}\)</span>  (<span class="math notranslate nohighlight">\(\pm0,15\,\text{mm Hg}\)</span>
+<span id="id9">[<a class="reference internal" href="referencias.html#id12" title="F. Deumlich and W. Faig. Surveying Instruments. De Gruyter, 1982. ISBN 9783110838916. URL: https://books.google.com.br/books?id=\_eGJVl8oSKsC.">DF82</a>]</span>, um erro de <span class="math notranslate nohighlight">\(\pm2\,\text{m}\)</span>  (<span class="math notranslate nohighlight">\(\pm0,15\,\text{mm Hg}`\)</span>
 à <span class="math notranslate nohighlight">\(\pm0,19\,\text{mm Hg}\)</span>) pode ser encontrado para uma diferença
 de elevação de <span class="math notranslate nohighlight">\(200\,\text{m}\)</span>.</p>
 <figure class="align-center" id="id43">
@@ -380,10 +382,10 @@ mede esta deformação, que está relacionada a pressão do ar, e é mostrado
 em uma escala graduada e em painel digital. São mais precisos que
 os de mercúrio, por exemplo, o aumento precisão na medida de pressão
 resulta em desvio padrão da <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> entre pontos de <span class="math notranslate nohighlight">\(\pm0,8\,\text{m}\)</span>
-(ver <span id="id10">[<a class="reference internal" href="referencias.html#id10" title="F. Deumlich and W. Faig. Surveying Instruments. De Gruyter, 1982. ISBN 9783110838916. URL: https://books.google.com.br/books?id=\_eGJVl8oSKsC.">DF82</a>]</span>, página 224).</p>
+(ver <span id="id10">[<a class="reference internal" href="referencias.html#id12" title="F. Deumlich and W. Faig. Surveying Instruments. De Gruyter, 1982. ISBN 9783110838916. URL: https://books.google.com.br/books?id=\_eGJVl8oSKsC.">DF82</a>]</span>, página 224).</p>
 </section>
 <section id="nivelamento-trigonometrico">
-<span id="id11"></span><h3>Nivelamento trigonométrico<a class="headerlink" href="#nivelamento-trigonometrico" title="Link permanente para este título">¶</a></h3>
+<span id="id11"></span><h3>Nivelamento trigonométrico<a class="headerlink" href="#nivelamento-trigonometrico" title="Permalink to this heading">¶</a></h3>
 <p>Nivelamento trigonométrico é aquele em que a <span class="math notranslate nohighlight">\(\mathrm{DN}\)</span> é avaliada com o auxílio
 das funções trigonométricas. Em campo são medidos: o ângulo vertical
 e a <span class="math notranslate nohighlight">\(\mathrm{DI}\)</span> ou a <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> entre os pontos de interesse. As medidas de distâncias
@@ -462,7 +464,7 @@ tem-se:</p>
 </div>
 </section>
 <section id="nivelamento-taqueometrico">
-<span id="id12"></span><h3>Nivelamento taqueométrico<a class="headerlink" href="#nivelamento-taqueometrico" title="Link permanente para este título">¶</a></h3>
+<span id="id12"></span><h3>Nivelamento taqueométrico<a class="headerlink" href="#nivelamento-taqueometrico" title="Permalink to this heading">¶</a></h3>
 <p>De acordo com a <a class="reference internal" href="#taqueometria"><span class="std std-numref">Figura 83</span></a>, agora, em A, é estacionado
 um teodolito e em B, uma mira. O nivelamento taqueométrico é aquele
 realizado por meio das leituras dos retículos sobre a mira e do ângulo
@@ -485,7 +487,7 @@ valor da altura do prisma <span class="math notranslate nohighlight">\((ap)\)</s
 pela leitura do retículo médio <span class="math notranslate nohighlight">\((rm)\)</span>.</p>
 <p>Por se tratar de um método que é a cada dia menos empregado nos levantamentos
 topográficos, não será apresentado a determinação Equação <a class="reference internal" href="#equation-eq-taque">(100)</a>.
-Aos interessados, consultar <span id="id13">[<a class="reference internal" href="referencias.html#id9" title="R. Godoy. Topografia básica. FEALQ, Piracicaba, SP, 2 edition, 1988.">God88</a>]</span>, <span id="id14">[<a class="reference internal" href="referencias.html#id8" title="J. A. Comastri and J. C. Tuler. Topografia: Altimetria. Editora UFV, Viçosa, MG, 3 edition, 2003.">CT03</a>]</span> e <span id="id15">[<a class="reference internal" href="referencias.html#id7" title="J. M. Casaca, J. L. Matos, and J. M. B. Dias. Topografia geral. LCT, Rio de Janeiro, RJ, 4 edition, 2007.">CMD07</a>]</span>,
+Aos interessados, consultar <span id="id13">[<a class="reference internal" href="referencias.html#id11" title="R. Godoy. Topografia básica. FEALQ, Piracicaba, SP, 2 edition, 1988.">God88</a>]</span>, <span id="id14">[<a class="reference internal" href="referencias.html#id10" title="J. A. Comastri and J. C. Tuler. Topografia: Altimetria. Editora UFV, Viçosa, MG, 3 edition, 2003.">CT03</a>]</span> e <span id="id15">[<a class="reference internal" href="referencias.html#id9" title="J. M. Casaca, J. L. Matos, and J. M. B. Dias. Topografia geral. LCT, Rio de Janeiro, RJ, 4 edition, 2007.">CMD07</a>]</span>,
 entre outros.</p>
 <hr class="docutils" />
 <div class="admonition-exem-exemplo-6-com-um-teodolito-no-ponto-9-de-cota-math-100-0-rm-m-visou-se-o-ponto-10-onde-foram-medidos-a-altura-do-instrumento-de-math-1-532-rm-m-visando-se-a-mira-em-10-as-leitura-do-math-rs-2-984-rm-m-e-do-math-ri-0-200-rm-m-e-angulo-zenital-de-math-97-circ-determine-a-diferenca-de-nivel-entre-os-pontos-math-9-e-math-10-e-a-cota-em-math-10 admonition">
@@ -523,7 +525,7 @@ para <span class="math notranslate nohighlight">\(V\)</span>:</p>
 <hr class="docutils" />
 </section>
 <section id="nivelamento-gnss">
-<span id="id16"></span><h3>Nivelamento GNSS<a class="headerlink" href="#nivelamento-gnss" title="Link permanente para este título">¶</a></h3>
+<span id="id16"></span><h3>Nivelamento GNSS<a class="headerlink" href="#nivelamento-gnss" title="Permalink to this heading">¶</a></h3>
 <p>Como já foi visto anteriormente, a altitude que os receptores GNSS
 determinam, corresponde à distância vertical do centro físico da antena
 do receptor ao Datum horizontal considerado.
@@ -558,7 +560,7 @@ os valores de <span class="math notranslate nohighlight">\(h\)</span>  (receptor
 <figcaption>
 <p><span class="caption-number">Figura 84 </span><span class="caption-text">Relação entre altura ortométrica <span class="math notranslate nohighlight">\((H)\)</span>, altura geométrica <span class="math notranslate nohighlight">\((h)\)</span>
 e ondulação geoidal <span class="math notranslate nohighlight">\((N)\)</span> em (a). Ondulação geoidal segundo EGM96
-<span id="id18">[<a class="reference internal" href="referencias.html#id15" title="F.G. Lemoine, S. C. Kenyon, J. K. Factor, R.G. Trimmer, N. K. Pavlis, D. S. Chinn, C. M. Cox, S. M. Klosko, S. B. Luthcke, M. H. Torrence, Y. M. Wang, R. G. Williamson, E. C. Pavlis, R. H. Rapp, and T. R. Olson. The development of the joint NASA GSFC and the National Imagery and Mapping Agency (NIMA) Geopotential Model EGM96. NASA technical paper. National Aeronautics and Space Administration, Goddard Space Flight Center, 1998. URL: https://books.google.com.br/books?id=eAMVAQAAIAAJ.">LKF+98</a>]</span>, tendo <span class="math notranslate nohighlight">\(h\)</span>  em relação ao WGS84 (b).</span><a class="headerlink" href="#id46" title="Permalink to this image">¶</a></p>
+<span id="id18">[<a class="reference internal" href="referencias.html#id17" title="F.G. Lemoine, S. C. Kenyon, J. K. Factor, R.G. Trimmer, N. K. Pavlis, D. S. Chinn, C. M. Cox, S. M. Klosko, S. B. Luthcke, M. H. Torrence, Y. M. Wang, R. G. Williamson, E. C. Pavlis, R. H. Rapp, and T. R. Olson. The development of the joint NASA GSFC and the National Imagery and Mapping Agency (NIMA) Geopotential Model EGM96. NASA technical paper. National Aeronautics and Space Administration, Goddard Space Flight Center, 1998. URL: https://books.google.com.br/books?id=eAMVAQAAIAAJ.">LKF+98</a>]</span>, tendo <span class="math notranslate nohighlight">\(h\)</span>  em relação ao WGS84 (b).</span><a class="headerlink" href="#id46" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <div class="admonition-sobre-hgeohnor2020 admonition">
@@ -569,7 +571,7 @@ e ondulação geoidal <span class="math notranslate nohighlight">\((N)\)</span> 
 <p>A precisão na determinação de <span class="math notranslate nohighlight">\(H\)</span>, dependerá: <em>i</em>) da precisão
 de <span class="math notranslate nohighlight">\(h\)</span> ou seja, do tipo de receptor GNSS, do método de
 posicionamento, e <em>ii</em>) da precisão da estimativa da <span class="math notranslate nohighlight">\(N\)</span>. Para
-a <span class="math notranslate nohighlight">\(N\)</span>  do modelo HgeoHNOR2020, segundo <span id="id19">IBGE [<a class="reference internal" href="referencias.html#id5" title="IBGE. Modelo hgeohnor2020 para conversão de altitudes geométricas em altitudes normais / ibge, coordenação de geodésia. Technical Report, IBGE, Rio de Janeiro, RJ, Brasil, 2021. URL: https://biblioteca.ibge.gov.br/visualizacao/livros/liv101841.pdf.">IBGE21</a>]</span>, o resíduo
+a <span class="math notranslate nohighlight">\(N\)</span>  do modelo HgeoHNOR2020, segundo <span id="id19">IBGE [<a class="reference internal" href="referencias.html#id7" title="IBGE. Modelo hgeohnor2020 para conversão de altitudes geométricas em altitudes normais / ibge, coordenação de geodésia. Technical Report, IBGE, Rio de Janeiro, RJ, Brasil, 2021. URL: https://biblioteca.ibge.gov.br/visualizacao/livros/liv101841.pdf.">IBGE21</a>]</span>, o resíduo
 (<em>reqm</em>, raiz do erro quadrático médio) em ralação
 à <span class="math notranslate nohighlight">\(N\)</span>  estimadas e  a medida por meio de GNSS em pontos onde se conhecia o valor de
 <span class="math notranslate nohighlight">\(H\)</span>, pontos de RN do IBGE, foi de <span class="math notranslate nohighlight">\(6,5\,\text{cm}\)</span>.</p>
@@ -578,7 +580,7 @@ os métodos de medidas relativas e por diferença de fase por onda portadora.
 Já, para aumentar a precisão no que diz respeito a <span class="math notranslate nohighlight">\(N\)</span>, pode-se realizar
 a sua calibração local. Esta calibração não será apresentada, por
 este texto ser apenas introdutório à esta disciplina. Maiores detalhes
-podem ser encontrados em <span id="id20">[<a class="reference internal" href="referencias.html#id18" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>.</p>
+podem ser encontrados em <span id="id20">[<a class="reference internal" href="referencias.html#id20" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span>.</p>
 <hr class="docutils" />
 <div class="admonition-exem-exemplo-7-encontre-por-meio-do-programa-hgeohnor2020-https-www-ibge-gov-br-geociencias-informacoes-sobre-posicionamento-geodesico-servicos-para-posicionamento-geodesico-31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb-html-edicao-31284-t-processar-os-dados-a-ondulacao-geoidal-para-um-ponto-de-coordenadas-math-22-circ-6-41-de-latitude-e-math-41-circ-54-8-de-longitude-no-datum-sirgas2000-https-geoftp-ibge-gov-br-informacoes-sobre-posicionamento-geodesico-rede-planialtimetrica-relatorio-rel-sirgas2000-pdf-sabendo-se-que-a-altura-geometrica-calculada-pelo-receptor-gnss-nesta-coordenada-foi-de-math-562-672-text-m-qual-a-altitude-ortometrica admonition">
 <p class="admonition-title"><span class="exem">Exemplo 7</span> Encontre, por meio do programa <a class="reference external" href="https://www.ibge.gov.br/geociencias/informacoes-sobre-posicionamento-geodesico/servicos-para-posicionamento-geodesico/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?edicao=31284&amp;t=processar-os-dados">HgeoHNOR2020</a>,
@@ -640,17 +642,17 @@ a trena.</p>
 </div>
 </section>
 <section id="nivelamento-geometrico">
-<span id="id26"></span><h3>Nivelamento geométrico<a class="headerlink" href="#nivelamento-geometrico" title="Link permanente para este título">¶</a></h3>
+<span id="id26"></span><h3>Nivelamento geométrico<a class="headerlink" href="#nivelamento-geometrico" title="Permalink to this heading">¶</a></h3>
 <p>O nivelamento geométrico (NG) é aquele em que, a DN, a cota ou a altitude,
 é calculada por meio de visadas horizontais às miras localizadas sobre
-os pontos de interesse <span id="id27">[<a class="reference internal" href="referencias.html#id40" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span>. Os equipamentos topográficos
+os pontos de interesse <span id="id27">[<a class="reference internal" href="referencias.html#id42" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span>. Os equipamentos topográficos
 que fazem visadas horizontais são denominados de níveis.</p>
 <p>Se o NG é realizado de uma única estação, ponto em que o nível é estacionado,
 denomina-se nivelamento geométrico simples (NGS). Caso tenha que ocorrer
 mudança de estação, denomina-se de nivelamento geométrico composto
 (NGC). A seguir são descritos uma breve explicação das duas metodologias.</p>
 <section id="nivelamento-geometrico-simples-ngs">
-<h4>Nivelamento geométrico simples (NGS)<a class="headerlink" href="#nivelamento-geometrico-simples-ngs" title="Link permanente para este título">¶</a></h4>
+<h4>Nivelamento geométrico simples (NGS)<a class="headerlink" href="#nivelamento-geometrico-simples-ngs" title="Permalink to this heading">¶</a></h4>
 <p>Na <a class="reference internal" href="#fig-nivelageome1"><span class="std std-numref">Figura 85</span></a> é apresentado o procedimento para
 o nivelamento entre dois pontos, o <span class="math notranslate nohighlight">\(A\)</span> e o <span class="math notranslate nohighlight">\(B\)</span>. O nível é estacionado,
 de preferência em um ponto intermediário à <span class="math notranslate nohighlight">\(A\)</span> e <span class="math notranslate nohighlight">\(B\)</span>. Ao primeiro
@@ -750,21 +752,21 @@ com <span class="math notranslate nohighlight">\(\mathrm{cota}\)</span> atribuí
 De acordo com as Equações <a class="reference internal" href="#equation-eq-ai">(102)</a> e <a class="reference internal" href="#equation-eq-cotang">(103)</a>,
 a solução é apresentada na Tabela que segue, onde, em negrito são
 as respostas e, em parenteses, os cálculos realizados.</p>
-<table class="colwidths-given styled-table docutils align-default" id="id50">
+<table class="styled-table docutils align-default" id="id50">
 <caption><span class="caption-number">Table 14 </span><span class="caption-text">Compensação do erro angular pelo método linear</span><a class="headerlink" href="#id50" title="Permalink to this table">¶</a></caption>
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 29%" />
-<col style="width: 14%" />
-<col style="width: 29%" />
+<col style="width: 14.3%" />
+<col style="width: 14.3%" />
+<col style="width: 28.6%" />
+<col style="width: 14.3%" />
+<col style="width: 28.6%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="center-align no-left-divider single-right-divider head"><p>Ponto</p></th>
-<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathbf{ré}\)</span></p></th>
-<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathbf{AI}\)</span></p></th>
-<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathbf{vante}\)</span></p></th>
-<th class="center-align single-left-divider no-right-divider head"><p><span class="math notranslate nohighlight">\(\mathbf{cota}\)</span></p></th>
+<tr class="row-odd"><th class="head center-align no-left-divider single-right-divider"><p>Ponto</p></th>
+<th class="head center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(\mathbf{ré}\)</span></p></th>
+<th class="head center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(\mathbf{AI}\)</span></p></th>
+<th class="head center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(\mathbf{vante}\)</span></p></th>
+<th class="head center-align single-left-divider no-right-divider"><p><span class="math notranslate nohighlight">\(\mathbf{cota}\)</span></p></th>
 </tr>
 </thead>
 <tbody>
@@ -810,7 +812,7 @@ as respostas e, em parenteses, os cálculos realizados.</p>
 </section>
 <hr class="docutils" />
 <section id="nivelamento-geometrico-composto-ngc">
-<h4>Nivelamento geométrico composto (NGC)<a class="headerlink" href="#nivelamento-geometrico-composto-ngc" title="Link permanente para este título">¶</a></h4>
+<h4>Nivelamento geométrico composto (NGC)<a class="headerlink" href="#nivelamento-geometrico-composto-ngc" title="Permalink to this heading">¶</a></h4>
 <p>Quando de uma única estação, ponto em que o nível é estacionado, não
 se consegue fazer a visada para o ponto de interesse, há a necessidade
 de realizar a mudança do equipamento, para que os outros pontos possam
@@ -849,77 +851,6 @@ em campo conforme o esquema gráfico a seguir, calcule as <span class="math notr
 <p><span class="solucao">Solução:</span>
 Solução na Tabela abaixo, sendo que em negrito
 são  os valores calculados e, entre parenteses, os cálculos realizados.</p>
-<table class="colwidths-given styled-table docutils align-default" id="id51">
-<caption><span class="caption-number">Table 15 </span><span class="caption-text">Compensação do erro angular pelo método linear</span><a class="headerlink" href="#id51" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 2%" />
-<col style="width: 2%" />
-<col style="width: 4%" />
-<col style="width: 2%" />
-<col style="width: 4%" />
-<col style="width: 85%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="center-align no-left-divider single-right-divider head"><p>Estaca</p></th>
-<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathbf{ré}\)</span></p></th>
-<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathbf{AI (cota+ré)}\)</span></p></th>
-<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathbf{PI}\)</span></p></th>
-<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathbf{PM}\)</span></p></th>
-<th class="center-align single-left-divider no-right-divider head"><p><span class="math notranslate nohighlight">\(\mathbf{cota (AI-vante)}\)</span></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
-<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(0,796\)</span></p></td>
-<td class="right-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(\mathbf{200,796}(200,000+0,796)\)</span></p></td>
-<td class="center-align single-left-divider single-right-divider"></td>
-<td class="center-align single-left-divider single-right-divider"></td>
-<td class="right-align single-left-divider no-right-divider"><p>200,000</p></td>
-</tr>
-<tr class="row-odd"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
-<td class="center-align single-left-divider single-right-divider"></td>
-<td class="right-align single-left-divider single-right-divider"></td>
-<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(1,491\)</span></p></td>
-<td class="center-align single-left-divider single-right-divider"></td>
-<td class="right-align single-left-divider no-right-divider"><p><span class="math notranslate nohighlight">\(\mathbf{199,305}(200,796-1,491)\)</span></p></td>
-</tr>
-<tr class="row-even"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(2\)</span></p></td>
-<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(0,264\)</span></p></td>
-<td class="right-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(\mathbf{197,359}(197,095+0,264)\)</span></p></td>
-<td class="center-align single-left-divider single-right-divider"></td>
-<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(3,701\)</span></p></td>
-<td class="right-align single-left-divider no-right-divider"><p><span class="math notranslate nohighlight">\(\mathbf{197,095}(200,796-3,701)\)</span></p></td>
-</tr>
-<tr class="row-odd"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(3\)</span></p></td>
-<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(0,450\)</span></p></td>
-<td class="right-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(\mathbf{193,920}(193,470+0,450)\)</span></p></td>
-<td class="center-align single-left-divider single-right-divider"></td>
-<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(3,889\)</span></p></td>
-<td class="right-align single-left-divider no-right-divider"><p><span class="math notranslate nohighlight">\(\mathbf{193,470}197,359-3,889)\)</span></p></td>
-</tr>
-<tr class="row-even"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(4\)</span></p></td>
-<td class="center-align single-left-divider single-right-divider"></td>
-<td class="right-align single-left-divider single-right-divider"></td>
-<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(1.982\)</span></p></td>
-<td class="center-align single-left-divider single-right-divider"></td>
-<td class="right-align single-left-divider no-right-divider"><p><span class="math notranslate nohighlight">\(\mathbf{191,938}(193,920-1,982)\)</span></p></td>
-</tr>
-<tr class="row-odd"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(5\)</span></p></td>
-<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(0,868\)</span></p></td>
-<td class="right-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(\mathbf{191,142}(190,274+0,868)\)</span></p></td>
-<td class="center-align single-left-divider single-right-divider"></td>
-<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(3,646\)</span></p></td>
-<td class="right-align single-left-divider no-right-divider"><p><span class="math notranslate nohighlight">\(\mathbf{190,274}(193,920-3,646)\)</span></p></td>
-</tr>
-<tr class="row-even"><td class="center-align no-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(6\)</span></p></td>
-<td class="center-align single-left-divider single-right-divider"></td>
-<td class="right-align single-left-divider single-right-divider"></td>
-<td class="center-align single-left-divider single-right-divider"></td>
-<td class="center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(3,317\)</span></p></td>
-<td class="right-align single-left-divider no-right-divider"><p><span class="math notranslate nohighlight">\(\mathbf{187,825}(191,142 -3,317)\)</span></p></td>
-</tr>
-</tbody>
-</table>
 <p>Verificando os calculos conforme <a class="reference internal" href="#equation-eq-verificacaongc">(104)</a>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\Sigma\mathrm{{r\acute{e}}}-\Sigma\mathrm{PM}&amp;=\mathrm{\text{cota}_{final}}-\mathrm{\text{cota}_{inicial}}\\
@@ -930,9 +861,9 @@ são  os valores calculados e, entre parenteses, os cálculos realizados.</p>
 </section>
 <hr class="docutils" />
 <section id="cuidados-no-nivelamento-geometrico">
-<h3>Cuidados no nivelamento geométrico<a class="headerlink" href="#cuidados-no-nivelamento-geometrico" title="Link permanente para este título">¶</a></h3>
+<h3>Cuidados no nivelamento geométrico<a class="headerlink" href="#cuidados-no-nivelamento-geometrico" title="Permalink to this heading">¶</a></h3>
 <p>Alguns cuidados devem ser tomados em um NG a fim de se obter melhores
-resultados no NG. Podendo-se citar, por exemplo <span id="id28">[<a class="reference internal" href="referencias.html#id40" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span>:</p>
+resultados no NG. Podendo-se citar, por exemplo <span id="id28">[<a class="reference internal" href="referencias.html#id42" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span>:</p>
 <ul class="simple">
 <li><p>medir sempre pontos de destaque no terreno, como depressões e elevações;</p></li>
 <li><p>repetição das medidas;</p></li>
@@ -948,7 +879,7 @@ utilizando-se uma trena, ou mais comumente, com a leitura dos   <span class="mat
 e <span class="math notranslate nohighlight">\(ri\)</span> e aplicando a fórmula taqueométricas. As informações de
 distâncias podem ser inseridas na tabela de campo do NGC com a inclusão
 de mais duas colunas, indicando as distâncias do nível ao ponto de
-<span class="math notranslate nohighlight">\(\mathrm{ré}\)</span> e de <span class="math notranslate nohighlight">\(\mathrm{vante}\)</span> (<span id="id29">[<a class="reference internal" href="referencias.html#id40" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span>, página 30);</p></li>
+<span class="math notranslate nohighlight">\(\mathrm{ré}\)</span> e de <span class="math notranslate nohighlight">\(\mathrm{vante}\)</span> (<span id="id29">[<a class="reference internal" href="referencias.html#id42" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span>, página 30);</p></li>
 <li><p>as visadas de <span class="math notranslate nohighlight">\(\mathrm{ré}\)</span> e de <span class="math notranslate nohighlight">\(\mathrm{vante}\)</span> devem ser à uma altura em relação ao solo,
 superior a <span class="math notranslate nohighlight">\(0,50\,\text{m}\)</span>, com a finalidade de minimizar o problema de reverberação;</p></li>
 <li><p>a mira deve ser de madeira e dobrável, não de encaixe, devendo ser
@@ -957,9 +888,9 @@ e permite que a mira, sobre ele, gire sem se deslocar no ponto.</p></li>
 </ul>
 </section>
 <section id="tolerancia-para-o-nivelamento">
-<span id="tolerancia-nivelamento"></span><h3>Tolerância para o nivelamento<a class="headerlink" href="#tolerancia-para-o-nivelamento" title="Link permanente para este título">¶</a></h3>
+<span id="tolerancia-nivelamento"></span><h3>Tolerância para o nivelamento<a class="headerlink" href="#tolerancia-para-o-nivelamento" title="Permalink to this heading">¶</a></h3>
 <p>Em um nivelamento, é sempre prudente realizar uma avaliação da qualidade
-do levantamento. A <span id="id30"><em>NBR 13133</em> [<a class="reference internal" href="referencias.html#id40" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span> estabelece os métodos, os
+do levantamento. A <span id="id30"><em>NBR 13133</em> [<a class="reference internal" href="referencias.html#id42" title="NBR 13133. Associação Brasileira de Normas Técnicas, Rio de Janeiro, RJ, dez. 1996.">Associação Brasileira de Normas Técnicas96</a>]</span> estabelece os métodos, os
 equipamentos e as tolerâncias que serão permitidas, que dependerá
 da escala, da equidistância das curvas de nível e da densidade de
 pontos medidos.</p>
@@ -971,7 +902,7 @@ para ser considerado aceitável:</p>
 <div class="math notranslate nohighlight" id="equation-eq-tolerancia-nivelamento">
 <span class="eqno">(105)<a class="headerlink" href="#equation-eq-tolerancia-nivelamento" title="Permalink to this equation">¶</a></span>\[T_{\textit{nivelamento}}=a\,\sqrt{\text{K}}\]</div>
 <p>em que: <span class="math notranslate nohighlight">\(a\)</span> dependerá da classe do nivelamento, por exemplo
-para a classe IIN <a class="footnote-reference brackets" href="#f1" id="id31">1</a>, <span class="math notranslate nohighlight">\(a=20\,\text{mm}\)</span>; <span class="math notranslate nohighlight">\(K\)</span> é a extensão
+para a classe IIN <a class="footnote-reference brackets" href="#f1" id="id31" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>, <span class="math notranslate nohighlight">\(a=20\,\text{mm}\)</span>; <span class="math notranslate nohighlight">\(K\)</span> é a extensão
 nivelada em <span class="math notranslate nohighlight">\(km\)</span>, medida num único
 sentido. Para os demais valores de <span class="math notranslate nohighlight">\(a\)</span>, consultar NBR13133.</p>
 <p>O erro de nivelamento pode ser obtido, por exemplo, das seguintes
@@ -994,8 +925,8 @@ estacas; e (c) distribuir o erro linearmente, por exemplo, nas <span class="math
 do contra-nivelamento e, calcular a média entre as contas do nivelamento
 e do contra-nivelamente compensada. Maiores detalhes e outros métodos
 de ajuste para nivelamento podem ser encontrados em:
-<span id="id32">[<a class="reference internal" href="referencias.html#id8" title="J. A. Comastri and J. C. Tuler. Topografia: Altimetria. Editora UFV, Viçosa, MG, 3 edition, 2003.">CT03</a>]</span> [pg. 84-89], <span id="id33">[<a class="reference internal" href="referencias.html#id3" title="J. C. McCormac. Topografia. LCT, Rio de Janeiro, RJ, 5 edition, 2007.">McC07</a>]</span> [pg. 122-125] e
-<span id="id34">[<a class="reference internal" href="referencias.html#id18" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span> [pg. 406-411].</p>
+<span id="id32">[<a class="reference internal" href="referencias.html#id10" title="J. A. Comastri and J. C. Tuler. Topografia: Altimetria. Editora UFV, Viçosa, MG, 3 edition, 2003.">CT03</a>]</span> [pg. 84-89], <span id="id33">[<a class="reference internal" href="referencias.html#id5" title="J. C. McCormac. Topografia. LCT, Rio de Janeiro, RJ, 5 edition, 2007.">McC07</a>]</span> [pg. 122-125] e
+<span id="id34">[<a class="reference internal" href="referencias.html#id20" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span> [pg. 406-411].</p>
 <hr class="docutils" />
 <div class="admonition-exem-exemplo-11-foram-realizados-um-nivelamento-e-um-contra-nivelamento-de-800-m-de-extensao-a-math-mathrm-dn-entre-o-ponto-inicial-e-final-do-nivelamento-e-do-contra-nivelamento-foram-de-math-8-581-text-m-e-math-8-603-text-m-respectivamente-este-nivelamento-e-da-classe-iin-de-acordo-com-a-nbr13133-pergunta-se-o-levantamento-e-aceitavel admonition">
 <p class="admonition-title"><span class="exem">Exemplo 11</span> Foram realizados um nivelamento e um contra-nivelamento de 800 m
@@ -1021,7 +952,7 @@ e, posterioremente, verificada se está de acordo com a tolerância.</p>
 </section>
 <hr class="docutils" />
 <section id="perfil-topografico">
-<h3>Perfil topográfico<a class="headerlink" href="#perfil-topografico" title="Link permanente para este título">¶</a></h3>
+<h3>Perfil topográfico<a class="headerlink" href="#perfil-topografico" title="Permalink to this heading">¶</a></h3>
 <p>O perfil topográfico é um gráfico em que, o eixo-  x} representa
 a distância horizontal, geralmente dado por números de estacas, e
 o eixo-<span class="math notranslate nohighlight">\(y\)</span> os valores das <span class="math notranslate nohighlight">\(\mathrm{cotas}\)</span> ou altitudes das respectivas
@@ -1037,7 +968,7 @@ utilizada no eixo-<span class="math notranslate nohighlight">\(y\)</span>, escal
 serem, na grande maioria dos casos, superiores às das DNs. Desta forma,
 se colocadas em mesma escala, não se poderia avaliar o perfil do terreno
 de forma adequada. Uma vez conhecida a EH, pode-se considerar inicialmente
-para teste, <span class="math notranslate nohighlight">\(\mathrm{EV}=10\mathrm{EH}\)</span> <span id="id35">[<a class="reference internal" href="referencias.html#id9" title="R. Godoy. Topografia básica. FEALQ, Piracicaba, SP, 2 edition, 1988.">God88</a>]</span>. Deve-se verificar
+para teste, <span class="math notranslate nohighlight">\(\mathrm{EV}=10\mathrm{EH}\)</span> <span id="id35">[<a class="reference internal" href="referencias.html#id11" title="R. Godoy. Topografia básica. FEALQ, Piracicaba, SP, 2 edition, 1988.">God88</a>]</span>. Deve-se verificar
 se este valor é adequado para construção do perfil no tamanho do papel
 utilizado. Se necessário escolhe-se outra <span class="math notranslate nohighlight">\(\mathrm{EV}\)</span>.</p>
 <p>Na <a class="reference internal" href="#cap-niv-perfil"><span class="std std-numref">Figura 88</span></a> é apresentado o perfil do NG do Exemplo 10.
@@ -1057,15 +988,15 @@ Por exemplo, na <a class="reference internal" href="#cap-niv-perfil"><span class
 é apresentada a <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> entre a estaca 0 e <span class="math notranslate nohighlight">\(3+12\,\text{m}\)</span>,
 de <span class="math notranslate nohighlight">\(72\,\text{m}\)</span>,
 e entre <span class="math notranslate nohighlight">\(3+12\,\text{m}\)</span> e <span class="math notranslate nohighlight">\(6\)</span>, de <span class="math notranslate nohighlight">\(48\,\text{m}\)</span>.</p>
-<figure class="align-center" id="id52">
+<figure class="align-center" id="id51">
 <span id="cap-niv-perfil"></span><a class="reference internal image-reference" href="../_images/cap_niv_perfil.png"><img alt="_cap_niv_perfil.png" src="../_images/cap_niv_perfil.png" style="width: 434.0px; height: 322.7px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 88 </span><span class="caption-text">Representação gráfica do perfil topográfico do Exemplo 10.</span><a class="headerlink" href="#id52" title="Permalink to this image">¶</a></p>
+<p><span class="caption-number">Figura 88 </span><span class="caption-text">Representação gráfica do perfil topográfico do Exemplo 10.</span><a class="headerlink" href="#id51" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="greide">
-<h3>Greide<a class="headerlink" href="#greide" title="Link permanente para este título">¶</a></h3>
+<h3>Greide<a class="headerlink" href="#greide" title="Permalink to this heading">¶</a></h3>
 <p>Juntamente com o perfil do terreno, pode-se ter um greide, também
 denominado de rampa, com uma declividade (Equações <a class="reference internal" href="#equation-eq-c1">(94)</a> e <a class="reference internal" href="#equation-eq-c2">(95)</a>).
 O greide pode representar, por exemplo, o eixo onde uma estrada passará,
@@ -1102,27 +1033,27 @@ apresentado começa na estaca <span class="math notranslate nohighlight">\(5+13,
 termina na estaca <span class="math notranslate nohighlight">\(10+15,1\,\text{m}\)</span> de cota <span class="math notranslate nohighlight">\(202,1\,\text{m}\)</span>,
 ou seja, uma DN total de <span class="math notranslate nohighlight">\(2,11\,\text{m}\)</span>, com o terreno em
 aclive entre a primeira estaca e a última.</p>
-<table class="colwidths-given styled-table docutils align-default" id="id53">
-<caption><span class="caption-number">Table 16 </span><span class="caption-text">Apresentação da <span class="math notranslate nohighlight">\(\mathrm{CV}\)</span> em uma caderneta de campo.</span><a class="headerlink" href="#id53" title="Permalink to this table">¶</a></caption>
+<table class="styled-table docutils align-default" id="id52">
+<caption><span class="caption-number">Table 15 </span><span class="caption-text">Apresentação da <span class="math notranslate nohighlight">\(\mathrm{CV}\)</span> em uma caderneta de campo.</span><a class="headerlink" href="#id52" title="Permalink to this table">¶</a></caption>
 <colgroup>
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
+<col style="width: 12.5%" />
+<col style="width: 12.5%" />
+<col style="width: 12.5%" />
+<col style="width: 12.5%" />
+<col style="width: 12.5%" />
+<col style="width: 12.5%" />
+<col style="width: 12.5%" />
+<col style="width: 12.5%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="center-align no-left-divider single-right-divider head"><p>Estacas</p></th>
-<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{ré}\)</span></p></th>
-<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{AI}\)</span></p></th>
-<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{PI}\)</span></p></th>
-<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{PM}\)</span></p></th>
-<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\text{cota}_{\text{terreno}}\)</span></p></th>
-<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\text{cota}_{\text{greide}}\)</span></p></th>
-<th class="center-align single-left-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{CV}\)</span></p></th>
+<tr class="row-odd"><th class="head center-align no-left-divider single-right-divider"><p>Estacas</p></th>
+<th class="head center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(\mathrm{ré}\)</span></p></th>
+<th class="head center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(\mathrm{AI}\)</span></p></th>
+<th class="head center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(\mathrm{PI}\)</span></p></th>
+<th class="head center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(\mathrm{PM}\)</span></p></th>
+<th class="head center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(\text{cota}_{\text{terreno}}\)</span></p></th>
+<th class="head center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(\text{cota}_{\text{greide}}\)</span></p></th>
+<th class="head center-align single-left-divider"><p><span class="math notranslate nohighlight">\(\mathrm{CV}\)</span></p></th>
 </tr>
 </thead>
 <tbody>
@@ -1201,10 +1132,10 @@ da estaca <span class="math notranslate nohighlight">\(6\)</span> <span class="m
 de raciocínio, somando as distâncias entre as estacas, tem-se que
 a <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> entre as estacas inicial e final é de
 <span class="math notranslate nohighlight">\(101,6\,\text{m}\)</span> <span class="math notranslate nohighlight">\((6,5+20\cdot4+15,1\)</span>).</p>
-<figure class="align-center" id="id54">
+<figure class="align-center" id="id53">
 <span id="cap-niv-perfil-2"></span><a class="reference internal image-reference" href="../_images/cap_niv_perfil_2.png"><img alt="cap_niv_perfil_2.png" src="../_images/cap_niv_perfil_2.png" style="width: 432.59999999999997px; height: 292.25px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 89 </span><span class="caption-text">Perfil topográfico, greide e  <span class="math notranslate nohighlight">\(\mathrm{CV}\)</span>  dos dados apresentados na Tabela acima.</span><a class="headerlink" href="#id54" title="Permalink to this image">¶</a></p>
+<p><span class="caption-number">Figura 89 </span><span class="caption-text">Perfil topográfico, greide e  <span class="math notranslate nohighlight">\(\mathrm{CV}\)</span>  dos dados apresentados na Tabela acima.</span><a class="headerlink" href="#id53" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <hr class="docutils" />
@@ -1268,7 +1199,7 @@ a <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> entre a esta
 </section>
 <hr class="docutils" />
 <section id="exercicios">
-<h2>Exercícios<a class="headerlink" href="#exercicios" title="Link permanente para este título">¶</a></h2>
+<h2>Exercícios<a class="headerlink" href="#exercicios" title="Permalink to this heading">¶</a></h2>
 <p><span class="exem">1)</span> Qual o erro que resultará se, a correção dos efeitos
 da curvatura da terra e de refração, for negligenciado em nivelamentos
 trigonométricos para pontos separados em:</p>
@@ -1340,10 +1271,10 @@ a altitude em   <span class="math notranslate nohighlight">\(A\)</span> é de <s
 <li><p>a  <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> entre <span class="math notranslate nohighlight">\(A\)</span> e <span class="math notranslate nohighlight">\(P\)</span>;</p></li>
 <li><p>a altitude de <span class="math notranslate nohighlight">\(P\)</span>.</p></li>
 </ul>
-<figure class="align-center" id="id55">
+<figure class="align-center" id="id54">
 <span id="triangle"></span><a class="reference internal image-reference" href="../_images/triangle.png"><img alt="triangle.png" src="../_images/triangle.png" style="width: 273.7px; height: 201.6px;" /></a>
 <figcaption>
-<p><span class="caption-number">Figura 90 </span><span class="caption-text">Ponto inacessível.</span><a class="headerlink" href="#id55" title="Permalink to this image">¶</a></p>
+<p><span class="caption-number">Figura 90 </span><span class="caption-text">Ponto inacessível.</span><a class="headerlink" href="#id54" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p><span class="exem">Resp.:</span> <span class="math notranslate nohighlight">\(\mathrm{DH}_{AP}=45,786\,\text{m}\)</span>; Altitude  de <span class="math notranslate nohighlight">\(P=595,654\)</span>
@@ -1402,23 +1333,15 @@ estão espaçadas de <span class="math notranslate nohighlight">\(20\,\text{m}\)
 <li><p>o erro cometido no trecho;</p></li>
 <li><p>considerando um levantamento da classe IIN da NBR13133, este levantamento está dentro do limite tolerado?</p></li>
 </ol>
-<table class="styled-table docutils align-default" id="id56">
-<caption><span class="caption-number">Table 17 </span><span class="caption-text">Nivelamento.</span><a class="headerlink" href="#id56" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 8%" />
-<col style="width: 18%" />
-<col style="width: 18%" />
-<col style="width: 18%" />
-<col style="width: 18%" />
-<col style="width: 19%" />
-</colgroup>
+<table class="styled-table docutils align-default" id="id55">
+<caption><span class="caption-number">Table 16 </span><span class="caption-text">Nivelamento.</span><a class="headerlink" href="#id55" title="Permalink to this table">¶</a></caption>
 <thead>
-<tr class="row-odd"><th class="center-align no-left-divider single-right-divider head"><p>Estaca</p></th>
-<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{ré}\)</span></p></th>
-<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{AI}\)</span></p></th>
-<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{PI}\)</span></p></th>
-<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{PM}\)</span></p></th>
-<th class="center-align single-left-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{cota}\)</span></p></th>
+<tr class="row-odd"><th class="head center-align no-left-divider single-right-divider"><p>Estaca</p></th>
+<th class="head center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(\mathrm{ré}\)</span></p></th>
+<th class="head center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(\mathrm{AI}\)</span></p></th>
+<th class="head center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(\mathrm{PI}\)</span></p></th>
+<th class="head center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(\mathrm{PM}\)</span></p></th>
+<th class="head center-align single-left-divider"><p><span class="math notranslate nohighlight">\(\mathrm{cota}\)</span></p></th>
 </tr>
 </thead>
 <tbody>
@@ -1466,23 +1389,15 @@ estão espaçadas de <span class="math notranslate nohighlight">\(20\,\text{m}\)
 </tr>
 </tbody>
 </table>
-<table class="styled-table docutils align-default" id="id57">
-<caption><span class="caption-number">Table 18 </span><span class="caption-text">Contra-nivelamento.</span><a class="headerlink" href="#id57" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 8%" />
-<col style="width: 18%" />
-<col style="width: 18%" />
-<col style="width: 18%" />
-<col style="width: 18%" />
-<col style="width: 19%" />
-</colgroup>
+<table class="styled-table docutils align-default" id="id56">
+<caption><span class="caption-number">Table 17 </span><span class="caption-text">Contra-nivelamento.</span><a class="headerlink" href="#id56" title="Permalink to this table">¶</a></caption>
 <thead>
-<tr class="row-odd"><th class="center-align no-left-divider single-right-divider head"><p>Estaca</p></th>
-<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{ré}\)</span></p></th>
-<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{AI}\)</span></p></th>
-<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{PI}\)</span></p></th>
-<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{PM}\)</span></p></th>
-<th class="center-align single-left-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{cota}\)</span></p></th>
+<tr class="row-odd"><th class="head center-align no-left-divider single-right-divider"><p>Estaca</p></th>
+<th class="head center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(\mathrm{ré}\)</span></p></th>
+<th class="head center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(\mathrm{AI}\)</span></p></th>
+<th class="head center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(\mathrm{PI}\)</span></p></th>
+<th class="head center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(\mathrm{PM}\)</span></p></th>
+<th class="head center-align single-left-divider"><p><span class="math notranslate nohighlight">\(\mathrm{cota}\)</span></p></th>
 </tr>
 </thead>
 <tbody>
@@ -1539,27 +1454,27 @@ de campo da Tabela abaixo, calcule:</p>
 <li><p>as <span class="math notranslate nohighlight">\(\mathrm{CV}\)</span>  para todos as estacas;</p></li>
 <li><p>em que estaca(s) se encontra(m) o(s) ponto(s) de passagem.</p></li>
 </ol>
-<table class="colwidths-given styled-table docutils align-default" id="id58">
-<caption><span class="caption-number">Table 19 </span><span class="caption-text">Tabela de nivelamento.</span><a class="headerlink" href="#id58" title="Permalink to this table">¶</a></caption>
+<table class="styled-table docutils align-default" id="id57">
+<caption><span class="caption-number">Table 18 </span><span class="caption-text">Tabela de nivelamento.</span><a class="headerlink" href="#id57" title="Permalink to this table">¶</a></caption>
 <colgroup>
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
+<col style="width: 12.5%" />
+<col style="width: 12.5%" />
+<col style="width: 12.5%" />
+<col style="width: 12.5%" />
+<col style="width: 12.5%" />
+<col style="width: 12.5%" />
+<col style="width: 12.5%" />
+<col style="width: 12.5%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="center-align no-left-divider single-right-divider head"><p>Estaca</p></th>
-<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{ré}\)</span></p></th>
-<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{AI}\)</span></p></th>
-<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{PI}\)</span></p></th>
-<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{PM}\)</span></p></th>
-<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{cota}\)</span></p></th>
-<th class="center-align single-left-divider single-right-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{greide}\)</span></p></th>
-<th class="center-align single-left-divider head"><p><span class="math notranslate nohighlight">\(\mathrm{CV}\)</span></p></th>
+<tr class="row-odd"><th class="head center-align no-left-divider single-right-divider"><p>Estaca</p></th>
+<th class="head center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(\mathrm{ré}\)</span></p></th>
+<th class="head center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(\mathrm{AI}\)</span></p></th>
+<th class="head center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(\mathrm{PI}\)</span></p></th>
+<th class="head center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(\mathrm{PM}\)</span></p></th>
+<th class="head center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(\mathrm{cota}\)</span></p></th>
+<th class="head center-align single-left-divider single-right-divider"><p><span class="math notranslate nohighlight">\(\mathrm{greide}\)</span></p></th>
+<th class="head center-align single-left-divider"><p><span class="math notranslate nohighlight">\(\mathrm{CV}\)</span></p></th>
 </tr>
 </thead>
 <tbody>
@@ -1634,14 +1549,15 @@ de campo da Tabela abaixo, calcule:</p>
 <span class="math notranslate nohighlight">\(\mathrm{CV}_{12+5\,{\rm m}}=0\,\text{m}\)</span>; c) <span class="math notranslate nohighlight">\(\mathrm{PP_{1}}=8+9.795\,\text{m}\)</span>,
 <span class="math notranslate nohighlight">\(\mathrm{PP_{2}}=11+6.183\,\text{m}\)</span> .</p>
 <p class="rubric">Footnotes</p>
-<dl class="footnote brackets">
-<dt class="label" id="f1"><span class="brackets"><a class="fn-backref" href="#id31">1</a></span></dt>
-<dd><p>Neste nivelamento: o nível é da classe 2, com precisão média, desvio-padrão
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="f1" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id31">1</a><span class="fn-bracket">]</span></span>
+<p>Neste nivelamento: o nível é da classe 2, com precisão média, desvio-padrão
 <span class="math notranslate nohighlight">\(\leq\pm10\text{ mm/km}\)</span>; as miras dobráveis, centimétricas e devidamente
 aferidas, providas de prumo esférico; pode ser realizado em circuito
 fechado NBR13133, páginas 6 e 17</p>
-</dd>
-</dl>
+</aside>
+</aside>
 </section>
 </section>
 
@@ -1711,7 +1627,7 @@ fechado NBR13133, páginas 6 e 17</p>
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
     
@@ -1756,7 +1672,7 @@ fechado NBR13133, páginas 6 e 17</p>
 
     <div class="footer" role="contentinfo">
         &#169; Copyright 2021, Alexandre C Xavier.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.2.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
     </div>
     <!-- cloud_sptheme 1.4 -->
   </body>
