@@ -216,24 +216,24 @@ totais, é possível configurá-la para trabalhar com este tipo de ângulo.
 Meridiano
 ---------
 
+A direção de um alinhamento em topografia corresponde  ao ângulo horizontal
+entre o alinhamanto e uma linha arbitrária, que denominados de meridiano.
 Em um levantamento topográfico, tem-se que definir qual é a referência
-de meridiano que se vai utilizar, podendo ser:
+de meridiano que vai ser utilizado, podendo ser :cite:`WOLF`:
 
 
-- o **meridiano astronômico**: é a linha que passa pelos pólos geográficos da terra,
+- o **meridiano geodésico**: é a linha norte-sul de referencia que passa pela
+  posição média dos pólos, medida entre 1900.0 e 1905.0;
+- o **meridiano astronômico**: é a linha norte-sul de referencia que passa
+  pela posição instantânia dos pólos geográficos da terra,
   é determinado usualmente por medidas astronômicas;
-- o **meridiano geodésico**: é a linha
-  gerada pela interseção do elipsóide de revolução com o plano que
-  passa pelos seus pólos.  Atualmente com o GNSS,  a sua definição em campo tornou-se de fácil obtenção;
-- o **meridiano magnético**: é o plano
-  vertical que passa pelo eixo da agulha magnetizada livre, com apoio
-  apenas no seu centro. Por exemplo, a direção norte-sul dada por uma
-  bússola, é a direção do meridiano local (seção :ref:`Declinação magnética`);
+- o **meridiano magnético**: é linha norte-sul que passa
+  passa pelo eixo da agulha magnetizada livre, com apoio
+  apenas no seu centro. (seção :ref:`Declinação magnética`);
 - o **meridiano da quadrícula**:
   corresponde a direção do eixo-:math:`y` do sistema cartesiano da quadrícula,
   da projeção cartográfica. Nas coordenas UTM, corresponde ao eixo Norte
-  (seção :any:`UTM`).
-  Também é de fácil determinação com uso do GNSS;
+  (seção :any:`UTM`). É de fácil determinação com uso do GNSS;
 - o **meridiano hipotético**: é aquele
   estabelecido em campo, sem relação com os apresentados acima. Deve
   ser evitado, uma vez que, no futuro, pode tornar difícil ou até impossível
@@ -247,7 +247,7 @@ Azimute
 -------
 
 O **azimute** (Az) de um alinhamento é o ângulo horizontal entre
-o meridiano e o alinhamento, medido no sentido horário. As medidas
+o norte do meridiano e o alinhamento, medido no sentido horário. As medidas
 de azimute iniciam no norte do meridiano, variando de :math:`0^{\circ}` a :math:`360^{\circ}`.
 O meridiano pode ser quaisquer dos apresentados na seção :ref:`Meridiano`.
 
@@ -279,7 +279,7 @@ OA com azimute de vante, :math:`45^\circ`, e o seu azimute de ré, AO, de
 Rumo
 ----
 
-O rumo de um alinhamento é o menor ângulo que ele faz com o meridiano,
+O rumo de um alinhamento é o ângulo agudo que faz com o meridiano,
 logo, nunca é maior que :math:`90^\circ`. A medição dele começa no norte
 ou sul do meridiano, medindo-se à direita ou à esquerda, caso o alinhamento
 se encontre à leste (E) ou à oeste (W) do meridiano, respectivamente.
@@ -309,6 +309,17 @@ o valor angular é o mesmo e o quadrante, o oposto. Na :numref:`fig_rumovantere.
    :align: center
 
    Exemplo de rumos de vante (a) e ré (b) do alinhamento OA.
+
+
+.. _RumoNSEW_teste2_tex_overleaf.png:
+
+.. figure:: /images/capitulo7/RumoNSEW_teste2_tex_overleaf.png
+   :scale: 35 %
+   :alt: RumoNSEW_teste2_tex_overleaf.png
+   :align: center
+
+   Denominação dos rumos quando se encontram nos sentidos dos pontos cardeais.
+
 
 .. _Conversão de azimutes em rumos:
 
@@ -658,9 +669,9 @@ o ângulo horizontal de :math:`142^\circ7'30''` é digitado para este ponto,
 caso se trabalhe com estação total. Desta forma, estabelecemos em
 campo o azimute de AB. Com teodolito, tal procedimento também é possível
 por meio dos parafusos que prendem e soltam o movimento do limbo ao
-equipamento. Uma vez que a direção AB é estabelecida, quando rodando
+equipamento. Uma vez que a sentido AB é estabelecida, quando rodando
 a luneta horizontalmente, o ângulo horizontal mostrar :math:`0^\circ00'00''`,
-teremos a direção norte, neste caso, o norte da quadrícula. Para o
+teremos o sentido norte, neste caso, o norte da quadrícula. Para o
 nosso exemplo, que é o de medir o azimute AC, basta fazer uma visada
 precisa em C onde, o ângulo horizontal apresentado na tela da estação
 total corresponderá ao valor do azimute AC :math:`(292^\circ50'2'')`.
@@ -675,7 +686,7 @@ uma visada para A. Como o azimute AB é conhecido, então o seu azimute
 de ré, BA, também é, sendo igual a :math:`322^\circ7'30''~(142^\circ7'30''+180^\circ)`.
 Este valor é inserido para o ângulo horizontal. Mais uma vez, agora
 em B, quando o ângulo horizontal for :math:`0^\circ00'00''`, corresponderá
-a direção do norte da quadrícula. Desta forma, as medidas de ângulo
+a sentido do norte da quadrícula. Desta forma, as medidas de ângulo
 horizontal a partir de B corresponderão aos azimutes. Tal procedimento,
 de mudança de estação e medição dos azimutes a partir do anterior,
 pode ser realizada para se fazer o levantamento de uma poligonal qualquer.
@@ -689,15 +700,15 @@ Declinação magnética
 ====================
 
 Parte dos levantamentos topográficos realizados no passado, utilizaram
-como referência da direção norte, aquela observada pelo norte da bússola,
+como referência do norte, aquela observada pelo norte da bússola,
 a qual denomina-se de norte magnético. A direção
-do norte magnético pode ser definida pela direção longitudinal de
+do norte-sul magnético pode ser definida pela direção longitudinal de
 uma agulha magnetizada livre, apoiada apenas no seu centro. A agulha
 será orientada de acordo com o campo magnético da terra, que tem variação
 temporal e espacial. Logo, se o topógrafo têm como objetivo aviventar
 para o presente os alinhamentos medidos no passado, em relação ao
-norte magnético, deverá encontrar, por exemplo, a direção do norte
-verdadeiro do alinhamento. Isto é possível através do conhecimento
+norte magnético, deverá encontrar, por exemplo, as direções em relação ao norte
+verdadeiro. Isto é possível através do conhecimento
 da declinação magnética nas diferentes datas.
 
 A declinação magnética é o ângulo formado entre o norte geodésico
@@ -745,7 +756,7 @@ de :math:`+13^\circ22'`. Com o passar dos anos, ela foi gradualmente se
 deslocando para a esquerda, sendo que em 1800 era de :math:`+5^\circ13'`,
 e em julho de 1853 era de :math:`0^\circ`. A declinação magnética continua
 se deslocando para a esquerda, em 2016 é de :math:`-22^\circ44'`. Note
-que, a forma da seta que apresenta a direção da declinação magnética
+que, a forma da seta que apresenta a sentido da declinação magnética
 é representada de maneira distinta, quando está a este é desenhada
 apenas a ponta direita, enquanto se a oeste, a ponta esquerda. Esta
 nomenclatura é utilizada, por exemplo, nas cartas do IBGE. 
@@ -766,7 +777,7 @@ espacial** da declinação magnética. Na :numref:`fig_linhaisogonica.png`
 são apresentadas linhas isogônicas para o Brasil, ano de 2000, segundo
 o IGRF. Neste ano a declinação magnética no Brasil variou de aproximadamente
 :math:`-23^\circ` a :math:`-3^\circ`, costa leste e oeste do estado do Acre,
-respectivamente. A linha isogônica de :math:`0^\circ`, direção do norte
+respectivamente. A linha isogônica de :math:`0^\circ`, o norte
 geográfico igual a do norte magnético, é denominada de **linha agônica**.
 
 .. _fig_linhaisogonica.png:
@@ -863,7 +874,7 @@ e épocas.
       :alt: fig_declividavariacao.png
       :align: center
 
-Uma vez que um alinhamento teve a sua direção determinada com referência
+Uma vez que um alinhamento teve a sua direção e sentido determinada com referência
 ao norte o magnético, o seu azimute ou rumo é dito como sendo magnético.
 Conhecendo o azimute ou rumo magnético de um alinhamento é possível,
 por meio da declinação magnético da época, encontrar seu azimute ou
@@ -872,7 +883,8 @@ rumo verdadeiro. Considerando o sinal negativo para declinação oeste
 é dado pelo azimute magnético mais a declinação magnética da época
 do levantamento.
 
-Muitas vezes no processo de aviventação de uma área levantada no passado,
+Muitas vezes no processo de aviventação (reproduzir na época atual
+a demarcação de um alinhamento já demarcado) de uma área levantada no passado,
 tem-se que encontrar novamente a direção dos respectivos alinhamentos
 em campo no presente. Se os alinhamentos tiveram suas direções obtidas
 com a referência do norte magnético, na época da aviventação, tem-se

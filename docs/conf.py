@@ -19,7 +19,6 @@
 import os
 import sys
 import cloud_sptheme as csp
-import bokeh
 print('Python %s on %s' % (sys.version, sys.platform))
 sys.path.insert(0, os.path.abspath('..'))
 
@@ -44,7 +43,7 @@ if csp.is_cloud_theme(html_theme):
 # sys.path.insert(0, os.path.abspath('/home/alexandre/Dropbox/topo/geomatica/venv/lib/python3.8/site-packages/'))
 
 project = 'Livro de Geomática'
-copyright = '2021, Alexandre C Xavier'
+copyright = '2022, Alexandre C Xavier'
 author = 'Alexandre C Xavier'
 
 # The full version, including alpha/beta/rc tags

@@ -893,7 +893,7 @@ aos dados da :numref:`tab_tabelaNGS` em uma superfície topográfica.
        ============= ==================== ========================================= ========================= ==========================================
        Ponto         :math:`\mathbf{ré}`  :math:`\mathbf{AI}`                       :math:`\mathbf{vante}`    :math:`\mathbf{cota}`
        ============= ==================== ========================================= ========================= ==========================================
-       :math:`0`     :math:`1,937`        :math:`\mathbf{101,937}\,(100+1,937)`                               :math:`100`
+       :math:`0`     :math:`1,937`        :math:`\mathbf{101,937}\,(100+1,937)`                               :math:`100,000`
        :math:`1`                                                                    :math:`2,189`             :math:`\mathbf{99,748}\,(101,937-2,189)`
        :math:`2`                                                                    :math:`3,105`             :math:`\mathbf{98,832}\,(101,937-3,105)`
        :math:`3`                                                                    :math:`0,825`             :math:`\mathbf{101,112}\,(101,937-0,825)`
@@ -954,16 +954,16 @@ A avaliação da qualidade do levantamento será avaliada na seção
    Solução na Tabela abaixo, sendo que em negrito
    são  os valores calculados e, entre parenteses, os cálculos realizados.
 
-   .. table:: Compensação do erro angular pelo método linear
-       :widths: 1 1 2 1 2
+   .. table:: Tabela dos cálculos
+       :widths: 1 1 2 1 2 1
        :header-alignment: cccccc
        :column-alignment: ccrccr
-       :column-dividers:  none single single single single single none
+       :column-dividers:  none single single single single single
 
        ========== ===================== =========================================== ===================== ====================== =========================================
        Estaca     :math:`\mathbf{ré}`   :math:`\mathbf{AI (cota+ré)}`               :math:`\mathbf{PI}`   :math:`\mathbf{PM}`    :math:`\mathbf{cota (AI-vante)}`
        ========== ===================== =========================================== ===================== ====================== =========================================
-       :math:`0`  :math:`0,796`         :math:`\mathbf{200,796}(200,000+0,796)`                                                  200,000
+       :math:`0`  :math:`0,796`         :math:`\mathbf{200,796}(200,000+0,796)`                                                  :math:`200,000`
        :math:`1`                                                                    :math:`1,491`                                :math:`\mathbf{199,305}(200,796-1,491)`
        :math:`2`  :math:`0,264`         :math:`\mathbf{197,359}(197,095+0,264)`                           :math:`3,701`          :math:`\mathbf{197,095}(200,796-3,701)`
        :math:`3`  :math:`0,450`         :math:`\mathbf{193,920}(193,470+0,450)`                           :math:`3,889`          :math:`\mathbf{193,470}197,359-3,889)`
