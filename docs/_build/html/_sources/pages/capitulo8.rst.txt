@@ -287,7 +287,7 @@ pode-se calcular as suas coordenadas parciais.
 As coordenadas parciais, quando calculadas a partir do azimute, poderão
 ter valores positivos ou negativos. Se :math:`\Delta x` ou :math:`\Delta y`
 forem positivos, indica que o alinhamento tem direção este ou norte,
-respectivamente. Por outro lado, se :math:`\Delta x` ou :math:`\Delta y`forem
+respectivamente. Por outro lado, se :math:`\Delta x` ou :math:`\Delta y` forem
 negativos, a direção do alinhamento é oeste ou sul, respectivamente.
 Para as coordenadas parciais calculadas por meio dos rumos, há a necessidade
 de se estabelecer se o alinhamento está projetado esquerda ou ao sul
@@ -426,15 +426,15 @@ os demais métodos consultar, por exemplo, em :cite:`loch`, :cite:`WOLF` e
 :cite:`cole2009sur`.
 
 A compensação do erro de fechamento linear, nas coordenadas parciais
-de um alinhamento qualquer :math:`(C_{\Delta x}`e :math:`C_{\Delta y})`, por
-exemplo o AB, pelo método proporcional ao comprimento do lado será:
+de um alinhamento qualquer :math:`(C_{\Delta x}` e :math:`C_{\Delta y})`, por
+exemplo o :math:`\mathrm{AB}`, pelo método proporcional ao comprimento do lado será:
 
 .. math::
-   C_{\Delta x_{\mathrm{AB}}} = -\frac{\Sigma\Delta x}{\Sigma \mathrm{DH}}\times \mathrm{DH}_{\mathrm{AB}}
+   C_{\Delta x_{\mathrm{AB}}} = -\frac{\Sigma\Delta x}{\Sigma \mathrm{DH}} \mathrm{DH}_{\mathrm{AB}}
    :label: eq:compensacaoerrolinearx
 
 .. math::
-   C_{\Delta y_{\mathrm{AB}}} = -\frac{\Sigma\Delta y}{\Sigma \mathrm{DH}}\times \mathrm{DH}_{\mathrm{AB}}
+   C_{\Delta y_{\mathrm{AB}}} = -\frac{\Sigma\Delta y}{\Sigma \mathrm{DH}} \mathrm{DH}_{\mathrm{AB}}
    :label: eq:compensacaoerrolineary
 
 ----
@@ -521,7 +521,7 @@ então a coordenada de B será:
 .. admonition:: :exem:`Exemplo 4`  Calcular as coordenadas retangulares da poligonal
    da :numref:`fig_PoligonalFechadaSolucao.png`, considerando conhecida
    a coordenada UTM da estação
-   :math:`\mathrm{A}`(\text{E}=268\,011,610\,\text{m};\,\text{N}=7\,370\,836,303\,\text{m})`.
+   :math:`\mathrm{A}(\text{E}=268\,011,610\,\text{m};\,\text{N}=7\,370\,836,303\,\text{m})`.
 
    :solucao:`Solução:` A coordenada UTM, E e N, da estação :math:`\mathrm{A}` é em relação ao
    eixo-:math:`x` e :math:`y` da quadrícula logo, :math:`x_{\mathrm{A}} = 268\,011,610\,\text{m}` e
@@ -611,10 +611,10 @@ Desta forma, comsiderar:
   será de :math:`90^\circ` ou de :math:`270^\circ`, se :math:`\Delta x>0` ou :math:`\Delta x<0`,
   respectivamente;
 - na Equação :eq:`eq:calculoDHfinal2` com o :math:`\sin \mathrm{Az}_{\mathrm{AB}}=0`
-  :math:`(\mathrm{Az=0^{\circ}}` ou :math:`\mathrm{Az=180^{\circ}})`, a DH será
+  :math:`(\mathrm{Az=0^{\circ}}` ou :math:`\mathrm{Az=180^{\circ}})`, a :math:`\mathrm{DH}` será
   o módulo de :math:`\Delta y`;
 - na Equação :eq:`eq:calculoDHfina3` com o :math:`\cos \mathrm{Az}_{\mathrm{AB}}=0`
-  :math:`(\mathrm{Az=90^{\circ}}` ou :math:`\mathrm{Az=270^{\circ}})`, a DH será
+  :math:`(\mathrm{Az=90^{\circ}}` ou :math:`\mathrm{Az=270^{\circ}})`, a :math:`\mathrm{DH}` será
   o módulo de :math:`\Delta x`.
 
 

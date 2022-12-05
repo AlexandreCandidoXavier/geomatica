@@ -222,18 +222,20 @@ Em um levantamento topográfico, tem-se que definir qual é a referência
 de meridiano que vai ser utilizado, podendo ser :cite:`WOLF`:
 
 
-- o **meridiano geodésico**: é a linha norte-sul de referencia que passa pela
+- **meridiano geodésico**: é a linha norte-sul de referencia que passa pela
   posição média dos pólos, medida entre 1900.0 e 1905.0;
-- o **meridiano astronômico**: é a linha norte-sul de referencia que passa
+- **meridiano astronômico**: é a linha norte-sul de referencia que passa
   pela posição instantânia dos pólos geográficos da terra,
   é determinado usualmente por medidas astronômicas;
-- o **meridiano magnético**: é linha norte-sul que passa
+- **meridiano magnético**: é linha norte-sul que passa
   passa pelo eixo da agulha magnetizada livre, com apoio
   apenas no seu centro. (seção :ref:`Declinação magnética`);
-- o **meridiano da quadrícula**:
+- **meridiano da quadrícula**:
   corresponde a direção do eixo-:math:`y` do sistema cartesiano da quadrícula,
   da projeção cartográfica. Nas coordenas UTM, corresponde ao eixo Norte
   (seção :any:`UTM`). É de fácil determinação com uso do GNSS;
+- **meridiano estabelecido**: é aquele proveniente de documentação de
+  levantamento realizado anteriormente na área;
 - o **meridiano hipotético**: é aquele
   estabelecido em campo, sem relação com os apresentados acima. Deve
   ser evitado, uma vez que, no futuro, pode tornar difícil ou até impossível

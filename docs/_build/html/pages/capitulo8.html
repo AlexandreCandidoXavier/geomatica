@@ -349,11 +349,11 @@ pode-se calcular as suas coordenadas parciais.</p>
 <p>As coordenadas parciais, quando calculadas a partir do azimute, poderão
 ter valores positivos ou negativos. Se <span class="math notranslate nohighlight">\(\Delta x\)</span> ou <span class="math notranslate nohighlight">\(\Delta y\)</span>
 forem positivos, indica que o alinhamento tem direção este ou norte,
-respectivamente. Por outro lado, se <span class="math notranslate nohighlight">\(\Delta x\)</span> ou <span class="math notranslate nohighlight">\(\Delta y`forem
+respectivamente. Por outro lado, se <span class="math notranslate nohighlight">\(\Delta x\)</span> ou <span class="math notranslate nohighlight">\(\Delta y\)</span> forem
 negativos, a direção do alinhamento é oeste ou sul, respectivamente.
 Para as coordenadas parciais calculadas por meio dos rumos, há a necessidade
 de se estabelecer se o alinhamento está projetado esquerda ou ao sul
-:math:`(-)\)</span>, ou se está à direita ou ao norte <span class="math notranslate nohighlight">\((+)\)</span>. Como o cálculo com
+<span class="math notranslate nohighlight">\((-)\)</span>, ou se está à direita ou ao norte <span class="math notranslate nohighlight">\((+)\)</span>. Como o cálculo com
 o azimute retorna o sinal da projeção automaticamente, logo o sentido
 da projeção, a sua utilização se torna preferível.</p>
 <figure class="align-center" id="id23">
@@ -460,12 +460,12 @@ utilizaremos o método proporcional ao comprimento dos lados, para
 os demais métodos consultar, por exemplo, em <span id="id9">[<a class="reference internal" href="referencias.html#id43" title="C. Loch and J. Cordini. Topografia contemporânea. Editora da UFSC, Florianópolis, SP, 3 edition, 1995.">LC95a</a>]</span>, <span id="id10">[<a class="reference internal" href="referencias.html#id20" title="P.R. Wolf and C.D. Ghilani. Elementary surveying. Pearson, Upper Saddle River, Jersey, 9 edition, 2004.">WG04</a>]</span> e
 <span id="id11">[<a class="reference internal" href="referencias.html#id13" title="C. Loch and J. Cordini. Topografia contemporânea. Editora da UFSC, Florianópolis, SP, 3 edition, 1995.">LC95b</a>]</span>.</p>
 <p>A compensação do erro de fechamento linear, nas coordenadas parciais
-de um alinhamento qualquer <span class="math notranslate nohighlight">\((C_{\Delta x}`e :math:`C_{\Delta y})\)</span>, por
-exemplo o AB, pelo método proporcional ao comprimento do lado será:</p>
+de um alinhamento qualquer <span class="math notranslate nohighlight">\((C_{\Delta x}\)</span> e <span class="math notranslate nohighlight">\(C_{\Delta y})\)</span>, por
+exemplo o <span class="math notranslate nohighlight">\(\mathrm{AB}\)</span>, pelo método proporcional ao comprimento do lado será:</p>
 <div class="math notranslate nohighlight" id="equation-eq-compensacaoerrolinearx">
-<span class="eqno">(80)<a class="headerlink" href="#equation-eq-compensacaoerrolinearx" title="Permalink to this equation">¶</a></span>\[C_{\Delta x_{\mathrm{AB}}} = -\frac{\Sigma\Delta x}{\Sigma \mathrm{DH}}\times \mathrm{DH}_{\mathrm{AB}}\]</div>
+<span class="eqno">(80)<a class="headerlink" href="#equation-eq-compensacaoerrolinearx" title="Permalink to this equation">¶</a></span>\[C_{\Delta x_{\mathrm{AB}}} = -\frac{\Sigma\Delta x}{\Sigma \mathrm{DH}} \mathrm{DH}_{\mathrm{AB}}\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-compensacaoerrolineary">
-<span class="eqno">(81)<a class="headerlink" href="#equation-eq-compensacaoerrolineary" title="Permalink to this equation">¶</a></span>\[C_{\Delta y_{\mathrm{AB}}} = -\frac{\Sigma\Delta y}{\Sigma \mathrm{DH}}\times \mathrm{DH}_{\mathrm{AB}}\]</div>
+<span class="eqno">(81)<a class="headerlink" href="#equation-eq-compensacaoerrolineary" title="Permalink to this equation">¶</a></span>\[C_{\Delta y_{\mathrm{AB}}} = -\frac{\Sigma\Delta y}{\Sigma \mathrm{DH}} \mathrm{DH}_{\mathrm{AB}}\]</div>
 <hr class="docutils" />
 <div class="admonition-exem-exemplo-3-considerando-as-coordenadas-parciais-apresentada-na-numref-fig-coordenadaspar-referente-a-poligonal-do-nosso-exemplo-calcular-as-coordenadas-parciais-compensadas-por-meio-do-metodo-proporcional-ao-comprimento-dos-lados admonition">
 <p class="admonition-title"><span class="exem">Exemplo 3</span>  Considerando as coordenadas parciais apresentada na <a class="reference internal" href="#fig-coordenadaspar"><span class="std std-numref">Figura 73</span></a>,
@@ -589,7 +589,7 @@ então a coordenada de B será:</p>
 <p class="admonition-title"><span class="exem">Exemplo 4</span>  Calcular as coordenadas retangulares da poligonal
 da <a class="reference internal" href="#fig-poligonalfechadasolucao-png"><span class="std std-numref">Figura 71</span></a>, considerando conhecida
 a coordenada UTM da estação
-<span class="math notranslate nohighlight">\(\mathrm{A}`(\text{E}=268\,011,610\,\text{m};\,\text{N}=7\,370\,836,303\,\text{m})\)</span>.</p>
+<span class="math notranslate nohighlight">\(\mathrm{A}(\text{E}=268\,011,610\,\text{m};\,\text{N}=7\,370\,836,303\,\text{m})\)</span>.</p>
 <p><span class="solucao">Solução:</span> A coordenada UTM, E e N, da estação <span class="math notranslate nohighlight">\(\mathrm{A}\)</span> é em relação ao
 eixo-<span class="math notranslate nohighlight">\(x\)</span> e <span class="math notranslate nohighlight">\(y\)</span> da quadrícula logo, <span class="math notranslate nohighlight">\(x_{\mathrm{A}} = 268\,011,610\,\text{m}\)</span> e
 <span class="math notranslate nohighlight">\(y_{\mathrm{A}}=7\,370\,836,303\,\text{m}\)</span>.
@@ -694,10 +694,10 @@ Desta forma, comsiderar:</p>
 será de <span class="math notranslate nohighlight">\(90^\circ\)</span> ou de <span class="math notranslate nohighlight">\(270^\circ\)</span>, se <span class="math notranslate nohighlight">\(\Delta x&gt;0\)</span> ou <span class="math notranslate nohighlight">\(\Delta x&lt;0\)</span>,
 respectivamente;</p></li>
 <li><p>na Equação <a class="reference internal" href="#equation-eq-calculodhfinal2">(85)</a> com o <span class="math notranslate nohighlight">\(\sin \mathrm{Az}_{\mathrm{AB}}=0\)</span>
-<span class="math notranslate nohighlight">\((\mathrm{Az=0^{\circ}}\)</span> ou <span class="math notranslate nohighlight">\(\mathrm{Az=180^{\circ}})\)</span>, a DH será
+<span class="math notranslate nohighlight">\((\mathrm{Az=0^{\circ}}\)</span> ou <span class="math notranslate nohighlight">\(\mathrm{Az=180^{\circ}})\)</span>, a <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> será
 o módulo de <span class="math notranslate nohighlight">\(\Delta y\)</span>;</p></li>
 <li><p>na Equação <a class="reference internal" href="#equation-eq-calculodhfina3">(86)</a> com o <span class="math notranslate nohighlight">\(\cos \mathrm{Az}_{\mathrm{AB}}=0\)</span>
-<span class="math notranslate nohighlight">\((\mathrm{Az=90^{\circ}}\)</span> ou <span class="math notranslate nohighlight">\(\mathrm{Az=270^{\circ}})\)</span>, a DH será
+<span class="math notranslate nohighlight">\((\mathrm{Az=90^{\circ}}\)</span> ou <span class="math notranslate nohighlight">\(\mathrm{Az=270^{\circ}})\)</span>, a <span class="math notranslate nohighlight">\(\mathrm{DH}\)</span> será
 o módulo de <span class="math notranslate nohighlight">\(\Delta x\)</span>.</p></li>
 </ul>
 <div class="admonition-exem-exemplo-5-calcular-os-azimutes-e-as-distancias-horizontais-finais-dos-alinhamentos-do-nosso-exemplo admonition">
