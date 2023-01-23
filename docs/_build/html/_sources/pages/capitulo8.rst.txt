@@ -503,9 +503,9 @@ pode-se adotar no ponto inicial, :math:`x=10.000\,\text{m}` e :math:`y=10.000\,\
 Outros procedimentos para a amarração da poligonal podem ser verificados
 na :cite:`NBR13133` [páginas 7-8].
 
-Considere um alinhamento hipotético AB, onde são conhecidas, a coordenada
-retangular do ponto A (:math:`x_\mathrm{A},\,x_\mathrm{A}`) e as coordenadas
-parciais de AB :math:`(\Delta x_{\mathrm{AB}}` e :math:`\Delta y_{\mathrm{AB}})`,
+Considere um alinhamento hipotético :math:`\mathrm{AB}`, onde são conhecidas, a coordenada
+retangular do ponto :math:`\mathrm{A}(x_\mathrm{A},\,x_\mathrm{A})` e as coordenadas
+parciais de :math:`\mathrm{AB}`, :math:`(\Delta x_{\mathrm{AB}}` e :math:`\Delta y_{\mathrm{AB}})`,
 então a coordenada de B será:
 
 .. math::

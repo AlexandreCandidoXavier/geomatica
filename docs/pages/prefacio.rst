@@ -1,4 +1,4 @@
-Prefásio
+Prefácio
 ********
 
 Este livro (inacabado) trata da apresentação de elementos básicos

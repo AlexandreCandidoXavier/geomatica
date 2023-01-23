@@ -346,7 +346,7 @@ sua escavação, será desagregado, e terá o seu volume aumentado em aproximada
 transportado. Por outro lado, um volume de :math:`1\,\text{m}^3`, após submetido à
 compactação, terá o volume reduzido em aproximadamente :math:`15\%`, logo, o
 :math:`1\,\text{m}^3` de material, após processo de compactação, resultará em um
-volume de :math:`\approx0,85\,\text{m}`:math:`^3` :cite:`cole2009surveyor`.
+volume de :math:`\approx0,85\,\text{m}^3` :cite:`cole2009surveyor`.
 
 .. admonition:: :exem:`Exemplo 1` Considere a escavação para fins de construção de uma piscina, cuja
    dimensão é de :math:`50\,\text{m}` de comprimento, :math:`20\,\text{m}` de largura e
@@ -361,22 +361,41 @@ volume de :math:`\approx0,85\,\text{m}`:math:`^3` :cite:`cole2009surveyor`.
    .. math::
       V=50\times20\times2=2\,000\,\mathrm{m^3}
 
-   Considerando o fator de expansão de :math:`20\%` e o volume de :math:`10\,\text{m}`:math:`^3` por viagem, temos um total de viagens:
+   Considerando o fator de expansão de :math:`20\%` e o volume de :math:`10\,\text{m}^3`
+   por viagem, temos um total de viagens:
 
    .. math::
       \frac{2\,000\times1,2}{10}=240.
 
 
 
-Os métodos para se medir o volume de material dependem do tipo de projeto executado e dos dados
-disponíveis, sendo os mais usuais, o por secções e o por área unitária.
+.. admonition:: :exem:`Exemplo 2` Na constução de uma saia de aterro,
+   foi estimado um volume de :math:`12\,500\,\text{m}^3` a ser aterrado. Será utilizada
+   terra para este serviço, sendo esperado que após a compactação, a terra transportada
+   terá seu volume reduzido em :math:`35\%`. Qual o volume de terra a ser transportado para
+   este serviço?
 
-Volume por meio da área média de secções
+   :solucao:`Solução:`
+   :math:`1\,\text{m}^3_{\mathrm {terra\,natural}}` após uma compactação de :math:`35\%`
+   de seu volume, resultará em :math:`0,65\,\text{m}^3_{\mathrm {terra\,compactada}}`, logo
+   o volume de terra natural :math:`(V_{\mathrm {terra\,natural}})` necessário será:
+
+   .. math::
+      \frac{1\,\mathrm{m^3}_{\mathrm {terra\,natural}}}{V_{\mathrm {terra\,natural}}}&=\frac{0,65\,\mathrm{m^3}_{\mathrm {terra\,compactada}}}{12\,500\,\mathrm{m^3}_{\mathrm {terra\,compactada}}} \\
+      V_{\mathrm {terra\,natural}}&=12\,500\,\mathrm{m^3}_{\mathrm {terra\,compactada}} \frac{1\,\mathrm{m^3}_{\mathrm {terra\,natural}}}{0,65\,\mathrm{m^3}_{\mathrm {terra\,compactada}}} \\
+      V_{\mathrm {terra\,natural}}&=19\,231\,\mathrm{m^3}_{\mathrm {terra\,natural}}
+
+
+
+Os métodos para se medir o volume de material dependem do tipo de projeto executado e dos dados
+disponíveis, sendo os mais usuais, o por seções e o por área unitária.
+
+Volume por meio da área média de seções
 ----------------------------------------
 
-O volume de um sólido que tem duas secções paralelas onde se conhecem suas respectivas áreas e a distância que as
+O volume de um sólido que tem duas seções paralelas onde se conhecem suas respectivas áreas e a distância que as
 separam, conforme :numref:`volume_area_media_metodo`, é calculado como a média da área das
-secções multiplicada pela distância entre elas:
+seções multiplicada pela distância entre elas:
 
 .. _volume_area_media_metodo:
 
@@ -385,7 +404,7 @@ secções multiplicada pela distância entre elas:
    :alt: volume_area_media_metodo.png
    :align: center
 
-   Volume pela método da área média das secções
+   Volume pela método da área média das seções
 
 
 .. math::
@@ -393,11 +412,11 @@ secções multiplicada pela distância entre elas:
    :label: eq:volume_area_media
 
 
-em que :math:`A_1` e :math:`A_2`, são as áreas das secções paralelas analisadas e
-:math:`L`, a distância horizontal que separa as secções. Considerando que as medidas das áreas das seção são
+em que :math:`A_1` e :math:`A_2`, são as áreas das seções paralelas analisadas e
+:math:`L`, a distância horizontal que separa as seções. Considerando que as medidas das áreas das seção são
 em :math:`\mathrm{m}^2` e a distância horizontal em metros, teremos o volume na unidade de :math:`\mathrm{m}^3`.
 
-.. admonition:: :exem:`Exemplo 2` Considere  as áreas entre as secções da estaca :math:`10+0\,\text{m}`
+.. admonition:: :exem:`Exemplo 3` Considere  as áreas entre as seções da estaca :math:`10+0\,\text{m}`
    e :math:`11+0\,\text{m}` de, respectivamente :math:`61\,\text{m}`:math:`^2` e :math:`37\,\text{m}`:math:`^2`.
    Qual o volume entre estas duas estacas?
 
@@ -409,26 +428,26 @@ em :math:`\mathrm{m}^2` e a distância horizontal em metros, teremos o volume na
       V&=980\,\mathrm{m^3}.
 
 
-.. admonition:: :exem:`Exemplo 3` Considere  as áreas entre as secções da estaca
+.. admonition:: :exem:`Exemplo 4` Considere  as áreas entre as seções da estaca
    :math:`10+0\,\text{m}` e a intermediária :math:`10+10\,\text{m}` de, respectivamente
    :math:`61\,\text{m}`:math:`^2` e :math:`46\,\text{m}`:math:`^2`.
    Qual o volume entre estas duas estacas?
 
    :solucao:`Solução:`
    Considerando que a distância entre as estacas é de :math:`20\,\text{m}`, a distância entre as
-   secções medidas é de :math:`10\,\text{m}`, logo:
+   seções medidas é de :math:`10\,\text{m}`, logo:
 
    .. math::
       V&=\frac{61+46}{2}10\\
       V&=535\,\mathrm{m^3}.
 
-O método de cálculo do volume pela área média das secções se aplica em áreas longitudinais, como
+O método de cálculo do volume pela área média das seções se aplica em áreas longitudinais, como
 em trechos de estradas. Para  exemplificar aplicação deste método, considere a
 :numref:`exemplo_area_de_secoes`, na qual são apresentados os cálculos de volume do terreno da
 :numref:`curva_nivel3`, quando o mesmo é sistematizado para ter cota de :math:`102,5\,\text{m}`
 em toda a sua extensão. Primeiramente calcula-se as CVs das estacas, em que valores negativos e
 positivos são pontos de corte e aterro, respectivamente. Neste exemplo escolheu fazer os cálculos
-das áreas de corte e de aterro utilizando-se como secções as colunas 1, 2 e 3.
+das áreas de corte e de aterro utilizando-se como seções as colunas 1, 2 e 3.
 Para cada seção e desenhado o perfil do terreno e a sua distância vertical para cota a ser sistematizado.
 Por meio desta representação, pode-se verificar as áreas de cortes e aterros onde suas áreas são calculadas
 por meio de aproximação destas à figuras geométricas elementares, com triângulo e trapézio. Com os dados das
@@ -443,7 +462,7 @@ da Equação :eq:`eq:volume_area_media`.
    :alt: volume_media_seccoes.png
    :align: center
 
-   Procedimentos para medição de volume pela área média das secções. Distância entre as estacas é de
+   Procedimentos para medição de volume pela área média das seções. Distância entre as estacas é de
    :math:`20\,\text{m}` e sistematização do terreno para cota de :math:`102,5`.
 
 
@@ -453,7 +472,7 @@ Volume por meio da área unitária
 
 O método por área unitária pode ser aplicado para a maioria dos casos de sistematização, exceção em
 casos de levantamento longitudinal, como em projetos de estradas, que é preferível o método da área
-média das secções. No método da área unitária, para a estimativa do volume de material a ser escavado
+média das seções. No método da área unitária, para a estimativa do volume de material a ser escavado
 ou depositado na área de interesse, primeiramente, a área é estaqueada em quadrados. As estacas têm a
 sua cota determinada por nivelamento, seja o trigonométrico, com estação total ou, por meio do
 nivelamento geométrico, com o nível. As linhas e colunas são identificadas por letras ou números.
@@ -551,7 +570,7 @@ das linhas e colunas, respectivamente, :math:`i=1, 2,\dotsc\,,`
 :math:`w_{i,\,j}` é o peso, sendo igual ao número de quadrados em comum na
 estaca :math:`i,\,j`;
 
-.. admonition:: :exem:`Exemplo 4` Considere sistematizar o terreno da
+.. admonition:: :exem:`Exemplo 5` Considere sistematizar o terreno da
    :numref:`volume_area_unitaria` a para ter cota final de :math:`301\,\text{m}`
    em toda a sua extensão. Qual será o volume de material a ser cortado ou aterrado?
 
@@ -601,7 +620,7 @@ estaca :math:`i,\,j`;
 
 .. _exemplo 5:
 
-.. admonition:: :exem:`Exemplo 5` No problema anterior, verificou-se que haverá a necessidade
+.. admonition:: :exem:`Exemplo 6` No problema anterior, verificou-se que haverá a necessidade
    de transporte de uma grande quantidade de material. Sabendo-se que os custos com o
    transporte para a área de aterro é alto, pode-se estudar a possibilidade de se trabalhar
    com uma cota a ser sistematizado o terreno, tal qual, o volume escavado dentro da área seja
@@ -725,26 +744,26 @@ terá seu volume reduzido em :math:`20\%` no processo de compactação?
 
 -----
 
-:exem:`3)` Considere  as áreas entre as secções da estaca :math:`5+0\,\text{m}` e
+:exem:`3)` Considere  as áreas entre as seções da estaca :math:`5+0\,\text{m}` e
 a intermediária :math:`6+0\,\text{m}` de, respectivamente :math:`31\,\text{m}^2`
-e :math:`24\,\text{m}`:math:`^2`. Qual o volume entre as secções das duas estacas.
+e :math:`24\,\text{m}`:math:`^2`. Qual o volume entre as seções das duas estacas.
 Considere a distância horizontal de :math:`20\,\text{m}` entre as estacas inteiras.
 
 :exem:`Resp.:` :math:`550\,\text{m}^3`.
 
 -----
 
-:exem:`4)` Considere as áreas entre as secções da estaca :math:`31+5\,\text{m}` e a
+:exem:`4)` Considere as áreas entre as seções da estaca :math:`31+5\,\text{m}` e a
 intermediária :math:`32+0\,\text{m}` de, respectivamente :math:`11\,\text{m}^2`
-e :math:`16\,\text{m}^2`. Qual o volume entre as secções das duas estacas? Considere a
+e :math:`16\,\text{m}^2`. Qual o volume entre as seções das duas estacas? Considere a
 distância horizontal de :math:`20\,\text{m}` entre as estacas inteiras.
 
 :exem:`Resp.:` :math:`202,5\,\text{m}`:math:`^3`.
 
 -----
 
-:exem:`5)` Para os dados das áreas a serem escavadas de secções apresentadas na tabela a
-seguir, calcular o volume de material a ser escavado. Considere a distância entre as secções
+:exem:`5)` Para os dados das áreas a serem escavadas de seções apresentadas na tabela a
+seguir, calcular o volume de material a ser escavado. Considere a distância entre as seções
 de :math:`20\,\text{m}`
 
 .. table:: Apresentação da :math:`\mathrm{CV}` em uma caderneta de campo.
@@ -885,7 +904,7 @@ a. desenhar o terreno na escala :math:`1:500` e locar as curvas de
 b. projetar um plano inclinado de :math:`+2\%` na direção e sentido de :math:`A` para
    :math:`C` que resultará em :math:`V_c=V_a`. Fazer desenho na escala :math:`1:500`;
 c. calcular os volumes de corte e aterro para o plano inclinado (não considere
-   talude de corte e saia de aterro), utilize fórmula da área média das secções.
+   talude de corte e saia de aterro), utilize fórmula da área média das seções.
 
 :exem:`Resp.:` (b) Figura abaixo; (c) :math:`V_{\textit{c}}=557,90\,\mathrm{m}^3`;
 :math:`V_{\textit{a}}=562,89\,\mathrm{m}^3`.

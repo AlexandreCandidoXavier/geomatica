@@ -100,7 +100,7 @@ Em levantamentos em que não há :math:`\mathrm{RN}` próxima ou ela não se faz
 precisa-se arbitrar uma :math:`\mathrm{RN}` local para ser utilizada nas medidas altimétricas.
 É então atribuído :math:`\mathrm{RN}` inicial do levantamento, ou seja, um valor de
 :math:`\mathrm{DN}` dele à uma superfície de nível arbitrária, um Datum altimétrico
-local. A esta :math:`\mathrm{DN}`, e às demais :math:`\mathrm{DN}`'s que serão calculadas em relação
+local. A esta :math:`\mathrm{DN}`, e às demais :math:`\mathrm{DNs}` que serão calculadas em relação
 a este Datum local, denominam-se de **cota**.
 
 A partir da :math:`\mathrm{RN}` inicial, em que se conhece a altitude ou a cota, e
