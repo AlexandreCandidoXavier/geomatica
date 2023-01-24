@@ -157,7 +157,7 @@ Com o objetivo de se caracterizar melhor o relevo, além das curvas de nível,
 pontos de destaque são cotados, podendo ser, por exemplo, picos, depressões
 locais e pontos onde as curvas de nível são muito espaçadas (terrenos planos).
 Para apresentar a posição destes pontos cotados, usa-se, normalmente, o
-símbolo :math:`\times`, acompanhado do valor da cota ou da altitude.
+símbolo :math:`\cdot`, acompanhado do valor da cota ou da altitude.
 
 .. _curva_nivel:
 
@@ -168,7 +168,7 @@ símbolo :math:`\times`, acompanhado do valor da cota ou da altitude.
 
    Considerações do relevo a partir da leitura das curvas de nível
    com equidistância vertical de :math:`10\,\text{m}`.
-   Linhas tracejadas na cor azul, são cursos de água, e as marcas :math:`\times`
+   Linhas tracejadas na cor azul, são cursos de água, e as marcas :math:`\cdot`
    são pontos cotados.
 
 Determinação das curvas de nível
@@ -249,7 +249,7 @@ estaca :math:`\text{C1}` e :math:`\text{C2}` ela ira passar, uma vez que as suas
 entre estas (sem grandes variações), pode-se, por interpolação, determinar a
 :math:`\text{DH}` que a curva de nível :math:`101\,\text{m}` estará em relação a
 estaca :math:`\text{C1}` ou :math:`\text{C2}`, mas como? Entre estas estacas, há uma :math:`\text{DN}` de
-:math:`0,3\,\text{m}` e uma math:`\text{DH}` de :math:`20\,\text{m}`.
+:math:`0,3\,\text{m}` e uma :math:`\text{DH}` de :math:`20\,\text{m}`.
 Da estaca :math:`\text{C1}`, cota :math:`101,1\,\text{m}`, ao ponto de
 cota :math:`101\,\text{m}`, onde passa a curva de nível :math:`101\,\text{m}`,
 há uma DN de :math:`0,1`. Por regra de três, a curva de nível :math:`101\,\text{m}`
@@ -359,13 +359,13 @@ volume de :math:`\approx0,85\,\text{m}^3` :cite:`cole2009surveyor`.
    Volume de terra a ser retirado do terreno será:
 
    .. math::
-      V=50\times20\times2=2\,000\,\mathrm{m^3}
+      V=50\cdot20\cdot2=2\,000\,\mathrm{m^3}
 
    Considerando o fator de expansão de :math:`20\%` e o volume de :math:`10\,\text{m}^3`
    por viagem, temos um total de viagens:
 
    .. math::
-      \frac{2\,000\times1,2}{10}=240.
+      \frac{2\,000\cdot1,2}{10}=240.
 
 
 
@@ -408,7 +408,7 @@ seções multiplicada pela distância entre elas:
 
 
 .. math::
-   V=\frac{A_1+A_2}{2}\times L
+   V=\frac{A_1+A_2}{2}L
    :label: eq:volume_area_media
 
 
@@ -543,7 +543,7 @@ Agora pode-se calcular o volume referente ao quadrado analisado :math:`\mathrm{A
 por meio da Equação :eq:`eq:volume_prisma_reto`:
 
 .. math::
-   \mathrm{V}&=10\times10\times-1,85\\
+   \mathrm{V}&=10\cdot10\cdot-1,85\\
    \mathrm{V}&=-185\,\mathrm{m}^3.
 
 
@@ -559,7 +559,7 @@ resultado, é multiplicado pela soma do produto da CVs de cada estaca pelo núme
 de quadrados que a mesma é comum (ver Exemplo abaixo). Matematicamente:
 
 .. math::
-   V=\frac{A}{4}\sum\mathrm{CV}_{i,\,j}\times w_{i,\,j}
+   V=\frac{A}{4}\sum\mathrm{CV}_{i,\,j}\cdot w_{i,\,j}
    :label: eq_somas_unitarios
 
 
@@ -607,11 +607,13 @@ estaca :math:`i,\,j`;
    pertence, temos:
 
    .. math::
-      \mathrm{V}_{\mathrm{total}} =& \frac{10\times10}{4}(-6,4\times1-6,8\times2-6,0\times2-4,7\times2-2,3\times2-1,4\times1\\
-      &-5,9\times2-6,6\times4-6,5\times4-4,6\times4-2,4\times4-1,3\times2-6,3\times1-6,7\times3\\
-      &-5,1\times4-3,0\times4-2,0\times4-0,7\times2-6,4\times1-3,5\times2-2,0\times3\\
-      &-1,1\times4-0,7\times2-2,9\times1-1,4\times3-1,0\times2-1,2\times1-0,5\times1)\\
-      =&\frac{10\times10}{4}(-246,4)\\
+      \mathrm{V}_{\mathrm{total}} =& \frac{10\cdot10}{4}(-6,4\cdot1-6,8\cdot2-6,0\cdot2-4,7\cdot2-2,3\cdot2+\\
+      &\qquad\quad\,\,\,\,-1,4\cdot1-5,9\cdot2-6,6\cdot4-6,5\cdot4-4,6\cdot4+\\
+      &\qquad\quad\,\,\,\,-2,4\cdot4-1,3\cdot2-6,3\cdot1-6,7\cdot3-5,1\cdot4+\\
+      &\qquad\quad\,\,\,\,-3,0\cdot4-2,0\cdot4-0,7\cdot2-6,4\cdot1-3,5\cdot2+\\
+      &\qquad\quad\,\,\,\,-2,0\cdot3-1,1\cdot4-0,7\cdot2-2,9\cdot1-1,4\cdot3+\\
+      &\qquad\quad\,\,\,\,-1,0\cdot2-1,2\cdot1-0,5\cdot1)\\
+      =&\frac{10\cdot10}{4}(-246,4)\\
       \mathrm{V}_{\mathrm{total}}=&\mathbf{-6\,160\,m^3}
 
    O sinal do volume calculado representa que o terreno será escavado. Logo,  para
@@ -638,12 +640,12 @@ estaca :math:`i,\,j`;
    Considerando que o :math:`1\,\text{m}`:math:`^3` de solo escavado vai ser igual ao :math:`1\,\text{m}`:math:`^3` aterrado, a cota que resultará no volume de material a ser a escavado igual ao volume depositado dentro da mesma área, corresponderá a média ponderada das cotas das estacas. A ponderação a ser utilizada em determinada estaca corresponderá ao número de quadrados que a mesma tem em comum na grade, desta forma:
 
    .. math::
-      \mathrm{cota}_{\mathrm{media}} =&(307,4\times1+307,8\times2+307,0\times2+305,7\times2+303,3\times2+302,4\times1+ \\
-      &306,9\times2+307,6\times4+307,5\times4+305,6\times4+303,4\times4+ \\
-      &302,3\times2+307,3\times1+307,7\times3+306,1\times4+304,0\times4+ \\
-      &303,0\times4+301,7\times2+307,4\times1+304,5\times2+303,0\times3+ \\
-      &302,1\times4+301,7\times2+303,9\times1+302,4\times3+ \\
-      &302,0\times2+302,2\times1+301,5\times1)/68 \\
+      \mathrm{cota}_{\mathrm{media}} =&(307,4\cdot1+307,8\cdot2+307,0\cdot2+305,7\cdot2+303,3\cdot2+302,4\cdot1+ \\
+      &306,9\cdot2+307,6\cdot4+307,5\cdot4+305,6\cdot4+303,4\cdot4+ \\
+      &302,3\cdot2+307,3\cdot1+307,7\cdot3+306,1\cdot4+304,0\cdot4+ \\
+      &303,0\cdot4+301,7\cdot2+307,4\cdot1+304,5\cdot2+303,0\cdot3+ \\
+      &302,1\cdot4+301,7\cdot2+303,9\cdot1+302,4\cdot3+ \\
+      &302,0\cdot2+302,2\cdot1+301,5\cdot1)/68 \\
       =&\frac{20\,714,4}{68} \\
       \mathrm{cota}_{\mathrm{media}}=&\mathbf{304,624\,m}
 
@@ -679,38 +681,38 @@ estaca :math:`i,\,j`;
    - volume dos prismas com área da base em forma de quadrado:
 
    .. math::
-      V_{\mathrm{quadCorte}} =&\frac{10\times10}{4}(-2,776\times1-3,176\times2-2,376\times2-1,076\times1 \\
-      &-2,276\times2-2,976\times4-2,876\times3-0,976\times1-2,676\times1\\
-      &-3,076\times3-1.476\times2-2,776\times1)\\
-      =&\frac{10\times10}{4}58,647\\
+      V_{\mathrm{quadCorte}} =&\frac{10\cdot10}{4}(-2,776\cdot1-3,176\cdot2-2,376\cdot2-1,076\cdot1 \\
+      &-2,276\cdot2-2,976\cdot4-2,876\cdot3-0,976\cdot1-2,676\cdot1\\
+      &-3,076\cdot3-1.476\cdot2-2,776\cdot1)\\
+      =&\frac{10\cdot10}{4}58,647\\
       =&\mathbf{-1\,466\,m^3}
 
    -  Volume referente a área **A1c**, prisma com base em forma de trapézio:
 
    .. math::
       V_{\mathrm{1c}} =&\left(\frac{(4,48+4,44)10}{2}\right)\left(\frac{-1,076-0,976+0+0}{4}\right) \\
-      =& 44,6\times-0,513 \\
+      =& 44,6\cdot-0,513 \\
       =& \mathbf{-23\,m^3}
 
    -  Volume referente a área **A2c**, prisma com base em forma de triângulo:
 
    .. math::
-      V_{\mathrm{2c}} =&\left(\frac{4,44\times6,1}{2}\right)\left(\frac{-0,976+0+0}{3}\right)\\
-      =&13,542\times-0,325 \\
+      V_{\mathrm{2c}} =&\left(\frac{4,44\cdot6,1}{2}\right)\left(\frac{-0,976+0+0}{3}\right)\\
+      =&13,542\cdot-0,325 \\
       =&\mathbf{-4\,m^3}
 
    -  Volume referente a área **A3c**, prisma com base em forma de retângulo mais trapézio:}
 
    .. math::
-      V_{\mathrm{3c}} =&\left(10\times6,1 +\frac{(10+7)\times3,9}{2}\right)\left(\frac{-2,876-0,976+0+0-1,476}{5}\right) \\
-      =&94,15\times-1,066\\
+      V_{\mathrm{3c}} =&\left(10\cdot6,1 +\frac{(10+7)\cdot3,9}{2}\right)\left(\frac{-2,876-0,976+0+0-1,476}{5}\right) \\
+      =&94,15\cdot-1,066\\
       =& \mathbf{-100\,m^3}
 
    - Volume referente a área **A4c**, prisma com base em forma triângulo:
 
    .. math::
-      V_{\mathrm{4c}} =&\left(\frac{7\times9,92}{2}\right)\left(\frac{-1,476+0+0}{3}\right) \\
-      =&34,72\times-0,492 \\
+      V_{\mathrm{4c}} =&\left(\frac{7\cdot9,92}{2}\right)\left(\frac{-1,476+0+0}{3}\right) \\
+      =&34,72\cdot-0,492 \\
       =&\mathbf{-17\,m^3}
 
 

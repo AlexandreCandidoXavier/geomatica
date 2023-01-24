@@ -174,8 +174,17 @@ Considerando a tolerância máxima do erro angular de fechamento
 conclui-se que os ângulos internos foram medidos dentro dos limites
 admissível de erro, em que se considera para comparação o
 :math:`(eaf)` em módulo. Logo, os ângulos internos podem ser compensados.
-A compensação que será aplicada é a linear, conforme apresentada na
-Tabela abaixo. Note que o método linear
+O tipo de compensação que será aplicada em cada ângulo interno será
+a linear (ver :any:`Compensação do erro angular`,
+Equação :any:`C_erro_angular_fechamento0`):
+
+.. math::
+   C_{eaf}&= -\frac{eaf}{n}\\
+   C_{eaf}&= -\frac{-35}{5}\\
+   C_{eaf}&= +7
+
+Na Tabela abaixo é apresentado a compensação para todos os
+ângulos internos. Note que o método linear
 é indicado quando o comprimento do alinhamentos forem aproximadamente
 constante. Quando isto não ocorrer,
 melhor ponderar as compensações pelos comprimentos dos alinhamentos

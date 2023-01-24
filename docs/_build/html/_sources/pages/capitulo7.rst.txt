@@ -434,6 +434,8 @@ realizar a compensação.
 
 ----
 
+.. _Compensação do erro angular:
+
 Compensação do erro angular
 ---------------------------
 
@@ -446,8 +448,9 @@ teórico. Existem vários métodos de compensação, sendo que o mais comum
 Ou seja, aplicar em cada um dos vértices o erro médio, dado pelo erro
 angular de fechamento dividido pelo número de lados:
 
+
 .. math::
-   C_{eaf} = -frac{eaf}{n}
+   C_{eaf} = -\frac{eaf}{n}
    :label: C_erro_angular_fechamento0
 
 No Exemplo abaixo
