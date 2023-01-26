@@ -1,0 +1,5 @@
+Collecting click
+  Downloading click-8.1.3-py3-none-any.whl (96 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.6/96.6 kB 2.3 MB/s eta 0:00:00
+Installing collected packages: click
+Successfully installed click-8.1.3

@@ -15,9 +15,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
     
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/translations.js"></script>
@@ -76,10 +73,10 @@
 <p>N</p>
 <div style="position: center; padding-bottom=75%; height:0; overflow: hidden; max-width: 100%; height:auto">
     <iframe class="center-block" width="854" height="480" src="https://www.youtube.com/embed/50kc3F0aE6Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div><script src="bokeh-content-aca29e36f8694a15a897470b70d5a052-pages-para_test.js" id="722eec0b-d739-4769-b26d-7809ee7302d5"></script><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">bokeh</span>
+</div><script src="bokeh-content-5b90e8e38ff84794baee8b9e0cd4f157-pages-para_test.js" id="7d0e3dd6-3b55-4c19-8519-0d05a6073166"></script><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">bokeh</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">bokeh</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
 <span class="kn">from</span> <span class="nn">bokeh.plotting</span> <span class="kn">import</span> <span class="n">figure</span><span class="p">,</span> <span class="n">show</span>
-<span class="kn">from</span> <span class="nn">bokeh.models</span> <span class="kn">import</span> <span class="n">NumeralTickFormatter</span><span class="p">,</span> <span class="n">TabPanel</span><span class="p">,</span> <span class="n">Tabs</span><span class="p">,</span> <span class="n">BoxZoomTool</span><span class="p">,</span> <span class="n">ColumnDataSource</span><span class="p">,</span> <span class="n">LabelSet</span>
+<span class="kn">from</span> <span class="nn">bokeh.models</span> <span class="kn">import</span> <span class="n">NumeralTickFormatter</span><span class="p">,</span> <span class="n">Panel</span><span class="p">,</span> <span class="n">Tabs</span><span class="p">,</span> <span class="n">BoxZoomTool</span><span class="p">,</span> <span class="n">ColumnDataSource</span><span class="p">,</span> <span class="n">LabelSet</span>
 <span class="kn">import</span> <span class="nn">bokeh</span>
 
 <span class="c1"># BoxZoomTool(match_aspect = True)</span>
@@ -159,11 +156,11 @@
 <span class="c1">#              x_offset=[5, 10], y_offset=5, source=source, render_mode=&#39;canvas&#39;)</span>
 
 <span class="c1">#p1.add_layout(labels)</span>
-<span class="n">tab1</span> <span class="o">=</span> <span class="n">TabPanel</span><span class="p">(</span><span class="n">child</span><span class="o">=</span><span class="n">p1</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="n">tipo</span><span class="p">)</span>
+<span class="n">tab1</span> <span class="o">=</span> <span class="n">Panel</span><span class="p">(</span><span class="n">child</span><span class="o">=</span><span class="n">p1</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="n">tipo</span><span class="p">)</span>
 
 <span class="n">tipo</span> <span class="o">=</span> <span class="s2">&quot;Poligonal&quot;</span>
 <span class="n">p2</span> <span class="o">=</span> <span class="n">base_poligonal</span><span class="p">(</span><span class="n">tipo</span><span class="p">)</span>
-<span class="n">tab2</span> <span class="o">=</span> <span class="n">TabPanel</span><span class="p">(</span><span class="n">child</span><span class="o">=</span><span class="n">p2</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="n">tipo</span><span class="p">)</span>
+<span class="n">tab2</span> <span class="o">=</span> <span class="n">Panel</span><span class="p">(</span><span class="n">child</span><span class="o">=</span><span class="n">p2</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="n">tipo</span><span class="p">)</span>
 
 <span class="c1"># show the results</span>
 <span class="n">show</span><span class="p">(</span><span class="n">Tabs</span><span class="p">(</span><span class="n">tabs</span><span class="o">=</span><span class="p">[</span><span class="n">tab1</span><span class="p">,</span> <span class="n">tab2</span><span class="p">]))</span>
@@ -297,7 +294,7 @@ p_json = json.dumps(json_item(p, «myplot»))</p>
 
     <div class="footer" role="contentinfo">
         &#169; Copyright 2022, Alexandre C Xavier.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.1.3.
     </div>
     <!-- cloud_sptheme 1.4 -->
   </body>
