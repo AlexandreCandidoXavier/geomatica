@@ -76,46 +76,148 @@
 <p>N</p>
 <div style="position: center; padding-bottom=75%; height:0; overflow: hidden; max-width: 100%; height:auto">
     <iframe class="center-block" width="854" height="480" src="https://www.youtube.com/embed/50kc3F0aE6Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div><p>as.. bokeh-plot:: codes_py/plotting_scatter_square.py
-as:source-position: none</p>
-<script type="text/javascript">
-     Bokeh.set_log_level("info");
-</script>
-<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+</div><script src="bokeh-content-aca29e36f8694a15a897470b70d5a052-pages-para_test.js" id="722eec0b-d739-4769-b26d-7809ee7302d5"></script><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">bokeh</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">bokeh</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">bokeh.plotting</span> <span class="kn">import</span> <span class="n">figure</span><span class="p">,</span> <span class="n">show</span>
+<span class="kn">from</span> <span class="nn">bokeh.models</span> <span class="kn">import</span> <span class="n">NumeralTickFormatter</span><span class="p">,</span> <span class="n">TabPanel</span><span class="p">,</span> <span class="n">Tabs</span><span class="p">,</span> <span class="n">BoxZoomTool</span><span class="p">,</span> <span class="n">ColumnDataSource</span><span class="p">,</span> <span class="n">LabelSet</span>
+<span class="kn">import</span> <span class="nn">bokeh</span>
 
-<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+<span class="c1"># BoxZoomTool(match_aspect = True)</span>
+<span class="c1"># BoxZoomTool()</span>
+<span class="n">Hz_dms</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">139</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+      <span class="p">[</span><span class="mi">49</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">44</span><span class="p">],</span>
+      <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
+      <span class="p">[</span><span class="mi">114</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="mi">23</span><span class="p">],</span>
+      <span class="p">[</span><span class="mi">59</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span>
+      <span class="p">[</span><span class="mi">216</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">7</span><span class="p">]]</span>
+<span class="n">Hz_dms_str</span> <span class="o">=</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">ang</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="s2">&quot;°&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">ang</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="s2">&quot;&#39;&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">ang</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="o">+</span> <span class="s2">&quot;&#39;&#39;&quot;</span> <span class="k">for</span> <span class="n">ang</span> <span class="ow">in</span> <span class="n">Hz_dms</span><span class="p">]</span>
 
-</head>
-<body>
-<py-env>
+
+<span class="n">Hz_d</span> <span class="o">=</span> <span class="p">[</span><span class="n">ang</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="n">ang</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">60</span><span class="o">+</span><span class="n">ang</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="mi">3600</span> <span class="k">for</span> <span class="n">ang</span> <span class="ow">in</span> <span class="n">Hz_dms</span><span class="p">]</span>
+<span class="n">Hz_d_poligonal</span> <span class="o">=</span> <span class="n">Hz_d</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+<span class="n">Hz_d_base</span> <span class="o">=</span> <span class="n">Hz_d</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">Az_dms</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">286</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">25</span><span class="p">],</span>
+      <span class="p">[</span><span class="mi">206</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">36</span><span class="p">],</span>
+      <span class="p">[</span><span class="mi">141</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+      <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="mi">20</span><span class="p">],</span>
+      <span class="p">[</span><span class="mi">57</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">34</span><span class="p">]]</span>
+<span class="n">Az_dms_str</span> <span class="o">=</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">ang</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="s2">&quot;°&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">ang</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="s2">&quot;&#39;&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">ang</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="k">for</span> <span class="n">ang</span> <span class="ow">in</span> <span class="n">Az_dms</span><span class="p">]</span>
+<span class="n">Az_d</span> <span class="o">=</span> <span class="p">[</span><span class="n">ang</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="n">ang</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">60</span><span class="o">+</span><span class="n">ang</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="mi">3600</span> <span class="k">for</span> <span class="n">ang</span> <span class="ow">in</span> <span class="n">Az_dms</span><span class="p">]</span>
+<span class="n">Hz_re</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">n</span><span class="p">,</span> <span class="n">ang</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">Az_d</span><span class="p">):</span>
+    <span class="n">Hz</span> <span class="o">=</span> <span class="n">ang</span> <span class="o">-</span> <span class="n">Hz_d_poligonal</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
+    <span class="n">Hz_re</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Hz</span><span class="p">)</span>
+
+
+<span class="c1"># prepare some data</span>
+<span class="n">point</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;O&quot;</span><span class="p">,</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span><span class="s2">&quot;D&quot;</span><span class="p">,</span> <span class="s2">&quot;E&quot;</span><span class="p">,</span><span class="s2">&quot;A&quot;</span><span class="p">]</span>
+<span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="mf">268111.805</span><span class="p">,</span> <span class="mf">268011.610</span><span class="p">,</span> <span class="mf">267817.988</span><span class="p">,</span> <span class="mf">267717.780</span><span class="p">,</span> <span class="mf">267806.587</span><span class="p">,</span> <span class="mf">267868.385</span><span class="p">,</span> <span class="mf">268011.610</span><span class="p">]</span>
+<span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="mf">7370682.471</span><span class="p">,</span> <span class="mf">7370836.303</span><span class="p">,</span> <span class="mf">7370893.267</span><span class="p">,</span> <span class="mf">7370692.035</span><span class="p">,</span> <span class="mf">7370582.303</span><span class="p">,</span> <span class="mf">7370744.038</span><span class="p">,</span> <span class="mf">7370836.303</span><span class="p">]</span>
+
+<span class="n">source</span> <span class="o">=</span> <span class="n">ColumnDataSource</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">:],</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">:],</span> <span class="n">Hz</span><span class="o">=</span><span class="n">Hz_dms_str</span><span class="p">))</span>
+
+<span class="k">def</span> <span class="nf">base_poligonal</span><span class="p">(</span><span class="n">tipo</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">tipo</span> <span class="o">==</span> <span class="s2">&quot;Poligonal&quot;</span><span class="p">:</span>
+        <span class="n">tooltips</span> <span class="o">=</span> <span class="p">[(</span><span class="s2">&quot;E&quot;</span><span class="p">,</span> <span class="s2">&quot;@x</span><span class="si">{0.000}</span><span class="s2"> m&quot;</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;N&quot;</span><span class="p">,</span> <span class="s2">&quot;@y</span><span class="si">{0.000}</span><span class="s2"> m&quot;</span><span class="p">)]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">tooltips</span> <span class="o">=</span> <span class="p">[(</span><span class="s2">&quot;DH&quot;</span><span class="p">,</span> <span class="s2">&quot;aleaxndre&quot;</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;Hz&quot;</span><span class="p">,</span> <span class="s2">&quot;100,208&quot;</span><span class="p">)]</span>
+
+    <span class="n">p</span> <span class="o">=</span> <span class="n">figure</span><span class="p">(</span>
+        <span class="c1">#y_range=(0, 10),</span>
+        <span class="c1">#toolbar_location=None,</span>
+        <span class="c1">#tools=[HoverTool()],</span>
+        <span class="n">tooltips</span><span class="o">=</span><span class="n">tooltips</span><span class="p">,</span>
+        <span class="n">match_aspect</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">max_width</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span>
+        <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span>
+        <span class="n">tools</span><span class="o">=</span><span class="s1">&#39;pan, wheel_zoom, reset&#39;</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">p</span><span class="o">.</span><span class="n">add_tools</span><span class="p">(</span><span class="n">BoxZoomTool</span><span class="p">(</span><span class="n">match_aspect</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+    <span class="c1"># add renderers</span>
+    <span class="n">p</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">y</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;navy&quot;</span><span class="p">)</span>
+    <span class="n">p</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">:],</span> <span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">:],</span> <span class="n">line_width</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;navy&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="n">p</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">],</span> <span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">],</span> <span class="n">line_width</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;navy&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">line_dash</span><span class="o">=</span><span class="s1">&#39;dashed&#39;</span><span class="p">)</span>
+    <span class="n">p</span><span class="o">.</span><span class="n">triangle</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">],</span> <span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">],</span> <span class="n">size</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;navy&quot;</span><span class="p">,</span> <span class="n">fill_color</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">)</span>
+
+    <span class="n">p</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">formatter</span><span class="o">=</span><span class="n">NumeralTickFormatter</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s2">&quot;0&quot;</span><span class="p">)</span>
+    <span class="n">p</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">formatter</span><span class="o">=</span><span class="n">NumeralTickFormatter</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s2">&quot;0&quot;</span><span class="p">)</span>
+    <span class="n">p</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">axis_label</span> <span class="o">=</span> <span class="s1">&#39;E (m)&#39;</span>
+    <span class="n">p</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">axis_label</span> <span class="o">=</span> <span class="s1">&#39;N (m)&#39;</span>
+    <span class="n">p</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">x</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">y</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">text</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;  </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">d</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">point</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]],</span>
+            <span class="n">text_baseline</span><span class="o">=</span><span class="s2">&quot;middle&quot;</span><span class="p">,</span> <span class="n">text_align</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">p</span>
+
+
+<span class="n">tipo</span> <span class="o">=</span> <span class="s2">&quot;Campo&quot;</span>
+<span class="n">p1</span> <span class="o">=</span> <span class="n">base_poligonal</span><span class="p">(</span><span class="n">tipo</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Az_d</span><span class="p">)):</span>
+    <span class="n">arc</span> <span class="o">=</span> <span class="n">p1</span><span class="o">.</span><span class="n">arc</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="n">y</span><span class="p">[</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="n">radius</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">start_angle</span><span class="o">=</span><span class="mi">450</span><span class="o">-</span><span class="n">Az_d</span><span class="p">[</span><span class="n">n</span><span class="p">],</span> <span class="n">end_angle</span><span class="o">=</span><span class="mi">450</span><span class="o">-</span><span class="n">Hz_re</span><span class="p">[</span><span class="n">n</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;orange&quot;</span><span class="p">,</span>
+          <span class="n">end_angle_units</span><span class="o">=</span><span class="s2">&quot;deg&quot;</span><span class="p">,</span> <span class="n">start_angle_units</span><span class="o">=</span><span class="s2">&quot;deg&quot;</span><span class="p">,</span><span class="n">line_width</span><span class="o">=</span><span class="mi">2</span><span class="p">,)</span>
+    <span class="c1"># arc.add_decoration(TeeHead(size=10), &quot;start&quot;)</span>
+<span class="c1">#labels = LabelSet(x=&#39;x&#39;, y=&#39;y&#39;, text=&#39;Hz&#39;,</span>
+<span class="c1">#              x_offset=[5, 10], y_offset=5, source=source, render_mode=&#39;canvas&#39;)</span>
+
+<span class="c1">#p1.add_layout(labels)</span>
+<span class="n">tab1</span> <span class="o">=</span> <span class="n">TabPanel</span><span class="p">(</span><span class="n">child</span><span class="o">=</span><span class="n">p1</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="n">tipo</span><span class="p">)</span>
+
+<span class="n">tipo</span> <span class="o">=</span> <span class="s2">&quot;Poligonal&quot;</span>
+<span class="n">p2</span> <span class="o">=</span> <span class="n">base_poligonal</span><span class="p">(</span><span class="n">tipo</span><span class="p">)</span>
+<span class="n">tab2</span> <span class="o">=</span> <span class="n">TabPanel</span><span class="p">(</span><span class="n">child</span><span class="o">=</span><span class="n">p2</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="n">tipo</span><span class="p">)</span>
+
+<span class="c1"># show the results</span>
+<span class="n">show</span><span class="p">(</span><span class="n">Tabs</span><span class="p">(</span><span class="n">tabs</span><span class="o">=</span><span class="p">[</span><span class="n">tab1</span><span class="p">,</span> <span class="n">tab2</span><span class="p">]))</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">source-position<span class="colon">:</span></dt>
+<dd class="field-odd"><p>none</p>
+</dd>
+</dl>
+<dl>
+<dt>as .. raw:: html</dt><dd><p>&lt;html&gt;&lt;head&gt;
+&lt;title&gt;Bokeh Example&lt;/title&gt;
+&lt;meta charset=»iso-8859-1»&gt;
+&lt;link rel=»icon» type=»image/x-icon» href=»./favicon.png»&gt;
+&lt;script type=»text/javascript» src=»<a class="reference external" href="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.min.js">https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.min.js</a>»&gt;&lt;/script&gt;
+&lt;script type=»text/javascript» src=»<a class="reference external" href="https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.4.2.min.js">https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.4.2.min.js</a>»&gt;&lt;/script&gt;
+&lt;script type=»text/javascript» src=»<a class="reference external" href="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.2.min.js">https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.2.min.js</a>»&gt;&lt;/script&gt;
+&lt;script type=»text/javascript» src=»<a class="reference external" href="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.4.2.min.js">https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.4.2.min.js</a>»&gt;&lt;/script&gt;
+&lt;script type=»text/javascript» src=»<a class="reference external" href="https://cdn.bokeh.org/bokeh/release/bokeh-mathjax-2.4.2.min.js">https://cdn.bokeh.org/bokeh/release/bokeh-mathjax-2.4.2.min.js</a>»&gt;&lt;/script&gt;</p>
+<dl class="simple">
+<dt>&lt;script type=»text/javascript»&gt;</dt><dd><p>Bokeh.set_log_level(«info»);</p>
+</dd>
+</dl>
+<p>&lt;/script&gt;
+&lt;link rel=»stylesheet» href=»<a class="reference external" href="https://pyscript.net/alpha/pyscript.css">https://pyscript.net/alpha/pyscript.css</a>» /&gt;</p>
+<p>&lt;script defer src=»<a class="reference external" href="https://pyscript.net/alpha/pyscript.js">https://pyscript.net/alpha/pyscript.js</a>»&gt;&lt;/script&gt;</p>
+<p>&lt;/head&gt;
+&lt;body&gt;
+&lt;py-env&gt;
 - bokeh
 - numpy
-</py-env>
-<h1>Bokeh Example</h1>
-<div id="myplot"></div>
-
-<py-script id="main">
+&lt;/py-env&gt;
+&lt;h1&gt;Bokeh Example&lt;/h1&gt;
+&lt;div id=»myplot»&gt;&lt;/div&gt;</p>
+<p>&lt;py-script id=»main»&gt;
 import json
-import pyodide
-
-from js import Bokeh, console, JSON
-
-from bokeh.embed import json_item
+import pyodide</p>
+<p>from js import Bokeh, console, JSON</p>
+<p>from bokeh.embed import json_item
 from bokeh.plotting import figure
-from bokeh.resources import CDN
-
-# create a new plot with default tools, using figure
-p = figure(plot_width=400, plot_height=400)
-
-# add a circle renderer with x and y coordinates, size, color, and alpha
-p.circle([1, 2, 3, 4, 5], [6, 7, 2, 4, 5], size=15, line_color="navy", fill_color="orange", fill_alpha=0.5)
-p_json = json.dumps(json_item(p, "myplot"))
-
-Bokeh.embed.embed_item(JSON.parse(p_json))
-</py-script>
-
-</body>
-</html></section>
+from bokeh.resources import CDN</p>
+<p># create a new plot with default tools, using figure
+p = figure(plot_width=400, plot_height=400)</p>
+<p># add a circle renderer with x and y coordinates, size, color, and alpha
+p.circle([1, 2, 3, 4, 5], [6, 7, 2, 4, 5], size=15, line_color=»navy», fill_color=»orange», fill_alpha=0.5)
+p_json = json.dumps(json_item(p, «myplot»))</p>
+<p>Bokeh.embed.embed_item(JSON.parse(p_json))
+&lt;/py-script&gt;</p>
+<p>&lt;/body&gt;
+&lt;/html&gt;</p>
+</dd>
+</dl>
+</section>
 
 
             <div class="clearer"></div>

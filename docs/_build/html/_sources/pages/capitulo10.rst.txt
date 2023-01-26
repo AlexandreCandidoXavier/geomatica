@@ -607,7 +607,7 @@ estaca :math:`i,\,j`;
    pertence, temos:
 
    .. math::
-      \mathrm{V}_{\mathrm{total}} =& \frac{10\cdot10}{4}(-6,4\cdot1-6,8\cdot2-6,0\cdot2-4,7\cdot2-2,3\cdot2+\\
+      \small \mathrm{V}_{\mathrm{total}} =& \frac{10\cdot10}{4}(-6,4\cdot1-6,8\cdot2-6,0\cdot2-4,7\cdot2-2,3\cdot2+\\
       &\qquad\quad\,\,\,\,-1,4\cdot1-5,9\cdot2-6,6\cdot4-6,5\cdot4-4,6\cdot4+\\
       &\qquad\quad\,\,\,\,-2,4\cdot4-1,3\cdot2-6,3\cdot1-6,7\cdot3-5,1\cdot4+\\
       &\qquad\quad\,\,\,\,-3,0\cdot4-2,0\cdot4-0,7\cdot2-6,4\cdot1-3,5\cdot2+\\
@@ -639,7 +639,7 @@ estaca :math:`i,\,j`;
    de expansão do solo ao ser escavado, assim como o fator de compactação do solo ao ser aterrado.
    Considerando que o :math:`1\,\text{m}`:math:`^3` de solo escavado vai ser igual ao :math:`1\,\text{m}`:math:`^3` aterrado, a cota que resultará no volume de material a ser a escavado igual ao volume depositado dentro da mesma área, corresponderá a média ponderada das cotas das estacas. A ponderação a ser utilizada em determinada estaca corresponderá ao número de quadrados que a mesma tem em comum na grade, desta forma:
 
-   .. math::
+   .. math:: \small
       \mathrm{cota}_{\mathrm{media}} =&(307,4\cdot1+307,8\cdot2+307,0\cdot2+305,7\cdot2+303,3\cdot2+302,4\cdot1+ \\
       &306,9\cdot2+307,6\cdot4+307,5\cdot4+305,6\cdot4+303,4\cdot4+ \\
       &302,3\cdot2+307,3\cdot1+307,7\cdot3+306,1\cdot4+304,0\cdot4+ \\
@@ -647,7 +647,7 @@ estaca :math:`i,\,j`;
       &302,1\cdot4+301,7\cdot2+303,9\cdot1+302,4\cdot3+ \\
       &302,0\cdot2+302,2\cdot1+301,5\cdot1)/68 \\
       =&\frac{20\,714,4}{68} \\
-      \mathrm{cota}_{\mathrm{media}}=&\mathbf{304,624\,m}
+      \small\mathrm{cota}_{\mathrm{media}}=&\mathbf{304,624\,m}
 
    Logo, a cota que resultará em volume de corte igual ao volume a ser aterrado é
    de :math:`304,624\,\text{m}`.

@@ -52,17 +52,21 @@ e vertical, onde veremos maiores detalhes no :any:`RST Capitulo 7`. A noção de
 semirretas, neste caso, dois ângulos. Do mesmo modo, dois segmentos
 de reta, não sobrepostos, com origem comum, definem dois ângulos,
 se estendermos em duas semirretas a partir da origem dos segmentos.
-Seja a Figura ao lado representando: dois segmentos; o ângulo :math:`\theta`;
+Seja a :numref:`fig_angulo.png` representando: dois segmentos; o ângulo :math:`\theta`;
 um arco de comprimento :math:`s` que está a uma distância :math:`r`
 do vértice. Matematicamente :math:`\theta` é:
 
 .. math:: \theta=k\frac{s}{r},
    :label: definicaoangulo
 
-.. image:: /images/capitulo1/fig_angulo.png
+.. _fig_angulo.png:
+
+.. figure:: /images/capitulo1/fig_angulo.png
    :scale: 40 %
    :alt: alternate text
    :align: center
+
+   Ângulo
 
 sendo :math:`k` uma constante, que vai depender da unidade angular
 que se está trabalhando: radiano, grau ou grado, conforme será visto
@@ -446,12 +450,12 @@ interno segundo as Equações :eq:`eqleicos1`-:eq:`eqleicos2`. Pode-se utilizar 
 como será apresentado no Exemplo 7.
 
 
-.. math:: a^{2}=b^{2}+c^{2}-2bc\cos\widehat{A} \,\,\,\text{então:}\,\, \widehat{A}=\arccos\left(\frac{a^{2}-\left(b^{2}+c^{2}\right)}{-2bc}\right)
+.. math:: \small a^{2}=b^{2}+c^{2}-2bc\cos\widehat{A}, \,\,\,\text{então:}\,\, \widehat{A}=\arccos\left(\frac{a^{2}-\left(b^{2}+c^{2}\right)}{-2bc}\right)
    :label: eqleicos1
 
-.. math:: b^{2}=a^{2}+c^{2}-2ac\cos\widehat{B} \,\,\,\text{então:}\,\, \widehat{B} =\arccos\left(\frac{b^{2}-\left(a^{2}+c^{2}\right)}{-2ac}\right)
+.. math:: \small b^{2}=a^{2}+c^{2}-2ac\cos\widehat{B}, \,\,\,\text{então:}\,\, \widehat{B} =\arccos\left(\frac{b^{2}-\left(a^{2}+c^{2}\right)}{-2ac}\right)
 
-.. math:: c^{2}=a^{2}+b^{2}-2ab\cos\widehat{C} \,\,\,\text{então:}\,\, \widehat{C} =\arccos\left(\frac{c^{2}-\left(a^{2}+b^{2}\right)}{-2ab}\right)
+.. math:: \small c^{2}=a^{2}+b^{2}-2ab\cos\widehat{C}, \,\,\,\text{então:}\,\, \widehat{C} =\arccos\left(\frac{c^{2}-\left(a^{2}+b^{2}\right)}{-2ab}\right)
    :label: eqleicos2
 
 .. admonition:: :exem:`Exemplo 7` Considerando que os comprimentos dos lados de um triângulo são: :math:`a=32` m, :math:`b=28` m e
@@ -630,8 +634,8 @@ para este quadrante, pode ser obtido por meio da função arco tangente,
 como apresentada na Equação :eq:`coordenadateta`.
 
 A Equação :eq:`coordenadar`
-é valida para pontos em qualquer quadrante. Já a Equação :eq:`coordenadateta`,
-para cálculo de :math:`\theta_{p}`, é valida apenas para o primeiro quadrante,
+é valida para pontos em qualquer quadrante. **Já a Equação** :eq:`coordenadateta`,
+**para cálculo de** :math:`\theta_{p}`, **é valida apenas para o primeiro quadrante**,
 sendo que para os demais, pode-se obtê-lo facilmente, como será apresentado
 no Exemplo abaixo.
 

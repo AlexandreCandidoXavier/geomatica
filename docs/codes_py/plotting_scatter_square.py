@@ -1,15 +1,11 @@
 import bokeh
 print(bokeh.__version__)
 from bokeh.plotting import figure, show
-from bokeh.models import NumeralTickFormatter, Panel, Tabs, BoxZoomTool, ColumnDataSource, LabelSet
+from bokeh.models import NumeralTickFormatter, TabPanel, Tabs, BoxZoomTool, ColumnDataSource, LabelSet
 import bokeh
-import yaml
-import numpy
-import PIL
-print(bokeh.__version__)
 
-BoxZoomTool(match_aspect = True)
-
+# BoxZoomTool(match_aspect = True)
+# BoxZoomTool()
 Hz_dms = [[139, 27, 3],
       [49, 7, 44],
       [100, 4, 4],
@@ -85,11 +81,11 @@ for n in range(len(Az_d)):
 #              x_offset=[5, 10], y_offset=5, source=source, render_mode='canvas')
 
 #p1.add_layout(labels)
-tab1 = Panel(child=p1, title=tipo)
+tab1 = TabPanel(child=p1, title=tipo)
 
 tipo = "Poligonal"
 p2 = base_poligonal(tipo)
-tab2 = Panel(child=p2, title=tipo)
+tab2 = TabPanel(child=p2, title=tipo)
 
 # show the results
 show(Tabs(tabs=[tab1, tab2]))
