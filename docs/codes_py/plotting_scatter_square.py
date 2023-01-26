@@ -3,6 +3,7 @@ print(bokeh.__version__)
 from bokeh.plotting import figure, show
 from bokeh.models import NumeralTickFormatter, Panel, Tabs, BoxZoomTool, ColumnDataSource, LabelSet
 import geopandas as pd
+import scipy
 
 # BoxZoomTool(match_aspect = True)
 # BoxZoomTool()
