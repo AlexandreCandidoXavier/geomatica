@@ -151,15 +151,16 @@ transformados em graus, como apresentado no `Exemplo 1`_.
 
 .. _exemplo 1:
 
-.. admonition:: :exem:`Exemplo 1` Converta o ângulo sexagesimal :math:`116^\circ33'54,18''` para grau decimal.
+.. admonition:: :exem:`Exemplo 1` Converta o ângulo sexagesimal
+    :math:`116^\circ33'54''` para grau decimal.
 
     :solucao:`Solução:`
     Sabendo-se que :math:`1^\circ=60'` e :math:`1^\circ=3\,600''`, temos:
 
     .. math::
 
-       116^\circ33'54,18'' &=116^\circ+\left(\frac{33'}{60'}\right)^\circ+\left(\frac{54,18''}{3\,600''}\right)^\circ\\
-                           &=116,5650511^\circ.
+       116^\circ33'54,18'' &=116^\circ+\left(\frac{33'}{60'}\right)^\circ+\left(\frac{54''}{3\,600''}\right)^\circ\\
+                           &=116,565^\circ.
 
 Por outro lado, para converter um ângulo na forma grau decimal para
 sexagesimal observamos, primeiramente, que a parte inteira corresponde
@@ -177,21 +178,23 @@ e o auxílio da tecla :degree2sex:`shift`.
 .. admonition:: :exem:`Exemplo 2` Transforme o ângulo decimal do `Exemplo 1`_ para o sistema sexagesimal.
 
     :solucao:`Solução:`
-    O ângulo é :math:`116,5650511^\circ`, logo :math:`116^\circ`. A decimal :math:`0,5650511^\circ` em minutos:
+    O ângulo é :math:`116,565^\circ`, logo :math:`116^\circ`.
+    A decimal :math:`0,565^\circ` em minutos:
 
     .. math::
 
-       \text{minutos} & =0,5650511\cdot60'\\
-                      & =33,903\\  & =33'.
+       \text{minutos} & =0,565\cdot60'\\
+                      & =33,9\\
+                      & =33'.
 
-    Agora decimal dos minutos, :math:`0,903'`, em graus:
+    Agora decimal dos minutos, :math:`0,9'`, em graus:
 
     .. math::
 
-       \text{segundos} & =0,903\cdot60''\\
-                       & =54,18''.
+       \text{segundos} & =0,9\cdot60''\\
+                       & =54'.
 
-    Desta forma, temos o ângulo na forma sexagesimal, :math:`116^\circ33'54,18''`.
+    Desta forma, temos o ângulo na forma sexagesimal, :math:`116^\circ33'54''`.
 
 Radianos
 ^^^^^^^^

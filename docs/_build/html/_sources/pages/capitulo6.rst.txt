@@ -297,7 +297,9 @@ e :math:`\alpha` é o coeficiente de dilatação da trena :math:`(^\circ\mathrm{
 .. admonition:: :exem:`Exemplo 1` Considere uma trena que
     foi aferida para trabalho na temperatura de :math:`20^{\circ}\mathrm{C}`.
     Ela apresenta coeficiente de dilatação de :math:`0,0000116^{\circ}\mathrm{C}^{-1}`.
-    Se foi medido em campo :math:`54,3\,\text{m}` sob uma temperatura de :math:`40^{\circ}\mathrm{C}`,
+    Se foi medido em campo :math:`54,3\,\text{m}` (uma trenada de
+    :math:`30,0\,\text{m}` mais um restante :math:`24,3\,\text{m}`)
+    sob uma temperatura de :math:`40^{\circ}\mathrm{C}`,
     calcular a distância com a correção devido a temperatura ser distinta
     do padrão da trena.
 

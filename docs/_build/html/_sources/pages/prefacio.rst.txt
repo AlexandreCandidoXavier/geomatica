@@ -101,7 +101,9 @@ o Python `<https://www.python.org/>`_, linguagem em que
 foram escritos vários *scripts* para, por exemplo, a geração e a solução
 dos problemas e exercícios propostos.
 
-Gostaria de encerrar agradecendo aos meus professores que me ensinaram a
-estudar. À UFES, por me propiciar a paz para
-o desenvolvimento de minhas atividades de ensino e pesquisa. E, à minha
-esposa Juliana e filhos, Beatriz e Thiago, por todos os momentos de alegria.
+Gostaria de encerrar agradecendo: aos meus pais, João B.M. Xavier
+(*in memoriam*) e Benedita C. Xavier, por todos ensinamentos; à minha
+esposa Juliana e, filhos, Beatriz e Thiago, por todos os momentos de alegria;
+aos meus professores que me ensinaram a estudar.
+Por fim, à UFES, por me propiciar a paz para
+o desenvolvimento de minhas atividades de ensino e pesquisa.
