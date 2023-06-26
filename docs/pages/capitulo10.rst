@@ -73,7 +73,7 @@ equidistância vertical do mapa apresentado na :numref:`curva_nivel1` é de
 
 .. _curva_nivel1:
 
-.. figure:: /images/capitulo10/topo-plot_3d_script_name_curvas_de_nivel.py.png
+.. figure:: /images/capitulo10/topo-plot_3d_script_name_curvas_de_nivel.png
    :scale: 20 %
    :alt: cap_altimetria_definicoes.png
    :align: center
