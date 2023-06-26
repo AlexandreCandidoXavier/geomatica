@@ -204,7 +204,7 @@ o meridiano de :math:`P'` e o Grw.
 
 A latitude no equador é de :math:`0^{\circ}` e varia até :math:`-90^{\circ}`
 ou :math:`+90^{\circ}`. Pode-se ao invés do sinal, :math:`+` ou :math:`-` , considerar o hemisfério
-Sul (S) e Norte (N), por exemplo, :math:`22^{\circ}` S ou :math:`45^{\circ}` N., respectivamente, para o Polo Sul e Norte. A variação da longitude
+Sul (S) e Norte (N), por exemplo, :math:`22^{\circ}` S ou :math:`45^{\circ}` N, respectivamente, para o Polo Sul e Norte. A variação da longitude
 é de :math:`0^{\circ}` a :math:`-180^{\circ}`, quando o meridiano
 do ponto se encontra à esquerda de Grw, e de :math:`0^{\circ}` a :math:`+180^{\circ}`
 quando o ponto se encontrar a sua direita. Pode-se ao invés do sinal, :math:`+` ou :math:`-`, considerar se o meridiano

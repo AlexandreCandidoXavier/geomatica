@@ -634,7 +634,7 @@ de :math:`V` com o :math:`\lambda` e a frequência (:math:`f`, Hz, onde Hz é a 
 por segundo :math:`(\text{s}^{-1})`):
 
 .. math::
-   V=\lambda f,
+   V=\lambda\cdot f,
    :label: eq:velocidadedaluzatmosfera
 
 .. _fig_rem.png:
