@@ -47,6 +47,8 @@ na vertical, é de :math:`40\,\text{m}`. Estas linhas de interseção, quando pr
 projeção, cartográfico ou topográfico, resultam nas curvas de níveis, onde  podem ser 
 observadas na :numref:`curva_nivel2`.
 
+.. raw:: html
+   :file: ../_static/file.html
 
 Para facilitar a leitura das curvas de nível, normalmente a cada sequência de cinco curvas,
 uma é cotada. As linhas cotadas são denominadas de **curvas mestras**, sendo
