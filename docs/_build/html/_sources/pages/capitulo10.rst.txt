@@ -73,7 +73,7 @@ equidistância vertical do mapa apresentado na :numref:`curva_nivel1` é de
 
 .. _curva_nivel1:
 
-.. figure:: /images/capitulo10/topo-plot_3d_script_name_curvas_de_nivel.png
+.. figure:: /images/capitulo10/topo-plot_3d_script_name_curvas_de_nivel_floripa.py.png
    :scale: 20 %
    :alt: cap_altimetria_definicoes.png
    :align: center
@@ -84,7 +84,7 @@ equidistância vertical do mapa apresentado na :numref:`curva_nivel1` é de
 
 .. _curva_nivel2:
 
-.. figure:: /images/capitulo10/topo-plot_2d_script_name_curvas_de_nivel.py.png
+.. figure:: /images/capitulo10/topo-plot_2d_script_name_curvas_de_nivel_floripa.py.png
    :scale: 15 %
    :alt: cap_altimetria_definicoes.png
    :align: center
@@ -112,7 +112,7 @@ montanha do ES, a equidistância vertical ficou em :math:`80\,\text{m}`
 
 .. _curva_nivelSP:
 
-.. figure:: /images/capitulo10/topo_curvas_de_nivel_script_name_curvas_de_nivel.py.png
+.. figure:: /images/capitulo10/topo_curvas_de_nivel_script_name_curvas_de_nivel_oeste_sp.py.png
    :scale: 15 %
    :alt: topo_curvas_de_nivel_script_name_curvas_de_nivel.py.png
    :align: center
@@ -123,7 +123,7 @@ montanha do ES, a equidistância vertical ficou em :math:`80\,\text{m}`
 
 .. _curva_nivelES:
 
-.. figure:: /images/capitulo10/topo_curvas_de_nivel_script_name_ES_curvas_de_nivel.py.png
+.. figure:: /images/capitulo10/topo_curvas_de_nivel_script_name_ES_curvas_de_nivel_sul_es.py.png
    :scale: 15 %
    :alt: topo_curvas_de_nivel_script_name_ES_curvas_de_nivel.png
    :align: center
