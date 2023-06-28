@@ -47,9 +47,6 @@ na vertical, é de :math:`40\,\text{m}`. Estas linhas de interseção, quando pr
 projeção, cartográfico ou topográfico, resultam nas curvas de níveis, onde  podem ser 
 observadas na :numref:`curva_nivel2`.
 
-.. raw:: html
-   :file: ../_static/file.html
-
 Para facilitar a leitura das curvas de nível, normalmente a cada sequência de cinco curvas,
 uma é cotada. As linhas cotadas são denominadas de **curvas mestras**, sendo
 apresentadas com linhas mais grossas. Na :numref:`curva_nivel2` as
@@ -93,6 +90,12 @@ equidistância vertical do mapa apresentado na :numref:`curva_nivel1` é de
 
    Curvas de nível no plano, referente à :numref:`curva_nivel1`.
    Equidistância vertical de :math:`40\,\text{m}`.
+
+Na Figura abaixo é apresentada parte da ilha de Florianópopis, com a
+visualização interativa das curvas de nível.
+
+.. raw:: html
+   :file: ../_static/name_file_plotjy_curvas_de_nivel_floripa.py.html
 
 A equidistância vertical que será utilizada no mapeamento vai depender do
 relevo e da escala do mapa. Considere duas regiões distintas, uma de
@@ -281,6 +284,10 @@ respectivas cotas (Figura :numref:`curva_nivel3` d).
    :align: center
 
    Método da determinação das curvas de nível por meio de dados em grade regular.
+
+.. raw:: html
+   :file: ../_static/name_file_plotly_curva_de_nivel_exemplo.py.html
+
 
 Obtenção das curvas de nível em campo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
