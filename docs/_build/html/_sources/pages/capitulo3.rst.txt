@@ -180,6 +180,21 @@ de elipsoides e o local em que ele é ou foi utilizado
     *World Geodetic System*       (WGS84)   :math:`6\,378\,137`     :math:`298,257\,223\,563` Mundial
     ======================================= ======================= ========================= ========================
 
+.. admonition:: Elipsóide *versus* Geóide
+
+   A diferença entre o desvio entre a altura em relação ao elipsóide
+   (:math:`h`, altura geométrica) e a ao Geóide (:math:`H`, altura ortométrica), como
+   já mencioado, é denominada de ondulação geoidal (:math:`H`).
+   Abaixo segue um mapa iterativo da ondulação geoida, :math:`N` em metros,
+   para a América do Sul segundo o modelo
+   `EGM2008 <https://www.usna.edu/Users/oceano/pguth/md_help/html/egm96.htm>`_,
+   disponíbilizado no *site* `ICGEM <http://icgem.gfz-potsdam.de/calcgrid>`_.
+   Neste exemplo, os valores de :math:`N` são em relativos relação ao sistema WGS84.
+
+   .. raw:: html
+      :file: ../_static/ondulacao_geoidal_EGM2008.html
+
+
 .. _Coordenada geodésica:
 
 Coordenada geodésica
