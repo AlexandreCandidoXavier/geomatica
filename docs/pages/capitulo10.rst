@@ -475,6 +475,8 @@ da Equação :eq:`eq:volume_area_media`.
    :math:`20\,\text{m}` e sistematização do terreno para cota de :math:`102,5`.
 
 
+.. raw:: html
+   :file: ../_static/name_file_volume_area_secao.py.html
 
 Volume por meio da área unitária
 --------------------------------
