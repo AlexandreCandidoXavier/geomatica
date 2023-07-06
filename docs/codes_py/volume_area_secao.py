@@ -11,8 +11,8 @@ z = np.array([[104.7, 103.5, 102.8],
 
 plano = np.ones_like(z) * cota2plano
 
-colunas = [1, 2, 3]
-linhas = ["A", "B", "C"]
+linhas = [1, 2, 3]
+colunas = ["A", "B", "C"]
 
 col, lin, cotas, nome = [], [], [], []
 for row, linha in enumerate(linhas):
@@ -32,11 +32,11 @@ df = pd.DataFrame({"nome": nome,
                    "cotas": cotas})
 df["CV"] = df["cotas"] - cota2plano
 fig = go.Figure(data=[
-    go.Surface(x=["A", "B", "C"], y=[1., 2., 3.], z=z,
-               hovertemplate="<br>%{x}%{y}, cota: %{z:.1f} m", name="terreno",
-               colorscale=[[0, "blue"], [1, "red"]], colorbar={"title": "Cota", "len": .5},),
-    go.Surface(x=["A", "B", "C"], y=[1., 2., 3.], z=plano, colorscale=[[0, "grey"], [1, "grey"]],
-               showscale=False, opacity=0.4,  hovertemplate="<br>%{x}%{y}, cota: %{z:.1f} m", name="plano"),
+    go.Surface(x=linhas, y=colunas, z=z,
+               hovertemplate="<br>%{y}%{x}, cota: %{z:.1f} m", name="terreno",
+               colorscale=[[0, "blue"], [1, "yellow"]], colorbar={"title": "Cota", "len": .5},),
+    go.Surface(x=linhas, y=colunas, z=plano, colorscale=[[0, "grey"], [1, "grey"]],
+               showscale=False, opacity=0.4,  hovertemplate="<br>%{y}%{x}, cota: %{z:.1f} m", name="plano"),
     # go.Scatter3d(x=df["linha"], y=df["coluna"], z=df["cotas"], mode='lines', )
 ])
 
@@ -46,24 +46,24 @@ for n in np.unique(df["nome"]):
     CV = str(np.around((cota2plano - df.loc[index, "cotas"].values[1]), 2))
     fig.add_scatter3d(x=df.loc[index, "linha"],
                       y=df.loc[index, "coluna"],
-                      z=df.loc[index, "cotas"], mode='lines',
+                      z=df.loc[index, "cotas"], mode='lines', line={'width': 7},
                       name="",
                       marker=dict(color='red'), showlegend=False,
                       hovertemplate = f"CV = {CV} m"
     )
 
-for n in ["A", "B", "C"]:
-    fig.add_scatter3d(x=[n, n],
-                      y=[1, 3],
+for n in colunas:
+    fig.add_scatter3d(x=[1, 3],
+                      y=[n, n],
                       z=[cota2plano, cota2plano], mode='lines', line={'width': 5},
                       name="",
                       marker=dict(color='grey'), showlegend=False,
                       hoverinfo="skip"
     )
 
-for n in [1., 2., 3.]:
-    fig.add_scatter3d(y=[n, n],
-                      x=["A", "C"],
+for n in linhas:
+    fig.add_scatter3d(y=["A", "C"],
+                      x=[n, n],
                       z=[cota2plano, cota2plano], mode='lines', line={'width': 5},
                       name="",
                       marker=dict(color='grey'), showlegend=False,
@@ -77,9 +77,10 @@ fig.update_layout(title='', autosize=True,
                       "zaxis_title": "Cota (m)",
                       "xaxis_title": "",
                       "yaxis_title": "",
-                      "zaxis": {"range": [99, 105],  "tickvals": [100, 102, 104]},
-                      "yaxis": {"range": [1, 3],  "tickvals": [1, 2, 3]},
-                      'camera_eye': {"x": 1, "y": -1, "z": 3},
+                      "zaxis": {"range": [99.5, 105],  "tickvals": [100, 102, 104]},
+                      "yaxis": {"range": [-.1, 2],  "tickvals": colunas},
+                      "xaxis": {"range": [0.9, 3],  "tickvals": linhas},
+                      'camera_eye': {"x": -1, "y": -1, "z": 3},
                       "aspectratio": {"x": 1, "y": 1, "z": 1.5}}
 )
 
