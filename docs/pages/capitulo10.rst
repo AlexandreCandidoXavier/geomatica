@@ -332,7 +332,7 @@ irrigação por gravidade; construção de quadras e campos de futebol, etc.
 
 Na execução da sistematização de um terreno, geralmente acorrerá as seguintes etapas:
 *i*) escavação de rochas, terras e cascalhos, ou mistura destes, sendo esta etapa
-denominada de (**corte**); *ii*) o transporte de material e; *iii*) a sua deposição,
+denominada de **corte**; *ii*) o transporte de material e; *iii*) a sua deposição,
 normalmente com compactação do material, denominada de **aterro**. Certos projetos
 podem ter mais ênfase no corte do terreno, como em projetos de estradas. Outros, terão
 mais trabalho de aterro, como na construção de barragens. Na sistematização, se busca
@@ -574,10 +574,10 @@ de quadrados que a mesma é comum (ver Exemplo abaixo). Matematicamente:
    :label: eq_somas_unitarios
 
 
-em que: :math:`V` é o volume (:math:`\mathrm{m}^3)`; :math:`A` é a
+em que: :math:`V` é o volume :math:`(\mathrm{m}^3)`; :math:`A` é a
 área do quadrado (:math:`\mathrm{m}^2)`; :math:`i` e :math:`j` são os índices
 das linhas e colunas, respectivamente, :math:`i=1, 2,\dotsc\,,`
-índice das linhas e :math:`j=1, 2, \dotsc\,, ` índice de colunas;
+índice das linhas e :math:`j=1, 2, \dotsc\,,` índice de colunas;
 :math:`w_{i,\,j}` é o peso, sendo igual ao número de quadrados em comum na
 estaca :math:`i,\,j`;
 
@@ -629,7 +629,11 @@ estaca :math:`i,\,j`;
 
    O sinal do volume calculado representa que o terreno será escavado. Logo,  para
    que o terreno analisado seja sistematizado para a cota de :math:`301\,\text{m}`,
-   o volume total a ser escavado será de :math:`6\,160\,\mathrm{m}^3`.
+   o volume total a ser escavado será de :math:`6\,160\,\mathrm{m}^3`. Abaixo segue
+   o terreno original, o plano a ser sistematizado e as cotas vermelhas.
+
+.. raw:: html
+   :file: ../_static/name_file_volume_unitario_exemplo.py.html
 
 .. _exemplo 5:
 
@@ -735,6 +739,9 @@ estaca :math:`i,\,j`;
       =&\mathbf{-1\,610\,m^3}
 
    Mais uma vez, o sinal apenas indica que será um volume de :math:`1\,610\,\text{m}^3` a ser escavado.
+
+.. raw:: html
+   :file: ../_static/name_file_volume_unitario_exemplo2.py.html
 
 Exercícios
 ==========
