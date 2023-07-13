@@ -79,7 +79,6 @@ for n in np.unique(df["nome"]):
 #     )
 
 fig.update_layout(title='', autosize=True,
-                  width=500, height=500,
                   margin=dict(l=0, r=0, b=0, t=0),
                   scene={
                       "zaxis_title": "Cota (m)",

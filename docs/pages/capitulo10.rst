@@ -632,8 +632,8 @@ estaca :math:`i,\,j`;
    o volume total a ser escavado será de :math:`6\,160\,\mathrm{m}^3`. Abaixo segue
    o terreno original, o plano a ser sistematizado e as cotas vermelhas.
 
-.. raw:: html
-   :file: ../_static/name_file_volume_unitario_exemplo.py.html
+   .. raw:: html
+      :file: ../_static/name_file_volume_unitario_exemplo.py.html
 
 .. _exemplo 5:
 
@@ -739,9 +739,10 @@ estaca :math:`i,\,j`;
       =&\mathbf{-1\,610\,m^3}
 
    Mais uma vez, o sinal apenas indica que será um volume de :math:`1\,610\,\text{m}^3` a ser escavado.
+   Abaixo segue o terreno e a sistematização.
 
-.. raw:: html
-   :file: ../_static/name_file_volume_unitario_exemplo2.py.html
+   .. raw:: html
+      :file: ../_static/name_file_volume_unitario_exemplo2.py.html
 
 Exercícios
 ==========
