@@ -807,7 +807,7 @@ de :math:`20\,\text{m}`
 
 -----
 
-:exem:`6)` Utilizando os dados do **Exemplo resolvido 5**, calcular o volume de aterro.
+:exem:`6)` Utilizando os dados do **Exemplo resolvido 6**, calcular o volume de aterro.
 
 :exem:`Resp.:` :math:`1\,617\,\text{m}^3`.
 
