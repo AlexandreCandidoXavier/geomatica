@@ -908,7 +908,7 @@ d. projetar um plano inclinado de :math:`1\%` de declividade no sentido
 
 -----
 
-:exem:`8)` Um terreno de :math:`40,0\,\text{m}` por :math:`40,0\,\text{m}`, foi
+:exem:`9)` Um terreno de :math:`40,0\,\text{m}` por :math:`40,0\,\text{m}`, foi
 estaqueado em quadrículas de :math:`20,0\,\text{m}` por :math:`20,0\,\text{m}`.
 As cotas obtidas para cada vértice estão na Figura abaixo.
 

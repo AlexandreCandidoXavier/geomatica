@@ -807,7 +807,7 @@ de :math:`20\,\text{m}`
 
 -----
 
-:exem:`6)` Utilizando os dados do **Exemplo resolvido 5**, calcular o volume de aterro.
+:exem:`6)` Utilizando os dados do **Exemplo resolvido 6**, calcular o volume de aterro.
 
 :exem:`Resp.:` :math:`1\,617\,\text{m}^3`.
 
@@ -908,7 +908,7 @@ d. projetar um plano inclinado de :math:`1\%` de declividade no sentido
 
 -----
 
-:exem:`8)` Um terreno de :math:`40,0\,\text{m}` por :math:`40,0\,\text{m}`, foi
+:exem:`9)` Um terreno de :math:`40,0\,\text{m}` por :math:`40,0\,\text{m}`, foi
 estaqueado em quadrículas de :math:`20,0\,\text{m}` por :math:`20,0\,\text{m}`.
 As cotas obtidas para cada vértice estão na Figura abaixo.
 

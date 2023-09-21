@@ -607,22 +607,13 @@ ondulação geoidal :math:`(N)` local, diferença entre :math:`h` e :math:`H`
    H\approx h-N
    :label: eq:geoide
 
-Na Figura :numref:`fig_geoide` b é apresentado, do modelo EGM96, a :math:`N`
+Na :numref:`fig_geoide` b é apresentado a partir do modelo EGM96, a :math:`N`
 para parte da região da América do Sul. O EGM96 tem como referência
 o Datum WGS84. Valores positivos indicam que o geóide está acima do
 WGS84, e negativos, abaixo. Segundo este modelo, no
 Acre :math:`N\approx30\,\mathrm{m}`, já no Amapá, :math:`N\approx-30\,\mathrm{m}`.
 Na América do sul, os maiores valores se encontram nas Cordilheira
 dos Andes, com :math:`N\approx50\,\mathrm{m}`.
-
-Valores de :math:`N`  com relação aos Data utilizados no Brasil, o
-`SIRGAS2000 <https://geoftp.ibge.gov.br/informacoes_sobre_posicionamento_geodesico/rede_planialtimetrica/relatorio/rel_sirgas2000.pdf>`_,
-podem ser obtidos por meio do programa `HgeoHNOR2020 <https://www.ibge.gov.br/geociencias/informacoes-sobre-posicionamento-geodesico/servicos-para-posicionamento-geodesico/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?edicao=31284&t=processar-os-dados>`_.
-No **HgeoHNOR2020**, tem que informar para obter a estimativa
-de :math:`N`, o Datum utilizado na coleta dos dados de :math:`h`  com  receptor
-GNSS, SIRGASS2000, e, as coordenadas do ponto, em latitude e longitude. Uma vez conhecidos
-os valores de :math:`h`  (receptor GNSS) e :math:`N`  (HgeoHNOR2020), pode-se calcular
-:math:`H`  pela Equação :eq:`eq:geoide`.
 
 
 .. _fig_geoide:
@@ -636,6 +627,22 @@ os valores de :math:`h`  (receptor GNSS) e :math:`N`  (HgeoHNOR2020), pode-se ca
    e ondulação geoidal :math:`(N)` em (a). Ondulação geoidal segundo EGM96
    :cite:`lemoine1998development`, tendo :math:`h`  em relação ao WGS84 (b).
 
+Abaixo segue um mapa iterativo da ondulação geoida, :math:`N` em metros,
+para a América do Sul segundo um outo modelo, o
+`EGM2008 <https://www.usna.edu/Users/oceano/pguth/md_help/html/egm96.htm>`_,
+disponíbilizado no *site* `ICGEM <http://icgem.gfz-potsdam.de/calcgrid>`_.
+Neste exemplo, os valores de :math:`N` também são relativos ao Datum WGS84.
+
+.. raw:: html
+  :file: ../_static/ondulacao_geoidal_EGM2008.html
+
+Valores de :math:`N`  com relação ao nosso Datum horizaontal, o
+`SIRGAS2000 <https://geoftp.ibge.gov.br/informacoes_sobre_posicionamento_geodesico/rede_planialtimetrica/relatorio/rel_sirgas2000.pdf>`_,
+podem ser obtidos por meio do *site* `HgeoHNOR2020 <https://www.ibge.gov.br/geociencias/informacoes-sobre-posicionamento-geodesico/servicos-para-posicionamento-geodesico/31283-hgeohnor2020-modeloconversaoaltitudesgeometricasgnss-datumverticalsgb.html?edicao=31284&t=processar-os-dados>`_.
+Observa-se que, para obter o valor de :math:`N` de forma correta, as coordenadas
+a serem inseridas devem estar referir ao Datum SIRGAS2000.
+Uma vez conhecidos os valores de :math:`h`, obtidos pelo receptor GNSS, e de :math:`N`
+(HgeoHNOR2020), pode-se calcular :math:`H`  pela Equação :eq:`eq:geoide`.
 
 .. admonition:: Sobre HgeoHNOR2020.
 
