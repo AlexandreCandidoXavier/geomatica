@@ -700,8 +700,10 @@ suas coordenadas parciais.
 
 .. admonition:: :exem:`Exemplo 6`  Considere que no nosso exemplo, ao invés da poligonal
    de interesse ser a :math:`\mathrm{ABCDEA}`, passe a ser a :math:`\mathrm{ABPDEA}`, de acordo com a Figura
-   que segue. A distância horizontal :math:`\mathrm{CP}` e o ângulo à direita :math:`\mathrm{BCP}` foram
-   medidos, sendo, respectivamente, de :math:`7,85\,\text{m}` e  :math:`253^\circ22'` . Calcular
+   que segue. O ponto :math:`\mathrm{P}` não pode ser ocupado, logo, da estação mais
+   próxima :math:`\mathrm{(C)}` mediu-se a distância horizontal :math:`\mathrm{CP}` e o
+   ângulo horizontal à direita :math:`\mathrm{BCP}`, sendo, respectivamente, de
+   :math:`7,85\,\text{m}` e  :math:`253^\circ22'` . Calcular
    o azimute e a distância horizontal do alinhamento :math:`\mathrm{BP}`.
 
 
@@ -717,8 +719,8 @@ suas coordenadas parciais.
 
    .. math::
       \mathrm{Az}_{\mathrm{CP}} &=\mathrm{Az}_{\mathrm{BC}}-180^{\circ}+\mathrm{BCP}\\
-      \mathrm{Az}_{\mathrm{CP}} &=206^{\circ}26'36''-180^{\circ}+253^{\circ}22'\\
-      \mathrm{Az}_{\mathrm{CP}} &=279^{\circ}48'36''.
+      \mathrm{Az}_{\mathrm{CP}} &=206^{\circ}28'19''-180^{\circ}+253^{\circ}22'\\
+      \mathrm{Az}_{\mathrm{CP}} &=279^{\circ}50'19''.
 
    As coordenadas parciais do alinhamento :math:`\mathrm{CP}`:
 
@@ -730,7 +732,7 @@ suas coordenadas parciais.
    .. math::
       \Delta y_{{\mathrm{CP}}} &=\mathrm{DH}_{\mathrm{CP}}\cos\mathrm{Az}_{\mathrm{CP}}\\
       &=7,85\cos279^{\circ}48'36''\\
-      &=1,338\,\text{m}.
+      &=1,341\,\text{m}.
 
    Uma vez que a coordenada do ponto :math:`\mathrm{C}` foi calculada (Exemplo 4),
    :math:`x_\mathrm{C}=267.717,780\,\text{m}`  e  :math:`y_\mathrm{C}=7.370.692,035\,\text{m}`, a
@@ -743,8 +745,8 @@ suas coordenadas parciais.
 
    .. math::
       y_{\mathrm{P}} &=y_{\mathrm{C}}+\Delta y_{{\mathrm{CP}}}\\
-      &=7.370.692,035+1,337\\
-      &=7.370.693,372\,\text{m}.
+      &=7.370.692,035+1,341\\
+      &=7.370.693,377\,\text{m}.
 
    Com a coordenada do ponto :math:`\mathrm{B}` conhecida (Exemplo 5)
    e utilizando as Equação :eq:`eq:calculoAzimutefinal`, temos o azimute
@@ -752,21 +754,21 @@ suas coordenadas parciais.
 
    .. math::
       \tan\mathrm{Az}_{\mathrm{BP}}&=\frac{x_{\mathrm{B}}-x_{\mathrm{P}}}{y_{\mathrm{B}}-y_{\mathrm{P}}}\\
-      &=\frac{267.817,988-267.710,045}{7.370.893,267-7.370.693,372}\\
-      &=\frac{107,943}{199,895}
+      &=\frac{267.817,988-267.710,045}{7.370.893,267-7.370.693,377}\\
+      &=\frac{107,943}{199,890}
 
    Como o alinhamento :math:`\mathrm{BP}` está no quadrante SW:
 
    .. math::
-      \mathrm{Az}_{\mathrm{BP}}&=\arctan\frac{107,943}{199,895}+180^{\circ}\\
-      \mathrm{Az}_{\mathrm{BP}}&=208^{\circ}22'8''.
+      \mathrm{Az}_{\mathrm{BP}}&=\arctan\frac{107,943}{199,890}+180^{\circ}\\
+      \mathrm{Az}_{\mathrm{BP}}&=208^{\circ}22'10''.
 
    A distância horizontal :math:`\mathrm{BP}` (Equação :eq:`eq:calculoDHfinal`):
 
    .. math::
-      \mathrm{Az}_{\mathrm{BP}} &=\sqrt{(x_{\mathrm{B}}-x_{\mathrm{P}})^{2}+(y_{\mathrm{B}}-y_{\mathrm{P}})^{2}}\\
-      \mathrm{Az}_{\mathrm{BP}} &=\sqrt{(267.817,988-267.710,045)^{2}+(7.370.893,267-7.370.693,372)^{2}}\\
-      \mathrm{Az}_{\mathrm{BP}} &=227,178\,\text{m}.
+      \mathrm{DH}_{\mathrm{BP}} &=\sqrt{(x_{\mathrm{B}}-x_{\mathrm{P}})^{2}+(y_{\mathrm{B}}-y_{\mathrm{P}})^{2}}\\
+      \mathrm{DH}_{\mathrm{BP}} &=\sqrt{107,943^2+199,890^2}\\
+      \mathrm{DH}_{\mathrm{BP}} &=227,173\,\text{m}.
 
 
 Cálculo de uma poligonal aberta e apoiada
