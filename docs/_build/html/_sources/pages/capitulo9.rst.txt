@@ -391,6 +391,11 @@ de elevação de :math:`200\,\text{m}`.
 
    Barômetro de mercúrio ao nível do mar.
 
+
+
+.. raw:: html
+  :file: ../_static/name_file_pressão_VS_altitude.py.html
+
 Os barômetros do tipo **aneroides** consistem de uma pequena caixa flexível onde o ar interno é retirado,
 criando-se um vácuo. Na medida que a pressão do ar muda, a membrana
 da caixa se deforma, comprimindo-se os expandindo-se. Um mecanismo

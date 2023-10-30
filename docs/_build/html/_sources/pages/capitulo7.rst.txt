@@ -1234,7 +1234,7 @@ o ângulo zenital médio na posição direta da luneta :math:`(\bar{z}_{d})`.
 
 ----
 
-:exem:`10)`  Repetir o exercício 15 considerando
+:exem:`16)`  Repetir o exercício 15 considerando
 os seguintes valores de ângulos zenitais: na posição direta :math:`95^\circ49'14''` e :math:`95^\circ49'18''`
 e, na posição inversa :math:`264^\circ10'40''` e :math:`264^\circ10'36''`. 
 
