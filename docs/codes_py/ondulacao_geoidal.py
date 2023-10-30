@@ -9,4 +9,4 @@ import cartopy
 
 # http://icgem.gfz-potsdam.de/calcgrid
 # plots estao no projeo BR-DWGD
-# ondulacao_geoidal.ipynd
+# c

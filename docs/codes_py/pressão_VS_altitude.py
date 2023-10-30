@@ -2,7 +2,6 @@ import plotly.express as px
 import numpy as np
 import os
 
-
 name_script = os.path.basename(__file__)
 Hgmm = np.arange(550, 760)
 
