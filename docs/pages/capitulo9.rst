@@ -356,9 +356,8 @@ lado, um ponto em uma altitude menor, está sujeito a uma maior camada
 de ar, resultando numa maior pressão atmosférica :cite:`espartel`.
 A pressão do ar depende também da temperatura do ar e em menor grau
 da umidade e da latitude do lugar (ver :cite:`deumlich1982surveying`, página 222).
+teste oi.
 
-
-teste1
 
 .. bokeh-plot:: codes_py/pressao_VS_altitude2.py
    :source-position: none
