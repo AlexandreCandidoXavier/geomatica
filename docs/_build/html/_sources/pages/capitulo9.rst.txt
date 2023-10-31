@@ -357,6 +357,9 @@ de ar, resultando numa maior pressão atmosférica :cite:`espartel`.
 A pressão do ar depende também da temperatura do ar e em menor grau
 da umidade e da latitude do lugar (ver :cite:`deumlich1982surveying`, página 222). teste oi.
 
+.. bokeh-plot:: codes_py/pressao_VS_altitude2.py
+   :source-position: none
+
 testeste1 Existem vários tipos de barômetros,
 destacando-se os de **mercúrio** e os **aneroides**. O **barômetro de mercúrio**,
 é constituído de um recipiente, fechado de um lado e aberto do outro.
@@ -372,8 +375,6 @@ devem ser evitados por apresentarem pouca precisão, por exemplo, segundo
 à :math:`\pm0,19\,\text{mm Hg})` pode ser encontrado para uma diferença
 de elevação de :math:`200\,\text{m}`.
 
-.. bokeh-plot:: codes_py/pressao_VS_altitude2.py
-   :source-position: none
 
 .. _barometroHg:
 
