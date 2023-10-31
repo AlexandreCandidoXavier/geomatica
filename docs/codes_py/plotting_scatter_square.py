@@ -1,7 +1,8 @@
 import bokeh
+from bokeh.models.layouts import TabPanel
 print(bokeh.__version__)
 from bokeh.plotting import figure, show
-from bokeh.models import NumeralTickFormatter, Panel, Tabs, BoxZoomTool, ColumnDataSource, LabelSet
+from bokeh.models import NumeralTickFormatter, Tabs, BoxZoomTool, ColumnDataSource, LabelSet
 import geopandas as pd
 import scipy
 
@@ -82,11 +83,11 @@ for n in range(len(Az_d)):
 #              x_offset=[5, 10], y_offset=5, source=source, render_mode='canvas')
 
 #p1.add_layout(labels)
-tab1 = Panel(child=p1, title=tipo)
+tab1 = TabPanel(child=p1, title=tipo)
 
 tipo = "Poligonal"
 p2 = base_poligonal(tipo)
-tab2 = Panel(child=p2, title=tipo)
+tab2 = TabPanel(child=p2, title=tipo)
 
 # show the results
 show(Tabs(tabs=[tab1, tab2]))

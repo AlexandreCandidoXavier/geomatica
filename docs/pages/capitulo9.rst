@@ -350,7 +350,7 @@ Nivelamento barométrico
 Por meio de equipamentos que medem a pressão do ar, que denominam-se
 barômetros, é possível encontrar a :math:`\mathrm{DN}` entre os pontos. A explicação
 é dada pela relação inversa que há entre pressão do ar e a altitude
-(Figura abaixo). Quanto mais alto um ponto, menor é a camada atmosférica
+(Figura abaixo,  `adaptado do matemático da NOOA <https://en.wikipedia.org/wiki/Pressure_altitude>`_). Quanto mais alto um ponto, menor é a camada atmosférica
 atuando nele, logo, menor será a pressão devida à atmosfera. Por outro
 lado, um ponto em uma altitude menor, está sujeito a uma maior camada
 de ar, resultando numa maior pressão atmosférica :cite:`espartel`.
