@@ -357,10 +357,8 @@ de ar, resultando numa maior pressão atmosférica :cite:`espartel`.
 A pressão do ar depende também da temperatura do ar e em menor grau
 da umidade e da latitude do lugar (ver :cite:`deumlich1982surveying`, página 222).
 
-.. raw:: html
-  :file: ../_static/name_file_pressao_VS_altitude2.py.html
 
-teste
+teste1
 
 .. bokeh-plot:: codes_py/pressao_VS_altitude2.py
    :source-position: none
