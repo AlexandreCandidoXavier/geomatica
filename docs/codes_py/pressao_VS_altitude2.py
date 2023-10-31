@@ -1,4 +1,3 @@
-from numpy import arange, pi, sin
 from bokeh.models.annotations.labels import Label
 from bokeh.plotting import figure, show, output_file, ColumnDataSource
 import bokeh

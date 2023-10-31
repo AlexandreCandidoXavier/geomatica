@@ -360,6 +360,11 @@ da umidade e da latitude do lugar (ver :cite:`deumlich1982surveying`, página 22
 .. raw:: html
   :file: ../_static/name_file_pressao_VS_altitude2.py.html
 
+teste
+
+.. bokeh-plot:: codes_py/pressao_VS_altitude2.py
+   :source-position: none
+
 Existem vários tipos de barômetros,
 destacando-se os de **mercúrio** e os **aneroides**. O **barômetro de mercúrio**,
 é constituído de um recipiente, fechado de um lado e aberto do outro.
