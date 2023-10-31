@@ -61,7 +61,7 @@ extensions = ['sphinx.ext.todo', 'sphinx.ext.mathjax', 'sphinxcontrib.bibtex', '
 'bokeh.sphinxext.bokeh_plot',]
 
 
-bokeh_plot_pyfile_include_dirs = ['docs']
+bokeh_plot_pyfile_include_dirs = ['docs/codes_py']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
