@@ -40,6 +40,8 @@ Na
 .. raw:: html
    :file: ../_static/lixo2.html
 
+asdfsa
+
 .. bokeh-plot:: codes_py/plotting_scatter_square.py
    :source-position: none
 

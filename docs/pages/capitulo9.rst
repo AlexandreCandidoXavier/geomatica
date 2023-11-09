@@ -350,15 +350,16 @@ Nivelamento barométrico
 Por meio de equipamentos que medem a pressão do ar, que denominam-se
 barômetros, é possível encontrar a :math:`\mathrm{DN}` entre os pontos. A explicação
 é dada pela relação inversa que há entre pressão do ar e a altitude
-(Figura abaixo,  `adaptado do matemático da NOOA <https://en.wikipedia.org/wiki/Pressure_altitude>`_). Quanto mais alto um ponto, menor é a camada atmosférica
+(Figura abaixo,  `adaptado da NOOA <https://en.wikipedia.org/wiki/Pressure_altitude>`_). Quanto mais alto um ponto, menor é a camada atmosférica
 atuando nele, logo, menor será a pressão devida à atmosfera. Por outro
 lado, um ponto em uma altitude menor, está sujeito a uma maior camada
 de ar, resultando numa maior pressão atmosférica :cite:`espartel`.
 A pressão do ar depende também da temperatura do ar e em menor grau
 da umidade e da latitude do lugar (ver :cite:`deumlich1982surveying`, página 222).
 
-.. bokeh-plot:: codes_py/pressao_VS_altitude2.py
-   :source-position: none
+.. raw:: html
+  :file: ../_static/name_file_pressao_VS_altitude2.py.html
+
 
 Existem vários tipos de barômetros,
 destacando-se os de **mercúrio** e os **aneroides**. O **barômetro de mercúrio**,
